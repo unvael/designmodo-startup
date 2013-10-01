@@ -172,9 +172,34 @@ p {
     margin: 0 0 9px;
   }
 
+  .signup-form,
+  .signup-form + div {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .signup-form + div {
+    margin-left: 100px;
+    max-width: 300px;
+  }
+
+  @media (max-width: 979px) and (min-width: 768px) {
+    .signup-form + div {
+      max-width: 228px;
+    }
+  }
+
   @media (max-width: 767px) {
-    .span4.offset1 {
+    .signup-form,
+    .signup-form + div {
+      display: block;
+      vertical-align: baseline;
+    }
+
+    .signup-form + div {
       margin-top: 70px;
+      margin-left: 0;
+      max-width: none;
     }
   }
 

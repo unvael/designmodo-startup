@@ -144,7 +144,9 @@ $(function() {
 
   // Faded elements
   fadedEls($('.section-2 h3'), 'h');
-
+  $('.section-2 .project-wrapper').each(function() {
+    fadedEls($(this), 110);
+  });
 
 
 

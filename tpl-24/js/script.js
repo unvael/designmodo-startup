@@ -1,0 +1,43 @@
+
+(function($) {
+$(function() {
+
+  if (/msie/i.test(navigator.userAgent)) {
+    $('img').each(function() {
+      $(this).css({
+        width: $(this).attr('width') + 'px',
+        height: 'auto'
+      });
+    });
+  }
+
+
+  // Focus state for append/prepend inputs
+  $('.input-prepend, .input-append').on('focus', 'input', function () {
+    $(this).closest('.control-group, form').addClass('focus');
+  }).on('blur', 'input', function () {
+    $(this).closest('.control-group, form').removeClass('focus');
+  });
+
+
+  // section-1 height = window height
+  $(window).resize(function() {
+    $('.section-1').css('min-height', $(this).height()+'px');
+  });
+
+
+
+
+  $(window).resize().scroll();
+
+});
+
+
+$(window).load(function() {
+
+  $('html').addClass('loaded');
+
+  $(window).resize().scroll();
+
+});
+})(jQuery);

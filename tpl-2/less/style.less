@@ -1,0 +1,300 @@
+
+@import '../../flat-ui-pro/less/config.less';
+@import '../../flat-ui-pro/less/mixins.less';
+@import '../../common-files/less/mixins.less';
+@import '../../common-files/less/common.less';
+
+
+@import 'type.less';
+@import 'navbar.less';
+@import 'carousel.less';
+
+body > section,
+header,
+footer {
+  .box-sizing(border-box);
+  position: relative;
+
+  @media (max-width: 767px) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+body {
+  @media (max-width: 767px) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+header {
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+
+  > .container {
+    position: relative;
+  }
+}
+
+body > section,
+footer {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+h3 {
+  margin: 0 0 20px;
+}
+
+
+
+.header {
+  z-index: 50;
+  left: 0;
+  width: 100%;
+  padding-top: 190px;
+  color: #fff;
+  text-align: center;
+
+  @media (max-width: 480px) {
+    padding-top: 108px;
+    padding-bottom: 35px;
+  }
+
+  .hero-unit {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+
+    h1 {
+      margin: 0 0 20px;
+      font-size: 30px;
+      font-weight: normal;
+      line-height: normal;
+    }
+
+    p {
+      font-size: 15px;
+      font-weight: bold;
+      color: #506e8c;
+      line-height: normal;
+    }
+  }
+
+  .btns {
+    display: inline-block;
+    margin-top: 45px;
+
+    @media (max-width: 480px) {
+      margin-top: 34px;
+      display: block;
+    }
+
+    .btn {
+      min-width: 140px;
+      float: left;
+
+      @media (max-width: 480px) {
+        float: none;
+        display: block;
+        margin-top: 10px;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+
+    .btn + .btn {
+      margin-left: 20px;
+
+      @media (max-width: 480px) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .btn.btn-inverse {
+    .btn-background(#3c556e);
+  }
+
+  .btn.btn-danger {
+    .btn-background(#c0392b);
+  }
+}
+
+
+
+.features {
+  .box {
+    position: relative;
+    padding-left: 140px;
+    padding-top: 50px;
+    margin-top: 50px;
+    min-height: 100px; /* img height */
+    border-top: 1px solid #ecf0f1;
+
+    &.first,
+    &:first-child,
+    &:first-of-type {
+      margin-top: 0;
+      border-top: 0;
+    }
+
+    > img {
+      position: absolute;
+      left: 0;
+      top: 50px;
+    }
+  }
+
+  h6 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    line-height: 1;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+
+
+.logos {
+  background: #f1f1f1;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media (max-width: 767px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  @media (max-width: 480px) {
+    display: none;
+  }
+
+  > .container {
+    display: table;
+
+    > div {
+      display: table-cell;
+      text-align: center;
+    }
+  }
+}
+
+
+
+// footer
+// --------------------------------------------------
+
+footer {
+  color: #bdc3c7;
+
+  .lead {
+    margin-bottom: 15px;
+    font-size: 23px;
+    font-weight: 300;
+    letter-spacing: -1px;
+    color: #fff;
+
+    b {
+      font-weight: 500;
+    }
+  }
+
+  .btn.btn-danger {
+    .btn-background(#c0392b);
+  }
+
+  a {
+    .a-color(#bdc3c7);
+  }
+
+  nav {
+    h6 {
+      margin: 0 0 20px;
+      color: #fff;
+      font-size: 16px;
+      line-height: 1;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      font-size: 16px;
+
+      li {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .buy-btn {
+    text-align: center;
+
+    .btn {
+      margin-bottom: 17px;
+    }
+  }
+
+  .additional-links {
+    border-top: 1px solid #374859;
+    padding-top: 17px;
+    font-size: 14px;
+    color: #95a5a6;
+
+    @media (max-width: 767px) {
+      margin-top: 17px;
+      margin-bottom: 0!important;
+    }
+
+    a {
+      margin-right: 10px;
+      .a-color(#95a5a6);
+    }
+  }
+
+  @media (max-width: 767px) {
+    .span6 {
+      margin-bottom: 20px;
+    }
+
+    nav .span2,
+    .buy-btn {
+      float: left;
+      width: 30%;
+      margin-left: 5%;
+    }
+
+    nav .span2:first-child {
+      margin-left: 0;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+    .buy-btn {
+      float: none;
+      width: auto;
+      margin: 35px 0;
+
+      .btn {
+        margin: 0 0 10px;
+      }
+    }
+
+    nav .span2 {
+      width: 47%;
+      margin-left: 6%;
+    }
+  }
+}

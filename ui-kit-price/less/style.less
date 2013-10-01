@@ -120,8 +120,8 @@ header {
     position: relative;
     .box-sizing(border-box);
     border: 3px solid #ebedee;
-    padding: 30px 0;
-    .border-radius(6px);
+    padding: 25px 0;
+    .border-radius(4px);
     text-align: center;
     color: #bdc3c7;
     font-size: 18px;
@@ -138,13 +138,13 @@ header {
     .title {
       color: #2c3e50;
       font-size: 24px;
-      font-weight: 600;
-      margin-bottom: 10px;
+      font-weight: 700;
+      margin-bottom: 8px;
     }
 
     .description {
-      margin: 20px 0;
-      padding-top: 20px;
+      margin: 26px 0;
+      padding-top: 22px;
       border-top: 2px solid #ebedee;
       line-height: 28px;
     }
@@ -157,7 +157,12 @@ header {
   .ribbon {
     position: absolute;
     right: -3px;
-    top: 30px;
+    top: 26px;
+    @media (max-width: 979px) {
+      & {
+        top: 4px;
+      }
+    }
   }
 
   @media (max-width: 767px) {
@@ -179,25 +184,40 @@ header {
 .price-2 {
   .plans {
     display: table;
+    .box-sizing(border-box);
     width: 100%;
     border: 3px solid #e5e5e5;
     border-top: 0;
-    .border-radius(6px);
+    .border-radius(4px);
 
     .plan {
       display: table-cell;
       width: 33.33%;
       text-align: center;
+
+      .ribbon {
+        position: absolute;
+        right: -1px;
+        top: 47px;
+        z-index: 2;
+        @media (max-width: 979px) {
+          & {
+            top: 20px;
+          }
+        }
+      }
     }
 
     .title {
-      padding: 60px 0 55px;
+      padding: 55px 0 55px;
       background: #34495e;
       color: #fff;
       font-family: @h-font-family;
-      font-size: 13px;
+      font-weight: bold;
+      font-size: 16px;
       letter-spacing: 2px;
       white-space: nowrap;
+      position: relative;
 
       .price {
         margin: 10px 0 13px;
@@ -224,12 +244,12 @@ header {
       }
 
       .btn.btn-clear {
-        padding-left: 12px;
-        padding-right: 12px;
+        padding: 6px 12px;
         border: 2px solid #fff;
         color: #fff;
         background: transparent;
         .opacity(50);
+        font-weight: bold;
 
         &:hover,
         &:focus {
@@ -257,12 +277,13 @@ header {
     }
 
     .description {
-      padding: 20px 40px;
+      padding: 27px 40px;
       font-size: 18px;
       color: #bdc3c7;
 
       b {
         color: #7f8c8d;
+        font-weight: 700;
       }
 
       .description-box {
@@ -284,7 +305,6 @@ header {
     }
 
     .plan-2 {
-      position: relative;
       border-left: 2px solid #e5e5e5;
       border-right: 2px solid #e5e5e5;
 
@@ -294,11 +314,6 @@ header {
         border-right: 2px solid #2f4254;
       }
 
-      .ribbon {
-        position: absolute;
-        right: -3px;
-        top: 45px;
-      }
     }
 
     @media (max-width: 767px) {
@@ -367,11 +382,11 @@ header {
     .title {
       color: #2c3e50;
       font-size: 24px;
-      font-weight: 600;
-      margin-bottom: 10px;
+      font-weight: 700;
+      margin-bottom: 8px;
 
       .img {
-        min-height: 145px;
+        min-height: 134px;
       }
     }
 
@@ -385,8 +400,8 @@ header {
     }
 
     &.plan-2 {
-      border-left: 2px solid #ebedee;
-      border-right: 2px solid #ebedee;
+      border-left: 2px solid #e5e5e5;
+      border-right: 2px solid #e5e5e5;
     }
   }
 
@@ -415,8 +430,8 @@ header {
   .plan {
     position: relative;
     .box-sizing(border-box);
-    border: 2px solid #ebedee;
-    .border-radius(6px);
+    border: 2px solid #e5e5e5;
+    .border-radius(4px);
     text-align: center;
     color: #bdc3c7;
     font-size: 18px;
@@ -433,8 +448,8 @@ header {
     .title {
       color: #2c3e50;
       font-size: 24px;
-      font-weight: 600;
-      padding: 30px 0 10px;
+      font-weight: 700;
+      padding: 32px 0 7px;
     }
 
     .price {
@@ -509,17 +524,19 @@ header {
     color: #95a5a6;
 
     > * + * {
-      margin-top: 55px;
+      margin-top: 75px;
     }
 
     h6 {
       color: #1abc9c;
       font-size: 18px;
+      font-weight: 700;
+      font-family: "Lato", sans-serif;
     }
 
     [class*="fui-"] {
       color: #bdc3c7;
-      font-size: 22px;
+      font-size: 24px;
       display: inline-block;
       margin-bottom: 13px;
     }
@@ -546,10 +563,11 @@ header {
 .price-5 {
   .plans {
     display: table;
+    .box-sizing(border-box);
     width: 100%;
     border: 3px solid #e5e5e5;
     border-top: 0;
-    .border-radius(6px);
+    .border-radius(4px);
 
     .plan {
       display: table-cell;
@@ -563,19 +581,20 @@ header {
     }
 
     .title {
-      padding: 32px 0 43px;
+      padding: 32px 0 40px;
       background: @firm;
       color: #fff;
       font-family: @h-font-family;
-      font-size: 13px;
-      font-weight: 500;
+      font-size: 16px;
+      font-weight: 700;
       letter-spacing: 3px;
       white-space: nowrap;
 
       .price {
         font-size: 40px;
-        font-weight: 600;
+        font-weight: 700;
         letter-spacing: normal;
+        margin: 0 0 4px;
 
         small {
           font-size: 24px;
@@ -601,7 +620,7 @@ header {
 
       .description-box {
         text-align: left;
-        padding: 40px;
+        padding: 44px 50px 44px 44px;
         border-top: 2px solid #ebedee;
 
         &:first-child {
@@ -611,7 +630,7 @@ header {
 
       big {
         font-size: 18px;
-        font-weight: 600;
+        font-weight: 700;
         color: @firm;
         display: block;
         margin-bottom: 10px;
@@ -623,16 +642,16 @@ header {
       top: 0;
       left: 0;
       right: 0;
-      padding: 50px 40px 40px;
+      padding: 56px 40px 44px;
       .opacity(0);
       .transition(0.4s opacity);
 
       big {
         font-size: 18px;
-        font-weight: 600;
+        font-weight: 700;
         color: @firm;
         display: block;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
       }
 
       [class*="fui-"] {
@@ -702,6 +721,21 @@ header {
       .description-more {
         padding-left: 35px;
         padding-right: 35px;
+      }
+    }
+  }
+  .terms {
+    text-align: center;
+    margin: 40px 0 20px;
+    color: #95a5a6;
+    font-size: 12px;
+    font-family: "Lato", sans-serif;
+    line-height: 18px;
+    a {
+      text-decoration: underline;
+      color: #1abc9c;
+      &:hover {
+        text-decoration: none;
       }
     }
   }

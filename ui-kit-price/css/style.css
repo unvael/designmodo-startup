@@ -768,6 +768,11 @@ header .brand img:first-child {
   font-size: 24px;
   margin-bottom: 25px;
 }
+.price-5 .plans .description-more .info {
+  margin: 0 20px 55px;
+  font-size: 14px;
+  line-height: 18px;
+}
 .price-5 .plans .description-more .btn {
   display: block;
   max-width: 140px;

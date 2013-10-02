@@ -313,7 +313,7 @@ header .brand img:first-child {
 .crew-1 .members .name {
   color: #34495e;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 5px;
   -webkit-transition: color 0.4s;
   -moz-transition: color 0.4s;
@@ -494,12 +494,12 @@ header .brand img:first-child {
   }
 }
 .crew-3 h3 {
-  margin: 0 0 40px;
+  margin: 0 0 20px;
   font-size: 30px;
   text-align: left;
 }
 .crew-3 .title {
-  margin: 0 0 70px;
+  margin: 0 0 80px;
   line-height: 1.5;
 }
 .crew-3 .title a {
@@ -746,13 +746,13 @@ header .brand img:first-child {
 }
 .crew-4 .members .name {
   color: #1abc9c;
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 11px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 14px;
 }
 .crew-4 .members .contacts {
   color: #7f8c8d;
-  font-weight: bold;
+  font-weight: 700;
   border-top: 2px solid #ebedee;
   margin-top: 13px;
   padding-top: 15px;

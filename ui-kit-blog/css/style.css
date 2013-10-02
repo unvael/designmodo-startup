@@ -265,7 +265,7 @@ header .brand img:first-child {
   z-index: 999;
 }
 .blog-1 .box-icon {
-  margin: 0 auto 50px;
+  margin: 0 auto 35px;
   text-align: center;
   font-size: 16px;
 }
@@ -277,10 +277,10 @@ header .brand img:first-child {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  width: 95px;
-  height: 95px;
+  width: 93px;
+  height: 93px;
   margin: 0 50px;
-  border: 7px solid #fff55b;
+  border: 6px solid #fff55b;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -291,7 +291,7 @@ header .brand img:first-child {
 }
 .blog-1 .page-transitions {
   background: #000;
-  height: 450px;
+  height: 380px;
 }
 @media (max-width: 767px) {
   .blog-1 .page-transitions {
@@ -328,7 +328,7 @@ header .brand img:first-child {
   background: transparent;
 }
 .blog-1 .page-transitions .hero-unit h1 {
-  margin: 0 0 5px;
+  margin: 0 0 2px;
   font-size: 25px;
   line-height: normal;
 }
@@ -339,7 +339,7 @@ header .brand img:first-child {
   line-height: normal;
 }
 .blog-1 .pt-page {
-  padding-top: 200px;
+  padding-top: 145px;
   padding-bottom: 40px;
 }
 @media (max-width: 767px) {
@@ -377,8 +377,8 @@ header .brand img:first-child {
   border: 3px solid #1fe0ba;
 }
 .blog-1 .title {
-  margin-bottom: 80px;
-  padding: 80px 0;
+  margin-bottom: 85px;
+  padding: 88px 0 76px;
   border-bottom: 2px solid #ebedee;
   text-align: center;
 }
@@ -402,11 +402,12 @@ header .brand img:first-child {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: #bdc3c7;
-  margin-top: 20px;
+  margin-top: 18px;
 }
 .blog-1 .links {
   padding-bottom: 45px;
   position: relative;
+  margin-top: 8px;
 }
 .blog-1 .links:after {
   content: '';
@@ -547,41 +548,44 @@ header .brand img:first-child {
   padding-top: 100px;
   padding-bottom: 100px;
   position: relative;
-  background-color: #1abc9c;
+  background-color: #32ccae;
+  font-family: "Lato", sans-serif;
   color: #35495d;
 }
 .blog-2 h3 {
   margin: 0 0 20px;
   font-size: 35px;
   font-weight: bold;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .blog-2 h3 img {
   display: block;
   margin-bottom: 80px;
 }
 .blog-2 h4 {
-  margin: 0 0 20px;
+  margin: 0 0 24px;
   color: #34495e;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 30px;
-}
-.blog-2 h3 + h4 {
-  margin-top: -20px;
 }
 .blog-2 h6 {
   font-size: 20px;
-  font-family: "Lato", sans-serif;
   font-weight: bold;
-  margin: 0 0 20px;
+  margin: 0 0 30px;
 }
 .blog-2 p {
   line-height: 1.85;
   margin: 0;
+  font-size: 16px;
 }
 .blog-2 p + p {
   margin-top: 20px;
 }
 .blog-2 > * {
   position: relative;
+}
+.blog-2 .promo {
+  margin: -20px 0 66px;
 }
 .blog-2 .background {
   display: block;
@@ -630,7 +634,7 @@ header .brand img:first-child {
   margin: 0 0 25px;
 }
 .blog-3 .title {
-  margin-bottom: 80px;
+  margin-bottom: 84px;
   text-align: center;
 }
 .blog-3 .title h3 {
@@ -648,7 +652,7 @@ header .brand img:first-child {
 }
 .blog-3 .img {
   height: 380px;
-  margin: 100px 0;
+  margin: 110px 0;
   background: url('../img/img-2.jpg') 50% 50% no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -674,10 +678,13 @@ header .brand img:first-child {
   content: url('../img/quote-up.png');
   position: absolute;
   top: -17px;
-  left: -60px;
+  left: -40px;
+}
+.blog-3 .promo {
+  margin-bottom: 70px;
 }
 .blog-3 .links {
-  margin-top: 80px;
+  margin-top: 76px;
 }
 .blog-3 .links,
 .blog-3 .links * {
@@ -737,19 +744,20 @@ header .brand img:first-child {
 }
 .blog-4 .quote {
   position: relative;
-  margin: 55px 0 50px;
+  margin: 60px 0 55px;
   font-size: 37px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #2c3e50;
+  line-height: 1.35;
 }
 .blog-4 .quote:before {
   content: url('../img/quote-up.png');
   position: absolute;
   top: -17px;
-  left: -60px;
+  left: -40px;
 }
 .blog-4 .tags {
-  margin-top: 65px;
+  margin-top: 70px;
   font-size: 14px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: bold;
@@ -773,7 +781,7 @@ header .brand img:first-child {
 }
 .blog-4 .tags li {
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 20px;
 }
 @media (max-width: 767px) {
   .blog-4 .tags {
@@ -835,10 +843,10 @@ header .brand img:first-child {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  width: 95px;
-  height: 95px;
+  width: 93px;
+  height: 93px;
   margin: 0 50px;
-  border: 7px solid #fff55b;
+  border: 6px solid #fff55b;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -849,8 +857,8 @@ header .brand img:first-child {
 }
 .blog-5 .page-transitions {
   background: #000;
-  height: 390px;
-  margin-bottom: 100px;
+  height: 380px;
+  margin-bottom: 110px;
 }
 @media (max-width: 767px) {
   .blog-5 .page-transitions {
@@ -898,8 +906,8 @@ header .brand img:first-child {
   line-height: normal;
 }
 .blog-5 .pt-page {
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 145px;
+  padding-bottom: 100px;
 }
 @media (max-width: 767px) {
   .blog-5 .pt-page {
@@ -974,17 +982,17 @@ header .brand img:first-child {
   color: #34495e;
   font-size: 22px;
   font-weight: normal;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 .blog-5 .lead + p {
   margin-top: 65px;
 }
 .blog-5 .quote {
   position: relative;
-  margin: 110px 0;
-  padding: 80px 0;
+  margin: 120px 0;
+  padding: 80px 0 90px;
   color: #2c3e50;
-  background: #ebedee;
+  background: #f5f6f6;
   font-size: 30px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-align: center;
@@ -996,10 +1004,11 @@ header .brand img:first-child {
   text-align: center;
 }
 .blog-5 .quote .author {
-  margin-top: 30px;
+  margin-top: 35px;
   font-size: 18px;
   font-weight: bold;
   color: #2980b9;
+  font-family: "Lato", sans-serif;
 }
 @media (max-width: 767px) {
   .blog-5 .quote {
@@ -1011,7 +1020,7 @@ header .brand img:first-child {
 }
 .blog-5 .boxes {
   *zoom: 1;
-  margin: 110px 0;
+  margin: 115px 0 125px;
 }
 .blog-5 .boxes:before,
 .blog-5 .boxes:after {
@@ -1114,5 +1123,5 @@ header .brand img:first-child {
 }
 .blog-5 .tags li {
   display: inline-block;
-  margin-right: 30px;
+  margin: 0 10px;
 }

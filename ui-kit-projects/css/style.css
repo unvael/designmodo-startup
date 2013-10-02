@@ -255,7 +255,7 @@ header .brand img:first-child {
   color: #bdc3c7;
   font-size: 13px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 500;
+  font-weight: bold;
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-right: 25px;
@@ -302,7 +302,7 @@ header .brand img:first-child {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 60px;
+  padding: 55px 60px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -340,6 +340,7 @@ header .brand img:first-child {
 .projects-1 .pt-page .brand {
   margin-bottom: 17px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
   font-size: 23px;
   color: #34495e;
 }
@@ -371,7 +372,7 @@ header .brand img:first-child {
   top: 50%;
   left: 0;
   right: 0;
-  margin: -7.5px -80px 0;
+  margin: -7.5px -70px 0;
 }
 .projects-1 .pt-controls > * {
   position: relative;
@@ -488,9 +489,9 @@ header .brand img:first-child {
 }
 .projects-1 .projects .name {
   color: #1abc9c;
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 11px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 14px;
 }
 .projects-1 .projects .project:hover .photo-wrapper {
   background-color: #1abc9c;
@@ -526,9 +527,20 @@ header .brand img:first-child {
   background: #000;
   color: #fff;
 }
+.projects-2 .content {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
 .projects-2 .wide-text {
   letter-spacing: 0.5em;
   word-spacing: 0.5em;
+  display: block;
+  margin: 18px 0 0;
+  font-size: 13px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
 }
 @media (max-width: 480px) {
   .projects-2 .wide-text {
@@ -547,13 +559,13 @@ header .brand img:first-child {
   display: table-cell;
   vertical-align: middle;
   border: 8px solid #fff;
-  padding: 25px 30px;
+  padding: 28px 30px;
   text-align: left;
 }
 .projects-2 .hero-unit h1 {
   margin: 0;
   font-size: 46px;
-  font-weight: 600;
+  font-weight: 700;
 }
 .projects-2 .hero-unit p {
   margin: 0;
@@ -694,7 +706,7 @@ header .brand img:first-child {
   margin-top: 0;
 }
 .projects-4 h3 {
-  margin: 0 0 40px;
+  margin: 0 0 60px;
   font-size: 30px;
   text-align: center;
 }
@@ -717,6 +729,7 @@ header .brand img:first-child {
 .projects-4 .projects .project {
   width: 220px;
   display: inline-block;
+  vertical-align: top;
 }
 .projects-4 .projects .photo-wrapper {
   width: 220px;
@@ -817,7 +830,7 @@ header .brand img:first-child {
   }
 }
 .projects-5 h3 {
-  margin: 0 0 40px;
+  margin: 0 0 60px;
   font-size: 30px;
   text-align: center;
 }

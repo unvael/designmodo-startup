@@ -229,7 +229,7 @@ header .brand img:first-child {
 }
 .contacts-1 h3 {
   font-size: 30px;
-  margin: 0 0 50px;
+  margin: 0 0 60px;
 }
 @media (max-width: 480px) {
   .contacts-1 h3 {
@@ -239,7 +239,7 @@ header .brand img:first-child {
 }
 .contacts-1 h6,
 .contacts-1 .h6 {
-  margin-top: 0;
+  margin: 0 0 15px;
   font-family: "Lato", sans-serif;
   font-weight: bold;
   font-size: 18px;
@@ -247,6 +247,9 @@ header .brand img:first-child {
 .contacts-1 p {
   font-size: 16px;
   line-height: 1.6;
+}
+.contacts-1 b {
+  font-weight: 700;
 }
 .contacts-1 a {
   color: #1abc9c;
@@ -261,8 +264,12 @@ header .brand img:first-child {
 }
 .contacts-1 form input,
 .contacts-1 form textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
+  max-width: 100%;
+  min-width: 100%;
   margin-bottom: 29px!important;
   border-color: #ebedee!important;
   color: #7f8c8d!important;
@@ -272,7 +279,7 @@ header .brand img:first-child {
   border-color: #1abc9c!important;
 }
 .contacts-1 form input {
-  height: 41px!important;
+  height: 45px!important;
 }
 .contacts-1 form label {
   margin-bottom: 18px;
@@ -292,9 +299,13 @@ header .brand img:first-child {
 .contacts-1 form .btn.btn-primary.active {
   background-color: #c44133;
 }
+.contacts-1 .additional {
+  margin-bottom: 45px;
+}
 .contacts-1 .phone {
-  font-size: 11px;
+  font-size: 13px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
   letter-spacing: 2px;
   line-height: 1.2;
   color: #95a5a6;
@@ -302,7 +313,6 @@ header .brand img:first-child {
 .contacts-1 .phone big {
   display: block;
   font-size: 46px;
-  font-weight: 600;
   letter-spacing: normal;
   white-space: nowrap;
   color: #1abc9c;
@@ -330,7 +340,7 @@ header .brand img:first-child {
 }
 .contacts-2 h3 {
   font-size: 30px;
-  margin: 0 0 50px;
+  margin: 0 0 40px;
 }
 @media (max-width: 480px) {
   .contacts-2 h3 {
@@ -340,7 +350,7 @@ header .brand img:first-child {
 }
 .contacts-2 h6,
 .contacts-2 .h6 {
-  margin-top: 0;
+  margin: 0 0 15px;
   font-family: "Lato", sans-serif;
   font-weight: bold;
   font-size: 18px;
@@ -359,7 +369,7 @@ header .brand img:first-child {
 }
 .contacts-2 form {
   margin: 0;
-  padding: 47px;
+  padding: 46px;
   border: 2px solid #ebedee;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -367,8 +377,12 @@ header .brand img:first-child {
 }
 .contacts-2 form input,
 .contacts-2 form textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
+  max-width: 100%;
+  min-width: 100%;
   margin-bottom: 29px!important;
   border-color: #ebedee!important;
   color: #7f8c8d!important;
@@ -378,7 +392,7 @@ header .brand img:first-child {
   border-color: #1abc9c!important;
 }
 .contacts-2 form input {
-  height: 41px!important;
+  height: 45px!important;
 }
 .contacts-2 form label {
   margin-bottom: 18px;
@@ -400,14 +414,14 @@ header .brand img:first-child {
 }
 .contacts-2 .map {
   height: 165px;
-  margin: 25px 0 20px;
+  margin: 25px 0 60px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
   overflow: hidden;
 }
 .contacts-2 .links {
-  margin-top: -10px;
+  margin-top: 20px;
 }
 .contacts-2 .links a {
   font-size: 16px;
@@ -436,11 +450,11 @@ header .brand img:first-child {
 }
 .contacts-3 h3 {
   font-size: 30px;
-  margin: 0 0 20px;
+  margin: 0 0 15px;
 }
 .contacts-3 h6,
 .contacts-3 .h6 {
-  margin-top: 0;
+  margin: 0 0 15px;
   font-family: "Lato", sans-serif;
   font-weight: bold;
   font-size: 18px;
@@ -462,8 +476,12 @@ header .brand img:first-child {
 }
 .contacts-3 form input,
 .contacts-3 form textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
+  max-width: 100%;
+  min-width: 100%;
   margin-bottom: 29px!important;
   border-color: #ebedee!important;
   color: #7f8c8d!important;
@@ -473,7 +491,7 @@ header .brand img:first-child {
   border-color: #1abc9c!important;
 }
 .contacts-3 form input {
-  height: 41px!important;
+  height: 45px!important;
 }
 .contacts-3 form label {
   margin-bottom: 18px;
@@ -495,14 +513,14 @@ header .brand img:first-child {
 }
 .contacts-3 .map {
   height: 255px;
-  margin: 15px 0 0;
+  margin: 25px 0 60px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
   overflow: hidden;
 }
 .contacts-3 .links {
-  margin: 20px 0 10px;
+  margin: 20px 0 40px;
   padding-bottom: 40px;
   border-bottom: 2px solid #ebedee;
 }
@@ -538,7 +556,7 @@ header .brand img:first-child {
   background-size: cover;
   color: #bdc3c7;
   text-align: right;
-  padding-top: 180px;
+  padding-top: 175px;
   padding-bottom: 180px;
 }
 .contacts-4 h3 {
@@ -558,9 +576,17 @@ header .brand img:first-child {
 .contacts-4 a.active {
   color: #15967d;
 }
+.contacts-4 .content {
+  margin: 0 80px;
+}
+@media (max-width: 767px) {
+  .contacts-4 .content {
+    margin: 0;
+  }
+}
 .contacts-4 .social-btns {
   white-space: nowrap;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 .contacts-4 .social-btns > * {
   display: inline-block;
@@ -591,13 +617,15 @@ header .brand img:first-child {
 }
 .contacts-4 .links {
   margin: 35px 0 0;
-}
-.contacts-4 .links a {
   font-size: 47px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  word-break: break-all;
+}
+.contacts-4 .links a {
+  padding-bottom: 3px;
   color: #14ddb3;
   border-bottom: 2px solid;
-  padding-bottom: 3px;
 }
 .contacts-4 .links a:hover,
 .contacts-4 .links a:focus,
@@ -626,7 +654,7 @@ header .brand img:first-child {
 }
 .contacts-5 .map {
   height: 550px;
-  margin-bottom: 130px;
+  margin-bottom: 120px;
 }
 @media (max-width: 767px) {
   .contacts-5 .map {

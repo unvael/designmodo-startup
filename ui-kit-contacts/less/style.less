@@ -82,7 +82,7 @@ header {
 .contacts-1 {
   h3 {
     font-size: 30px;
-    margin: 0 0 50px;
+    margin: 0 0 60px;
 
     @media (max-width: 480px) {
       font-size: 26px;
@@ -92,8 +92,8 @@ header {
 
 
   h6, .h6 {
-    margin-top: 0;
-    font-family: "Lato", sans-serif;
+    margin: 0 0 15px;
+    font-family: @base-font-family;
     font-weight: bold;
     font-size: 18px;
   }
@@ -101,6 +101,10 @@ header {
   p {
     font-size: 16px;
     line-height: 1.6;
+  }
+
+  b {
+    font-weight: 700;
   }
 
   a {
@@ -112,8 +116,10 @@ header {
 
     input,
     textarea {
-      box-sizing: border-box;
+      .box-sizing(border-box);
       width: 100%;
+      max-width: 100%;
+      min-width: 100%;
       margin-bottom: 29px!important;
       // .opacity(50);
       border-color: #ebedee!important;
@@ -126,7 +132,7 @@ header {
     }
 
     input {
-      height: 41px!important;
+      height: 45px!important;
     }
 
     label {
@@ -155,9 +161,14 @@ header {
     }
   }
 
+  .additional {
+    margin-bottom: 45px;
+  }
+
   .phone {
-    font-size: 11px;
+    font-size: 13px;
     font-family: @h-font-family;
+    font-weight: 700;
     letter-spacing: 2px;
     line-height: 1.2;
     color: #95a5a6;
@@ -165,7 +176,6 @@ header {
     big {
       display: block;
       font-size: 46px;
-      font-weight: 600;
       letter-spacing: normal;
       white-space: nowrap;
       color: #1abc9c;
@@ -205,7 +215,7 @@ header {
 .contacts-2 {
   h3 {
     font-size: 30px;
-    margin: 0 0 50px;
+    margin: 0 0 40px;
 
     @media (max-width: 480px) {
       font-size: 26px;
@@ -215,8 +225,8 @@ header {
 
 
   h6, .h6 {
-    margin-top: 0;
-    font-family: "Lato", sans-serif;
+    margin: 0 0 15px;
+    font-family: @base-font-family;
     font-weight: bold;
     font-size: 18px;
   }
@@ -232,14 +242,16 @@ header {
 
   form {
     margin: 0;
-    padding: 47px;
+    padding: 46px;
     border: 2px solid #ebedee;
     .border-radius(6px);
 
     input,
     textarea {
-      box-sizing: border-box;
+      .box-sizing(border-box);
       width: 100%;
+      max-width: 100%;
+      min-width: 100%;
       margin-bottom: 29px!important;
       // .opacity(50);
       border-color: #ebedee!important;
@@ -252,7 +264,7 @@ header {
     }
 
     input {
-      height: 41px!important;
+      height: 45px!important;
     }
 
     label {
@@ -283,13 +295,13 @@ header {
 
   .map {
     height: 165px;
-    margin: 25px 0 20px;
+    margin: 25px 0 60px;
     .border-radius(6px);
     overflow: hidden;
   }
 
   .links {
-    margin-top: -10px;
+    margin-top: 20px;
 
     a {
       font-size: 16px;
@@ -331,12 +343,12 @@ header {
 .contacts-3 {
   h3 {
     font-size: 30px;
-    margin: 0 0 20px;
+    margin: 0 0 15px;
   }
 
   h6, .h6 {
-    margin-top: 0;
-    font-family: "Lato", sans-serif;
+    margin: 0 0 15px;
+    font-family: @base-font-family;
     font-weight: bold;
     font-size: 18px;
   }
@@ -355,8 +367,10 @@ header {
 
     input,
     textarea {
-      box-sizing: border-box;
+      .box-sizing(border-box);
       width: 100%;
+      max-width: 100%;
+      min-width: 100%;
       margin-bottom: 29px!important;
       // .opacity(50);
       border-color: #ebedee!important;
@@ -369,7 +383,7 @@ header {
     }
 
     input {
-      height: 41px!important;
+      height: 45px!important;
     }
 
     label {
@@ -400,13 +414,13 @@ header {
 
   .map {
     height: 255px;
-    margin: 15px 0 0;
+    margin: 25px 0 60px;
     .border-radius(6px);
     overflow: hidden;
   }
 
   .links {
-    margin: 20px 0 10px;
+    margin: 20px 0 40px;
     padding-bottom: 40px;
     border-bottom: 2px solid #ebedee;
 
@@ -451,7 +465,7 @@ header {
   .background-size(cover);
   color: #bdc3c7;
   text-align: right;
-  padding-top: 180px;
+  padding-top: 175px;
   padding-bottom: 180px;
 
   h3 {
@@ -469,9 +483,17 @@ header {
     .a-color(#1abc9c);
   }
 
+  .content {
+    margin: 0 80px;
+    @media (max-width: 767px) {
+      margin: 0;
+    }
+
+  }
+
   .social-btns {
     white-space: nowrap;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 
     > * {
       display: inline-block;
@@ -505,13 +527,16 @@ header {
 
   .links {
     margin: 35px 0 0;
+    font-size: 47px;
+    font-family: @h-font-family;
+    font-weight: 700;
+    word-break: break-all;
 
     a {
-      font-size: 47px;
-      font-family: @h-font-family;
+      padding-bottom: 3px;
       .a-color(#14ddb3);
       border-bottom: 2px solid;
-      padding-bottom: 3px;
+      
     }
   }
 
@@ -543,7 +568,7 @@ header {
 
   .map {
     height: 550px;
-    margin-bottom: 130px;
+    margin-bottom: 120px;
   }
 
   @media (max-width: 767px) {

@@ -678,7 +678,7 @@ header .brand img:first-child {
   content: url('../img/quote-up.png');
   position: absolute;
   top: -17px;
-  left: -60px;
+  left: -40px;
 }
 .blog-3 .promo {
   margin-bottom: 70px;
@@ -754,7 +754,7 @@ header .brand img:first-child {
   content: url('../img/quote-up.png');
   position: absolute;
   top: -17px;
-  left: -60px;
+  left: -40px;
 }
 .blog-4 .tags {
   margin-top: 70px;

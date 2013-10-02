@@ -1,0 +1,439 @@
+/*
+@font-face {
+   font-family: "Helvetica";
+   src: local("Helvetica Neue"),
+   url("fonts/HelveticaNeue.ttf");
+   font-weight:normal;
+}
+
+@font-face {
+   font-family: "Lato";
+   src: local("Lato Regular"),
+   url("fonts/Lato-Reg.ttf");
+   font-weight:normal;
+}*/
+/* 62px */
+/* 52px */
+/* 40px */
+/* 29px */
+/* 28px */
+/* 24px */
+.inline-block {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+.drop-ie-gradient {
+  filter: unquote("progid:DXImageTransform.Microsoft.gradient(enabled = false)");
+}
+.dropdown-arrow-inverse {
+  border-bottom-color: #34495e !important;
+  border-top-color: #34495e !important;
+}
+.bg-white {
+  background-color: #ffffff;
+}
+.bg-black {
+  background-color: #000000;
+}
+.bg-turquoise {
+  background-color: #1abc9c;
+}
+.bg-green-sea {
+  background-color: #16a085;
+}
+.bg-emerland {
+  background-color: #2ecc71;
+}
+.bg-nephritis {
+  background-color: #27ae60;
+}
+.bg-peter-river {
+  background-color: #3498db;
+}
+.bg-belize-hole {
+  background-color: #2980b9;
+}
+.bg-amethyst {
+  background-color: #9b59b6;
+}
+.bg-wisteria {
+  background-color: #8e44ad;
+}
+.bg-wet-asphalt {
+  background-color: #34495e;
+}
+.bg-midnight-blue {
+  background-color: #2c3e50;
+}
+.bg-sun-flower {
+  background-color: #f1c40f;
+}
+.bg-orange {
+  background-color: #f39c12;
+}
+.bg-carrot {
+  background-color: #e67e22;
+}
+.bg-pumpkin {
+  background-color: #d35400;
+}
+.bg-alizarin {
+  background-color: #e74c3c;
+}
+.bg-pomegranate {
+  background-color: #c0392b;
+}
+.bg-clouds {
+  background-color: #ecf0f1;
+}
+.bg-silver {
+  background-color: #bdc3c7;
+}
+.bg-concrete {
+  background-color: #95a5a6;
+}
+.bg-asbestos {
+  background-color: #7f8c8d;
+}
+.bg-base {
+  background-color: #34495e;
+}
+.bg-firm {
+  background-color: #1abc9c;
+}
+.bg-success {
+  background-color: #2ecc71;
+}
+.bg-danger {
+  background-color: #e74c3c;
+}
+.bg-warning {
+  background-color: #f1c40f;
+}
+.bg-info {
+  background-color: #3498db;
+}
+.bordered {
+  border-style: solid;
+}
+.bordered.bg-turquoise {
+  border-color: #16a085;
+}
+.bordered.bg-emerland {
+  border-color: #27ae60;
+}
+.bordered.bg-peter-river {
+  border-color: #2980b9;
+}
+.bordered.bg-amethyst {
+  border-color: #8e44ad;
+}
+.bordered.bg-wet-asphalt {
+  border-color: #2c3e50;
+}
+.bordered.bg-sun-flower {
+  border-color: #f39c12;
+}
+.bordered.bg-carrot {
+  border-color: #d35400;
+}
+.bordered.bg-alizarin {
+  border-color: #c0392b;
+}
+.bordered.bg-clouds {
+  border-color: #bdc3c7;
+}
+.bordered.bg-concrete {
+  border-color: #7f8c8d;
+}
+body {
+  line-height: 1.29;
+}
+img {
+  -webkit-backface-visibility: hidden;
+}
+.icon-content-android {
+  width: 26px;
+  height: 31px;
+  background-image: url("../img/icons.png");
+  background-position: 0px 0px;
+  padding: 0;
+}
+.icon-content-apple {
+  width: 26px;
+  height: 31px;
+  background-image: url("../img/icons.png");
+  background-position: -36px 0px;
+  padding: 0;
+}
+.icon-content-btn-android {
+  width: 26px;
+  height: 31px;
+  background-image: url("../img/icons.png");
+  background-position: 0px 0px;
+  padding: 0;
+  margin: -5px 22px -10px 0;
+  float: left;
+}
+.icon-content-btn-apple {
+  width: 26px;
+  height: 31px;
+  background-image: url("../img/icons.png");
+  background-position: -36px 0px;
+  padding: 0;
+  margin: -5px 22px -10px 0;
+  float: left;
+}
+.icon-content-eye {
+  width: 26px;
+  height: 31px;
+  background-image: url("../img/icons.png");
+  background-position: -72px 0px;
+  padding: 0;
+}
+.icon-content-geo {
+  width: 26px;
+  height: 31px;
+  background-image: url("../img/icons.png");
+  background-position: -108px 0px;
+  padding: 0;
+}
+.icon-content-lamp {
+  width: 26px;
+  height: 31px;
+  background-image: url("../img/icons.png");
+  background-position: -148px 0px;
+  padding: 0;
+}
+.icon-content-plane {
+  width: 26px;
+  height: 31px;
+  background-image: url("../img/icons.png");
+  background-position: -184px 0px;
+  padding: 0;
+}
+.icon-content-volume {
+  width: 26px;
+  height: 31px;
+  background-image: url("../img/icons.png");
+  background-position: -224px 0px;
+  padding: 0;
+}
+body > section,
+header,
+footer {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+@media (max-width: 767px) {
+  body > section,
+  header,
+  footer {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+.delimiter {
+  margin-top: 200px;
+}
+.delimiter.line {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  border-top: 2px solid #ebedee;
+}
+header {
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+header .brand {
+  font-weight: bold;
+  font-size: 25px;
+  color: #34495e !important;
+}
+header .brand img:first-child {
+  float: left;
+  margin: -10px 15px 0 0;
+}
+.section-1 h1 {
+  font-size: 45px;
+  margin: 0 0 50px;
+}
+@media (max-width: 480px) {
+  .section-1 h1 {
+    font-size: 30px;
+    margin: 0 0 30px;
+  }
+}
+.content-1 {
+  font-weight: normal;
+}
+.content-1 h1 {
+  font-size: 30px;
+  font-family: "Helvetica";
+  font-weight: normal;
+  color: #2c3e50;
+}
+.content-1 p {
+  font-size: 18px;
+  font-family: "Lato";
+  font-weight: normal;
+  color: #9fa8a9;
+}
+.content-1 .content-block {
+  margin-top: 50px;
+}
+.content-1 .content-block .links-block .btn-block {
+  margin-bottom: 16px;
+}
+.content-1 .content-block .links-block .text {
+  text-align: center;
+  font-size: 12px;
+  font-family: "Lato";
+  font-weight: normal;
+  color: #9fa8a9;
+}
+.content-1 .content-block .links-block .link {
+  font-size: big;
+  color: #9fa8a9;
+  text-decoration: underline;
+}
+.content-1 .content-block .video-block .title {
+  font-size: 20px;
+  font-family: "Lato";
+  font-weight: normal;
+  color: #9fa8a9;
+  color: #2c3e50;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.content-2 {
+  font-weight: normal;
+}
+.content-2 h1 {
+  font-size: 30px;
+  font-family: "Helvetica";
+  font-weight: normal;
+  color: #2c3e50;
+  font-weight: lighter;
+  margin-top: 0;
+}
+.content-2 p {
+  font-size: 18px;
+  font-family: "Lato";
+  font-weight: normal;
+  color: #9fa8a9;
+}
+.content-2 .button-appstore {
+  margin-right: 30px;
+}
+.content-2 .link-button {
+  font-size: 15px;
+}
+.content-3 {
+  font-weight: normal;
+}
+.content-3 h1 {
+  font-size: 30px;
+  font-family: "Helvetica";
+  font-weight: normal;
+  color: #2c3e50;
+  font-weight: lighter;
+}
+.content-3 p {
+  font-size: 18px;
+  font-family: "Lato";
+  font-weight: normal;
+  color: #9fa8a9;
+}
+.content-3 .column-layout {
+  margin-top: 120px;
+  border-top: 2px solid #ecf0f1;
+  padding-top: 70px;
+}
+.content-3 .column-layout .column .title {
+  font-size: 24px;
+  font-family: "Lato";
+  font-weight: normal;
+  color: #9fa8a9;
+  color: #2c3e50;
+  font-weight: bold;
+}
+.content-4 {
+  font-weight: normal;
+}
+.content-4 h1 {
+  font-size: 30px;
+  font-family: "Helvetica";
+  font-weight: normal;
+  color: #2c3e50;
+  font-weight: lighter;
+}
+.content-4 p {
+  font-size: 18px;
+  font-family: "Lato";
+  font-weight: normal;
+  color: #9fa8a9;
+}
+.content-4 .column-layout {
+  padding-top: 66px;
+}
+.content-4 .column-layout .column .c-icon {
+  min-height: 136px;
+  margin-bottom: 54px;
+}
+.content-4 .column-layout .column .c-icon img {
+  width: 80%;
+}
+.content-4 .column-layout .column .title {
+  font-size: 24px;
+  font-family: "Lato";
+  font-weight: normal;
+  color: #9fa8a9;
+  color: #2c3e50;
+  font-weight: bold;
+}
+.content-5 {
+  font-weight: normal;
+}
+.content-5 h1 {
+  font-size: 35px;
+  font-family: "Helvetica";
+  font-weight: normal;
+  color: #2c3e50;
+}
+.content-5 h2 {
+  font-size: 25px;
+  font-family: "Helvetica";
+  font-weight: normal;
+  color: #9fa8a9;
+  font-weight: lighter;
+}
+.content-5 p {
+  font-size: 18px;
+  font-family: "Lato";
+  font-weight: normal;
+  color: #9fa8a9;
+}
+.content-5 .logo {
+  text-align: center;
+}

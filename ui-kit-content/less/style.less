@@ -1,0 +1,187 @@
+/*
+@font-face {
+   font-family: "Helvetica";
+   src: local("Helvetica Neue"),
+   url("fonts/HelveticaNeue.ttf");
+   font-weight:normal;
+}
+
+@font-face {
+   font-family: "Lato";
+   src: local("Lato Regular"),
+   url("fonts/Lato-Reg.ttf");
+   font-weight:normal;
+}*/
+// 
+
+
+@import '../../flat-ui-pro/less/config.less';
+@import '../../flat-ui-pro/less/mixins.less';
+@import '../../common-files/less/mixins.less';
+@import '../../common-files/less/common.less';
+@import 'sprite-icons.less';
+
+body > section, header, footer {
+    .box-sizing(border-box);
+    position: relative;
+    @media (max-width: 767px) {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+body {
+    @media (max-width: 767px) {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+.delimiter {
+    margin-top: 200px;
+    &.line {
+        margin-top: 150px;
+        margin-bottom: 150px;
+        border-top: 2px solid #ebedee;
+    }
+}
+
+header {
+  padding-top: 100px;
+  padding-bottom: 150px;
+  .brand {
+      font-weight: bold;
+      font-size: 25px;
+      color: @base!important;
+      img:first-child {
+          float: left;
+          margin: -10px 15px 0 0;
+      }
+  }
+}
+
+// section-1
+// --------------------------------------------------
+
+.section-1 {
+    h1 {
+        font-size: 45px;
+        margin: 0 0 50px;
+    }
+    @media (max-width: 480px) {
+        h1 {
+          font-size: 30px;
+          margin: 0 0 30px;
+        }
+  }
+}
+
+@header-text-color:#2c3e50;
+@content-text-color:#9fa8a9;
+
+
+.base-content-font(@font-size:18px, @font-family:"Lato", @color:@content-text-color){
+  @font-flat-ui: (@font-size/@base-font-size);
+  font-size: @font-flat-ui * @base-font-size;
+  font-family: @font-family;
+  font-weight:normal;
+  color: @color;
+}
+
+
+
+// sample styles ----------------------------------------------------
+
+.content-1{
+  font-weight:normal;
+  h1{ .base-content-font(30px, "Helvetica", @header-text-color);  }     
+  p{ .base-content-font;}
+  .content-block{
+    margin-top:50px;
+    .links-block{
+      .btn-block{
+        margin-bottom:16px;
+      }
+      .text{
+        text-align:center;
+        .base-content-font(12px);
+      }
+      .link{
+        font-size:big;
+        color: @content-text-color;
+        text-decoration:underline;
+      }
+    }
+    .video-block .title{
+      .base-content-font(20px); 
+      color:#2c3e50;
+      font-weight:bold;
+      margin-bottom:20px;
+    }  
+  }
+}
+
+.content-2{
+  font-weight:normal;
+  h1{ 
+    .base-content-font(30px, "Helvetica", @header-text-color); 
+    font-weight: lighter; 
+    margin-top:0;
+  }     
+  p{ .base-content-font; } 
+  .button-appstore{
+    margin-right:30px;
+  }
+  .link-button{
+    font-size: 15px;
+  }
+}
+
+.content-3{
+  font-weight:normal;
+  h1{ .base-content-font(30px, "Helvetica", @header-text-color); font-weight: lighter;  }     
+  p{ .base-content-font; }
+  .column-layout{
+    margin-top:120px;
+    border-top:2px solid #ecf0f1;
+    padding-top:70px;
+     
+    .column{
+      .title{
+        .base-content-font(24px);
+        color:@header-text-color; 
+        font-weight:bold;
+      }
+    }
+  }
+}
+
+.content-4{
+  font-weight:normal;
+  h1{ .base-content-font(30px, "Helvetica", @header-text-color); font-weight: lighter; }     
+  p{ .base-content-font; }
+  .column-layout{
+    padding-top:66px;
+    .column{
+      .c-icon{
+        min-height: 136px;
+        margin-bottom:54px;
+        img{ width:80%;}
+        
+      }
+      .title{
+        .base-content-font(24px);
+        color:@header-text-color;
+        font-weight:bold;
+      }
+    }
+  }
+}
+
+.content-5{
+  font-weight:normal;
+  h1{ .base-content-font(35px, "Helvetica", @header-text-color); }   
+  h2{ .base-content-font(25px, "Helvetica", @content-text-color); font-weight: lighter; }
+  p{.base-content-font; } 
+  .logo{text-align:center;}
+}

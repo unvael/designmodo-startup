@@ -310,3 +310,26 @@ header {
     }
   }
 }
+
+
+
+.content-6{
+  font-weight:normal;
+  h1{ .base-content-font(35px,@header-text-color,"Helvetica"); }   
+  h2{ .base-content-font(25px, @content-text-color,"Helvetica"); font-weight: lighter; }
+  p{.base-content-font; } 
+  .logo{text-align:center; img{margin-bottom:35px;}}
+  
+  .column-layout{
+    margin-top:70px;
+    .column-titles{
+      .title{
+        .base-content-font(22px, @header-text-color);
+        font-weight:bold;
+      }
+    }
+    .column-contents{
+      margin-bottom:60px;
+    }
+  }
+}

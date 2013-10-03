@@ -574,3 +574,44 @@ header .brand img:first-child {
 .content-5 .column-layout .column-contents {
   margin-bottom: 60px;
 }
+.content-6 {
+  font-weight: normal;
+}
+.content-6 h1 {
+  font-size: 35px;
+  font-family: "Helvetica";
+  font-weight: normal;
+  color: #2c3e50;
+}
+.content-6 h2 {
+  font-size: 25px;
+  font-family: "Helvetica";
+  font-weight: normal;
+  color: #9fa8a9;
+  font-weight: lighter;
+}
+.content-6 p {
+  font-size: 16px;
+  font-family: "Lato";
+  font-weight: normal;
+  color: #9fa8a9;
+}
+.content-6 .logo {
+  text-align: center;
+}
+.content-6 .logo img {
+  margin-bottom: 35px;
+}
+.content-6 .column-layout {
+  margin-top: 70px;
+}
+.content-6 .column-layout .column-titles .title {
+  font-size: 22px;
+  font-family: "Lato";
+  font-weight: normal;
+  color: #2c3e50;
+  font-weight: bold;
+}
+.content-6 .column-layout .column-contents {
+  margin-bottom: 60px;
+}

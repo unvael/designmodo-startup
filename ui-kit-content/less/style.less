@@ -1,20 +1,3 @@
-/*
-@font-face {
-   font-family: "Helvetica";
-   src: local("Helvetica Neue"),
-   url("fonts/HelveticaNeue.ttf");
-   font-weight:normal;
-}
-
-@font-face {
-   font-family: "Lato";
-   src: local("Lato Regular"),
-   url("fonts/Lato-Reg.ttf");
-   font-weight:normal;
-}*/
-// 
-
-
 @import '../../flat-ui-pro/less/config.less';
 @import '../../flat-ui-pro/less/mixins.less';
 @import '../../common-files/less/mixins.less';
@@ -80,7 +63,7 @@ header {
 @content-text-color:#9fa8a9;
 
 // 14px - base font-size in flat-ui, so if it will change we should change all fonts. And this mixin do it!
-.base-content-font(@font-size:18px, @font-family:"Lato", @color:@content-text-color){
+.base-content-font(@font-size:16px,@color:@content-text-color, @font-family:"Lato"){
   @font-flat-ui: (@font-size/14); 
   font-size: @font-flat-ui * @base-font-size;
   font-family: @font-family;
@@ -94,13 +77,14 @@ header {
 
 .content-1{
   font-weight:normal;
-  h1{ .base-content-font(30px, "Helvetica", @header-text-color);  }     
-  p{ .base-content-font;}
+  h1{ .base-content-font(34px,@header-text-color,"Helvetica");  }     
+  p{ .base-content-font(18px);}
   .content-block{
     margin-top:50px;
     .links-block{
       .btn-block{
         margin-bottom:16px;
+        .base-content-font(15px,white);
       }
       .text{
         text-align:center;
@@ -112,11 +96,13 @@ header {
         text-decoration:underline;
       }
     }
-    .video-block .title{
-      .base-content-font(20px); 
-      color:#2c3e50;
-      font-weight:bold;
-      margin-bottom:20px;
+    .video-block{
+       .title{
+          .base-content-font(20px,@header-text-color); 
+          font-weight:bold;
+          margin-bottom:20px;
+       }
+       p{.base-content-font;}
     }  
   }
 }
@@ -124,32 +110,32 @@ header {
 .content-2{
   font-weight:normal;
   h1{ 
-    .base-content-font(30px, "Helvetica", @header-text-color); 
+    .base-content-font(30px,@header-text-color,"Helvetica"); 
     font-weight: lighter; 
     margin-top:0;
   }     
   p{ .base-content-font; } 
   .button-appstore{
     margin-right:30px;
+    .base-content-font(15px,white);
   }
   .link-button{
-    font-size: 15px;
+    .base-content-font(15px,#16a085);
+    
   }
 }
 
 .content-3{
   font-weight:normal;
-  h1{ .base-content-font(30px, "Helvetica", @header-text-color); font-weight: lighter;  }     
+  h1{ .base-content-font(30px, @header-text-color, "Helvetica"); font-weight: lighter;  }     
   p{ .base-content-font; }
   .column-layout{
     margin-top:120px;
     border-top:2px solid #ecf0f1;
-    padding-top:70px;
-     
+    padding-top:70px;     
     .column{
       .title{
-        .base-content-font(24px);
-        color:@header-text-color; 
+        .base-content-font(20px,@header-text-color); 
         font-weight:bold;
       }
     }
@@ -158,7 +144,7 @@ header {
 
 .content-4{
   font-weight:normal;
-  h1{ .base-content-font(30px, "Helvetica", @header-text-color); font-weight: lighter; }     
+  h1{ .base-content-font(30px, @header-text-color, "Helvetica"); font-weight: lighter; }     
   p{ .base-content-font; }
   .column-layout{
     padding-top:66px;
@@ -170,8 +156,7 @@ header {
         
       }
       .title{
-        .base-content-font(24px);
-        color:@header-text-color;
+        .base-content-font(24px,@header-text-color);
         font-weight:bold;
       }
     }
@@ -180,8 +165,8 @@ header {
 
 .content-5{
   font-weight:normal;
-  h1{ .base-content-font(35px, "Helvetica", @header-text-color); }   
-  h2{ .base-content-font(25px, "Helvetica", @content-text-color); font-weight: lighter; }
+  h1{ .base-content-font(35px,@header-text-color,"Helvetica"); }   
+  h2{ .base-content-font(25px, @content-text-color,"Helvetica"); font-weight: lighter; }
   p{.base-content-font; } 
   .logo{text-align:center;}
   
@@ -189,8 +174,7 @@ header {
     margin-top:70px;
     .column-titles{
       .title{
-        .base-content-font(22px);
-        color: @header-text-color;
+        .base-content-font(22px, @header-text-color);
         font-weight:bold;
       }
     }

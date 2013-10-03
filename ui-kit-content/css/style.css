@@ -1,17 +1,3 @@
-/*
-@font-face {
-   font-family: "Helvetica";
-   src: local("Helvetica Neue"),
-   url("fonts/HelveticaNeue.ttf");
-   font-weight:normal;
-}
-
-@font-face {
-   font-family: "Lato";
-   src: local("Lato Regular"),
-   url("fonts/Lato-Reg.ttf");
-   font-weight:normal;
-}*/
 /* 62px */
 /* 52px */
 /* 40px */
@@ -288,7 +274,7 @@ header .brand img:first-child {
   font-weight: normal;
 }
 .content-1 h1 {
-  font-size: 30px;
+  font-size: 34px;
   font-family: "Helvetica";
   font-weight: normal;
   color: #2c3e50;
@@ -304,6 +290,10 @@ header .brand img:first-child {
 }
 .content-1 .content-block .links-block .btn-block {
   margin-bottom: 16px;
+  font-size: 15px;
+  font-family: "Lato";
+  font-weight: normal;
+  color: #ffffff;
 }
 .content-1 .content-block .links-block .text {
   text-align: center;
@@ -321,10 +311,15 @@ header .brand img:first-child {
   font-size: 20px;
   font-family: "Lato";
   font-weight: normal;
-  color: #9fa8a9;
   color: #2c3e50;
   font-weight: bold;
   margin-bottom: 20px;
+}
+.content-1 .content-block .video-block p {
+  font-size: 16px;
+  font-family: "Lato";
+  font-weight: normal;
+  color: #9fa8a9;
 }
 .content-2 {
   font-weight: normal;
@@ -338,16 +333,23 @@ header .brand img:first-child {
   margin-top: 0;
 }
 .content-2 p {
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Lato";
   font-weight: normal;
   color: #9fa8a9;
 }
 .content-2 .button-appstore {
   margin-right: 30px;
+  font-size: 15px;
+  font-family: "Lato";
+  font-weight: normal;
+  color: #ffffff;
 }
 .content-2 .link-button {
   font-size: 15px;
+  font-family: "Lato";
+  font-weight: normal;
+  color: #16a085;
 }
 .content-3 {
   font-weight: normal;
@@ -360,7 +362,7 @@ header .brand img:first-child {
   font-weight: lighter;
 }
 .content-3 p {
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Lato";
   font-weight: normal;
   color: #9fa8a9;
@@ -371,10 +373,9 @@ header .brand img:first-child {
   padding-top: 70px;
 }
 .content-3 .column-layout .column .title {
-  font-size: 24px;
+  font-size: 20px;
   font-family: "Lato";
   font-weight: normal;
-  color: #9fa8a9;
   color: #2c3e50;
   font-weight: bold;
 }
@@ -389,7 +390,7 @@ header .brand img:first-child {
   font-weight: lighter;
 }
 .content-4 p {
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Lato";
   font-weight: normal;
   color: #9fa8a9;
@@ -408,7 +409,6 @@ header .brand img:first-child {
   font-size: 24px;
   font-family: "Lato";
   font-weight: normal;
-  color: #9fa8a9;
   color: #2c3e50;
   font-weight: bold;
 }
@@ -429,7 +429,7 @@ header .brand img:first-child {
   font-weight: lighter;
 }
 .content-5 p {
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Lato";
   font-weight: normal;
   color: #9fa8a9;
@@ -444,7 +444,6 @@ header .brand img:first-child {
   font-size: 22px;
   font-family: "Lato";
   font-weight: normal;
-  color: #9fa8a9;
   color: #2c3e50;
   font-weight: bold;
 }

@@ -79,9 +79,9 @@ header {
 @header-text-color:#2c3e50;
 @content-text-color:#9fa8a9;
 
-
+// 14px - base font-size in flat-ui, so if it will change we should change all fonts. And this mixin do it!
 .base-content-font(@font-size:18px, @font-family:"Lato", @color:@content-text-color){
-  @font-flat-ui: (@font-size/@base-font-size);
+  @font-flat-ui: (@font-size/14); 
   font-size: @font-flat-ui * @base-font-size;
   font-family: @font-family;
   font-weight:normal;
@@ -184,4 +184,18 @@ header {
   h2{ .base-content-font(25px, "Helvetica", @content-text-color); font-weight: lighter; }
   p{.base-content-font; } 
   .logo{text-align:center;}
+  
+  .column-layout{
+    margin-top:70px;
+    .column-titles{
+      .title{
+        .base-content-font(22px);
+        color: @header-text-color;
+        font-weight:bold;
+      }
+    }
+    .column-contents{
+      margin-bottom:60px;
+    }
+  }
 }

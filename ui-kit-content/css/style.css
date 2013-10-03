@@ -165,15 +165,15 @@ img {
   -webkit-backface-visibility: hidden;
 }
 .icon-content-android {
-  width: 26px;
-  height: 31px;
+  width: 33px;
+  height: 34px;
   background-image: url("../img/icons.png");
   background-position: 0px 0px;
   padding: 0;
 }
 .icon-content-apple {
-  width: 26px;
-  height: 31px;
+  width: 33px;
+  height: 34px;
   background-image: url("../img/icons.png");
   background-position: -36px 0px;
   padding: 0;
@@ -197,36 +197,36 @@ img {
   float: left;
 }
 .icon-content-eye {
-  width: 26px;
-  height: 31px;
+  width: 33px;
+  height: 34px;
   background-image: url("../img/icons.png");
   background-position: -72px 0px;
   padding: 0;
 }
 .icon-content-geo {
-  width: 26px;
-  height: 31px;
+  width: 33px;
+  height: 34px;
   background-image: url("../img/icons.png");
   background-position: -108px 0px;
   padding: 0;
 }
 .icon-content-lamp {
-  width: 26px;
-  height: 31px;
+  width: 33px;
+  height: 34px;
   background-image: url("../img/icons.png");
   background-position: -148px 0px;
   padding: 0;
 }
 .icon-content-plane {
-  width: 26px;
-  height: 31px;
+  width: 33px;
+  height: 34px;
   background-image: url("../img/icons.png");
   background-position: -184px 0px;
   padding: 0;
 }
 .icon-content-volume {
-  width: 26px;
-  height: 31px;
+  width: 33px;
+  height: 34px;
   background-image: url("../img/icons.png");
   background-position: -224px 0px;
   padding: 0;
@@ -436,4 +436,18 @@ header .brand img:first-child {
 }
 .content-5 .logo {
   text-align: center;
+}
+.content-5 .column-layout {
+  margin-top: 70px;
+}
+.content-5 .column-layout .column-titles .title {
+  font-size: 22px;
+  font-family: "Lato";
+  font-weight: normal;
+  color: #9fa8a9;
+  color: #2c3e50;
+  font-weight: bold;
+}
+.content-5 .column-layout .column-contents {
+  margin-bottom: 60px;
 }

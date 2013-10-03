@@ -367,6 +367,130 @@ header .brand img:first-child {
   font-weight: normal;
   color: #9fa8a9;
 }
+.content-3 .tiket-right {
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  background-color: #ebedee;
+}
+.content-3 .tiket-right:after {
+  display: block;
+  content: "";
+  height: 0;
+  zoom: 1;
+  clear: both;
+}
+.content-3 .tiket-right .tiket-content-right {
+  float: right;
+  width: 27%;
+}
+.content-3 .tiket-right .tiket-content-right .tiket-header {
+  display: inline-block;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-right-radius: 10px;
+  background-color: #17A98C;
+  width: 100%;
+  padding: 13px 0;
+  height: 18px;
+  text-align: center;
+}
+.content-3 .tiket-right .tiket-content-right .tiket-header .icon-content-eye {
+  margin: -5px 0;
+}
+.content-3 .tiket-right .tiket-content-right .tiket-content {
+  display: inline-block;
+  padding: 16px 0 0;
+  width: 100%;
+  text-align: center;
+}
+.content-3 .tiket-right .tiket-content-right .tiket-content .information {
+  font-size: 35px;
+  font-family: "Lato";
+  font-weight: normal;
+  color: #17a98c;
+  font-weight: bold;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+.content-3 .tiket-right .tiket-content-right .tiket-content .label-information {
+  font-size: 10px;
+  font-family: "Lato";
+  font-weight: normal;
+  color: #9fa8a9;
+  line-height: 10px;
+  text-transform: uppercase;
+}
+.content-3 .tiket-right .tiket-left {
+  padding: 0 0 16px 0;
+  position: relative;
+  width: 72.3684%;
+  height: 100%;
+  border-right: 2px dashed #f5f6f7;
+  float: left;
+  z-index: 2;
+}
+.content-3 .tiket-right .tiket-left:after {
+  background-attachment: scroll, scroll;
+  background-clip: border-box, border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("../img/tiket-delimetr-top.png"), url("../img/tiket-delimetr-bottom.png");
+  background-origin: padding-box, padding-box;
+  background-position: right top, right bottom;
+  background-repeat: no-repeat;
+  background-size: auto auto, auto auto;
+  content: "";
+  display: block;
+  height: 100%;
+  margin-left: 98.2015%;
+  position: absolute;
+  width: 15px;
+  z-index: 100;
+}
+.content-3 .tiket-right .tiket-left .tiket-content {
+  float: left;
+  padding: 16px 4.47% 0;
+  width: 100%;
+}
+.content-3 .tiket-right .tiket-left .tiket-content.inline {
+  width: auto;
+}
+.content-3 .tiket-right .tiket-left .tiket-content .information {
+  font-size: 14px;
+  font-family: "Lato";
+  font-weight: normal;
+  color: #555e5f;
+  font-weight: bold;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+.content-3 .tiket-right .tiket-left .tiket-content .label-information {
+  font-size: 10px;
+  font-family: "Lato";
+  font-weight: normal;
+  color: #9fa8a9;
+  line-height: 10px;
+  text-transform: uppercase;
+}
+.content-3 .tiket-right .tiket-left .tiket-header {
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  border-top-left-radius: 10px;
+  text-align: left;
+  height: 18px;
+  background-color: #17A98C;
+  float: left;
+  width: 91.3282%;
+  padding: 13px 4.47%;
+  line-height: 18px;
+  font-size: 18px;
+  font-family: "Lato";
+  font-weight: normal;
+  color: #ffffff;
+  vertical-align: middle;
+  border-right: 2px dashed #f5f6f7;
+}
 .content-3 .column-layout {
   margin-top: 120px;
   border-top: 2px solid #ecf0f1;

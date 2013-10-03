@@ -70,6 +70,10 @@ header {
   font-weight:normal;
   color: @color;
 }
+.line-height(@line-height:16px){
+  @line-height-flat-ui:(@line-height/14); 
+  line-height:@line-height-flat-ui * @base-font-size;
+}
 
 
 
@@ -107,6 +111,8 @@ header {
   }
 }
 
+
+
 .content-2{
   font-weight:normal;
   h1{ 
@@ -125,10 +131,127 @@ header {
   }
 }
 
+
+
 .content-3{
+  @tiket-header-height: 18px;
   font-weight:normal;
   h1{ .base-content-font(30px, @header-text-color, "Helvetica"); font-weight: lighter;  }     
   p{ .base-content-font; }
+  .tiket-right{
+    border-radius:10px;
+    position:relative;
+    z-index:1;
+    width:100%;
+    
+    &:after{
+      display:block;
+      content:"";
+      height:0;
+      zoom:1;
+      clear:both;
+    }
+    //height:187px;
+    background-color:#ebedee;
+    
+    .tiket-content-right{
+       float:right;
+       width:27%;
+       
+       .tiket-header{
+         display:inline-block;
+       -webkit-border-top-right-radius: 10px;
+       -moz-border-radius-topright: 10px;
+        border-top-right-radius: 10px;
+        background-color: #17A98C;
+        width: 100%;
+        padding: 13px 0;
+        height:@tiket-header-height;
+        .icon-content-eye{margin: -5px 0;}
+        text-align:center;
+    }
+       
+      .tiket-content{
+              display:inline-block;
+              padding: 16px 0 0;
+              width:100%;
+              text-align:center;
+              .information{
+                 .base-content-font(35px, #17A98C);
+                 font-weight:bold;
+                 .line-height(35px);
+                 text-transform:uppercase;
+              }
+              .label-information{
+                .base-content-font(10px);
+                .line-height(10px);
+                text-transform:uppercase;
+              }
+      }
+    }
+    
+    .tiket-left{
+      padding: 0 0 16px 0;
+      position:relative;
+      width:72.3684%;
+      height:100%;
+      border-right:2px dashed #f5f6f7;
+      float:left;
+      z-index:2;
+      
+      &:after{
+        background-attachment: scroll, scroll;
+        background-clip: border-box, border-box;
+        background-color: rgba(0, 0, 0, 0);
+        background-image: url("../img/tiket-delimetr-top.png"), url("../img/tiket-delimetr-bottom.png");
+        background-origin: padding-box, padding-box;
+        background-position: right top, right bottom;
+        background-repeat: no-repeat;
+        background-size: auto auto, auto auto;
+        content: "";
+        display: block;
+        height: 100%;
+        margin-left: 98.2015%;
+        position: absolute;
+        width: 15px;
+        z-index: 100;
+      }      
+         .tiket-content{
+             float:left;
+             padding: 16px 4.47% 0;
+             width:100%;
+             &.inline{ width:auto;}
+            .information{
+               .base-content-font(14px, #555e5f);
+               font-weight:bold;
+               .line-height(14px);
+               text-transform:uppercase;
+            }
+            .label-information{
+              .base-content-font(10px);
+              .line-height(10px);
+              text-transform:uppercase;
+            }
+          }
+             
+        .tiket-header{
+         -webkit-border-top-left-radius: 10px;
+         -moz-border-radius-topleft: 10px;
+          border-top-left-radius: 10px;
+          text-align:left;
+          height:@tiket-header-height;
+          background-color: #17A98C;
+          float: left;
+          @padding:4.47%;
+          width: 100% - @padding * 1.94;
+          padding:13px @padding;
+          .line-height(18px);
+          .base-content-font(18px, white);
+          vertical-align:middle;
+          border-right:2px dashed #f5f6f7;
+        }           
+    }
+  }
   .column-layout{
     margin-top:120px;
     border-top:2px solid #ecf0f1;
@@ -141,6 +264,8 @@ header {
     }
   }
 }
+
+
 
 .content-4{
   font-weight:normal;
@@ -162,6 +287,8 @@ header {
     }
   }
 }
+
+
 
 .content-5{
   font-weight:normal;

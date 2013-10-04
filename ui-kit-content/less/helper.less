@@ -1,0 +1,22 @@
+//--  HELPER FUNCTIONS AND VARIABLES ----------------------------------------------------------------------------
+
+@h-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+@c-font-family: Lato, sens-serif;
+@h-text-color:@midnight-blue;
+@c-text-color: @asbestos;
+
+// 14px - base font-size in flat-ui, so if it will change we should change all fonts. And this mixin do it!
+.font(@font-size:16px,@color:@c-text-color){
+  @font-flat-ui: (@font-size/14); 
+  font-size: @font-flat-ui * @base-font-size;
+  font-weight:normal;
+  color: @color;
+}
+
+//1.231em - flat-ui standart line-height
+@em-px:18; //18px=1em standart. If you declarate another value change this variable to your value!!! 
+.line-height(@line-height: (@base-line-height * @em-px)px){ 
+  @tem-lh: @line-height * 1.231;
+  line-height:(@tem-lh /  (@base-line-height * @em-px)) * @em-px;
+}
+//-- end HELPER FUNCTIONS ---------------------------------------------------------------------------------------

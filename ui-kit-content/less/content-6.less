@@ -1,0 +1,24 @@
+/**
+ * Content 6 stylesheet  
+ * */
+.content-6 {  
+  h3 {
+    text-align: center;
+    .font(35px, @h-text-color);
+    font-family:@h-font-family;  
+    img {.center-block; margin-bottom: 35px;}
+  }  
+  p { .font(16px); .line-height(26px); }
+  .lead {
+    text-align: center;
+    .font(25px);
+    font-family: @h-font-family;
+  }  
+  .v-center; 
+  padding-bottom: 250px;  
+  @media (max-width: 480px) { padding-bottom: 210px; }
+  .features {
+    > * { margin-top: 40px;}
+    h6 { .font(22px, @base); font-family:@h-font-family;  margin-bottom: 14px;}
+  }  
+}

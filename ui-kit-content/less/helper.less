@@ -19,4 +19,27 @@
   @tem-lh: @line-height * 1.231;
   line-height:(@tem-lh /  (@base-line-height * @em-px)) * @em-px;
 }
+
+.v-center(){
+  &.v-center, .v-center {
+    display: table;  width: 100%;
+    > div {
+      display: table-cell;
+      vertical-align: middle;
+      margin: 0;
+      float: none;
+    }
+    @media (min-width: 768px) {
+      &.row {&:before, &:after {display: none; }}
+    }
+    @media (max-width: 767px) {
+      &.row {
+        display: block;
+        width: auto;
+        &:before, &:after { display: none; }
+        > * {display: block; vertical-align: baseline; }
+      }
+    }
+  }  
+}
 //-- end HELPER FUNCTIONS ---------------------------------------------------------------------------------------

@@ -1,0 +1,81 @@
+/**
+ * Content 18 stylesheet  
+ * */
+.content-18{
+    .carousel {
+      margin-bottom: 100px;
+      text-align: center;
+      &:before {
+        content: url('../img/quote.png');
+        display: block;
+        margin: 0 auto 60px;
+        text-align: center;
+      }
+      .quote-text {
+        max-width: 620px;
+        margin: 0 auto;
+        padding: 0 20px;
+        .font(30px, @h-text-color);
+        font-family: @h-font-family;
+      }
+      .quote-author {
+        max-width: 620px;
+        margin: 30px auto 0;
+        padding: 0 20px;
+        .font(18px, @info);
+      }
+      .controls {
+        position: relative;  
+        > .carousel-control {
+          z-index: 5;
+          position: absolute;
+          top: 20px;
+          display: block;
+          .box-sizing(border-box);
+          width: 15px; height: 15px;
+          margin: 0;
+          padding: 0;
+          .border-radius(50%);
+          border: 0;
+          .opacity(100);
+          overflow: hidden;
+          background: @info;  
+          &.disabled {
+            z-index: auto;
+            background: none;
+            border: 3px solid #ebedee; //should be change to color variable
+          }  
+          &.left {left: 0;} 
+          &.right { right: 0;}
+        }
+      }
+      .carousel-inner {
+        padding-bottom: 80px;
+        margin-bottom: -80px;
+      }
+    // fade out & slide down effect
+      .item {
+        .transition(~'.8s ease-in-out top, .6s ease-in-out opacity');
+        display: block;
+        position: absolute;
+        top: 0; left: 0!important; right: 0;
+        opacity: 0;  
+        &.active.left, &.active.right {
+          opacity: 0;
+          top: 100%;
+          z-index: 2;
+        }  
+        &.active,&.prev,&.next {
+          opacity: 1;
+          top: 0;
+          z-index: 1;
+        }
+      }
+     & + * {position: relative;}
+     @media (max-width: 480px) {.controls {display: none;}}
+    }
+  .quotes {
+    > * {margin-top: 20px;}
+    h6 {font-family: @c-font-family; font-weight: bold;}
+  }
+}

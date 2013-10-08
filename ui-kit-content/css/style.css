@@ -150,6 +150,14 @@ body {
 img {
   -webkit-backface-visibility: hidden;
 }
+.delimiter {
+  margin-top: 200px;
+}
+.delimiter.line {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  border-top: 2px solid #ebedee;
+}
 body > section,
 header,
 footer {
@@ -1580,7 +1588,7 @@ header .brand img:first-child {
   text-align: center;
 }
 .content-18 .carousel:before {
-  content: url('../img/quote.png');
+  content: url('quote.png');
   display: block;
   margin: 0 auto 60px;
   text-align: center;
@@ -1693,7 +1701,7 @@ header .brand img:first-child {
   position: relative;
 }
 .content-19 .span7 .quote:before {
-  content: url('../img/quote.png');
+  content: url('quote.png');
   position: absolute;
   top: 0;
   left: -60px;
@@ -2087,7 +2095,7 @@ header .brand img:first-child {
 }
 .content-21 .features.features-tabs .features-bodies {
   position: relative;
-  background: #ebedee url('../img/screen@2x.png') 0 50% no-repeat;
+  background: #ebedee url('../../ui-kit-content/img/screen@2x.png') 0 50% no-repeat;
   -webkit-background-size: 322px 418px;
   -moz-background-size: 322px 418px;
   -o-background-size: 322px 418px;
@@ -2201,7 +2209,7 @@ header .brand img:first-child {
   font-family: Lato, sens-serif;
   position: relative;
   max-width: 220px;
-  background: url("../img/line-l@2x.png") no-repeat scroll center top / 50% auto rgba(0, 0, 0, 0);
+  background: url("line-l@2x.png") no-repeat scroll center top / 50% auto rgba(0, 0, 0, 0);
   padding-top: 110px;
   opacity: 0;
   filter: alpha(opacity=0);

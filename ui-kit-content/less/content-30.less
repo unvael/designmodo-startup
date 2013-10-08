@@ -11,8 +11,8 @@
         width: 100%;
         text-align: left;
       }    
-      .description-top {top: 0;}
-      .description-bottom {bottom: 0;}
+      .description-top {top: 0; img{width:61px; height:97px;}}
+      .description-bottom {bottom: 0; img{width:61px; height:97px;}}
       .description-top, .description-bottom, .img img + img {
         .opacity(0);
         .transition(opacity 0.25s);
@@ -23,7 +23,10 @@
       .img {
         position: relative;
         display: inline-block;
-        margin: 150px auto;    
+        margin: 150px auto;   
+        img{
+          width:220px; height:391px;
+        } 
         img + img {
           position: absolute;
           left: 0; top: 0;

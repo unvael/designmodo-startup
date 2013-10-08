@@ -513,6 +513,10 @@ header .brand img:first-child {
   font-family: Lato, sens-serif;
   line-height: 26px;
 }
+.content-4 .features img {
+  width: 117px;
+  height: 104px;
+}
 .content-4 .features h6 {
   margin: 0 0 13px;
   font-size: 24px;
@@ -559,6 +563,8 @@ header .brand img:first-child {
 .content-5 .container > img {
   display: block;
   margin: 0 auto 50px;
+  width: 200px;
+  height: 200px;
 }
 .content-5 h3 {
   margin: 0;
@@ -631,6 +637,8 @@ header .brand img:first-child {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 35px;
+  width: 100px;
+  height: 100px;
 }
 .content-6 p {
   font-size: 16px;
@@ -803,6 +811,10 @@ header .brand img:first-child {
 .content-8 {
   text-align: center;
 }
+.content-8 .container > img {
+  width: 397px;
+  height: 193px;
+}
 .content-8 h3 {
   text-align: center;
   font-size: 35px;
@@ -918,6 +930,10 @@ header .brand img:first-child {
     margin-top: 20px;
   }
 }
+.content-9 .hidden-phone img {
+  width: 300px;
+  height: 300px;
+}
 /**
  * Content 10 stylesheet  
  * */
@@ -933,6 +949,8 @@ header .brand img:first-child {
 }
 .content-10 .carousel .item img {
   margin: 0 auto;
+  width: 303px;
+  height: 636px;
 }
 .content-10 .carousel .carousel-indicators {
   position: static;
@@ -1005,6 +1023,8 @@ header .brand img:first-child {
   position: absolute;
   left: 0;
   top: 50px;
+  width: 100px;
+  height: 100px;
 }
 .content-10 .features h6 {
   margin-top: 0;
@@ -1473,6 +1493,8 @@ header .brand img:first-child {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 35px;
+  width: 100px;
+  height: 100px;
 }
 .content-16 .control-btn {
   width: 53px;
@@ -1504,6 +1526,10 @@ header .brand img:first-child {
  * */
 .content-17 {
   text-align: center;
+}
+.content-17 h3 img {
+  width: 100px;
+  height: 100px;
 }
 .content-17 .carousel {
   margin-bottom: 10px;
@@ -2455,8 +2481,7 @@ header .brand img:first-child {
   }
 }
 .content-24 {
-  height: 645px;
-  padding-top: 140px;
+  padding: 140px 0;
   background: #34495e;
   color: #bdc3c7;
   overflow: hidden;
@@ -2467,15 +2492,14 @@ header .brand img:first-child {
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+.content-24 img.image {
+  display: inline-block;
+  position: absolute;
+  right: 55%;
+  bottom: 0;
+}
 .content-24 .span6.offset6 {
   position: relative;
-}
-.content-24 .span6.offset6 .img {
-  position: absolute;
-  top: 0;
-  right: 100%;
-  width: auto;
-  margin-right: 70px;
 }
 .content-24 .features.features-clear .features-header {
   *zoom: 1;
@@ -2620,6 +2644,10 @@ header .brand img:first-child {
 .content-26 h3 {
   margin: 0 0 27px;
 }
+.content-26 .features img {
+  width: 100px;
+  height: 100px;
+}
 .content-26 .features h6 {
   margin-top: 37px;
   font-family: Lato, sens-serif;
@@ -2631,6 +2659,13 @@ header .brand img:first-child {
 .content-27 {
   padding: 95px 0;
   background: rgba(52, 152, 219, 0.1);
+}
+.content-27 svg,
+.content-27 .svg {
+  max-width: 100%;
+}
+.content-27 .nosvg {
+  display: none;
 }
 .content-27 h3 {
   color: #3498db;
@@ -2783,8 +2818,16 @@ header .brand img:first-child {
 .content-30 .features .description-top {
   top: 0;
 }
+.content-30 .features .description-top img {
+  width: 61px;
+  height: 97px;
+}
 .content-30 .features .description-bottom {
   bottom: 0;
+}
+.content-30 .features .description-bottom img {
+  width: 61px;
+  height: 97px;
 }
 .content-30 .features .description-top,
 .content-30 .features .description-bottom,
@@ -2806,6 +2849,10 @@ header .brand img:first-child {
   position: relative;
   display: inline-block;
   margin: 150px auto;
+}
+.content-30 .features .img img {
+  width: 220px;
+  height: 391px;
 }
 .content-30 .features .img img + img {
   position: absolute;

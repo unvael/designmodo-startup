@@ -337,12 +337,20 @@ startupKit.uiKitContent.content30 = function(){
 
 (function($) {
 	$(function() {
+				
 		for(content in startupKit.uiKitContent){
 			contentNumber = content.slice(7);		
 			if(jQuery('.content-' + contentNumber).length != 0){				
 				startupKit.uiKitContent[content]();
 			};
 		}
+		
+		$(window).load(function() {
+
+  $(window).resize().scroll();
+  setTimeout(function(){ window.scrollBy(0, 1) }, 100); // force repaint page (parallax img bug fix)
+
+}); 	
 });
 })(jQuery);
 

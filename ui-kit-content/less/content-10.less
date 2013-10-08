@@ -7,7 +7,9 @@
       display: inline-block;
       text-align: center;
       @media (max-width: 767px) { margin-top: 80px;}
-      .item img {margin: 0 auto;}
+      .item img {
+        margin: 0 auto;
+        width:303px; height:636px;}
       .carousel-indicators {
         position: static;
         text-align: center;
@@ -43,7 +45,7 @@
       margin-top: 50px; min-height: 100px; /* img height */
       border-top: 1px solid @clouds;  
       &.first,&:first-child,&:first-of-type {margin-top: 0; border-top: 0;}
-      > img {position: absolute; left: 0; top: 50px;}
+      > img {position: absolute; left: 0; top: 50px; width:100px; height:100px;}
     }  
     h6 {margin-top: 0; margin-bottom: 15px; .line-height(18px);}  
     p {.font(16px);}

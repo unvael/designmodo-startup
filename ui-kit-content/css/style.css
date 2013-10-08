@@ -2179,6 +2179,7 @@ header .brand img:first-child {
   font-weight: normal;
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 40px 0;
 }
 .content-22 h6 {
   font-size: 18px;
@@ -2209,7 +2210,7 @@ header .brand img:first-child {
   font-family: Lato, sens-serif;
   position: relative;
   max-width: 220px;
-  background: url("line-l@2x.png") no-repeat scroll center top / 50% auto rgba(0, 0, 0, 0);
+  background: url("../../ui-kit-content/img/line-l@2x.png") no-repeat scroll center top / 50% auto rgba(0, 0, 0, 0);
   padding-top: 110px;
   opacity: 0;
   filter: alpha(opacity=0);
@@ -2653,7 +2654,7 @@ header .brand img:first-child {
   margin: 0 0 27px;
 }
 .content-26 .features img {
-  width: 100px;
+  width: 78px;
   height: 100px;
 }
 .content-26 .features h6 {

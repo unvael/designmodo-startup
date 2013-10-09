@@ -4,12 +4,13 @@
   .brand {
     display: inline-block;
     margin-bottom: 12px;
-    .font(@h6,@base); font-family: @h-font-family; font-weight: normal;
+    .font(25px,@base); font-family: @h-font-family; font-weight: bold; 
+    .line-height(18px);
     &:hover, &:focus { color: @firm;}
   }
   h6 {
     margin: 0 0 20px; 
-    .font(18px, @base); font-family:@h-font-family;
+    .font(18px, @base); font-family:@h-font-family; 
     @media (max-width: 767px) {margin: 0 0 5px;}
   }
   nav {

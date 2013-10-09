@@ -4,16 +4,16 @@
   color: @silver;
   .lead {
     margin-bottom: 15px;
-    .font(23px, white); font-weight: 300;
+    .font(23px, white); font-weight: normal;
     letter-spacing: -1px;    
-    b {font-weight: 500;}
+    b {font-weight: bold;}
   }
   .btn.btn-danger {.btn-background(@pomegranate);}
   a { .a-color(@silver); }
   nav {
     h6 {
       margin: 0 0 20px;
-      .font(16px, white); .line-height(16px);
+      .font(16px, white); .line-height(16px); font-family:@h-font-family;
     }
     ul {
       list-style: none;
@@ -22,7 +22,7 @@
       li {margin-bottom: 5px;}
     }
   }
-  .buy-btn {text-align: center; .btn {margin-bottom: 17px;}}
+  .buy-btn {text-align: center; a.btn{.font(15px, white);} .btn {margin-bottom: 17px;}}
   .additional-links {
     border-top: 1px solid #374859; //should be change to color variable
     padding-top: 17px;

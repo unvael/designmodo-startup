@@ -10,12 +10,12 @@
     ul {
       list-style: none;
       margin: 0;
-      .font(16px, inherit);
+      .font(16px, @base);
       li {
         display: inline-block;
         margin-left: 25px;       
         &:first-child { margin-left: 0;}
-        a {.font(18px, inherit); .a-color(@info, @silver);}
+        a {.font(18px, @base); font-weight:bold; .a-color(@base, @silver);}
       }
     }
   }
@@ -25,7 +25,7 @@
     > * {      
       display: inline-block;
       margin-left: 15px;
-      .font(16px, @info);
+      .font(16px, @base);
       width: 16px; height: 19px;
       overflow: hidden;
       text-align: center;
@@ -52,7 +52,8 @@
     }
     .lead {
       margin-bottom: 20px;
-      .font(24px, @midnight-blue);   
+      .font(24px, @base);  
+      b{font-weight:bold;}  
     }
     a {
       margin: 0 10px;

@@ -3,7 +3,7 @@
  * Use namespaces. 
  */
 
-window.startupKit ={};
+window.startupKit = window.startupKit || {};
 window.isRetina = (function() {
   		var root = (typeof exports == 'undefined' ? window : exports);
   		var mediaQuery = "(-webkit-min-device-pixel-ratio: 1.5),(min--moz-device-pixel-ratio: 1.5),(-o-min-device-pixel-ratio: 3/2),(min-resolution: 1.5dppx)";
@@ -12,7 +12,7 @@ window.isRetina = (function() {
 		return false;
 })();
 
-startupKit.uiKitContent = {};
+startupKit.uiKitContent = startupKit.uiKitContent || {};
 
 /* Content 1*/
 startupKit.uiKitContent.content1 = function(){
@@ -336,21 +336,17 @@ startupKit.uiKitContent.content30 = function(){
 
 
 (function($) {
-	$(function() {
-				
+	$(function() {				
 		for(content in startupKit.uiKitContent){
 			contentNumber = content.slice(7);		
 			if(jQuery('.content-' + contentNumber).length != 0){				
 				startupKit.uiKitContent[content]();
 			};
-		}
-		
+		}		
 		$(window).load(function() {
-
-  $(window).resize().scroll();
-  setTimeout(function(){ window.scrollBy(0, 1) }, 100); // force repaint page (parallax img bug fix)
-
-}); 	
-});
+  			$(window).resize().scroll();
+  			setTimeout(function(){ window.scrollBy(0, 1) }, 100); // force repaint page (parallax img bug fix)
+		}); 	
+	});
 })(jQuery);
 

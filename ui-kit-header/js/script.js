@@ -134,6 +134,8 @@ startupKit.uiKitHeader.header7 = function(){
 /* Header 8*/
 startupKit.uiKitHeader.header8 = function(){
 	
+	startupKit.uiKitHeader._inFixedMode('.header-8');	
+  $(window).resize().scroll();
 };
 
 /* Header 9*/

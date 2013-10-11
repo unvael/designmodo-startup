@@ -1693,12 +1693,24 @@ header .brand img:first-child {
 .header-6-sub .signup-form form button:first-child {
   margin: 0;
 }
+.header-8-startup-antiflicker {
+  border-bottom: 1px #bdc3c7 solid;
+}
 .header-8 {
   padding: 0;
+  z-index: 100;
 }
 .header-8 .navbar {
+  position: relative;
+  top: 0;
+  z-index: 2;
   margin: 30px 0 10px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.header-8 .navbar.navbar-fixed-top {
+  position: fixed;
+  margin: 0 auto;
+  top: 0 !important;
 }
 .header-8 .navbar .navbar-inner {
   background: none;
@@ -1707,8 +1719,9 @@ header .brand img:first-child {
   padding-left: 0;
   padding-top: 18px;
   font-size: 25px;
-  font-weight: 500;
-  color: #34495e !important;
+  font-weight: normal;
+  color: #34495e;
+  font-weight: bold;
 }
 .header-8 .navbar .brand img:first-child {
   float: left;
@@ -1737,6 +1750,8 @@ header .brand img:first-child {
   padding: 25px 0 27px;
   font-size: 16px;
   font-weight: normal;
+  color: #7f8c8d;
+  font-weight: bold;
   color: #bdc3c7;
 }
 .header-8 .navbar .nav > li > a:hover,

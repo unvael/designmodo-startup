@@ -43,6 +43,12 @@
   }  
 }
 //-- end HELPER FUNCTIONS ---------------------------------------------------------------------------------------
+body > section, header, footer {
+  position: relative;
+  .box-sizing(border-box);
+  @media (max-width: 767px) { padding-right: 20px;  padding-left: 20px; }
+}
+body {@media (max-width: 767px) {padding-right:0; padding-left:0;}}
 .delimiter {
     margin-top: 200px;
     &.line {
@@ -51,3 +57,22 @@
         border-top: 2px solid #ebedee;
     }
 }
+header {
+  padding-top: 100px;
+  padding-bottom: 150px;
+  .brand {
+      .font(25px,@base);
+      font-family:@h-font-family;
+      font-weight: bold;
+      img:first-child {float: left; margin: -10px 15px 0 0; width:50px; height:50px; }
+  }
+}
+.delimiter {
+    margin-top: 200px;
+    &.line {
+        margin-top: 150px;
+        margin-bottom: 150px;
+        border-top: 2px solid #ebedee;
+    }
+}
+

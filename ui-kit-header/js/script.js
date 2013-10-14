@@ -140,12 +140,24 @@ startupKit.uiKitHeader.header8 = function(){
 
 /* Header 9*/
 startupKit.uiKitHeader.header9 = function(){
-	
+
+    startupKit.uiKitHeader._inFixedMode('.header-9');
+
+    $(window).resize(function() {
+        var h = 0;
+        $('body > section:not(.header-9-sub)').each(function() {
+            h += $(this).outerHeight();
+        });
+        $('.sidebar-content').css('height', h+'px');
+    });
+
+    $('.header-9-sub .background').parallax('50%', 0.3, true);
+
 };
 
 /* Header 10*/
 startupKit.uiKitHeader.header10 = function(){
-	
+    startupKit.uiKitHeader._inFixedMode('.header-10');
 };
 
 /* Header 11*/

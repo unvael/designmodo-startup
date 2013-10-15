@@ -213,7 +213,8 @@ startupKit.uiKitHeader.header16 = function(){
     return false;
   });
   
-  $('header-16 .scroll-btn a').on('click', function() {
+  $('.header-16-sub .scroll-btn a').on('click', function(e) {
+  	  e.preventDefault();
       $.scrollTo($(this).closest('section').next(), {axis:'y', duration:500});
       return false;
     }); 

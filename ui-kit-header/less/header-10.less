@@ -1,171 +1,98 @@
 .header-10{
-   z-index: 100;
+  z-index: 100;
   width: 100%;
-  padding:0;
+  padding:80px 0 0 0;
   background: #1b1f23;
-  color: #fff;
+  color: white;
   .navbar {
     position: absolute;
-    z-index: 2;
+    z-index: 2; top: 0;
     margin: 0;
-    top: 0;
-
     &.navbar-fixed-top{
       position:fixed;
       margin:0 auto;
+      top:0 !important;
     }
-
-    .navbar-form,
-    .navbar-search {
+    .navbar-form, .navbar-search {
       margin: 0;
       padding: 20px 0 19px 60px;
     }
-
-    .btn,
-    .btn-group {
-      margin-top: -1px;
-    }
-
+    .btn,.btn-group { margin-top: -1px; }
     .btn {
-      padding-left: 20px;
-      padding-right: 20px;
-
-      &.btn-primary {
-        .btn-background(#27ae60);
-      }
+      padding-left: 20px; padding-right: 20px;    
+      &.btn-primary {.btn-background(@nephritis);}
     }
-
-    .navbar-inner {
-      background: none;
-    }
-
+    .navbar-inner { background: none; }
     .brand {
-      padding-left: 0;
-      padding-top: 21px;
-      font-size: 25px;
-      font-weight: normal;
-      font-family: @h-font-family;
-      color: #fff!important;
-
-      img:first-child {
-        float: left;
-        margin: -10px 15px 0 0;
-      }
+      padding-left: 0;  padding-top: 21px;
+      .font(25px, white); font-family: @h-font-family;      
+      img:first-child {float: left; margin: -10px 15px 0 0; }
     }
-
     .nav {
       > li {
         margin-left: 30px;
-
-        &:first-child {
-          margin-left: 0;
-        }
-
+        &:first-child {margin-left: 0;}
         > a {
-          padding: 29px 0 27px;
-          font-weight: normal;
-          font-size: 17px;
-          .a-color(#fff, #bdc3c7);
+          padding: 29px 0 27px;          
+          .font(17px);
+          .a-color(white, @silver);
         }
-
-        &.active > a {
-          .a-color(#bdc3c7, #bdc3c7);
-        }
+        &.active > a {.a-color(@silver, @silver);}
       }
-    }
-
-
-    // "icon only" style
+    }    // "icon only" style
     .btn-navbar {
       margin: 27px 0 17px;
       padding: 0;
       .border-radius(0);
       border: 0;
       background: none!important;
-      color: #fff;
-
-      &:hover,
-      &:focus {
-        color: #bdc3c7;
-      }
-
-      &:active,
-      &.active {
-        color: darken(#bdc3c7, 20%);
-      }
+      color: white;
+      &:hover, &:focus {color: @silver;}
+      &:active, &.active { color: darken(@silver, 20%);}
     }
-
-
-    @media (max-width: 979px) {
-      .nav-collapse {
-        padding-top: 17px;
-      }
-    }
+    @media (max-width: 979px) { .nav-collapse {padding-top: 17px;}}
   }
-
-
 }
 .header-10-sub{
   z-index: 50;
  .v-center;
   height: 800px;
-
   .hero-unit {
-    padding: 0;
-    margin: 0;
+    padding: 0; margin: 0;
     background-color: transparent;
-
-    h1 {
-      margin: 0 0 30px;
-      font-size: 48px;
-    }
-
-    p {
-      font-size: 25px;
-      font-family: @h-font-family;
-      font-weight: normal;
-      color: #bdc3c7;
-      line-height: 1.5;
-    }
-
+    h1 { margin: 0 0 30px;  .font(48px, white); font-family: @h-font-family;}
+    p {.font(25px, @silver); font-family: @h-font-family; .line-height(37.5px);}
     @media (max-width: 480px) {
-      h1 {
-        font-size: 36px;
-      }
-
-      p {
-        font-size: 22px;
-        line-height: 1.2;
-      }
+      h1 {.font(36px, white); font-family: @h-font-family;}
+      p {.font(22px,@silver); .line-height(21.6px);}
     }
   }
-
   .hero-unit.hero-unit-bordered {
     h1 {
-      font-size: 46px;
-      font-weight: bold;
-      border: 8px solid #fff;
+      .font(46px, white); font-weight: bold; font-family: @h-font-family;
+      border: 8px solid white;
       display: inline-block;
-      margin: 0;
-      padding: 30px 40px;
+      margin: 0; padding: 30px 40px;
     }
-
-    @media (max-width: 480px) {
-      h1 {
-        font-size: 22px;
-      }
-    }
+    @media (max-width: 480px) { h1 {.font(22px, white); }}
   }
-
-
   background: #1b1f23 url('../img/img-1.jpg') 50% 50% no-repeat fixed;
   .background-size(cover);
-  color: #fff;
+  color: white;
   text-align: center;
-
-  @media (max-width: 480px) {
-    &.v-center > div {
-      padding-top: 35px;
-    }
+  @media (max-width: 480px) { &.v-center > div { padding-top: 35px;}}
+  .control-btn {
+    width: 53px; height: 53px;
+    .line-height(53px);
+    margin: 0; padding: 0;
+    border-radius: 50%;
+    text-align: center;
+    .font(19px ); .a-color(#fff, #fff);
+    background: #121518; .opacity(80);  
+    &:hover, &:focus, &:active, &.active { .opacity(100); }
+    position: absolute;
+    left: 50%; bottom: 80px;
+    margin-left: -26.5px;  
+    @media (max-width: 480px) {bottom: 30px;}
   }
 }

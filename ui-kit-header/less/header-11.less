@@ -1,0 +1,122 @@
+.header-11{
+  z-index: 100;
+  width: 100%;
+  padding:80px 0 0 0;  
+    .navbar {
+      position: absolute;
+      z-index: 2; top: 0;
+      margin: 0;
+      font-family: @h-font-family;
+      &.navbar-fixed-top{
+        position:fixed;
+        margin:0 auto;
+        top:0 !important;
+      }
+      .navbar-form,.navbar-search {  margin: 0;  padding: 20px 0 19px 30px;}
+      .btn,.btn-group { margin-top: -1px;}
+      .btn {padding-left: 18px; padding-right: 18px;}
+      .btn.btn-primary {.btn-background(@button-primary-active);}
+      .navbar-inner {background: none;}
+      .brand {
+        padding-left: 0;    
+        .font(25px, @base);
+          img:first-child {
+          float: left;
+          margin: -10px 15px 0 0;
+        }
+      }
+      .nav {
+        > li {
+          margin-left: 25px;
+          &:first-child {margin-left: 0;}
+          > a {padding: 29px 0 27px; .font(14px);}
+        }
+      }
+      .btn-navbar {
+        margin: 28px 0 17px;
+        padding: 0;
+        .border-radius(0);
+        border: 0;
+        background: none!important;
+      }
+      @media (max-width: 979px) {.nav-collapse { padding-top: 28px;}}
+  }
+}
+.header-11-sub{
+  padding:80px 0;
+  background-image: url('../img/img-1.jpg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  .background-size(cover);
+  color: @silver;
+  position: relative;
+
+  h3 {.font(33px,white);  font-family: @h-font-family;}
+
+  p {.font(16px, @silver); font-family: @h-font-family;}
+  .additional-links {
+    .opacity(50);
+    .font(12px, @silver);
+    a {text-decoration: underline; .a-color(@silver);}
+  }
+  @media (max-width: 767px) { .span7.offset1 { margin-top: 30px; }}
+  @media (max-width: 480px) {
+    padding-top: 30px; padding-bottom: 30px;
+    h3 { .font(26px, white);}
+  }  
+  .signup-form {
+      form {
+        margin-top: 40px;  
+        .controls-row:first-child + .controls-row {
+          display: table;
+          width: 100%;  
+          > div {
+            display: table-cell;
+            width: 50%;
+            padding-left: 5px;  
+            @media (max-width: 767px) {padding-left: 9px;}  
+            &:first-child {
+              padding-left: 0; padding-right: 5px;  
+              @media (max-width: 767px) {padding-right: 9px;}
+            }
+          }  
+          input {
+            width: 100%; height: 41px;
+            .box-sizing(border-box);          
+          }
+        }  
+        .btn {
+          @media (max-width: 767px) { margin: 9px 0; }  
+          &.btn-info {
+            &:hover,&:focus {background-color: @button-primary-active;}  
+            &:active,&.active {background-color: mix(@button-primary-active, black, 85%);}
+          }
+        }  
+        input[type="text"], input[type="password"] { border-color: white!important;}
+      }
+      @media (max-width: 480px) {form {margin-top: 25px;}}
+  }
+  .player {
+    .border-radius(6px);
+    background: @silver;
+    position: relative;
+    overflow: hidden;
+    height: 360px;
+    .btn-play {
+      .box-sizing(border-box);
+      position: absolute;
+      left: 10px; bottom: 10px;
+      width: 60px;
+      padding-left: 16px;
+      .border-radius(3px);
+      &.btn-primary {.btn-background(@button-primary-active);}
+    }
+    > iframe {
+      width: 100%; height: 100%;
+      border: 0;
+      display: block;
+    }
+    @media (max-width: 480px) { height: 160px;}
+  }
+
+}

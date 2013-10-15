@@ -158,11 +158,22 @@ startupKit.uiKitHeader.header9 = function(){
 /* Header 10*/
 startupKit.uiKitHeader.header10 = function(){
     startupKit.uiKitHeader._inFixedMode('.header-10');
+    if($('.header-10 .navbar').hasClass('navbar-fixed-top')){
+    	$('.header-10').css('position','fixed');
+    };
+    
+    $('.header-10-sub .control-btn').on('click', function() {
+    $.scrollTo($(this).closest('section').next(), {axis:'y', duration:500});
+    return false;
+  });
 };
 
 /* Header 11*/
 startupKit.uiKitHeader.header11 = function(){
-	
+	startupKit.uiKitHeader._inFixedMode('.header-11');
+    if($('.header-11 .navbar').hasClass('navbar-fixed-top')){
+    	$('.header-11').css('position','fixed');
+    };
 };
 
 /* Header 12*/
@@ -172,7 +183,9 @@ startupKit.uiKitHeader.header12 = function(){
 
 /* Header 13*/
 startupKit.uiKitHeader.header13 = function(){
-	
+  // Parallax
+  $('.header-13-sub').parallax('50%', 0.3, true);
+  
 };
 
 /* Header 14*/
@@ -182,11 +195,28 @@ startupKit.uiKitHeader.header14 = function(){
 
 /* Header 15*/
 startupKit.uiKitHeader.header15 = function(){
-	
+	startupKit.uiKitHeader._inFixedMode('.header-15');
 };
 
 /* Header 16*/
 startupKit.uiKitHeader.header16 = function(){
+	
+	startupKit.uiKitHeader._inFixedMode('.header-16');	
+	var pt = PageTransitions();
+  pt.init('#h-16-pt-main');
+  $('#h-16-pt-main .pt-control-prev').on('click', function() {
+    pt.gotoPage(51, 'prev');
+    return false;
+  });
+  $('#h-16-pt-main .pt-control-next').on('click', function() {
+    pt.gotoPage(50, 'next');
+    return false;
+  });
+  
+  $('header-16 .scroll-btn a').on('click', function() {
+      $.scrollTo($(this).closest('section').next(), {axis:'y', duration:500});
+      return false;
+    }); 
 	
 };
 

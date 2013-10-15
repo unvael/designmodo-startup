@@ -2,7 +2,7 @@
 
 @h-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 @c-font-family: Lato, sens-serif;
-@h-text-color:@midnight-blue;
+@h-text-color: @midnight-blue;
 @c-text-color: @asbestos;
 
 // 14px - base font-size in flat-ui, so if it will change we should change all fonts. And this mixin do it!
@@ -43,12 +43,6 @@
   }  
 }
 //-- end HELPER FUNCTIONS ---------------------------------------------------------------------------------------
-body > section, header, footer {
-  position: relative;
-  .box-sizing(border-box);
-  @media (max-width: 767px) { padding-right: 20px;  padding-left: 20px; }
-}
-body {@media (max-width: 767px) {padding-right:0; padding-left:0;}}
 .delimiter {
     margin-top: 200px;
     &.line {
@@ -67,12 +61,3 @@ header {
       img:first-child {float: left; margin: -10px 15px 0 0; width:50px; height:50px; }
   }
 }
-.delimiter {
-    margin-top: 200px;
-    &.line {
-        margin-top: 150px;
-        margin-bottom: 150px;
-        border-top: 2px solid #ebedee;
-    }
-}
-

@@ -145,13 +145,30 @@
   border-color: #7f8c8d;
 }
 body {
+  color: #7f8c8d;
   line-height: 1.29;
 }
-img {
-  -webkit-backface-visibility: hidden;
+@media (max-width: 767px) {
+  body {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
-body {
-  color: #7f8c8d;
+body > section,
+header,
+footer {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media (max-width: 767px) {
+  body > section,
+  header,
+  footer {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
 h1,
 .h1,
@@ -165,7 +182,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #2c3e50;
 }
 h1 {
@@ -174,27 +191,8 @@ h1 {
 h3 {
   font-weight: normal;
 }
-body > section,
-header,
-footer {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  position: relative;
-}
-@media (max-width: 767px) {
-  body > section,
-  header,
-  footer {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-}
-@media (max-width: 767px) {
-  body {
-    padding-right: 0;
-    padding-left: 0;
-  }
+img {
+  -webkit-backface-visibility: hidden;
 }
 .delimiter {
   margin-top: 200px;
@@ -209,24 +207,35 @@ header {
   padding-bottom: 150px;
 }
 header .brand {
-  font-weight: bold;
   font-size: 25px;
-  color: #34495e !important;
+  font-weight: normal;
+  color: #34495e;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
 }
 header .brand img:first-child {
   float: left;
   margin: -10px 15px 0 0;
+  width: 50px;
+  height: 50px;
 }
-.section-1 h1 {
+.startup-kit_header h1 {
   font-size: 45px;
-  margin: 0 0 50px;
+  font-weight: normal;
+  color: #2c3e50;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 59.99999999999999px;
 }
-@media (max-width: 480px) {
-  .section-1 h1 {
-    font-size: 30px;
-    margin: 0 0 30px;
-  }
+.startup-kit_header p {
+  font-size: 18px;
+  font-weight: normal;
+  color: #7f8c8d;
+  font-family: Lato, sens-serif;
+  line-height: 29.999999999999996px;
 }
+/**
+ * Copntact 1 stylesheet  
+ * */
 .contacts-1 h3 {
   font-size: 30px;
   margin: 0 0 60px;
@@ -304,7 +313,7 @@ header .brand img:first-child {
 }
 .contacts-1 .phone {
   font-size: 13px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   letter-spacing: 2px;
   line-height: 1.2;
@@ -338,6 +347,9 @@ header .brand img:first-child {
     font-size: 40px;
   }
 }
+/**
+ * Copntact 2 stylesheet  
+ * */
 .contacts-2 h3 {
   font-size: 30px;
   margin: 0 0 40px;
@@ -448,6 +460,9 @@ header .brand img:first-child {
     margin-bottom: 0px;
   }
 }
+/**
+ * Copntact 3 stylesheet  
+ * */
 .contacts-3 h3 {
   font-size: 30px;
   margin: 0 0 15px;
@@ -548,6 +563,9 @@ header .brand img:first-child {
     margin-bottom: 0px;
   }
 }
+/**
+ * Copntact 4 stylesheet  
+ * */
 .contacts-4 {
   background: #34495e url('../img/map.png') 50% 50% no-repeat;
   -webkit-background-size: cover;
@@ -618,7 +636,7 @@ header .brand img:first-child {
 .contacts-4 .links {
   margin: 35px 0 0;
   font-size: 47px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   word-break: break-all;
 }
@@ -637,6 +655,9 @@ header .brand img:first-child {
     font-size: 26px;
   }
 }
+/**
+ * Copntact 5 stylesheet  
+ * */
 .contacts-5 h6 {
   font-size: 18px;
 }

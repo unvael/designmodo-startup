@@ -145,13 +145,30 @@
   border-color: #7f8c8d;
 }
 body {
+  color: #7f8c8d;
   line-height: 1.29;
 }
-img {
-  -webkit-backface-visibility: hidden;
+@media (max-width: 767px) {
+  body {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
-body {
-  color: #7f8c8d;
+body > section,
+header,
+footer {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media (max-width: 767px) {
+  body > section,
+  header,
+  footer {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
 h1,
 .h1,
@@ -165,7 +182,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #2c3e50;
 }
 h1 {
@@ -174,27 +191,8 @@ h1 {
 h3 {
   font-weight: normal;
 }
-body > section,
-header,
-footer {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  position: relative;
-}
-@media (max-width: 767px) {
-  body > section,
-  header,
-  footer {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-}
-@media (max-width: 767px) {
-  body {
-    padding-right: 0;
-    padding-left: 0;
-  }
+img {
+  -webkit-backface-visibility: hidden;
 }
 .delimiter {
   margin-top: 200px;
@@ -209,23 +207,17 @@ header {
   padding-bottom: 150px;
 }
 header .brand {
-  font-weight: bold;
   font-size: 25px;
-  color: #34495e !important;
+  font-weight: normal;
+  color: #34495e;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
 }
 header .brand img:first-child {
   float: left;
   margin: -10px 15px 0 0;
-}
-.section-1 h1 {
-  font-size: 45px;
-  margin: 0 0 50px;
-}
-@media (max-width: 480px) {
-  .section-1 h1 {
-    font-size: 30px;
-    margin: 0 0 30px;
-  }
+  width: 50px;
+  height: 50px;
 }
 .ribbon {
   display: block;
@@ -254,6 +246,23 @@ header .brand img:first-child {
   right: -5px;
   top: 0;
 }
+.startup-kit_header h1 {
+  font-size: 45px;
+  font-weight: normal;
+  color: #2c3e50;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 59.99999999999999px;
+}
+.startup-kit_header p {
+  font-size: 18px;
+  font-weight: normal;
+  color: #7f8c8d;
+  font-family: Lato, sens-serif;
+  line-height: 29.999999999999996px;
+}
+/**
+ * Price 1 stylesheet  
+ * */
 .price-1 .plan {
   position: relative;
   -webkit-box-sizing: border-box;
@@ -308,6 +317,9 @@ header .brand img:first-child {
     margin-top: 0;
   }
 }
+/**
+ * Price 2 stylesheet  
+ * */
 .price-2 .plans {
   display: table;
   -webkit-box-sizing: border-box;
@@ -340,7 +352,7 @@ header .brand img:first-child {
   padding: 55px 0 55px;
   background: #34495e;
   color: #fff;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 16px;
   letter-spacing: 2px;
@@ -478,6 +490,9 @@ header .brand img:first-child {
     right: 0;
   }
 }
+/**
+ * Price 3 stylesheet  
+ * */
 .price-3 .plans {
   *zoom: 1;
 }
@@ -549,6 +564,9 @@ header .brand img:first-child {
     margin: 50px 0;
   }
 }
+/**
+ * Price 4 stylesheet  
+ * */
 .price-4 .plan {
   position: relative;
   -webkit-box-sizing: border-box;
@@ -663,6 +681,9 @@ header .brand img:first-child {
     margin-top: 50px;
   }
 }
+/**
+ * Price 5 stylesheet  
+ * */
 .price-5 .plans {
   display: table;
   -webkit-box-sizing: border-box;
@@ -691,7 +712,7 @@ header .brand img:first-child {
   padding: 32px 0 40px;
   background: #1abc9c;
   color: #fff;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 3px;

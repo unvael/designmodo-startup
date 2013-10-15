@@ -145,13 +145,30 @@
   border-color: #7f8c8d;
 }
 body {
+  color: #7f8c8d;
   line-height: 1.29;
 }
-img {
-  -webkit-backface-visibility: hidden;
+@media (max-width: 767px) {
+  body {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
-body {
-  color: #7f8c8d;
+body > section,
+header,
+footer {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media (max-width: 767px) {
+  body > section,
+  header,
+  footer {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
 h1,
 .h1,
@@ -165,7 +182,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #2c3e50;
 }
 h1 {
@@ -174,34 +191,15 @@ h1 {
 h3 {
   font-weight: normal;
 }
-body > section,
-header,
-footer {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  position: relative;
-}
-@media (max-width: 767px) {
-  body > section,
-  header,
-  footer {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-}
-@media (max-width: 767px) {
-  body {
-    padding-right: 0;
-    padding-left: 0;
-  }
+img {
+  -webkit-backface-visibility: hidden;
 }
 .delimiter {
-  margin-top: 300px;
+  margin-top: 200px;
 }
 .delimiter.line {
-  margin-top: 200px;
-  margin-bottom: 200px;
+  margin-top: 150px;
+  margin-bottom: 150px;
   border-top: 2px solid #ebedee;
 }
 header {
@@ -209,23 +207,17 @@ header {
   padding-bottom: 150px;
 }
 header .brand {
-  font-weight: bold;
   font-size: 25px;
-  color: #34495e !important;
+  font-weight: normal;
+  color: #34495e;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
 }
 header .brand img:first-child {
   float: left;
   margin: -10px 15px 0 0;
-}
-.section-1 h1 {
-  font-size: 45px;
-  margin: 0 0 50px;
-}
-@media (max-width: 480px) {
-  .section-1 h1 {
-    font-size: 30px;
-    margin: 0 0 30px;
-  }
+  width: 50px;
+  height: 50px;
 }
 .pt-perspective {
   position: relative;
@@ -264,6 +256,23 @@ header .brand img:first-child {
 .pt-page-ontop {
   z-index: 999;
 }
+.startup-kit_header h1 {
+  font-size: 45px;
+  font-weight: normal;
+  color: #2c3e50;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 59.99999999999999px;
+}
+.startup-kit_header p {
+  font-size: 18px;
+  font-weight: normal;
+  color: #7f8c8d;
+  font-family: Lato, sens-serif;
+  line-height: 29.999999999999996px;
+}
+/**
+ * Blog 1 stylesheet  
+ * */
 .blog-1 .box-icon {
   margin: 0 auto 35px;
   text-align: center;
@@ -334,7 +343,7 @@ header .brand img:first-child {
 }
 .blog-1 .page-transitions .hero-unit p {
   font-size: 20px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
 }
@@ -397,7 +406,7 @@ header .brand img:first-child {
 }
 .blog-1 .title .submitted {
   font-size: 13px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -421,7 +430,7 @@ header .brand img:first-child {
 .blog-1 .links,
 .blog-1 .links * {
   font-size: 13px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -544,6 +553,9 @@ header .brand img:first-child {
     float: none;
   }
 }
+/**
+ * Blog 2 stylesheet  
+ * */
 .blog-2 {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -556,7 +568,7 @@ header .brand img:first-child {
   margin: 0 0 20px;
   font-size: 35px;
   font-weight: bold;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .blog-2 h3 img {
   display: block;
@@ -565,7 +577,7 @@ header .brand img:first-child {
 .blog-2 h4 {
   margin: 0 0 24px;
   color: #34495e;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 30px;
 }
 .blog-2 h6 {
@@ -621,6 +633,9 @@ header .brand img:first-child {
     margin-bottom: 45px;
   }
 }
+/**
+ * Blog 3 stylesheet  
+ * */
 .blog-3 p {
   margin: 0;
 }
@@ -671,7 +686,7 @@ header .brand img:first-child {
   position: relative;
   margin-bottom: 35px;
   font-size: 37px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #2c3e50;
 }
 .blog-3 .quote:before {
@@ -689,7 +704,7 @@ header .brand img:first-child {
 .blog-3 .links,
 .blog-3 .links * {
   font-size: 13px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -712,6 +727,9 @@ header .brand img:first-child {
 .blog-3 .links a.active {
   color: #15967d;
 }
+/**
+ * Blog 4 stylesheet  
+ * */
 .blog-4 p {
   margin: 0;
 }
@@ -746,7 +764,7 @@ header .brand img:first-child {
   position: relative;
   margin: 60px 0 55px;
   font-size: 37px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #2c3e50;
   line-height: 1.35;
 }
@@ -759,7 +777,7 @@ header .brand img:first-child {
 .blog-4 .tags {
   margin-top: 70px;
   font-size: 14px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -830,6 +848,9 @@ header .brand img:first-child {
     margin-top: 60px;
   }
 }
+/**
+ * Blog 5 stylesheet  
+ * */
 .blog-5 .box-icon {
   margin: 0 auto 0;
   text-align: center;
@@ -901,7 +922,7 @@ header .brand img:first-child {
 }
 .blog-5 .page-transitions .hero-unit p {
   font-size: 20px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
 }
@@ -943,7 +964,7 @@ header .brand img:first-child {
 }
 .blog-5 .title .submitted {
   font-size: 14px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -994,7 +1015,7 @@ header .brand img:first-child {
   color: #2c3e50;
   background: #f5f6f6;
   font-size: 30px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
 }
 .blog-5 .quote:before {
@@ -1100,7 +1121,7 @@ header .brand img:first-child {
 }
 .blog-5 .tags {
   font-size: 14px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.2em;

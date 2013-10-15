@@ -145,13 +145,30 @@
   border-color: #7f8c8d;
 }
 body {
+  color: #7f8c8d;
   line-height: 1.29;
 }
-img {
-  -webkit-backface-visibility: hidden;
+@media (max-width: 767px) {
+  body {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
-body {
-  color: #7f8c8d;
+body > section,
+header,
+footer {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media (max-width: 767px) {
+  body > section,
+  header,
+  footer {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
 h1,
 .h1,
@@ -165,7 +182,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #2c3e50;
 }
 h1 {
@@ -174,27 +191,8 @@ h1 {
 h3 {
   font-weight: normal;
 }
-body > section,
-header,
-footer {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  position: relative;
-}
-@media (max-width: 767px) {
-  body > section,
-  header,
-  footer {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-}
-@media (max-width: 767px) {
-  body {
-    padding-right: 0;
-    padding-left: 0;
-  }
+img {
+  -webkit-backface-visibility: hidden;
 }
 .delimiter {
   margin-top: 200px;
@@ -209,24 +207,35 @@ header {
   padding-bottom: 150px;
 }
 header .brand {
-  font-weight: bold;
   font-size: 25px;
-  color: #34495e !important;
+  font-weight: normal;
+  color: #34495e;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
 }
 header .brand img:first-child {
   float: left;
   margin: -10px 15px 0 0;
+  width: 50px;
+  height: 50px;
 }
-.section-1 h1 {
+.startup-kit_header h1 {
   font-size: 45px;
-  margin: 0 0 50px;
+  font-weight: normal;
+  color: #2c3e50;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 59.99999999999999px;
 }
-@media (max-width: 480px) {
-  .section-1 h1 {
-    font-size: 30px;
-    margin: 0 0 30px;
-  }
+.startup-kit_header p {
+  font-size: 18px;
+  font-weight: normal;
+  color: #7f8c8d;
+  font-family: Lato, sens-serif;
+  line-height: 29.999999999999996px;
 }
+/**
+ * Crew 1 stylesheet  
+ * */
 .crew-1 h3 {
   margin: 0 0 73px;
   font-size: 30px;
@@ -347,6 +356,9 @@ header .brand img:first-child {
     margin-top: 80px;
   }
 }
+/**
+ * Crew 2 stylesheet  
+ * */
 .crew-2 h3 {
   margin: 0 0 73px;
   font-size: 30px;
@@ -422,7 +434,7 @@ header .brand img:first-child {
   bottom: 19px;
   color: #fff;
   font-size: 13px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.14em;
@@ -493,6 +505,9 @@ header .brand img:first-child {
     border-top: 2px solid #ebedee;
   }
 }
+/**
+ * Crew 3 stylesheet  
+ * */
 .crew-3 h3 {
   margin: 0 0 20px;
   font-size: 30px;
@@ -505,7 +520,7 @@ header .brand img:first-child {
 .crew-3 .title a {
   color: #bdc3c7;
   font-size: 14px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   margin-right: 22px;
@@ -603,7 +618,7 @@ header .brand img:first-child {
   bottom: 19px;
   color: #fff;
   font-size: 13px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.14em;
@@ -647,6 +662,9 @@ header .brand img:first-child {
     display: block;
   }
 }
+/**
+ * Crew 4 stylesheet  
+ * */
 .crew-4 h3 {
   margin: 0 0 73px;
   font-size: 30px;

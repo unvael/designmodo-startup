@@ -928,7 +928,7 @@ header .brand img:first-child {
 }
 .blog-5 .pt-page {
   padding-top: 145px;
-  padding-bottom: 100px;
+  padding-bottom: 145px;
 }
 @media (max-width: 767px) {
   .blog-5 .pt-page {
@@ -1065,7 +1065,7 @@ header .brand img:first-child {
 }
 .blog-5 .boxes .box-1 {
   *zoom: 1;
-  height: 340px;
+  height: 380px;
 }
 .blog-5 .boxes .box-1:before,
 .blog-5 .boxes .box-1:after {

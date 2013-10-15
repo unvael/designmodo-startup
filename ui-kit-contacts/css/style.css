@@ -279,16 +279,16 @@ header .brand img:first-child {
   width: 100%;
   max-width: 100%;
   min-width: 100%;
-  margin-bottom: 29px!important;
-  border-color: #ebedee!important;
-  color: #7f8c8d!important;
+  margin-bottom: 29px;
+  border-color: #ebedee;
+  color: #7f8c8d;
 }
 .contacts-1 form input:focus,
 .contacts-1 form textarea:focus {
-  border-color: #1abc9c!important;
+  border-color: #1abc9c;
 }
 .contacts-1 form input {
-  height: 45px!important;
+  height: 45px;
 }
 .contacts-1 form label {
   margin-bottom: 18px;
@@ -395,16 +395,16 @@ header .brand img:first-child {
   width: 100%;
   max-width: 100%;
   min-width: 100%;
-  margin-bottom: 29px!important;
-  border-color: #ebedee!important;
-  color: #7f8c8d!important;
+  margin-bottom: 29px;
+  border-color: #ebedee;
+  color: #7f8c8d;
 }
 .contacts-2 form input:focus,
 .contacts-2 form textarea:focus {
-  border-color: #1abc9c!important;
+  border-color: #1abc9c;
 }
 .contacts-2 form input {
-  height: 45px!important;
+  height: 45px;
 }
 .contacts-2 form label {
   margin-bottom: 18px;
@@ -497,16 +497,16 @@ header .brand img:first-child {
   width: 100%;
   max-width: 100%;
   min-width: 100%;
-  margin-bottom: 29px!important;
-  border-color: #ebedee!important;
-  color: #7f8c8d!important;
+  margin-bottom: 29px;
+  border-color: #ebedee;
+  color: #7f8c8d;
 }
 .contacts-3 form input:focus,
 .contacts-3 form textarea:focus {
-  border-color: #1abc9c!important;
+  border-color: #1abc9c;
 }
 .contacts-3 form input {
-  height: 45px!important;
+  height: 45px;
 }
 .contacts-3 form label {
   margin-bottom: 18px;

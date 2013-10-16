@@ -266,7 +266,7 @@ startupKit.uiKitHeader.header18 = function(){
       var h = $(this).outerHeight();
       if (h > maxH) maxH = h;
     }).css('height', maxH+'px');
-    $('.page-transitions').css('height', maxH+'px');
+    $('.header-18 .page-transitions').css('height', maxH+'px');
   });
 
 

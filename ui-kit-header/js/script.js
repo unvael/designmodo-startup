@@ -260,6 +260,31 @@ startupKit.uiKitHeader.header17 = function(){
 /* Header 18*/
 startupKit.uiKitHeader.header18 = function(){
 	
+	$(window).resize(function() {
+    var maxH = 0;
+    $('.header-18 section').css('height', $(this).height()+'px').each(function() {
+      var h = $(this).outerHeight();
+      if (h > maxH) maxH = h;
+    }).css('height', maxH+'px');
+    $('.page-transitions').css('height', maxH+'px');
+  });
+
+
+  // PageTransitions
+  var pt = PageTransitions();
+  pt.init('#h-18-pt-main');
+
+  $('.header-18 .pt-control-prev').on('click', function() {
+    pt.gotoPage(55, 'prev');
+    return false;
+  });
+
+  $('.header-18 .pt-control-next').on('click', function() {
+    pt.gotoPage(54, 'next');
+    return false;
+  });	
+
+  	
 };
 
 /* Header 19*/

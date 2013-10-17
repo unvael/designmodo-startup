@@ -283,7 +283,7 @@ img {
     transition: left 0.4s;
   }
   .nav-visible body > * {
-    left: -72% !important;
+    left: -72%;
   }
   .nav-visible .navbar .nav-collapse {
     left: 28%!important;

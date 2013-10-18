@@ -5,6 +5,10 @@
       position:relative;
       margin-top:-25%;
       padding-bottom:25%;
+      @media (max-width: 979px) {
+        margin-top:-45%;
+        padding-bottom:45%;
+      }
        > * {
         .box-sizing(border-box); 
         display:block;  position: relative;             
@@ -39,7 +43,7 @@
     position: absolute;
     top: 50px; left: 0; right: 0;
     padding:0;
-    .brand img{ width:100px; height:100px;}
+    
   }    
   &.pt-perspective {
       position: relative;

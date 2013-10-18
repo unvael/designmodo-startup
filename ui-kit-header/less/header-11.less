@@ -1,7 +1,11 @@
+.header-11-startup-antiflicker{
+    border-bottom:1px @silver solid;
+}
 .header-11{
   z-index: 100;
   width: 100%;
-  padding:80px 0 0 0;  
+  padding:0;  
+  height:80px;
     .navbar {
       position: absolute;
       z-index: 2; top: 0;
@@ -39,20 +43,19 @@
         border: 0;
         background: none!important;
       }
-      @media (max-width: 979px) {.nav-collapse { padding-top: 28px;}}
+      @media (max-width: 979px) {
+        .nav-collapse {
+           padding-top: 28px;
+           .navbar-collapse;
+        }
+      }
   }
 }
 .header-11-sub{
-  padding:80px 0;
-  background-image: url('../img/img-1.jpg');
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  .background-size(cover);
+  padding:110px 0;  
   color: @silver;
   position: relative;
-
-  h3 {.font(33px,white);  font-family: @h-font-family;}
-
+  h3 {.font(33px,white); margin-bottom:30px;  font-family: @h-font-family;}
   p {.font(16px, @silver); font-family: @h-font-family;}
   .additional-links {
     .opacity(50);

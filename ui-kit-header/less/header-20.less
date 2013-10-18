@@ -48,7 +48,12 @@
       &:hover, &:focus {color: @info;}
       &:active, &.active {color: @base;}
     }
-    @media (max-width: 979px) {.nav-collapse {padding-top: 28px;}}
+    @media (max-width: 979px) {
+      .nav-collapse {
+        padding-top: 28px;
+        .navbar-collapse;
+       }
+    }
   }
 }
 .header-20-sub{       

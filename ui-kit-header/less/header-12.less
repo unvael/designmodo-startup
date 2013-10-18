@@ -24,12 +24,7 @@
       }
 }
 .header-12-sub{
-    padding:80px 0;
-    
-    background-image: url('../img/img-1.jpg');
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    .background-size(cover);
+    padding:80px 0;    
     position: relative;
     overflow: hidden;
     &:after {
@@ -39,6 +34,7 @@
       border: 14px solid white;
       border-left-color: #fff55b;
       border-top-color: #fff55b;
+      z-index:3;
     }
     .row {float: left;}
     .hero-unit {
@@ -72,7 +68,7 @@
     }    
     .aside {
         position: relative;
-        background: @danger;
+        background: @peter-river;
         max-width: 220px;
         float: right;
         text-align: center;
@@ -88,7 +84,7 @@
           left: 0; top: 0;
           width: 5000px;
           height: 100%;
-          background: @danger;
+          background: @peter-river;
         }      
         > * {position: relative;}      
         > div > [class*="fui-"] {

@@ -3,7 +3,7 @@
   width: 100%;
   padding:0;
   > .container { position: relative;}  
-  .navbar {
+  .navbar {    
       position: absolute;
       z-index: 2; top: 22px;
       font-family: @h-font-family;
@@ -16,36 +16,40 @@
       .brand {
         padding-left: 0;
         .font(25px,white); font-family:@h-font-family; font-weight: bold;
-        img:first-child {float: left; margin: -10px 15px 0 0; width:50px; height:50px; }
+        img:first-child {float: left; margin: -10px 15px 0 0;}
       }
       .nav {
         > li {
           margin-left: 20px; &:first-child {margin-left: 0;}
           > a {
             padding: 31px 0 27px;
-            .font(14px, white);  font-weight: bold; letter-spacing: 1px;
-            .a-color(#fff, rgba(0, 0, 0, 0.4));
+            .font(18px, white);  font-weight: bold; letter-spacing: 1px;
+            .a-color(white, #506e8c);
           }
-          &.active > a {.a-color(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));}
+          &.active > a {.a-color(#506e8c);}
         }
-      }
-      // "icon only" style
+      }      
       .btn-navbar {
         margin: 28px 0 17px;
         padding: 0;
         .border-radius(0);
         border: 0;
         background: none!important;
-        .a-color(#fff, rgba(0, 0, 0, 0.4));
+        .a-color(white, rgba(0, 0, 0, 0.4));
       }
-      @media (max-width: 979px) {.nav-collapse {padding-top: 40px;}}
+      @media (max-width: 979px) {
+       .nav-collapse {
+         padding-top: 40px;
+         .navbar-collapse; 
+       }          
+      }
+      
   }  
-}
-
+} 
 .header-2-sub {
   z-index: 50; left: 0;
   width: 100%;
-  padding-top: 190px; padding-bottom:90px;
+  padding-top: 159px; padding-bottom:90px;
   color: white;
   text-align: center;
   @media (max-width: 480px) {padding-top: 108px; padding-bottom: 35px;}
@@ -57,7 +61,7 @@
       margin: 0 0 20px;
       .font(30px, white); font-weight: normal;      
     }
-    p {.font(15px,#506e8c); font-weight: bold;}
+    p {.font(15px,#506e8c); font-weight: bold; letter-spacing: 1px;}
   }
   .btns {
     display: inline-block;

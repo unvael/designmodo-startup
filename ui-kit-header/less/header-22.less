@@ -2,7 +2,7 @@
   position:relative;
   z-index:100;
   width:100%;
-  padding-top: 50px;
+  padding:78px 0 0;
   > [class*="fui-"] {
     .center-block;
     text-align: center;
@@ -36,7 +36,8 @@
             &:first-child { margin-left: 0;}      
             > a {
               padding: 29px 0 27px;
-              .font(13px, @silver);              
+              .font(13px, @silver); font-weight:bold;
+              letter-spacing:1px;              
               .a-color(@silver);
             }      
             &.active > a {
@@ -57,10 +58,16 @@
           }      
           &:active, &.active {color: mix(@silver, black, 80%);}
         }     
-        @media (max-width: 979px) {.nav-collapse {padding-top: 68px;}}
+        @media (max-width: 979px) {
+          .nav-collapse {
+            padding-top: 68px;
+            .navbar-collapse;
+          }
+        }
     }  
 }
 .header-22-sub{
+  padding-top:270px;
   .v-center;  
   h3 {
     margin-bottom: 68px;

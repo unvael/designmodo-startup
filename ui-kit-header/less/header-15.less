@@ -66,13 +66,16 @@
         .border-radius(0);
         border: 0;
       }
-      @media (max-width: 979px) {.nav-collapse { padding-top: 18px; }}
+      @media (max-width: 979px) {
+        .nav-collapse { 
+          padding-top: 18px; 
+          .navbar-collapse;
+        }
+      }
    }
 }
 .header-15-sub{  
-  min-height: 800px;
-  background: #171717 url('../img/img-1.jpg') 50% 50% no-repeat;
-  .background-size(cover);
+  min-height: 800px; 
   color: white;
   text-align: center;
   @media (max-width: 480px) { min-height: 0; padding-bottom: 20px;}

@@ -15,7 +15,7 @@ module.exports = function(grunt) {
     },
     watch: {
       less: {
-        files: ['ui-kit-*/less/*.less', 'tpl-*/less/*.less'],
+        files: ['ui-kit-*/less/*.less', 'tpl-*/less/*.less', 'common-files/less/*.less'],
         tasks: 'less',
       }
     },

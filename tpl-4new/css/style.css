@@ -806,6 +806,10 @@ section * {
   font-size: 18px;
   font-weight: normal;
   color: #e74c3c;
+  margin-top: 55px;
+}
+.content-7 h6:first-child {
+  margin-top: auto;
 }
 .content-7 .row > .span3:first-child {
   font-size: 22px;
@@ -852,22 +856,19 @@ section * {
 .content-8 {
   text-align: center;
 }
-.content-8 .container > img {
-  width: 397px;
-  height: 193px;
-}
 .content-8 h3 {
   text-align: center;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: normal;
   color: #34495e;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 40px 0;
+  margin: 55px 0;
 }
 .content-8 p {
   font-size: 18px;
   font-weight: normal;
   color: #7f8c8d;
+  margin-bottom: 55px;
 }
 .content-8 .btn.btn-clear {
   -webkit-box-sizing: border-box;

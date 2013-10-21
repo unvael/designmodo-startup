@@ -8,7 +8,7 @@
   .span7 .quote {
     position: relative;
     &:before {
-      content: url('quote.png');
+      content: url('../../ui-kit-content/img/quote.png');
       position: absolute;
       top: 0;
       left: -60px;
@@ -38,13 +38,13 @@
   }
   .span3 .quote {
     position: relative;
-    margin-top: 40px;
+    margin-top: 50px;
     &:first-child {margin-top: 0;}
     .quote-text {
       margin-top: 10px;
       .font(14px, @concrete);
     }
-    .quote-author {.font(18px, @h-text-color);}
+    .quote-author {.font(18px, @h-text-color); font-family:@c-font-family; font-weight:bold;}
 
     .quote-author-photo {
       position: absolute;
@@ -54,7 +54,7 @@
       overflow: hidden;
       margin-left: -50px; margin-top: 6px;
     }
-    .quote-date {.font(12px, @concrete);}
+    .quote-date {.font(13px, @concrete); font-family:@h-font-family; font-weight:bold;}
   }
   @media (max-width: 480px) {
     padding-top: 80px; padding-bottom: 80px;

@@ -3,8 +3,11 @@
   .nosvg {display:none;}     
   padding:95px 0;
   background: rgba(52, 152, 219, 0.1);
-  h3 {color: @info; text-align: left;}
-  p {.font(16px); .line-height(29.6px);}
+  h3 {
+    .font(30px, @h-text-color); font-family:@h-font-family;
+     text-align: left; margin-bottom:35px;
+  }
+  p {.font(16px); font-family:@c-font-family; .line-height(29.6px);}
   .btn {padding-left: 20px; padding-right: 20px;}
   .btns {
     margin-top: 50px;
@@ -23,9 +26,9 @@
       > *:not(:first-child) {
         padding: 0;
         background: transparent;
-        color: @info;
-        &:hover, &:focus {color: mix(@info, white, 80%);}
-        &:active, &.active {color: mix(@info, black, 85%);}
+        color: @base;
+        &:hover, &:focus {color: mix(@base, white, 80%);}
+        &:active, &.active {color: mix(@base, black, 85%);}
         [class*="fui-"] {.font(30px, inherit); margin: 0;}
         :not([class*="fui-"]) {display: none;}
       }

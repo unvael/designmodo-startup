@@ -6,7 +6,7 @@
       margin-bottom: 100px;
       text-align: center;
       &:before {
-        content: url('quote.png');
+        content: url('../../ui-kit-content/img/quote.png');
         display: block;
         margin: 0 auto 60px;
         text-align: center;
@@ -15,17 +15,17 @@
         max-width: 620px;
         margin: 0 auto;
         padding: 0 20px;
-        .font(30px, @h-text-color);
-        font-family: @h-font-family;
+        .font(30px, @h-text-color); font-family: @h-font-family; font-weight:300;
       }
       .quote-author {
         max-width: 620px;
-        margin: 30px auto 0;
+        margin: 40px auto 0;
         padding: 0 20px;
-        .font(18px, @info);
+        .font(18px, @info); font-family:@c-font-family; font-weight:bold;
       }
       .controls {
         position: relative;  
+        z-index:3;
         > .carousel-control {
           z-index: 5;
           position: absolute;
@@ -50,8 +50,7 @@
         }
       }
       .carousel-inner {
-        padding-bottom: 80px;
-        margin-bottom: -80px;
+        padding-bottom: 75px;       
       }
     // fade out & slide down effect
       .item {
@@ -76,6 +75,6 @@
     }
   .quotes {
     > * {margin-top: 20px;}
-    h6 {font-family: @c-font-family; font-weight: bold;}
+    h6 {.font(18px, @h-text-color); font-family: @c-font-family; font-weight: bold;}
   }
 }

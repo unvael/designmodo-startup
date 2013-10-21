@@ -722,8 +722,6 @@ section * {
 }
 .content-10 .carousel .item img {
   margin: 0 auto;
-  width: 303px;
-  height: 636px;
 }
 .content-10 .carousel .carousel-indicators {
   position: static;
@@ -796,10 +794,13 @@ section * {
   position: absolute;
   left: 0;
   top: 50px;
-  width: 100px;
-  height: 100px;
 }
 .content-10 .features h6 {
+  font-size: 24px;
+  font-weight: normal;
+  color: #2c3e50;
+  font-family: Lato, sens-serif;
+  font-weight: bold;
   margin-top: 0;
   margin-bottom: 15px;
   line-height: 18px;

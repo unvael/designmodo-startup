@@ -1083,8 +1083,6 @@ section * {
 .content-5 .container > img {
   display: block;
   margin: 0 auto 50px;
-  width: 200px;
-  height: 200px;
 }
 .content-5 h3 {
   margin: 0;
@@ -1137,6 +1135,8 @@ section * {
   font-size: 22px;
   font-weight: normal;
   color: #34495e;
+  font-family: Lato, sens-serif;
+  font-weight: bold;
   margin-bottom: 14px;
 }
 /**

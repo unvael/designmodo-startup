@@ -11,7 +11,10 @@
   text-align:center;
   .v-center;
   .row {text-align: left; }
-  h6 {.font(18px, @danger);}
+  h6 {
+    .font(18px, @danger); margin-top:55px;
+    &:first-child{margin-top:auto;}
+  }
   .row > .span3:first-child {
     .font(22px); font-family: @h-font-family;
   }

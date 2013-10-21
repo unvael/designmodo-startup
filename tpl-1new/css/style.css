@@ -799,7 +799,8 @@ section * {
   font-size: 24px;
   font-weight: normal;
   color: #34495e;
-  font-weight: 500;
+  font-family: Lato, sens-serif;
+  font-weight: bold;
 }
 .content-4 .features p {
   font-size: 16px;

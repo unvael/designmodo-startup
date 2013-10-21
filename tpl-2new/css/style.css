@@ -456,6 +456,9 @@ section * {
   z-index: 1;
 }
 /* header */
+/**
+ * Header 2 stylesheet  
+ * */
 .header-2 {
   z-index: 100;
   left: 0;
@@ -811,6 +814,9 @@ section * {
   color: #7f8c8d;
 }
 /* footer */
+/**
+ * Footer 1 stylesheet  
+ * */
 .footer-1 {
   padding-top: 80px;
   padding-bottom: 80px;

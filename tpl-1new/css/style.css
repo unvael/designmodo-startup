@@ -443,6 +443,9 @@ section * {
   z-index: 999;
 }
 /* header */
+/**
+ * Header 1 stylesheet  
+ * */
 .header-1 {
   left: 0;
   top: 0;
@@ -861,6 +864,9 @@ section * {
   display: none;
 }
 /* footer */
+/**
+ * Footer 6 stylesheet  
+ * */
 .footer-6 {
   color: #7f8c8d;
 }

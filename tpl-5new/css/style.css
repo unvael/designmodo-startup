@@ -478,6 +478,9 @@ section * {
   z-index: 999;
 }
 /* header */
+/**
+ * Header 17 stylesheet  
+ * */
 .header-17-startup-antiflicker {
   background: white !important;
 }
@@ -1223,6 +1226,9 @@ section * {
   }
 }
 /* footer */
+/**
+ * Footer 8 stylesheet  
+ * */
 .footer-8 {
   text-align: center;
 }

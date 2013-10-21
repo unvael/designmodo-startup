@@ -424,6 +424,9 @@ section * {
   }
 }
 /* header */
+/**
+ * Header 3 stylesheet  
+ * */
 .header-3-startup-antiflicker {
   border-bottom: 1px #bdc3c7 solid;
 }
@@ -928,6 +931,9 @@ section * {
   }
 }
 /* footer */
+/**
+ * Footer 4 stylesheet  
+ * */
 .footer-4 {
   padding-top: 20px;
   padding-bottom: 20px;

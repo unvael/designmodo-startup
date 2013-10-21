@@ -336,6 +336,9 @@ section * {
   position: relative;
   z-index: 2;
 }
+/**
+ * Header 1 stylesheet  
+ * */
 .header-1 {
   left: 0;
   top: 0;
@@ -768,6 +771,9 @@ section * {
 .content-25 .nosvg {
   display: none;
 }
+/**
+ * Footer 7 stylesheet  
+ * */
 .footer-7 {
   padding-top: 40px;
   padding-bottom: 40px;

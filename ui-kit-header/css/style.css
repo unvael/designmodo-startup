@@ -351,6 +351,9 @@ section * {
   font-family: Lato, sens-serif;
   line-height: 29.999999999999996px;
 }
+/**
+ * Header 1 stylesheet  
+ * */
 .header-1 {
   left: 0;
   top: 0;
@@ -684,6 +687,9 @@ section * {
 .header-1-sub .pt-page-3 .background {
   background-image: url('../../ui-kit-header/img/img-3.jpg');
 }
+/**
+ * Header 2 stylesheet  
+ * */
 .header-2 {
   z-index: 100;
   left: 0;
@@ -934,6 +940,9 @@ section * {
 .header-2-sub .btn.btn-danger.active {
   background-color: #a33025;
 }
+/**
+ * Header 3 stylesheet  
+ * */
 .header-3-startup-antiflicker {
   border-bottom: 1px #bdc3c7 solid;
 }
@@ -1135,6 +1144,9 @@ section * {
     background-position: 50% 50%!important;
   }
 }
+/**
+ * Header 4 stylesheet  
+ * */
 .header-4 {
   padding: 358px 0 360px;
   color: white;
@@ -1221,6 +1233,9 @@ section * {
     margin: 10px 0 0;
   }
 }
+/**
+ * Header 5 stylesheet  
+ * */
 .header-5 {
   padding: 0;
   z-index: 100;
@@ -1782,6 +1797,9 @@ section * {
     transition-delay: 0 !important;
   }
 }
+/**
+ * Header 6 stylesheet  
+ * */
 .header-6 {
   z-index: 100;
   padding: 0;
@@ -2168,6 +2186,9 @@ section * {
 .header-6-sub .signup-form form button:first-child {
   margin: 0;
 }
+/**
+ * Header 7 stylesheet  
+ * */
 .header-7-sub h1 {
   font-weight: 300;
 }
@@ -2545,6 +2566,9 @@ section * {
   border: 0;
   display: block;
 }
+/**
+ * Header 8 stylesheet  
+ * */
 .header-8-startup-antiflicker {
   border-bottom: 1px #bdc3c7 solid;
 }
@@ -2741,6 +2765,9 @@ section * {
   margin-right: auto;
   margin-top: 80px;
 }
+/**
+ * Header 9 stylesheet  
+ * */
 .header-9 {
   z-index: 100;
   padding: 0;
@@ -3049,6 +3076,9 @@ section * {
     margin: 0 10px;
   }
 }
+/**
+ * Header 10 stylesheet  
+ * */
 .header-10 {
   z-index: 100;
   width: 100%;
@@ -3368,6 +3398,9 @@ section * {
     bottom: 30px;
   }
 }
+/**
+ * Header 11 stylesheet  
+ * */
 .header-11-startup-antiflicker {
   border-bottom: 1px #bdc3c7 solid;
 }
@@ -3676,6 +3709,9 @@ section * {
     height: 160px;
   }
 }
+/**
+ * Header 12 stylesheet  
+ * */
 .header-12 {
   padding: 0;
 }
@@ -3930,6 +3966,9 @@ section * {
     margin: 0 auto 10px;
   }
 }
+/**
+ * Header 13 stylesheet  
+ * */
 .header-13 {
   position: absolute;
   width: 100%;
@@ -4087,6 +4126,9 @@ section * {
     transition-delay: 0 !important;
   }
 }
+/**
+ * Header 14 stylesheet  
+ * */
 .header-14-sub {
   color: #bdc3c7;
   position: relative;
@@ -4218,6 +4260,9 @@ section * {
     margin-top: 15px;
   }
 }
+/**
+ * Header 15 stylesheet  
+ * */
 .header-15-startup-antiflicker {
   background: #171717 !important;
 }
@@ -4458,6 +4503,9 @@ section * {
     margin: 40px 0 90px;
   }
 }
+/**
+ * Header 16 stylesheet  
+ * */
 .header-16 {
   padding: 0;
   background: #1b1f23;
@@ -5039,6 +5087,9 @@ section * {
     display: none;
   }
 }
+/**
+ * Header 17 stylesheet  
+ * */
 .header-17-startup-antiflicker {
   background: white !important;
 }
@@ -5482,6 +5533,9 @@ section * {
     padding-bottom: 25px;
   }
 }
+/**
+ * Header 18 stylesheet  
+ * */
 .header-18 {
   height: 100%;
 }
@@ -5810,6 +5864,9 @@ section * {
 .header-18 .header-18-sub .additional-links a.active {
   color: #ffffff;
 }
+/**
+ * Header 19 stylesheet  
+ * */
 .header-19 {
   padding: 0;
   z-index: 100;
@@ -6121,6 +6178,9 @@ section * {
     color: #2c3e50;
   }
 }
+/**
+ * Header 20 stylesheet  
+ * */
 .header-20-startup-antiflicker {
   border-bottom: 2px solid #ECF0F1;
 }
@@ -6456,6 +6516,9 @@ section * {
     margin-top: -20px;
   }
 }
+/**
+ * Header 21 stylesheet  
+ * */
 .header-21 {
   position: relative;
   padding: 0;
@@ -6767,6 +6830,9 @@ section * {
 .header-21-sub .lead {
   color: #bdc3c7;
 }
+/**
+ * Header 22 stylesheet  
+ * */
 .header-22 {
   position: relative;
   z-index: 100;

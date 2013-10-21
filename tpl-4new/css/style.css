@@ -427,6 +427,9 @@ section * {
   }
 }
 /* header */
+/**
+ * Header 10 stylesheet  
+ * */
 .header-10 {
   z-index: 100;
   width: 100%;
@@ -1086,6 +1089,9 @@ section * {
   }
 }
 /* footer */
+/**
+ * Footer 3 stylesheet  
+ * */
 .footer-3 {
   padding-top: 60px;
   padding-bottom: 60px;

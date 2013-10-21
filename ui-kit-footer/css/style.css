@@ -269,6 +269,9 @@ section * {
 .footer-1 .lead b {
   font-weight: bold;
 }
+.footer-1 .social-btns {
+  margin-top: 15px;
+}
 .footer-1 .btn.btn-danger {
   background-color: #c0392b;
 }
@@ -605,10 +608,6 @@ section * {
 .footer-5 .brand {
   display: inline-block;
   margin-bottom: 30px;
-}
-.footer-5 .brand img {
-  width: 35px;
-  height: 35px;
 }
 .footer-5 p {
   font-size: 14px;
@@ -1092,8 +1091,6 @@ section * {
 .footer-10 .brand img:first-child {
   float: left;
   margin: -10px 15px 0 0;
-  width: 50px;
-  height: 50px;
 }
 .footer-10 p {
   font-size: 16px;
@@ -1251,8 +1248,6 @@ section * {
 .footer-11 .brand img:first-child {
   float: left;
   margin: 0 15px 0 0;
-  width: 42px;
-  height: 21px;
 }
 .footer-11 nav ul {
   list-style: none;
@@ -1511,10 +1506,6 @@ section * {
   padding-bottom: 30px;
   background: #171717;
   line-height: 25px;
-}
-.footer-14 .brand img {
-  width: 41px;
-  height: 21px;
 }
 .footer-14 a {
   color: #bdc3c7;

@@ -826,6 +826,9 @@ section * {
 .footer-1 .lead b {
   font-weight: bold;
 }
+.footer-1 .social-btns {
+  margin-top: 15px;
+}
 .footer-1 .btn.btn-danger {
   background-color: #c0392b;
 }

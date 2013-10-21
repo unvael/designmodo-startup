@@ -1850,7 +1850,6 @@ section * {
 }
 .content-20 {
   padding: 200px 0;
-  background: #212a33;
 }
 .content-20.v-center,
 .content-20 .v-center {
@@ -2072,7 +2071,6 @@ section * {
 .content-21 {
   padding-top: 140px;
   padding-bottom: 0;
-  background: #212a33;
 }
 .content-21 h3 {
   font-size: 30px;
@@ -2228,7 +2226,6 @@ section * {
   }
 }
 .content-22 {
-  background: #212a33;
   color: #bdc3c7;
   overflow: hidden;
   padding: 80px 0;
@@ -2430,7 +2427,6 @@ section * {
   color: rgba(255, 255, 255, 0.75);
 }
 .content-23 {
-  background: #1b1f23;
   height: 800px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -2551,7 +2547,6 @@ section * {
 }
 .content-24 {
   padding: 140px 0;
-  background: #34495e;
   color: #bdc3c7;
   overflow: hidden;
 }
@@ -2677,7 +2672,6 @@ section * {
 }
 .content-25 {
   padding: 95px 0;
-  background: #212a33;
 }
 .content-25 h3 {
   font-size: 30px;
@@ -2702,7 +2696,6 @@ section * {
 }
 .content-26 {
   padding: 145px 0;
-  background: #f4f5f6;
   text-align: center;
 }
 .content-26 .lead {
@@ -2730,7 +2723,6 @@ section * {
 }
 .content-27 {
   padding: 95px 0;
-  background: rgba(52, 152, 219, 0.1);
 }
 .content-27 svg,
 .content-27 .svg {
@@ -2822,7 +2814,6 @@ section * {
   overflow: hidden;
   padding-top: 125px;
   padding-bottom: 0;
-  background: #f9f9fa;
   text-align: center;
 }
 .content-28 h3 {

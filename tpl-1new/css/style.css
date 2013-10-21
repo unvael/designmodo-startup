@@ -194,52 +194,6 @@ h3 {
 img {
   -webkit-backface-visibility: hidden;
 }
-.delimiter {
-  margin-top: 200px;
-}
-.delimiter.line {
-  margin-top: 150px;
-  margin-bottom: 150px;
-  border-top: 2px solid #ebedee;
-}
-header {
-  padding-top: 100px;
-  padding-bottom: 150px;
-  z-index: 100;
-}
-header .brand {
-  font-size: 25px;
-  font-weight: normal;
-  color: #34495e;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
-}
-header .brand img:first-child {
-  float: left;
-  margin: -10px 15px 0 0;
-}
-section * {
-  z-index: 2;
-}
-.background {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-  background: 50% 50% no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  opacity: 0.2;
-  filter: alpha(opacity=20);
-}
-.container {
-  position: relative;
-  z-index: 2;
-}
 .navbar .subnav {
   display: none;
 }
@@ -336,111 +290,51 @@ section * {
     visibility: visible;
   }
 }
-.navbar {
-  position: absolute;
-  z-index: 2;
-  width: 100%;
-  top: 22px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+.delimiter {
+  margin-top: 200px;
 }
-.navbar a {
-  -webkit-transition: 0.25s color;
-  -moz-transition: 0.25s color;
-  -o-transition: 0.25s color;
-  transition: 0.25s color;
+.delimiter.line {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  border-top: 2px solid #ebedee;
 }
-.navbar .navbar-inner {
-  background: none;
+header {
+  padding-top: 100px;
+  padding-bottom: 150px;
+  z-index: 100;
 }
-.navbar .brand {
-  padding-left: 0;
-  font-weight: normal;
+header .brand {
   font-size: 25px;
-  letter-spacing: 1px;
-  color: #fff!important;
+  font-weight: normal;
+  color: #34495e;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
 }
-.navbar .brand img:first-child {
+header .brand img:first-child {
   float: left;
   margin: -10px 15px 0 0;
 }
-.navbar .nav > li {
-  margin-left: 20px;
+section * {
+  z-index: 2;
 }
-.navbar .nav > li:first-child {
-  margin-left: 0;
-}
-.navbar .nav > li > a {
-  padding: 31px 0 27px;
-  font-size: 14px;
-  font-weight: normal;
-  letter-spacing: 1px;
-  color: #ffffff;
-}
-.navbar .nav > li > a:hover,
-.navbar .nav > li > a:focus,
-.navbar .nav > li > a.active {
-  color: rgba(0, 0, 0, 0.4);
-}
-.navbar .nav > li.active > a {
-  color: rgba(0, 0, 0, 0.4);
-}
-.navbar .nav > li.active > a:hover,
-.navbar .nav > li.active > a:focus,
-.navbar .nav > li.active > a.active {
-  color: rgba(0, 0, 0, 0.4);
-}
-.navbar .btn-navbar {
-  margin: 28px 0 17px;
-  padding: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  border: 0;
-  background: none!important;
-  color: #ffffff;
-}
-.navbar .btn-navbar:hover,
-.navbar .btn-navbar:focus,
-.navbar .btn-navbar.active {
-  color: rgba(0, 0, 0, 0.4);
-}
-@media (max-width: 979px) {
-  .navbar .nav-collapse {
-    padding-top: 40px;
-  }
-}
-.pt-perspective {
-  position: relative;
-  height: 100%;
-  -webkit-perspective: 1200px;
-  -moz-perspective: 1200px;
-  perspective: 1200px;
-}
-.pt-page {
-  width: 100%;
-  height: 100%;
+.background {
   position: absolute;
-  top: 0;
   left: 0;
-  visibility: hidden;
-  overflow: hidden;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-.pt-page-current,
-.no-js .pt-page {
-  visibility: visible;
+  top: 0;
+  right: 0;
+  bottom: 0;
   z-index: 1;
+  background: 50% 50% no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
 }
-.pt-page-ontop {
-  z-index: 999;
+.container {
+  position: relative;
+  z-index: 2;
 }
 /* header */
 /**
@@ -840,7 +734,6 @@ section * {
 }
 .content-25 {
   padding: 95px 0;
-  background: #212a33;
 }
 .content-25 h3 {
   font-size: 30px;
@@ -1040,17 +933,8 @@ section * {
     margin-bottom: 0;
   }
 }
-.header-1 {
-  position: fixed;
-}
-.header-1 .brand img:first-child {
-  height: auto;
-}
 .content-4,
 .footer-6 {
   padding-top: 80px;
   padding-bottom: 80px;
-}
-.content-25 {
-  background-color: #1abc9c;
 }

@@ -1995,7 +1995,7 @@ section * {
   float: right;
   padding-top: 7px;
   text-align: right;
-  width: 26.9%;
+  width: 25.9%;
 }
 .content-20 .signup-form form .btn.btn-primary {
   background-color: #3498db;
@@ -2032,7 +2032,13 @@ section * {
     height: auto;
   }
   .content-20 .signup-form form .control-group.pull-left {
+    margin-right: 0;
+    width: 100%;
+    float: none;
+  }
+  .content-20 .signup-form form .control-group.pull-right {
     margin-left: 0;
+    width: 100%;
     float: none;
   }
 }
@@ -2769,6 +2775,15 @@ section * {
   font-weight: normal;
   color: #ffffff;
   margin: 0 18px 0 0;
+}
+@media (max-width: 979px) {
+  .content-27 .btns .btn {
+    display: block;
+    margin: 0 20px 20px;
+  }
+  .content-27 .btns .btn:not(:first-child) {
+    float: left;
+  }
 }
 @media (min-width: 481px) {
   .content-27 .btns > *:not(:first-child) {

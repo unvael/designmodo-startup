@@ -194,52 +194,6 @@ h3 {
 img {
   -webkit-backface-visibility: hidden;
 }
-.delimiter {
-  margin-top: 200px;
-}
-.delimiter.line {
-  margin-top: 150px;
-  margin-bottom: 150px;
-  border-top: 2px solid #ebedee;
-}
-header {
-  padding-top: 100px;
-  padding-bottom: 150px;
-  z-index: 100;
-}
-header .brand {
-  font-size: 25px;
-  font-weight: normal;
-  color: #34495e;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
-}
-header .brand img:first-child {
-  float: left;
-  margin: -10px 15px 0 0;
-}
-section * {
-  z-index: 2;
-}
-.background {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-  background: 50% 50% no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  opacity: 0.2;
-  filter: alpha(opacity=20);
-}
-.container {
-  position: relative;
-  z-index: 2;
-}
 .navbar .subnav {
   display: none;
 }
@@ -336,95 +290,51 @@ section * {
     visibility: visible;
   }
 }
-.navbar {
-  margin: 0;
+.delimiter {
+  margin-top: 200px;
 }
-.navbar .navbar-form,
-.navbar .navbar-search {
-  margin: 0;
-  padding: 20px 0 19px 60px;
+.delimiter.line {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  border-top: 2px solid #ebedee;
 }
-.navbar .btn,
-.navbar .btn-group {
-  margin-top: -1px;
+header {
+  padding-top: 100px;
+  padding-bottom: 150px;
+  z-index: 100;
 }
-.navbar .btn {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.navbar .btn.btn-primary {
-  background-color: #27ae60;
-}
-.navbar .btn.btn-primary:hover,
-.navbar .btn.btn-primary:focus {
-  background-color: #52be80;
-}
-.navbar .btn.btn-primary:active,
-.navbar .btn.btn-primary.active {
-  background-color: #219452;
-}
-.navbar .navbar-inner {
-  background: none;
-}
-.navbar .brand {
-  padding-left: 0;
-  padding-top: 21px;
+header .brand {
   font-size: 25px;
   font-weight: normal;
+  color: #34495e;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #fff!important;
+  font-weight: bold;
 }
-.navbar .brand img:first-child {
+header .brand img:first-child {
   float: left;
   margin: -10px 15px 0 0;
 }
-.navbar .nav > li {
-  margin-left: 30px;
+section * {
+  z-index: 2;
 }
-.navbar .nav > li:first-child {
-  margin-left: 0;
+.background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: 50% 50% no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
 }
-.navbar .nav > li > a {
-  padding: 29px 0 27px;
-  font-weight: normal;
-  font-size: 17px;
-  color: #ffffff;
-}
-.navbar .nav > li > a:hover,
-.navbar .nav > li > a:focus,
-.navbar .nav > li > a.active {
-  color: #bdc3c7;
-}
-.navbar .nav > li.active > a {
-  color: #bdc3c7;
-}
-.navbar .nav > li.active > a:hover,
-.navbar .nav > li.active > a:focus,
-.navbar .nav > li.active > a.active {
-  color: #bdc3c7;
-}
-.navbar .btn-navbar {
-  margin: 27px 0 17px;
-  padding: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  border: 0;
-  background: none!important;
-  color: #fff;
-}
-.navbar .btn-navbar:hover,
-.navbar .btn-navbar:focus {
-  color: #bdc3c7;
-}
-.navbar .btn-navbar:active,
-.navbar .btn-navbar.active {
-  color: #869198;
-}
-@media (max-width: 979px) {
-  .navbar .nav-collapse {
-    padding-top: 17px;
-  }
+.container {
+  position: relative;
+  z-index: 2;
 }
 /* header */
 /**
@@ -1187,16 +1097,23 @@ section * {
     margin-top: 0;
   }
 }
+.header-10-sub .background {
+  background-image: url("../img/img-1.jpg");
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+}
 body > section.v-center > div {
   padding-top: 80px;
   padding-bottom: 80px;
 }
 .content-23 {
-  background: #1b1f23 url('../img/img-2.jpg') 50% 50% no-repeat fixed;
+  background-color: #1B1F23;
 }
-.content-8 .container > img {
-  width: auto;
-  height: auto;
+.content-23.custom-bg {
+  background-image: url('../img/img-2.jpg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .footer-3 {
   background-color: #1B1F23;

@@ -40,16 +40,14 @@ function fadedEls(el, shift) {
         }).on('blur', 'input', function() {
             $(this).closest('.control-group, form').removeClass('focus');
         });
-        
 
         // Faded elements
         if ($(window).width() > 480) {
             $('.tpl-8-section-1 h3 img').each(function() {
                 fadedEls($(this), 'h/2');
             });
-        }             
+        }
 
-        
         if ($(window).width() > 480) {
             (function(el) {
                 $(window).resize(function() {
@@ -92,4 +90,4 @@ function fadedEls(el, shift) {
         $(window).resize().scroll();
 
     });
-})(jQuery); 
+})(jQuery);

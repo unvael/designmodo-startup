@@ -60,7 +60,10 @@ function fadedEls(el, shift) {
 
         // Parallax
         $('.header-3-sub .background').each(function() {
-            $(this).parallax('50%', -0.9, false);
+            $(this).parallax('50%', -0.9, true);
+        });
+        $('.tpl-6-section-1').each(function(){
+            $(this).parallax('50%', 0.3, true);
         });
 
         // responsive

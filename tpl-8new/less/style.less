@@ -1,0 +1,122 @@
+@import '../../flat-ui-pro/less/config.less';
+@import '../../flat-ui-pro/less/mixins.less';
+@import '../../common-files/less/mixins.less';
+@import '../../common-files/less/common.less';
+@import '../../common-files/less/navbar.less';
+@import '../../common-files/less/helper.less';
+
+/* header */
+@import "../../ui-kit-header/less/header-21.less";
+
+/* content */
+@import "../../ui-kit-content/less/content-6.less";
+@import "../../ui-kit-content/less/content-12.less";
+@import "../../ui-kit-content/less/content-17.less";
+
+/* footer */
+@import "../../ui-kit-footer/less/footer-9.less";
+
+body > section,
+footer {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.content-12 .btn-wide:hover,.content-12 .btn-wide:active,.content-12 .btn-wide.active{
+  background-color:@wet-asphalt;
+}
+
+.tpl-8-section-1 {
+  position: relative;
+  background-color: #1abc9c;
+  color: #35495d;
+  
+  h3 {
+    .font(35px, #2C3E50);
+    margin-bottom: -3px;
+
+    img {
+      display:block;
+      margin-bottom: 50px;
+    }
+  }
+
+  h6 {
+    .font(20px, #2C3E50);
+    font-family: @c-font-family;
+    font-weight: bold;
+    margin: 0 0 20px;
+  }
+
+  p {
+    line-height: 1.85;
+  }
+
+  .lead {   
+    .font(30px, @base);
+    font-family:@h-font-family;
+  }
+
+  .btn {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  @media (min-width: 768px) {
+    h3 {
+      text-align: left;
+
+      img {
+        margin-left: 0;
+      }
+    }
+
+    .lead {
+      text-align: left;
+    }
+  }
+
+  .background {
+    .opacity(100);
+    display: block;
+    
+    > .container{height:100%;}
+
+    .span4 {
+      position: absolute;
+      height: 100%;
+
+      > div {
+        position: absolute;
+        right: 0;
+        height: 100%;
+        width: 1000px;
+        margin: 0;
+        background: #2c3e50 url('../img/img-1.jpg') 50% 50% no-repeat;
+        .background-size(cover);
+        
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    background-color: #ebedee;
+
+    h3 {
+      text-align: left;
+      margin-bottom: 15px;
+
+      img {
+        margin-left: 0;
+        margin-bottom: 30px;
+      }
+    }
+
+    .lead {
+      text-align: left;
+      .font(26px,#35495d);
+      line-height: 1.2;      
+      margin-bottom: 45px;
+    }
+  }
+}

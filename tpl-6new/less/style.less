@@ -35,3 +35,38 @@ footer {
 .content-12 {
   padding-bottom: 0;
 }
+
+.tpl-6-section-1 {
+  background-image: url('../img/img-1.jpg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  .background-size(cover);
+  h3{
+    .font(30px, white); 
+    font-family:@h-font-family;
+    margin-bottom:20px;
+  }
+  padding-top: 250px;
+  padding-bottom: 250px;
+  text-align: center;
+
+  .container > img {
+    margin-bottom: 50px;
+  }
+
+  .lead {
+    .font(15px,@firm);
+    font-family:@c-font-family;
+    font-weight: bold;
+  }
+
+  @media (max-width: 480px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    // parallax off
+    background-attachment: scroll;
+    background-position: 50% 50%!important;
+  }
+}

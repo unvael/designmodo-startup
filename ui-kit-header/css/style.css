@@ -5808,6 +5808,17 @@ section * {
   color: #ffffff;
   line-height: 33.3px;
 }
+.header-18 .header-18-sub .header-18-section-2 {
+  display: table;
+  width: 100%;
+}
+.header-18 .header-18-sub .header-18-section-2 > div {
+  display: table-cell;
+  padding-bottom: 170px;
+  padding-top: 170px;
+  position: relative;
+  vertical-align: middle;
+}
 .header-18 .header-18-sub footer {
   position: absolute;
   bottom: 0;

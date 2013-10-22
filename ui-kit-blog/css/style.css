@@ -627,6 +627,11 @@ section * {
   right: 0;
   top: 0;
   bottom: 0;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.blog-2 .background > .container {
+  height: 100%;
 }
 .blog-2 .background .span4 {
   position: absolute;

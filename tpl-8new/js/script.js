@@ -43,7 +43,7 @@ function fadedEls(el, shift) {
 
         // Faded elements
         if ($(window).width() > 480) {
-            $('.tpl-8-section-1 h3 img').each(function() {
+            $('h3 img').each(function() {
                 fadedEls($(this), 'h/2');
             });
         }
@@ -84,7 +84,7 @@ function fadedEls(el, shift) {
                     }
 
                 });
-            })($('.tpl-8-section-1'));
+            })($('.blog-2'));
         }
 
         $(window).resize().scroll();

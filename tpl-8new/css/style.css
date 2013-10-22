@@ -824,6 +824,92 @@ section * {
 .content-17 .carousel + * {
   position: relative;
 }
+/* blogs */
+/**
+ * Blog 2 stylesheet  
+ * */
+.blog-2 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+  background-color: #32ccae;
+  font-family: "Lato", sans-serif;
+  color: #35495d;
+}
+.blog-2 h3 {
+  margin: 0 0 20px;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.blog-2 h3 img {
+  display: block;
+  margin-bottom: 80px;
+}
+.blog-2 h4 {
+  margin: 0 0 24px;
+  color: #34495e;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 30px;
+}
+.blog-2 h6 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 30px;
+}
+.blog-2 p {
+  line-height: 1.85;
+  margin: 0;
+  font-size: 16px;
+}
+.blog-2 p + p {
+  margin-top: 20px;
+}
+.blog-2 > * {
+  position: relative;
+}
+.blog-2 .promo {
+  margin: -20px 0 66px;
+}
+.blog-2 .background {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.blog-2 .background > .container {
+  height: 100%;
+}
+.blog-2 .background .span4 {
+  position: absolute;
+  height: 100%;
+}
+.blog-2 .background .span4 > div {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 1000px;
+  margin: 0;
+  background: url('../img/img-1.jpg') 50% 50% no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+@media (max-width: 480px) {
+  .blog-2 h3 img {
+    margin-bottom: 30px;
+  }
+  .blog-2 h4 {
+    font-size: 26px;
+    line-height: 1.2;
+    margin-bottom: 45px;
+  }
+}
 /* footer */
 /**
  * Footer 9 stylesheet  
@@ -873,97 +959,4 @@ footer {
 .content-12 .btn-wide:active,
 .content-12 .btn-wide.active {
   background-color: #34495e;
-}
-.tpl-8-section-1 {
-  position: relative;
-  background-color: #1abc9c;
-  color: #35495d;
-}
-.tpl-8-section-1 h3 {
-  font-size: 35px;
-  font-weight: normal;
-  color: #2c3e50;
-  margin-bottom: -3px;
-}
-.tpl-8-section-1 h3 img {
-  display: block;
-  margin-bottom: 50px;
-}
-.tpl-8-section-1 h6 {
-  font-size: 20px;
-  font-weight: normal;
-  color: #2c3e50;
-  font-family: Lato, sens-serif;
-  font-weight: bold;
-  margin: 0 0 20px;
-}
-.tpl-8-section-1 p {
-  line-height: 1.85;
-  margin-bottom: 3.7em;
-}
-.tpl-8-section-1 .lead {
-  font-size: 30px;
-  font-weight: normal;
-  color: #34495e;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-.tpl-8-section-1 .btn {
-  padding-left: 25px;
-  padding-right: 25px;
-}
-@media (min-width: 768px) {
-  .tpl-8-section-1 h3 {
-    text-align: left;
-  }
-  .tpl-8-section-1 h3 img {
-    margin-left: 0;
-  }
-  .tpl-8-section-1 .lead {
-    text-align: left;
-  }
-}
-.tpl-8-section-1 .background {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  display: block;
-}
-.tpl-8-section-1 .background > .container {
-  height: 100%;
-}
-.tpl-8-section-1 .background .span4 {
-  position: absolute;
-  height: 100%;
-}
-.tpl-8-section-1 .background .span4 > div {
-  position: absolute;
-  right: 0;
-  height: 100%;
-  width: 1000px;
-  margin: 0;
-  background: #2c3e50 url('../img/img-1.jpg') 50% 50% no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-@media (max-width: 480px) {
-  .tpl-8-section-1 {
-    background-color: #ebedee;
-  }
-  .tpl-8-section-1 h3 {
-    text-align: left;
-    margin-bottom: 15px;
-  }
-  .tpl-8-section-1 h3 img {
-    margin-left: 0;
-    margin-bottom: 30px;
-  }
-  .tpl-8-section-1 .lead {
-    text-align: left;
-    font-size: 26px;
-    font-weight: normal;
-    color: #35495d;
-    line-height: 1.2;
-    margin-bottom: 45px;
-  }
 }

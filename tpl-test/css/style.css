@@ -736,8 +736,10 @@ section * {
     margin-bottom: 30px;
   }
 }
-.content-3 .features {
-  margin-top: 195px;
+.content-3 .delimiter {
+  margin-top: 120px;
+  padding-top: 70px;
+  border-top: 2px solid #ecf0f1;
 }
 .content-3 .features h6 {
   font-size: 20px;
@@ -745,6 +747,12 @@ section * {
   color: #34495e;
   font-family: Lato, sens-serif;
   font-weight: bold;
+}
+.content-3.mirror .aligment {
+  float: right;
+}
+.content-3.mirror .img {
+  text-align: left;
 }
 .content-25 {
   padding: 95px 0;

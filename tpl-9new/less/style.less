@@ -1,0 +1,45 @@
+@import '../../flat-ui-pro/less/config.less';
+@import '../../flat-ui-pro/less/mixins.less';
+@import '../../common-files/less/mixins.less';
+@import '../../common-files/less/common.less';
+@import '../../common-files/less/navbar.less';
+@import '../../common-files/less/helper.less';
+
+/* header */
+@import "../../ui-kit-header/less/header-4.less";
+
+/* contents */
+@import "../../ui-kit-content/less/content-20.less";
+@import "../../ui-kit-content/less/content-3.less";
+
+/* price */
+@import "../../ui-kit-price/less/price-1.less";
+
+body > section {
+  &.v-center {
+    > div {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+  }
+}
+
+.header-4, .content-20{
+  padding:0;
+}
+
+.header-4 .background{
+  background-image:url("../img/img-1.jpg");
+  .opacity(100);
+}
+
+.price-1 h3{
+  .font(30px, @h-text-color);
+  font-family:@h-font-family;
+  margin:30px 0;
+}
+
+
+.content-3.bg-clouds .delimiter{
+  border-color: rgba(189, 195, 199, 0.4);
+}

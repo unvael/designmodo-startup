@@ -404,11 +404,29 @@ section * {
 .header-11 .navbar .nav > li:first-child {
   margin-left: 0;
 }
+.header-11 .navbar .nav > li:active a,
+.header-11 .navbar .nav > li.active a {
+  color: #16a085;
+}
+.header-11 .navbar .nav > li:active a:hover,
+.header-11 .navbar .nav > li.active a:hover,
+.header-11 .navbar .nav > li:active a:focus,
+.header-11 .navbar .nav > li.active a:focus,
+.header-11 .navbar .nav > li:active a.active,
+.header-11 .navbar .nav > li.active a.active {
+  color: #16a085;
+}
 .header-11 .navbar .nav > li > a {
   padding: 29px 0 27px;
   font-size: 14px;
   font-weight: normal;
   color: #7f8c8d;
+  color: inherit;
+}
+.header-11 .navbar .nav > li > a:hover,
+.header-11 .navbar .nav > li > a:focus,
+.header-11 .navbar .nav > li > a.active {
+  color: #16a085;
 }
 .header-11 .navbar .btn-navbar {
   margin: 28px 0 17px;

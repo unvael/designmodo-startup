@@ -36,7 +36,10 @@
         > li {
           margin-left: 25px;
           &:first-child {margin-left: 0;}
-          > a {padding: 29px 0 27px; .font(14px);}
+          &:active a, &.active a{.a-color(@link-color, @link-color);}
+          > a {padding: 29px 0 27px; .font(14px);
+            .a-color(inherit, @link-color);            
+          }
         }
       }
       .btn-navbar {

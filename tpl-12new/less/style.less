@@ -1,0 +1,142 @@
+@import '../../flat-ui-pro/less/config.less';
+@import '../../flat-ui-pro/less/mixins.less';
+@import '../../common-files/less/mixins.less';
+@import '../../common-files/less/common.less';
+@import '../../common-files/less/navbar.less';
+@import '../../common-files/less/helper.less';
+
+/* header */
+@import '../../ui-kit-header/less/header-20.less';
+
+/* contents */
+@import '../../ui-kit-content/less/content-10.less';
+
+/* footer */
+@import '../../ui-kit-footer/less/footer-11.less';
+
+body > section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+body > section,
+footer {
+  border-top: 2px solid #ecf0f1;
+}
+
+
+.content-10{
+  overflow:hidden;
+   .features .box{
+      border:0 none;
+      margin-top:0;
+  }
+  > img{
+    bottom: 0;
+    max-width: none;
+    position: absolute;        
+    right: -100px;
+    .opacity(0);
+    
+    &.ani-processed {
+      .transition(~'.8s right, 1.2s opacity');
+      right: 0;
+      .opacity(100);
+    }
+  }
+
+  .box {
+    left: -15%;
+    .opacity(0);
+
+    &.ani-processed {
+      .transition(~'.8s left, 1.2s opacity');
+      left: 0;
+      .opacity(100);
+    }
+  }
+
+  @media (max-width: 480px) {
+    > img {
+      display: none;
+    }
+  }  
+}
+
+.footer-11 nav ul li a {
+  .a-color(@peter-river, @silver);
+}
+
+.tpl-12-section-1 {
+  .logos {
+    margin-top: 30px;
+    display: table;
+    width: 100%;
+
+    > div {
+      display: table-cell;
+      text-align: left;
+    }
+
+    @media (max-width: 480px) {
+      display: none;
+    }
+  }
+}
+
+.tpl-12-section-2 {
+  border-top: 0;
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  h3 {
+    margin: 0 0 38px;
+    text-align: center;
+  }
+  
+  .signup-form {
+    form {
+      margin: 30px auto 0;
+  
+      input,
+      button {
+        float: left;
+        width: 21.8%;
+        margin: 0 0 0 2.3%;
+  
+        @media (min-width: 1200px) {
+          width: 22%;
+        }
+  
+        @media (max-width: 979px) and (min-width: 768px) {
+          width: 21.4%;
+        }
+  
+        @media (max-width: 767px) {
+          width: 23.2%;
+        }
+  
+        @media (max-width: 480px) {
+          width: 100%;
+          margin: 10px 0 0;
+          display: block;
+          float: none;
+        }
+  
+        &:first-child {
+          margin: 0;
+        }
+      }
+  
+      input:focus {
+        border-color: @info!important;
+      }
+    }
+  }
+  
+}
+
+
+
+
+

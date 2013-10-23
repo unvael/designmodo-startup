@@ -2190,6 +2190,10 @@ section * {
 /**
  * Header 7 stylesheet  
  * */
+.header-7-sub {
+  height: 100%;
+  overflow: hidden;
+}
 .header-7-sub h1 {
   font-weight: 300;
 }
@@ -2254,7 +2258,7 @@ section * {
   z-index: 999;
 }
 .header-7-sub .pt-controls {
-  margin: -25% 0 0 30px;
+  margin: -30% 0 0 30px;
   padding-bottom: 25%;
   position: relative;
   z-index: 9999;
@@ -2368,7 +2372,7 @@ section * {
 .header-7-sub .header-7 {
   position: absolute;
   padding: 0;
-  margin-top: -100px;
+  top: 90px;
   left: 0;
   right: 0;
   text-align: left;
@@ -2386,42 +2390,41 @@ section * {
   left: 0;
 }
 .header-7-sub section {
-  background: #2c3e50;
-}
-.header-7-sub .h-7-section-1 {
+  height: 100%;
   display: table;
   width: 100%;
+  background: #2c3e50;
 }
-.header-7-sub .h-7-section-1 > div {
-  display: table-cell;
-  vertical-align: middle;
-  padding-top: 160px;
-  padding-bottom: 160px;
-  position: relative;
-}
-@media (max-width: 480px) {
-  .header-7-sub .h-7-section-1 > div {
-    vertical-align: top;
-    padding-bottom: 70px;
-  }
-}
-.header-7-sub .h-7-section-1 h6 {
+.header-7-sub section h6 {
   font-family: Lato, sens-serif;
 }
-.header-7-sub .h-7-section-1 .span8 {
+.header-7-sub section .span8 {
   text-align: center;
 }
-.header-7-sub .h-7-section-1 .span8 > * {
+.header-7-sub section .span8 > * {
   position: relative;
 }
-.header-7-sub .h-7-section-1 .row + .row {
+.header-7-sub section .row + .row {
   position: relative;
 }
-.header-7-sub .h-7-section-1 .lead {
+.header-7-sub section .lead {
   font-size: 22px;
   font-weight: normal;
   color: #bdc3c7;
   margin-bottom: 130px;
+}
+.header-7-sub section > div {
+  display: table-cell;
+  vertical-align: middle;
+  padding-top: 265px;
+  padding-bottom: 160px;
+  position: relative;
+}
+@media (max-width: 480px) {
+  .header-7-sub section > div {
+    vertical-align: top;
+    padding-bottom: 70px;
+  }
 }
 .header-7-sub .h-7-section-1 .box {
   -webkit-box-sizing: border-box;

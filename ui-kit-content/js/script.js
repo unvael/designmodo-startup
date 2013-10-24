@@ -361,6 +361,46 @@ startupKit.uiKitContent.content29 = function() {
 startupKit.uiKitContent.content30 = function() {
 
 };
+/* Content 31*/
+startupKit.uiKitContent.content31 = function() {
+    (function(el) {
+        $(window).scroll(function() {
+          if ($(window).width() > 480) {
+            $('.row', el).each(function(idx) {
+              if ($(window).scrollTop() >= ($(this).offset().top - $(window).height() + $(window).height()/2 +100)) {
+                $(this).addClass('active');
+              } else {
+                $(this).removeClass('active');
+              }
+            });
+          }
+        });
+        $(window).resize(function() {
+          $('.page-transitions', el).each(function() {
+            var maxH = 0;
+            $('.pt-page', this).css('height', 'auto').each(function() {
+              var h = $(this).outerHeight();
+              if (h > maxH) maxH = h;
+            }).css('height', maxH+'px');
+            $(this).css('height', maxH+'px');
+          });
+        });
+        $('.page-transitions', el).each(function() {
+          var pt = PageTransitions();
+          pt.init(this);
+
+          $('.pt-control-prev', this).on('click', function() {
+            pt.gotoPage(33, 'prev');
+            return false;
+          });
+
+          $('.pt-control-next', this).on('click', function() {
+            pt.gotoPage(32, 'next');
+            return false;
+          });
+        });
+    })($('.content-31'));
+};
 
 (function($) {
     $(function() {

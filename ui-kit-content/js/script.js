@@ -50,21 +50,27 @@ startupKit.uiKitContent.content6 = function() {
 startupKit.uiKitContent.content7 = function() {
 
     (function(el) {
-        $('img:first-child', el).css('left', '-29.7%');
-        $(window).resize(function() {
-            if (!el.hasClass('ani-processed')) {
-                el.data('scrollPos', el.offset().top - $(window).height() + el.outerHeight());
-            }
-        }).scroll(function() {
-            if (!el.hasClass('ani-processed')) {
-                if ($(window).scrollTop() >= el.data('scrollPos')) {
-                    el.addClass('ani-processed');
-                    $('img:first-child', el).animate({
-                        left : 0
-                    }, 500);
+        if (el.length != 0) {
+            console.log(el);
+
+            $('img:first-child', el).css('left', '-29.7%');
+            $(window).resize(function() {
+                if (!el.hasClass('ani-processed')) {
+                    el.data('scrollPos', el.offset().top - $(window).height() + el.outerHeight());
                 }
-            }
-        });
+            }).scroll(function() {
+                if (!el.hasClass('ani-processed')) {
+                    if ($(window).scrollTop() >= el.data('scrollPos')) {
+                        el.addClass('ani-processed');
+                        $('img:first-child', el).animate({
+                            left : 0
+                        }, 500);
+                    }
+                }
+            });
+
+        }
+
     })($('.screen'));
 
     $(window).load(function() {
@@ -169,7 +175,7 @@ startupKit.uiKitContent.content18 = function() {
     });
 
     $('#c-18_myCarousel').bind('slid', function() {
-        $('.carousel-control', this).removeClass('disabled');
+        $('.carousel-control', this).removeClass('disabled');        
         if ($('.item.active', this).index() == 0) {
             $('.carousel-control.left', this).addClass('disabled');
         } else if ($('.item.active', this).index() == ($('.item', this).length - 1)) {

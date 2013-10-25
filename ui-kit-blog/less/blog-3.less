@@ -24,6 +24,8 @@
     h3 {
       font-size: 35px;
       margin: 0;
+      font-weight: 300;
+      letter-spacing: -1px;
     }
 
     .submitted {
@@ -55,15 +57,22 @@
   .quote {
     position: relative;
     margin-bottom: 35px;
-    font-size: 37px;
+    font-size: 29px;
+    line-height: 38px;
     font-family: @h-font-family;
     color: #2c3e50;
+    letter-spacing: -1px;
+    font-weight: 300;
 
     &:before {
       content: url('../img/quote-up.png');
       position: absolute;
       top: -17px;
       left: -40px;
+    }
+
+    @media (max-width: 767px) {
+      margin-left: 40px;
     }
   }
 
@@ -85,13 +94,16 @@
 
     h6 {
       margin: 0 0 23px;
+      letter-spacing: 0.19em;
+      font-size: 12px;
+      font-weight: 500;
     }
 
     a {
       .a-color(#1abc9c);
       font-size: 20px;
       font-family: "Lato", sans-serif;
-      font-weight: bold;
+      font-weight: 500;
       text-transform: none;
       letter-spacing: normal;
       line-height: 1.5;

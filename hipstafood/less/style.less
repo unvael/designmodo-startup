@@ -1,0 +1,184 @@
+@import '../../startup/flat-ui-pro/less/config.less';
+@import '../../startup/flat-ui-pro/less/mixins.less';
+@import '../../startup/common-files/less/mixins.less';
+@import '../../startup/common-files/less/common.less';
+@import '../../startup/common-files/less/navbar.less';
+@import '../../startup/common-files/less/helper.less';
+
+
+
+/* header */
+@import '../../startup/ui-kit-header/less/header-10.less';
+
+/* content */
+@import '../../startup/ui-kit-content/less/content-7.less';
+@import '../../startup/ui-kit-content/less/content-8.less';
+@import '../../startup/ui-kit-content/less/content-13.less';
+@import '../../startup/ui-kit-content/less/content-23.less';
+
+/* footer */
+@import '../../startup/ui-kit-footer/less/footer-3.less';
+
+@proxima:  'proxima-nova', sans-serif;
+
+.header-10{height:0;}
+.navbar{padding-top:88px;}
+.header-10 .navbar .nav > li > a{
+    font-family:@proxima;
+}
+section{
+   font-family:@proxima;
+  h6, p{
+     font-family:@proxima !important;
+  }
+}
+.header-10-sub{
+  a{
+    text-decoration:underline;
+    .a-color(@silver, @c-text-color);
+  }
+@-webkit-keyframes ani-mouse {
+  0%     { opacity: 1; top: 29%; }
+  15%    { opacity: 1; top: 50%; }
+  50%    { opacity: 0; top: 50%; }
+  100%   { opacity: 0; top: 29%; }
+}
+
+@-moz-keyframes ani-mouse {
+  0%     { opacity: 1; top: 29%; }
+  15%    { opacity: 1; top: 50%; }
+  50%    { opacity: 0; top: 50%; }
+  100%   { opacity: 0; top: 29%; }
+}
+
+@keyframes ani-mouse {
+  0%     { opacity: 1; top: 29%; }
+  15%    { opacity: 1; top: 50%; }
+  50%    { opacity: 0; top: 50%; }
+  100%   { opacity: 0; top: 29%; }
+}
+  
+   .background{
+      background-image:url("../img/img-1.jpg");
+      .opacity(100);
+      background-size:100%;
+   }
+   .scroll-btn {
+      display: block;
+      position: absolute;
+      left: 0; right: 0; bottom: 80px;
+      text-align: center;
+      > * {
+        display: inline-block;
+        .line-height(18px);
+        .font(13px); .a-color(white, white); font-family: @h-font-family;
+        letter-spacing: 2px;
+        &:hover,&:focus, &:active,&.active {.opacity(80);}
+      }
+      .mouse {
+        position: relative;
+        display: block;
+        width: 46px; height: 73px;
+        margin: 0 auto 20px;
+        .box-sizing(border-box);
+        border: 2px solid white; border-radius: 23px;
+        > * {
+          position: absolute;
+          display: block;
+          top: 29%; left: 50%;
+          width: 8px; height: 8px;
+          margin: -4px 0 0 -4px;
+          background: white;
+          border-radius: 50%;
+          -webkit-animation: ani-mouse 4s linear infinite;
+          -moz-animation: ani-mouse 4s linear infinite;
+          animation: ani-mouse 4s linear infinite;
+        }
+      }
+      @media (max-width: 480px) {bottom: 41px;}
+    }
+}
+
+
+body > section.v-center > div {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.content-7{
+  .font(16px);
+  h3{
+    .font(50px,@h-text-color);
+    margin-bottom:33px;
+  }
+  h6{.font(20px, @h-text-color);}
+  a{.a-color(@nephritis, @emerland);}
+  .lead{
+    .font(25px);
+    margin-bottom:67px;
+    a{border-bottom:1px dashed;
+      &:hover{
+        border-bottom:0 none;
+      } 
+    }
+  }
+  .screen-wrapper-custom{
+    margin:0 auto;
+    width:311px;
+    height:642px;
+    padding: 97px 28px 97px;
+    box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    background:url("../img/iphone.png") no-repeat;
+    .screen-custom{
+      position:relative;
+      height:100%;
+      width:100%;
+      overflow:hidden;
+      img{
+        position:absolute;
+        width:100%;
+      }
+    }
+  }
+}
+.content-23{
+  background-color: #1B1F23;
+  &.custom-bg {
+    background-color: white;
+    background-image:url('../img/table.jpg'), url('../img/table1.jpg');
+    background-position:bottom center;
+    background-repeat:no-repeat,repeat-x;
+    background-attachment: fixed;    
+    background-size: auto 100%;  
+    padding-bottom:256px;
+    height:996px;
+   
+      overflow:hidden;
+   
+    .control-btn{bottom:240px;} 
+  }
+  &.custom-bg2 {
+     background-color: white;
+    background-image:url('../img/img-2.jpg');
+    background-repeat:no-repeat;
+  }
+
+  
+}
+
+.footer-3 {
+	background-color: #1B1F23;
+	color: #7F8C8D;
+}
+
+.content-13.subscribe-form{
+  input[type="text"] {
+    .font(50px, @silver); font-family: @h-font-family;
+    .placeholder-color(@silver);
+  }
+  
+  .ani-placeholder {
+    .font(50px, @silver) ; font-family: @h-font-family;  
+  }
+}

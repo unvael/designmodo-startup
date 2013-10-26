@@ -204,7 +204,7 @@ img {
 }
 header {
   padding-top: 100px;
-  padding-bottom: 150px;
+  padding-bottom: 70px;
   z-index: 100;
 }
 header .brand {
@@ -213,6 +213,7 @@ header .brand {
   color: #34495e;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
+  color: #2c3e50;
 }
 header .brand img:first-child {
   float: left;
@@ -540,11 +541,12 @@ section * {
 }
 .crew-3 .title a {
   color: #bdc3c7;
-  font-size: 14px;
+  font-size: 13px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase;
   margin-right: 22px;
+  letter-spacing: 0.19em;
 }
 .crew-3 .title a:hover,
 .crew-3 .title a:focus,

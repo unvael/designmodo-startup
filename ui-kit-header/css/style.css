@@ -301,7 +301,7 @@ img {
 }
 header {
   padding-top: 100px;
-  padding-bottom: 150px;
+  padding-bottom: 70px;
   z-index: 100;
 }
 header .brand {
@@ -310,6 +310,7 @@ header .brand {
   color: #34495e;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
+  color: #2c3e50;
 }
 header .brand img:first-child {
   float: left;

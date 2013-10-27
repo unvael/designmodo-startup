@@ -825,21 +825,21 @@ section * {
 .footer-10 .brand {
   display: inline-block;
   padding: 3px 0 0;
-  color: #2c3e50;
   font-size: 25px;
   font-weight: normal;
   color: inherit;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
+  color: #34495e;
+}
+.footer-10 .brand img:first-child {
+  float: left;
+  margin: -10px 15px 0 0;
 }
 .footer-10 .brand:hover,
 .footer-10 .brand:focus,
 .footer-10 .brand.active {
   color: #e74c3c;
-}
-.footer-10 .brand img:first-child {
-  float: left;
-  margin: -10px 15px 0 0;
 }
 .footer-10 p {
   font-size: 16px;
@@ -859,12 +859,13 @@ section * {
   font-size: 18px;
   font-weight: normal;
   color: #34495e;
-  font-weight: bold;
+  font-weight: 500;
 }
 .footer-10 nav h6 {
   margin: 0 0 20px;
   line-height: 24.000000000000004px;
   color: #34495e;
+  font-weight: 500;
 }
 .footer-10 nav ul {
   list-style: none;
@@ -937,6 +938,8 @@ section * {
   font-weight: normal;
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: -1px;
 }
 .footer-10 .subscribe-form input[type="text"]:-moz-placeholder {
   color: #ffffff;
@@ -946,6 +949,22 @@ section * {
 }
 .footer-10 .subscribe-form input[type="text"].placeholder {
   color: #ffffff;
+}
+.footer-10 .subscribe-form input[type="text"]::-webkit-input-placeholder {
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+.footer-10 .subscribe-form input[type="text"]:-moz-placeholder {
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+.footer-10 .subscribe-form input[type="text"]::-moz-placeholder {
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+.footer-10 .subscribe-form input[type="text"]:-ms-input-placeholder {
+  font-weight: 500;
+  letter-spacing: -1px;
 }
 .footer-10 .subscribe-form .ani-placeholder {
   -webkit-box-sizing: border-box;
@@ -961,9 +980,17 @@ section * {
 }
 .footer-10 .subscribe-form .btn {
   margin-top: 8px;
-  font-weight: bold;
+  font-weight: 500;
   width: 220px;
   max-width: 100%;
+}
+@media (max-width: 767px) {
+  .footer-10 .subscribe-form {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
 }
 @media (max-width: 480px) {
   .footer-10 .subscribe-form input[type="text"],

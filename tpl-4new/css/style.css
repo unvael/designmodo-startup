@@ -1073,22 +1073,26 @@ section * {
   font-weight: normal;
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
 .footer-3 .additional-links a {
-  color: #7f8c8d;
+  color: #bdc3c7;
   text-decoration: underline;
 }
 .footer-3 .additional-links a:hover,
 .footer-3 .additional-links a:focus,
 .footer-3 .additional-links a.active {
-  color: #bdc3c7;
+  color: #ffffff;
 }
 .footer-3 h6 {
   margin: 0 0 10px;
   font-size: 16px;
   font-weight: normal;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 300;
+}
+.footer-3 .address {
+  line-height: 1.6;
 }
 @media (max-width: 767px) {
   .footer-3 .row > [class*="span"] {

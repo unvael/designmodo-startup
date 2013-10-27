@@ -791,11 +791,12 @@ section * {
   color: #e74c3c;
 }
 .footer-13 nav {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: normal;
   color: inherit;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 .footer-13 nav ul {
   list-style: none;

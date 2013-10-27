@@ -707,12 +707,13 @@ section * {
 .footer-1 .lead {
   margin-bottom: 15px;
   font-size: 23px;
-  color: #ffffff;
   font-weight: normal;
+  color: #ffffff;
+  font-weight: 300;
   letter-spacing: -1px;
 }
 .footer-1 .lead b {
-  font-weight: bold;
+  font-weight: 500;
 }
 .footer-1 .social-btns {
   margin-top: 15px;
@@ -808,8 +809,10 @@ section * {
   }
   .footer-1 .buy-btn {
     float: none;
+    clear: both;
     width: auto;
-    margin: 35px 0;
+    padding: 15px 0 0;
+    margin: 0;
   }
   .footer-1 .buy-btn .btn {
     margin: 0 0 10px;

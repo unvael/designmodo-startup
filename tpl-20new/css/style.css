@@ -601,23 +601,24 @@ section * {
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 24px;
+  font-weight: 300;
 }
 .content-2 p {
   font-size: 16px;
   font-weight: normal;
   color: #7f8c8d;
   font-family: Lato, sens-serif;
-  line-height: 26px;
+  line-height: 29.999999999999996px;
 }
 .content-2 .btns {
-  margin-top: 45px;
+  margin-top: 38px;
   font-size: 15px;
   font-weight: normal;
   color: #7f8c8d;
 }
 .content-2 .btns .btn {
   padding: 9px 17px 10px 15px;
-  margin-right: 12px;
+  margin-right: 26px;
 }
 .content-2 .btns .btn > [class^="fui-"] {
   font-size: 26px;
@@ -627,7 +628,7 @@ section * {
 }
 @media (max-width: 767px) {
   .content-2 .btns {
-    margin-top: 25px;
+    margin-top: 35px;
   }
   .content-2 .span5.offset1 {
     margin-top: 45px;
@@ -668,6 +669,13 @@ section * {
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 80px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+@media (max-width: 767px) {
+  .content-7 h3 {
+    margin-bottom: 20px;
+  }
 }
 .content-7.v-center,
 .content-7 .v-center {
@@ -719,6 +727,11 @@ section * {
 .content-7 h6:first-child {
   margin-top: auto;
 }
+@media (max-width: 767px) {
+  .content-7 h6 {
+    margin-top: 20px;
+  }
+}
 .content-7 .row > .span3:first-child {
   font-size: 22px;
   font-weight: normal;
@@ -727,7 +740,7 @@ section * {
 }
 @media (max-width: 767px) {
   .content-7 .row > [class*="span"] {
-    margin-top: 30px;
+    margin-top: 45px;
   }
   .content-7 .row > [class*="span"]:first-child {
     margin-top: 0;
@@ -770,12 +783,16 @@ section * {
   font-weight: normal;
   color: #34495e;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
 }
 .content-11 > .container {
   position: relative;
 }
 .content-11 .btn {
   margin-left: 30px;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.19em;
 }
 @media (max-width: 480px) {
   .content-11 > .container > span {

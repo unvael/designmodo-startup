@@ -656,6 +656,7 @@ section * {
   font-weight: normal;
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
   margin-bottom: 24px;
 }
 .content-3 p {
@@ -663,7 +664,12 @@ section * {
   font-weight: normal;
   color: #7f8c8d;
   font-family: Lato, sens-serif;
-  line-height: 26px;
+  line-height: 29.999999999999996px;
+}
+@media (max-width: 767px) {
+  .content-3 p {
+    margin-bottom: 34px;
+  }
 }
 .content-3.v-center,
 .content-3 .v-center {
@@ -717,12 +723,20 @@ section * {
   padding-top: 70px;
   border-top: 2px solid #ecf0f1;
 }
+@media (max-width: 767px) {
+  .content-3 .delimiter {
+    display: none;
+  }
+}
 .content-3 .features h6 {
   font-size: 20px;
   font-weight: normal;
   color: #34495e;
   font-family: Lato, sens-serif;
   font-weight: bold;
+}
+.content-3 .features p {
+  line-height: 26px;
 }
 .content-3.mirror .aligment {
   float: right;

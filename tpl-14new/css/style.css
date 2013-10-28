@@ -692,12 +692,16 @@ section * {
   font-weight: normal;
   color: #34495e;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
 }
 .content-11 > .container {
   position: relative;
 }
 .content-11 .btn {
   margin-left: 30px;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.19em;
 }
 @media (max-width: 480px) {
   .content-11 > .container > span {

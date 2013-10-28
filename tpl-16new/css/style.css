@@ -663,11 +663,13 @@ section * {
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 24px;
+  font-weight: 300;
 }
 .content-9 p {
   font-size: 16px;
   font-weight: normal;
   color: #7f8c8d;
+  line-height: 30px;
 }
 .content-9 h6 {
   font-size: 18px;

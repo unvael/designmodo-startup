@@ -657,6 +657,7 @@ section * {
  * Content 6 stylesheet  
  * */
 .content-6 h3 {
+  margin: 0 0 25px;
   text-align: center;
   font-size: 35px;
   font-weight: normal;
@@ -681,6 +682,7 @@ section * {
   font-weight: normal;
   color: #7f8c8d;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
 }
 .content-6.v-center,
 .content-6 .v-center {
@@ -763,6 +765,7 @@ section * {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #ffffff;
   background: #1abc9c;
+  font-weight: 300;
   -webkit-transition: 0.25s color, 0.25s background-color;
   -moz-transition: 0.25s color, 0.25s background-color;
   -o-transition: 0.25s color, 0.25s background-color;

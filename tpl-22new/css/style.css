@@ -936,6 +936,13 @@ section * {
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 80px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+@media (max-width: 767px) {
+  .content-7 h3 {
+    margin-bottom: 20px;
+  }
 }
 .content-7.v-center,
 .content-7 .v-center {
@@ -987,6 +994,11 @@ section * {
 .content-7 h6:first-child {
   margin-top: auto;
 }
+@media (max-width: 767px) {
+  .content-7 h6 {
+    margin-top: 20px;
+  }
+}
 .content-7 .row > .span3:first-child {
   font-size: 22px;
   font-weight: normal;
@@ -995,7 +1007,7 @@ section * {
 }
 @media (max-width: 767px) {
   .content-7 .row > [class*="span"] {
-    margin-top: 30px;
+    margin-top: 45px;
   }
   .content-7 .row > [class*="span"]:first-child {
     margin-top: 0;

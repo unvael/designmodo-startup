@@ -738,6 +738,7 @@ section * {
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 24px;
+  font-weight: 300;
 }
 .content-10 p {
   font-size: 18px;

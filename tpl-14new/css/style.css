@@ -692,12 +692,16 @@ section * {
   font-weight: normal;
   color: #34495e;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
 }
 .content-11 > .container {
   position: relative;
 }
 .content-11 .btn {
   margin-left: 30px;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.19em;
 }
 @media (max-width: 480px) {
   .content-11 > .container > span {
@@ -908,18 +912,20 @@ section * {
  * Footer 5 stylesheet  
  * */
 .footer-5 {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   text-align: center;
 }
 .footer-5 .brand {
   display: inline-block;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
-.footer-5 p {
+.footer-5 .text {
   font-size: 14px;
   font-weight: normal;
   color: rgba(255, 255, 255, 0.8);
+  margin: 0 80px;
+  line-height: 1.45;
 }
 .footer-5 .btn {
   margin-top: 30px;
@@ -938,6 +944,11 @@ section * {
   font-size: 16px;
   font-weight: normal;
   color: #3498db;
+}
+@media (max-width: 979px) {
+  .footer-5 .text {
+    margin: 0;
+  }
 }
 .content-26,
 .content-11 {

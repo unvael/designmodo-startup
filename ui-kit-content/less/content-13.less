@@ -19,7 +19,26 @@
       background: transparent;
       .line-height(60px);
        .font(50px, white); font-family: @h-font-family;
+       font-weight: 500;
+       letter-spacing: -1px;
       .placeholder-color(white);
+
+      &::-webkit-input-placeholder {
+        font-weight: 500;
+        letter-spacing: -1px;
+      }
+      &:-moz-placeholder {
+        font-weight: 500;
+        letter-spacing: -1px;
+      }
+      &::-moz-placeholder {
+        font-weight: 500;
+        letter-spacing: -1px;
+      }
+      &:-ms-input-placeholder {
+        font-weight: 500;
+        letter-spacing: -1px;
+      }
     }
     .ani-placeholder {
       .box-sizing(border-box);

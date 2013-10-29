@@ -553,23 +553,24 @@ section * {
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 24px;
+  font-weight: 300;
 }
 .content-2 p {
   font-size: 16px;
   font-weight: normal;
   color: #7f8c8d;
   font-family: Lato, sens-serif;
-  line-height: 26px;
+  line-height: 29.999999999999996px;
 }
 .content-2 .btns {
-  margin-top: 45px;
+  margin-top: 38px;
   font-size: 15px;
   font-weight: normal;
   color: #7f8c8d;
 }
 .content-2 .btns .btn {
   padding: 9px 17px 10px 15px;
-  margin-right: 12px;
+  margin-right: 26px;
 }
 .content-2 .btns .btn > [class^="fui-"] {
   font-size: 26px;
@@ -579,7 +580,7 @@ section * {
 }
 @media (max-width: 767px) {
   .content-2 .btns {
-    margin-top: 25px;
+    margin-top: 35px;
   }
   .content-2 .span5.offset1 {
     margin-top: 45px;
@@ -619,11 +620,13 @@ section * {
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 24px;
+  font-weight: 300;
 }
 .content-9 p {
   font-size: 16px;
   font-weight: normal;
   color: #7f8c8d;
+  line-height: 30px;
 }
 .content-9 h6 {
   font-size: 18px;
@@ -670,6 +673,7 @@ section * {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #ffffff;
   background: #1abc9c;
+  font-weight: 300;
   -webkit-transition: 0.25s color, 0.25s background-color;
   -moz-transition: 0.25s color, 0.25s background-color;
   -o-transition: 0.25s color, 0.25s background-color;

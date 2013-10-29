@@ -674,6 +674,13 @@ section * {
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 80px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+@media (max-width: 767px) {
+  .content-7 h3 {
+    margin-bottom: 20px;
+  }
 }
 .content-7.v-center,
 .content-7 .v-center {
@@ -725,6 +732,11 @@ section * {
 .content-7 h6:first-child {
   margin-top: auto;
 }
+@media (max-width: 767px) {
+  .content-7 h6 {
+    margin-top: 20px;
+  }
+}
 .content-7 .row > .span3:first-child {
   font-size: 22px;
   font-weight: normal;
@@ -733,7 +745,7 @@ section * {
 }
 @media (max-width: 767px) {
   .content-7 .row > [class*="span"] {
-    margin-top: 30px;
+    margin-top: 45px;
   }
   .content-7 .row > [class*="span"]:first-child {
     margin-top: 0;
@@ -776,13 +788,13 @@ section * {
   font-weight: normal;
   color: #34495e;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 55px 0;
+  margin: 50px 0;
 }
 .content-8 p {
   font-size: 18px;
   font-weight: normal;
   color: #7f8c8d;
-  margin-bottom: 55px;
+  margin-bottom: 50px;
 }
 .content-8 .btn.btn-clear {
   -webkit-box-sizing: border-box;
@@ -790,6 +802,12 @@ section * {
   box-sizing: border-box;
   background: none;
   border: 2px solid #e74c3c;
+  font-size: 14px;
+  font-weight: normal;
+  color: #7f8c8d;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 12px 28px 13px;
   color: #e74c3c;
 }
 .content-8 .btn.btn-clear:hover,
@@ -802,17 +820,6 @@ section * {
   border-color: #c44133;
   background: #c44133;
   color: rgba(255, 255, 255, 0.75);
-}
-.content-8 .btn.btn-clear.btn-large {
-  padding-bottom: 11px;
-}
-.content-8 .btn.btn-large {
-  font-size: 14px;
-  font-weight: normal;
-  color: #7f8c8d;
-  font-weight: bold;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 12px 28px 13px;
 }
 .content-8.v-center,
 .content-8 .v-center {
@@ -864,12 +871,16 @@ section * {
   font-weight: normal;
   color: #34495e;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
 }
 .content-11 > .container {
   position: relative;
 }
 .content-11 .btn {
   margin-left: 30px;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.19em;
 }
 @media (max-width: 480px) {
   .content-11 > .container > span {
@@ -1073,22 +1084,26 @@ section * {
   font-weight: normal;
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
 .footer-3 .additional-links a {
-  color: #7f8c8d;
+  color: #bdc3c7;
   text-decoration: underline;
 }
 .footer-3 .additional-links a:hover,
 .footer-3 .additional-links a:focus,
 .footer-3 .additional-links a.active {
-  color: #bdc3c7;
+  color: #ffffff;
 }
 .footer-3 h6 {
   margin: 0 0 10px;
   font-size: 16px;
   font-weight: normal;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 300;
+}
+.footer-3 .address {
+  line-height: 1.6;
 }
 @media (max-width: 767px) {
   .footer-3 .row > [class*="span"] {

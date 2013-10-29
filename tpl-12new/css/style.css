@@ -738,6 +738,7 @@ section * {
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 24px;
+  font-weight: 300;
 }
 .content-10 p {
   font-size: 18px;
@@ -773,7 +774,7 @@ section * {
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 15px;
-  line-height: 18px;
+  line-height: 1.3;
 }
 .content-10 .features p {
   font-size: 16px;
@@ -785,10 +786,12 @@ section * {
  * Footer 11 stylesheet  
  * */
 .footer-11 {
+  padding-top: 40px;
   text-align: center;
 }
 .footer-11 > .container {
-  padding: 40px 0;
+  padding: 0 0 40px;
+  position: relative;
 }
 .footer-11 a {
   color: #bdc3c7;
@@ -799,11 +802,16 @@ section * {
   color: #3498db;
 }
 .footer-11 .brand {
-  float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .footer-11 .brand img:first-child {
   float: left;
   margin: 0 15px 0 0;
+}
+.footer-11 nav {
+  margin: 0 100px;
 }
 .footer-11 nav ul {
   list-style: none;
@@ -832,7 +840,9 @@ section * {
 }
 .footer-11 .social-btns {
   white-space: nowrap;
-  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .footer-11 .social-btns > * {
   display: inline-block;
@@ -923,8 +933,8 @@ section * {
     margin-top: 0;
   }
   .footer-11 .social-btns {
-    float: none;
-    margin-top: 19px;
+    position: static;
+    margin-top: 30px;
   }
   .footer-11 .additional-links a {
     margin: 0 20px 0 0;

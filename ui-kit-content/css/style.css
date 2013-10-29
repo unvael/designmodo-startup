@@ -419,23 +419,24 @@ section * {
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 24px;
+  font-weight: 300;
 }
 .content-2 p {
   font-size: 16px;
   font-weight: normal;
   color: #7f8c8d;
   font-family: Lato, sens-serif;
-  line-height: 26px;
+  line-height: 29.999999999999996px;
 }
 .content-2 .btns {
-  margin-top: 45px;
+  margin-top: 38px;
   font-size: 15px;
   font-weight: normal;
   color: #7f8c8d;
 }
 .content-2 .btns .btn {
   padding: 9px 17px 10px 15px;
-  margin-right: 12px;
+  margin-right: 26px;
 }
 .content-2 .btns .btn > [class^="fui-"] {
   font-size: 26px;
@@ -445,7 +446,7 @@ section * {
 }
 @media (max-width: 767px) {
   .content-2 .btns {
-    margin-top: 25px;
+    margin-top: 35px;
   }
   .content-2 .span5.offset1 {
     margin-top: 45px;
@@ -481,6 +482,7 @@ section * {
   font-weight: normal;
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
   margin-bottom: 24px;
 }
 .content-3 p {
@@ -488,7 +490,12 @@ section * {
   font-weight: normal;
   color: #7f8c8d;
   font-family: Lato, sens-serif;
-  line-height: 26px;
+  line-height: 29.999999999999996px;
+}
+@media (max-width: 767px) {
+  .content-3 p {
+    margin-bottom: 34px;
+  }
 }
 .content-3.v-center,
 .content-3 .v-center {
@@ -542,12 +549,20 @@ section * {
   padding-top: 70px;
   border-top: 2px solid #ecf0f1;
 }
+@media (max-width: 767px) {
+  .content-3 .delimiter {
+    display: none;
+  }
+}
 .content-3 .features h6 {
   font-size: 20px;
   font-weight: normal;
   color: #34495e;
   font-family: Lato, sens-serif;
   font-weight: bold;
+}
+.content-3 .features p {
+  line-height: 26px;
 }
 .content-3.mirror .aligment {
   float: right;
@@ -564,6 +579,7 @@ section * {
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 24px;
+  font-weight: 300;
 }
 .content-4 p {
   font-size: 16px;
@@ -621,26 +637,34 @@ section * {
   margin: 0 auto 50px;
 }
 .content-5 h3 {
-  margin: 0;
+  margin: 0 0 25px;
   font-size: 35px;
   font-weight: normal;
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
 }
+@media (max-width: 767px) {
+  .content-5 h3 {
+    margin-bottom: 15px;
+  }
+}
 .content-5 h3 + .lead {
   font-size: 25px;
+  font-weight: normal;
   color: #7f8c8d;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
+  font-weight: 300;
   text-align: center;
+}
+@media (max-width: 767px) {
+  .content-5 h3 + .lead {
+    line-height: 1.25;
+  }
 }
 @media (max-width: 480px) {
   .content-5 {
     padding-bottom: 40px;
-  }
-  .content-5 h3 {
-    margin-bottom: 24px;
   }
 }
 .content-5 .features > [class*="span"] {
@@ -679,6 +703,7 @@ section * {
  * Content 6 stylesheet  
  * */
 .content-6 h3 {
+  margin: 0 0 25px;
   text-align: center;
   font-size: 35px;
   font-weight: normal;
@@ -690,6 +715,11 @@ section * {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 35px;
+}
+@media (max-width: 767px) {
+  .content-6 h3 {
+    margin-bottom: 15px;
+  }
 }
 .content-6 p {
   font-size: 16px;
@@ -703,6 +733,12 @@ section * {
   font-weight: normal;
   color: #7f8c8d;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+@media (max-width: 767px) {
+  .content-6 .lead {
+    line-height: 1.25;
+  }
 }
 .content-6.v-center,
 .content-6 .v-center {
@@ -771,6 +807,13 @@ section * {
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 80px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+@media (max-width: 767px) {
+  .content-7 h3 {
+    margin-bottom: 20px;
+  }
 }
 .content-7.v-center,
 .content-7 .v-center {
@@ -822,6 +865,11 @@ section * {
 .content-7 h6:first-child {
   margin-top: auto;
 }
+@media (max-width: 767px) {
+  .content-7 h6 {
+    margin-top: 20px;
+  }
+}
 .content-7 .row > .span3:first-child {
   font-size: 22px;
   font-weight: normal;
@@ -830,7 +878,7 @@ section * {
 }
 @media (max-width: 767px) {
   .content-7 .row > [class*="span"] {
-    margin-top: 30px;
+    margin-top: 45px;
   }
   .content-7 .row > [class*="span"]:first-child {
     margin-top: 0;
@@ -873,13 +921,13 @@ section * {
   font-weight: normal;
   color: #34495e;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 55px 0;
+  margin: 50px 0;
 }
 .content-8 p {
   font-size: 18px;
   font-weight: normal;
   color: #7f8c8d;
-  margin-bottom: 55px;
+  margin-bottom: 50px;
 }
 .content-8 .btn.btn-clear {
   -webkit-box-sizing: border-box;
@@ -887,6 +935,12 @@ section * {
   box-sizing: border-box;
   background: none;
   border: 2px solid #e74c3c;
+  font-size: 14px;
+  font-weight: normal;
+  color: #7f8c8d;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 12px 28px 13px;
   color: #e74c3c;
 }
 .content-8 .btn.btn-clear:hover,
@@ -899,17 +953,6 @@ section * {
   border-color: #c44133;
   background: #c44133;
   color: rgba(255, 255, 255, 0.75);
-}
-.content-8 .btn.btn-clear.btn-large {
-  padding-bottom: 11px;
-}
-.content-8 .btn.btn-large {
-  font-size: 14px;
-  font-weight: normal;
-  color: #7f8c8d;
-  font-weight: bold;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 12px 28px 13px;
 }
 .content-8.v-center,
 .content-8 .v-center {
@@ -961,11 +1004,13 @@ section * {
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 24px;
+  font-weight: 300;
 }
 .content-9 p {
   font-size: 16px;
   font-weight: normal;
   color: #7f8c8d;
+  line-height: 30px;
 }
 .content-9 h6 {
   font-size: 18px;
@@ -1046,6 +1091,7 @@ section * {
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 24px;
+  font-weight: 300;
 }
 .content-10 p {
   font-size: 18px;
@@ -1081,7 +1127,7 @@ section * {
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 15px;
-  line-height: 18px;
+  line-height: 1.3;
 }
 .content-10 .features p {
   font-size: 16px;
@@ -1100,12 +1146,16 @@ section * {
   font-weight: normal;
   color: #34495e;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
 }
 .content-11 > .container {
   position: relative;
 }
 .content-11 .btn {
   margin-left: 30px;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.19em;
 }
 @media (max-width: 480px) {
   .content-11 > .container > span {
@@ -1142,6 +1192,7 @@ section * {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #ffffff;
   background: #1abc9c;
+  font-weight: 300;
   -webkit-transition: 0.25s color, 0.25s background-color;
   -moz-transition: 0.25s color, 0.25s background-color;
   -o-transition: 0.25s color, 0.25s background-color;
@@ -1188,6 +1239,8 @@ section * {
   font-weight: normal;
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: -1px;
 }
 .content-13.subscribe-form input[type="text"]:-moz-placeholder {
   color: #ffffff;
@@ -1197,6 +1250,22 @@ section * {
 }
 .content-13.subscribe-form input[type="text"].placeholder {
   color: #ffffff;
+}
+.content-13.subscribe-form input[type="text"]::-webkit-input-placeholder {
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+.content-13.subscribe-form input[type="text"]:-moz-placeholder {
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+.content-13.subscribe-form input[type="text"]::-moz-placeholder {
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+.content-13.subscribe-form input[type="text"]:-ms-input-placeholder {
+  font-weight: 500;
+  letter-spacing: -1px;
 }
 .content-13.subscribe-form .ani-placeholder {
   -webkit-box-sizing: border-box;
@@ -1248,12 +1317,17 @@ section * {
   }
 }
 .content-14 h3 {
-  margin: 0;
+  margin: 0 0 25px;
   text-align: center;
   font-size: 35px;
   font-weight: normal;
   color: #34495e;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+@media (max-width: 767px) {
+  .content-14 h3 {
+    margin-bottom: 15px;
+  }
 }
 .content-14 .lead {
   font-size: 25px;
@@ -1261,10 +1335,12 @@ section * {
   color: #7f8c8d;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
+  font-weight: 300;
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .content-14 .lead {
-    margin-bottom: 60px;
+    line-height: 1.25;
+    margin-bottom: 50px;
   }
 }
 .content-14 .features {
@@ -1310,6 +1386,7 @@ section * {
 }
 .content-14 .features h6 {
   color: #e74c3c;
+  font-size: 18px;
   font-family: Lato, sens-serif;
   font-weight: bold;
 }
@@ -1542,6 +1619,8 @@ section * {
   font-weight: normal;
   color: #bdc3c7;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  margin-bottom: 35px;
 }
 .content-16 h3 {
   text-align: center;
@@ -1650,6 +1729,7 @@ section * {
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
+  line-height: 40px;
 }
 .content-18 .carousel .quote-author {
   max-width: 620px;
@@ -1728,6 +1808,11 @@ section * {
 .content-18 .carousel + * {
   position: relative;
 }
+@media (max-width: 767px) {
+  .content-18 .carousel {
+    margin-bottom: 0;
+  }
+}
 @media (max-width: 480px) {
   .content-18 .carousel .controls {
     display: none;
@@ -1797,6 +1882,9 @@ section * {
 }
 .content-19 .span7 .quote .quote-author-name {
   display: inline-block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.19em;
 }
 .content-19 .span3 .quote {
   position: relative;
@@ -1831,11 +1919,12 @@ section * {
   margin-top: 6px;
 }
 .content-19 .span3 .quote .quote-date {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: normal;
   color: #95a5a6;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
+  line-height: 1.19em;
 }
 @media (max-width: 480px) {
   .content-19 {
@@ -1904,6 +1993,8 @@ section * {
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 35px;
+  line-height: 40px;
+  font-weight: 300;
 }
 .content-20 h6 {
   font-size: 18px;
@@ -1927,6 +2018,9 @@ section * {
   }
 }
 @media (max-width: 767px) {
+  .content-20 {
+    padding: 80px 20px;
+  }
   .content-20 .signup-form,
   .content-20 .signup-form + div {
     display: block;
@@ -1975,7 +2069,6 @@ section * {
   font-size: 15px;
   font-weight: normal;
   color: #34495e;
-  font-weight: bold;
   margin-bottom: 12px;
 }
 .content-20 .signup-form form input[type="text"],
@@ -1986,9 +2079,13 @@ section * {
   color: #34495e;
   border-color: #ecf0f1;
 }
+.content-20 .signup-form form input[type="text"]:hover,
+.content-20 .signup-form form input[type="password"]:hover {
+  border-color: #bdc3c7;
+}
 .content-20 .signup-form form input[type="text"]:focus,
 .content-20 .signup-form form input[type="password"]:focus {
-  border-color: #14ddb3;
+  border-color: #1abc9c;
 }
 .content-20 .signup-form form .site-link {
   width: 104%;
@@ -2027,6 +2124,12 @@ section * {
 .content-20 .signup-form form .btn.btn-primary.active {
   background-color: #2c81ba;
 }
+@media (max-width: 767px) {
+  .content-20 .signup-form form {
+    display: block;
+    margin: 0 -20px;
+  }
+}
 @media (max-width: 979px) and (min-width: 768px) {
   .content-20 .signup-form form {
     width: 100%;
@@ -2064,13 +2167,19 @@ section * {
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
+  line-height: 32px;
 }
 .content-20 .features h6 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: normal;
   color: #ffffff;
   font-family: Lato, sens-serif;
   margin-top: 50px;
+}
+@media (max-width: 767px) {
+  .content-20 .features h6 {
+    margin-top: 0;
+  }
 }
 @media (max-width: 767px) {
   .content-20 .features > * + * {
@@ -2088,6 +2197,7 @@ section * {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
   margin-bottom: 55px;
+  font-weight: 300;
 }
 @media (max-width: 480px) {
   .content-21 {
@@ -2129,13 +2239,15 @@ section * {
   float: left;
   width: 33%;
   text-align: center;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: normal;
   color: #bdc3c7;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 3px;
   border-left: 2px solid #304357;
   cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 0.19em;
   -webkit-transition: 0.25s;
   -moz-transition: 0.25s;
   -o-transition: 0.25s;

@@ -457,7 +457,7 @@ section * {
   color: #fff;
   font-size: 13px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.14em;
 }
@@ -642,7 +642,7 @@ section * {
   color: #fff;
   font-size: 13px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.14em;
 }
@@ -677,9 +677,12 @@ section * {
   }
 }
 @media (max-width: 767px) {
-  .crew-3 h3,
+  .crew-3 h3 {
+    text-align: center;
+  }
   .crew-3 .title {
     text-align: center;
+    line-height: 23px;
   }
   .crew-3 .social-btns {
     display: block;

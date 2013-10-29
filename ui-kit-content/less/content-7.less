@@ -7,6 +7,11 @@
     .font(35px, @h-text-color);
     font-family:@h-font-family;  
     margin-bottom:80px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
+    }
   }
   text-align:center;
   .v-center;
@@ -14,13 +19,16 @@
   h6 {
     .font(18px, @danger); margin-top:55px;
     &:first-child{margin-top:auto;}
+    @media (max-width: 767px) {
+      margin-top:20px
+    }
   }
   .row > .span3:first-child {
     .font(22px); font-family: @h-font-family;
   }
   @media (max-width: 767px) {
     .row > [class*="span"] {
-      margin-top: 30px;
+      margin-top: 45px;
       &:first-child { margin-top: 0; }
     }
   }

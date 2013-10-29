@@ -6,6 +6,7 @@
     .font(30px, white); font-family:@h-font-family;    
     text-align: center;
     margin-bottom:55px;
+    font-weight: 300;
   }
   @media (max-width: 480px) {padding-bottom: 20px;}
 
@@ -20,10 +21,12 @@
         float: left;
         width: 33%;
         text-align: center;
-        .font(13px, @silver); font-family: @h-font-family;
+        .font(12px, @silver); font-family: @h-font-family;
         letter-spacing: 3px;        
         border-left: 2px solid #304357;
         cursor: pointer;
+        font-weight: 500;
+        letter-spacing: 0.19em;
         .transition(0.25s);  
         &:first-child {border-left: 0;}
         &.active {color: white;

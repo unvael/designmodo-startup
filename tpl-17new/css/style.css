@@ -650,6 +650,9 @@ section * {
 }
 .content-19 .span7 .quote .quote-author-name {
   display: inline-block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.19em;
 }
 .content-19 .span3 .quote {
   position: relative;
@@ -684,11 +687,12 @@ section * {
   margin-top: 6px;
 }
 .content-19 .span3 .quote .quote-date {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: normal;
   color: #95a5a6;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
+  line-height: 1.19em;
 }
 @media (max-width: 480px) {
   .content-19 {

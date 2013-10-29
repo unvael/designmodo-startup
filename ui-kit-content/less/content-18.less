@@ -16,6 +16,7 @@
         margin: 0 auto;
         padding: 0 20px;
         .font(30px, @h-text-color); font-family: @h-font-family; font-weight:300;
+        line-height: 40px;
       }
       .quote-author {
         max-width: 620px;
@@ -71,6 +72,9 @@
         }
       }
      & + * {position: relative;}
+     @media (max-width: 767px) {
+      margin-bottom: 0;
+     }
      @media (max-width: 480px) {.controls {display: none;}}
     }
   .quotes {

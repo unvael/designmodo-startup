@@ -546,12 +546,17 @@ section * {
   }
 }
 .content-14 h3 {
-  margin: 0;
+  margin: 0 0 25px;
   text-align: center;
   font-size: 35px;
   font-weight: normal;
   color: #34495e;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+@media (max-width: 767px) {
+  .content-14 h3 {
+    margin-bottom: 15px;
+  }
 }
 .content-14 .lead {
   font-size: 25px;
@@ -559,10 +564,12 @@ section * {
   color: #7f8c8d;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
+  font-weight: 300;
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .content-14 .lead {
-    margin-bottom: 60px;
+    line-height: 1.25;
+    margin-bottom: 50px;
   }
 }
 .content-14 .features {
@@ -608,6 +615,7 @@ section * {
 }
 .content-14 .features h6 {
   color: #e74c3c;
+  font-size: 18px;
   font-family: Lato, sens-serif;
   font-weight: bold;
 }

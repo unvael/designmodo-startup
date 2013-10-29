@@ -955,6 +955,11 @@ section * {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
 }
+@media (max-width: 767px) {
+  .content-5 h3 {
+    margin-bottom: 15px;
+  }
+}
 .content-5 h3 + .lead {
   font-size: 25px;
   font-weight: normal;
@@ -963,12 +968,14 @@ section * {
   font-weight: 300;
   text-align: center;
 }
+@media (max-width: 767px) {
+  .content-5 h3 + .lead {
+    line-height: 1.25;
+  }
+}
 @media (max-width: 480px) {
   .content-5 {
     padding-bottom: 40px;
-  }
-  .content-5 h3 {
-    margin-bottom: 24px;
   }
 }
 .content-5 .features > [class*="span"] {

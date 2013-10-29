@@ -1119,6 +1119,7 @@ section * {
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
+  line-height: 40px;
 }
 .content-18 .carousel .quote-author {
   max-width: 620px;
@@ -1196,6 +1197,11 @@ section * {
 }
 .content-18 .carousel + * {
   position: relative;
+}
+@media (max-width: 767px) {
+  .content-18 .carousel {
+    margin-bottom: 0;
+  }
 }
 @media (max-width: 480px) {
   .content-18 .carousel .controls {

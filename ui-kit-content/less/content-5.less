@@ -7,13 +7,19 @@
     margin: 0 0 25px;
     .font(35px,@h-text-color); font-family:@h-font-family;
     text-align: center;
+    @media (max-width: 767px) {
+      margin-bottom: 15px;
+    }
     + .lead {
       .font(25px); font-family:@h-font-family;
       font-weight: 300;
       text-align: center;
+      @media (max-width: 767px) {
+        line-height: 1.25;
+      }
     }
   }
-  @media (max-width: 480px) { padding-bottom: 40px;  h3 {margin-bottom: 24px;}}
+  @media (max-width: 480px) { padding-bottom: 40px;}
   .features {
     > [class*="span"] {
       position: relative;

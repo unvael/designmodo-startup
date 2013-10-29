@@ -7,7 +7,7 @@ module.exports = function(grunt) {
     less: {
 	  files: {
 	    expand: true,
-	    src: ['ui-kit-*/less/style.less', 'tpl-*/less/style.less'],
+	    src: ['ui-kit-*/less/style.less', 'tpl-*/less/style.less', 'hipstafood/less/style.less'],
 	    rename: function(src, dest) {
 			return dest.replace('less/style.less', 'css/style.css');
 	    },
@@ -15,7 +15,7 @@ module.exports = function(grunt) {
     },
     watch: {
       less: {
-        files: ['ui-kit-*/less/*.less', 'tpl-*/less/*.less', 'common-files/less/*.less'],
+        files: ['ui-kit-*/less/*.less', 'tpl-*/less/*.less', 'common-files/less/*.less', 'hipstafood/less/*.less'],
         tasks: 'less',
       }
     },

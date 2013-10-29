@@ -1366,6 +1366,8 @@ body > section.v-center > div {
   background-image: url('../img/table.jpg'), url('../img/table1.jpg');
   background-position: bottom center;
   background-repeat: no-repeat, repeat-x;
+  background-image: url('../img/table.jpg') \9;
+  background-repeat: no-repeat \9;
   background-attachment: fixed;
   background-size: auto 100%;
   padding-bottom: 256px;

@@ -1,0 +1,28 @@
+/**
+ * Header 4 stylesheet  
+ * */
+.header-4{
+  padding:358px 0 360px;
+  .v-center;    
+  color: white;
+  .hero-unit {
+    margin: 0 0 35px;
+    padding: 0;
+    background: transparent;
+    font-family: @h-font-family;
+    h1 { margin: 0 0 17px; .font(41px, white); }
+    p {.font(28px, white); .line-height(38px); }
+  }
+  .btn.btn-gray {.btn-background(@asbestos);}
+  .btns .btn {
+    padding-left: 30px;
+    padding-right: 30px;
+    & + .btn { margin-left: 20px;}
+  }
+  @media (max-width: 480px) {
+    .btns .btn {
+      display: block;
+      & + .btn {margin: 10px 0 0;}
+    }
+  } 
+}

@@ -1,0 +1,312 @@
+@import '../startup/flat-ui-pro/less/config.less';
+@import '../startup/flat-ui-pro/less/mixins.less';
+@import '../startup/common-files/less/mixins.less';
+@import '../startup/common-files/less/common.less';
+@import '../startup/common-files/less/navbar.less';
+@import '../startup/common-files/less/helper.less';
+
+
+@import url('http://fonts.googleapis.com/css?family=Gabriela');
+@import url('http://fonts.googleapis.com/css?family=Radley');
+@import url('http://fonts.googleapis.com/css?family=Trocchi');
+
+
+/* header */
+@import '../startup/ui-kit-header/less/header-10.less';
+
+/* contents */
+@import '../startup/ui-kit-content/less/content-23.less';
+
+/* projects */
+@import '../startup/ui-kit-projects/less/project-3.less';
+
+/* footer */
+@import '../startup/ui-kit-footer/less/footer-5.less';
+
+@proxima:  'proxima-nova', sans-serif;
+
+.header-10{
+  height:0;  
+  
+  .navbar .brand img:first-child{margin:0 15px 0 0;}
+  .navbar{
+     .nav{ 
+        display:table;
+        li{
+          display:table-cell;
+          float: none;
+        }
+    }
+     @media (max-width: 979px) {
+     .nav{ 
+       display:block; 
+       li{
+         display:block;
+         text-align:left;
+       } 
+     }
+       .nav-collapse {
+         padding-top: 17px;
+         .navbar-collapse;
+       }
+    }
+  } 
+}
+
+.navbar{padding-top:88px; text-align:center;}
+body{
+  background-color:#f9f7eb;
+}
+body > section{
+  padding-top: 190px;
+  padding-bottom: 180px;
+}
+
+.header-10 .navbar .nav > li > a{
+   .font(13px, white); 
+   .a-color(white, #25221e); 
+   font-family:@h-font-family;
+   font-weight:bold;
+}
+
+.header-10 .navbar .nav > li{
+   &:active a, &.active a{
+     color: #25221e;
+   }
+}
+.header-10-sub{
+  .hero-unit{
+     h1{.font(50px, white);font-weight:bold; letter-spacing:-4px;}
+     p{
+       .font(23px, @silver);
+       font-weight:300;
+     }
+   }
+}
+.header-10-sub .background{
+  background-image:url('../img/header-bg.jpg');
+  .opacity(100);  
+}
+.wf-inactive{
+  section, .header-10-sub{   
+    h1, h3, h6, p{
+       font-family:@proxima;     
+    }
+    h1,h3,h6{
+      letter-spacing:-1px;
+    }
+  }
+}
+
+
+.sc2-custom-section-1{
+  padding-bottom:70px;
+  h3{
+    .font(40px, @h-text-color); 
+    margin-bottom:120px;
+    text-align:center;
+  }
+  p{
+    .font(20px, @c-text-color);
+    margin-bottom:50px;
+  }
+}
+
+.logos {
+  background: #f9f7eb;
+  padding-top: 0;
+  padding-bottom: 180px;
+
+  @media (max-width: 767px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  @media (max-width: 480px) {
+    display: none;
+  }
+
+  > .container {
+    display: table;
+
+    > div {
+      display: table-cell;
+      text-align: center;
+      &:first-child{
+        text-align: left;
+      }
+      &:last-child{
+        text-align: right;
+      }
+      .logo-1{
+        .font(45px, #c9c7bd);
+        font-family: 'Gabriela', serif ;
+      }
+      .logo-2{
+        .font(45px, #c9c7bd);
+        font-family: 'Radley', serif ;
+      }
+      .logo-3{
+        .font(45px, #c9c7bd);
+        font-family: 'Trocchi', serif ;
+      }
+    }
+  }
+}
+
+.sc2-custom-section-2{ 
+  padding-bottom:90px;
+  background:url('../img/movie.jpg') no-repeat 50% 50% fixed;
+  .background-size(cover);
+  box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+  > .container{  
+    height:100%;
+    > div:first-child{
+      height:100%;
+    }
+  }
+    
+  .hero-unit{  
+    bottom: 0;
+    background: none transparent;    
+    height: 60px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+      .player-button{
+        span.fui-play {
+          .font(25px, white);
+          .line-height(50px);
+          padding: 0 0 0 8px;
+        }
+        border:3px solid white;
+        width:58px; height:58px;
+        .border-radius(100%);
+         box-sizing: border-box;
+        -moz-box-sizing: border-box; /*Firefox 1-3*/
+        -webkit-box-sizing: border-box; /* Safari */
+        display:block;
+        text-align:center;   
+      }
+      h3{
+        .font(23px, white); 
+        font-weight:500;
+      }
+      p{
+        .font(18px, white); 
+        font-weight:300;
+      }
+      a{text-decoration:none;}
+  }
+   
+}
+
+.custom-bg{
+  background:url('../img/bread.jpg') no-repeat 50% 50% fixed;
+  .background-size(cover);
+  .hero-unit h1{
+    .font(60px, white);
+    font-family: 'Gabriela', serif;
+  }
+  
+}
+.custom-bg2{
+  background:url('../img/Pastries.jpg') no-repeat 50% 50% fixed;
+  .background-size(cover);
+  .hero-unit h1{
+    .font(60px, white);
+    font-family: 'Radley', serif ;
+  }
+  
+}
+.custom-bg3{
+  background:url('../img/Cafe.jpg') no-repeat 50% 50% fixed;
+  .background-size(cover);
+  .hero-unit h1{
+    .font(60px, white);
+    font-family: 'Trocchi', serif ;
+  }
+  
+}
+
+.sc2-custom-section-3{
+  padding-top:0;
+  h1{
+    .font(50px, #25221e); 
+    font-weight:bold;
+    text-align:center;
+    margin-bottom:125px;
+    letter-spacing:-4px;
+    .line-height(52px);
+  }
+  h6{
+    .font(23px, @h-text-color);
+  }
+  p{
+    .font(16px);
+    .line-height(25px);
+    margin:0;
+  }
+  .cr-border{
+    border-right:1px solid @silver;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+  }
+  address{
+    margin:0;
+    .line-height(25px);
+  }
+  a{.a-color(#25221e, @base);}
+}
+
+.footer-5{
+  background-color:#25221e;
+  height:191px;
+  p{
+    .font(14px, #7f8c8d);
+    font-family:@c-font-family;
+    a{
+      text-decoration:underline;
+      .a-color(@silver, #7f8c8d);
+    }
+  }
+}
+
+.projects-3{
+  h3{
+    .font(40px, @h-text-color);
+    font-weight:300;
+    margin-bottom:109px;
+    font-family:@proxima;
+    
+  }
+  p{
+    .font(20px, #7f8c8d);  
+    margin-bottom:2em; 
+    font-family:@proxima;
+  }
+  .projects{
+    margin:109px 0;
+    .info{
+      .name{
+        .font(25px, @h-text-color);
+        font-family:@proxima;
+        margin-bottom:2em;
+      }
+      .font(16px,#7f8c8d);
+      font-family:@proxima;
+    }
+  }
+  .download-link{
+    display:block;
+    width:100%;
+    text-align:center;
+    .font(25px, @h-text-color);
+    text-decoration:underline;    
+    .a-color(@h-text-color, @silver);
+  }
+}

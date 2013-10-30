@@ -737,6 +737,11 @@ section * {
 .content-25 {
   padding: 95px 0;
 }
+@media (max-width: 767px) {
+  .content-25 {
+    padding: 40px;
+  }
+}
 .content-25 h3 {
   font-size: 30px;
   font-weight: normal;
@@ -748,8 +753,8 @@ section * {
   font-weight: normal;
   color: #ffffff;
   font-family: Lato, sens-serif;
-  font-weight: bold;
   margin-top: 45px;
+  font-weight: 500;
 }
 .content-25 svg,
 .content-25 .svg {
@@ -854,6 +859,12 @@ section * {
     margin-bottom: 20px;
   }
 }
+@media (max-width: 767px) {
+  .footer-6 .input-append {
+    display: block;
+    margin: 0 47px 0 0;
+  }
+}
 .footer-6 .input-append input[type="text"] {
   width: 160px;
   -webkit-transition: background-color 0.25s, border-color 0.25s;
@@ -873,7 +884,7 @@ section * {
 }
 @media (max-width: 767px) {
   .footer-6 .input-append input[type="text"] {
-    width: auto;
+    width: 100%;
   }
 }
 .footer-6 .input-append input[type="text"]:hover {
@@ -918,6 +929,9 @@ section * {
 }
 .footer-6 .social-btns > *:hover > * {
   top: -100%;
+}
+.footer-6 .social-btns .fui-twitter:first-child {
+  margin-top: 2px;
 }
 @media (max-width: 767px) {
   .footer-6 [class*="span"] {

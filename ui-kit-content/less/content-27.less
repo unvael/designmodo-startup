@@ -5,9 +5,17 @@
   h3 {
     .font(30px, @h-text-color); font-family:@h-font-family;
      text-align: left; margin-bottom:35px;
+     font-weight: 300;
   }
   p {.font(16px); font-family:@c-font-family; .line-height(29.6px);}
   .btn {padding-left: 20px; padding-right: 20px;}
+  @media (max-width: 979px){
+      h3,
+      p {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+    }
   .btns {
     margin-top: 50px;
     > * {
@@ -23,6 +31,11 @@
     }
     @media (max-width: 979px){
       .btn{display:block; margin:0 20px 20px; &:not(:first-child){float:left;}}
+    }
+    @media (max-width: 480px){
+      .btn:not(:first-child){
+        float: none;
+      }
     }
     @media (min-width: 481px) {
       > *:not(:first-child) {

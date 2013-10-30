@@ -772,6 +772,11 @@ section * {
 .content-25 {
   padding: 95px 0;
 }
+@media (max-width: 767px) {
+  .content-25 {
+    padding: 40px;
+  }
+}
 .content-25 h3 {
   font-size: 30px;
   font-weight: normal;
@@ -783,8 +788,8 @@ section * {
   font-weight: normal;
   color: #ffffff;
   font-family: Lato, sens-serif;
-  font-weight: bold;
   margin-top: 45px;
+  font-weight: 500;
 }
 .content-25 svg,
 .content-25 .svg {

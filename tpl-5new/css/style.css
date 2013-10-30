@@ -874,11 +874,11 @@ section * {
 }
 @media (max-width: 480px) {
   .content-1 .box-video {
-    width: 220px;
-    margin: 40px auto 0;
+    margin: 40px 0 0;
   }
   .content-1 .box-video .player {
     margin-bottom: 40px;
+    width: 100%;
   }
   .content-1 .box-video .btns {
     margin-top: 35px;

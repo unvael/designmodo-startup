@@ -678,10 +678,16 @@ section * {
   font-weight: 300;
   margin: 0 0 27px;
 }
+@media (max-width: 767px) {
+  .content-26 .features {
+    margin-top: -52px;
+  }
+}
 .content-26 .features h6 {
   margin-top: 37px;
   font-family: Lato, sens-serif;
   font-weight: bold;
+  font-size: 18px;
 }
 .content-26 .features > * {
   margin-top: 67px;
@@ -703,6 +709,7 @@ section * {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: left;
   margin-bottom: 35px;
+  font-weight: 300;
 }
 .content-27 p {
   font-size: 16px;
@@ -714,6 +721,13 @@ section * {
 .content-27 .btn {
   padding-left: 20px;
   padding-right: 20px;
+}
+@media (max-width: 979px) {
+  .content-27 h3,
+  .content-27 p {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 .content-27 .btns {
   margin-top: 50px;
@@ -740,6 +754,11 @@ section * {
   }
   .content-27 .btns .btn:not(:first-child) {
     float: left;
+  }
+}
+@media (max-width: 480px) {
+  .content-27 .btns .btn:not(:first-child) {
+    float: none;
   }
 }
 @media (min-width: 481px) {

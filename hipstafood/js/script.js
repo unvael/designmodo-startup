@@ -55,7 +55,7 @@ function fadedEls(el, shift) {
       
        
         $('.content-23:not(.custom-bg)').each(function() {
-                   $(this).parallax('center', 0.3, true);
+                   $(this).parallax('50%', 0.3, true);
                });
        
 

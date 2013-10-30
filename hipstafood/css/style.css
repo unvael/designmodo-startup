@@ -1378,9 +1378,11 @@ body > section.v-center > div {
 }
 .content-23.custom-bg2 {
   background-color: white;
-  background-image: url('../img/img-2.jpg');
-  background-repeat: no-repeat;
-  background-attachment: normal;
+  background: url('../img/img-2.jpg') 50% 50% fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .footer-3 {
   background-color: #1B1F23;

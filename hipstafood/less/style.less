@@ -60,8 +60,7 @@ section{
   
    .background{
       background-image:url("../img/img-1.jpg");
-      .opacity(100);
-      background-size:100%;
+      .opacity(100);      
    }
    .scroll-btn {
       display: block;
@@ -151,7 +150,7 @@ body > section.v-center > div {
     background-repeat:no-repeat,repeat-x;
     background-image:url('../img/table.jpg')~'\9';
     background-repeat:no-repeat~'\9';
-    background-attachment: fixed;    
+    background-position:top center ~'\9';       
     background-size: auto 100%;  
     padding-bottom:256px;
     height:996px;
@@ -161,9 +160,10 @@ body > section.v-center > div {
     .control-btn{bottom:240px;} 
   }
   &.custom-bg2 {
-     background-color: white;
+    background-color: white;
     background-image:url('../img/img-2.jpg');
     background-repeat:no-repeat;
+    background-attachment: normal; 
   }
 
   

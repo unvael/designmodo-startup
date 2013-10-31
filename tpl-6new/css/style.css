@@ -837,13 +837,16 @@ section * {
     margin-top: 50px;
   }
   .content-30 .features .img {
-    margin: 0 auto 15px;
+    margin: 15px auto;
   }
   .content-30 .features .description-top,
   .content-30 .features .description-bottom {
     width: 220px;
     margin: 0 auto;
     text-align: left;
+  }
+  .content-30 .features .description-top {
+    margin-bottom: 15px;
   }
   .content-30 .features h6 {
     margin-bottom: 5px;

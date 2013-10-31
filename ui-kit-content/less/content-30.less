@@ -58,14 +58,18 @@
         img[src*="arrow-"] {display: none;}
       }    
       @media (max-width: 480px) {
+        
         .description-top,.description-bottom,.img img + img {.opacity(100);}
         > * + * {margin-top: 50px;}
-        .img {margin: 0 auto 15px;}
+        .img {margin: 15px auto;}
         .description-top,.description-bottom {  
           width: 220px;
           margin: 0 auto;
           text-align: left;
         }    
+        .description-top{
+          margin-bottom:15px;
+        }
         h6 {margin-bottom: 5px;}
       }    
   }

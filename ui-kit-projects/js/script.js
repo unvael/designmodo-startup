@@ -44,7 +44,9 @@ startupKit.uiKitProjects.project3 = function() {
 
 /* project-4 */
 startupKit.uiKitProjects.project4 = function() {
-
+    $('.overlay').on('hover', function() {
+        $(this).closest('.project').find('.name').toggleClass('hover');
+    });
 };
 
 (function($) {

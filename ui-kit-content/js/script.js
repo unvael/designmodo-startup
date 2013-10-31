@@ -353,19 +353,19 @@ if ((!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Ima
     }
     
     
-// $(window).resize(function() {
-    // var svg = $('.content-27 .svg');
-    // var nosvg = $('.content-27 .nosvg');
-    // if ($(window).width() < 751) {
-        // $('.content-27 .container h3:first-child').after(svg);
-        // $('.content-27 .container h3:first-child').after(nosvg);
-        // $('.content-27 .span4:first-child').hide();
-    // }else{
-        // $('.content-27 .span4:first-child').show();
-        // $('.content-27 .span4:first-child').append(svg);
-        // $('.content-27 .span4:first-child').append(nosvg);
-    // }
-// });    
+$(window).resize(function() {
+    var svg = $('.content-27 .svg');
+    var nosvg = $('.content-27 .nosvg');
+    if ($(window).width() < 751) {
+        $('.content-27 .container h3:first-child').after(svg);
+        $('.content-27 .container h3:first-child').after(nosvg);
+        $('.content-27 .span4:first-child').hide();
+    }else{
+        $('.content-27 .span4:first-child').show();
+        $('.content-27 .span4:first-child').append(svg);
+        $('.content-27 .span4:first-child').append(nosvg);
+    }
+});    
 
 
 };

@@ -344,11 +344,11 @@ section * {
 }
 @media (max-width: 480px) {
   .content-1 .box-video {
-    width: 220px;
-    margin: 40px auto 0;
+    margin: 40px 0 0;
   }
   .content-1 .box-video .player {
     margin-bottom: 40px;
+    width: 100%;
   }
   .content-1 .box-video .btns {
     margin-top: 35px;
@@ -1521,6 +1521,11 @@ section * {
   font-weight: 300;
   text-align: center;
 }
+@media (max-width: 767px) {
+  .content-15 h3 {
+    margin-bottom: 60px;
+  }
+}
 .content-15 p {
   font-size: 18px;
   font-weight: normal;
@@ -1540,6 +1545,12 @@ section * {
 .content-15 .features h6:first-child {
   margin-top: auto;
 }
+@media (max-width: 767px) {
+  .content-15 .features h6 {
+    margin-bottom: 10px;
+    margin-top: 40px;
+  }
+}
 .content-15 .features p {
   font-size: 16px;
   font-weight: normal;
@@ -1551,7 +1562,7 @@ section * {
 @media (max-width: 767px) {
   .content-15 .features .span7 {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 46px;
   }
 }
 .content-15 .features .span4 {
@@ -1566,6 +1577,11 @@ section * {
 @media (max-width: 979px) and (min-width: 768px) {
   .content-15 .features .span4 > img {
     margin-top: 0;
+  }
+}
+@media (max-width: 767px) {
+  .content-15 .features {
+    margin-top: 60px;
   }
 }
 /**
@@ -1844,6 +1860,11 @@ section * {
   position: absolute;
   top: 0;
   left: -60px;
+}
+@media (min-width: 1200px) and (max-width: 1300px), (min-width: 980px) and (max-width: 1080px), (max-width: 870px) {
+  .content-19 .span7 .quote:before {
+    display: none;
+  }
 }
 @media (max-width: 767px) {
   .content-19 .span7 .quote {
@@ -2351,12 +2372,24 @@ section * {
   overflow: hidden;
   padding: 80px 0;
 }
+@media (max-width: 767px) {
+  .content-22 {
+    padding: 40px;
+  }
+}
 .content-22 h3 {
   font-size: 30px;
   font-weight: normal;
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 40px 0;
+  font-weight: 300;
+}
+@media (max-width: 767px) {
+  .content-22 h3 {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
 }
 .content-22 h6 {
   font-size: 18px;
@@ -2606,8 +2639,8 @@ section * {
   color: #7f8c8d;
   background: #121518;
   color: #ffffff;
-  opacity: 0.8;
-  filter: alpha(opacity=80);
+  opacity: 0.3;
+  filter: alpha(opacity=30);
   position: absolute;
   left: 50%;
   bottom: 80px;
@@ -2677,6 +2710,7 @@ section * {
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 40px;
+  font-weight: 300;
 }
 .content-24 img.image {
   display: inline-block;
@@ -2794,6 +2828,11 @@ section * {
 .content-25 {
   padding: 95px 0;
 }
+@media (max-width: 767px) {
+  .content-25 {
+    padding: 40px;
+  }
+}
 .content-25 h3 {
   font-size: 30px;
   font-weight: normal;
@@ -2805,8 +2844,8 @@ section * {
   font-weight: normal;
   color: #ffffff;
   font-family: Lato, sens-serif;
-  font-weight: bold;
   margin-top: 45px;
+  font-weight: 500;
 }
 .content-25 svg,
 .content-25 .svg {
@@ -2834,10 +2873,16 @@ section * {
   font-weight: 300;
   margin: 0 0 27px;
 }
+@media (max-width: 767px) {
+  .content-26 .features {
+    margin-top: -52px;
+  }
+}
 .content-26 .features h6 {
   margin-top: 37px;
   font-family: Lato, sens-serif;
   font-weight: bold;
+  font-size: 18px;
 }
 .content-26 .features > * {
   margin-top: 67px;
@@ -2859,6 +2904,7 @@ section * {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: left;
   margin-bottom: 35px;
+  font-weight: 300;
 }
 .content-27 p {
   font-size: 16px;
@@ -2870,6 +2916,13 @@ section * {
 .content-27 .btn {
   padding-left: 20px;
   padding-right: 20px;
+}
+@media (max-width: 979px) {
+  .content-27 h3,
+  .content-27 p {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 .content-27 .btns {
   margin-top: 50px;
@@ -2896,6 +2949,11 @@ section * {
   }
   .content-27 .btns .btn:not(:first-child) {
     float: left;
+  }
+}
+@media (max-width: 480px) {
+  .content-27 .btns .btn:not(:first-child) {
+    float: none;
   }
 }
 @media (min-width: 481px) {
@@ -2943,6 +3001,7 @@ section * {
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding-bottom: 40px;
+  font-weight: 300;
 }
 .content-28 p {
   font-size: 16px;

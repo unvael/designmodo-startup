@@ -949,8 +949,8 @@ section * {
   color: #7f8c8d;
   background: #121518;
   color: #ffffff;
-  opacity: 0.8;
-  filter: alpha(opacity=80);
+  opacity: 0.3;
+  filter: alpha(opacity=30);
   position: absolute;
   left: 50%;
   bottom: 80px;

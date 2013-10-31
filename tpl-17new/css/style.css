@@ -613,6 +613,11 @@ section * {
   top: 0;
   left: -60px;
 }
+@media (min-width: 1200px) and (max-width: 1300px), (min-width: 980px) and (max-width: 1080px), (max-width: 870px) {
+  .content-19 .span7 .quote:before {
+    display: none;
+  }
+}
 @media (max-width: 767px) {
   .content-19 .span7 .quote {
     margin-bottom: 50px;

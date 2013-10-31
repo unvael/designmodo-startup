@@ -826,12 +826,24 @@ section * {
   overflow: hidden;
   padding: 80px 0;
 }
+@media (max-width: 767px) {
+  .content-22 {
+    padding: 40px;
+  }
+}
 .content-22 h3 {
   font-size: 30px;
   font-weight: normal;
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 40px 0;
+  font-weight: 300;
+}
+@media (max-width: 767px) {
+  .content-22 h3 {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
 }
 .content-22 h6 {
   font-size: 18px;
@@ -1033,6 +1045,7 @@ section * {
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 40px;
+  font-weight: 300;
 }
 .content-24 img.image {
   display: inline-block;

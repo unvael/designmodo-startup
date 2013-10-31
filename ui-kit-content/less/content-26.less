@@ -7,10 +7,14 @@
     .font(35px, @h-text-color); font-family:@h-font-family; font-weight:300;
     margin: 0 0 27px;
   }
-  .features {    
+  .features {
+    @media (max-width: 767px) {
+      margin-top: -52px;
+    }
     h6 {
       margin-top: 37px;
       font-family: @c-font-family; font-weight: bold;
+      font-size: 18px;
     }  
     > * { margin-top: 67px;}
   }  

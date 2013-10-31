@@ -41,17 +41,25 @@
     }
     @media (max-width: 480px) {margin-bottom: 20px;}
   }
+  .input-append {
+    @media (max-width: 767px) {
+      display: block;
+      margin: 0 47px 0 0;
+    }
+  }
   .input-append input[type="text"] {
     width: 160px;
     @media (min-width: 1200px) {width: 211px;}
     @media (min-width: 768px) and (max-width: 979px) {  width: 106px;  }
-    @media (max-width: 767px) {width: auto; }
+    @media (max-width: 767px) {
+      width: 100%;
+    }
     .transition(~'background-color 0.25s, border-color 0.25s');
     &:hover { border-color: #cacfd2;} //should be change to color variable
     &:focus { border-color: @turquoise;}
   }
   .social-btns { 
-    white-space: nowrap;   
+    white-space: nowrap;
     > * {     
       display: inline-block;
       margin-left: 15px;
@@ -68,6 +76,9 @@
         &:first-child { color: @silver; }
       }
       &:hover > * { top: -100%; }
+    }
+    .fui-twitter:first-child {
+      margin-top: 2px;
     }
   }
   @media (max-width: 767px) {

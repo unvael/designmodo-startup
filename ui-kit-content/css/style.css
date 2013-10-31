@@ -2932,10 +2932,12 @@ section * {
 @media (max-width: 767px) {
   .content-27 .svg,
   .content-27 .nosvg {
-    display: block;
     text-align: center;
     float: none;
     margin-bottom: 45px;
+  }
+  .content-27 .svg {
+    display: block;
   }
 }
 .content-27 h3 {

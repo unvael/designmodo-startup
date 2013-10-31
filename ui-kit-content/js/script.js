@@ -271,6 +271,14 @@ startupKit.uiKitContent.content24 = function() {
             }).css('height', maxH + 'px');
             $('.features-bodies', this).css('height', maxH + 'px');
         });
+        
+        var img = $('.content-24 .image');   
+        if ($(window).width() < 751) {                     
+            $('.content-24 .features-body.active h3').after(img);
+        }else{
+            $('.content-24 .container').before(img);
+        }
+        
     });
 
     $('.content-24 .features .features-header .box').click(function() {
@@ -278,7 +286,9 @@ startupKit.uiKitContent.content24 = function() {
         $(this).closest('.features').find('.features-body').removeClass('active').eq($(this).index()).addClass('active');
         return false;
     });
-
+    
+    
+    
     $(window).resize().scroll();
 };
 /* Content 25*/

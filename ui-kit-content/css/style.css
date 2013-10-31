@@ -2715,8 +2715,8 @@ section * {
 .content-24 img.image {
   display: inline-block;
   position: absolute;
-  right: 55%;
-  bottom: 0;
+  right: 50%;
+  margin-right: 20px;
 }
 .content-24 .span6.offset6 {
   position: relative;
@@ -2793,14 +2793,6 @@ section * {
 .content-24 .features.features-clear .features-body p {
   margin-bottom: 45px;
 }
-@media (max-width: 480px) {
-  .content-24 .features.features-clear .features-header {
-    margin-bottom: 30px;
-  }
-  .content-24 .features.features-clear .features-body p {
-    margin-bottom: 40px;
-  }
-}
 .content-24 .btn.btn-clear {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2824,6 +2816,38 @@ section * {
   border-color: #27ad60;
   background: #27ad60;
   color: rgba(255, 255, 255, 0.75);
+}
+@media (max-width: 480px) {
+  .content-24 {
+    padding: 35px;
+  }
+  .content-24 img.image {
+    position: relative;
+    margin-bottom: 50px;
+    right: 0;
+  }
+  .content-24 .features.features-clear .features-header {
+    margin-bottom: 50px;
+  }
+  .content-24 .features.features-clear .features-body p {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .content-24 {
+    padding: 35px;
+  }
+  .content-24 img.image {
+    position: relative;
+    margin-bottom: 50px;
+    right: 0;
+  }
+  .content-24 .features.features-clear .features-header {
+    margin-bottom: 50px;
+  }
+  .content-24 .features.features-clear .features-body p {
+    margin-bottom: 50px;
+  }
 }
 .content-25 {
   padding: 95px 0;

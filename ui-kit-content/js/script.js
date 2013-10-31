@@ -309,6 +309,17 @@ startupKit.uiKitContent.content25 = function() {
             if (!el.hasClass('ani-processed')) {
                 el.data('scrollPos', el.offset().top - $(window).height() + el.outerHeight());
             }
+            var svg = $('.content-25 .svg');
+            var nosvg = $('.content-25 .nosvg');
+            if ($(window).width() < 751) {
+                $('.content-25 .container h3:first-child').after(svg);
+                $('.content-25 .container h3:first-child').after(nosvg);
+                $('.content-25 .span6:nth-child(2)').hide();
+            }else{
+                $('.content-25 .span6:nth-child(2)').show();
+                $('.content-25 .span6:nth-child(2)').append(svg);
+                $('.content-25 .span6:nth-child(2)').append(nosvg);
+            }
         }).scroll(function() {
             if (!el.hasClass('ani-processed')) {
                 if ($(window).scrollTop() >= el.data('scrollPos')) {

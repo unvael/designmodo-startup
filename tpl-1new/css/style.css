@@ -739,7 +739,14 @@ section * {
 }
 @media (max-width: 767px) {
   .content-25 {
-    padding: 40px;
+    padding: 40px 20px;
+  }
+  .content-25 .svg,
+  .content-25 .nosvg {
+    display: block;
+    text-align: center;
+    float: none;
+    margin-top: 45px;
   }
 }
 .content-25 h3 {
@@ -747,6 +754,7 @@ section * {
   font-weight: normal;
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
 .content-25 p {
   font-size: 18px;

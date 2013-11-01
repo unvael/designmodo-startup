@@ -413,15 +413,15 @@ section * {
 .header-8 .navbar .nav > li > a:hover,
 .header-8 .navbar .nav > li > a:focus,
 .header-8 .navbar .nav > li > a.active {
-  color: #3498db;
+  color: #34495e;
 }
 .header-8 .navbar .nav > li.active > a {
-  color: #3498db;
+  color: #34495e;
 }
 .header-8 .navbar .nav > li.active > a:hover,
 .header-8 .navbar .nav > li.active > a:focus,
 .header-8 .navbar .nav > li.active > a.active {
-  color: #3498db;
+  color: #34495e;
 }
 .header-8 .navbar .btn-navbar {
   margin: 22px 0 17px;
@@ -531,12 +531,15 @@ section * {
   color: #ffffff;
   margin-bottom: 35px;
   text-align: center;
+  font-weight: 300;
 }
 .header-8-sub .lead {
   font-size: 24px;
   font-weight: normal;
   color: rgba(255, 255, 255, 0.7);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
+  font-weight: 300;
 }
 .header-8-sub img {
   display: block;

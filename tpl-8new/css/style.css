@@ -796,43 +796,37 @@ section * {
 .content-17 {
   text-align: center;
 }
+.content-17 p {
+  font-size: 18px;
+  font-weight: normal;
+  color: #7f8c8d;
+}
 .content-17 .carousel {
   margin-top: 40px;
-  margin-bottom: 10px;
+  margin-bottom: 18px;
   text-align: center;
   font-size: 22px;
   font-weight: normal;
   color: #2c3e50;
   font-weight: bold;
-}
-.content-17 .carousel .carousel-inner {
-  padding-bottom: 30px;
-  margin-bottom: -30px;
-  height: 27px;
+  line-height: 25px;
 }
 .content-17 .carousel .item {
   -webkit-transition: .8s ease-in-out top, .6s ease-in-out opacity;
   -moz-transition: .8s ease-in-out top, .6s ease-in-out opacity;
   -o-transition: .8s ease-in-out top, .6s ease-in-out opacity;
   transition: .8s ease-in-out top, .6s ease-in-out opacity;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
   opacity: 0;
 }
 .content-17 .carousel .item.active.left,
 .content-17 .carousel .item.active.right {
   opacity: 0;
-  top: 100%;
   z-index: 2;
 }
 .content-17 .carousel .item.active,
 .content-17 .carousel .item.prev,
 .content-17 .carousel .item.next {
   opacity: 1;
-  top: 0;
   z-index: 1;
 }
 .content-17 .carousel + * {

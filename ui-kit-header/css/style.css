@@ -4816,7 +4816,7 @@ section * {
   transition: left 0.4s;
 }
 .header-16 .navbar .nav-collapse {
-  z-index: 9999;
+  z-index: 997;
   left: 0;
   bottom: auto;
   top: -100%;
@@ -4839,7 +4839,6 @@ section * {
   visibility: visible;
 }
 .header-16 .nav-visible.navbar .navbar-inner {
-  position: fixed;
   z-index: 999;
   left: 0;
   right: 0;
@@ -4923,12 +4922,16 @@ section * {
     opacity: 1;
     top: 50%;
   }
-  50% {
+  40% {
     opacity: 0;
     top: 50%;
   }
-  100% {
+  45% {
     opacity: 0;
+    top: 29%;
+  }
+  46% {
+    opacity: 1;
     top: 29%;
   }
 }
@@ -4941,12 +4944,16 @@ section * {
     opacity: 1;
     top: 50%;
   }
-  50% {
+  40% {
     opacity: 0;
     top: 50%;
   }
-  100% {
+  45% {
     opacity: 0;
+    top: 29%;
+  }
+  46% {
+    opacity: 1;
     top: 29%;
   }
 }
@@ -4959,12 +4966,16 @@ section * {
     opacity: 1;
     top: 50%;
   }
-  50% {
+  40% {
     opacity: 0;
     top: 50%;
   }
-  100% {
+  45% {
     opacity: 0;
+    top: 29%;
+  }
+  46% {
+    opacity: 1;
     top: 29%;
   }
 }

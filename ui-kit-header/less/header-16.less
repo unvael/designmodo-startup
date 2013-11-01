@@ -94,7 +94,7 @@
   }
   body > *,.navbar .nav-collapse {.transition(left .4s);}
   .navbar .nav-collapse {
-    z-index: 9999; left: 0; bottom: auto; top: -100%;
+    z-index: 997; left: 0; bottom: auto; top: -100%;
     width: 100%;
     padding: 195px 0 85px;
     -webkit-backface-visibility: hidden;
@@ -107,8 +107,7 @@
                 left: 0!important; top: 0!important;
                 visibility: visible;
               }      
-              .navbar-inner {
-                position: fixed;
+              .navbar-inner {             
                 z-index: 999; left: 0; right: 0;
               }      
               .btn-navbar {
@@ -127,24 +126,27 @@
 .header-16-sub{
   .v-center;  
   @-webkit-keyframes ani-mouse {
-  0%     { opacity: 1; top: 29%; }
+  0%     { opacity: 1; top: 29%; }  
   15%    { opacity: 1; top: 50%; }
-  50%    { opacity: 0; top: 50%; }
-  100%   { opacity: 0; top: 29%; }
+  40%    { opacity: 0; top: 50%; }  
+  45%    { opacity: 0; top: 29%; }
+  46%    { opacity: 1; top: 29%; }
 }
 
 @-moz-keyframes ani-mouse {
-  0%     { opacity: 1; top: 29%; }
+  0%     { opacity: 1; top: 29%; }  
   15%    { opacity: 1; top: 50%; }
-  50%    { opacity: 0; top: 50%; }
-  100%   { opacity: 0; top: 29%; }
+  40%    { opacity: 0; top: 50%; }
+  45%    { opacity: 0; top: 29%; }  
+  46%    { opacity: 1; top: 29%; }
 }
 
 @keyframes ani-mouse {
-  0%     { opacity: 1; top: 29%; }
+  0%     { opacity: 1; top: 29%; }  
   15%    { opacity: 1; top: 50%; }
-  50%    { opacity: 0; top: 50%; }
-  100%   { opacity: 0; top: 29%; }
+  40%    { opacity: 0; top: 50%; }  
+  45%    { opacity: 0; top: 29%; }
+  46%    { opacity: 1; top: 29%; }
 }
 
 .scroll-btn {

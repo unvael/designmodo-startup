@@ -5382,7 +5382,6 @@ section * {
   position: relative !important;
   padding-top: 105px;
   padding-bottom: 105px;
-  background: #1f2225;
   color: #7f8c8d;
 }
 .header-17-sub.v-center,
@@ -5444,7 +5443,7 @@ section * {
 .header-17-sub .btn.btn-clear [class*="fui-"] {
   font-size: 30px;
   font-weight: normal;
-  color: #ffffff;
+  color: inherit;
   margin: 0 15px 0 -5px;
 }
 @media (max-width: 480px) {
@@ -5468,16 +5467,19 @@ section * {
 }
 .header-17-sub .hero-unit h1 {
   margin: 0;
-  font-size: 38px;
+  font-size: 39px;
   font-weight: normal;
   color: #ffffff;
-  line-height: normal;
+  line-height: 49px;
+  font-weight: 600;
+  letter-spacing: 0;
 }
 .header-17-sub .hero-unit p {
   font-size: 28px;
   font-weight: normal;
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
 }
 @media (max-width: 480px) {
   .header-17-sub .hero-unit {
@@ -5530,7 +5532,7 @@ section * {
   font-weight: normal;
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 26.099999999999998px;
+  line-height: 32px;
 }
 .header-17-sub h6 {
   font-size: 18px;

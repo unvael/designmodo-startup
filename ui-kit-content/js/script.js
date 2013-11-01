@@ -407,7 +407,7 @@ startupKit.uiKitContent.content30 = function() {
         var boxes = $('.content-30 .span3');       
         for (var t=0; t<=boxes.length; t++){                      
             var descTop = $(boxes[t]).find('.description-top');
-            if ($(window).width() < 480){ 
+            if ($(window).width() <= 480){ 
                 $(boxes[t]).find('.img').after(descTop);
             
             }else{               

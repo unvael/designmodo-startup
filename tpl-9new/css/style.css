@@ -401,12 +401,14 @@ section * {
   font-size: 41px;
   font-weight: normal;
   color: #ffffff;
+  line-height: 43.99999999999999px;
 }
 .header-4 .hero-unit p {
   font-size: 28px;
   font-weight: normal;
   color: #ffffff;
   line-height: 38px;
+  font-weight: 300;
 }
 .header-4 .btn.btn-gray {
   background-color: #7f8c8d;

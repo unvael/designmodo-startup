@@ -1875,10 +1875,11 @@ section * {
 }
 .header-6 .navbar .nav > li > a {
   padding: 0;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: normal;
   color: #7f8c8d;
-  font-weight: bold;
+  font-weight: 500;
+  letter-spacing: 2px;
   color: #ffffff;
   display: inline-block;
 }
@@ -2025,7 +2026,8 @@ section * {
   z-index: 50;
   left: 0;
   width: 100%;
-  padding: 250px 0 90px;
+  padding-top: 250px;
+  padding-bottom: 90px;
   overflow: hidden;
   color: #bdc3c7;
   text-align: center;
@@ -2098,7 +2100,7 @@ section * {
   position: relative;
   overflow: hidden;
   width: 220px;
-  margin: 50px auto 0;
+  margin: 50px auto;
   border: 4px solid #fff;
 }
 .header-6-sub .player .btn-play {
@@ -2124,8 +2126,8 @@ section * {
   display: block;
 }
 .header-6-sub .signup-form form {
-  margin: 200px auto 0;
-  padding: 2%;
+  margin: 0 auto;
+  padding: 17px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;

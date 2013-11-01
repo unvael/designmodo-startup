@@ -348,7 +348,8 @@ section * {
  * Header 12 stylesheet  
  * */
 .header-12 {
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .header-12 .navbar {
   position: absolute;

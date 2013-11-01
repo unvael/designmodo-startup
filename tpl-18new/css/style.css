@@ -350,7 +350,8 @@ section * {
 .header-10 {
   z-index: 100;
   width: 100%;
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
   height: 80px;
   background: #1b1f23;
   color: white;

@@ -348,7 +348,8 @@ section * {
  * Header 4 stylesheet  
  * */
 .header-4 {
-  padding: 358px 0 360px;
+  padding-top: 358px;
+  padding-bottom: 360px;
   color: white;
 }
 .header-4.v-center,

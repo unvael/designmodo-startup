@@ -352,7 +352,8 @@ section * {
   left: 0;
   top: 0;
   width: 100%;
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .header-2 > .container {
   position: relative;
@@ -360,7 +361,7 @@ section * {
 .header-2 .navbar {
   position: absolute;
   z-index: 2;
-  top: 22px;
+  top: 80px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .header-2 .navbar.navbar-fixed-top {
@@ -514,16 +515,10 @@ section * {
   z-index: 50;
   left: 0;
   width: 100%;
-  padding-top: 159px;
+  padding-top: 180px;
   padding-bottom: 90px;
   color: white;
   text-align: center;
-}
-@media (max-width: 480px) {
-  .header-2-sub {
-    padding-top: 108px;
-    padding-bottom: 35px;
-  }
 }
 .header-2-sub .hero-unit {
   margin: 0;
@@ -533,23 +528,24 @@ section * {
 .header-2-sub .hero-unit h1 {
   margin: 0 0 20px;
   font-size: 30px;
-  color: #ffffff;
   font-weight: normal;
+  color: #ffffff;
+  font-weight: 300;
 }
 .header-2-sub .hero-unit p {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: normal;
   color: #506e8c;
-  font-weight: bold;
-  letter-spacing: 1px;
+  font-weight: 800;
+  letter-spacing: 2px;
 }
 .header-2-sub .btns {
   display: inline-block;
-  margin-top: 45px;
+  margin-top: 50px;
 }
 @media (max-width: 480px) {
   .header-2-sub .btns {
-    margin-top: 34px;
+    margin-top: 50px;
     display: block;
   }
 }

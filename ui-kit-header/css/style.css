@@ -732,7 +732,8 @@ section * {
   left: 0;
   top: 0;
   width: 100%;
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .header-2 > .container {
   position: relative;
@@ -740,7 +741,7 @@ section * {
 .header-2 .navbar {
   position: absolute;
   z-index: 2;
-  top: 22px;
+  top: 80px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .header-2 .navbar.navbar-fixed-top {
@@ -894,16 +895,10 @@ section * {
   z-index: 50;
   left: 0;
   width: 100%;
-  padding-top: 159px;
+  padding-top: 180px;
   padding-bottom: 90px;
   color: white;
   text-align: center;
-}
-@media (max-width: 480px) {
-  .header-2-sub {
-    padding-top: 108px;
-    padding-bottom: 35px;
-  }
 }
 .header-2-sub .hero-unit {
   margin: 0;
@@ -913,23 +908,24 @@ section * {
 .header-2-sub .hero-unit h1 {
   margin: 0 0 20px;
   font-size: 30px;
-  color: #ffffff;
   font-weight: normal;
+  color: #ffffff;
+  font-weight: 300;
 }
 .header-2-sub .hero-unit p {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: normal;
   color: #506e8c;
-  font-weight: bold;
-  letter-spacing: 1px;
+  font-weight: 800;
+  letter-spacing: 2px;
 }
 .header-2-sub .btns {
   display: inline-block;
-  margin-top: 45px;
+  margin-top: 50px;
 }
 @media (max-width: 480px) {
   .header-2-sub .btns {
-    margin-top: 34px;
+    margin-top: 50px;
     display: block;
   }
 }
@@ -984,7 +980,8 @@ section * {
   border-bottom: 1px #bdc3c7 solid;
 }
 .header-3 {
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .header-3 .navbar {
   top: 0 !important;
@@ -1186,7 +1183,8 @@ section * {
  * Header 4 stylesheet  
  * */
 .header-4 {
-  padding: 358px 0 360px;
+  padding-top: 358px;
+  padding-bottom: 360px;
   color: white;
 }
 .header-4.v-center,
@@ -1275,7 +1273,8 @@ section * {
  * Header 5 stylesheet  
  * */
 .header-5 {
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
   z-index: 100;
   height: 80;
   width: 100%;
@@ -1840,7 +1839,8 @@ section * {
  * */
 .header-6 {
   z-index: 100;
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .header-6 .navbar {
   position: absolute;
@@ -2614,7 +2614,8 @@ section * {
   border-bottom: 1px #bdc3c7 solid;
 }
 .header-8 {
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
   z-index: 100;
 }
 .header-8 .navbar {
@@ -2811,7 +2812,8 @@ section * {
  * */
 .header-9 {
   z-index: 100;
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
   width: 100%;
 }
 .header-9 .navbar {
@@ -3123,7 +3125,8 @@ section * {
 .header-10 {
   z-index: 100;
   width: 100%;
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
   height: 80px;
   background: #1b1f23;
   color: white;
@@ -3448,7 +3451,8 @@ section * {
 .header-11 {
   z-index: 100;
   width: 100%;
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
   height: 80px;
 }
 .header-11 .navbar {
@@ -3772,7 +3776,8 @@ section * {
  * Header 12 stylesheet  
  * */
 .header-12 {
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .header-12 .navbar {
   position: absolute;
@@ -4324,7 +4329,8 @@ section * {
   background: #171717 !important;
 }
 .header-15 {
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
   background: #171717;
   height: 80px;
   z-index: 100;
@@ -4564,7 +4570,8 @@ section * {
  * Header 16 stylesheet  
  * */
 .header-16 {
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
   background: #1b1f23;
   color: white;
 }
@@ -5154,7 +5161,8 @@ section * {
   z-index: 100;
   width: 100%;
   height: 80px;
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .header-17 .navbar {
   position: absolute;
@@ -5936,7 +5944,8 @@ section * {
  * Header 19 stylesheet  
  * */
 .header-19 {
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
   z-index: 100;
   position: relative;
 }
@@ -6253,7 +6262,8 @@ section * {
   border-bottom: 2px solid #ECF0F1;
 }
 .header-20 {
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
   z-index: 100;
   width: 100%;
   border-bottom: 2px solid #ecf0f1;
@@ -6589,7 +6599,8 @@ section * {
  * */
 .header-21 {
   position: relative;
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
   z-index: 100;
   width: 100%;
   height: 80px;
@@ -6905,7 +6916,8 @@ section * {
   position: relative;
   z-index: 100;
   width: 100%;
-  padding: 78px 0 0;
+  padding-top: 78px;
+  padding-bottom: 0;
 }
 .header-22 > [class*="fui-"] {
   display: block;

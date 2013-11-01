@@ -349,7 +349,8 @@ section * {
  * */
 .header-6 {
   z-index: 100;
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .header-6 .navbar {
   position: absolute;

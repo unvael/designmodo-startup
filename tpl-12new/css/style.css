@@ -351,7 +351,8 @@ section * {
   border-bottom: 2px solid #ECF0F1;
 }
 .header-20 {
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
   z-index: 100;
   width: 100%;
   border-bottom: 2px solid #ecf0f1;

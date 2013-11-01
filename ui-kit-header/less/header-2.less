@@ -4,11 +4,12 @@
 .header-2 {
   z-index: 100;  left: 0;  top: 0;  
   width: 100%;
-  padding:0;
+  padding-top:0;
+  padding-bottom:0;
   > .container { position: relative;}  
   .navbar {    
       position: absolute;
-      z-index: 2; top: 22px;
+      z-index: 2; top: 80px;
       font-family: @h-font-family;
       &.navbar-fixed-top{
         position:fixed;
@@ -52,24 +53,23 @@
 .header-2-sub {
   z-index: 50; left: 0;
   width: 100%;
-  padding-top: 159px; padding-bottom:90px;
+  padding-top: 180px; padding-bottom:90px;
   color: white;
-  text-align: center;
-  @media (max-width: 480px) {padding-top: 108px; padding-bottom: 35px;}
+  text-align: center;  
   .hero-unit {
     margin: 0;
     padding: 0;
     background: transparent;
     h1 {
       margin: 0 0 20px;
-      .font(30px, white); font-weight: normal;      
+      .font(30px, white); font-weight: 300;      
     }
-    p {.font(15px,#506e8c); font-weight: bold; letter-spacing: 1px;}
+    p {.font(13px,#506e8c); font-weight: 800; letter-spacing: 2px;}
   }
   .btns {
     display: inline-block;
-    margin-top: 45px;
-    @media (max-width: 480px) { margin-top: 34px; display: block;}
+    margin-top: 50px;
+    @media (max-width: 480px) { margin-top: 50px; display: block;}
     .btn {
       min-width: 140px;
       float: left;

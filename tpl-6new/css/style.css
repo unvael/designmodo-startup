@@ -351,7 +351,8 @@ section * {
   border-bottom: 1px #bdc3c7 solid;
 }
 .header-3 {
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .header-3 .navbar {
   top: 0 !important;

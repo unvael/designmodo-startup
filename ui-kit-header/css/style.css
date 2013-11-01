@@ -4161,8 +4161,8 @@ section * {
 .header-14-sub {
   color: #bdc3c7;
   position: relative;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 95px;
+  padding-bottom: 95px;
   text-align: center;
 }
 .header-14-sub h1,
@@ -4202,7 +4202,7 @@ section * {
   }
 }
 .header-14-sub h3 {
-  margin: 0 0 30px;
+  margin: 0 0 40px;
 }
 .header-14-sub .header-14 {
   margin-bottom: 65px;
@@ -4223,7 +4223,7 @@ section * {
   display: table;
   border-collapse: collapse;
   padding: 0;
-  margin: 0 auto 170px;
+  margin: 190px auto;
   background: transparent;
   color: white;
 }
@@ -4263,6 +4263,9 @@ section * {
   padding-left: 30px;
   padding-right: 30px;
   margin-left: 0;
+  -webkit-border-radius: 0 6px 6px 0;
+  -moz-border-radius: 0 6px 6px 0;
+  border-radius: 0 6px 6px 0;
 }
 .header-14-sub .subscribe-form .btn.btn-primary:hover,
 .header-14-sub .subscribe-form .btn.btn-primary:focus {
@@ -4287,6 +4290,9 @@ section * {
   }
   .header-14-sub .subscribe-form .input-append .btn {
     margin-top: 15px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
   }
 }
 /**

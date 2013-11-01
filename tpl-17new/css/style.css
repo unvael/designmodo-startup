@@ -770,6 +770,11 @@ section * {
   }
 }
 @media (max-width: 767px) {
+  .price-1 .ribbon {
+    top: 26px;
+  }
+}
+@media (max-width: 767px) {
   .price-1 .plan {
     margin-top: 30px;
   }

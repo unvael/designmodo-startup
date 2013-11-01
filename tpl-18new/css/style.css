@@ -1216,12 +1216,17 @@ section * {
     top: 20px;
   }
 }
+@media (max-width: 767px) {
+  .price-2 .plans .plan .ribbon {
+    top: 50px;
+  }
+}
 .price-2 .plans .title {
   padding: 55px 0 55px;
   background: #34495e;
   color: #fff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 16px;
   letter-spacing: 2px;
   white-space: nowrap;
@@ -1236,6 +1241,7 @@ section * {
   font-size: 24px;
   vertical-align: top;
   position: relative;
+  font-weight: 400;
   top: 26px;
   left: -10px;
   opacity: 0.5;
@@ -1257,7 +1263,7 @@ section * {
   background: transparent;
   opacity: 0.5;
   filter: alpha(opacity=50);
-  font-weight: bold;
+  font-weight: 500;
 }
 .price-2 .plans .title .btn.btn-clear:hover,
 .price-2 .plans .title .btn.btn-clear:focus {
@@ -1316,6 +1322,7 @@ section * {
   margin: 0 -2px;
   border-left: 2px solid #2f4254;
   border-right: 2px solid #2f4254;
+  z-index: 3;
 }
 @media (max-width: 767px) {
   .price-2 .plans {

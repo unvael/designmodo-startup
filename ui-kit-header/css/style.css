@@ -338,6 +338,12 @@ section * {
   position: relative;
   z-index: 2;
 }
+@media (max-width: 767px) {
+  header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 .startup-kit_header h1 {
   font-size: 45px;
   font-weight: normal;
@@ -360,15 +366,21 @@ section * {
   top: 0;
   z-index: 100;
   width: 100%;
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .header-1 .brand {
   padding-left: 0;
   font-size: 25px;
   font-weight: normal;
-  color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
+  color: #ffffff;
+}
+.header-1 .brand:hover,
+.header-1 .brand:focus,
+.header-1 .brand.active {
+  color: #ffffff;
 }
 .header-1 .brand img:first-child {
   float: left;
@@ -380,7 +392,7 @@ section * {
 .header-1 .navbar {
   position: absolute;
   z-index: 2;
-  top: 22px;
+  top: 28px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .header-1 .navbar.navbar-fixed-top {
@@ -678,15 +690,6 @@ section * {
 }
 .header-1-sub .page-transitions .controls > *.control-next {
   left: 30px;
-}
-.header-1-sub .pt-page-1 .background {
-  background-image: url('../../ui-kit-header/img/img-1.jpg');
-}
-.header-1-sub .pt-page-2 .background {
-  background-image: url('../../ui-kit-header/img/img-2.jpg');
-}
-.header-1-sub .pt-page-3 .background {
-  background-image: url('../../ui-kit-header/img/img-3.jpg');
 }
 /**
  * Header 2 stylesheet  

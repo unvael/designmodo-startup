@@ -241,6 +241,12 @@ section * {
   position: relative;
   z-index: 2;
 }
+@media (max-width: 767px) {
+  header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 .startup-kit_header h1 {
   font-size: 45px;
   font-weight: normal;

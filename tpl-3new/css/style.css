@@ -337,6 +337,12 @@ section * {
   position: relative;
   z-index: 2;
 }
+@media (max-width: 767px) {
+  header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 /* header */
 /**
  * Header 11 stylesheet  

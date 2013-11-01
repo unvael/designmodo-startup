@@ -4,10 +4,12 @@
 .header-1 {
   left: 0; top: 0; z-index: 100;
   width: 100%; 
-  padding:0;  
+  padding-top:0;
+  padding-bottom:0;  
   .brand {
     padding-left: 0;    
-    .font(25px,white); font-family:@h-font-family; font-weight: bold;    
+    .font(25px,white); font-family:@h-font-family; font-weight: bold;   
+     .a-color(white, white);
      img:first-child {
       float: left; 
       margin: -10px 15px 0 0;       
@@ -16,7 +18,7 @@
   > .container {position: relative;}
   .navbar {
     position: absolute;
-    z-index: 2; top: 22px;
+    z-index: 2; top: 28px;
     font-family: @h-font-family;    
     &.navbar-fixed-top{
         position:fixed;
@@ -133,12 +135,12 @@
     }
   }
   .pt-page-1 {
-    .background {background-image: url('../../ui-kit-header/img/img-1.jpg');}
+   // .background {background-image: url('../../ui-kit-header/img/img-1.jpg');}
    }
   .pt-page-2 {
-    .background {background-image: url('../../ui-kit-header/img/img-2.jpg');}
+   // .background {background-image: url('../../ui-kit-header/img/img-2.jpg');}
    }
   .pt-page-3 {
-    .background {background-image: url('../../ui-kit-header/img/img-3.jpg');}
+   // .background {background-image: url('../../ui-kit-header/img/img-3.jpg');}
    }
 }

@@ -241,6 +241,12 @@ section * {
   position: relative;
   z-index: 2;
 }
+@media (max-width: 767px) {
+  header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 .pt-perspective {
   position: relative;
   height: 100%;

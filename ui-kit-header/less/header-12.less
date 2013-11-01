@@ -10,16 +10,16 @@
         top: 90px;
         margin: 0;
         font-family: @h-font-family;
-        .font(13px, @silver); letter-spacing: 2px;       
+        .font(13px, @silver);      
         .navbar-inner {background: none;}      
         .brand {
           padding: 0;
-          .font(25px, white); font-weight: bold;      
+          .font(25px, white);      
           img:first-child {float: left; margin: -10px 15px 0 0;}
         }      
         .nav {
           margin: 9px 0 0 50px;      
-          a { font-weight: bold; .a-color(@silver, white);}
+          a { font-weight: bold; .a-color(@silver, white);  letter-spacing: 2px; }
         }      
         @media (max-width: 480px) {
           top: 50px;      
@@ -28,7 +28,8 @@
       }
 }
 .header-12-sub{
-    padding:80px 0;    
+    padding-top:80px;
+    padding-bottom: 80px;    
     position: relative;
     overflow: hidden;
     &:after {
@@ -45,7 +46,7 @@
       margin: 260px 0 0;
       padding: 0;
       background: transparent;  
-      h1 { margin: 0 0 22px; .font(30px, white); line-height:normal;}
+      h1 { margin: 0 0 22px; .font(30px, white); font-weight:300; .line-height(40px);}
       p {.font(18px,rgba(255, 255, 255, 0.7)); }
     }
     @media (max-width: 979px) {
@@ -67,7 +68,7 @@
       .row {float: none;}  
       .hero-unit {
         margin: 60px 0 0;  
-        h1 {.font(25px, white); .line-height(23.4px);}
+        h1 {.font(25px, white); .line-height(40px);}
       }
     }    
     .aside {

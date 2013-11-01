@@ -3754,7 +3754,6 @@ section * {
   font-size: 13px;
   font-weight: normal;
   color: #bdc3c7;
-  letter-spacing: 2px;
 }
 .header-12 .navbar .navbar-inner {
   background: none;
@@ -3764,7 +3763,6 @@ section * {
   font-size: 25px;
   font-weight: normal;
   color: #ffffff;
-  font-weight: bold;
 }
 .header-12 .navbar .brand img:first-child {
   float: left;
@@ -3776,6 +3774,7 @@ section * {
 .header-12 .navbar .nav a {
   font-weight: bold;
   color: #bdc3c7;
+  letter-spacing: 2px;
 }
 .header-12 .navbar .nav a:hover,
 .header-12 .navbar .nav a:focus,
@@ -3791,7 +3790,8 @@ section * {
   }
 }
 .header-12-sub {
-  padding: 80px 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
   position: relative;
   overflow: hidden;
 }
@@ -3818,7 +3818,8 @@ section * {
   font-size: 30px;
   font-weight: normal;
   color: #ffffff;
-  line-height: normal;
+  font-weight: 300;
+  line-height: 40px;
 }
 .header-12-sub .hero-unit p {
   font-size: 18px;
@@ -3859,7 +3860,7 @@ section * {
     font-size: 25px;
     font-weight: normal;
     color: #ffffff;
-    line-height: 23.4px;
+    line-height: 40px;
   }
 }
 .header-12-sub .aside {

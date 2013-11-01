@@ -412,10 +412,11 @@ section * {
 }
 .header-3 .navbar .nav > li > a {
   padding: 29px 0 27px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: normal;
   color: #7f8c8d;
-  font-weight: bold;
+  font-weight: 500;
+  letter-spacing: 2px;
   color: #95a5a6;
 }
 .header-3 .navbar .nav > li > a:hover,

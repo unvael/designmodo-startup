@@ -3077,7 +3077,7 @@ section * {
   padding-top: 0;
   padding-bottom: 0;
   height: 80px;
-  background: #1b1f23;
+  background: #233240;
   color: white;
 }
 .header-10 .navbar {
@@ -3105,15 +3105,19 @@ section * {
   padding-right: 20px;
 }
 .header-10 .navbar .btn.btn-primary {
-  background-color: #27ae60;
+  background-color: #3498db;
+  font-size: 15px;
+  font-weight: normal;
+  color: #ffffff;
+  font-weight: bold;
 }
 .header-10 .navbar .btn.btn-primary:hover,
 .header-10 .navbar .btn.btn-primary:focus {
-  background-color: #52be80;
+  background-color: #5dade2;
 }
 .header-10 .navbar .btn.btn-primary:active,
 .header-10 .navbar .btn.btn-primary.active {
-  background-color: #219452;
+  background-color: #2c81ba;
 }
 .header-10 .navbar .navbar-inner {
   background: none;
@@ -3141,6 +3145,7 @@ section * {
   font-size: 17px;
   font-weight: normal;
   color: #7f8c8d;
+  font-weight: 600;
   color: #ffffff;
 }
 .header-10 .navbar .nav > li > a:hover,
@@ -3309,12 +3314,14 @@ section * {
   font-weight: normal;
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
 }
 .header-10-sub .hero-unit p {
   font-size: 25px;
   font-weight: normal;
   color: #bdc3c7;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
   line-height: 37.5px;
 }
 @media (max-width: 480px) {

@@ -3580,7 +3580,8 @@ section * {
   }
 }
 .header-11-sub {
-  padding: 110px 0;
+  padding-top: 110px;
+  padding-bottom: 110px;
   color: #bdc3c7;
   position: relative;
 }
@@ -3590,12 +3591,13 @@ section * {
   color: #ffffff;
   margin-bottom: 30px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
 }
 .header-11-sub p {
   font-size: 16px;
   font-weight: normal;
   color: #bdc3c7;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lato, sens-serif;
 }
 .header-11-sub .additional-links {
   opacity: 0.5;
@@ -3614,22 +3616,30 @@ section * {
   color: #979c9f;
 }
 @media (max-width: 767px) {
-  .header-11-sub .span7.offset1 {
-    margin-top: 30px;
+  .header-11-sub {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .header-11-sub .player {
+    margin: 40px 0 80px;
   }
 }
 @media (max-width: 480px) {
   .header-11-sub {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
   .header-11-sub h3 {
     font-size: 26px;
     font-weight: normal;
     color: #ffffff;
   }
+  .header-11-sub .player {
+    margin: 40px 0 80px;
+  }
 }
 .header-11-sub .signup-form form {
+  font-family: Lato, sens-serif;
   margin-top: 40px;
 }
 .header-11-sub .signup-form form .controls-row:first-child + .controls-row {

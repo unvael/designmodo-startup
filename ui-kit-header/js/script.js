@@ -277,6 +277,18 @@ startupKit.uiKitHeader.header11 = function() {
     if ($('.header-11 .navbar').hasClass('navbar-fixed-top')) {
         $('.header-11').css('position', 'fixed');
     };
+    
+    $(window).resize(function() {
+        var player = $('.header-11-sub .player');
+        if ($(window).width() < 751) { 
+            $('.header-11-sub .signup-form').before(player);
+            $('.header-11-sub .player-wrapper').hide();
+        }else{
+           $('.header-11-sub .player-wrapper').append(player);  
+           $('.header-11-sub .player-wrapper').show();   
+        }
+    });
+    
 };
 
 /* Header 12*/

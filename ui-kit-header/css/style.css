@@ -358,6 +358,38 @@ section * {
   font-family: Lato, sens-serif;
   line-height: 29.999999999999996px;
 }
+@media (max-width: 480px) {
+  .startup-kit_header h1 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #2c3e50;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 36px;
+  }
+  .startup-kit_header p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #7f8c8d;
+    font-family: Lato, sens-serif;
+    line-height: 27px;
+  }
+}
+@media (max-width: 767px) {
+  .startup-kit_header h1 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #2c3e50;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 36px;
+  }
+  .startup-kit_header p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #7f8c8d;
+    font-family: Lato, sens-serif;
+    line-height: 27px;
+  }
+}
 /**
  * Header 1 stylesheet  
  * */
@@ -4001,26 +4033,19 @@ section * {
   width: 100%;
   margin: 130px auto;
   z-index: 5;
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
   opacity: 0;
   filter: alpha(opacity=0);
 }
 @media (max-width: 767px) {
   .header-13 {
-    top: 80px;
     text-align: center;
   }
 }
 .header-13 .brand img {
   width: 100px !important;
   height: 100px !important;
-}
-@media (max-width: 480px) {
-  .header-13 .brand img {
-    display: inline-block;
-    width: 50px!important;
-    height: 50px !important;
-  }
 }
 .loaded .header-13 {
   -webkit-transition: .6s 1.4s top, 1.2s 1.4s opacity;
@@ -4032,7 +4057,6 @@ section * {
 }
 @media (max-width: 480px) {
   .header-13 {
-    top: 20px;
     text-align: left;
     -webkit-transition-duration: 0 !important;
     -moz-transition-duration: 0 !important;
@@ -4045,7 +4069,8 @@ section * {
   }
 }
 .header-13-sub {
-  padding: 130px 0;
+  padding-top: 130px;
+  padding-bottom: 130px;
   color: #bdc3c7;
 }
 .header-13-sub.v-center,
@@ -4092,12 +4117,14 @@ section * {
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 26px;
+  font-weight: 300;
 }
 .header-13-sub .lead {
   font-size: 22px;
   font-weight: normal;
   color: #bdc3c7;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
 }
 .header-13-sub .span5.offset1 {
   margin-top: 200px;
@@ -4140,6 +4167,9 @@ section * {
 @media (max-width: 480px) {
   .header-13-sub {
     padding-top: 90px;
+  }
+  .header-13-sub > div > .container {
+    padding-top: 180px;
   }
   .header-13-sub .span5.offset1,
   .header-13-sub .span4.offset1 {

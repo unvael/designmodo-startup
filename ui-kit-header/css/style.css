@@ -2826,7 +2826,7 @@ section * {
   font-weight: normal;
   color: #7f8c8d;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 500;
   letter-spacing: 1.6px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -2961,7 +2961,7 @@ section * {
   width: 100%;
   z-index: 50;
   padding-top: 300px;
-  padding-bottom: 90px;
+  padding-bottom: 60px;
   color: white;
   text-align: center;
 }

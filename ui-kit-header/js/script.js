@@ -387,7 +387,8 @@ startupKit.uiKitHeader.header18 = function() {
             if (h > maxH)
                 maxH = h;
         }).css('height', maxH + 'px');
-        $('.header-18 .page-transitions').css('height', maxH + 'px');
+        var hfooter = $('.header-18 .page-transitions footer').height();
+        $('.header-18 .page-transitions').css('height', maxH+ hfooter/1.5 + 'px');
     });
 
     // PageTransitions

@@ -2173,7 +2173,17 @@ section * {
  * */
 .header-7-sub {
   height: 100%;
+  max-height: 997px;
   overflow: hidden;
+}
+@media (max-width: 767px) {
+  .header-7-sub {
+    max-height: 100%;
+  }
+  .header-7-sub .pt-controls {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
 }
 .header-7-sub h1 {
   font-weight: 300;
@@ -2289,21 +2299,9 @@ section * {
   filter: alpha(opacity=100);
 }
 @media (max-width: 767px) {
-  .header-7-sub .pt-controls {
-    left: 10px;
-  }
-}
-@media (max-width: 480px) {
-  .header-7-sub .pt-controls {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 10px;
-    top: auto;
-    margin: 0;
-  }
   .header-7-sub .pt-controls .pt-indicators {
     text-align: center;
+    padding-bottom: 90px;
   }
   .header-7-sub .pt-controls .pt-indicators li {
     display: inline-block;
@@ -2352,7 +2350,8 @@ section * {
 }
 .header-7-sub .header-7 {
   position: absolute;
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
   top: 90px;
   left: 0;
   right: 0;
@@ -2392,6 +2391,8 @@ section * {
   font-size: 22px;
   font-weight: normal;
   color: #bdc3c7;
+  font-weight: 300;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 130px;
 }
 .header-7-sub section > div {
@@ -2406,6 +2407,10 @@ section * {
     vertical-align: top;
     padding-bottom: 70px;
   }
+}
+.header-7-sub .h-7-section-1 > div {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .header-7-sub .h-7-section-1 .box {
   -webkit-box-sizing: border-box;
@@ -2503,8 +2508,8 @@ section * {
   position: absolute;
   top: 0;
   right: 100%;
-  width: 5000px;
-  height: 268px;
+  width: 8000px;
+  height: 275px;
   background: #000;
   opacity: 0.1;
   filter: alpha(opacity=10);

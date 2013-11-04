@@ -308,7 +308,8 @@ header .brand {
   font-weight: normal;
   color: #34495e;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 800;
+  letter-spacing: -1px;
   color: #2c3e50;
 }
 header .brand img:first-child {
@@ -360,7 +361,7 @@ section * {
   font-size: 25px;
   font-weight: normal;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 800;
   color: #ffffff;
 }
 .header-1 .brand:hover,

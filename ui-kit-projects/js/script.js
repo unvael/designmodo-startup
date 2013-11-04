@@ -4,32 +4,6 @@ startupKit.uiKitProjects = startupKit.uiKitProjects || {};
 /* project-1 */
 startupKit.uiKitProjects.project1 = function() {
 
-    // page-transitions
-    $(window).resize(function() {
-        $('.page-transitions').each(function() {
-            var maxH = 0;
-            $('.pt-page', this).css('height', 'auto').each(function() {
-                var h = $(this).outerHeight();
-                if (h > maxH)
-                    maxH = h;
-            }).css('height', maxH + 'px');
-            $(this).css('height', maxH + 'px');
-        });
-    });
-
-    var pt = PageTransitions();
-    pt.init($('#pt-1'));
-
-    $('#pt-1 .pt-control-prev').on('click', function() {
-        pt.gotoPage(33, 'prev');
-        return false;
-    });
-
-    $('#pt-1 .pt-control-next').on('click', function() {
-        pt.gotoPage(32, 'next');
-        return false;
-    });
-
 };
 
 /* project-2 */

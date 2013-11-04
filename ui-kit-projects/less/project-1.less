@@ -17,12 +17,14 @@
     }
   }
 
-  .pt-page {
+  .head-box {
     .box-sizing(border-box);
     padding: 55px 60px;
     .border-radius(6px);
     overflow: hidden;
     color: #95a5a6;
+    height: 330px;
+    position: relative;
 
     &:before {
       content: '';
@@ -83,67 +85,6 @@
         margin-right: 20px;
       }
     }
-  }
-
-  .pt-controls {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    bottom: auto;
-    margin: -7.5px -70px 0;
-
-    > * {
-      position: relative;
-      z-index: 9999;
-      overflow: hidden;
-      .box-sizing(border-box);
-      width: 15px;
-      height: 15px;
-      .border-radius(50%);
-      background: #1abc9c;
-
-    }
-    @media (min-width: 1200px) and (max-width: 1330px),
-           (min-width: 980px) and (max-width: 1110px),
-           (max-width: 898px) {
-      margin: 0;
-      bottom: -30px;
-      top: auto;
-      text-align: center;
-    }
-  }
-
-  .pt-control-prev {
-    float: left;
-    @media (min-width: 1200px) and (max-width: 1330px),
-           (min-width: 980px) and (max-width: 1110px),
-           (max-width: 898px) {
-      float: none;
-      display: inline-block;
-    }
-  }
-
-  .pt-control-next {
-    float: right;
-    @media (min-width: 1200px) and (max-width: 1330px),
-           (min-width: 980px) and (max-width: 1110px),
-           (max-width: 898px) {
-      float: none;
-      display: inline-block;
-    }
-  }
-
-  .pt-first .pt-control-prev {
-    z-index: auto;
-    background: none;
-    border: 3px solid #ebedee;
-  }
-
-  .pt-last .pt-control-next {
-    z-index: auto;
-    background: none;
-    border: 3px solid #ebedee;
   }
 
   .projects {

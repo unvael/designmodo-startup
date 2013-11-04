@@ -63,7 +63,26 @@
 .header-20-sub{       
   border-top: 0;
   padding-top: 180px; padding-bottom: 80px;
+  
+  h3{
+    .font(30px, @h-text-color); 
+    font-family:@h-font-family; 
+    font-weight: 300; 
+    letter-spacing: -1px;
+    margin-bottom:30px;
+   }
+   p{
+     .font(18px); 
+     font-family:@c-font-family;
+     margin-bottom:30px;
+   }
   .btn { padding-left: 30px;  padding-right: 30px;}
+  @media (max-width: 767px) {
+    .pull-right{
+      text-align:center;
+      margin-bottom:30px;
+    }
+  }
   .img-wrapper {
     display: inline-block;
     position: relative;
@@ -106,6 +125,7 @@
   }
   @media (max-width: 480px) {padding-top: 150px;}  
   .videos {
+    @media (max-width: 767px) {margin-top: 75px;}
      margin-top: 150px;
     .video-box {
        float: left;
@@ -156,8 +176,10 @@
           }
       }
    }
+   
+   
    .description {
-      .font(16px, @base); font-weight: bold;     
+      .font(16px, @base); font-weight: bold;        
       @media (max-width: 767px) { display: block;}
     }
     @media (max-width: 480px) {

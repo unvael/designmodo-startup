@@ -1502,9 +1502,6 @@ section * {
   opacity: 1;
   filter: alpha(opacity=100);
 }
-@media (max-width: 480px) {
-  
-}
 @media (max-width: 979px) {
   .header-5 .navbar .nav-collapse {
     -webkit-box-sizing: border-box;

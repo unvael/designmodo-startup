@@ -67,7 +67,7 @@ function fadedEls(el, shift) {
         // responsive
         $(window).resize(function() {
             // features
-            if($(window).width()>767){
+            if($(window).width() > 767){
                  $('.header-3-sub .background').each(function() {
                     $(this).parallax('50%', -0.3, false);
                  });

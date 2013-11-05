@@ -1232,12 +1232,16 @@ section p {
     opacity: 1;
     top: 50%;
   }
-  50% {
+  40% {
     opacity: 0;
     top: 50%;
   }
-  100% {
+  45% {
     opacity: 0;
+    top: 29%;
+  }
+  46% {
+    opacity: 1;
     top: 29%;
   }
 }
@@ -1250,12 +1254,16 @@ section p {
     opacity: 1;
     top: 50%;
   }
-  50% {
+  40% {
     opacity: 0;
     top: 50%;
   }
-  100% {
+  45% {
     opacity: 0;
+    top: 29%;
+  }
+  46% {
+    opacity: 1;
     top: 29%;
   }
 }
@@ -1268,12 +1276,16 @@ section p {
     opacity: 1;
     top: 50%;
   }
-  50% {
+  40% {
     opacity: 0;
     top: 50%;
   }
-  100% {
+  45% {
     opacity: 0;
+    top: 29%;
+  }
+  46% {
+    opacity: 1;
     top: 29%;
   }
 }

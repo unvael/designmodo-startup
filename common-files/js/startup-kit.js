@@ -213,25 +213,31 @@ startupKit.uiKitHeader.header7 = function() {
         $('.header-7-sub .pt-controls').css('margin-top', (-1) * (maxH) / 2 - ctrlsHeight + 'px');
         $('.header-7-sub .pt-controls').css('padding-bottom', (maxH) / 2 + ctrlsHeight + 'px');
     });
-
+    
+    
     // PageTransitions
     var pt = PageTransitions();
     pt.init('#h-7-pt-main');
 
     $('.header-7-sub .pt-controls .pt-indicators > *').on('click', function() {
+        
+        //console.log('h');
         if ($(this).hasClass('active'))
             return false;
 
         var curPage = $(this).parent().children('.active').index();
         var nextPage = $(this).index();
+        $('.header-7-sub').css('background-color',$('#h-7-pt-main').children('.pt-page').eq(nextPage).find('section').css('background-color'));
         var ani = 44;
         if (curPage < nextPage) {
             ani = 45;
         }
 
         pt.gotoPage(ani, nextPage);
-        $(this).addClass('active').parent().children().not(this).removeClass('active');
+        $(this).addClass('active').parent().children().not(this).removeClass('active');        
         return false;
+        
+        
     });
 
 };

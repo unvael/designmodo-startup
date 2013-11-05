@@ -300,7 +300,7 @@ img {
 }
 header {
   padding-top: 100px;
-  padding-bottom: 150px;
+  padding-bottom: 70px;
   z-index: 100;
 }
 header .brand {
@@ -308,7 +308,9 @@ header .brand {
   font-weight: normal;
   color: #34495e;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: #2c3e50;
 }
 header .brand img:first-child {
   float: left;
@@ -336,6 +338,12 @@ section * {
   position: relative;
   z-index: 2;
 }
+@media (max-width: 767px) {
+  header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 /* header */
 /**
  * Header 10 stylesheet  
@@ -343,9 +351,10 @@ section * {
 .header-10 {
   z-index: 100;
   width: 100%;
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
   height: 80px;
-  background: #1b1f23;
+  background: #233240;
   color: white;
 }
 .header-10 .navbar {
@@ -373,15 +382,19 @@ section * {
   padding-right: 20px;
 }
 .header-10 .navbar .btn.btn-primary {
-  background-color: #27ae60;
+  background-color: #3498db;
+  font-size: 15px;
+  font-weight: normal;
+  color: #ffffff;
+  font-weight: bold;
 }
 .header-10 .navbar .btn.btn-primary:hover,
 .header-10 .navbar .btn.btn-primary:focus {
-  background-color: #52be80;
+  background-color: #5dade2;
 }
 .header-10 .navbar .btn.btn-primary:active,
 .header-10 .navbar .btn.btn-primary.active {
-  background-color: #219452;
+  background-color: #2c81ba;
 }
 .header-10 .navbar .navbar-inner {
   background: none;
@@ -409,6 +422,7 @@ section * {
   font-size: 17px;
   font-weight: normal;
   color: #7f8c8d;
+  font-weight: 600;
   color: #ffffff;
 }
 .header-10 .navbar .nav > li > a:hover,
@@ -577,12 +591,14 @@ section * {
   font-weight: normal;
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
 }
 .header-10-sub .hero-unit p {
   font-size: 25px;
   font-weight: normal;
   color: #bdc3c7;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
   line-height: 37.5px;
 }
 @media (max-width: 480px) {
@@ -673,6 +689,13 @@ section * {
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 80px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+@media (max-width: 767px) {
+  .content-7 h3 {
+    margin-bottom: 20px;
+  }
 }
 .content-7.v-center,
 .content-7 .v-center {
@@ -724,6 +747,11 @@ section * {
 .content-7 h6:first-child {
   margin-top: auto;
 }
+@media (max-width: 767px) {
+  .content-7 h6 {
+    margin-top: 20px;
+  }
+}
 .content-7 .row > .span3:first-child {
   font-size: 22px;
   font-weight: normal;
@@ -732,7 +760,7 @@ section * {
 }
 @media (max-width: 767px) {
   .content-7 .row > [class*="span"] {
-    margin-top: 30px;
+    margin-top: 45px;
   }
   .content-7 .row > [class*="span"]:first-child {
     margin-top: 0;
@@ -775,13 +803,13 @@ section * {
   font-weight: normal;
   color: #34495e;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 55px 0;
+  margin: 50px 0;
 }
 .content-8 p {
   font-size: 18px;
   font-weight: normal;
   color: #7f8c8d;
-  margin-bottom: 55px;
+  margin-bottom: 50px;
 }
 .content-8 .btn.btn-clear {
   -webkit-box-sizing: border-box;
@@ -789,6 +817,12 @@ section * {
   box-sizing: border-box;
   background: none;
   border: 2px solid #e74c3c;
+  font-size: 14px;
+  font-weight: normal;
+  color: #7f8c8d;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 12px 28px 13px;
   color: #e74c3c;
 }
 .content-8 .btn.btn-clear:hover,
@@ -801,17 +835,6 @@ section * {
   border-color: #c44133;
   background: #c44133;
   color: rgba(255, 255, 255, 0.75);
-}
-.content-8 .btn.btn-clear.btn-large {
-  padding-bottom: 11px;
-}
-.content-8 .btn.btn-large {
-  font-size: 14px;
-  font-weight: normal;
-  color: #7f8c8d;
-  font-weight: bold;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 12px 28px 13px;
 }
 .content-8.v-center,
 .content-8 .v-center {
@@ -883,6 +906,8 @@ section * {
   font-weight: normal;
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: -1px;
 }
 .content-13.subscribe-form input[type="text"]:-moz-placeholder {
   color: #ffffff;
@@ -892,6 +917,22 @@ section * {
 }
 .content-13.subscribe-form input[type="text"].placeholder {
   color: #ffffff;
+}
+.content-13.subscribe-form input[type="text"]::-webkit-input-placeholder {
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+.content-13.subscribe-form input[type="text"]:-moz-placeholder {
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+.content-13.subscribe-form input[type="text"]::-moz-placeholder {
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+.content-13.subscribe-form input[type="text"]:-ms-input-placeholder {
+  font-weight: 500;
+  letter-spacing: -1px;
 }
 .content-13.subscribe-form .ani-placeholder {
   -webkit-box-sizing: border-box;
@@ -993,8 +1034,8 @@ section * {
   color: #7f8c8d;
   background: #121518;
   color: #ffffff;
-  opacity: 0.8;
-  filter: alpha(opacity=80);
+  opacity: 0.3;
+  filter: alpha(opacity=30);
   position: absolute;
   left: 50%;
   bottom: 80px;
@@ -1128,22 +1169,26 @@ section * {
   font-weight: normal;
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
 .footer-3 .additional-links a {
-  color: #7f8c8d;
+  color: #bdc3c7;
   text-decoration: underline;
 }
 .footer-3 .additional-links a:hover,
 .footer-3 .additional-links a:focus,
 .footer-3 .additional-links a.active {
-  color: #bdc3c7;
+  color: #ffffff;
 }
 .footer-3 h6 {
   margin: 0 0 10px;
   font-size: 16px;
   font-weight: normal;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 300;
+}
+.footer-3 .address {
+  line-height: 1.6;
 }
 @media (max-width: 767px) {
   .footer-3 .row > [class*="span"] {

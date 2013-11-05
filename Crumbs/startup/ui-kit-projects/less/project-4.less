@@ -5,6 +5,7 @@
   h3 {
     margin: 0 0 60px;
     font-size: 30px;
+    font-weight: 300;
     text-align: center;
   }
 
@@ -65,6 +66,31 @@
       font-size: 16px;
       font-weight: bold;
       margin-bottom: 5px;
+      display: block;
+
+      &.color-pomegranate:hover,
+      &.color-pomegranate.hover {
+        color: @pomegranate;
+        .transition(color .4s);
+      }
+
+      &.color-orange:hover,
+      &.color-orange.hover {
+        color: @orange;
+        .transition(color .4s);
+      }
+
+      &.color-belize-hole:hover,
+      &.color-belize-hole.hover {
+        color: @belize-hole;
+        .transition(color .4s);
+      }
+
+      &.color-green-sea:hover,
+      &.color-green-sea.hover {
+        color: @green-sea;
+        .transition(color .4s);
+      }
     }
 
     .project:hover {

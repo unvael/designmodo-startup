@@ -49,13 +49,13 @@ function fadedEls(el, shift) {
 
         // Parallax
       
-        $('.header-10-sub .background').each(function() {
-                  $(this).parallax('50%', 0.3, false);
+        $('.header-10-sub,.header-10-sub .background').each(function() {
+                  $(this).parallax('50%', -0.3, false);
               });
       
        
         $('.content-23:not(.custom-bg)').each(function() {
-                   $(this).parallax('50%', 0.3, true);
+                   $(this).parallax('50%', 0.3, false);
                });
        
 
@@ -124,14 +124,8 @@ function fadedEls(el, shift) {
                     }
                 });                 
                 
-            })($('.screen-custom img'));
-        
+            })($('.screen-custom img'));    });
 
-    });
-
-    $(window).load(function() {
-        $('html').addClass('loaded');
-        $(window).resize().scroll();
-    });
+   
 })(jQuery);
 

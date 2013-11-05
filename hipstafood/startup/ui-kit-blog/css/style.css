@@ -204,7 +204,7 @@ img {
 }
 header {
   padding-top: 100px;
-  padding-bottom: 150px;
+  padding-bottom: 70px;
   z-index: 100;
 }
 header .brand {
@@ -212,7 +212,9 @@ header .brand {
   font-weight: normal;
   color: #34495e;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: #2c3e50;
 }
 header .brand img:first-child {
   float: left;
@@ -239,6 +241,12 @@ section * {
 .container {
   position: relative;
   z-index: 2;
+}
+@media (max-width: 767px) {
+  header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 .pt-perspective {
   position: relative;
@@ -290,6 +298,38 @@ section * {
   color: #7f8c8d;
   font-family: Lato, sens-serif;
   line-height: 29.999999999999996px;
+}
+@media (max-width: 480px) {
+  .startup-kit_header h1 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #2c3e50;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 36px;
+  }
+  .startup-kit_header p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #7f8c8d;
+    font-family: Lato, sens-serif;
+    line-height: 27px;
+  }
+}
+@media (max-width: 767px) {
+  .startup-kit_header h1 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #2c3e50;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 36px;
+  }
+  .startup-kit_header p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #7f8c8d;
+    font-family: Lato, sens-serif;
+    line-height: 27px;
+  }
 }
 /**
  * Blog 1 stylesheet  
@@ -424,13 +464,14 @@ section * {
   font-size: 30px;
   color: #3498db;
   margin: 0;
+  font-weight: 300;
 }
 .blog-1 .title .submitted {
-  font-size: 13px;
+  font-size: 12px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.19em;
   color: #bdc3c7;
   margin-top: 18px;
 }
@@ -450,11 +491,11 @@ section * {
 }
 .blog-1 .links,
 .blog-1 .links * {
-  font-size: 13px;
+  font-size: 12px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.19em;
   color: #34495e;
 }
 .blog-1 .links > * + * {
@@ -590,6 +631,7 @@ section * {
   font-size: 35px;
   font-weight: bold;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: -1px;
 }
 .blog-2 h3 img {
   display: block;
@@ -600,6 +642,8 @@ section * {
   color: #34495e;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 30px;
+  letter-spacing: -1px;
+  font-weight: 300;
 }
 .blog-2 h6 {
   font-size: 20px;
@@ -681,6 +725,8 @@ section * {
 .blog-3 .title h3 {
   font-size: 35px;
   margin: 0;
+  font-weight: 300;
+  letter-spacing: -1px;
 }
 .blog-3 .title .submitted {
   font-size: 16px;
@@ -711,15 +757,23 @@ section * {
 .blog-3 .quote {
   position: relative;
   margin-bottom: 35px;
-  font-size: 37px;
+  font-size: 29px;
+  line-height: 38px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #2c3e50;
+  letter-spacing: -1px;
+  font-weight: 300;
 }
 .blog-3 .quote:before {
   content: url('../img/quote-up.png');
   position: absolute;
   top: -17px;
   left: -40px;
+}
+@media (max-width: 767px) {
+  .blog-3 .quote {
+    margin-left: 40px;
+  }
 }
 .blog-3 .promo {
   margin-bottom: 70px;
@@ -738,12 +792,15 @@ section * {
 }
 .blog-3 .links h6 {
   margin: 0 0 23px;
+  letter-spacing: 0.19em;
+  font-size: 12px;
+  font-weight: 500;
 }
 .blog-3 .links a {
   color: #1abc9c;
   font-size: 20px;
   font-family: "Lato", sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: none;
   letter-spacing: normal;
   line-height: 1.5;
@@ -788,11 +845,13 @@ section * {
 }
 .blog-4 .quote {
   position: relative;
-  margin: 60px 0 55px;
-  font-size: 37px;
+  margin: 60px 0 55px 40px;
+  font-size: 29px;
+  line-height: 38px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #2c3e50;
-  line-height: 1.35;
+  font-weight: 300;
+  letter-spacing: -1px;
 }
 .blog-4 .quote:before {
   content: url('../img/quote-up.png');
@@ -802,11 +861,11 @@ section * {
 }
 .blog-4 .tags {
   margin-top: 70px;
-  font-size: 14px;
+  font-size: 12px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.19em;
   color: #bdc3c7;
 }
 .blog-4 .tags a {
@@ -989,11 +1048,11 @@ section * {
   margin: 0;
 }
 .blog-5 .title .submitted {
-  font-size: 14px;
+  font-size: 12px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.19em;
   color: #bdc3c7;
   margin-top: 35px;
 }
@@ -1008,7 +1067,7 @@ section * {
 }
 @media (max-width: 480px) {
   .blog-5 .title .submitted {
-    display: inline-block;
+    display: block;
     text-align: left;
   }
   .blog-5 .title .submitted > * {
@@ -1043,6 +1102,7 @@ section * {
   font-size: 30px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
+  letter-spacing: -1px;
 }
 .blog-5 .quote:before {
   content: url('../img/quote-down.png');
@@ -1056,6 +1116,7 @@ section * {
   font-weight: bold;
   color: #2980b9;
   font-family: "Lato", sans-serif;
+  letter-spacing: 0;
 }
 @media (max-width: 767px) {
   .blog-5 .quote {
@@ -1146,11 +1207,11 @@ section * {
   }
 }
 .blog-5 .tags {
-  font-size: 14px;
+  font-size: 12px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.19em;
   text-align: center;
   color: #bdc3c7;
 }

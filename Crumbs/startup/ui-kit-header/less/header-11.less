@@ -7,7 +7,8 @@
 .header-11{
   z-index: 100;
   width: 100%;
-  padding:0;  
+ padding-top:0;
+  padding-bottom:0;
   height:80px;
     .navbar {
       position: absolute;
@@ -58,23 +59,35 @@
   }
 }
 .header-11-sub{
-  padding:110px 0;  
+  padding-top:110px;
+  padding-bottom:110px;  
   color: @silver;
   position: relative;
-  h3 {.font(33px,white); margin-bottom:30px;  font-family: @h-font-family;}
-  p {.font(16px, @silver); font-family: @h-font-family;}
+  h3 {.font(33px,white); margin-bottom:30px;  font-family: @h-font-family; font-weight:300;}
+  p {.font(16px, @silver); font-family: @c-font-family;}
   .additional-links {
     .opacity(50);
     .font(12px, @silver);
     a {text-decoration: underline; .a-color(@silver);}
   }
-  @media (max-width: 767px) { .span7.offset1 { margin-top: 30px; }}
+  @media (max-width: 767px) { 
+    padding-top:70px;
+    padding-bottom:70px;
+    .player{
+      margin: 40px 0 80px;
+    }
+  }
   @media (max-width: 480px) {
-    padding-top: 30px; padding-bottom: 30px;
+    padding-top:70px;
+    padding-bottom:70px;
     h3 { .font(26px, white);}
+    .player{
+      margin: 40px 0 80px;
+    }
   }  
   .signup-form {
       form {
+        font-family:@c-font-family;
         margin-top: 40px;  
         .controls-row:first-child + .controls-row {
           display: table;

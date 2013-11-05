@@ -3,7 +3,7 @@
   .v-center;
   
  
-  h3{.font(30px, white); font-family: @h-font-family; margin-bottom:35px;}
+  h3{.font(30px, white); font-family: @h-font-family; margin-bottom:35px; line-height: 40px; font-weight: 300;}
   h6 {.font(18px, white); font-weight: bold; margin: 0 0 9px;}
   .signup-form, .signup-form + div {display: inline-block; vertical-align: middle;}
   .signup-form + div { margin-left: 100px; max-width: 300px;}
@@ -11,6 +11,7 @@
     .signup-form + div { max-width: 228px;}
   }
   @media (max-width: 767px) {
+    padding: 80px 20px;
     .signup-form,.signup-form + div {display: block; vertical-align: baseline;}
     .signup-form + div { margin-top: 70px; margin-left: 0; max-width: none;}
   }
@@ -29,14 +30,15 @@
         .control-group.pull-left{margin-right:5%; width: 45%;}
         .control-group.pull-right{margin-left:5%; width: 45%;}
         label {
-          .font(15px, @base); font-weight: bold;
+          .font(15px, @base);
           margin-bottom: 12px;
         }
         input[type="text"], input[type="password"] {
           width: 100%;
           .font(16px,@base);
           border-color: @clouds;
-          &:focus {border-color: #14ddb3;} //should change to color variable
+          &:hover {border-color: @silver;}
+          &:focus {border-color: @turquoise;}
         }
            
         .site-link {
@@ -57,6 +59,10 @@
           left: 0; right: 0; bottom: 0;
           .font(17px,white);
           width:100%;
+        }
+        @media (max-width: 767px) {
+          display: block;
+          margin: 0 -20px;
         }
       }
       @media (max-width: 979px) and (min-width: 768px) {
@@ -84,10 +90,16 @@
     margin-top:40px;
     big {
        display:block;
-       .font(22px,white); font-family: @h-font-family; font-weight:300;        
+       .font(22px,white); font-family: @h-font-family; font-weight:300;  
+       line-height: 32px;      
     }    
     .font(14px, @concrete); font-family: @c-font-family; 
-    h6 {.font(20px, white); font-family: @c-font-family; margin-top:50px;}   
+    h6 {
+      .font(18px, white); font-family: @c-font-family; margin-top:50px;
+      @media (max-width: 767px) {
+        margin-top: 0;
+      }
+    }   
     @media (max-width: 767px) { > * + * { margin-top: 30px;}}
   }
 }

@@ -14,11 +14,12 @@
 
     a {
       .a-color(#bdc3c7, #1abc9c);
-      font-size: 14px;
+      font-size: 13px;
       font-family: @h-font-family;
-      font-weight: bold;
+      font-weight: 500;
       text-transform: uppercase;
       margin-right: 22px;
+      letter-spacing: 0.19em;
     }
 
     .social-btns {
@@ -106,7 +107,7 @@
       color: #fff;
       font-size: 13px;
       font-family: @h-font-family;
-      font-weight: bold;
+      font-weight: 500;
       text-transform: uppercase;
       letter-spacing: 0.14em;
     }
@@ -148,9 +149,13 @@
   }
 
   @media (max-width: 767px) {
-    h3,
+    h3 {
+      text-align: center;
+    }
+
     .title {
       text-align: center;
+      line-height: 23px;
     }
 
     .social-btns {

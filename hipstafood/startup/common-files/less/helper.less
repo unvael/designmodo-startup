@@ -31,12 +31,14 @@
 }
 header {
   padding-top: 100px;
-  padding-bottom: 150px;
+  padding-bottom: 70px;
   z-index:100;
   .brand {
       .font(25px,@base);
       font-family:@h-font-family;
-      font-weight: bold;
+      font-weight: 800;
+      letter-spacing:-1px;
+      color: #2c3e50;
       img:first-child {float: left; margin: -10px 15px 0 0;}
   }
 }
@@ -103,4 +105,8 @@ section{ *{z-index:2;} }
     .navbar-form,.navbar-search {padding: 10px 35px;}
 }
 
-
+header{
+  @media (max-width: 767px){
+    padding-left:20px; padding-right:20px;
+  }
+}

@@ -204,7 +204,7 @@ img {
 }
 header {
   padding-top: 100px;
-  padding-bottom: 150px;
+  padding-bottom: 70px;
   z-index: 100;
 }
 header .brand {
@@ -212,7 +212,9 @@ header .brand {
   font-weight: normal;
   color: #34495e;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: #2c3e50;
 }
 header .brand img:first-child {
   float: left;
@@ -239,6 +241,12 @@ section * {
 .container {
   position: relative;
   z-index: 2;
+}
+@media (max-width: 767px) {
+  header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 .ribbon {
   display: block;
@@ -280,6 +288,38 @@ section * {
   color: #7f8c8d;
   font-family: Lato, sens-serif;
   line-height: 29.999999999999996px;
+}
+@media (max-width: 480px) {
+  .startup-kit_header h1 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #2c3e50;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 36px;
+  }
+  .startup-kit_header p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #7f8c8d;
+    font-family: Lato, sens-serif;
+    line-height: 27px;
+  }
+}
+@media (max-width: 767px) {
+  .startup-kit_header h1 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #2c3e50;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 36px;
+  }
+  .startup-kit_header p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #7f8c8d;
+    font-family: Lato, sens-serif;
+    line-height: 27px;
+  }
 }
 /**
  * Price 1 stylesheet  
@@ -331,6 +371,11 @@ section * {
   }
 }
 @media (max-width: 767px) {
+  .price-1 .ribbon {
+    top: 26px;
+  }
+}
+@media (max-width: 767px) {
   .price-1 .plan {
     margin-top: 30px;
   }
@@ -369,12 +414,17 @@ section * {
     top: 20px;
   }
 }
+@media (max-width: 767px) {
+  .price-2 .plans .plan .ribbon {
+    top: 50px;
+  }
+}
 .price-2 .plans .title {
   padding: 55px 0 55px;
   background: #34495e;
   color: #fff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 16px;
   letter-spacing: 2px;
   white-space: nowrap;
@@ -389,6 +439,7 @@ section * {
   font-size: 24px;
   vertical-align: top;
   position: relative;
+  font-weight: 400;
   top: 26px;
   left: -10px;
   opacity: 0.5;
@@ -410,7 +461,7 @@ section * {
   background: transparent;
   opacity: 0.5;
   filter: alpha(opacity=50);
-  font-weight: bold;
+  font-weight: 500;
 }
 .price-2 .plans .title .btn.btn-clear:hover,
 .price-2 .plans .title .btn.btn-clear:focus {
@@ -469,6 +520,7 @@ section * {
   margin: 0 -2px;
   border-left: 2px solid #2f4254;
   border-right: 2px solid #2f4254;
+  z-index: 3;
 }
 @media (max-width: 767px) {
   .price-2 .plans {
@@ -555,11 +607,14 @@ section * {
 .price-3 .plan .title {
   color: #2c3e50;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 8px;
 }
 .price-3 .plan .title .img {
   min-height: 134px;
+}
+.price-3 .plan .price {
+  font-weight: 400;
 }
 .price-3 .plan .description {
   margin: 30px 0 35px;
@@ -567,6 +622,7 @@ section * {
 }
 .price-3 .plan .btn {
   min-width: 150px;
+  font-weight: 500;
 }
 .price-3 .plan.plan-2 {
   border-left: 2px solid #e5e5e5;

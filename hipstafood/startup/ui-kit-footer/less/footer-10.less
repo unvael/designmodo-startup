@@ -11,18 +11,19 @@
   .brand {
     display: inline-block;
     padding: 3px 0 0;
-    .a-color(@midnight-blue, @danger);
     .font(25px, inherit); font-family: @h-font-family; font-weight: 500;
     img:first-child {float: left;  margin: -10px 15px 0 0;}
+    .a-color(@wet-asphalt, @danger);
   }
   p {.font(16px);.line-height(25.6px);}
   a {.a-color(@danger);}
-  h6 {.font(18px,@base); font-weight:bold;} 
+  h6 {.font(18px,@base); font-weight:500;} 
   nav {
     h6 {
       margin: 0 0 20px;
       .line-height(24px);
       color: @base; 
+      font-weight: 500;
     }
     ul {
       list-style: none;
@@ -59,6 +60,25 @@
         background: transparent;      
         .line-height(60px); .font(50px, white);  font-family: @h-font-family;    
         .placeholder-color(#fff);
+        font-weight: 500;
+        letter-spacing: -1px;
+
+        &::-webkit-input-placeholder {
+          font-weight: 500;
+          letter-spacing: -1px;
+        }
+        &:-moz-placeholder {
+          font-weight: 500;
+          letter-spacing: -1px;
+        }
+        &::-moz-placeholder {
+          font-weight: 500;
+          letter-spacing: -1px;
+        }
+        &:-ms-input-placeholder {
+          font-weight: 500;
+          letter-spacing: -1px;
+        }
       }    
       .ani-placeholder {
         .box-sizing(border-box);
@@ -68,10 +88,16 @@
       }    
       .btn {
         margin-top: 8px;
-        font-weight: bold;
+        font-weight: 500;
         width: 220px;
         max-width: 100%;
-      }    
+      }
+      @media (max-width: 767px) {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: -20px;
+        margin-right: -20px;
+      }  
       @media (max-width: 480px) {
         input[type="text"],
         .ani-placeholder {

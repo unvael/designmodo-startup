@@ -14,9 +14,23 @@
   h4, .h4,
   h5, .h5,
   h6, .h6 {color: white;}
-  .brand {.font(25px, white); font-family: @h-font-family;}
-  .additional-links a {.a-color(@asbestos, @silver); text-decoration: underline; }
-  h6 { margin: 0 0 10px; .font(16px, white); font-weight:bold;}
+  .brand {
+    .font(25px, white);
+    font-family: @h-font-family;
+    font-weight: 500;
+  }
+  .additional-links a {
+    .a-color(@silver, white);
+    text-decoration: underline;
+  }
+  h6 {
+    margin: 0 0 10px;
+    .font(16px, white);
+    font-weight: 300;
+  }
+  .address {
+    line-height: 1.6;
+  }
   @media (max-width: 767px) {
      .row > [class*="span"] {
       margin-top: 30px;

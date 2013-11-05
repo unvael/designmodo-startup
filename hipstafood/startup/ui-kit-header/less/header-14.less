@@ -14,12 +14,13 @@
   }
 h1 {font-weight: 300;}
 h3 {.font(32px, white); font-weight: 300;}    
-  @media (max-width: 767px) { padding-right: 0; padding-left: 0;}
+ // @media (max-width: 767px) { padding-right: 0; padding-left: 0;}
   position: relative;
-  padding-top: 100px; padding-bottom: 100px;
+  padding-top: 95px; 
+  padding-bottom: 95px;
   text-align: center;
   @media (max-width: 480px) {  padding-top: 50px;  padding-bottom: 50px; }
-  h3 { margin: 0 0 30px;}
+  h3 { margin: 0 0 40px;}
   
   .header-14{
      margin-bottom: 65px;
@@ -35,7 +36,7 @@ h3 {.font(32px, white); font-weight: 300;}
       display: table;
       border-collapse: collapse;
       padding: 0;
-      margin: 0 auto 170px;
+      margin: 190px auto;
       background: transparent;
       color: white;    
       > * {
@@ -57,6 +58,9 @@ h3 {.font(32px, white); font-weight: 300;}
         .btn {
           padding-left: 30px; padding-right: 30px;
           margin-left: 0;
+          .border-radius(0 6px 6px 0); 
+          @media (max-width: 767px) {.border-radius(6px);  }
+      
         }
       }
     }
@@ -71,6 +75,7 @@ h3 {.font(32px, white); font-weight: 300;}
       }
       .input-append input[type="text"],.input-append .btn {.border-radius(6px);}
       .input-append .btn { margin-top: 15px;}
-    }
+      
+    }    
   }
 }

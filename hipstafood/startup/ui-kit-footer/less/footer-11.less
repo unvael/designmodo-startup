@@ -2,14 +2,21 @@
  * Footer 11 stylesheet  
  * */
 .footer-11 {
+  padding-top: 40px;
   text-align: center;
-  > .container {padding: 40px 0;}
+  > .container {
+    padding: 0 0 40px;
+    position: relative;
+  }
   a {.a-color(@silver, @info);}
   .brand {
-    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
     img:first-child { float: left;  margin: 0 15px 0 0;}
   }
   nav {
+    margin: 0 100px;
     ul {
       list-style: none;
       margin: 0;
@@ -24,7 +31,9 @@
   }
   .social-btns {
     white-space: nowrap;
-    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
     > * {      
       display: inline-block;
       margin-left: 15px;
@@ -77,7 +86,10 @@
       padding: 11px 20px;
       &:first-child { margin-top: 0; }
     }
-    .social-btns { float: none; margin-top: 19px; }
+    .social-btns {
+      position: static;
+      margin-top: 30px;
+    }
     .additional-links a { margin: 0 20px 0 0; .line-height(18.0667px); }
   }
 }

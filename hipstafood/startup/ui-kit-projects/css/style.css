@@ -204,7 +204,7 @@ img {
 }
 header {
   padding-top: 100px;
-  padding-bottom: 150px;
+  padding-bottom: 70px;
   z-index: 100;
 }
 header .brand {
@@ -212,7 +212,9 @@ header .brand {
   font-weight: normal;
   color: #34495e;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: #2c3e50;
 }
 header .brand img:first-child {
   float: left;
@@ -239,6 +241,12 @@ section * {
 .container {
   position: relative;
   z-index: 2;
+}
+@media (max-width: 767px) {
+  header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 .pt-perspective {
   position: relative;
@@ -307,6 +315,38 @@ section * {
   font-family: Lato, sens-serif;
   line-height: 29.999999999999996px;
 }
+@media (max-width: 480px) {
+  .startup-kit_header h1 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #2c3e50;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 36px;
+  }
+  .startup-kit_header p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #7f8c8d;
+    font-family: Lato, sens-serif;
+    line-height: 27px;
+  }
+}
+@media (max-width: 767px) {
+  .startup-kit_header h1 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #2c3e50;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 36px;
+  }
+  .startup-kit_header p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #7f8c8d;
+    font-family: Lato, sens-serif;
+    line-height: 27px;
+  }
+}
 /**
  * Project 1 stylesheet  
  * */
@@ -318,7 +358,7 @@ section * {
   color: #bdc3c7;
   font-size: 13px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-right: 25px;
@@ -328,7 +368,7 @@ section * {
 .projects-1 .title a.active {
   color: #1abc9c;
 }
-.projects-1 .pt-page {
+.projects-1 .head-box {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -338,8 +378,10 @@ section * {
   border-radius: 6px;
   overflow: hidden;
   color: #95a5a6;
+  height: 330px;
+  position: relative;
 }
-.projects-1 .pt-page:before {
+.projects-1 .head-box:before {
   content: '';
   display: block;
   position: absolute;
@@ -358,29 +400,31 @@ section * {
   transition: opacity 1s;
 }
 @media (max-width: 700px) {
-  .projects-1 .pt-page:before {
+  .projects-1 .head-box:before {
     opacity: 0.2;
     filter: alpha(opacity=20);
   }
 }
-.projects-1 .pt-page > * {
+.projects-1 .head-box > * {
   max-width: 270px;
   position: relative;
 }
-.projects-1 .pt-page .brand {
+.projects-1 .head-box .brand {
   margin-bottom: 17px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 23px;
   color: #34495e;
 }
-.projects-1 .pt-page .brand > img {
+.projects-1 .head-box .brand > img {
   margin-right: 12px;
+  vertical-align: top;
+  margin-top: 4px;
 }
-.projects-1 .pt-page p {
+.projects-1 .head-box p {
   font-size: 16px;
 }
-.projects-1 .pt-page .features {
+.projects-1 .head-box .features {
   border-top: 2px solid rgba(189, 195, 199, 0.3);
   margin-top: 25px;
   padding-top: 25px;
@@ -388,72 +432,14 @@ section * {
   font-weight: bold;
   color: #1abc9c;
 }
-.projects-1 .pt-page .features > * + * {
+.projects-1 .head-box .features > * + * {
   margin-top: 10px;
 }
-.projects-1 .pt-page .features [class*="fui-"] {
+.projects-1 .head-box .features [class*="fui-"] {
   font-size: 23px;
   font-weight: normal;
   vertical-align: middle;
   margin-right: 20px;
-}
-.projects-1 .pt-controls {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  bottom: auto;
-  margin: -7.5px -70px 0;
-}
-.projects-1 .pt-controls > * {
-  position: relative;
-  z-index: 9999;
-  overflow: hidden;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 15px;
-  height: 15px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  background: #1abc9c;
-}
-@media (min-width: 1200px) and (max-width: 1330px), (min-width: 980px) and (max-width: 1110px), (max-width: 898px) {
-  .projects-1 .pt-controls {
-    margin: 0;
-    bottom: -30px;
-    top: auto;
-    text-align: center;
-  }
-}
-.projects-1 .pt-control-prev {
-  float: left;
-}
-@media (min-width: 1200px) and (max-width: 1330px), (min-width: 980px) and (max-width: 1110px), (max-width: 898px) {
-  .projects-1 .pt-control-prev {
-    float: none;
-    display: inline-block;
-  }
-}
-.projects-1 .pt-control-next {
-  float: right;
-}
-@media (min-width: 1200px) and (max-width: 1330px), (min-width: 980px) and (max-width: 1110px), (max-width: 898px) {
-  .projects-1 .pt-control-next {
-    float: none;
-    display: inline-block;
-  }
-}
-.projects-1 .pt-first .pt-control-prev {
-  z-index: auto;
-  background: none;
-  border: 3px solid #ebedee;
-}
-.projects-1 .pt-last .pt-control-next {
-  z-index: auto;
-  background: none;
-  border: 3px solid #ebedee;
 }
 .projects-1 .projects {
   display: table;
@@ -686,6 +672,7 @@ section * {
 .projects-3 h3 {
   margin: 0 0 60px;
   font-size: 30px;
+  font-weight: 300;
   text-align: center;
 }
 .projects-3 .projects {
@@ -813,6 +800,7 @@ section * {
 .projects-4 h3 {
   margin: 0 0 60px;
   font-size: 30px;
+  font-weight: 300;
   text-align: center;
 }
 .projects-4 .projects + .projects {
@@ -866,6 +854,39 @@ section * {
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 5px;
+  display: block;
+}
+.projects-4 .projects .name.color-pomegranate:hover,
+.projects-4 .projects .name.color-pomegranate.hover {
+  color: #c0392b;
+  -webkit-transition: color 0.4s;
+  -moz-transition: color 0.4s;
+  -o-transition: color 0.4s;
+  transition: color 0.4s;
+}
+.projects-4 .projects .name.color-orange:hover,
+.projects-4 .projects .name.color-orange.hover {
+  color: #f39c12;
+  -webkit-transition: color 0.4s;
+  -moz-transition: color 0.4s;
+  -o-transition: color 0.4s;
+  transition: color 0.4s;
+}
+.projects-4 .projects .name.color-belize-hole:hover,
+.projects-4 .projects .name.color-belize-hole.hover {
+  color: #2980b9;
+  -webkit-transition: color 0.4s;
+  -moz-transition: color 0.4s;
+  -o-transition: color 0.4s;
+  transition: color 0.4s;
+}
+.projects-4 .projects .name.color-green-sea:hover,
+.projects-4 .projects .name.color-green-sea.hover {
+  color: #16a085;
+  -webkit-transition: color 0.4s;
+  -moz-transition: color 0.4s;
+  -o-transition: color 0.4s;
+  transition: color 0.4s;
 }
 .projects-4 .projects .project:hover .photo {
   opacity: 0.4;

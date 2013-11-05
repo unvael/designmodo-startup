@@ -3,6 +3,14 @@
  * */
 .header-7-sub{    
   height:100%;
+  max-height:997px;
+  @media (max-width: 767px) {
+    max-height:100%;
+    .pt-controls {
+         margin:0 !important; 
+         padding:0 !important;
+       }
+  }
   overflow:hidden;
   h1 {font-weight: 300;}
   h3 { .font(35px); font-weight: 300;}
@@ -73,16 +81,23 @@
         .opacity(0);    
         .loaded & {.transition(~'1.2s 1.6s opacity'); .opacity(100);}
       }  
-    @media (max-width: 767px) {left: 10px;}  
-    @media (max-width: 480px) {
-      position: absolute;
-      left: 0; right: 0; bottom: 10px; top: auto;
-      margin: 0;  
-      .pt-indicators {
-        text-align: center;  
-        li {display: inline-block; margin: 0 7.5px; }
-      }
-    }
+    @media (max-width: 767px) {
+      
+         .pt-indicators {
+             text-align: center;  
+              padding-bottom:90px;
+             li {
+               display: inline-block;
+               margin: 0 7.5px;
+              
+             }
+          }
+      
+    }  
+   
+     
+     
+    
   }
 
   .page-transitions.pt-item-5 + .pt-controls li {border-color: rgba(0, 0, 0, 0.2);}
@@ -104,7 +119,8 @@
   }
   .header-7{
     position: absolute;
-    padding:0;
+    padding-top:0;
+    padding-bottom:0;
     top:90px; left: 0; right: 0;
     text-align: left;      
     .opacity(0); left: 100%;  
@@ -124,7 +140,7 @@
         > * { position: relative;}
     }
     .row + .row {position: relative;}
-    .lead {.font(22px, @silver); margin-bottom: 130px;}    
+    .lead {.font(22px, @silver); font-weight:300; font-family:@h-font-family; margin-bottom: 130px;}    
     > div {
       display: table-cell;
       vertical-align: middle;
@@ -136,7 +152,11 @@
     }  
   }    
   
-  .h-7-section-1{    
+  .h-7-section-1{  
+    > div{
+      padding-left:20px;
+      padding-right:20px;
+    }  
     .box {
       .box-sizing(border-box);
       .font(14px, @silver);
@@ -193,7 +213,7 @@
         display: block;
         position: absolute;
         top: 0; right: 100%;
-        width: 5000px; height: 268px;
+        width: 8000px; height: 275px;
         background: #000;
         .opacity(10); .transform-origin(100% 0); .rotate(-57deg);
       }

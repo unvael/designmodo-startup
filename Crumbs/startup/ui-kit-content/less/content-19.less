@@ -12,6 +12,11 @@
       position: absolute;
       top: 0;
       left: -60px;
+      @media (min-width: 1200px) and (max-width: 1300px),
+             (min-width: 980px) and (max-width: 1080px),
+             (max-width: 870px) {
+        display: none;
+      }
     }
     @media (max-width: 767px) {margin-bottom: 50px;}
     .quote-text {
@@ -34,7 +39,12 @@
       overflow: hidden;
       margin-right: 20px;
     }
-    .quote-author-name {display: inline-block;}
+    .quote-author-name {
+      display: inline-block;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.19em;
+    }
   }
   .span3 .quote {
     position: relative;
@@ -54,7 +64,12 @@
       overflow: hidden;
       margin-left: -50px; margin-top: 6px;
     }
-    .quote-date {.font(13px, @concrete); font-family:@h-font-family; font-weight:bold;}
+    .quote-date {
+      .font(12px, @concrete);
+      font-family:@h-font-family;
+      font-weight:500;
+      line-height: 1.19em;
+    }
   }
   @media (max-width: 480px) {
     padding-top: 80px; padding-bottom: 80px;

@@ -372,13 +372,7 @@ startupKit.uiKitHeader.header17 = function() {
 startupKit.uiKitHeader.header18 = function() {
 
     $(window).resize(function() {
-        var maxH = 0;
-        $('.header-18 section').css('height', $(this).height() + 'px').each(function() {
-            var h = $(this).outerHeight();
-            if (h > maxH)
-                maxH = h;
-        }).css('height', maxH + 'px');
-
+        maxH = $(window).height(); 
         $('.header-18 .page-transitions').css('height', maxH + 'px');
     });
 

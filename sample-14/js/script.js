@@ -34,15 +34,6 @@ function fadedEls(el, shift) {
 (function($) {
 $(function() {
 
-  // toggle nav panel
-  $('.navbar .btn-navbar').unbind().click(function(){ $('html').toggleClass('nav-visible'); });
-  $(document).bind('mousedown touchstart', function(ev) {
-    if (!$(ev.target).closest('.nav-collapse, .navbar .btn-navbar').length) {
-      $('html').removeClass('nav-visible');
-    }
-  });
-
-
   if (/msie/i.test(navigator.userAgent)) {
     $('img').each(function() {
       $(this).css({
@@ -53,18 +44,6 @@ $(function() {
   }
 
 
-  // Focus state for append/prepend inputs
-  $('.input-prepend, .input-append').on('focus', 'input', function () {
-    $(this).closest('.control-group, form').addClass('focus');
-  }).on('blur', 'input', function () {
-    $(this).closest('.control-group, form').removeClass('focus');
-  });
-
-
-  // Faded elements
-  // $('.features img').each(function() {
-  //   fadedEls($(this), 'h');
-  // });
   fadedEls($('.features img'), 'h');
 
 

@@ -1,0 +1,64 @@
+@import '../../flat-ui-pro/less/config.less';
+@import '../../flat-ui-pro/less/mixins.less';
+@import '../../common-files/less/mixins.less';
+@import '../../common-files/less/common.less';
+@import '../../common-files/less/navbar.less';
+@import '../../common-files/less/helper.less';
+
+
+/* header */
+@import '../../ui-kit-header/less/header-11.less';
+
+/* price */
+@import '../../ui-kit-price/less/price-common.less';
+@import '../../ui-kit-price/less/price-1.less';
+
+/* content */
+@import '../../ui-kit-content/less/content-13.less';
+
+/* footer */
+@import '../../ui-kit-footer/less/footer-2.less';
+
+.header-11-sub .background{
+  background-image: url("../img/img-1.jpg");
+  .opacity(80);
+}
+.logos {
+  background: #f1f1f1;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  
+  @media (max-width: 767px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  > .container {
+    display: table;
+
+    > div {
+      display: table-cell;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    display: none;
+  }
+}
+
+.price-1 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  h3 {
+    margin: 0;
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .lead {
+    font-size: 25px;
+    font-family: @h-font-family;
+    text-align: center;
+  }
+}

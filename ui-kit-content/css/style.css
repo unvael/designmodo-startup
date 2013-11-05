@@ -3450,6 +3450,7 @@ section * {
     filter: alpha(opacity=0);
   }
   .content-31 .container .img img + img {
+    max-width: 60%;
     opacity: 1;
     filter: alpha(opacity=100);
   }

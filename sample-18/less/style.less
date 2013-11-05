@@ -1,0 +1,91 @@
+@import '../../flat-ui-pro/less/config.less';
+@import '../../flat-ui-pro/less/mixins.less';
+@import '../../common-files/less/mixins.less';
+@import '../../common-files/less/common.less';
+@import '../../common-files/less/navbar.less';
+@import '../../common-files/less/helper.less';
+
+/* header */
+@import '../../ui-kit-header/less/header-10.less';
+
+/* contents */
+@import '../../ui-kit-content/less/content-21.less';
+@import '../../ui-kit-content/less/content-22.less';
+@import '../../ui-kit-content/less/content-24.less';
+
+/* prices */
+@import '../../ui-kit-price/less/price-2.less';
+@import '../../ui-kit-price/less/price-common.less';
+
+/* footer */
+@import '../../ui-kit-footer/less/footer-13.less';
+
+body > section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  @media (max-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.header-10 {
+  @import 'navbar.less';
+  background:transparent;
+  position:absolute;
+    
+    .navbar {
+      .opacity(0);
+  
+      .loaded & {
+        .transition(~'1.2s .8s opacity');
+        .opacity(100);
+      }
+    }
+  
+    .ani-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #212121;
+  
+      // ani
+      left: -100%;
+  
+      .loaded & {
+        .transition(~'1s 1.6s left');
+        left: 0;
+      }
+  }
+  
+}
+
+.header-10-sub{
+   .background{
+      background-image:url("../img/img-1.jpg");
+      .opacity(100);
+    }
+    .hero-unit p {
+      font-family: @h-font-family;
+      .font(13px, white);
+      letter-spacing: 1px;
+      opacity: 0.2;
+    }
+}
+
+.content-21, .content-22{ background-color:#212A33;}
+.price-2{
+  .plans{
+    margin-top: 100px;
+  }
+  .span8 {
+    text-align: center;
+    h3{
+      .font(30px, @h-text-color);
+      margin:0 0 30px;
+    }   
+  }
+}

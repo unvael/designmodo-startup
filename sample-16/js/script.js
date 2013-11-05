@@ -1,4 +1,3 @@
-
 function fadedEls(el, shift) {
   el.css('opacity', 0);
 
@@ -34,14 +33,6 @@ function fadedEls(el, shift) {
 (function($) {
 $(function() {
 
-  // toggle nav panel
-  $('.navbar .btn-navbar').unbind().click(function(){ $('html').toggleClass('nav-visible'); });
-  $(document).bind('mousedown touchstart', function(ev) {
-    if (!$(ev.target).closest('.nav-collapse, .navbar .btn-navbar').length) {
-      $('html').removeClass('nav-visible');
-    }
-  });
-
 
   if (/msie/i.test(navigator.userAgent)) {
     $('img').each(function() {
@@ -53,19 +44,11 @@ $(function() {
   }
 
 
-  // Focus state for append/prepend inputs
-  $('.input-prepend, .input-append').on('focus', 'input', function () {
-    $(this).closest('.control-group, form').addClass('focus');
-  }).on('blur', 'input', function () {
-    $(this).closest('.control-group, form').removeClass('focus');
-  });
-
-
   // Set sidebar height
   $(window).resize(function() {
     var h = 0;
 
-    $('body > section:not(.section-1)').each(function() {
+    $('body > section:not(.header-9-sub)').each(function() {
       h += $(this).outerHeight();
     });
 
@@ -74,16 +57,13 @@ $(function() {
 
 
   // Parallax
-  $('.section-1').parallax('50%', 0.3, true);
+  $('.header-9-sub').parallax('50%', 0.3, true);
 
 
   // Faded elements
-  fadedEls($('.section-3 .span7.offset1 img'), $('.section-3 .span7.offset1 img').outerHeight()/3*2);
-  // $('.section-3 .box [class*="fui-"]').each(function() {
-  //   fadedEls($(this), 'h');
-  // });
-  fadedEls($('.section-3 .box [class*="fui-"]'), 'h');
-  fadedEls($('.section-4 .span3 img'), 'h');
+  fadedEls($('.content-features .span7.offset1 img'), $('.content-features .span7.offset1 img').outerHeight()/3*2);
+  fadedEls($('.content-features .box [class*="fui-"]'), 'h');
+  fadedEls($('.content-9 .span3 img'), 'h');
 
 
 

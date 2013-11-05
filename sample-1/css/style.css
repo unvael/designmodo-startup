@@ -967,3 +967,12 @@ section * {
   padding-top: 80px;
   padding-bottom: 80px;
 }
+.header-1-sub .pt-page-1 .background {
+  background-image: url('../img/img-1.jpg');
+}
+.header-1-sub .pt-page-2 .background {
+  background-image: url('../img/img-2.jpg');
+}
+.header-1-sub .pt-page-3 .background {
+  background-image: url('../img/img-3.jpg');
+}

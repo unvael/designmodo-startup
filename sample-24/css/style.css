@@ -483,12 +483,8 @@ section * {
     margin-top: 15px;
   }
 }
-html,
-body {
-  height: 100%;
-}
 .header-14-sub {
-  height: 100%;
+  padding-bottom: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;

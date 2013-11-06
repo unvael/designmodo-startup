@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
 /* 62px */
 /* 52px */
 /* 40px */
@@ -794,9 +795,11 @@ section * {
 }
 .content-11 .btn {
   margin-left: 30px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #ffffff;
   font-weight: 500;
-  font-size: 12px;
-  letter-spacing: 0.19em;
+  font-family: 'Montserrat', sans-serif;
 }
 @media (max-width: 480px) {
   .content-11 > .container > span {

@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
 /* 62px */
 /* 52px */
 /* 40px */
@@ -382,19 +383,10 @@ section * {
   padding-right: 20px;
 }
 .header-10 .navbar .btn.btn-primary {
-  background-color: #3498db;
   font-size: 15px;
   font-weight: normal;
   color: #ffffff;
   font-weight: bold;
-}
-.header-10 .navbar .btn.btn-primary:hover,
-.header-10 .navbar .btn.btn-primary:focus {
-  background-color: #5dade2;
-}
-.header-10 .navbar .btn.btn-primary:active,
-.header-10 .navbar .btn.btn-primary.active {
-  background-color: #2c81ba;
 }
 .header-10 .navbar .navbar-inner {
   background: none;
@@ -893,9 +885,11 @@ section * {
 }
 .content-11 .btn {
   margin-left: 30px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #ffffff;
   font-weight: 500;
-  font-size: 12px;
-  letter-spacing: 0.19em;
+  font-family: 'Montserrat', sans-serif;
 }
 @media (max-width: 480px) {
   .content-11 > .container > span {
@@ -1132,6 +1126,9 @@ section * {
   background-image: url("../img/img-1.jpg");
   opacity: 0.85;
   filter: alpha(opacity=85);
+}
+.header-10 {
+  background-color: #1b1f23;
 }
 body > section.v-center > div {
   padding-top: 80px;

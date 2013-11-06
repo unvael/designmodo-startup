@@ -382,19 +382,10 @@ section * {
   padding-right: 20px;
 }
 .header-10 .navbar .btn.btn-primary {
-  background-color: #3498db;
   font-size: 15px;
   font-weight: normal;
   color: #ffffff;
   font-weight: bold;
-}
-.header-10 .navbar .btn.btn-primary:hover,
-.header-10 .navbar .btn.btn-primary:focus {
-  background-color: #5dade2;
-}
-.header-10 .navbar .btn.btn-primary:active,
-.header-10 .navbar .btn.btn-primary.active {
-  background-color: #2c81ba;
 }
 .header-10 .navbar .navbar-inner {
   background: none;

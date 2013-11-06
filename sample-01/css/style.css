@@ -967,6 +967,25 @@ section * {
   padding-top: 80px;
   padding-bottom: 80px;
 }
+.content-4 .social-btns a,
+.footer-6 .social-btns a {
+  height: 17px;
+  width: 17px;
+  border: 10px #3498db solid;
+  background-color: #3498db;
+  font-size: 14px;
+  font-weight: normal;
+  color: #ffff00;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.content-4 .social-btns a > *:first-child,
+.footer-6 .social-btns a > *:first-child {
+  font-size: 14px;
+  font-weight: normal;
+  color: #ffffff;
+}
 .header-1-sub .pt-page-1 .background {
   background-image: url('../img/img-1.jpg');
 }

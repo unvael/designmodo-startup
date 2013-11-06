@@ -1173,14 +1173,14 @@ section * {
   }
   .content-24 img.image {
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
     right: 0;
   }
   .content-24 .features.features-clear .features-header {
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
   .content-24 .features.features-clear .features-body p {
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
 }
 @media (max-width: 767px) {
@@ -1189,14 +1189,14 @@ section * {
   }
   .content-24 img.image {
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
     right: 0;
   }
   .content-24 .features.features-clear .features-header {
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
   .content-24 .features.features-clear .features-body p {
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
 }
 /* prices */

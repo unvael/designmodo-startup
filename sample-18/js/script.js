@@ -33,6 +33,7 @@ function fadedEls(el, shift) {
 
 (function($) {
     $(function() {       
+        
 
         // Focus state for append/prepend inputs
         $('.input-prepend, .input-append').on('focus', 'input', function() {
@@ -40,7 +41,8 @@ function fadedEls(el, shift) {
         }).on('blur', 'input', function() {
             $(this).closest('.control-group, form').removeClass('focus');
         });
-
+         
+        
         // Parallax
         $('.header-10-sub .background').parallax('50%', -0.3, true);
         $('.content-24 .img').parallax('50%', 0.15, true);
@@ -70,15 +72,21 @@ function fadedEls(el, shift) {
         
         // responsive
         $(window).resize(function() {
-            // section-1
-            if ($(window).width() > 480) {
-                $('.header-10-sub').css('height', '');
-            } else {
-                $('.header-10-sub').css('height', $(window).height());
-            }
+                    
+            var sH = $(window).height();            
+            $('section.header-10-sub').css('height', sH + 'px');
+        
+        /*
+        
+                    if ($(window).width() > 480) {
+                        $('.header-10-sub').css('height', '');
+                    } else {
+                        $('.header-10-sub').css('height', $(window).height());
+                    }*/
+        
         });
 
-        $(window).resize().scroll();
+ 
 
     });
 

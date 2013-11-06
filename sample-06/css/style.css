@@ -891,7 +891,6 @@ footer {
   background-image: url('../img/img-1.jpg');
   opacity: 1;
   filter: alpha(opacity=100);
-  background-size: auto;
 }
 .content-12 {
   padding-bottom: 0;

@@ -33,6 +33,12 @@ function fadedEls(el, shift) {
 
 (function($) {
     $(function() {
+        
+        $(window).resize(function() {
+            var sH = $(window).height();
+            $('section.header-21-sub').css('height', (sH - $('header').outerHeight()*2) + 'px');            
+        });        
+
 
         // Focus state for append/prepend inputs
         $('.input-prepend, .input-append').on('focus', 'input', function() {
@@ -87,7 +93,7 @@ function fadedEls(el, shift) {
             })($('.blog-2'));
         }
 
-        $(window).resize().scroll();
+        
 
     });
 })(jQuery);

@@ -67,7 +67,7 @@ function fadedEls(el, shift) {
         // responsive
         $(window).resize(function() {
             // features
-            
+                 
                  $('.header-3-sub, .header-3-sub .background').each(function() {
                     $(this).parallax('50%', -0.3, true);
                  });

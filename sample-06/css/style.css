@@ -828,7 +828,7 @@ section * {
     text-align: center;
   }
   .content-30 .features .img {
-    margin: 50px auto;
+    margin: 33px auto;
   }
   .content-30 .features img[src*="arrow-"] {
     display: none;
@@ -842,7 +842,7 @@ section * {
     filter: alpha(opacity=100);
   }
   .content-30 .features > * + * {
-    margin-top: 50px;
+    margin-top: 33px;
   }
   .content-30 .features .img {
     margin: 15px auto;

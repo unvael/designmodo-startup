@@ -564,7 +564,7 @@ section * {
 }
 @media (max-width: 767px) {
   .header-11-sub {
-    padding-top: 70px;
+    padding-top: 68px;
     padding-bottom: 70px;
   }
   .header-11-sub .player {
@@ -573,7 +573,7 @@ section * {
 }
 @media (max-width: 480px) {
   .header-11-sub {
-    padding-top: 70px;
+    padding-top: 68px;
     padding-bottom: 70px;
   }
   .header-11-sub h3 {

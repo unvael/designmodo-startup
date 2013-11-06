@@ -921,11 +921,11 @@ section * {
 }
 .header-2-sub .btns {
   display: inline-block;
-  margin-top: 50px;
+  margin-top: 48px;
 }
 @media (max-width: 480px) {
   .header-2-sub .btns {
-    margin-top: 50px;
+    margin-top: 48px;
     display: block;
   }
 }
@@ -3616,7 +3616,7 @@ section * {
 }
 @media (max-width: 767px) {
   .header-11-sub {
-    padding-top: 70px;
+    padding-top: 68px;
     padding-bottom: 70px;
   }
   .header-11-sub .player {
@@ -3625,7 +3625,7 @@ section * {
 }
 @media (max-width: 480px) {
   .header-11-sub {
-    padding-top: 70px;
+    padding-top: 68px;
     padding-bottom: 70px;
   }
   .header-11-sub h3 {

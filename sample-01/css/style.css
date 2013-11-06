@@ -379,7 +379,7 @@ section * {
 .header-1 .navbar {
   position: absolute;
   z-index: 2;
-  top: 28px;
+  top: 45px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
 }

@@ -2159,8 +2159,7 @@ section * {
   text-align: right;
   width: 25.9%;
 }
-.content-20 .signup-form form .btn.btn-primary {
-  background-color: #3498db;
+.content-20 .signup-form form .btn {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
@@ -2172,14 +2171,6 @@ section * {
   font-weight: normal;
   color: #ffffff;
   width: 100%;
-}
-.content-20 .signup-form form .btn.btn-primary:hover,
-.content-20 .signup-form form .btn.btn-primary:focus {
-  background-color: #5dade2;
-}
-.content-20 .signup-form form .btn.btn-primary:active,
-.content-20 .signup-form form .btn.btn-primary.active {
-  background-color: #2c81ba;
 }
 @media (max-width: 767px) {
   .content-20 .signup-form form {

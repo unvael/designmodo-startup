@@ -714,12 +714,10 @@ h3 {
 p {
   font-size: 16px;
 }
-.header-9-sub {
-  background: #5d5d5d url('../img/img-1.jpg') 50% 50% no-repeat fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.header-9-sub .background {
+  background-image: url('../img/img-1.jpg');
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 /* ribbon */
 .ribbon {

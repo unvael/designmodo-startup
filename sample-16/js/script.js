@@ -57,7 +57,7 @@ $(function() {
 
 
   // Parallax
-  $('.header-9-sub').parallax('50%', 0.3, true);
+  $('.header-9-sub, .header-9-sub .background').parallax('50%', 0.3, true);
 
 
   // Faded elements

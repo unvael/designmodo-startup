@@ -577,7 +577,7 @@ section * {
 }
 .content-20 .signup-form form input[type="text"]:focus,
 .content-20 .signup-form form input[type="password"]:focus {
-  border-color: #1abc9c;
+  border-color: #3498db;
 }
 .content-20 .signup-form form .site-link {
   width: 104%;

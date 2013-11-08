@@ -240,6 +240,10 @@ footer {
   -moz-border-radius: 6px 0 0 6px;
   border-radius: 6px 0 0 6px;
 }
+.navbar-fixed-top .navbar-inner,
+.navbar-static-top .navbar-inner {
+  box-shadow: none;
+}
 /* end only for flat-ui free*/
 .bg-white {
   background-color: #ffffff;

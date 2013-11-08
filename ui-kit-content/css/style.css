@@ -28,7 +28,7 @@
   border-bottom-color: #34495e !important;
   border-top-color: #34495e !important;
 }
-body {
+/*only fo flat-ui free*/body {
   color: #34495e;
   font-family: "Lato", sans-serif;
   font-size: 14px;
@@ -232,6 +232,15 @@ a.muted:hover,
 a.muted:focus {
   color: #979c9f;
 }
+footer {
+  background-color: transparent;
+}
+.input-append input {
+  -webkit-border-radius: 6px 0 0 6px;
+  -moz-border-radius: 6px 0 0 6px;
+  border-radius: 6px 0 0 6px;
+}
+/* end only for flat-ui free*/
 .bg-white {
   background-color: #ffffff;
 }

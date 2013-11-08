@@ -277,6 +277,7 @@ img {
   }
   body > *,
   .navbar .nav-collapse {
+    -webkit-backface-visibility: hidden;
     -webkit-transition: left 0.4s;
     -moz-transition: left 0.4s;
     -o-transition: left 0.4s;
@@ -622,6 +623,7 @@ section * {
   padding-bottom: 75px;
 }
 .content-18 .carousel .item {
+  -webkit-backface-visibility: hidden;
   -webkit-transition: .8s ease-in-out top, .6s ease-in-out opacity;
   -moz-transition: .8s ease-in-out top, .6s ease-in-out opacity;
   -o-transition: .8s ease-in-out top, .6s ease-in-out opacity;

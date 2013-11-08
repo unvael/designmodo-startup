@@ -277,6 +277,7 @@ img {
   }
   body > *,
   .navbar .nav-collapse {
+    -webkit-backface-visibility: hidden;
     -webkit-transition: left 0.4s;
     -moz-transition: left 0.4s;
     -o-transition: left 0.4s;
@@ -594,6 +595,7 @@ section * {
 }
 .header-18 .header-18-sub .header-18-section .span5 {
   position: relative;
+  -webkit-backface-visibility: hidden;
   -webkit-transition: .5s left, 1.2s opacity;
   -moz-transition: .5s left, 1.2s opacity;
   -o-transition: .5s left, 1.2s opacity;
@@ -609,6 +611,7 @@ section * {
 }
 .header-18 .header-18-sub .header-18-section .span4 {
   position: relative;
+  -webkit-backface-visibility: hidden;
   -webkit-transition: .5s left, 1.2s opacity;
   -moz-transition: .5s left, 1.2s opacity;
   -o-transition: .5s left, 1.2s opacity;
@@ -633,6 +636,7 @@ section * {
   visibility: hidden;
 }
 .header-18 .header-18-sub .header-18-section .img img {
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
   -o-transition: 0.4s;
@@ -700,6 +704,7 @@ section * {
   position: relative;
 }
 .header-18-section-2 .img img {
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
   -o-transition: 0.4s;

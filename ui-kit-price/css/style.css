@@ -711,6 +711,7 @@ section * {
 .price-4 .plan,
 .price-4 .plan .title,
 .price-4 .plan .price {
+  -webkit-backface-visibility: hidden;
   -webkit-transition: border-color 0.25s, background-color 0.25s, color 0.25s;
   -moz-transition: border-color 0.25s, background-color 0.25s, color 0.25s;
   -o-transition: border-color 0.25s, background-color 0.25s, color 0.25s;
@@ -777,6 +778,7 @@ section * {
   display: table-cell;
   width: 33.33%;
   text-align: center;
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 0.4s background-color;
   -moz-transition: 0.4s background-color;
   -o-transition: 0.4s background-color;
@@ -821,6 +823,7 @@ section * {
   border-top-right-radius: 6px;
 }
 .price-5 .plans .description {
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 0.4s opacity;
   -moz-transition: 0.4s opacity;
   -o-transition: 0.4s opacity;
@@ -849,6 +852,7 @@ section * {
   padding: 56px 40px 44px;
   opacity: 0;
   filter: alpha(opacity=0);
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 0.4s opacity;
   -moz-transition: 0.4s opacity;
   -o-transition: 0.4s opacity;

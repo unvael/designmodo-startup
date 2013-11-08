@@ -277,6 +277,7 @@ img {
   }
   body > *,
   .navbar .nav-collapse {
+    -webkit-backface-visibility: hidden;
     -webkit-transition: left 0.4s;
     -moz-transition: left 0.4s;
     -o-transition: left 0.4s;
@@ -479,6 +480,7 @@ section * {
 .header-16 .navbar .btn-navbar:before,
 .header-16 .navbar .btn-navbar:after,
 .header-16 .navbar .btn-navbar > * {
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 1s;
   -moz-transition: 1s;
   -o-transition: 1s;
@@ -580,6 +582,7 @@ section * {
 }
 .header-16 body > *,
 .header-16 .navbar .nav-collapse {
+  -webkit-backface-visibility: hidden;
   -webkit-transition: left 0.4s;
   -moz-transition: left 0.4s;
   -o-transition: left 0.4s;
@@ -1206,6 +1209,7 @@ section * {
   padding-bottom: 75px;
 }
 .content-18 .carousel .item {
+  -webkit-backface-visibility: hidden;
   -webkit-transition: .8s ease-in-out top, .6s ease-in-out opacity;
   -moz-transition: .8s ease-in-out top, .6s ease-in-out opacity;
   -o-transition: .8s ease-in-out top, .6s ease-in-out opacity;
@@ -1300,6 +1304,7 @@ section * {
   display: table-cell;
   width: 33.33%;
   text-align: center;
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 0.4s background-color;
   -moz-transition: 0.4s background-color;
   -o-transition: 0.4s background-color;
@@ -1344,6 +1349,7 @@ section * {
   border-top-right-radius: 6px;
 }
 .price-5 .plans .description {
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 0.4s opacity;
   -moz-transition: 0.4s opacity;
   -o-transition: 0.4s opacity;
@@ -1372,6 +1378,7 @@ section * {
   padding: 56px 40px 44px;
   opacity: 0;
   filter: alpha(opacity=0);
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 0.4s opacity;
   -moz-transition: 0.4s opacity;
   -o-transition: 0.4s opacity;
@@ -1568,6 +1575,7 @@ body > section {
   filter: alpha(opacity=0);
 }
 .content-7.ani-processed img {
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 1.2s opacity;
   -moz-transition: 1.2s opacity;
   -o-transition: 1.2s opacity;
@@ -1582,6 +1590,7 @@ body > section {
   filter: alpha(opacity=0);
 }
 .content-7.ani-processed .span3:first-child > .span3 {
+  -webkit-backface-visibility: hidden;
   -webkit-transition: .8s left, 1.2s opacity;
   -moz-transition: .8s left, 1.2s opacity;
   -o-transition: .8s left, 1.2s opacity;
@@ -1597,6 +1606,7 @@ body > section {
   filter: alpha(opacity=0);
 }
 .content-7.ani-processed .span4 + .span3 > .span3 {
+  -webkit-backface-visibility: hidden;
   -webkit-transition: .8s right, 1.2s opacity;
   -moz-transition: .8s right, 1.2s opacity;
   -o-transition: .8s right, 1.2s opacity;

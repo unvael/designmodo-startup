@@ -277,6 +277,7 @@ img {
   }
   body > *,
   .navbar .nav-collapse {
+    -webkit-backface-visibility: hidden;
     -webkit-transition: left 0.4s;
     -moz-transition: left 0.4s;
     -o-transition: left 0.4s;
@@ -414,6 +415,7 @@ section * {
 .header-6 .navbar .social-btns > * > * {
   display: block;
   position: relative;
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 0.25s top;
   -moz-transition: 0.25s top;
   -o-transition: 0.25s top;
@@ -562,6 +564,7 @@ section * {
   }
 }
 .loaded .header-6 .navbar {
+  -webkit-backface-visibility: hidden;
   -webkit-transition: .4s .8s top, 1.2s .8s opacity;
   -moz-transition: .4s .8s top, 1.2s .8s opacity;
   -o-transition: .4s .8s top, 1.2s .8s opacity;
@@ -620,6 +623,7 @@ section * {
   filter: alpha(opacity=0);
 }
 .loaded .header-6-sub .container > .row:first-child {
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 1.2s opacity;
   -moz-transition: 1.2s opacity;
   -o-transition: 1.2s opacity;
@@ -634,6 +638,7 @@ section * {
   filter: alpha(opacity=0);
 }
 .loaded .header-6-sub .container > .row + .row {
+  -webkit-backface-visibility: hidden;
   -webkit-transition: .4s 1.2s bottom, 1.2s 1.2s opacity;
   -moz-transition: .4s 1.2s bottom, 1.2s 1.2s opacity;
   -o-transition: .4s 1.2s bottom, 1.2s 1.2s opacity;

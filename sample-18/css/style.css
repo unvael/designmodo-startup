@@ -277,6 +277,7 @@ img {
   }
   body > *,
   .navbar .nav-collapse {
+    -webkit-backface-visibility: hidden;
     -webkit-transition: left 0.4s;
     -moz-transition: left 0.4s;
     -o-transition: left 0.4s;
@@ -729,6 +730,7 @@ section * {
   cursor: pointer;
   font-weight: 500;
   letter-spacing: 0.19em;
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 0.25s;
   -moz-transition: 0.25s;
   -o-transition: 0.25s;
@@ -780,6 +782,7 @@ section * {
   padding: 120px 50px 120px 50%;
   opacity: 0;
   filter: alpha(opacity=0);
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 0.6s opacity;
   -moz-transition: 0.6s opacity;
   -o-transition: 0.6s opacity;
@@ -912,6 +915,7 @@ section * {
   transform: scale(0);
 }
 .content-22.ani-processed .description {
+  -webkit-backface-visibility: hidden;
   -webkit-transition: .8s 3.4s;
   -moz-transition: .8s 3.4s;
   -o-transition: .8s 3.4s;
@@ -925,6 +929,7 @@ section * {
   transform: rotate(0deg);
 }
 .content-22.ani-processed .description img {
+  -webkit-backface-visibility: hidden;
   -webkit-transition: .4s 3.8s;
   -moz-transition: .4s 3.8s;
   -o-transition: .4s 3.8s;
@@ -954,6 +959,7 @@ section * {
   visibility: hidden;
 }
 .content-22.ani-processed .img img {
+  -webkit-backface-visibility: hidden;
   -webkit-transition: .8s top, 1.2s opacity;
   -moz-transition: .8s top, 1.2s opacity;
   -o-transition: .8s top, 1.2s opacity;
@@ -1091,6 +1097,7 @@ section * {
   margin-left: 50px;
   color: #667380;
   cursor: pointer;
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 0.25s;
   -moz-transition: 0.25s;
   -o-transition: 0.25s;
@@ -1121,6 +1128,7 @@ section * {
   box-sizing: border-box;
   opacity: 0;
   filter: alpha(opacity=0);
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 0.6s opacity;
   -moz-transition: 0.6s opacity;
   -o-transition: 0.6s opacity;
@@ -1588,6 +1596,7 @@ body > section {
   filter: alpha(opacity=0);
 }
 .loaded .header-10 .navbar {
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 1.2s .8s opacity;
   -moz-transition: 1.2s .8s opacity;
   -o-transition: 1.2s .8s opacity;
@@ -1605,6 +1614,7 @@ body > section {
   left: -100%;
 }
 .loaded .header-10 .ani-background {
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 1s 1.6s left;
   -moz-transition: 1s 1.6s left;
   -o-transition: 1s 1.6s left;

@@ -277,6 +277,7 @@ img {
   }
   body > *,
   .navbar .nav-collapse {
+    -webkit-backface-visibility: hidden;
     -webkit-transition: left 0.4s;
     -moz-transition: left 0.4s;
     -o-transition: left 0.4s;
@@ -388,6 +389,7 @@ section * {
   margin: 0 auto;
 }
 .header-1 .navbar a {
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 0.25s color;
   -moz-transition: 0.25s color;
   -o-transition: 0.25s color;
@@ -661,6 +663,7 @@ section * {
   font-weight: normal;
   font-style: normal;
   color: #ffffff;
+  -webkit-backface-visibility: hidden;
   -webkit-transition: color 0.25s;
   -moz-transition: color 0.25s;
   -o-transition: color 0.25s;
@@ -880,6 +883,7 @@ section * {
 }
 .footer-6 .input-append input[type="text"] {
   width: 160px;
+  -webkit-backface-visibility: hidden;
   -webkit-transition: background-color 0.25s, border-color 0.25s;
   -moz-transition: background-color 0.25s, border-color 0.25s;
   -o-transition: background-color 0.25s, border-color 0.25s;
@@ -932,6 +936,7 @@ section * {
 .footer-6 .social-btns > * > * {
   display: block;
   position: relative;
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 0.25s top;
   -moz-transition: 0.25s top;
   -o-transition: 0.25s top;

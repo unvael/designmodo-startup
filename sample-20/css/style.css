@@ -278,6 +278,7 @@ img {
   }
   body > *,
   .navbar .nav-collapse {
+    -webkit-backface-visibility: hidden;
     -webkit-transition: left 0.4s;
     -moz-transition: left 0.4s;
     -o-transition: left 0.4s;
@@ -577,6 +578,7 @@ section * {
   filter: alpha(opacity=0);
 }
 .loaded .header-22-sub .container {
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 1.2s opacity;
   -moz-transition: 1.2s opacity;
   -o-transition: 1.2s opacity;

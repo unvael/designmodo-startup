@@ -277,6 +277,7 @@ img {
   }
   body > *,
   .navbar .nav-collapse {
+    -webkit-backface-visibility: hidden;
     -webkit-transition: left 0.4s;
     -moz-transition: left 0.4s;
     -o-transition: left 0.4s;
@@ -594,6 +595,7 @@ section * {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 0.6s opacity;
   -moz-transition: 0.6s opacity;
   -o-transition: 0.6s opacity;

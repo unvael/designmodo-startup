@@ -278,6 +278,7 @@ img {
   }
   body > *,
   .navbar .nav-collapse {
+    -webkit-backface-visibility: hidden;
     -webkit-transition: left 0.4s;
     -moz-transition: left 0.4s;
     -o-transition: left 0.4s;
@@ -518,6 +519,7 @@ section * {
   padding: 10px 35px;
 }
 .header-19 .navbar .nav-collapse {
+  -webkit-backface-visibility: hidden;
   -webkit-transition: left 0.4s;
   -moz-transition: left 0.4s;
   -o-transition: left 0.4s;
@@ -730,6 +732,7 @@ section * {
   padding: 100px 0;
   opacity: 0.2;
   filter: alpha(opacity=20);
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 0.6s opacity;
   -moz-transition: 0.6s opacity;
   -o-transition: 0.6s opacity;
@@ -739,6 +742,7 @@ section * {
   margin: 0 0 30px;
   font-size: 40px;
   color: #7f8c8d;
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 0.6s color;
   -moz-transition: 0.6s color;
   -o-transition: 0.6s color;
@@ -761,6 +765,7 @@ section * {
   font-size: 24px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 0.6s background-color;
   -moz-transition: 0.6s background-color;
   -o-transition: 0.6s background-color;
@@ -778,6 +783,7 @@ section * {
   position: relative;
 }
 .content-31 .container .img img {
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 0.6s opacity;
   -moz-transition: 0.6s opacity;
   -o-transition: 0.6s opacity;

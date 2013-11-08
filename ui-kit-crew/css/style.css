@@ -331,6 +331,7 @@ section * {
   border-radius: 6px;
   overflow: hidden;
   background-color: #ecf0f1;
+  -webkit-backface-visibility: hidden;
   -webkit-transition: background-color 0.4s;
   -moz-transition: background-color 0.4s;
   -o-transition: background-color 0.4s;
@@ -349,6 +350,7 @@ section * {
   background: 50% 50% no-repeat;
   opacity: 0.3;
   filter: alpha(opacity=30);
+  -webkit-backface-visibility: hidden;
   -webkit-transition: opacity 0.4s;
   -moz-transition: opacity 0.4s;
   -o-transition: opacity 0.4s;
@@ -366,6 +368,7 @@ section * {
   line-height: 220px;
   opacity: 0;
   filter: alpha(opacity=0);
+  -webkit-backface-visibility: hidden;
   -webkit-transition: opacity 0.4s;
   -moz-transition: opacity 0.4s;
   -o-transition: opacity 0.4s;
@@ -385,6 +388,7 @@ section * {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 5px;
+  -webkit-backface-visibility: hidden;
   -webkit-transition: color 0.4s;
   -moz-transition: color 0.4s;
   -o-transition: color 0.4s;
@@ -442,6 +446,7 @@ section * {
   width: 265px;
   display: inline-block;
   padding-bottom: 23px;
+  -webkit-backface-visibility: hidden;
   -webkit-transition: border-color 0.4s;
   -moz-transition: border-color 0.4s;
   -o-transition: border-color 0.4s;
@@ -460,6 +465,7 @@ section * {
   border-radius: 6px;
   overflow: hidden;
   background-color: #ecf0f1;
+  -webkit-backface-visibility: hidden;
   -webkit-transition: background-color 0.4s;
   -moz-transition: background-color 0.4s;
   -o-transition: background-color 0.4s;
@@ -478,6 +484,7 @@ section * {
   background: 50% 50% no-repeat;
   opacity: 0.3;
   filter: alpha(opacity=30);
+  -webkit-backface-visibility: hidden;
   -webkit-transition: opacity 0.4s;
   -moz-transition: opacity 0.4s;
   -o-transition: opacity 0.4s;
@@ -528,6 +535,7 @@ section * {
 .crew-2 .members .social-btns > * > * {
   display: block;
   position: relative;
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 0.25s top;
   -moz-transition: 0.25s top;
   -o-transition: 0.25s top;
@@ -631,6 +639,7 @@ section * {
   border-radius: 6px;
   overflow: hidden;
   background-color: #ecf0f1;
+  -webkit-backface-visibility: hidden;
   -webkit-transition: background-color 0.4s;
   -moz-transition: background-color 0.4s;
   -o-transition: background-color 0.4s;
@@ -649,6 +658,7 @@ section * {
   background: 50% 50% no-repeat;
   opacity: 0.3;
   filter: alpha(opacity=30);
+  -webkit-backface-visibility: hidden;
   -webkit-transition: opacity 0.4s;
   -moz-transition: opacity 0.4s;
   -o-transition: opacity 0.4s;
@@ -666,6 +676,7 @@ section * {
   line-height: 220px;
   opacity: 0;
   filter: alpha(opacity=0);
+  -webkit-backface-visibility: hidden;
   -webkit-transition: opacity 0.4s;
   -moz-transition: opacity 0.4s;
   -o-transition: opacity 0.4s;
@@ -764,6 +775,7 @@ section * {
   border-radius: 6px;
   overflow: hidden;
   background-color: #ecf0f1;
+  -webkit-backface-visibility: hidden;
   -webkit-transition: background-color 0.4s;
   -moz-transition: background-color 0.4s;
   -o-transition: background-color 0.4s;
@@ -782,6 +794,7 @@ section * {
   background: 50% 50% no-repeat;
   opacity: 0.3;
   filter: alpha(opacity=30);
+  -webkit-backface-visibility: hidden;
   -webkit-transition: opacity 0.4s;
   -moz-transition: opacity 0.4s;
   -o-transition: opacity 0.4s;
@@ -799,6 +812,7 @@ section * {
   line-height: 180px;
   opacity: 0;
   filter: alpha(opacity=0);
+  -webkit-backface-visibility: hidden;
   -webkit-transition: opacity 0.4s;
   -moz-transition: opacity 0.4s;
   -o-transition: opacity 0.4s;

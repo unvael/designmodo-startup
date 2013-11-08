@@ -277,6 +277,7 @@ img {
   }
   body > *,
   .navbar .nav-collapse {
+    -webkit-backface-visibility: hidden;
     -webkit-transition: left 0.4s;
     -moz-transition: left 0.4s;
     -o-transition: left 0.4s;
@@ -787,6 +788,7 @@ section * {
   color: #ffffff;
   background: #1abc9c;
   font-weight: 300;
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 0.25s color, 0.25s background-color;
   -moz-transition: 0.25s color, 0.25s background-color;
   -o-transition: 0.25s color, 0.25s background-color;
@@ -823,6 +825,7 @@ section * {
   line-height: 25px;
 }
 .content-17 .carousel .item {
+  -webkit-backface-visibility: hidden;
   -webkit-transition: .8s ease-in-out top, .6s ease-in-out opacity;
   -moz-transition: .8s ease-in-out top, .6s ease-in-out opacity;
   -o-transition: .8s ease-in-out top, .6s ease-in-out opacity;

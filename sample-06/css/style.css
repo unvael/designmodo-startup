@@ -277,6 +277,7 @@ img {
   }
   body > *,
   .navbar .nav-collapse {
+    -webkit-backface-visibility: hidden;
     -webkit-transition: left 0.4s;
     -moz-transition: left 0.4s;
     -o-transition: left 0.4s;
@@ -682,6 +683,7 @@ section * {
   color: #ffffff;
   background: #1abc9c;
   font-weight: 300;
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 0.25s color, 0.25s background-color;
   -moz-transition: 0.25s color, 0.25s background-color;
   -o-transition: 0.25s color, 0.25s background-color;
@@ -756,6 +758,7 @@ section * {
 .content-30 .features .img img + img {
   opacity: 0;
   filter: alpha(opacity=0);
+  -webkit-backface-visibility: hidden;
   -webkit-transition: opacity 0.25s;
   -moz-transition: opacity 0.25s;
   -o-transition: opacity 0.25s;

@@ -54,6 +54,8 @@ startupKit.uiKitHeader._inFixedMode = function(headerClass) {
 
         var headerAniStartPos = s1.outerHeight() - 120, headerAniStopPos = s1StopScroll;
        
+       
+       
         $(window).scroll(function() {
             var opacity = (s1StopScroll - $(window).scrollTop()) / s1StopScroll;
             opacity = Math.max(0, opacity);
@@ -81,12 +83,27 @@ startupKit.uiKitHeader._inFixedMode = function(headerClass) {
                     s1Placeholder.hide();
                 }
             }
-
+            
             var headerZoom = -(headerAniStartPos - $(window).scrollTop()) / (headerAniStopPos - headerAniStartPos);
             headerZoom = 1 - Math.min(1, Math.max(0, headerZoom));
-            $('.navbar', header).css({
-                'top' : -6 + ((45 + 6) * headerZoom)
+            
+            $(window).resize(function(){
+               if($(window).width()<767){
+                    $('.navbar', header).css({
+                        'top' : -6 + ((20 + 6) * headerZoom)
+                    });
+                }else if($(window).width()<480){
+                    $('.navbar', header).css({
+                        'top' : -6 + ((20 + 6) * headerZoom)
+                    });
+                }else{
+                    $('.navbar', header).css({
+                        'top' : -6 + ((45 + 6) * headerZoom)
+                    });
+                }
             });
+            
+            
             $('.navbar .brand', header).css({
                 'font-size' : 18 + ((25 - 18) * headerZoom),
                 'padding-top' : 30 + ((23 - 30) * headerZoom)

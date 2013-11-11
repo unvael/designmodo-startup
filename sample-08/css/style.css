@@ -916,7 +916,7 @@ section * {
   height: 100%;
   width: 1000px;
   margin: 0;
-  background: url('../img/img-1.jpg') 50% 50% no-repeat;
+  background: url('../../ui-kit-blog/img/img-1.jpg') 50% 50% no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

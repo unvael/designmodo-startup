@@ -6,13 +6,21 @@
 @import '../../common-files/less/helper.less';
 
 
+@import '../../ui-kit-blog/less/blog-common.less';
+@import '../../ui-kit-blog/less/blog-1.less';
+@import '../../ui-kit-blog/less/blog-2.less';
+@import '../../ui-kit-blog/less/blog-3.less';
+@import '../../ui-kit-blog/less/blog-4.less';
+@import '../../ui-kit-blog/less/blog-5.less';
+
+
 .dockbar.active{
   top:0;  right:0;  left:0;
   background-color:black;
   height:80px;
   padding:0;
   position:fixed;
-  z-index:100;
+  z-index:1000;
   .navbar.navbar-fixed-top{
     margin:0 auto;    
   }
@@ -37,7 +45,7 @@
   background-color:transparent;
   height:10px;
   padding:0;
-  z-index:100;
+  z-index:1000;
   > * {
     display:none;
     height:0;
@@ -45,7 +53,9 @@
 }
 
 
-
+.read-manual .container{
+  margin-left:10px;
+}
 .read-manual .content{
   height:auto !important;
   height:100%;
@@ -56,6 +66,7 @@
   .manual{
     display:block;
     position:fixed;
+    z-index:100;
     min-height:100%;
     max-width:900px;
     min-width:400px;
@@ -65,4 +76,41 @@
     background-color:#1B1E23;
   }  
 }
+.read-man{
+    margin-top: 20px;
+    position: absolute;
+    right: 20px;
+    z-index: 21;
+    .border-radius(100%);
+    height:30px;
+    width:30px;
+    padding:0 0 0 2px;
+}
 
+.mask{
+  display:none;
+  &.active{
+    display:block;
+    background-color:#1B1E23;
+    position:absolute;
+    z-index:20;
+    width:100%;
+    text-align:center;
+    
+    .opacity(50);
+    .hero-unit{
+      background-color:transparent;
+    }
+    .hero-unit.hero-unit-bordered {
+     
+      h1 {
+        .font(46px,white); font-weight: bold;
+        border: 8px solid white;
+        display: inline-block;
+        margin: 0;
+        padding: 30px 40px;
+      }  
+      @media (max-width: 480px) { h1 { .font(22px, white); } }
+    }  
+  }
+}

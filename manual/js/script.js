@@ -36,5 +36,30 @@
          
        };        
        manual.dockbar.init();
+       
+       manual.help = function(){
+           $('.manual > div').hide();           
+         var helpButton = $('.read-man');
+         helpButton.each(function(){
+            $(this).hover(function(){
+                var id = $(this).attr('id');
+                $('.' + id + '.mask').height($('section.' + id).height());
+                
+                $('.' + id + '.mask').toggleClass('active'); 
+            }); 
+         }); 
+         helpButton.click(function(){
+             $('html').addClass('read-manual');
+             var id = $(this).attr('id');
+             $('.manual .'+ id ).show();
+         });
+         var backButton = $('.back-button');
+         backButton.click(function(){
+             $('html').removeClass('read-manual');
+             $('.manual > div').hide();
+         }); 
+         
+       };
+       manual.help();
     });
 })(jQuery); 

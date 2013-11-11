@@ -19,16 +19,23 @@ module.exports = function(grunt) {
         tasks: 'less',
       }
     },
-    
+    includes: {
+      files: {
+        src: ['manual/templates/*.html'],
+        cwd: '.',
+        dest: 'manual/',
+        flatten: true,
+      },
+    },    
     
     
   });
   
   
-  
+  grunt.loadNpmTasks('grunt-includes');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.registerTask('default', ['less']);
-  
+  grunt.registerTask('build-manual', ['includes']);
 
 };

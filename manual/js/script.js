@@ -1,5 +1,8 @@
 (function($) {
     $(function() {
+        
+       startupKit.uiKitHeader._inFixedMode('.dockbar'); 
+        
        window.manual = window.manual || {};
        manual.dockbar =  $('.dockbar');
        manual.dockbar.init = function(){

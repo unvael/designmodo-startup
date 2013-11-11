@@ -7,9 +7,12 @@
 
 
 .dockbar.active{
+  top:0;  right:0;  left:0;
   background-color:black;
   height:80px;
   padding:0;
+  position:fixed;
+  z-index:100;
   .navbar.navbar-fixed-top{
     margin:0 auto;    
   }
@@ -19,14 +22,47 @@
       padding: 29px 0;
     }
   }
+  
+  @media (max-width: 979px) {
+    .nav-collapse {
+      padding-top: 0px;
+      .navbar-collapse; 
+    }         
+  }
 }
 
 .dockbar.normal{
+  top:0;  right:0;  left:0;
+  position:fixed;
   background-color:transparent;
   height:10px;
   padding:0;
+  z-index:100;
   > * {
     display:none;
     height:0;
   }
 }
+
+
+
+.read-manual .content{
+  height:auto !important;
+  height:100%;
+  min-height:100%;  
+  > div{
+    min-height:100%;
+  }
+  .manual{
+    display:block;
+    position:fixed;
+    min-height:100%;
+    max-width:900px;
+    min-width:400px;
+    width:70%;
+    top:0;     
+    right:0;  
+    background-color:#1B1E23;
+  }  
+}
+

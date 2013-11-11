@@ -345,9 +345,14 @@ section * {
   }
 }
 .dockbar.active {
+  top: 0;
+  right: 0;
+  left: 0;
   background-color: black;
   height: 80px;
   padding: 0;
+  position: fixed;
+  z-index: 100;
 }
 .dockbar.active .navbar.navbar-fixed-top {
   margin: 0 auto;
@@ -358,12 +363,116 @@ section * {
 .dockbar.active .navbar-inner .desk {
   padding: 29px 0;
 }
+@media (max-width: 979px) {
+  .dockbar.active .nav-collapse {
+    padding-top: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    width: 72%;
+    height: auto!important;
+    padding: 25px 0;
+    border-radius: 0;
+    float: none;
+    overflow: auto!important;
+    background: #222527;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  .dockbar.active .nav-collapse::-webkit-scrollbar {
+    display: none;
+  }
+  .dockbar.active .nav-collapse > * {
+    margin: 30px 0 0!important;
+  }
+  .dockbar.active .nav-collapse > *:first-child {
+    margin-top: 0!important;
+  }
+  .dockbar.active .nav-collapse .nav > li {
+    margin: 0;
+  }
+  .dockbar.active .nav-collapse .nav > li > a {
+    display: block!important;
+    margin: 0;
+    padding: 12px 35px;
+    border-bottom: 2px solid #24292d;
+    font-size: 13px;
+    font-weight: normal;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    letter-spacing: 1px;
+    color: #5b5e61;
+    text-transform: uppercase;
+  }
+  .dockbar.active .nav-collapse .nav > li > a:hover,
+  .dockbar.active .nav-collapse .nav > li > a:focus,
+  .dockbar.active .nav-collapse .nav > li > a.active {
+    color: #ffffff;
+  }
+  .dockbar.active .nav-collapse .nav > li.active > a {
+    color: #ffffff;
+  }
+  .dockbar.active .nav-collapse .nav > li.active > a:hover,
+  .dockbar.active .nav-collapse .nav > li.active > a:focus,
+  .dockbar.active .nav-collapse .nav > li.active > a.active {
+    color: #ffffff;
+  }
+  .dockbar.active .nav-collapse .subnav {
+    display: block;
+    list-style: none;
+  }
+  .dockbar.active .nav-collapse .subnav li > a {
+    display: block;
+    margin: 0;
+    padding: 7px 35px;
+    font-size: 13px;
+    font-weight: normal;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #5b5e61;
+    text-transform: capitalize;
+  }
+  .dockbar.active .nav-collapse .subnav li > a:hover,
+  .dockbar.active .nav-collapse .subnav li > a:focus,
+  .dockbar.active .nav-collapse .subnav li > a.active {
+    color: #ffffff;
+  }
+  .dockbar.active .nav-collapse .navbar-form,
+  .dockbar.active .nav-collapse .navbar-search {
+    padding: 10px 35px;
+  }
+}
 .dockbar.normal {
+  top: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
   background-color: transparent;
   height: 10px;
   padding: 0;
+  z-index: 100;
 }
 .dockbar.normal > * {
   display: none;
   height: 0;
+}
+.read-manual .content {
+  height: auto !important;
+  height: 100%;
+  min-height: 100%;
+}
+.read-manual .content > div {
+  min-height: 100%;
+}
+.read-manual .content .manual {
+  display: block;
+  position: fixed;
+  min-height: 100%;
+  max-width: 900px;
+  min-width: 400px;
+  width: 70%;
+  top: 0;
+  right: 0;
+  background-color: #1B1E23;
 }

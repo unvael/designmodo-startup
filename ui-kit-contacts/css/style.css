@@ -310,10 +310,13 @@ section * {
 }
 .contacts-1 h6,
 .contacts-1 .h6 {
-  margin: 0 0 15px;
+  margin: 0 0 10px;
   font-family: "Lato", sans-serif;
   font-weight: bold;
   font-size: 18px;
+}
+.contacts-1 label.h6 {
+  margin-bottom: 18px;
 }
 .contacts-1 p {
   font-size: 16px;
@@ -469,6 +472,9 @@ section * {
 .contacts-2 form input {
   height: 45px;
 }
+.contacts-2 form textarea {
+  height: 120px;
+}
 .contacts-2 form label {
   margin-bottom: 18px;
 }
@@ -538,6 +544,9 @@ section * {
   font-weight: bold;
   font-size: 18px;
 }
+.contacts-3 label.h6 {
+  margin-bottom: 18px;
+}
 .contacts-3 p {
   font-size: 16px;
   line-height: 1.6;
@@ -592,7 +601,7 @@ section * {
 }
 .contacts-3 .map {
   height: 255px;
-  margin: 25px 0 60px;
+  margin: 40px 0 60px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;

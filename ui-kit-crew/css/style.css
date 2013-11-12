@@ -510,7 +510,7 @@ section * {
 }
 .crew-2 .members .social-btns {
   white-space: nowrap;
-  margin-top: 19px;
+  margin-top: 24px;
 }
 .crew-2 .members .social-btns > * {
   display: inline-block;
@@ -570,12 +570,17 @@ section * {
  * Crew 3 stylesheet  
  * */
 .crew-3 h3 {
-  margin: 0 0 36px;
+  margin: 0 0 20px;
   font-size: 30px;
   text-align: left;
 }
+@media (max-width: 767px) {
+  .crew-3 h3 {
+    margin-bottom: 25px;
+  }
+}
 .crew-3 .title {
-  margin: 0 0 38px;
+  margin: 0 0 80px;
   line-height: 1.5;
 }
 .crew-3 .title a {
@@ -601,6 +606,11 @@ section * {
 .crew-3 .title .social-btns a:focus,
 .crew-3 .title .social-btns a.active {
   color: #15967d;
+}
+@media (max-width: 767px) {
+  .crew-3 .title {
+    margin-bottom: 35px;
+  }
 }
 .crew-3 .members {
   display: table;

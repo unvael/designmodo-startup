@@ -46,6 +46,17 @@
   height:10px;
   padding:0;
   z-index:1000;
+  &:before{
+    content: "\e054";
+    font-family: Flat-UI-Icons;
+    width: 50px;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    display: block;
+    background-color: black;
+    .border-radius(0 0 100px 100px);
+  }
   > * {
     display:none;
     height:0;
@@ -68,8 +79,10 @@
     position:fixed;
     z-index:100;
     min-height:100%;
-    max-width:900px;
+    max-width:960px;
     min-width:400px;
+    .box-sizing(border-box);
+    padding: 30px;
     width:70%;
     top:0;     
     right:0;  
@@ -84,7 +97,7 @@
     .border-radius(100%);
     height:30px;
     width:30px;
-    padding:0 0 0 2px;
+   // padding:0 0 0 2px;
 }
 
 .mask{

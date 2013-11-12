@@ -1100,10 +1100,14 @@ section * {
 }
 .contacts-1 h6,
 .contacts-1 .h6 {
-  margin: 0 0 15px;
+  margin: 0 0 12px;
   font-family: "Lato", sans-serif;
   font-weight: bold;
   font-size: 18px;
+  text-transform: none;
+}
+.contacts-1 label.h6 {
+  margin-bottom: 18px;
 }
 .contacts-1 p {
   font-size: 16px;

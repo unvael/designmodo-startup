@@ -675,6 +675,7 @@ section * {
   padding: 6px 12px;
   border: 2px solid #fff;
   color: #fff;
+  font-size: 13px;
   background: transparent;
   opacity: 0.5;
   filter: alpha(opacity=50);
@@ -911,6 +912,7 @@ section * {
   width: auto;
   margin: 0 -2px -2px;
   padding: 22px 20px 24px;
+  font-size: 22px;
   -webkit-border-top-right-radius: 0;
   -moz-border-radius-topright: 0;
   border-top-right-radius: 0;
@@ -961,6 +963,7 @@ section * {
   font-size: 18px;
   font-weight: 700;
   font-family: "Lato", sans-serif;
+  text-transform: none;
 }
 .price-4 .description-detail [class*="fui-"] {
   color: #bdc3c7;

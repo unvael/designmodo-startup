@@ -720,6 +720,7 @@ section * {
 }
 .blog-1 .links h6 {
   margin: 0 0 15px;
+  text-transform: none;
 }
 .blog-1 .links a {
   color: #bdc3c7;
@@ -866,6 +867,7 @@ section * {
   font-size: 20px;
   font-weight: bold;
   margin: 0 0 30px;
+  text-transform: none;
 }
 .blog-2 p {
   line-height: 1.85;
@@ -934,6 +936,7 @@ section * {
   font-family: "Lato", sans-serif;
   font-weight: bold;
   margin: 0 0 25px;
+  text-transform: none;
 }
 .blog-3 .title {
   margin-bottom: 84px;
@@ -974,8 +977,8 @@ section * {
 .blog-3 .quote {
   position: relative;
   margin-bottom: 35px;
-  font-size: 29px;
-  line-height: 38px;
+  font-size: 37px;
+  line-height: 50px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #2c3e50;
   letter-spacing: -1px;
@@ -990,6 +993,8 @@ section * {
 @media (max-width: 767px) {
   .blog-3 .quote {
     margin-left: 40px;
+    font-size: 29px;
+    line-height: 38px;
   }
 }
 .blog-3 .promo {
@@ -1045,6 +1050,7 @@ section * {
   font-family: "Lato", sans-serif;
   font-weight: bold;
   margin: 0 0 25px;
+  text-transform: none;
 }
 .blog-4 .img {
   margin: 70px 0;
@@ -1063,8 +1069,8 @@ section * {
 .blog-4 .quote {
   position: relative;
   margin: 60px 0 55px 40px;
-  font-size: 29px;
-  line-height: 38px;
+  font-size: 37px;
+  line-height: 50px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #2c3e50;
   font-weight: 300;
@@ -1075,6 +1081,12 @@ section * {
   position: absolute;
   top: -17px;
   left: -40px;
+}
+@media (max-width: 767px) {
+  .blog-4 .quote {
+    font-size: 29px;
+    line-height: 38px;
+  }
 }
 .blog-4 .tags {
   margin-top: 70px;

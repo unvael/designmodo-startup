@@ -527,10 +527,14 @@ section * {
 }
 .contacts-1 h6,
 .contacts-1 .h6 {
-  margin: 0 0 15px;
+  margin: 0 0 12px;
   font-family: "Lato", sans-serif;
   font-weight: bold;
   font-size: 18px;
+  text-transform: none;
+}
+.contacts-1 label.h6 {
+  margin-bottom: 18px;
 }
 .contacts-1 p {
   font-size: 16px;
@@ -646,6 +650,10 @@ section * {
   font-family: "Lato", sans-serif;
   font-weight: bold;
   font-size: 18px;
+  text-transform: none;
+}
+.contacts-2 label.h6 {
+  margin-bottom: 12px;
 }
 .contacts-2 p {
   font-size: 16px;
@@ -682,6 +690,9 @@ section * {
 .contacts-2 form input:focus,
 .contacts-2 form textarea:focus {
   border-color: #1abc9c;
+}
+.contacts-2 form textarea {
+  height: 120px;
 }
 .contacts-2 form input {
   height: 45px;
@@ -754,6 +765,10 @@ section * {
   font-family: "Lato", sans-serif;
   font-weight: bold;
   font-size: 18px;
+  text-transform: none;
+}
+.contacts-3 label.h6 {
+  margin-bottom: 20px;
 }
 .contacts-3 p {
   font-size: 16px;
@@ -809,7 +824,7 @@ section * {
 }
 .contacts-3 .map {
   height: 255px;
-  margin: 25px 0 60px;
+  margin: 35px 0 60px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -943,6 +958,7 @@ section * {
  * */
 .contacts-5 h6 {
   font-size: 18px;
+  text-transform: none;
 }
 .contacts-5 p {
   font-size: 16px;

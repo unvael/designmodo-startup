@@ -4,8 +4,14 @@
        startupKit.uiKitHeader._inFixedMode('.dockbar'); 
         
        window.manual = window.manual || {};
-       manual.dockbar =  $('.dockbar');
-       manual.dockbar.init = function(){
+
+        manual.init = function (){
+            manual.dockbar.init();
+            manual.help();
+        };
+        manual.dockbar =  $('.dockbar');
+
+        manual.dockbar.init = function(){
          this.addClass('normal');         
          this.mouseover(function(){
             $(this).removeClass('normal');    
@@ -35,7 +41,7 @@
          });
          
        };        
-       manual.dockbar.init();
+
        
        manual.help = function(){
            $('.manual > div').hide();           
@@ -57,9 +63,10 @@
          backButton.click(function(){
              $('html').removeClass('read-manual');
              $('.manual > div').hide();
-         }); 
-         
+         });
        };
-       manual.help();
+
+        manual.init();
+
     });
 })(jQuery); 

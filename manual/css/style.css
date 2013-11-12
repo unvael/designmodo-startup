@@ -1382,6 +1382,9 @@ section * {
     padding: 10px 35px;
   }
 }
+.read-manual .dockbar.normal:before {
+  margin: 0 auto 0 15%;
+}
 .dockbar.normal {
   top: 0;
   right: 0;
@@ -1395,8 +1398,9 @@ section * {
 .dockbar.normal:before {
   content: "\e054";
   font-family: Flat-UI-Icons;
-  width: 50px;
+  padding: 0;
   text-align: center;
+  width: 50px;
   color: white;
   margin: 0 auto;
   display: block;
@@ -1408,6 +1412,9 @@ section * {
 .dockbar.normal > * {
   display: none;
   height: 0;
+}
+.read-manual {
+  overflow: hidden;
 }
 .read-manual .container {
   margin-left: 10px;
@@ -1430,11 +1437,93 @@ section * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 30px;
+  padding: 100px;
+  overflow: auto;
   width: 70%;
   top: 0;
   right: 0;
   background-color: #1B1E23;
+}
+.read-manual .content .manual > div {
+  position: absolute;
+}
+.read-manual .content .manual > div .back-button {
+  float: left;
+  display: inline-block;
+  background-color: transparent;
+  border-top: 2px #7f8c8d solid;
+  border-bottom: 0 none ;
+  border-left: 2px #7f8c8d solid;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  border-right: 0 none ;
+  font-weight: 100;
+  height: 56px;
+  width: 56px;
+}
+.read-manual .content .manual > div .content-man {
+  float: right;
+  max-width: 80%;
+  display: inline-block;
+  margin-left: 25px;
+  padding-left: 25px ;
+}
+.read-manual .content .manual > div .content-man h1 {
+  font-size: 34px;
+  font-weight: normal;
+  color: #ffffff;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+.read-manual .content .manual > div .content-man h3 {
+  font-size: 25px;
+  font-weight: normal;
+  color: #ffffff;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.read-manual .content .manual > div .content-man p {
+  font-size: 16px;
+  font-weight: normal;
+  color: #7f8c8d;
+}
+.read-manual .content .manual > div .content-man ol li {
+  margin-left: -25px;
+}
+.read-manual .content .manual > div .content-man textarea {
+  margin: 20px 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border: 0 none;
+  background-color: #000000;
+  font-size: 14px;
+  font-weight: normal;
+  color: #7f8c8d;
+  width: 95%;
+  min-height: 200px;
+}
+.read-manual .content .manual > div .content-man strong {
+  color: gold;
+  font-weight: normal;
+}
+.read-manual .content .manual > div .content-man a {
+  color: gold;
+  font-weight: normal;
+  text-decoration: underline;
+}
+.read-manual .content .manual > div .content-man a:hover {
+  color: gold;
+  text-decoration: none;
+}
+.read-manual .content .manual > div .content-man hr {
+  color: #000000;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid black;
+  margin: 40px 0;
 }
 .read-man {
   margin-top: 20px;

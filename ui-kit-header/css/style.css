@@ -962,7 +962,7 @@ section * {
 .header-2 .navbar {
   position: absolute;
   z-index: 2;
-  top: 80px;
+  top: 50px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .header-2 .navbar.navbar-fixed-top {
@@ -1116,7 +1116,7 @@ section * {
   z-index: 50;
   left: 0;
   width: 100%;
-  padding-top: 180px;
+  padding-top: 190px;
   padding-bottom: 90px;
   color: white;
   text-align: center;
@@ -1127,11 +1127,12 @@ section * {
   background: transparent;
 }
 .header-2-sub .hero-unit h1 {
-  margin: 0 0 20px;
+  margin: 0 0 15px;
   font-size: 30px;
   font-weight: normal;
   color: #ffffff;
   font-weight: 300;
+  line-height: 40px;
 }
 .header-2-sub .hero-unit p {
   font-size: 13px;
@@ -1142,7 +1143,7 @@ section * {
 }
 .header-2-sub .btns {
   display: inline-block;
-  margin-top: 48px;
+  margin-top: 40px;
 }
 @media (max-width: 480px) {
   .header-2-sub .btns {
@@ -1508,7 +1509,7 @@ section * {
 .header-5 .navbar {
   position: absolute;
   z-index: 2;
-  top: 30px;
+  top: 50px;
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -2218,7 +2219,7 @@ section * {
   -moz-transition: .4s .8s top, 1.2s .8s opacity;
   -o-transition: .4s .8s top, 1.2s .8s opacity;
   transition: .4s .8s top, 1.2s .8s opacity;
-  top: 80px;
+  top: 90px;
   opacity: 1;
   filter: alpha(opacity=100);
 }
@@ -2244,7 +2245,7 @@ section * {
   z-index: 50;
   left: 0;
   width: 100%;
-  padding-top: 250px;
+  padding-top: 280px;
   padding-bottom: 90px;
   overflow: hidden;
   color: #bdc3c7;
@@ -2420,6 +2421,7 @@ section * {
   font-size: 18px;
   font-weight: normal;
   color: #7f8c8d;
+  text-transform: none;
 }
 .header-7-sub h1,
 .header-7-sub .h1,
@@ -3814,7 +3816,7 @@ section * {
   font-size: 33px;
   font-weight: normal;
   color: #ffffff;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
@@ -4331,6 +4333,11 @@ section * {
   .header-13-sub .span5.offset1 {
     margin-top: 0;
   }
+}
+.header-13-sub .btn {
+  font-size: 22px;
+  line-height: 21px;
+  padding: 15px 20px 16px;
 }
 .header-13-sub .span5.offset1 {
   position: relative;
@@ -5654,9 +5661,11 @@ section * {
   }
 }
 .header-17-sub .btn.btn-clear {
+  font-size: 22px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  padding: 15px 20px 16px;
   background: none;
   border: 2px solid #16a085;
 }
@@ -5770,6 +5779,7 @@ section * {
   font-weight: normal;
   color: #ffffff;
   font-weight: bold;
+  text-transform: none;
 }
 .header-17-sub .pt-perspective {
   position: relative;
@@ -6216,7 +6226,7 @@ section * {
 .header-19 .navbar {
   position: absolute;
   z-index: 2;
-  top: 50px;
+  top: 100px;
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   opacity: 0;
@@ -6387,7 +6397,7 @@ section * {
   visibility: visible;
 }
 .header-19-sub {
-  padding-top: 280px;
+  padding-top: 340px;
   padding-bottom: 200px;
   background: #ebedee;
   overflow: hidden;

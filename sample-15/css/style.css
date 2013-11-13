@@ -882,6 +882,7 @@ section * {
   margin-top: 20px;
 }
 .content-18 .quotes h6 {
+  text-transform: none;
   font-size: 18px;
   font-weight: normal;
   color: #2c3e50;
@@ -913,6 +914,7 @@ section * {
   }
 }
 .content-26 .features h6 {
+  text-transform: none;
   margin-top: 37px;
   font-family: Lato, sens-serif;
   font-weight: bold;

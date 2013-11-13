@@ -754,7 +754,7 @@ section * {
   font-size: 33px;
   font-weight: normal;
   color: #ffffff;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
@@ -1107,6 +1107,7 @@ section * {
 }
 .footer-2 a {
   color: #bdc3c7;
+  font-weight: normal;
 }
 .footer-2 a:hover,
 .footer-2 a:focus,

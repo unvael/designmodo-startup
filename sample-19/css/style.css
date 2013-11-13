@@ -932,6 +932,7 @@ section * {
   color: #34495e;
   font-family: Lato, sens-serif;
   font-weight: bold;
+  text-transform: none;
 }
 .content-3 .features p {
   line-height: 26px;

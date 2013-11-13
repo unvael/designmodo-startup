@@ -517,10 +517,12 @@ section * {
 .footer-1 {
   padding-top: 80px;
   padding-bottom: 80px;
+  font-size: 14px;
   color: #bdc3c7;
 }
 .footer-1 .lead {
   margin-bottom: 15px;
+  margin-top: -10px;
   font-size: 23px;
   font-weight: normal;
   color: #ffffff;
@@ -546,6 +548,7 @@ section * {
 }
 .footer-1 a {
   color: #bdc3c7;
+  font-weight: normal;
 }
 .footer-1 a:hover,
 .footer-1 a:focus,
@@ -559,6 +562,7 @@ section * {
   color: #ffffff;
   line-height: 16px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: none;
 }
 .footer-1 nav ul {
   list-style: none;
@@ -648,6 +652,7 @@ section * {
 }
 .footer-2 a {
   color: #bdc3c7;
+  font-weight: normal;
 }
 .footer-2 a:hover,
 .footer-2 a:focus,
@@ -758,6 +763,7 @@ section * {
  * Footer 3 stylesheet  
  * */
 .footer-3 {
+  font-size: 14px;
   padding-top: 60px;
   padding-bottom: 60px;
   background: #2c3e50;
@@ -803,6 +809,7 @@ section * {
 }
 .footer-3 a {
   color: #ffffff;
+  font-weight: normal;
 }
 .footer-3 a:hover,
 .footer-3 a:focus,
@@ -845,6 +852,7 @@ section * {
   font-weight: normal;
   color: #ffffff;
   font-weight: 300;
+  text-transform: none;
 }
 .footer-3 .address {
   line-height: 1.6;
@@ -901,6 +909,9 @@ section * {
   margin-top: 30px;
   background-color: #ebedee;
   color: #7f8c8d;
+  font-size: 13px;
+  line-height: 20px;
+  padding: 6px 13px 8px;
 }
 .footer-5 .btn:hover,
 .footer-5 .btn:focus {
@@ -925,6 +936,9 @@ section * {
  * */
 .footer-6 {
   color: #7f8c8d;
+}
+.footer-6 a {
+  font-weight: normal;
 }
 @media (max-width: 480px) {
   .footer-6 {
@@ -952,6 +966,7 @@ section * {
   font-weight: normal;
   color: #34495e;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: none;
 }
 @media (max-width: 767px) {
   .footer-6 h6 {
@@ -1158,6 +1173,7 @@ section * {
 }
 .footer-7 a {
   color: #bdc3c7;
+  font-weight: normal;
 }
 .footer-7 a:hover,
 .footer-7 a:focus,
@@ -1289,6 +1305,7 @@ section * {
 }
 .footer-8 a {
   color: #7f8c8d;
+  font-weight: normal;
 }
 .footer-8 a:hover,
 .footer-8 a:focus,
@@ -1296,7 +1313,7 @@ section * {
   color: #1abc9c;
 }
 .footer-8 nav {
-  margin-bottom: 22px;
+  margin-bottom: 40px;
 }
 .footer-8 nav ul {
   list-style: none;
@@ -1347,7 +1364,7 @@ section * {
   min-height: 300px;
 }
 .footer-9 {
-  padding-top: 80px;
+  padding-top: 120px;
   padding-bottom: 80px;
 }
 .footer-9 h6 {
@@ -1356,18 +1373,20 @@ section * {
   color: #34495e;
   font-family: Lato, sens-serif;
   font-weight: bold;
+  text-transform: none;
 }
 .footer-9 p {
   font-size: 16px;
   font-weight: normal;
   color: #7f8c8d;
   font-family: Lato, sens-serif;
+  line-height: 26px;
 }
 .footer-9 a {
   font-size: 16px;
-  font-weight: normal;
   color: #e74c3c;
   font-family: Lato, sens-serif;
+  font-weight: normal;
 }
 @media (max-width: 480px) {
   .footer-9 .box {
@@ -1385,7 +1404,7 @@ section * {
   background: rgba(235, 237, 238, 0.76);
 }
 .footer-10 > .container {
-  padding-top: 80px;
+  padding-top: 90px;
   padding-bottom: 80px;
 }
 .footer-10 .brand {
@@ -1415,6 +1434,7 @@ section * {
 }
 .footer-10 a {
   color: #e74c3c;
+  font-weight: normal;
 }
 .footer-10 a:hover,
 .footer-10 a:focus,
@@ -1426,9 +1446,10 @@ section * {
   font-weight: normal;
   color: #34495e;
   font-weight: 500;
+  text-transform: none;
 }
 .footer-10 nav h6 {
-  margin: 0 0 20px;
+  margin: 0 0 15px;
   line-height: 24.000000000000004px;
   color: #34495e;
   font-weight: 500;
@@ -1441,7 +1462,7 @@ section * {
   color: inherit;
 }
 .footer-10 nav ul li {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 .footer-10 nav a {
   color: #7f8c8d;
@@ -1583,6 +1604,7 @@ section * {
 }
 .footer-11 a {
   color: #bdc3c7;
+  font-weight: normal;
 }
 .footer-11 a:hover,
 .footer-11 a:focus,
@@ -1664,7 +1686,7 @@ section * {
 .footer-11 .additional-links {
   border-top: 2px solid #ecf0f1;
   background: #f4f5f6;
-  padding: 40px 0;
+  padding: 50px 0;
   font-size: 14px;
   font-weight: normal;
   color: inherit;
@@ -1797,6 +1819,9 @@ section * {
   padding-bottom: 40px;
   background: #ebedee;
   text-align: center;
+}
+.footer-13 a {
+  font-weight: normal;
 }
 .footer-13 > .container {
   position: relative;

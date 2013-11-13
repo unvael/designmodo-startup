@@ -579,7 +579,7 @@ section * {
 .header-5 .navbar {
   position: absolute;
   z-index: 2;
-  top: 30px;
+  top: 50px;
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -1251,6 +1251,7 @@ section * {
 }
 .footer-7 a {
   color: #bdc3c7;
+  font-weight: normal;
 }
 .footer-7 a:hover,
 .footer-7 a:focus,

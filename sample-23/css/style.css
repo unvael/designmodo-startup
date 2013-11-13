@@ -673,6 +673,11 @@ section * {
     margin-top: 0;
   }
 }
+.header-13-sub .btn {
+  font-size: 22px;
+  line-height: 21px;
+  padding: 15px 20px 16px;
+}
 .header-13-sub .span5.offset1 {
   position: relative;
   left: -15%;
@@ -746,6 +751,7 @@ section * {
   line-height: 30px;
 }
 .content-9 h6 {
+  text-transform: none;
   font-size: 18px;
   font-weight: normal;
   color: #34495e;
@@ -840,6 +846,7 @@ section * {
   }
 }
 .content-14 .features h6 {
+  text-transform: none;
   color: #e74c3c;
   font-size: 18px;
   font-family: Lato, sens-serif;

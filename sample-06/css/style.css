@@ -855,6 +855,7 @@ section * {
   line-height: 30px;
 }
 .content-9 h6 {
+  text-transform: none;
   font-size: 18px;
   font-weight: normal;
   color: #34495e;
@@ -1000,6 +1001,7 @@ section * {
   height: 100%;
 }
 .content-30 .features h6 {
+  text-transform: none;
   font-size: 18px;
   font-weight: normal;
   color: #1abc9c;

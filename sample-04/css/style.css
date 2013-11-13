@@ -953,6 +953,7 @@ section * {
   font-weight: normal;
   color: #e74c3c;
   margin-top: 55px;
+  text-transform: none;
 }
 .content-7 h6:first-child {
   margin-top: auto;
@@ -1241,6 +1242,7 @@ section * {
  * Footer 3 stylesheet  
  * */
 .footer-3 {
+  font-size: 14px;
   padding-top: 60px;
   padding-bottom: 60px;
   background: #2c3e50;
@@ -1286,6 +1288,7 @@ section * {
 }
 .footer-3 a {
   color: #ffffff;
+  font-weight: normal;
 }
 .footer-3 a:hover,
 .footer-3 a:focus,
@@ -1328,6 +1331,7 @@ section * {
   font-weight: normal;
   color: #ffffff;
   font-weight: 300;
+  text-transform: none;
 }
 .footer-3 .address {
   line-height: 1.6;

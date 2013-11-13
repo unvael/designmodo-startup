@@ -925,6 +925,7 @@ section * {
   color: #34495e;
   font-family: Lato, sens-serif;
   font-weight: bold;
+  text-transform: none;
 }
 .content-4 .features p {
   font-size: 16px;
@@ -1003,6 +1004,9 @@ section * {
 .footer-6 {
   color: #7f8c8d;
 }
+.footer-6 a {
+  font-weight: normal;
+}
 @media (max-width: 480px) {
   .footer-6 {
     padding-top: 35px;
@@ -1029,6 +1033,7 @@ section * {
   font-weight: normal;
   color: #34495e;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: none;
 }
 @media (max-width: 767px) {
   .footer-6 h6 {

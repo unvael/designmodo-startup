@@ -546,6 +546,7 @@ section * {
   font-weight: normal;
   color: #2c3e50;
   font-family: Lato, sens-serif;
+  text-transform: none;
 }
 .content-1 .box-video .btns {
   text-align: center;
@@ -817,6 +818,7 @@ section * {
   color: #34495e;
   font-family: Lato, sens-serif;
   font-weight: bold;
+  text-transform: none;
 }
 .content-3 .features p {
   line-height: 26px;
@@ -852,6 +854,7 @@ section * {
   color: #34495e;
   font-family: Lato, sens-serif;
   font-weight: bold;
+  text-transform: none;
 }
 .content-4 .features p {
   font-size: 16px;
@@ -955,6 +958,7 @@ section * {
   font-family: Lato, sens-serif;
   font-weight: bold;
   margin-bottom: 14px;
+  text-transform: none;
 }
 /**
  * Content 6 stylesheet  
@@ -1050,6 +1054,7 @@ section * {
   font-family: Lato, sens-serif;
   font-weight: bold;
   margin-bottom: 14px;
+  text-transform: none;
 }
 /**
  * Content 7 stylesheet  
@@ -1118,6 +1123,7 @@ section * {
   font-weight: normal;
   color: #e74c3c;
   margin-top: 55px;
+  text-transform: none;
 }
 .content-7 h6:first-child {
   margin-top: auto;
@@ -1270,6 +1276,7 @@ section * {
   line-height: 30px;
 }
 .content-9 h6 {
+  text-transform: none;
   font-size: 18px;
   font-weight: normal;
   color: #34495e;
@@ -1378,6 +1385,7 @@ section * {
   top: 50px;
 }
 .content-10 .features h6 {
+  text-transform: none;
   font-size: 24px;
   font-weight: normal;
   color: #2c3e50;
@@ -1646,6 +1654,7 @@ section * {
   }
 }
 .content-14 .features h6 {
+  text-transform: none;
   color: #e74c3c;
   font-size: 18px;
   font-family: Lato, sens-serif;
@@ -1796,6 +1805,7 @@ section * {
   margin-top: 120px;
 }
 .content-15 .features h6 {
+  text-transform: none;
   margin: 60px 0 20px;
   font-size: 20px;
   font-weight: normal;
@@ -2095,6 +2105,7 @@ section * {
   margin-top: 20px;
 }
 .content-18 .quotes h6 {
+  text-transform: none;
   font-size: 18px;
   font-weight: normal;
   color: #2c3e50;
@@ -2275,6 +2286,7 @@ section * {
   font-weight: 300;
 }
 .content-20 h6 {
+  text-transform: none;
   font-size: 18px;
   font-weight: normal;
   color: #ffffff;
@@ -2586,6 +2598,7 @@ section * {
   z-index: 1;
 }
 .content-21 .features.features-tabs .features-body h6 {
+  text-transform: none;
   margin: 0 0 30px;
   font-size: 20px;
   font-weight: normal;
@@ -3166,6 +3179,7 @@ section * {
   }
 }
 .content-26 .features h6 {
+  text-transform: none;
   margin-top: 37px;
   font-family: Lato, sens-serif;
   font-weight: bold;
@@ -3407,6 +3421,7 @@ section * {
   height: 100%;
 }
 .content-30 .features h6 {
+  text-transform: none;
   font-size: 18px;
   font-weight: normal;
   color: #1abc9c;

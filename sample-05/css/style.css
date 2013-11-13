@@ -816,9 +816,11 @@ section * {
   }
 }
 .header-17-sub .btn.btn-clear {
+  font-size: 22px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  padding: 15px 20px 16px;
   background: none;
   border: 2px solid #16a085;
 }
@@ -932,6 +934,7 @@ section * {
   font-weight: normal;
   color: #ffffff;
   font-weight: bold;
+  text-transform: none;
 }
 .header-17-sub .pt-perspective {
   position: relative;
@@ -1048,6 +1051,7 @@ section * {
   font-weight: normal;
   color: #2c3e50;
   font-family: Lato, sens-serif;
+  text-transform: none;
 }
 .content-1 .box-video .btns {
   text-align: center;
@@ -1238,6 +1242,7 @@ section * {
   font-family: Lato, sens-serif;
   font-weight: bold;
   margin-bottom: 14px;
+  text-transform: none;
 }
 /**
  * Content 13 stylesheet  
@@ -1349,6 +1354,7 @@ section * {
 }
 .footer-8 a {
   color: #7f8c8d;
+  font-weight: normal;
 }
 .footer-8 a:hover,
 .footer-8 a:focus,
@@ -1356,7 +1362,7 @@ section * {
   color: #1abc9c;
 }
 .footer-8 nav {
-  margin-bottom: 22px;
+  margin-bottom: 40px;
 }
 .footer-8 nav ul {
   list-style: none;

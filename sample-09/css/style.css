@@ -707,6 +707,7 @@ section * {
   font-weight: 300;
 }
 .content-20 h6 {
+  text-transform: none;
   font-size: 18px;
   font-weight: normal;
   color: #ffffff;
@@ -973,6 +974,7 @@ section * {
   color: #34495e;
   font-family: Lato, sens-serif;
   font-weight: bold;
+  text-transform: none;
 }
 .content-3 .features p {
   line-height: 26px;

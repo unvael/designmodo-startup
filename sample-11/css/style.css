@@ -786,7 +786,7 @@ section * {
   -moz-transition: .4s .8s top, 1.2s .8s opacity;
   -o-transition: .4s .8s top, 1.2s .8s opacity;
   transition: .4s .8s top, 1.2s .8s opacity;
-  top: 80px;
+  top: 90px;
   opacity: 1;
   filter: alpha(opacity=100);
 }
@@ -812,7 +812,7 @@ section * {
   z-index: 50;
   left: 0;
   width: 100%;
-  padding-top: 250px;
+  padding-top: 280px;
   padding-bottom: 90px;
   overflow: hidden;
   color: #bdc3c7;
@@ -1045,6 +1045,7 @@ section * {
   color: #34495e;
   font-family: Lato, sens-serif;
   font-weight: bold;
+  text-transform: none;
 }
 .content-3 .features p {
   line-height: 26px;
@@ -1064,7 +1065,7 @@ section * {
   background: rgba(235, 237, 238, 0.76);
 }
 .footer-10 > .container {
-  padding-top: 80px;
+  padding-top: 90px;
   padding-bottom: 80px;
 }
 .footer-10 .brand {
@@ -1094,6 +1095,7 @@ section * {
 }
 .footer-10 a {
   color: #e74c3c;
+  font-weight: normal;
 }
 .footer-10 a:hover,
 .footer-10 a:focus,
@@ -1105,9 +1107,10 @@ section * {
   font-weight: normal;
   color: #34495e;
   font-weight: 500;
+  text-transform: none;
 }
 .footer-10 nav h6 {
-  margin: 0 0 20px;
+  margin: 0 0 15px;
   line-height: 24.000000000000004px;
   color: #34495e;
   font-weight: 500;
@@ -1120,7 +1123,7 @@ section * {
   color: inherit;
 }
 .footer-10 nav ul li {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 .footer-10 nav a {
   color: #7f8c8d;

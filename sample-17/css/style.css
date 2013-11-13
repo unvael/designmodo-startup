@@ -1046,6 +1046,9 @@ section * {
   background: #ebedee;
   text-align: center;
 }
+.footer-13 a {
+  font-weight: normal;
+}
 .footer-13 > .container {
   position: relative;
 }

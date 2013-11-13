@@ -1016,6 +1016,7 @@ section * {
   z-index: 1;
 }
 .content-21 .features.features-tabs .features-body h6 {
+  text-transform: none;
   margin: 0 0 30px;
   font-size: 20px;
   font-weight: normal;
@@ -1633,6 +1634,9 @@ section * {
   padding-bottom: 40px;
   background: #ebedee;
   text-align: center;
+}
+.footer-13 a {
+  font-weight: normal;
 }
 .footer-13 > .container {
   position: relative;

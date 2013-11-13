@@ -1024,6 +1024,7 @@ section * {
   top: 50px;
 }
 .content-10 .features h6 {
+  text-transform: none;
   font-size: 24px;
   font-weight: normal;
   color: #2c3e50;
@@ -1052,6 +1053,7 @@ section * {
 }
 .footer-11 a {
   color: #bdc3c7;
+  font-weight: normal;
 }
 .footer-11 a:hover,
 .footer-11 a:focus,
@@ -1133,7 +1135,7 @@ section * {
 .footer-11 .additional-links {
   border-top: 2px solid #ecf0f1;
   background: #f4f5f6;
-  padding: 40px 0;
+  padding: 50px 0;
   font-size: 14px;
   font-weight: normal;
   color: inherit;

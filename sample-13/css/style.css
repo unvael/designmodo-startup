@@ -593,6 +593,7 @@ section * {
   font-size: 18px;
   font-weight: normal;
   color: #7f8c8d;
+  text-transform: none;
 }
 .header-7-sub h1,
 .header-7-sub .h1,

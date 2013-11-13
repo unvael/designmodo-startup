@@ -576,7 +576,7 @@ section * {
 .header-19 .navbar {
   position: absolute;
   z-index: 2;
-  top: 50px;
+  top: 100px;
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   opacity: 0;
@@ -747,7 +747,7 @@ section * {
   visibility: visible;
 }
 .header-19-sub {
-  padding-top: 280px;
+  padding-top: 340px;
   padding-bottom: 200px;
   background: #ebedee;
   overflow: hidden;
@@ -891,6 +891,7 @@ section * {
   }
 }
 .content-26 .features h6 {
+  text-transform: none;
   margin-top: 37px;
   font-family: Lato, sens-serif;
   font-weight: bold;
@@ -1157,6 +1158,9 @@ section * {
   margin-top: 30px;
   background-color: #ebedee;
   color: #7f8c8d;
+  font-size: 13px;
+  line-height: 20px;
+  padding: 6px 13px 8px;
 }
 .footer-5 .btn:hover,
 .footer-5 .btn:focus {

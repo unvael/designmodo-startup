@@ -11,7 +11,9 @@
         <link rel="stylesheet" href="../flat-ui-pro/bootstrap/css/bootstrap-responsive.css">
         <link rel="stylesheet" href="../flat-ui-pro/css/flat-ui.css">
         <link rel="stylesheet" href="../common-files/css/animations.css">
+        <link rel="stylesheet" href="css/jquery.snippet.min.css" />
         <link rel="stylesheet" href="css/style.css">
+         
 
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
         <!--[if lt IE 9]>
@@ -46,9 +48,9 @@
         </header>
     
         <div class="content">
-            <div id="main-page">
-                Main page of manual
-            </div>
+<div id="main-page">
+include "../for-tpl/main-page.html" 
+</div>
             <div id="blocks-of-header">
                headers
                 <div class="manual">
@@ -111,35 +113,9 @@
                 <div class="manual">
                      <div class="blog-1">
                          <button class="back-button"></button>
-                         <div class="content-man">
-                             <h1>Block for creating blog with carousel. Codename "blog-1"</h1>
-                             <p>Test text. Test text. Test text. Test text. v Test text.</p>
-                             <ol>
-                                 <li>
-                                     <h3>Overview</h3>
-                                     <p>Test text. Test text. Test text. Test text. v Test text.Test text. Test text. Test text. Test text. v Test text.Test text. Test text. Test text. Test text. v Test text.</p>
-                                 </li>
-                                 <li>
-                                     <h3>Code</h3>
-                                     <p>Test text. Test text. <strong>Test text. Test text</strong>. v Test text.Test text. Test text. Test text. Test text. v Test text.</p>
-                                     <textarea>
-                                         include "../../ui-kit-blog/for-tpl/blog-1.html"
-                                     </textarea>
-                                 </li>
-                                 <li>
-                                     <h3>Samples</h3>
-                                     <p>Test text. Test text. Test text. Test text.Test text. Test text. Test text. Test text.Test text. Test text. Test text. Test text.</p>
-                                     <hr/>
-                                     <p><a href="#">Sample</a> you can see it on this... </p>
-                                 </li>
-                                 <li>
-                                     <h3>FAQ</h3>
-                                     <p>Test text. Test text. Test text. Test text.Test text. Test text. Test text. Test text.Test text. Test text. Test text. Test text.</p>
-                                 </li>
-                             </ol>
-                         </div>
-
-
+<div class="content-man">
+include "../for-tpl/b1-man.html" 
+</div>
                      </div>
                 </div>
             </div>
@@ -194,6 +170,7 @@
         <script src="../common-files/js/jquery.svganim.js"></script>
         <script src="../common-files/js/jquery.parallax.min.js"></script>       
         <script src="../common-files/js/startup-kit.js"></script>
+        <script src="js/jquery.snippet.min.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>

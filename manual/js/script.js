@@ -25,7 +25,7 @@
          _locationChange = function(hash){
              $('.content > div').hide();
              if(hash==undefined||hash==null){hash = window.location.hash;}
-             if(hash==''||hash=="#"){hash='#main-page';}             
+             if(hash==''||hash=="#"||hash=="#firstStep"||hash=="#lastStep"){hash='#main-page';}             
              $(hash).fadeIn("slow");
          };
           _locationChange();
@@ -35,6 +35,11 @@
          }
          
          $('li a, .brand', this).click(function(){
+            $('li').removeClass('active');
+            $(this).parent().addClass('active');             
+            _locationChange($(this).attr('href'));                        
+         });
+         $('.main-page li a:not(.inner-link)').click(function(){
             $('li').removeClass('active');
             $(this).parent().addClass('active');             
             _locationChange($(this).attr('href'));                        
@@ -64,6 +69,14 @@
              $('html').removeClass('read-manual');
              $('.manual > div').hide();
          });
+         $('pre.htmlCode').each(function(){
+            $(this).text($(this).html()); 
+         });
+         $('.manual pre.htmlCode').snippet("html", {style:"vim-dark"});
+         $('.manual pre.cssCode').snippet("css", {style:"vim-dark"});
+          $('.main-page pre.htmlCode').snippet("html", {style:"emacs", showNum:false});
+         $('.main-page pre.cssCode').snippet("css", {style:"emacs", showNum:false});
+         
        };
 
         manual.init();

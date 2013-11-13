@@ -11,7 +11,9 @@
         <link rel="stylesheet" href="../flat-ui-pro/bootstrap/css/bootstrap-responsive.css">
         <link rel="stylesheet" href="../flat-ui-pro/css/flat-ui.css">
         <link rel="stylesheet" href="../common-files/css/animations.css">
+        <link rel="stylesheet" href="css/jquery.snippet.min.css" />
         <link rel="stylesheet" href="css/style.css">
+         
 
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
         <!--[if lt IE 9]>
@@ -46,9 +48,148 @@
         </header>
     
         <div class="content">
-            <div id="main-page">
-                Main page of manual
+<div id="main-page">
+<!-- start header startup-kit -->
+<header>
+    <div class="container">
+        <a class="brand" href="#"><img src="../ui-kit-content/img/logo@2x.png" width="50" height="50" alt="">Startup</a>
+    </div>
+</header>
+
+<section class="startup-kit_header">
+    <div class="container">
+        <div class="row">
+            <div class="span8">
+                <h1>We have a great surprise for Designmodo fans our first free HTML user interface kit.</h1>
             </div>
+        </div>
+        <div class="row">
+            <div class="span7">
+                <p>
+                    It contains many basic and complex components which are great for designers to have at hand: buttons,
+                    inputs, button groups, selects, checkboxes and radio-buttons, tags.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="main-page">
+    <div class="container bg-clouds">
+        <div class="row">
+            <div class="span10 offset1">
+                <h1>How to use</h1>
+                <p>Startup framework use HTML5 doctype! So your html file should start with next rows:</p>
+<xmp class="htmlCode">
+ <!DOCTYPE html>
+ <html lang="your site language">
+    ...
+</xmp>
+                <p>
+                    The Startup framework has two abstract versions which you can use.                    
+                    <small>* Under the abstract versions we mean only logical parts. So in real we have one version.</small>
+
+                    <h3>The Simple version</h3>
+
+                <p>
+                    If you have no experience developing with "LESS", then you can use this version.
+                    <br/>
+                    For start developing with simple version you should know only html and css
+                    (and if you want do some more interesting effects - javascript).                    
+                </p>
+                
+                        <h4>Code</h4>
+                        <p>Lets Start!</p>
+                        <ol>
+                        <li id="firstStep" class="step-desc"><p>First you need insert next code into your HTML file:</p>
+<pre class="htmlCode">
+<!-- this code between <header> ... </header> -->   
+                   
+<link rel="stylesheet" href="../flat-ui/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="../flat-ui/bootstrap/css/bootstrap-responsive.css">
+<link rel="stylesheet" href="../flat-ui/css/flat-ui.css">
+<link rel="stylesheet" href="../common-files/css/animations.css">    
+
+
+                                                              
+                                                              
+
+<!-- this code directly before </body> -->  
+                                            
+<script src="../flat-ui-pro/js/jquery-1.8.3.min.js"></script>
+<script src="../flat-ui-pro/js/bootstrap.min.js"></script>
+<!--[if lt IE 8]>
+    <script src="../flat-ui-pro/js/icon-font-ie7.js"></script>
+<![endif]-->
+<script src="../common-files/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+<script src="../common-files/js/modernizr.custom.js"></script>
+<script src="../common-files/js/page-transitions.js"></script>
+<script src="../common-files/js/easing.min.js"></script>
+<script src="../common-files/js/jquery.svg.js"></script>
+<script src="../common-files/js/jquery.svganim.js"></script>
+<script src="../common-files/js/jquery.parallax.min.js"></script>       
+<script src="../common-files/js/startup-kit.js"></script>                        
+</pre>
+</li>
+<li class="step-desc"><p>Second step. You have to insert styles for elements which you want to use:</p>
+<pre class="htmlCode">
+<!-- header -->  
+<link rel="stylesheet" href="../ui-kit-header/css/style.css">  
+<!-- content --> 
+<link rel="stylesheet" href="../ui-kit-content/css/style.css">
+<!-- blog -->
+<link rel="stylesheet" href="../ui-kit-blog/css/style.css">   
+<!-- contacts -->
+<link rel="stylesheet" href="../ui-kit-contacts/css/style.css">   
+<!-- crew -->
+<link rel="stylesheet" href="../ui-kit-crew/css/style.css"> 
+<!-- price -->
+<link rel="stylesheet" href="../ui-kit-price/css/style.css"> 
+<!-- projects -->
+<link rel="stylesheet" href="../ui-kit-projects/css/style.css">
+<!-- footer -->
+<link rel="stylesheet" href="../ui-kit-footer/css/style.css">   
+</pre>  
+</li>
+<li id="lastStep" class="step-desc"><p>Last that you need to do - choose block that you want and follow the instructions for it!</p>
+<ul>
+    <li><a href="#blocks-of-header">blocks for HEADER</a></li>
+    <li><a href="#blocks-of-blog">blocks for BLOG </a></li>
+    <li><a href="#blocks-of-contact">blocks for CONTACT </a></li>
+    <li><a href="#blocks-of-content">blocks for CONTENT </a></li>
+    <li><a href="#blocks-of-price">blocks for PRICE </a></li>
+    <li><a href="#blocks-of-project">blocks for PROJECT </a></li>
+    <li><a href="#blocks-of-crew">blocks for CREW </a></li>
+    <li><a href="#blocks-of-footer">blocks for FOOTER </a></li>
+</ul>
+</li>
+</ol>               
+
+                <h3>The "LESS" version</h3>
+
+                <p>
+                    If you want to use "LESS" it's your choise.<br/>
+                    We made all to make usability of our framework simpler.  
+                </p>
+                <h4>Code</h4>
+                <ol>
+                <li class="step-desc"><p>First step is <a class="inner-link" href="#firstStep">equal to the simple version</a></p></li>
+                <li class="step-desc"><p>Second step. In your main '.less' file add next rows of code:</p>
+<pre class="cssCode">
+@import '../../flat-ui/less/config.less';
+@import '../../flat-ui/less/mixins.less';
+@import '../../common-files/less/mixins.less';
+@import '../../common-files/less/common.less';
+@import '../../common-files/less/navbar.less';
+@import '../../common-files/less/helper.less';
+</pre>                    
+                </li>
+                <li class="step-desc"><p>The last step is <a class="inner-link" href="#lastStep">equal to the simple version</a></p></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
             <div id="blocks-of-header">
                headers
                 <div class="manual">
@@ -65,85 +206,115 @@
                     </div>
                 </div>      
                 <section class="blog-1">
-                            <div id="b1-pt-1" class="page-transitions pt-perspective">
-                                <div class="pt-page pt-page-1 pt-page-current bg-peter-river">
-                                    <div class="container">
-                                        <div class="box-icon">
-                                            <a class="pt-control-prev" href="#"></a>
-                                            <span class="icon fui-mic"></span>
-                                            <a class="pt-control-next" href="#"></a>
-                                        </div>
-
-                                        <div class="hero-unit">
-                                            <h1>Mail App</h1>
-                                            <p>Beautiful Project</p>
-                                        </div>
-                                    </div><!--/.container-->
-                                </div>
-
-                                <div class="pt-page pt-page-2 bg-turquoise">
-                                    <div class="container">
-                                        <div class="box-icon">
-                                            <a class="pt-control-prev" href="#"></a>
-                                            <span class="icon fui-mic"></span>
-                                            <a class="pt-control-next" href="#"></a>
-                                        </div>
-
-
-                                        <div class="hero-unit">
-                                            <h1>Mail App</h1>
-                                            <p>Beautiful Project</p>
-                                        </div>
-                                    </div><!--/.container-->
-                                </div>
-                            </div>
-
-                            <div class="title">
-                                <div class="container">
-                                    <h3>We love what we do. Some thoughts about Illustrator</h3>
-                                    <div class="submitted">Vladimir kudinov, today</div>
-                                </div><!--/.container-->
-                            </div>
-
+                    <div id="b1-pt-1" class="page-transitions pt-perspective">
+                        <div class="pt-page pt-page-1 pt-page-current bg-peter-river">
                             <div class="container">
-                                <div class="row">
-                                    <div class="span3 links">
-                                        <div class="tags">
-                                            <h6>TAGS</h6>
-                                            <ul>
-                                                <li><a href="#">design</a></li>
-                                                <li><a href="#">web design</a></li>
-                                                <li><a href="#">tutorials</a></li>
-                                                <li><a href="#">thoughts</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="comments">
-                                            <h6>COMMENTS</h6>
-                                            <a href="#">25 comments</a>
-                                        </div>
-                                    </div>
-
-                                    <div class="span9">
-                                        <p>We have a great surprise for Designmodo fans – our first free HTML user interface kit.
-                                    Flat UI Free is made on the basis of Twitter Bootstrap in a stunning flat-style, and the kit also includes a PSD version for designers.</p>
-
-                                        <p>We have considered your needs in developing the html version of our UI Kit, which contains the same elements as the PSD version and are perfect for creating great websites. With this UI Kit, you can spend even less time on routine work, saving that time for creativity.</p>
-
-                                        <p>Flat UI Free contains many basic and complex components which are great for designers to have at hand: buttons, inputs, button groups, selects, checkboxes and radio-buttons, tags, menus, progress bars and sliders, navigation elements and more.<br>
-                                    Colored, stylish icons can easily be modified and used in a wide variety of projects, as they contain original layers. Glyphs are also available in psd, html/css and svg formats.</p>
-                                    </div>
+                                <div class="box-icon">
+                                    <a class="pt-control-prev" href="#"></a>
+                                    <span class="icon fui-mic"></span>
+                                    <a class="pt-control-next" href="#"></a>
                                 </div>
 
-                                <div class="boxes">
-                                    <div class="box-1"></div>
-                                    <div class="box-2"></div>
-                                    <div class="box-3"></div>
-                                    <div class="box-4"></div>
+                                <div class="hero-unit">
+                                    <h1>Mail App</h1>
+                                    <p>Beautiful Project</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-page pt-page-2 bg-turquoise">
+                            <div class="container">
+                                <div class="box-icon">
+                                    <a class="pt-control-prev" href="#"></a>
+                                    <span class="icon fui-mic"></span>
+                                    <a class="pt-control-next" href="#"></a>
                                 </div>
 
-                                <p>Flat UI Free contains many basic and complex components which are great for designers to have at hand: buttons, inputs, button groups, selects, checkboxes and radio-buttons, tags, menus, progress bars and sliders, navigation elements and more. Colored, stylish icons can easily be modified and used in a wide variety of projects, as they contain original layers. Glyphs are also available in psd, html/css and svg formats.</p>
-                            </div><!--/.container-->
-                        </section>
+                                <div class="hero-unit">
+                                    <h1>Mail App</h1>
+                                    <p>Beautiful Project</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="title">
+                        <div class="container">
+                            <h3>We love what we do. Some thoughts about Illustrator</h3>
+                            <div class="submitted">Vladimir kudinov, today</div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="span3 links">
+                                <div class="tags">
+                                    <h6>TAGS</h6>
+                                    <ul>
+                                        <li><a href="#">design</a></li>
+                                        <li><a href="#">web design</a></li>
+                                        <li><a href="#">tutorials</a></li>  
+                                        <li><a href="#">thoughts</a></li>
+                                    </ul>
+                                </div>
+                                <div class="comments">
+                                    <h6>COMMENTS</h6>
+                                    <a href="#">25 comments</a>
+                                </div>
+                            </div>
+
+                            <div class="span9">
+                                <p>
+                                    We have a great surprise for Designmodo fans – our
+                                    first free HTML user interface kit. Flat UI Free 
+                                    is made on the basis of Twitter Bootstrap in a 
+                                    stunning flat-style, and the kit also includes a 
+                                    PSD version for designers.
+                                </p>
+                                <p>
+                                    We have considered your needs in developing the 
+                                    html version of our UI Kit, which contains the 
+                                    same elements as the PSD version and are perfect 
+                                    for creating great websites. With this UI Kit, 
+                                    you can spend even less time on routine work, 
+                                    saving that time for creativity.
+                                </p>
+                                <p>
+                                    Flat UI Free contains many basic and complex 
+                                    components which are great for designers to 
+                                    have at hand: buttons, inputs, button groups, 
+                                    selects, checkboxes and radio-buttons, tags, 
+                                    menus, progress bars and sliders, navigation 
+                                    elements and more.
+                                    <br>
+                                    Colored, stylish icons can easily be modified
+                                    and used in a wide variety of projects, as 
+                                    they contain original layers. Glyphs are also 
+                                    available in psd, html/css and svg formats.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="boxes">
+                            <div class="box-1"></div>
+                            <div class="box-2"></div>
+                            <div class="box-3"></div>
+                            <div class="box-4"></div>
+                        </div>
+
+                        <p>
+                            Flat UI Free contains many basic and complex 
+                            components which are great for designers to have 
+                            at hand: buttons, inputs, button groups, selects, 
+                            checkboxes and radio-buttons, tags, menus, progress 
+                            bars and sliders, navigation elements and more. 
+                            Colored, stylish icons can easily be modified and
+                            used in a wide variety of projects, as they contain 
+                            original layers. Glyphs are also available in psd,
+                            html/css and svg formats.
+                        </p>
+                    </div>
+                </section>
                 <div class="delimiter">&nbsp;</div> 
                 
 <!-- blog-2 --> <button class="btn-inverse read-man" id="blog-2"><span class="fui-info">&nbsp;</span></button>  
@@ -155,34 +326,39 @@
                     </div>
                 </div>      
                 <section class="blog-2">
-                            <div class="background hidden-phone">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="span4">
-                                            <div><!--background--></div>
-                                        </div>
-                                    </div>
-                                </div><!--/.container-->
-                            </div>
-
-                            <div class="container">
-                                <div class="row">
-                                    <div class="span7 offset5">
-                                        <h3>
-                                            <img src="../ui-kit-blog/img/Infinity-Loop@2x.png" width="100" height="100" alt="">
-                                            We love what we do
-                                        </h3>
-                                        <div class="promo">
-                                            <h4>Startup Kit is a set of components</h4>
-                                            <p>We have a great surprise for Designmodo fans – our first free HTML user interface kit. Flat UI Free is made on the basis of Twitter Bootstrap in a stunning flat-style.</p>
-                                        </div>
-                                        <h6>Introduction</h6>
-                                        <p>Flat UI Free is made on the basis of Twitter Bootstrap in a stunning flat-style, and the kit also includes a PSD version for designers.</p>
-                                        <p>We have considered your needs in developing the html version of our UI Kit, which contains the same elements as the PSD version and are perfect for creating great websites. With this UI Kit, you can spend even less time on routine work, saving that time for creativity.</p>
+                    <div class="background hidden-phone">
+                        <div class="container">
+                            <div class="row">
+                                <div class="span4">
+                                    <div>
+                                        <!--background-->
                                     </div>
                                 </div>
-                            </div><!--/.container-->
-                        </section>
+                            </div>
+                        </div><!--/.container-->
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="span7 offset5">
+                                <h3><img src="../ui-kit-blog/img/Infinity-Loop@2x.png" width="100" height="100" alt=""> We love what we do </h3>
+                                <div class="promo">
+                                    <h4>Startup Kit is a set of components</h4>
+                                    <p>
+                                        We have a great surprise for Designmodo fans – our first free HTML user interface kit. Flat UI Free is made on the basis of Twitter Bootstrap in a stunning flat-style.
+                                    </p>
+                                </div>
+                                <h6>Introduction</h6>
+                                <p>
+                                    Flat UI Free is made on the basis of Twitter Bootstrap in a stunning flat-style, and the kit also includes a PSD version for designers.
+                                </p>
+                                <p>
+                                    We have considered your needs in developing the html version of our UI Kit, which contains the same elements as the PSD version and are perfect for creating great websites. With this UI Kit, you can spend even less time on routine work, saving that time for creativity.
+                                </p>
+                            </div>
+                        </div>
+                    </div><!--/.container-->
+                </section>
                 <div class="delimiter">&nbsp;</div> 
 <!-- blog-3 --> <button class="btn-inverse read-man" id="blog-3"><span class="fui-info">&nbsp;</span></button>     
                 <div class="blog-3 mask">
@@ -193,47 +369,59 @@
                     </div>
                 </div>     
                 <section class="blog-3">
-                            <div class="container">
-                                <div class="title">
-                                    <img src="../ui-kit-blog/img/Infinity-Loop@2x.png" width="100" height="100" alt="">
-                                    <h3>We love what we do</h3>
-                                    <div class="submitted">May 25, 2013</div>
+                    <div class="container">
+                        <div class="title">
+                            <img src="../ui-kit-blog/img/Infinity-Loop@2x.png" width="100" height="100" alt="">
+                            <h3>We love what we do</h3>
+                            <div class="submitted">
+                                May 25, 2013
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="span8 offset2">
+                                <p>
+                                    We have a great surprise for Designmodo fans – our first free HTML user interface kit. Flat UI Free is made on the basis of Twitter Bootstrap in a stunning flat-style, and the kit also includes a PSD version for designers.
+                                </p>
+                                <p>
+                                    We have considered your needs in developing the html version of our UI Kit, which contains the same elements as the PSD version and are perfect for creating great websites. With this UI Kit, you can spend even less time on routine work, saving that time for creativity.
+                                </p>
+                            </div>
+                        </div>
+                    </div><!--/.container-->
+
+                    <div class="img"></div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="span8 offset2">
+                                <div class="quote">
+                                    We have considered your needs in developing the html version of our UI Kit, which contains elements.
                                 </div>
-
-                                <div class="row">
-                                    <div class="span8 offset2">
-                                        <p>We have a great surprise for Designmodo fans – our first free HTML user interface kit. Flat UI Free is made on the basis of Twitter Bootstrap in a stunning flat-style, and the kit also includes a PSD version for designers.</p>
-                                        <p>We have considered your needs in developing the html version of our UI Kit, which contains the same elements as the PSD version and are perfect for creating great websites. With this UI Kit, you can spend even less time on routine work, saving that time for creativity.</p>
-                                    </div>
+                                <div class="promo">
+                                    <p>
+                                        We have considered your needs in developing the html version of our UI Kit, which contains the same elements as the PSD version and are perfect for creating great websites. With this UI Kit, you can spend even less time on routine work, saving that time for creativity.
+                                    </p>
                                 </div>
-                            </div><!--/.container-->
+                                <h6>Introduction</h6>
+                                <p>
+                                    We have a great surprise for Designmodo fans – our first free HTML user interface kit. Flat UI Free is made on the basis of Twitter Bootstrap in a stunning flat-style, and the kit also includes a PSD version for designers.
+                                </p>
+                                <p>
+                                    We have considered your needs in developing the html version of our UI Kit, which contains the same elements as the PSD version and are perfect for creating great websites. With this UI Kit, you can spend even less time on routine work, saving that time for creativity.
+                                </p>
+                            </div>
+                        </div>
 
-                            <div class="img"></div>
+                        <div class="row">
+                            <div class="links span4 offset2">
+                                <h6>previous article</h6>
 
-                            <div class="container">
-                                <div class="row">
-                                    <div class="span8 offset2">
-                                        <div class="quote">
-                                        We have considered your needs in developing the html version of our UI Kit, which contains elements.
-                                        </div>
-                                        <div class="promo">
-                                            <p>We have considered your needs in developing the html version of our UI Kit, which contains the same elements as the PSD version and are perfect for creating great websites. With this UI Kit, you can spend even less time on routine work, saving that time for creativity.</p>
-                                        </div>
-                                        <h6>Introduction</h6>
-                                        <p>We have a great surprise for Designmodo fans – our first free HTML user interface kit. Flat UI Free is made on the basis of Twitter Bootstrap in a stunning flat-style, and the kit also includes a PSD version for designers.</p>
-                                        <p>We have considered your needs in developing the html version of our UI Kit, which contains the same elements as the PSD version and are perfect for creating great websites. With this UI Kit, you can spend even less time on routine work, saving that time for creativity.</p>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="links span4 offset2">
-                                        <h6>previous article</h6>
-
-                                        <a href="#">We have considered your needs in developing the html version</a>
-                                    </div>
-                                </div>
-                            </div><!--/.container-->
-                        </section>
+                                <a href="#">We have considered your needs in developing the html version</a>
+                            </div>
+                        </div>
+                    </div><!--/.container-->
+                </section>
 
                 <div class="delimiter">&nbsp;</div>  
 <!-- blog-4 --> <button class="btn-inverse read-man" id="blog-4"><span class="fui-info">&nbsp;</span></button>
@@ -245,47 +433,82 @@
                     </div>
                 </div>           
                 <section class="blog-4">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="span7">
-                                        <h3>We love what we do</h3>
-                                        <p>We have a great surprise for Designmodo fans – our first free HTML user interface kit. Flat UI Free is made on the basis of Twitter Bootstrap in a stunning flat-style, and the kit also includes a PSD version for designers.</p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="span7">
+                                <h3>We love what we do</h3>
+                                <p>
+                                    We have a great surprise for Designmodo fans – our first free HTML user interface kit. Flat UI Free is made on the basis of Twitter Bootstrap in a stunning flat-style, and the kit also includes a PSD version for designers.
+                                </p>
 
-                                        <div class="img"><img src="../ui-kit-blog/img/img-3.jpg" alt=""></div>
-
-                                        <h6>Introduction</h6>
-                                        <p>We have a great surprise for Designmodo fans – our first free HTML user interface kit. Flat UI Free is made on the basis of Twitter Bootstrap in a stunning flat-style, and the kit also includes a PSD version for designers.</p>
-
-                                        <div class="quote">
-                                            We have considered your needs in developing the html version of our UI Kit, which contains.
-                                        </div>
-
-                                        <p>We have a great surprise for Designmodo fans – our first free HTML user interface kit. Flat UI Free is made on the basis of Twitter Bootstrap in a stunning flat-style, and the kit also includes a PSD version for designers.</p>
-
-                                        <div class="tags">
-                                            <ul>
-                                                <li><a href="#">design</a></li>
-                                                <li><a href="#">web design</a></li>
-                                                <li><a href="#">tutorials</a></li>
-                                                <li><a href="#">thoughts</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <div class="span3 offset2">
-                                        <div class="related-articles">
-                                            <h6>Related Articles</h6>
-                                            <ul>
-                                                <li><a href="#">We have considered your needs in developing</a> <div>Jan 13</div></li>
-                                                <li><a href="#">Some interesting thoughts</a> <div>Jan 13</div></li>
-                                                <li><a href="#">Flat UI in Web Design. Best examples today</a> <div>Jan 13</div></li>
-                                                <li><a href="#">We have considered your needs in developing</a> <div>Jan 13</div></li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                                <div class="img"><img src="../ui-kit-blog/img/img-3.jpg" alt="">
                                 </div>
-                            </div><!--/.container-->
-                        </section>
+
+                                <h6>Introduction</h6>
+                                <p>
+                                    We have a great surprise for Designmodo fans – our first free HTML user interface kit. Flat UI Free is made on the basis of Twitter Bootstrap in a stunning flat-style, and the kit also includes a PSD version for designers.
+                                </p>
+
+                                <div class="quote">
+                                    We have considered your needs in developing the html version of our UI Kit, which contains.
+                                </div>
+
+                                <p>
+                                    We have a great surprise for Designmodo fans – our first free HTML user interface kit. Flat UI Free is made on the basis of Twitter Bootstrap in a stunning flat-style, and the kit also includes a PSD version for designers.
+                                </p>
+
+                                <div class="tags">
+                                    <ul>
+                                        <li>
+                                            <a href="#">design</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">web design</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">tutorials</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">thoughts</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="span3 offset2">
+                                <div class="related-articles">
+                                    <h6>Related Articles</h6>
+                                    <ul>
+                                        <li>
+                                            <a href="#">We have considered your needs in developing</a>
+                                            <div>
+                                                Jan 13
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#">Some interesting thoughts</a>
+                                            <div>
+                                                Jan 13
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#">Flat UI in Web Design. Best examples today</a>
+                                            <div>
+                                                Jan 13
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#">We have considered your needs in developing</a>
+                                            <div>
+                                                Jan 13
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--/.container-->
+                </section>
                 <div class="delimiter">&nbsp;</div>  
 <!-- blog-5 --> <button class="btn-inverse read-man" id="blog-5"><span class="fui-info">&nbsp;</span></button> 
                 <div class="blog-5 mask">
@@ -296,203 +519,267 @@
                     </div>
                 </div>          
                 <section class="blog-5">
-                            <div class="title">
-                                <div class="container">
-                                    <h3>We love what we do</h3>
-                                    <div class="submitted">
-                                        <span><span class="fui-user"></span> Vladimir kudinov</span>
-                                        <span><span class="fui-time"></span> may 21</span>
-                                        <span><span class="fui-round-bubble"></span> 25 comments</span>
-                                    </div>
-                                </div><!--/.container-->
+                    <div class="title">
+                        <div class="container">
+                            <h3>We love what we do</h3>
+                            <div class="submitted">
+                                <span><span class="fui-user"></span> Vladimir kudinov</span>
+                                <span><span class="fui-time"></span> may 21</span>
+                                <span><span class="fui-round-bubble"></span> 25 comments</span>
                             </div>
+                        </div><!--/.container-->
+                    </div>
 
-                            <div id="b5-pt-2" class="page-transitions pt-perspective">
-                                <div class="pt-page pt-page-1 pt-page-current bg-alizarin">
-                                    <div class="container">
-                                        <div class="box-icon">
-                                            <a class="pt-control-prev" href="#"></a>
-                                            <span class="icon fui-mic"></span>
-                                            <a class="pt-control-next" href="#"></a>
-                                        </div>
-                                    </div><!--/.container-->
-                                </div>
-
-                                <div class="pt-page pt-page-2 bg-peter-river">
-                                    <div class="container">
-                                        <div class="box-icon">
-                                            <a class="pt-control-prev" href="#"></a>
-                                            <span class="icon fui-mic"></span>
-                                            <a class="pt-control-next" href="#"></a>
-                                        </div>
-                                    </div><!--/.container-->
-                                </div>
-                            </div>
-
+                    <div id="b5-pt-2" class="page-transitions pt-perspective">
+                        <div class="pt-page pt-page-1 pt-page-current bg-alizarin">
                             <div class="container">
-                                <div class="row">
-                                    <div class="span8 offset2">
-                                        <p class="lead">We have a great surprise for Designmodo fans – our first free HTML user interface kit. Flat UI Free is made on the basis of Twitter Bootstrap in a stunning flat-style.
-                                        </p>
-
-                                        <p>We have a great surprise for Designmodo fans – our first free HTML user interface kit. Flat UI Free is made on the basis of Twitter Bootstrap in a stunning flat-style, and the kit also includes a PSD version for designers.</p>
-
-                                        <p>We have considered your needs in developing the html version of our UI Kit, which contains the same elements as the PSD version and are perfect for creating great websites.</p>
-                                    </div>
+                                <div class="box-icon">
+                                    <a class="pt-control-prev" href="#"></a>
+                                    <span class="icon fui-mic"></span>
+                                    <a class="pt-control-next" href="#"></a>
                                 </div>
                             </div><!--/.container-->
+                        </div>
 
-                            <div class="quote">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="span8 offset2">
-                                            Colored, stylish icons can easily be modified and used in a wide variety of projects
+                        <div class="pt-page pt-page-2 bg-peter-river">
+                            <div class="container">
+                                <div class="box-icon">
+                                    <a class="pt-control-prev" href="#"></a>
+                                    <span class="icon fui-mic"></span>
+                                    <a class="pt-control-next" href="#"></a>
+                                </div>
+                            </div><!--/.container-->
+                        </div>
+                    </div>
 
-                                            <div class="author">@stSilent, DesignModo.com</div>
-                                        </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="span8 offset2">
+                                <p class="lead">
+                                    We have a great surprise for Designmodo fans – our first free HTML user interface kit. Flat UI Free is made on the basis of Twitter Bootstrap in a stunning flat-style.
+                                </p>
+
+                                <p>
+                                    We have a great surprise for Designmodo fans – our first free HTML user interface kit. Flat UI Free is made on the basis of Twitter Bootstrap in a stunning flat-style, and the kit also includes a PSD version for designers.
+                                </p>
+
+                                <p>
+                                    We have considered your needs in developing the html version of our UI Kit, which contains the same elements as the PSD version and are perfect for creating great websites.
+                                </p>
+                            </div>
+                        </div>
+                    </div><!--/.container-->
+
+                    <div class="quote">
+                        <div class="container">
+                            <div class="row">
+                                <div class="span8 offset2">
+                                    Colored, stylish icons can easily be modified and used in a wide variety of projects
+
+                                    <div class="author">
+                                        @stSilent, DesignModo.com
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
 
-                            <div class="container">
-                                <div class="row">
-                                    <div class="span8 offset2">
-                                        <p>We have a great surprise for Designmodo fans – our first free HTML user interface kit. Flat UI Free is made on the basis of Twitter Bootstrap in a stunning flat-style, and the kit also includes a PSD version for designers.</p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="span8 offset2">
+                                <p>
+                                    We have a great surprise for Designmodo fans – our first free HTML user interface kit. Flat UI Free is made on the basis of Twitter Bootstrap in a stunning flat-style, and the kit also includes a PSD version for designers.
+                                </p>
 
-                                        <p>We have considered your needs in developing the html version of our UI Kit, which contains the same elements as the PSD version and are perfect for creating great websites. With this UI Kit, you can spend even less time on routine work, saving that time for creativity.</p>
-                                    </div>
-                                </div>
+                                <p>
+                                    We have considered your needs in developing the html version of our UI Kit, which contains the same elements as the PSD version and are perfect for creating great websites. With this UI Kit, you can spend even less time on routine work, saving that time for creativity.
+                                </p>
+                            </div>
+                        </div>
 
-                                <div class="boxes">
-                                    <div class="box-1"></div>
-                                    <div class="box-2"></div>
-                                    <div class="box-3"></div>
-                                    <div class="box-4"></div>
-                                </div>
+                        <div class="boxes">
+                            <div class="box-1"></div>
+                            <div class="box-2"></div>
+                            <div class="box-3"></div>
+                            <div class="box-4"></div>
+                        </div>
 
-                                <div class="tags">
-                                    <ul>
-                                        <li><a href="#">design</a></li>
-                                        <li><a href="#">web design</a></li>
-                                        <li><a href="#">tutorials</a></li>
-                                        <li><a href="#">thoughts</a></li>
-                                    </ul>
-                                </div>
-                            </div><!--/.container-->
-                        </section>
+                        <div class="tags">
+                            <ul>
+                                <li>
+                                    <a href="#">design</a>
+                                </li>
+                                <li>
+                                    <a href="#">web design</a>
+                                </li>
+                                <li>
+                                    <a href="#">tutorials</a>
+                                </li>
+                                <li>
+                                    <a href="#">thoughts</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!--/.container-->
+                </section>
                 <div class="delimiter">&nbsp;</div>
 
                 <div class="manual">
                      <div class="blog-1">
                          <button class="back-button"></button>
-                         <div class="content-man">
-                             <h1>Block for creating blog with carousel. Codename "blog-1"</h1>
-                             <p>Test text. Test text. Test text. Test text. v Test text.</p>
-                             <ol>
-                                 <li>
-                                     <h3>Overview</h3>
-                                     <p>Test text. Test text. Test text. Test text. v Test text.Test text. Test text. Test text. Test text. v Test text.Test text. Test text. Test text. Test text. v Test text.</p>
-                                 </li>
-                                 <li>
-                                     <h3>Code</h3>
-                                     <p>Test text. Test text. <strong>Test text. Test text</strong>. v Test text.Test text. Test text. Test text. Test text. v Test text.</p>
-                                     <textarea>
-                                         <section class="blog-1">
-                                                     <div id="b1-pt-1" class="page-transitions pt-perspective">
-                                                         <div class="pt-page pt-page-1 pt-page-current bg-peter-river">
-                                                             <div class="container">
-                                                                 <div class="box-icon">
-                                                                     <a class="pt-control-prev" href="#"></a>
-                                                                     <span class="icon fui-mic"></span>
-                                                                     <a class="pt-control-next" href="#"></a>
-                                                                 </div>
+<div class="content-man">
+<h1>Block for creating blog with carousel. Codename "blog-1"</h1>
+<p>
+    
+</p>
+<ol>
+    <li>
+        <h3>Overview</h3>
+        <p>
+            Test text. Test text. Test text. Test text. v Test text.Test text. Test text. Test text. Test text. v Test text.Test text. Test text. Test text. Test text. v Test text.
+        </p>
+    </li>
+    <li>
+        <h3>Code</h3>
+        <p>
+            Test text. Test text. <strong>Test text. Test text</strong>. v Test text.Test text. Test text. Test text. Test text. v Test text.
+        </p>
+<pre class="cssCode">
+@import '../../flat-ui-pro/less/config.less';
+@import '../../flat-ui-pro/less/mixins.less';
+@import '../../common-files/less/mixins.less';
+@import '../../common-files/less/common.less';
+@import '../../common-files/less/helper.less';
 
-                                                                 <div class="hero-unit">
-                                                                     <h1>Mail App</h1>
-                                                                     <p>Beautiful Project</p>
-                                                                 </div>
-                                                             </div><!--/.container-->
-                                                         </div>
+@import 'blog-common.less';   
+@import 'blog-1.less';
+</pre>        
+<pre class="htmlCode">
+<section class="blog-1">
+    <div id="b1-pt-1" class="page-transitions pt-perspective">
+        <div class="pt-page pt-page-1 pt-page-current bg-peter-river">
+            <div class="container">
+                <div class="box-icon">
+                    <a class="pt-control-prev" href="#"></a>
+                    <span class="icon fui-mic"></span>
+                    <a class="pt-control-next" href="#"></a>
+                </div>
 
-                                                         <div class="pt-page pt-page-2 bg-turquoise">
-                                                             <div class="container">
-                                                                 <div class="box-icon">
-                                                                     <a class="pt-control-prev" href="#"></a>
-                                                                     <span class="icon fui-mic"></span>
-                                                                     <a class="pt-control-next" href="#"></a>
-                                                                 </div>
+                <div class="hero-unit">
+                    <h1>Mail App</h1>
+                    <p>Beautiful Project</p>
+                </div>
+            </div>
+        </div>
 
+        <div class="pt-page pt-page-2 bg-turquoise">
+            <div class="container">
+                <div class="box-icon">
+                    <a class="pt-control-prev" href="#"></a>
+                    <span class="icon fui-mic"></span>
+                    <a class="pt-control-next" href="#"></a>
+                </div>
 
-                                                                 <div class="hero-unit">
-                                                                     <h1>Mail App</h1>
-                                                                     <p>Beautiful Project</p>
-                                                                 </div>
-                                                             </div><!--/.container-->
-                                                         </div>
-                                                     </div>
+                <div class="hero-unit">
+                    <h1>Mail App</h1>
+                    <p>Beautiful Project</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                                                     <div class="title">
-                                                         <div class="container">
-                                                             <h3>We love what we do. Some thoughts about Illustrator</h3>
-                                                             <div class="submitted">Vladimir kudinov, today</div>
-                                                         </div><!--/.container-->
-                                                     </div>
+    <div class="title">
+        <div class="container">
+            <h3>We love what we do. Some thoughts about Illustrator</h3>
+            <div class="submitted">Vladimir kudinov, today</div>
+        </div>
+    </div>
 
-                                                     <div class="container">
-                                                         <div class="row">
-                                                             <div class="span3 links">
-                                                                 <div class="tags">
-                                                                     <h6>TAGS</h6>
-                                                                     <ul>
-                                                                         <li><a href="#">design</a></li>
-                                                                         <li><a href="#">web design</a></li>
-                                                                         <li><a href="#">tutorials</a></li>
-                                                                         <li><a href="#">thoughts</a></li>
-                                                                     </ul>
-                                                                 </div>
-                                                                 <div class="comments">
-                                                                     <h6>COMMENTS</h6>
-                                                                     <a href="#">25 comments</a>
-                                                                 </div>
-                                                             </div>
+    <div class="container">
+        <div class="row">
+            <div class="span3 links">
+                <div class="tags">
+                    <h6>TAGS</h6>
+                    <ul>
+                        <li><a href="#">design</a></li>
+                        <li><a href="#">web design</a></li>
+                        <li><a href="#">tutorials</a></li>  
+                        <li><a href="#">thoughts</a></li>
+                    </ul>
+                </div>
+                <div class="comments">
+                    <h6>COMMENTS</h6>
+                    <a href="#">25 comments</a>
+                </div>
+            </div>
 
-                                                             <div class="span9">
-                                                                 <p>We have a great surprise for Designmodo fans – our first free HTML user interface kit.
-                                                             Flat UI Free is made on the basis of Twitter Bootstrap in a stunning flat-style, and the kit also includes a PSD version for designers.</p>
+            <div class="span9">
+                <p>
+                    We have a great surprise for Designmodo fans – our
+                    first free HTML user interface kit. Flat UI Free 
+                    is made on the basis of Twitter Bootstrap in a 
+                    stunning flat-style, and the kit also includes a 
+                    PSD version for designers.
+                </p>
+                <p>
+                    We have considered your needs in developing the 
+                    html version of our UI Kit, which contains the 
+                    same elements as the PSD version and are perfect 
+                    for creating great websites. With this UI Kit, 
+                    you can spend even less time on routine work, 
+                    saving that time for creativity.
+                </p>
+                <p>
+                    Flat UI Free contains many basic and complex 
+                    components which are great for designers to 
+                    have at hand: buttons, inputs, button groups, 
+                    selects, checkboxes and radio-buttons, tags, 
+                    menus, progress bars and sliders, navigation 
+                    elements and more.
+                    <br>
+                    Colored, stylish icons can easily be modified
+                    and used in a wide variety of projects, as 
+                    they contain original layers. Glyphs are also 
+                    available in psd, html/css and svg formats.
+                </p>
+            </div>
+        </div>
 
-                                                                 <p>We have considered your needs in developing the html version of our UI Kit, which contains the same elements as the PSD version and are perfect for creating great websites. With this UI Kit, you can spend even less time on routine work, saving that time for creativity.</p>
+        <div class="boxes">
+            <div class="box-1"></div>
+            <div class="box-2"></div>
+            <div class="box-3"></div>
+            <div class="box-4"></div>
+        </div>
 
-                                                                 <p>Flat UI Free contains many basic and complex components which are great for designers to have at hand: buttons, inputs, button groups, selects, checkboxes and radio-buttons, tags, menus, progress bars and sliders, navigation elements and more.<br>
-                                                             Colored, stylish icons can easily be modified and used in a wide variety of projects, as they contain original layers. Glyphs are also available in psd, html/css and svg formats.</p>
-                                                             </div>
-                                                         </div>
+        <p>
+            Flat UI Free contains many basic and complex 
+            components which are great for designers to have 
+            at hand: buttons, inputs, button groups, selects, 
+            checkboxes and radio-buttons, tags, menus, progress 
+            bars and sliders, navigation elements and more. 
+            Colored, stylish icons can easily be modified and
+            used in a wide variety of projects, as they contain 
+            original layers. Glyphs are also available in psd,
+            html/css and svg formats.
+        </p>
+    </div>
+</section>
+</pre>
+    </li>
+    <li>
+        <h3>Samples</h3>
+        <p>
+            Test text. Test text. Test text. Test text.Test text. Test text. Test text. Test text.Test text. Test text. Test text. Test text.
+        </p>
+        <hr/>
+        <p>
+            <a href="#">Sample</a> you can see it on this...
+        </p>
+    </li>
 
-                                                         <div class="boxes">
-                                                             <div class="box-1"></div>
-                                                             <div class="box-2"></div>
-                                                             <div class="box-3"></div>
-                                                             <div class="box-4"></div>
-                                                         </div>
-
-                                                         <p>Flat UI Free contains many basic and complex components which are great for designers to have at hand: buttons, inputs, button groups, selects, checkboxes and radio-buttons, tags, menus, progress bars and sliders, navigation elements and more. Colored, stylish icons can easily be modified and used in a wide variety of projects, as they contain original layers. Glyphs are also available in psd, html/css and svg formats.</p>
-                                                     </div><!--/.container-->
-                                                 </section>
-                                     </textarea>
-                                 </li>
-                                 <li>
-                                     <h3>Samples</h3>
-                                     <p>Test text. Test text. Test text. Test text.Test text. Test text. Test text. Test text.Test text. Test text. Test text. Test text.</p>
-                                     <hr/>
-                                     <p><a href="#">Sample</a> you can see it on this... </p>
-                                 </li>
-                                 <li>
-                                     <h3>FAQ</h3>
-                                     <p>Test text. Test text. Test text. Test text.Test text. Test text. Test text. Test text.Test text. Test text. Test text. Test text.</p>
-                                 </li>
-                             </ol>
-                         </div>
-
-
+</ol>
+</div>
                      </div>
                 </div>
             </div>
@@ -547,6 +834,7 @@
         <script src="../common-files/js/jquery.svganim.js"></script>
         <script src="../common-files/js/jquery.parallax.min.js"></script>       
         <script src="../common-files/js/startup-kit.js"></script>
+        <script src="js/jquery.snippet.min.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>

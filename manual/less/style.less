@@ -13,6 +13,8 @@
 @import '../../ui-kit-blog/less/blog-4.less';
 @import '../../ui-kit-blog/less/blog-5.less';
 
+@import 'main-page.less';
+
 
 .dockbar.active{
   top:0;  right:0;  left:0;
@@ -89,7 +91,7 @@
     max-width:960px;
     min-width:400px;
     .box-sizing(border-box);
-    padding: 100px;
+    padding: 0 100px;
     overflow: auto;
     width:70%;
     top:0;     
@@ -98,6 +100,7 @@
 
     > div{
       position: absolute;
+      padding:120px 0;
       .back-button {
         float: left;
         display: inline-block;
@@ -118,20 +121,49 @@
         max-width: 80%;
         display: inline-block;
         margin-left:25px;
+        margin-top:-25px;
         padding-left:25px ;
         h1{.font(34px, white); display: inline-block; margin-bottom: 40px;}
         h3{.font(25px, white); margin-bottom: 40px; margin-top: 40px;}
-        p{.font(16px, @asbestos);}
-        ol{li{margin-left: -25px;}}
-        textarea{
-          margin: 20px 0;
-          .border-radius(0);
-          border: 0 none;
-          background-color: #000000;
-          .font(14px,@asbestos);
-          width:95%;
-          min-height: 200px;
+        p{.font(16px, @asbestos);}        
+        > ol{
+            counter-reset:li;            
+            list-style:none;  
+            margin:0;         
+          > li {
+              position:relative;             
+             
+              &:before{
+                  background: none repeat scroll 0 0 #BDC3C7;
+                  .border-radius(100%);                 
+                  color: #1B1E23;
+                  content: counter(li, decimal);
+                  counter-increment: li;
+                  display: inline-block;
+                  float: left;
+                  font-family: @h-font-family;
+                  font-weight: bold;
+                  margin: 0 25px 0 -50px;
+                  padding: 3px 9px;
+                  text-align: center;
+              }
+          } 
+        }   
+        
+       
+        .snippet-container{
+           display:block;
+           margin: 20px 0;
+           .border-radius(0);
+           border: 0 none;
+           background-color: #000000;
+           .font(14px,@asbestos);
+           width:95%;
+           min-height: 200px;
+           max-height:300px;
+           overflow:auto;
         }
+       
         strong{
           color: gold;
           font-weight: normal;

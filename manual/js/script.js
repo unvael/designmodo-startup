@@ -62,6 +62,16 @@
                 if (hash == '' || hash == "#" || hash == "#firstStep" || hash == "#lastStep") {
                     hash = '#main-page';
                 }
+                var blog= /\#b1\-*/;
+                var contacts = /\#cs\-*/;
+                if(hash.match(blog)){
+                    hash = "#blocks-of-blog";
+                    window.location.hash = '#blocks-of-blog';
+                }else if(hash.match(contacts)){
+                    hash = "#blocks-of-contact";
+                    window.location.hash = '#blocks-of-contact';
+                }
+                
                 $(hash).fadeIn("slow");
             };
             _locationChange();

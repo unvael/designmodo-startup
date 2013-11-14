@@ -15,7 +15,7 @@
     <li>
         <h3>Code</h3>
         <p>
-            For <big><strong>Simple version:</strong></big>
+            <a id="b1-simple"></a><h4>Simple version:</h4>
             <small>if you not already done all instructions
             that you had to read on the <a href="#main-page">home</a> page
             of this documentation please make it first</small> 
@@ -25,18 +25,44 @@
 <pre class="htmlCode">
 include "../../ui-kit-blog/for-tpl/blog-1.html" 
 </pre>
+
         <p>
-            For <big><strong>"LESS" version:</strong></big>
+            <h4>"LESS" version:</h4>
             <small>if you not already done all instructions
             that you had to read on the <a href="#main-page">home</a> page
             of this documentation please make it first</small> 
-            you should paste same code (as in <strong>simple version</strong>) and paste next code into your '<strong>.less</strong>' file after that 
+            you should paste same code (as in <a href="#b1-simple" class="inner-link">simple version</a>) and paste next code into your '<strong>.less</strong>' file after that 
             rows that you already had to paste.
         </p>
 <pre class="cssCode">
 @import 'blog-common.less';   
 @import 'blog-1.less';
 </pre>
+ <h4>All versions:</h4>
+<p>So about modifications which you can do.</p>
+
+<p><big><strong>Carousel</strong></big></p>
+        <p> As you can see in code we have block with id="<strong>b1-pt-1</strong>" - it's main block of the carousel. 
+            In this block situated few pages whict have class="<strong>pt-page</strong>".
+            For thouse elements you can change background, and you can do it in few ways. First way - you can change the part of class that start with
+            <strong>bg-</strong> for this element. This way you can use reserved classes from Flat-UI, but it changed only color of carousels page background. Or second way - 
+            you can use css for change background for concrete element. As example for <strong>pt-page-1</strong>. You can do something like this: 
+            </p>
+<pre class="cssCode">
+.pt-page-1{
+    background-image:url('some image url');
+    background-color: some color;
+}
+</pre>        
+<p>You can change text for any of this carousel pages. For this you should change text in block with class="<strong>hero-unit</strong>"</p>
+<p>And you can add new pages. For this you should copy one of blocks with class="<strong>pt-page</strong>", replace class as <strong>pt-page-1</strong> to new class, 
+and new class should has new number.</p>
+<p><big><strong>Content except carousel</strong></big></p>
+<p>You can replace any text except code structure.</p>
+    
+   
+
+
     </li>
 
 </ol>

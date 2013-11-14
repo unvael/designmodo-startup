@@ -15,7 +15,7 @@
 
             $(window).keydown(function(e) {
 
-                $('.content > div:visible').find('section').each(function() {
+                $('.mcontent > div:visible').find('section').each(function() {
                     var instance = $(this);
                     var windowScrollPos = $(window).scrollTop() + 100;
                     var sectionPos = instance.position().top;
@@ -55,7 +55,7 @@
             });
 
             _locationChange = function(hash) {
-                $('.content > div').hide();
+                $('.mcontent > div').hide();
                 if (hash == undefined || hash == null) {
                     hash = window.location.hash;
                 }

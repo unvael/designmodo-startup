@@ -869,7 +869,7 @@ section * {
  * Copntact 4 stylesheet  
  * */
 .contacts-4 {
-  background: #34495e url('../img/map.png') 50% 50% no-repeat;
+  background: #34495e url('../../ui-kit-contacts/img/map.png') 50% 50% no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

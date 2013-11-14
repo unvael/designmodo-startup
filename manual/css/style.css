@@ -1346,6 +1346,9 @@ section * {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+#main-page .main-page .container .snippet-menu {
+  z-index: 100;
+}
 #main-page .main-page .container h1 {
   margin-bottom: 20px;
   margin-top: 20px;
@@ -1580,6 +1583,7 @@ section * {
 .read-manual .content .manual > div {
   position: absolute;
   padding: 120px 0;
+  background-color: transparent;
 }
 .read-manual .content .manual > div .back-button {
   float: left;

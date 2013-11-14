@@ -102,7 +102,7 @@ startupKit.uiKitHeader._inFixedMode = function(headerClass) {
                     });
                 }
             });
-            
+            $(window).resize();
             
             $('.navbar .brand', header).css({
                 'font-size' : 18 + ((25 - 18) * headerZoom),
@@ -210,7 +210,7 @@ startupKit.uiKitHeader.header5 = function() {
 /* Header 6*/
 startupKit.uiKitHeader.header6 = function() {
     startupKit.uiKitHeader._inFixedMode('.header-6');
-    $(window).resize().scroll();
+   
 
 };
 
@@ -495,10 +495,12 @@ startupKit.uiKitContent.content7 = function() {
 
     })($('.screen'));
 
+    /*
     $(window).load(function() {
-        $('html').addClass('loaded');
-        $(window).resize().scroll();
-    });
+            $('html').addClass('loaded');
+            $(window).resize();
+        });*/
+    
 
 };
 
@@ -1017,7 +1019,7 @@ startupKit.uiKitFooter.footer15 = function() {};
         /* function on load */
         $(window).load(function() {
             $('html').addClass('loaded');
-            $(window).resize().scroll();
+            $(window).resize();
         });
 
         /* ie fix images */

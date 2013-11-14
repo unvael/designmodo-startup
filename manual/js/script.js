@@ -12,15 +12,22 @@
         manual.dockbar =  $('.dockbar');
 
         manual.dockbar.init = function(){
-         this.addClass('normal');         
-         this.mouseover(function(){
+            var instance = this;
+         instance.addClass('active');       
+                 
+         instance.mouseover(function(){
             $(this).removeClass('normal');    
             $(this).addClass('active');      
          });
-         this.mouseout(function(){
+         instance.mouseout(function(){
             $(this).removeClass('active');    
             $(this).addClass('normal');
          });
+         $(window).scroll(function(){
+             console.log('scroll');
+            $(instance).removeClass('active');    
+            $(instance).addClass('normal');
+         });  
          
          _locationChange = function(hash){
              $('.content > div').hide();

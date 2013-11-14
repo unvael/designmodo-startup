@@ -28,6 +28,223 @@
   border-bottom-color: #34495e !important;
   border-top-color: #34495e !important;
 }
+/*only fo flat-ui free*/body {
+  color: #34495e;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 1.231;
+}
+input,
+button,
+select,
+textarea {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+}
+a {
+  color: #16a085;
+  text-decoration: none;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+}
+a:hover {
+  color: #1abc9c;
+  text-decoration: none;
+}
+h1,
+.h1 {
+  font-size: 62.006px /* 64px */;
+}
+h2,
+.h2 {
+  font-size: 51.996px /* 52px */;
+}
+h3,
+.h3 {
+  font-size: 39.998000000000005px /* 40px */;
+}
+h4,
+.h4 {
+  font-size: 28.994000000000003px /* 29px */;
+}
+h5,
+.h5 {
+  font-size: 28px /* 28px */;
+}
+h6,
+.h6 {
+  font-size: 23.996px /* 24px */;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  line-height: 1.2em;
+}
+h1 {
+  font-weight: 700;
+}
+h2 {
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+h3 {
+  font-weight: 700;
+  margin-bottom: 4px;
+  margin-top: 2px;
+}
+h4 {
+  font-weight: 500;
+  margin-top: 4px;
+}
+h5 {
+  font-weight: 500;
+}
+h6 {
+  font-weight: normal;
+}
+p {
+  font-size: 18.004px;
+  /* 18px */
+
+  line-height: 1.722169;
+  /* 31px */
+
+}
+.lead {
+  font-size: 28px;
+  /* 28px */
+
+  line-height: 1.4642745000000001;
+  /* 41px */
+
+  font-weight: 300;
+}
+small {
+  font-size: 84%;
+  /* 15px */
+
+  line-height: 2.050846;
+  /* 31px */
+
+}
+blockquote {
+  position: relative;
+  border-left: none;
+  padding-left: 19px;
+}
+blockquote p {
+  font-size: 20.006px;
+  line-height: 1.549829;
+  font-weight: normal;
+  margin-bottom: .4em;
+}
+blockquote small {
+  font-size: 18.004px;
+  line-height: 1.722169;
+  font-style: italic;
+  color: #34495e;
+}
+blockquote small:before {
+  content: "";
+}
+blockquote:before {
+  position: absolute;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  background-color: #ebedee;
+  content: "";
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.img-rounded {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.img-comment {
+  font-size: 14.994px;
+  line-height: 1.231;
+  font-style: italic;
+  margin: 24px 0;
+}
+.text-primary {
+  color: #1abc9c;
+}
+a.text-primary:hover,
+a.text-primary:focus {
+  color: #15967d;
+}
+.text-success {
+  color: #2ecc71;
+}
+a.text-success:hover,
+a.text-success:focus {
+  color: #25a35a;
+}
+.text-danger {
+  color: #e74c3c;
+}
+a.text-danger:hover,
+a.text-danger:focus {
+  color: #b93d30;
+}
+.text-warning {
+  color: #f1c40f;
+}
+a.text-warning:hover,
+a.text-warning:focus {
+  color: #c19d0c;
+}
+.text-info {
+  color: #3498db;
+}
+a.text-info:hover,
+a.text-info:focus {
+  color: #2a7aaf;
+}
+.text-inverse {
+  color: #ffffff;
+}
+a.text-inverse:hover,
+a.text-inverse:focus {
+  color: #cccccc;
+}
+.muted {
+  color: #bdc3c7;
+}
+a.muted:hover,
+a.muted:focus {
+  color: #979c9f;
+}
+footer {
+  background-color: transparent;
+}
+.input-append input {
+  -webkit-border-radius: 6px 0 0 6px;
+  -moz-border-radius: 6px 0 0 6px;
+  border-radius: 6px 0 0 6px;
+}
+.navbar-fixed-top .navbar-inner,
+.navbar-static-top .navbar-inner {
+  box-shadow: none;
+}
+/* end only for flat-ui free*/
 .bg-white {
   background-color: #ffffff;
 }
@@ -329,6 +546,7 @@ section * {
   font-weight: normal;
   color: #2c3e50;
   font-family: Lato, sens-serif;
+  text-transform: none;
 }
 .content-1 .box-video .btns {
   text-align: center;
@@ -600,6 +818,7 @@ section * {
   color: #34495e;
   font-family: Lato, sens-serif;
   font-weight: bold;
+  text-transform: none;
 }
 .content-3 .features p {
   line-height: 26px;
@@ -635,6 +854,7 @@ section * {
   color: #34495e;
   font-family: Lato, sens-serif;
   font-weight: bold;
+  text-transform: none;
 }
 .content-4 .features p {
   font-size: 16px;
@@ -738,6 +958,7 @@ section * {
   font-family: Lato, sens-serif;
   font-weight: bold;
   margin-bottom: 14px;
+  text-transform: none;
 }
 /**
  * Content 6 stylesheet  
@@ -833,6 +1054,7 @@ section * {
   font-family: Lato, sens-serif;
   font-weight: bold;
   margin-bottom: 14px;
+  text-transform: none;
 }
 /**
  * Content 7 stylesheet  
@@ -901,6 +1123,7 @@ section * {
   font-weight: normal;
   color: #e74c3c;
   margin-top: 55px;
+  text-transform: none;
 }
 .content-7 h6:first-child {
   margin-top: auto;
@@ -1053,6 +1276,7 @@ section * {
   line-height: 30px;
 }
 .content-9 h6 {
+  text-transform: none;
   font-size: 18px;
   font-weight: normal;
   color: #34495e;
@@ -1110,6 +1334,7 @@ section * {
   background-color: #c0392b;
 }
 .content-10 .carousel .item {
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 0.6s ease-in-out opacity;
   -moz-transition: 0.6s ease-in-out opacity;
   -o-transition: 0.6s ease-in-out opacity;
@@ -1160,6 +1385,7 @@ section * {
   top: 50px;
 }
 .content-10 .features h6 {
+  text-transform: none;
   font-size: 24px;
   font-weight: normal;
   color: #2c3e50;
@@ -1235,6 +1461,7 @@ section * {
   color: #ffffff;
   background: #1abc9c;
   font-weight: 300;
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 0.25s color, 0.25s background-color;
   -moz-transition: 0.25s color, 0.25s background-color;
   -o-transition: 0.25s color, 0.25s background-color;
@@ -1427,6 +1654,7 @@ section * {
   }
 }
 .content-14 .features h6 {
+  text-transform: none;
   color: #e74c3c;
   font-size: 18px;
   font-family: Lato, sens-serif;
@@ -1577,6 +1805,7 @@ section * {
   margin-top: 120px;
 }
 .content-15 .features h6 {
+  text-transform: none;
   margin: 60px 0 20px;
   font-size: 20px;
   font-weight: normal;
@@ -1739,6 +1968,7 @@ section * {
   line-height: 25px;
 }
 .content-17 .carousel .item {
+  -webkit-backface-visibility: hidden;
   -webkit-transition: .8s ease-in-out top, .6s ease-in-out opacity;
   -moz-transition: .8s ease-in-out top, .6s ease-in-out opacity;
   -o-transition: .8s ease-in-out top, .6s ease-in-out opacity;
@@ -1833,6 +2063,7 @@ section * {
   padding-bottom: 75px;
 }
 .content-18 .carousel .item {
+  -webkit-backface-visibility: hidden;
   -webkit-transition: .8s ease-in-out top, .6s ease-in-out opacity;
   -moz-transition: .8s ease-in-out top, .6s ease-in-out opacity;
   -o-transition: .8s ease-in-out top, .6s ease-in-out opacity;
@@ -1874,6 +2105,7 @@ section * {
   margin-top: 20px;
 }
 .content-18 .quotes h6 {
+  text-transform: none;
   font-size: 18px;
   font-weight: normal;
   color: #2c3e50;
@@ -2054,6 +2286,7 @@ section * {
   font-weight: 300;
 }
 .content-20 h6 {
+  text-transform: none;
   font-size: 18px;
   font-weight: normal;
   color: #ffffff;
@@ -2296,6 +2529,7 @@ section * {
   cursor: pointer;
   font-weight: 500;
   letter-spacing: 0.19em;
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 0.25s;
   -moz-transition: 0.25s;
   -o-transition: 0.25s;
@@ -2347,6 +2581,7 @@ section * {
   padding: 120px 50px 120px 50%;
   opacity: 0;
   filter: alpha(opacity=0);
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 0.6s opacity;
   -moz-transition: 0.6s opacity;
   -o-transition: 0.6s opacity;
@@ -2363,6 +2598,7 @@ section * {
   z-index: 1;
 }
 .content-21 .features.features-tabs .features-body h6 {
+  text-transform: none;
   margin: 0 0 30px;
   font-size: 20px;
   font-weight: normal;
@@ -2479,6 +2715,7 @@ section * {
   transform: scale(0);
 }
 .content-22.ani-processed .description {
+  -webkit-backface-visibility: hidden;
   -webkit-transition: .8s 3.4s;
   -moz-transition: .8s 3.4s;
   -o-transition: .8s 3.4s;
@@ -2492,6 +2729,7 @@ section * {
   transform: rotate(0deg);
 }
 .content-22.ani-processed .description img {
+  -webkit-backface-visibility: hidden;
   -webkit-transition: .4s 3.8s;
   -moz-transition: .4s 3.8s;
   -o-transition: .4s 3.8s;
@@ -2521,6 +2759,7 @@ section * {
   visibility: hidden;
 }
 .content-22.ani-processed .img img {
+  -webkit-backface-visibility: hidden;
   -webkit-transition: .8s top, 1.2s opacity;
   -moz-transition: .8s top, 1.2s opacity;
   -o-transition: .8s top, 1.2s opacity;
@@ -2777,6 +3016,7 @@ section * {
   margin-left: 50px;
   color: #667380;
   cursor: pointer;
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 0.25s;
   -moz-transition: 0.25s;
   -o-transition: 0.25s;
@@ -2807,6 +3047,7 @@ section * {
   box-sizing: border-box;
   opacity: 0;
   filter: alpha(opacity=0);
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 0.6s opacity;
   -moz-transition: 0.6s opacity;
   -o-transition: 0.6s opacity;
@@ -2938,6 +3179,7 @@ section * {
   }
 }
 .content-26 .features h6 {
+  text-transform: none;
   margin-top: 37px;
   font-family: Lato, sens-serif;
   font-weight: bold;
@@ -3154,6 +3396,7 @@ section * {
 .content-30 .features .img img + img {
   opacity: 0;
   filter: alpha(opacity=0);
+  -webkit-backface-visibility: hidden;
   -webkit-transition: opacity 0.25s;
   -moz-transition: opacity 0.25s;
   -o-transition: opacity 0.25s;
@@ -3178,6 +3421,7 @@ section * {
   height: 100%;
 }
 .content-30 .features h6 {
+  text-transform: none;
   font-size: 18px;
   font-weight: normal;
   color: #1abc9c;
@@ -3275,6 +3519,7 @@ section * {
   padding: 100px 0;
   opacity: 0.2;
   filter: alpha(opacity=20);
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 0.6s opacity;
   -moz-transition: 0.6s opacity;
   -o-transition: 0.6s opacity;
@@ -3284,6 +3529,7 @@ section * {
   margin: 0 0 30px;
   font-size: 40px;
   color: #7f8c8d;
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 0.6s color;
   -moz-transition: 0.6s color;
   -o-transition: 0.6s color;
@@ -3306,6 +3552,7 @@ section * {
   font-size: 24px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 0.6s background-color;
   -moz-transition: 0.6s background-color;
   -o-transition: 0.6s background-color;
@@ -3323,6 +3570,7 @@ section * {
   position: relative;
 }
 .content-31 .container .img img {
+  -webkit-backface-visibility: hidden;
   -webkit-transition: 0.6s opacity;
   -moz-transition: 0.6s opacity;
   -o-transition: 0.6s opacity;

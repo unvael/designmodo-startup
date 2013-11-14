@@ -75,10 +75,12 @@
                 $(this).parent().addClass('active');
                 _locationChange($(this).attr('href'));
             });
-            $('.main-page li a:not(.inner-link)').click(function() {
+            $('li a:not(.inner-link)').click(function() {
                 $('li').removeClass('active');
                 $(this).parent().addClass('active');
                 _locationChange($(this).attr('href'));
+                $('html').removeClass('read-manual');
+                $('.manual > div').hide();
             });
 
         };

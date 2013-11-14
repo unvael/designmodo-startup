@@ -2335,6 +2335,7 @@ section * {
   font-size: 16px;
   font-weight: normal;
   color: #7f8c8d;
+  padding-right: 20px;
 }
 .read-manual .mcontent .manual > div .content-man > ol {
   counter-reset: li;
@@ -2372,7 +2373,7 @@ section * {
   font-weight: normal;
   color: #7f8c8d;
   width: 95%;
-  min-height: 200px;
+  height: auto;
   max-height: 300px;
   overflow: auto;
 }
@@ -2394,6 +2395,10 @@ section * {
   border-top: 1px solid #000000;
   border-bottom: 1px solid black;
   margin: 40px 0;
+}
+.read-manual .mcontent .manual > div small {
+  color: white;
+  display: block;
 }
 .read-man {
   margin-top: 20px;

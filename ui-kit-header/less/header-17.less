@@ -79,25 +79,27 @@
   position:relative !important;
   .v-center;  
   .btn.btn-clear {
-  .box-sizing(border-box);
-  background: none;
-  border: 2px solid #16a085;
-  &:hover, &:focus { border-color: #009c84; background: #009c84;}
-  &:active, &.active {
-    border-color: mix(#16a085, black, 85%);
-    background: mix(#16a085, black, 85%);
-    color: rgba(255, 255, 255, 0.75);
-  }
-  [class*="fui-"] {
-    .font(30px, inherit);
-    margin: 0 15px 0 -5px;
-  }
-  @media (max-width: 480px) {
-    .font(18px, white);
-    display: block;
-    [class*="fui-"] {float: left;}
-  }
-}  
+    font-size: 22px;
+    .box-sizing(border-box);
+    padding: 15px 20px 16px;
+    background: none;
+    border: 2px solid #16a085;
+    &:hover, &:focus { border-color: #009c84; background: #009c84;}
+    &:active, &.active {
+      border-color: mix(#16a085, black, 85%);
+      background: mix(#16a085, black, 85%);
+      color: rgba(255, 255, 255, 0.75);
+    }
+    [class*="fui-"] {
+      .font(30px, inherit);
+      margin: 0 15px 0 -5px;
+    }
+    @media (max-width: 480px) {
+      .font(18px, white);
+      display: block;
+      [class*="fui-"] {float: left;}
+    }
+  }  
   h3 { margin: 0 0 10px;}
 
 .hero-unit {
@@ -142,6 +144,7 @@
 
   h6 {
     .font(18px, white); font-weight: bold;
+    text-transform: none;
   }
  
   

@@ -608,6 +608,7 @@ section * {
   }
 }
 .header-13-sub {
+  position: relative;
   padding-top: 130px;
   padding-bottom: 130px;
   color: #bdc3c7;

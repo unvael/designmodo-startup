@@ -762,6 +762,7 @@ section * {
   min-height: 800px;
   color: white;
   text-align: center;
+  position: relative;
 }
 .header-15-sub.v-center,
 .header-15-sub .v-center {

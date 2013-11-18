@@ -751,6 +751,7 @@ section * {
   padding-bottom: 200px;
   background: #ebedee;
   overflow: hidden;
+  position: relative;
 }
 .header-19-sub > img {
   position: absolute;

@@ -857,6 +857,7 @@ section * {
   transform: rotate(360deg);
 }
 .header-16-sub {
+  position: relative;
   background: #000;
   padding-top: 0;
   padding-bottom: 0;

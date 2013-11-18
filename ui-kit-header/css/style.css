@@ -1116,6 +1116,7 @@ section * {
   z-index: 50;
   left: 0;
   width: 100%;
+  position: relative;
   padding-top: 190px;
   padding-bottom: 90px;
   color: white;
@@ -1378,6 +1379,7 @@ section * {
   }
 }
 .header-3-sub {
+  position: relative;
   padding-top: 180px;
   padding-bottom: 100px;
 }
@@ -1819,6 +1821,7 @@ section * {
   }
 }
 .header-5-sub {
+  position: relative;
   padding: 0;
 }
 .header-5-sub .box-icon {
@@ -2242,6 +2245,7 @@ section * {
   }
 }
 .header-6-sub {
+  position: relative;
   z-index: 50;
   left: 0;
   width: 100%;
@@ -2395,6 +2399,7 @@ section * {
  * Header 7 stylesheet  
  * */
 .header-7-sub {
+  position: relative;
   height: 100%;
   max-height: 997px;
   overflow: hidden;
@@ -2964,6 +2969,7 @@ section * {
   }
 }
 .header-8-sub {
+  position: relative;
   padding-top: 100px;
   padding-bottom: 0;
 }
@@ -3487,6 +3493,7 @@ section * {
   }
 }
 .header-10-sub {
+  position: relative;
   z-index: 50;
   height: 800px;
   color: white;
@@ -4269,6 +4276,7 @@ section * {
   }
 }
 .header-13-sub {
+  position: relative;
   padding-top: 130px;
   padding-bottom: 130px;
   color: #bdc3c7;
@@ -4727,6 +4735,7 @@ section * {
   min-height: 800px;
   color: white;
   text-align: center;
+  position: relative;
 }
 .header-15-sub.v-center,
 .header-15-sub .v-center {
@@ -5104,6 +5113,7 @@ section * {
   transform: rotate(360deg);
 }
 .header-16-sub {
+  position: relative;
   background: #000;
   padding-top: 0;
   padding-bottom: 0;
@@ -5936,6 +5946,7 @@ section * {
   width: 0;
 }
 .header-18 .header-18-sub {
+  position: relative;
   color: white;
 }
 .header-18 .header-18-sub.v-center,
@@ -6402,6 +6413,7 @@ section * {
   padding-bottom: 200px;
   background: #ebedee;
   overflow: hidden;
+  position: relative;
 }
 .header-19-sub > img {
   position: absolute;
@@ -6673,6 +6685,7 @@ section * {
   }
 }
 .header-20-sub {
+  position: relative;
   border-top: 0;
   padding-top: 180px;
   padding-bottom: 80px;
@@ -7381,6 +7394,7 @@ section * {
   }
 }
 .header-22-sub {
+  position: relative;
   padding-top: 68px;
 }
 .header-22-sub.v-center,

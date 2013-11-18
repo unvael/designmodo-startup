@@ -746,6 +746,7 @@ section * {
   }
 }
 .header-10-sub {
+  position: relative;
   z-index: 50;
   height: 800px;
   color: white;

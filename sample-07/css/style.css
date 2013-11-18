@@ -637,6 +637,7 @@ section * {
   width: 0;
 }
 .header-18 .header-18-sub {
+  position: relative;
   color: white;
 }
 .header-18 .header-18-sub.v-center,

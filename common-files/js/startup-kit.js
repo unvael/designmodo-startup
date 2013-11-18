@@ -88,7 +88,10 @@ startupKit.uiKitHeader._inFixedMode = function(headerClass) {
             headerZoom = 1 - Math.min(1, Math.max(0, headerZoom));
             
             $(window).resize(function(){
-               if($(window).width()<767){
+               _navbarResize();
+            });
+            var _navbarResize = function(){
+                if($(window).width()<767){
                     $('.navbar', header).css({
                         'top' : -6 + ((20 + 6) * headerZoom)
                     });
@@ -101,8 +104,9 @@ startupKit.uiKitHeader._inFixedMode = function(headerClass) {
                         'top' : -6 + ((45 + 6) * headerZoom)
                     });
                 }
-            });
-            $(window).resize();
+            };
+            
+            _navbarResize();
             
             $('.navbar .brand', header).css({
                 'font-size' : 18 + ((25 - 18) * headerZoom),
@@ -495,11 +499,7 @@ startupKit.uiKitContent.content7 = function() {
 
     })($('.screen'));
 
-    /*
-    $(window).load(function() {
-            $('html').addClass('loaded');
-            $(window).resize();
-        });*/
+    
     
 
 };

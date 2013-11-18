@@ -23,8 +23,20 @@
         helpButton.each(function() {
             $(this).hover(function() {
                 var id = $(this).attr('id');
-                $('.' + id + '.mask').height($('section.' + id).height());
-
+                var heightMask = 0;                 
+                if($('section.' + id).length!=0){
+                    heightMask += $('section.' + id).outerHeight();
+                }                
+                if($('header.' + id).length!=0){
+                    heightMask += $('header.' + id).outerHeight();        
+                }                
+                if($('.'+id + '-sub').length!=0){                          
+                    heightMask += $('.' + id + '-sub').outerHeight();
+                }                
+                if($('footer.' + id).length!=0){
+                    heightMask += $('footer.' + id).outerHeight();
+                }
+                $('.' + id + '.mask').height(heightMask);
                 $('.' + id + '.mask').toggleClass('active');
             });
         });
@@ -41,6 +53,7 @@
         $('pre.htmlCode').each(function() {
             $(this).text($(this).html());
         });
+        
         $('.manual pre.htmlCode').snippet("html", {
             style : "vim-dark"
         });

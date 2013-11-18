@@ -7,51 +7,10 @@
 @import '../../common-files/less/helper.less';
 
 
-@import '../../ui-kit-blog/less/blog-common.less';
-@import '../../ui-kit-blog/less/blog-1.less';
-@import '../../ui-kit-blog/less/blog-2.less';
-@import '../../ui-kit-blog/less/blog-3.less';
-@import '../../ui-kit-blog/less/blog-4.less';
-@import '../../ui-kit-blog/less/blog-5.less';
-
-@import '../../ui-kit-contacts/less/contact-1.less';
-@import '../../ui-kit-contacts/less/contact-2.less';
-@import '../../ui-kit-contacts/less/contact-3.less';
-@import '../../ui-kit-contacts/less/contact-4.less';
-@import '../../ui-kit-contacts/less/contact-5.less';
-
-@import '../../ui-kit-content/less/content-1.less';
-@import '../../ui-kit-content/less/content-2.less';
-@import '../../ui-kit-content/less/content-3.less';
-@import '../../ui-kit-content/less/content-4.less';
-@import '../../ui-kit-content/less/content-5.less';
-@import '../../ui-kit-content/less/content-6.less';
-@import '../../ui-kit-content/less/content-7.less';
-@import '../../ui-kit-content/less/content-8.less';
-@import '../../ui-kit-content/less/content-9.less';
-@import '../../ui-kit-content/less/content-10.less';
-@import '../../ui-kit-content/less/content-11.less';
-@import '../../ui-kit-content/less/content-12.less';
-@import '../../ui-kit-content/less/content-13.less';
-@import '../../ui-kit-content/less/content-14.less';
-@import '../../ui-kit-content/less/content-15.less';
-@import '../../ui-kit-content/less/content-16.less';
-@import '../../ui-kit-content/less/content-17.less';
-@import '../../ui-kit-content/less/content-18.less';
-@import '../../ui-kit-content/less/content-19.less';
-@import '../../ui-kit-content/less/content-20.less';
-@import '../../ui-kit-content/less/content-21.less';
-@import '../../ui-kit-content/less/content-22.less';
-@import '../../ui-kit-content/less/content-23.less';
-@import '../../ui-kit-content/less/content-24.less';
-@import '../../ui-kit-content/less/content-25.less';
-@import '../../ui-kit-content/less/content-26.less';
-@import '../../ui-kit-content/less/content-27.less';
-@import '../../ui-kit-content/less/content-28.less';
-@import '../../ui-kit-content/less/content-29.less';
-@import '../../ui-kit-content/less/content-30.less';
-@import '../../ui-kit-content/less/content-31.less';
-
+@import '../../ui-kit-blog/less/style.less';
+@import '../../ui-kit-contacts/less/style.less';
+@import '../../ui-kit-content/less/style.less';
+@import '../../ui-kit-header/less/style.less';
 
 @import 'main-page.less';
 
@@ -126,7 +85,7 @@
   .manual{
     display:block;
     position:fixed;
-    z-index:100;
+    z-index:999;
     min-height:100%;
     max-width:960px;
     min-width:400px;
@@ -141,6 +100,8 @@
     > div{
       position: absolute;
       padding:120px 0;
+      left:auto;
+      width:auto;
       background-color:transparent;
       .back-button {
         float: left;
@@ -239,7 +200,7 @@
     margin-top: 20px;
     position: absolute;
     right: 20px;
-    z-index: 21;
+    z-index: 901;
     .border-radius(100%);
     height:30px;
     width:30px;
@@ -252,9 +213,10 @@
     display:block;
     background-color:#1B1E23;
     position:absolute;
-    z-index:20;
+    z-index:900;
     width:100%;
     text-align:center;
+    top:auto;
     
     .opacity(50);
     .hero-unit{

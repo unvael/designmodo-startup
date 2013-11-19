@@ -477,7 +477,7 @@ startupKit.uiKitContent.content7 = function() {
     
     (function(el) {
         if (el.length != 0) {
-            console.log(el);
+            //console.log(el);
 
             $('img:first-child', el).css('left', '-29.7%');
             $(window).resize(function() {

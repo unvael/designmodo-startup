@@ -735,6 +735,7 @@ section * {
  * Content 9 stylesheet  
  * */
 .content-9 {
+  position: relative;
   padding-bottom: 0;
 }
 .content-9 h3 {
@@ -773,6 +774,9 @@ section * {
 /**
  * Content 14 stylesheet  
  * */
+.content-14 {
+  position: relative;
+}
 @media (max-width: 767px) {
   .content-14 {
     height: auto!important;
@@ -973,6 +977,7 @@ section * {
   }
 }
 .content-23 {
+  position: relative;
   height: 800px;
   -webkit-background-size: cover;
   -moz-background-size: cover;

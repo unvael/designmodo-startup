@@ -937,6 +937,9 @@ section * {
 /**
  * Content 10 stylesheet  
  * */
+.content-10 {
+  position: relative;
+}
 .content-10 .carousel {
   margin-bottom: 0;
   display: inline-block;

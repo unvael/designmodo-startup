@@ -827,6 +827,7 @@ section * {
  * Content 19 stylesheet  
  * */
 .content-19 {
+  position: relative;
   padding-top: 70px;
   padding-bottom: 120px;
   border-bottom: 2px solid #ebedee;

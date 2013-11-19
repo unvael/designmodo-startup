@@ -903,6 +903,9 @@ section * {
 /**
  * Content 4 stylesheet  
  * */
+.content-4 {
+  position: relative;
+}
 .content-4 h3 {
   font-size: 30px;
   font-weight: normal;
@@ -961,6 +964,7 @@ section * {
   }
 }
 .content-25 {
+  position: relative;
   padding: 95px 0;
 }
 @media (max-width: 767px) {

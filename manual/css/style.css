@@ -2053,6 +2053,9 @@ section * {
 /**
  * Content 1 stylesheet  
  * */
+.content-1 {
+  position: relative;
+}
 .content-1 h3 {
   font-size: 34px;
   font-weight: normal;
@@ -2209,6 +2212,9 @@ section * {
 /**
  * Content 2 stylesheet  
  * */
+.content-2 {
+  position: relative;
+}
 .content-2 h3 {
   font-size: 30px;
   font-weight: normal;
@@ -2273,6 +2279,9 @@ section * {
 /**
  * Content 3 stylesheet  
  * */
+.content-3 {
+  position: relative;
+}
 .content-3 h3 {
   font-size: 30px;
   font-weight: normal;
@@ -2370,6 +2379,9 @@ section * {
 /**
  * Content 4 stylesheet  
  * */
+.content-4 {
+  position: relative;
+}
 .content-4 h3 {
   font-size: 30px;
   font-weight: normal;
@@ -2430,6 +2442,9 @@ section * {
 /**
  * Content 5 stylesheet  
  * */
+.content-5 {
+  position: relative;
+}
 .content-5 .container > img {
   display: block;
   margin: 0 auto 50px;
@@ -2501,6 +2516,9 @@ section * {
 /**
  * Content 6 stylesheet  
  * */
+.content-6 {
+  position: relative;
+}
 .content-6 h3 {
   margin: 0 0 21px;
   text-align: center;
@@ -2598,6 +2616,7 @@ section * {
  * Content 7 stylesheet  
  * */
 .content-7 {
+  position: relative;
   text-align: center;
 }
 .content-7 h3 {
@@ -2714,6 +2733,7 @@ section * {
  * Content 8 stylesheet  
  * */
 .content-8 {
+  position: relative;
   text-align: center;
 }
 .content-8 h3 {
@@ -2797,6 +2817,7 @@ section * {
  * Content 9 stylesheet  
  * */
 .content-9 {
+  position: relative;
   padding-bottom: 0;
 }
 .content-9 h3 {
@@ -2835,6 +2856,9 @@ section * {
 /**
  * Content 10 stylesheet  
  * */
+.content-10 {
+  position: relative;
+}
 .content-10 .carousel {
   margin-bottom: 0;
   display: inline-block;
@@ -2942,6 +2966,7 @@ section * {
  * Content 11 stylesheet  
  * */
 .content-11 {
+  position: relative;
   text-align: center;
   padding-top: 35px;
   padding-bottom: 35px;
@@ -2974,6 +2999,9 @@ section * {
 /**
  * Content 12 stylesheet  
  * */
+.content-12 {
+  position: relative;
+}
 .content-12 .wide {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -3017,6 +3045,9 @@ section * {
 /**
  * Content 13 stylesheet  
  * */
+.content-13 {
+  position: relative;
+}
 .content-13.subscribe-form {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -3118,6 +3149,9 @@ section * {
 /**
  * Content 14 stylesheet  
  * */
+.content-14 {
+  position: relative;
+}
 @media (max-width: 767px) {
   .content-14 {
     height: auto!important;
@@ -3320,6 +3354,9 @@ section * {
 /**
  * Content 15 stylesheet  
  * */
+.content-15 {
+  position: relative;
+}
 .content-15 h3 {
   margin-bottom: 68px;
   font-size: 37px;
@@ -3397,6 +3434,7 @@ section * {
  * Content 16 stylesheet  
  * */
 .content-16 {
+  position: relative;
   padding-top: 20px;
   padding-bottom: 135px;
 }
@@ -3488,6 +3526,7 @@ section * {
  * Content 17 stylesheet  
  * */
 .content-17 {
+  position: relative;
   text-align: center;
 }
 .content-17 p {
@@ -3530,6 +3569,9 @@ section * {
 /**
  * Content 18 stylesheet  
  * */
+.content-18 {
+  position: relative;
+}
 .content-18 .carousel {
   margin-bottom: 100px;
   text-align: center;
@@ -3654,6 +3696,7 @@ section * {
  * Content 19 stylesheet  
  * */
 .content-19 {
+  position: relative;
   padding-top: 70px;
   padding-bottom: 120px;
   border-bottom: 2px solid #ebedee;
@@ -3774,6 +3817,7 @@ section * {
   }
 }
 .content-20 {
+  position: relative;
   padding: 200px 0;
 }
 .content-20.v-center,
@@ -4006,6 +4050,7 @@ section * {
   }
 }
 .content-21 {
+  position: relative;
   padding-top: 140px;
   padding-bottom: 0;
 }
@@ -4169,6 +4214,7 @@ section * {
   }
 }
 .content-22 {
+  position: relative;
   color: #bdc3c7;
   overflow: hidden;
   padding: 80px 0;
@@ -4385,6 +4431,7 @@ section * {
   color: rgba(255, 255, 255, 0.75);
 }
 .content-23 {
+  position: relative;
   height: 800px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -4504,6 +4551,7 @@ section * {
   }
 }
 .content-24 {
+  position: relative;
   padding: 140px 0;
   color: #bdc3c7;
   overflow: hidden;
@@ -4656,6 +4704,7 @@ section * {
   }
 }
 .content-25 {
+  position: relative;
   padding: 95px 0;
 }
 @media (max-width: 767px) {
@@ -4693,6 +4742,7 @@ section * {
   display: none;
 }
 .content-26 {
+  position: relative;
   padding: 145px 0;
   text-align: center;
 }
@@ -4727,6 +4777,7 @@ section * {
   margin-top: 67px;
 }
 .content-27 {
+  position: relative;
   padding: 95px 0;
 }
 .content-27 svg,
@@ -4840,6 +4891,7 @@ section * {
   }
 }
 .content-28 {
+  position: relative;
   overflow: hidden;
   padding-top: 125px;
   padding-bottom: 0;
@@ -4867,6 +4919,9 @@ section * {
   .content-28 {
     padding-top: 100px;
   }
+}
+.content-29 {
+  position: relative;
 }
 .content-29 .player {
   -webkit-border-radius: 6px;
@@ -4904,6 +4959,7 @@ section * {
   }
 }
 .content-30 {
+  position: relative;
   padding-top: 110px;
   padding-bottom: 110px;
 }
@@ -5039,6 +5095,9 @@ section * {
   .content-30 .features h6 {
     margin-bottom: 5px;
   }
+}
+.content-31 {
+  position: relative;
 }
 .content-31 .container {
   position: relative;

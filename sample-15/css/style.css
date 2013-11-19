@@ -770,6 +770,9 @@ section * {
 /**
  * Content 18 stylesheet  
  * */
+.content-18 {
+  position: relative;
+}
 .content-18 .carousel {
   margin-bottom: 100px;
   text-align: center;
@@ -891,6 +894,7 @@ section * {
   font-weight: bold;
 }
 .content-26 {
+  position: relative;
   padding: 145px 0;
   text-align: center;
 }
@@ -925,6 +929,7 @@ section * {
   margin-top: 67px;
 }
 .content-27 {
+  position: relative;
   padding: 95px 0;
 }
 .content-27 svg,
@@ -1036,6 +1041,9 @@ section * {
   .content-27 .btns > * + * {
     margin-top: 10px;
   }
+}
+.content-29 {
+  position: relative;
 }
 .content-29 .player {
   -webkit-border-radius: 6px;

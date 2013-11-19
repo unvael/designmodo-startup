@@ -891,6 +891,7 @@ section * {
  * Content 7 stylesheet  
  * */
 .content-7 {
+  position: relative;
   text-align: center;
 }
 .content-7 h3 {
@@ -1007,6 +1008,7 @@ section * {
  * Content 8 stylesheet  
  * */
 .content-8 {
+  position: relative;
   text-align: center;
 }
 .content-8 h3 {
@@ -1090,6 +1092,7 @@ section * {
  * Content 11 stylesheet  
  * */
 .content-11 {
+  position: relative;
   text-align: center;
   padding-top: 35px;
   padding-bottom: 35px;
@@ -1120,6 +1123,7 @@ section * {
   }
 }
 .content-23 {
+  position: relative;
   height: 800px;
   -webkit-background-size: cover;
   -moz-background-size: cover;

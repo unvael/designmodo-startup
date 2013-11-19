@@ -963,6 +963,9 @@ section * {
 /**
  * Content 3 stylesheet  
  * */
+.content-3 {
+  position: relative;
+}
 .content-3 h3 {
   font-size: 30px;
   font-weight: normal;

@@ -997,6 +997,9 @@ section * {
 /**
  * Content 13 stylesheet  
  * */
+.content-13 {
+  position: relative;
+}
 .content-13.subscribe-form {
   padding-top: 40px;
   padding-bottom: 40px;

@@ -884,6 +884,7 @@ section * {
  * Content 9 stylesheet  
  * */
 .content-9 {
+  position: relative;
   padding-bottom: 0;
 }
 .content-9 h3 {

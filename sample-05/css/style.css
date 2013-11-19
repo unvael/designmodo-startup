@@ -1020,6 +1020,9 @@ section * {
 /**
  * Content 1 stylesheet  
  * */
+.content-1 {
+  position: relative;
+}
 .content-1 h3 {
   font-size: 34px;
   font-weight: normal;
@@ -1176,6 +1179,9 @@ section * {
 /**
  * Content 5 stylesheet  
  * */
+.content-5 {
+  position: relative;
+}
 .content-5 .container > img {
   display: block;
   margin: 0 auto 50px;
@@ -1247,6 +1253,9 @@ section * {
 /**
  * Content 13 stylesheet  
  * */
+.content-13 {
+  position: relative;
+}
 .content-13.subscribe-form {
   padding-top: 40px;
   padding-bottom: 40px;

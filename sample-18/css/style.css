@@ -887,6 +887,7 @@ section * {
 }
 /* contents */
 .content-21 {
+  position: relative;
   padding-top: 140px;
   padding-bottom: 0;
 }
@@ -1050,6 +1051,7 @@ section * {
   }
 }
 .content-22 {
+  position: relative;
   color: #bdc3c7;
   overflow: hidden;
   padding: 80px 0;
@@ -1266,6 +1268,7 @@ section * {
   color: rgba(255, 255, 255, 0.75);
 }
 .content-24 {
+  position: relative;
   padding: 140px 0;
   color: #bdc3c7;
   overflow: hidden;

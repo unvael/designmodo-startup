@@ -868,6 +868,7 @@ section * {
 }
 /* contents */
 .content-26 {
+  position: relative;
   padding: 145px 0;
   text-align: center;
 }
@@ -905,6 +906,7 @@ section * {
  * Content 11 stylesheet  
  * */
 .content-11 {
+  position: relative;
   text-align: center;
   padding-top: 35px;
   padding-bottom: 35px;
@@ -933,6 +935,9 @@ section * {
   .content-11 .btn {
     margin: 30px 0 0;
   }
+}
+.content-31 {
+  position: relative;
 }
 .content-31 .container {
   position: relative;

@@ -885,6 +885,9 @@ section * {
 /**
  * Content 6 stylesheet  
  * */
+.content-6 {
+  position: relative;
+}
 .content-6 h3 {
   margin: 0 0 21px;
   text-align: center;
@@ -981,6 +984,9 @@ section * {
 /**
  * Content 12 stylesheet  
  * */
+.content-12 {
+  position: relative;
+}
 .content-12 .wide {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1025,6 +1031,7 @@ section * {
  * Content 17 stylesheet  
  * */
 .content-17 {
+  position: relative;
   text-align: center;
 }
 .content-17 p {

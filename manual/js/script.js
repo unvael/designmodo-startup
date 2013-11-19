@@ -68,6 +68,10 @@
             style : "emacs",
             showNum : false
         });
+        
+        $('.mcontent>* :not(.manual *)').click(function(){
+            $('.back-button:visible').click();
+        });
 
     });
 })(jQuery);

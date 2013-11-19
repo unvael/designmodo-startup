@@ -13698,6 +13698,11 @@ section * {
   width: auto;
   background-color: transparent;
 }
+.read-manual .mcontent .manual > div * {
+  text-align: left;
+  padding-top: 0;
+  padding-bottom: 0;
+}
 .read-manual .mcontent .manual > div .back-button {
   float: left;
   display: inline-block;

@@ -350,37 +350,469 @@
 <div class="delimiter">
     &nbsp;
 </div>
-<!-- projects-5 -->
-<button class="btn-inverse read-man" id="projects-5">
-    <span class="fui-info">&nbsp;</span>
-</button>
-
-
 
 <!-- manual sections -->
 <div class="manual">
     <div class="projects-1">
         <button class="back-button"></button>
         <div class="content-man">
+<h1>Block for creating header. Codename “projects-1”.</h1>
+<ol>
+    <li>
+        <h3>Overview</h3>
+        <p>
+            This type of block - projects block was developed special for demonstrate your projects to users.
+            It can be used as portfolio of designer or else...
+            Any block with this type has special active areas with images which has hover effects.
+            Functionality that will run after an user click on this elements you should implement by yourself. 
+        </p>
+    </li>
+    <li>
+        <h3>Code</h3>
+        <p>
+            <a id="p1-simple"></a><h4>Simple version:</h4>
+            <small>if you not already done all instructions
+            that you had to read on the <a href="index.html">home</a> page
+            of this documentation please make it first</small> 
+            
+            For using this block you should only paste next rows of code into your html file:                
+        </p>
+<pre class="htmlCode">
+<section class="projects-1">
+    <div class="container">
+        <div class="title">
+            <a href="#">web design</a>
+            <a href="#" class="active">graphic design</a>
+            <a href="#">product design</a>
+            <a href="#">ios development</a>
+            <a href="#">web development</a>
+        </div>
 
+        <div class="head-box">
+            <div class="brand"><img src="../ui-kit-projects/img/logo-2@2x.png" width="42" height="21" alt=""> Startup
+            </div>
+            <p>
+                Responsive web design is a web design approach aimed at crafting sites.
+            </p>
+
+            <div class="features">
+                <div>
+                    <span class="fui-mic"></span> Aligned to grid
+                </div>
+                <div>
+                    <span class="fui-cmd"></span> Don’t waste your time
+                </div>
+            </div>
+        </div>
+
+        <div class="projects">
+            <div class="project-wrapper">
+                <div class="project">
+                    <div class="photo-wrapper">
+                        <div class="photo">
+                            <!--<img src="" alt="">-->
+                        </div>
+                        <div class="overlay">
+                            <span class="fui-eye"></span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="name">
+                            Flat UI Pro
+                        </div>
+                        <b>Designer</b> who makes easy to change and easy to create new elements.
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-wrapper">
+                <div class="project">
+                    <div class="photo-wrapper">
+                        <div class="photo">
+                            <!--<img src="" alt="">-->
+                        </div>
+                        <div class="overlay">
+                            <span class="fui-eye"></span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="name">
+                            Startup Kit
+                        </div>
+                        <b>Designer</b> who makes easy to change and easy to create new elements.
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-wrapper">
+                <div class="project">
+                    <div class="photo-wrapper">
+                        <div class="photo">
+                            <!--<img src="" alt="">-->
+                        </div>
+                        <div class="overlay">
+                            <span class="fui-eye"></span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="name">
+                            Impressionist UI
+                        </div>
+                        <b>Designer</b> who makes easy to change and easy to create new elements.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--/.container-->
+</section>
+</pre>
+
+        <p>
+            <h4>"LESS" version:</h4>
+            <small>if you not already done all instructions
+            that you had to read on the <a href="index.html">home</a> page
+            of this documentation please make it first</small> 
+            you should paste same code (as in <a href="#p1-simple" class="inner-link">simple version</a>) and paste next code into your '<strong>.less</strong>' file after that 
+            rows that you already had to paste.
+        </p>
+<pre class="cssCode">
+@import '../../ui-kit-projects/less/project-1.less';
+</pre>
+ <h4>All versions:</h4>
+<p>So about modifications which you can do.</p>
+<p>
+   This block has navigation on top of it, area with logo and slogon (you can use it as banner) 
+   and block with three columns that consits special blocks for demonstrating your projects.
+   You can modificate anyone of it, but you should remember that you can't reorganize the html structure if you want to leave functionality of this block as it exist now.
+   For add images into project boxes you should insert your image between <code>&lt;div class="photo"&gt;...&lt;/div&gt;</code>.  
+</p>
+</li>
+</ol>
         </div>
     </div>
     <div class="projects-2">
         <button class="back-button"></button>
         <div class="content-man">
+<h1>Block for creating header. Codename “projects-2”.</h1>
+<ol>
+    <li>
+        <h3>Overview</h3>
+        <p>
+            This type of block - projects block was developed special for demonstrate your projects to users.
+            It can be used as portfolio of designer or else...
+            Any block with this type has special active areas with images which has hover effects.
+            Functionality that will run after an user click on this elements you should implement by yourself. 
+        </p>
+    </li>
+    <li>
+        <h3>Code</h3>
+        <p>
+            <a id="p2-simple"></a><h4>Simple version:</h4>
+            <small>if you not already done all instructions
+            that you had to read on the <a href="index.html">home</a> page
+            of this documentation please make it first</small> 
+            
+            For using this block you should only paste next rows of code into your html file:                
+        </p>
+<pre class="htmlCode">
+<section class="projects-2">
+    <div class="project-1 v-center">
+        <div>
+            <!--v-center-->
+            <div class="container">
+                <div class="content">
+                    SOMETHING VERY EXCITED
+                    <br>
+                    <img src="../ui-kit-projects/img/gw.png" alt="">
+                </div>
+            </div><!--/.container-->
+        </div><!--/v-center-->
+    </div>
 
+    <div class="project-2 v-center">
+        <div>
+            <!--v-center-->
+            <div class="container">
+                <div class="hero-unit">
+                    <h1>Made in New York</h1>
+                </div>
+            </div><!--/.container-->
+        </div><!--/v-center-->
+    </div>
+
+    <div class="project-3 v-center">
+        <div>
+            <!--v-center-->
+            <div class="container">
+                <span class="fui-cmd"></span>
+                <span class="wide-text">WE LOVE WHAT WE DO</span>
+            </div><!--/.container-->
+        </div><!--/v-center-->
+    </div>
+</section>
+</pre>
+
+        <p>
+            <h4>"LESS" version:</h4>
+            <small>if you not already done all instructions
+            that you had to read on the <a href="index.html">home</a> page
+            of this documentation please make it first</small> 
+            you should paste same code (as in <a href="#p2-simple" class="inner-link">simple version</a>) and paste next code into your '<strong>.less</strong>' file after that 
+            rows that you already had to paste.
+        </p>
+<pre class="cssCode">
+@import '../../ui-kit-projects/less/project-2.less';
+</pre>
+ <h4>All versions:</h4>
+<p>So about modifications which you can do.</p>
+<p>
+   This block is very simple. 
+   You can replace all texts and images.
+   For change backgrounds, please use the css. For example you can change background like this:
+<pre class="cssCode">
+.project-2 {
+    background-image: url("your image");
+}
+</pre>   
+   
+</li>
+<li>
+    <h3>Samples</h3>
+    <p>We create the example for you can see how this block looks with another content in our view.</p>
+    <hr/>
+    <p>You can see it at <a href="../sample-21/index.htm" class="inner-link" target="_blank">sample # 21</a>
+    </p>
+</li>
+</ol>
         </div>
     </div>
     <div class="projects-3">
         <button class="back-button"></button>
         <div class="content-man">
+<h1>Block for creating header. Codename “projects-3”.</h1>
+<ol>
+    <li>
+        <h3>Overview</h3>
+        <p>
+            This type of block - projects block was developed special for demonstrate your projects to users.
+            It can be used as portfolio of designer or else...
+            Any block with this type has special active areas with images which has hover effects.
+            Functionality that will run after an user click on this elements you should implement by yourself. 
+        </p>
+    </li>
+    <li>
+        <h3>Code</h3>
+        <p>
+            <a id="p3-simple"></a><h4>Simple version:</h4>
+            <small>if you not already done all instructions
+            that you had to read on the <a href="index.html">home</a> page
+            of this documentation please make it first</small> 
+            
+            For using this block you should only paste next rows of code into your html file:                
+        </p>
+<pre class="htmlCode">
+<section class="projects-3">
+    <div class="container">
+        <h3>We love what we do.
+        <br>
+        This is features of our products</h3>
 
+        <div class="projects">
+            <div class="project-wrapper">
+                <div class="project">
+                    <div class="photo-wrapper">
+                        <div class="photo"><img src="../ui-kit-projects/img/img-2.png" alt="">
+                        </div>
+                        <div class="overlay">
+                            <span class="fui-eye"></span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="name">
+                            Flat UI Pro
+                        </div>
+                        Web Development, Illustrations
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-wrapper">
+                <div class="project">
+                    <div class="photo-wrapper">
+                        <div class="photo"><img src="../ui-kit-projects/img/img-3.png" alt="">
+                        </div>
+                        <div class="overlay">
+                            <span class="fui-eye"></span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="name">
+                            Startup Kit
+                        </div>
+                        Web Development, Web Design
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-wrapper">
+                <div class="project">
+                    <div class="photo-wrapper">
+                        <div class="photo"><img src="../ui-kit-projects/img/img-4.png" alt="">
+                        </div>
+                        <div class="overlay">
+                            <span class="fui-eye"></span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="name">
+                            Impressionist UI
+                        </div>
+                        Web Development, iOS Design
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--/.container-->
+</section>
+</pre>
+
+        <p>
+            <h4>"LESS" version:</h4>
+            <small>if you not already done all instructions
+            that you had to read on the <a href="index.html">home</a> page
+            of this documentation please make it first</small> 
+            you should paste same code (as in <a href="#p3-simple" class="inner-link">simple version</a>) and paste next code into your '<strong>.less</strong>' file after that 
+            rows that you already had to paste.
+        </p>
+<pre class="cssCode">
+@import '../../ui-kit-projects/less/project-3.less';
+</pre>
+ <h4>All versions:</h4>
+<p>So about modifications which you can do.</p>
+<p>
+   This block has slogon on top of it and block with three columns that consits special blocks for demonstrating your projects.
+   You can modificate anyone of it, but you should remember that you can't reorganize the html structure if you want to leave functionality of this block as it exist now.
+   For add images into project boxes you should insert your image between <code>&lt;div class="photo"&gt;...&lt;/div&gt;</code>.  
+</p>
+</li>
+<li>
+    <h3>Samples</h3>
+    <p>We create the example for you can see how this block looks with another content in our view.</p>
+    <hr/>
+    <p>You can see it at <a href="../sample-10/index.htm" class="inner-link" target="_blank">sample # 10</a>
+    </p>
+</li>
+</ol>
         </div>
     </div>
     <div class="projects-4">
         <button class="back-button"></button>
         <div class="content-man">
+<h1>Block for creating header. Codename “projects-4”.</h1>
+<ol>
+    <li>
+        <h3>Overview</h3>
+        <p>
+            This type of block - projects block was developed special for demonstrate your projects to users.
+            It can be used as portfolio of designer or else...
+            Any block with this type has special active areas with images which has hover effects.
+            Functionality that will run after an user click on this elements you should implement by yourself. 
+        </p>
+    </li>
+    <li>
+        <h3>Code</h3>
+        <p>
+            <a id="p4-simple"></a><h4>Simple version:</h4>
+            <small>if you not already done all instructions
+            that you had to read on the <a href="index.html">home</a> page
+            of this documentation please make it first</small> 
+            
+            For using this block you should only paste next rows of code into your html file:                
+        </p>
+<pre class="htmlCode">
+<section class="projects-4">
+    <div class="container">
+        <h3>We love what we do.
+        <br>
+        This is features of our products</h3>
 
+        <div class="projects row">
+            <div class="project-wrapper span3">
+                <div class="project">
+                    <div class="photo-wrapper bg-alizarin">
+                        <div class="photo"></div>
+                        <a href="#" class="overlay"><span class="fui-eye"></span></a>
+                    </div>
+                    <div class="info">
+                        <a href="#" class="name color-pomegranate">Polaris UI</a>
+                        2012
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-wrapper span3">
+                <div class="project">
+                    <div class="photo-wrapper bg-sun-flower">
+                        <div class="photo"></div>
+                        <a href="#" class="overlay"><span class="fui-mic"></span></a>
+                    </div>
+                    <div class="info">
+                        <a href="#" class="name color-orange">Linecons</a>
+                        2012
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-wrapper span3">
+                <div class="project">
+                    <div class="photo-wrapper bg-peter-river">
+                        <div class="photo"></div>
+                        <a href="#" class="overlay"><span class="fui-cmd"></span></a>
+                    </div>
+                    <div class="info">
+                        <a href="#" class="name color-belize-hole">Flat UI Pro</a>
+                        2012
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-wrapper span3">
+                <div class="project">
+                    <div class="photo-wrapper bg-turquoise">
+                        <div class="photo"></div>
+                        <a href="#" class="overlay"><span class="fui-user"></span></a>
+                    </div>
+                    <div class="info">
+                        <a href="#" class="name color-green-sea">Startup Kit</a href="#">
+                        2012
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--/.container-->
+</section>
+</pre>
+
+        <p>
+            <h4>"LESS" version:</h4>
+            <small>if you not already done all instructions
+            that you had to read on the <a href="index.html">home</a> page
+            of this documentation please make it first</small> 
+            you should paste same code (as in <a href="#p4-simple" class="inner-link">simple version</a>) and paste next code into your '<strong>.less</strong>' file after that 
+            rows that you already had to paste.
+        </p>
+<pre class="cssCode">
+@import '../../ui-kit-projects/less/project-4.less';
+</pre>
+ <h4>All versions:</h4>
+<p>So about modifications which you can do.</p>
+<p>
+   This block has slogon on top of it and block with three columns that consits special blocks for demonstrating your projects.
+   You can modificate anyone of it, but you should remember that you can't reorganize the html structure if you want to leave functionality of this block as it exist now.
+   For add images into project boxes you should insert your image between <code>&lt;div class="photo"&gt;...&lt;/div&gt;</code>.  
+</p>
+</li>
+</ol>
         </div>
     </div>
 

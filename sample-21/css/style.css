@@ -833,10 +833,10 @@ section * {
   }
 }
 .projects-2 .project-1 {
-  background-image: url('../img/img-2.jpg');
+  background-image: url('../../ui-kit-projects/img/img-2.jpg');
 }
 .projects-2 .project-2 {
-  background-image: url('../img/img-3.jpg');
+  background-image: url('../../ui-kit-projects/img/img-3.jpg');
 }
 @media (max-width: 480px) {
   .projects-2 .project-2 .hero-unit h1 {
@@ -844,7 +844,7 @@ section * {
   }
 }
 .projects-2 .project-3 {
-  background-image: url('../img/img-4.jpg');
+  background-image: url('../../ui-kit-projects/img/img-4.jpg');
 }
 .projects-2 .project-3 [class*="fui-"] {
   font-size: 24px;

@@ -32,7 +32,10 @@
                 }                
                 if($('.'+id + '-sub').length!=0){                          
                     heightMask += $('.' + id + '-sub').outerHeight();
-                }                
+                }    
+                if($('.'+id + '-map').length!=0){                          
+                    heightMask += $('.' + id + '-map').outerHeight();
+                }                        
                 if($('footer.' + id).length!=0){
                     heightMask += $('footer.' + id).outerHeight();
                 }
@@ -41,12 +44,34 @@
             });
         });
         helpButton.click(function() {
-            $('html').addClass('read-manual');
             var id = $(this).attr('id');
+            
+            var elem = $('.mcontent > .'+id+ ':not(.mask)');
+            var elemPos = 0;
+            
+            if($('.'+id+'-map').length!=0){
+                elemPos = $(this).position().top + 100;
+            }else{
+                elemPos = elem.position().top;
+            }
+            
+            
+            $(window).scrollTop(elemPos -100);    
+            if($('.'+id+'-map').length!=0){                
+                elem.css('border-bottom', '3px solid red').css('border-left', '3px solid red').css('border-right', '3px solid red');
+            } else{
+                elem.css('border', '3px solid red');
+            }        
+            
+            $('html').addClass('read-manual');            
             $('.manual .' + id).show();
+            $('.manual').scrollTop(0);
         });
         var backButton = $('.back-button');
         backButton.click(function() {
+            var id = $(this).parent().attr('class');
+            var elem = $('.mcontent > .'+id+ ':not(.mask)');
+            elem.css('border', '0 none');
             $('html').removeClass('read-manual');
             $('.manual > div').hide();
         });
@@ -71,7 +96,7 @@
         
         $('.mcontent > * :not(.manual *)').click(function(){
             $('.back-button:visible').click();
-        });
-
+        });            
+        
     });
 })(jQuery);

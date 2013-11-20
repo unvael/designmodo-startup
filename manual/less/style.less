@@ -225,29 +225,49 @@
 
 .mask{
   display:none;
+  
   &.active{
     display:block;
     background-color:#1B1E23;
+    background-image:url(../img/mask-bg.png);
     position:absolute;
     z-index:900;
     width:100%;
     text-align:center;
     top:auto;
+    bottom:auto;
+    left:auto;
+    right:auto;
+    padding:0;
+    margin:0;
+    overflow:hidden;
     
-    .opacity(50);
+    
+    .container{
+    display:table;
+    height:100%;
+      > * {        
+        vertical-align:middle;
+      }
+    }
+    
+    .opacity(80);
     .hero-unit{
+      display:table-cell;
       background-color:transparent;
+      padding:0;
+      margin:0 auto;
     }
     .hero-unit.hero-unit-bordered {
      
       h1 {
-        .font(46px,white); font-weight: bold;
+        .font(22px,white); font-weight: bold;
         border: 8px solid white;
         display: inline-block;
         margin: 0;
-        padding: 30px 40px;
+        padding: 10px 20px;
       }  
-      @media (max-width: 480px) { h1 { .font(22px, white); } }
+     
     }  
   }
 }

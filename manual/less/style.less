@@ -14,6 +14,7 @@
 @import '../../ui-kit-price/less/style.less';
 @import '../../ui-kit-projects/less/style.less';
 @import '../../ui-kit-crew/less/style.less';
+@import '../../ui-kit-footer/less/style.less';
 
 @import 'main-page.less';
 
@@ -106,9 +107,12 @@
     background-color:#1B1E23;
 
     > div{
+      .font(14px);      
+      letter-spacing:normal;
       position: absolute;
       padding:120px 0;
-      left:auto;
+      left:auto; right:auto;
+      top:auto; bottom:auto;
       width:auto;
       background-color:transparent;
       * {
@@ -128,9 +132,8 @@
         font-weight: 100;
         height: 56px;
         width: 56px;
-
       }
-
+      
       .content-man{
         float: right;
         max-width: 80%;
@@ -164,9 +167,9 @@
               }
           } 
         }   
-        
-       
+               
         .snippet-container{
+          *{line-height:1;}
            display:block;
            margin: 20px 0;
            .border-radius(0);

@@ -3,68 +3,85 @@
     <li>
         <h3>Overview</h3>
         <p>
-            This block was developed as special header block. 
-            All blocks that marked as header should use once on one page. 
-            All header blocks have navigation bar. And any navigation bar has two states. 
-            Standard state –you can see now in the documentation. 
+            This block was developed as special header block.
+            All blocks that marked as header should use once on one page.
+            All header blocks have navigation bar. And any navigation bar has two states.
+            Standard state –you can see now in the documentation.
             Second state – fixed-top state and you can see it for this block in the sample.
         </p>
     </li>
     <li>
         <h3>Code</h3>
-        <p>
-            <a id="h6-simple"></a><h4>Simple version:</h4>
-            <small>if you not already done all instructions
-            that you had to read on the <a href="index.html">home</a> page
-            of this documentation please make it first</small>             
-            For using this block you should only paste next rows of code into your html file:                
-        </p>
-<pre class="htmlCode">
-include "../../../ui-kit-header/for-tpl/header-6.html" 
-</pre>
 
-        <p>
-            <h4>"LESS" version:</h4>
-            <small>if you not already done all instructions
+        <a id="h6-simple"></a><h4>Simple version:</h4>
+        <small>if you not already done all instructions
             that you had to read on the <a href="index.html">home</a> page
-            of this documentation please make it first</small> 
-            you should paste same code (as in <a href="#h6-simple" class="inner-link">simple version</a>) and paste next code into your '<strong>.less</strong>' file after that 
+            of this documentation please make it first</small>
+        <p>
+            For using this block you should only paste next rows of code into your html file:
+        </p>
+        <pre class="htmlCode">
+include "../../../ui-kit-header/for-tpl/header-6.html" 
+</pre>        
+
+        
+ <h4>"LESS" version:</h4>
+        <small>if you not already done all instructions
+            that you had to read on the <a href="index.html">home</a> page
+            of this documentation please make it first</small>
+        <p>
+            you should paste same code (as in <a href="#h6-simple" class="inner-link">simple version</a>) and paste next code into your '<strong>.less</strong>' file after that
             rows that you already had to paste.
         </p>
-<pre class="cssCode">
+        <pre class="cssCode">
 @import '../../ui-kit-header/less/header-6.less';
 </pre>
- <h4>All versions:</h4>
-<p>So about modifications which you can do.</p>
-<p>
-    This block, as many others header blocks in our framework, has special place for background image. 
-    The place for background image - <code>&lt;div class=”background”&gt;...&lt;/div&gt;</code>
-    For add your image as background you should add CSS rulers for this element. And you can manage opacity of this element. For example as this:
-</p>
-<pre class="cssCode">
+        <h4>All versions:</h4>
+        <p>
+            So about modifications which you can do.
+        </p>
+        <p>
+            This block, as many others header blocks in our framework, has special place for background image.
+            The place for background image - <code>
+                &lt;div class=”background”&gt;...&lt;/div&gt;</code>
+            For add your image as background you should add CSS rulers for this element. And you can manage opacity of this element. For example as this:
+        </p>
+        <pre class="cssCode">
 .background {
     background-image:url(‘your image url’);
     opacity: opacity value;
 }
-</pre>   
-<p>
-    In ‘Less’ version for opacity property you can use cross browser function: 
-</p>     
-<pre class="cssCode">
+</pre>
+        <p>
+            In ‘Less’ version for opacity property you can use cross browser function:
+        </p>
+        <pre class="cssCode">
 .opacity(value from 0 to 100);
-</pre>   
-<p> This block has content which you can replace to yours. To make this you should replace content between tags <code>&lt;div class="span8 offset2"&gt;...&lt;/div&gt;</code>.</p>
-<p> It has special area for insert some video that you want  -  <code>&lt;div class="player"&gt;...&lt;/div&gt;</code>.</p>
-<p> And yet it has functionality for subscribe, it was realised as form <code>&lt;div class="signup-form"&gt; &lt;form&gt;...&lt;/form&gt;</code> 
-    which data from you cand send to the server or do something else. 
-</p>
-</li>
-<li>
-    <h3>Samples</h3>
-    <p>We create the example for you can see how this block looks with another content in our view.</p>
-    <hr/>
-    <p>
-        You can see it at <a href="../sample-11/index.htm" class="inner-link" target="_blank">sample # 11</a>
-    </p>
-</li>
+</pre>
+        <p>
+            This block has content which you can replace to yours. To make this you should replace content between tags <code>
+                &lt;div class="span8 offset2"&gt;...&lt;/div&gt;</code>
+            .
+        </p>
+        <p>
+            It has special area for insert some video that you want  - <code>
+                &lt;div class="player"&gt;...&lt;/div&gt;</code>
+            .
+        </p>
+        <p>
+            And yet it has functionality for subscribe, it was realised as form <code>
+                &lt;div class="signup-form"&gt; &lt;form&gt;...&lt;/form&gt;</code>
+            which data from you cand send to the server or do something else.
+        </p>
+    </li>
+    <li>
+        <h3>Samples</h3>
+        <p>
+            We create the example for you can see how this block looks with another content in our view.
+        </p>
+        <hr/>
+        <p>
+            You can see it at <a href="../sample-11/index.htm" class="inner-link" target="_blank">sample # 11</a>
+        </p>
+    </li>
 </ol>

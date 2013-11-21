@@ -4,6 +4,47 @@
 
 
 .main-page{
+  &.css-classes{
+    table{
+      width:100%;
+      border:1px solid black;
+      td{
+        border:1px solid black;
+        height:100px;
+        text-align:center;
+        p{
+          .font(11px,white);          
+          background-color:black;
+          border:1px solid white;
+        }
+        
+      }
+      &.less-prop{
+        th{
+          .font(16px,black);
+          font-weight:bold;
+          
+        }
+        td{
+          padding:5px;
+          border:1px solid black;
+          height:auto;
+          text-align:left;
+          .font(14px);
+          &:first-child{
+            word-break:keep-all;
+            color:@h-text-color;            
+            font-weight:bold;
+          }
+          p{
+            .font(14px);
+            background-color:white;
+          }
+        }
+      }
+    }
+  }
+  
     .container{
       .snippet-menu{
         z-index:100;

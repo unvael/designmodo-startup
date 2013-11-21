@@ -15607,6 +15607,48 @@ section * {
     margin-top: 9px;
   }
 }
+.main-page.css-classes table {
+  width: 100%;
+  border: 1px solid black;
+}
+.main-page.css-classes table td {
+  border: 1px solid black;
+  height: 100px;
+  text-align: center;
+}
+.main-page.css-classes table td p {
+  font-size: 11px;
+  font-weight: normal;
+  color: #ffffff;
+  background-color: black;
+  border: 1px solid white;
+}
+.main-page.css-classes table.less-prop th {
+  font-size: 16px;
+  font-weight: normal;
+  color: #000000;
+  font-weight: bold;
+}
+.main-page.css-classes table.less-prop td {
+  padding: 5px;
+  border: 1px solid black;
+  height: auto;
+  text-align: left;
+  font-size: 14px;
+  font-weight: normal;
+  color: #7f8c8d;
+}
+.main-page.css-classes table.less-prop td:first-child {
+  word-break: keep-all;
+  color: #2c3e50;
+  font-weight: bold;
+}
+.main-page.css-classes table.less-prop td p {
+  font-size: 14px;
+  font-weight: normal;
+  color: #7f8c8d;
+  background-color: white;
+}
 .main-page .container {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;

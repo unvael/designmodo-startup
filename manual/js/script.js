@@ -94,7 +94,7 @@
             showNum : false
         });
         
-        $('.mcontent > * :not(.manual *)').click(function(){
+        $('.mcontent * :not(.manual, .manual *, .read-man)').click(function(){
             $('.back-button:visible').click();
         });            
         

@@ -603,6 +603,52 @@ section * {
 .pt-page-ontop {
   z-index: 999;
 }
+.startup-kit_header h1 {
+  font-size: 45px;
+  font-weight: normal;
+  color: #2c3e50;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 59.99999999999999px;
+}
+.startup-kit_header p {
+  font-size: 18px;
+  font-weight: normal;
+  color: #7f8c8d;
+  font-family: Lato, sens-serif;
+  line-height: 29.999999999999996px;
+}
+@media (max-width: 480px) {
+  .startup-kit_header h1 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #2c3e50;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 36px;
+  }
+  .startup-kit_header p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #7f8c8d;
+    font-family: Lato, sens-serif;
+    line-height: 27px;
+  }
+}
+@media (max-width: 767px) {
+  .startup-kit_header h1 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #2c3e50;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 36px;
+  }
+  .startup-kit_header p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #7f8c8d;
+    font-family: Lato, sens-serif;
+    line-height: 27px;
+  }
+}
 /**
  * Blog 1 stylesheet  
  * */
@@ -1518,52 +1564,6 @@ section * {
   margin: 0 10px;
 }
 /*only fo flat-ui free*//* end only for flat-ui free*/
-.startup-kit_header h1 {
-  font-size: 45px;
-  font-weight: normal;
-  color: #2c3e50;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 59.99999999999999px;
-}
-.startup-kit_header p {
-  font-size: 18px;
-  font-weight: normal;
-  color: #7f8c8d;
-  font-family: Lato, sens-serif;
-  line-height: 29.999999999999996px;
-}
-@media (max-width: 480px) {
-  .startup-kit_header h1 {
-    font-size: 30px;
-    font-weight: normal;
-    color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 36px;
-  }
-  .startup-kit_header p {
-    font-size: 16px;
-    font-weight: normal;
-    color: #7f8c8d;
-    font-family: Lato, sens-serif;
-    line-height: 27px;
-  }
-}
-@media (max-width: 767px) {
-  .startup-kit_header h1 {
-    font-size: 30px;
-    font-weight: normal;
-    color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 36px;
-  }
-  .startup-kit_header p {
-    font-size: 16px;
-    font-weight: normal;
-    color: #7f8c8d;
-    font-family: Lato, sens-serif;
-    line-height: 27px;
-  }
-}
 /**
  * Copntact 1 stylesheet  
  * */
@@ -15836,6 +15836,9 @@ section * {
 .read-manual .mcontent > div {
   min-height: 100%;
 }
+.read-manual .mcontent .content-24 img.image {
+  right: 70%;
+}
 .read-manual .mcontent .manual {
   display: block;
   position: fixed;
@@ -15857,6 +15860,7 @@ section * {
   font-size: 14px;
   font-weight: normal;
   color: #7f8c8d;
+  overflow: visible;
   letter-spacing: normal;
   position: absolute;
   padding: 120px 0;
@@ -16001,6 +16005,7 @@ section * {
   display: block;
   background-color: #1B1E23;
   background-image: url(../img/mask-bg.png);
+  background-size: auto;
   position: absolute;
   z-index: 900;
   width: 100%;

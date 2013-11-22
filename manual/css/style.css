@@ -30,7 +30,8 @@
   border-bottom-color: #34495e !important;
   border-top-color: #34495e !important;
 }
-/*only fo flat-ui free*/body {
+/*only fo flat-ui free*/
+body {
   color: #34495e;
   font-family: "Lato", sans-serif;
   font-size: 14px;
@@ -15731,144 +15732,174 @@ section * {
   padding: 3px 9px;
   text-align: center;
 }
-.dockbar.active {
-  top: 0;
-  right: 0;
-  left: 0;
-  background-color: black;
-  height: 80px;
-  padding: 0;
-  position: fixed;
-  z-index: 1000;
+body {
+  margin-top: 110px;
 }
-.dockbar.active .navbar.navbar-fixed-top {
-  margin: 0 auto;
+body.hovered {
+  background-color: #ecf0f1;
 }
-.dockbar.active .navbar-inner {
-  background-color: transparent;
+a {
+  cursor: pointer;
 }
-.dockbar.active .navbar-inner .desk {
-  padding: 29px 0;
+a.active {
+  cursor: default;
 }
-@media (max-width: 979px) {
-  .dockbar.active .nav-collapse {
-    padding-top: 0px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 100%;
-    width: 72%;
-    height: auto!important;
-    padding: 25px 0;
-    border-radius: 0;
-    float: none;
-    overflow: auto!important;
-    background: #222527;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  }
-  .dockbar.active .nav-collapse::-webkit-scrollbar {
-    display: none;
-  }
-  .dockbar.active .nav-collapse > * {
-    margin: 30px 0 0!important;
-  }
-  .dockbar.active .nav-collapse > *:first-child {
-    margin-top: 0!important;
-  }
-  .dockbar.active .nav-collapse .nav > li {
-    margin: 0;
-  }
-  .dockbar.active .nav-collapse .nav > li > a {
-    display: block!important;
-    margin: 0;
-    padding: 12px 35px;
-    border-bottom: 2px solid #24292d;
-    font-size: 13px;
-    font-weight: normal;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    letter-spacing: 1px;
-    color: #5b5e61;
-    text-transform: uppercase;
-  }
-  .dockbar.active .nav-collapse .nav > li > a:hover,
-  .dockbar.active .nav-collapse .nav > li > a:focus,
-  .dockbar.active .nav-collapse .nav > li > a.active {
-    color: #ffffff;
-  }
-  .dockbar.active .nav-collapse .nav > li.active > a {
-    color: #ffffff;
-  }
-  .dockbar.active .nav-collapse .nav > li.active > a:hover,
-  .dockbar.active .nav-collapse .nav > li.active > a:focus,
-  .dockbar.active .nav-collapse .nav > li.active > a.active {
-    color: #ffffff;
-  }
-  .dockbar.active .nav-collapse .subnav {
-    display: block;
-    list-style: none;
-  }
-  .dockbar.active .nav-collapse .subnav li > a {
-    display: block;
-    margin: 0;
-    padding: 7px 35px;
-    font-size: 13px;
-    font-weight: normal;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: #5b5e61;
-    text-transform: capitalize;
-  }
-  .dockbar.active .nav-collapse .subnav li > a:hover,
-  .dockbar.active .nav-collapse .subnav li > a:focus,
-  .dockbar.active .nav-collapse .subnav li > a.active {
-    color: #ffffff;
-  }
-  .dockbar.active .nav-collapse .navbar-form,
-  .dockbar.active .nav-collapse .navbar-search {
-    padding: 10px 35px;
-  }
-}
-.read-manual .dockbar.normal:before {
-  margin: 0 auto 0 15%;
-}
-.dockbar.normal {
-  top: 0;
-  right: 0;
-  left: 0;
-  position: fixed;
-  background-color: transparent;
-  height: 10px;
-  padding: 0;
-  z-index: 1000;
-}
-.dockbar.normal:before {
-  content: "\e054";
-  font-family: Flat-UI-Icons;
-  padding: 0;
-  text-align: center;
-  width: 50px;
-  color: white;
-  margin: 0 auto;
+.dockbar {
   display: block;
-  background-color: black;
-  -webkit-border-radius: 0 0 100px 100px;
-  -moz-border-radius: 0 0 100px 100px;
-  border-radius: 0 0 100px 100px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.dockbar.normal > * {
-  display: none;
-  height: 0;
+.dockbar .main-menu {
+  display: block;
+  overflow: hidden;
+  background-color: #1f1b23;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0;
+}
+.dockbar .main-menu > div {
+  height: 65px;
+}
+.dockbar .main-menu > div > div {
+  height: 65px;
+}
+.dockbar .main-menu a.man-brand {
+  display: inline-block;
+  text-decoration: none;
+  line-height: 65px;
+}
+.dockbar .main-menu a.man-brand .logotype {
+  font-size: 16px;
+  font-weight: normal;
+  color: #ffffff;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.dockbar .main-menu a.man-brand .doc-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #919497;
+  font-weight: normal;
+}
+.dockbar .main-menu dl {
+  display: inline-block;
+  margin: 0;
+}
+.dockbar .main-menu dl dd {
+  margin: 0 0 0 45px;
+  line-height: 65px;
+  display: inline-block;
+  padding: 0;
+}
+.dockbar .main-menu dl dd:first-child {
+  margin: 0;
+}
+.dockbar .main-menu dl dd a {
+  font-size: 12px;
+  font-weight: normal;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #919497;
+}
+.dockbar .main-menu dl dd a:hover,
+.dockbar .main-menu dl dd a:focus,
+.dockbar .main-menu dl dd a.active {
+  color: #ffffff;
+}
+.dockbar .main-menu dl dd a.active {
+  text-decoration: none;
+  color: white;
+}
+.dockbar .sub-menu {
+  display: block;
+  background-color: #f4f2d4;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.dockbar .sub-menu > div {
+  height: 45px;
+}
+.dockbar .sub-menu > div > div {
+  height: 45px;
+}
+.dockbar .sub-menu .sm-title {
+  display: inline-block;
+  text-decoration: none;
+  line-height: 45px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: normal;
+  color: #9f9d84;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+.dockbar .sub-menu dl {
+  display: inline-block;
+  margin: 0;
+}
+.dockbar .sub-menu dl dd {
+  position: relative;
+  margin: 0 0 0 25px;
+  line-height: 45px;
+  display: inline-block;
+  padding: 0;
+}
+.dockbar .sub-menu dl dd:first-child {
+  margin: 0;
+}
+.dockbar .sub-menu dl dd a {
+  font-size: 13px;
+  font-weight: normal;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  text-decoration: underline;
+  color: #9f9d84;
+}
+.dockbar .sub-menu dl dd a:hover,
+.dockbar .sub-menu dl dd a:focus,
+.dockbar .sub-menu dl dd a.active {
+  color: #1b1f23;
+}
+.dockbar .sub-menu dl dd a:hover {
+  text-decoration: none;
+}
+.dockbar .sub-menu dl dd a.active {
+  text-decoration: none;
+  color: #1b1f23;
+}
+.dockbar .sub-menu dl dd a.active:after {
+  color: #F4F2D4;
+  content: "▼";
+  display: block;
+  font-size: 25px;
+  font-weight: bolder;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+.mcontent {
+  margin-top: 80px;
 }
 .read-manual {
   overflow: hidden;
 }
+.read-manual .dockbar {
+  display: none;
+}
 .read-manual .container {
   margin-left: 10px;
-}
-.mcontent {
-  margin-top: 80px;
 }
 .read-manual .mcontent {
   height: auto !important;
@@ -15898,6 +15929,11 @@ section * {
   right: 0;
   background-color: #1B1E23;
 }
+@media (max-width: 800px) {
+  .read-manual .mcontent .manual {
+    width: 100%;
+  }
+}
 .read-manual .mcontent .manual > div {
   font-size: 14px;
   font-weight: normal;
@@ -15923,14 +15959,14 @@ section * {
   display: inline-block;
   background-color: transparent;
   border-top: 2px #7f8c8d solid;
-  border-bottom: 0 none ;
+  border-bottom: 0 none;
   border-left: 2px #7f8c8d solid;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  border-right: 0 none ;
+  border-right: 0 none;
   font-weight: 100;
   height: 56px;
   width: 56px;
@@ -15941,7 +15977,7 @@ section * {
   display: inline-block;
   margin-left: 25px;
   margin-top: -25px;
-  padding-left: 25px ;
+  padding-left: 25px;
 }
 .read-manual .mcontent .manual > div .content-man h1 {
   font-size: 34px;
@@ -16046,7 +16082,6 @@ section * {
 .mask.active {
   display: block;
   background-color: #1B1E23;
-  background-image: url(../img/mask-bg.png);
   background-size: auto;
   position: absolute;
   z-index: 900;
@@ -16061,6 +16096,14 @@ section * {
   overflow: hidden;
   opacity: 0.8;
   filter: alpha(opacity=80);
+}
+.mask.active.big .container {
+  display: table;
+  height: 100%;
+}
+.mask.active.big .container > * {
+  vertical-align: top;
+  padding-top: 300px;
 }
 .mask.active .container {
   display: table;

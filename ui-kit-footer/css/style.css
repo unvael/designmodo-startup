@@ -535,6 +535,11 @@ section * {
 .footer-1 .social-btns {
   margin-top: 15px;
 }
+@media (max-width: 979px) {
+  .footer-1 .social-btns {
+    margin-bottom: 25px;
+  }
+}
 .footer-1 .btn.btn-danger {
   background-color: #c0392b;
 }
@@ -981,7 +986,7 @@ section * {
   color: inherit;
 }
 .footer-6 nav ul li {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 .footer-6 nav ul li a {
   color: #7f8c8d;

@@ -508,6 +508,12 @@ img {
     visibility: visible;
   }
 }
+@media (max-width: 767px) {
+  .navbar-fixed-top .navbar-inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 .delimiter {
   margin-top: 200px;
 }

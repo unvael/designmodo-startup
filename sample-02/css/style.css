@@ -508,6 +508,12 @@ img {
     visibility: visible;
   }
 }
+@media (max-width: 767px) {
+  .navbar-fixed-top .navbar-inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 .delimiter {
   margin-top: 200px;
 }
@@ -580,7 +586,7 @@ section * {
 .header-2 .navbar {
   position: absolute;
   z-index: 2;
-  top: 50px;
+  top: 55px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .header-2 .navbar.navbar-fixed-top {
@@ -618,7 +624,7 @@ section * {
   padding: 31px 0 27px;
   font-size: 18px;
   font-weight: normal;
-  font-weight: bold;
+  font-weight: 400;
   letter-spacing: 1px;
   color: #ffffff;
 }
@@ -735,10 +741,15 @@ section * {
   left: 0;
   width: 100%;
   position: relative;
-  padding-top: 190px;
-  padding-bottom: 90px;
+  padding-top: 195px;
+  padding-bottom: 80px;
   color: white;
   text-align: center;
+}
+@media (max-width: 979px) {
+  .header-2-sub {
+    padding-top: 165px;
+  }
 }
 .header-2-sub .hero-unit {
   margin: 0;
@@ -746,7 +757,7 @@ section * {
   background: transparent;
 }
 .header-2-sub .hero-unit h1 {
-  margin: 0 0 15px;
+  margin: 0 0 18px;
   font-size: 30px;
   font-weight: normal;
   color: #ffffff;
@@ -949,6 +960,11 @@ section * {
 .footer-1 .social-btns {
   margin-top: 15px;
 }
+@media (max-width: 979px) {
+  .footer-1 .social-btns {
+    margin-bottom: 25px;
+  }
+}
 .footer-1 .btn.btn-danger {
   background-color: #c0392b;
 }
@@ -1056,7 +1072,7 @@ section * {
   }
 }
 .content-10 {
-  padding-top: 80px;
+  padding-top: 100px;
   padding-bottom: 80px;
 }
 .logos {

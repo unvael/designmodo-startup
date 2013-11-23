@@ -8,61 +8,63 @@
   padding-bottom:0;
   > .container { position: relative;}  
   .navbar {    
-      position: absolute;
-      z-index: 2; top: 50px;
-      font-family: @h-font-family;
-      &.navbar-fixed-top{
-        position:fixed;
-        margin:0 auto;
-      }
-      a {.transition(0.25s color);}
-      .navbar-inner {background: none;}
-      .brand {
-        padding-left: 0;
-        .font(25px,white); font-family:@h-font-family; 
-        img:first-child {float: left; margin: -10px 15px 0 0;}
-      }
-      .nav {
-        > li {
-          margin-left: 20px; &:first-child {margin-left: 0;}
-          > a {
-            padding: 31px 0 27px;
-            .font(18px, white);  font-weight: bold; letter-spacing: 1px;
-            .a-color(white, #506e8c);
-          }
-          &.active > a {.a-color(#506e8c);}
+    position: absolute;
+    z-index: 2; top: 55px;
+    font-family: @h-font-family;
+    &.navbar-fixed-top{
+      position:fixed;
+      margin:0 auto;
+    }
+    a {.transition(0.25s color);}
+    .navbar-inner {background: none;}
+    .brand {
+      padding-left: 0;
+      .font(25px,white); font-family:@h-font-family; 
+      img:first-child {float: left; margin: -10px 15px 0 0;}
+    }
+    .nav {
+      > li {
+        margin-left: 20px; &:first-child {margin-left: 0;}
+        > a {
+          padding: 31px 0 27px;
+          .font(18px, white);  font-weight: 400; letter-spacing: 1px;
+          .a-color(white, #506e8c);
         }
-      }      
-      .btn-navbar {
-        margin: 28px 0 17px;
-        padding: 0;
-        .border-radius(0);
-        border: 0;
-        background: none!important;
-        .a-color(white, rgba(0, 0, 0, 0.4));
+        &.active > a {.a-color(#506e8c);}
       }
-      @media (max-width: 979px) {
-       .nav-collapse {
-         padding-top: 40px;
-         .navbar-collapse; 
-       }          
+    }      
+    .btn-navbar {
+      margin: 28px 0 17px;
+      padding: 0;
+      .border-radius(0);
+      border: 0;
+      background: none!important;
+      .a-color(white, rgba(0, 0, 0, 0.4));
+    }
+    @media (max-width: 979px) {
+      .nav-collapse {
+        padding-top: 40px;
+        .navbar-collapse; 
       }
-      
+    }
   }  
 } 
 .header-2-sub {
   z-index: 50; left: 0;
   width: 100%;
   position:relative;
-  padding-top: 190px; padding-bottom:90px;
+  padding-top: 195px; padding-bottom:80px;
   color: white;
-  text-align: center;  
+  text-align: center;
+  @media (max-width: 979px) {
+    padding-top: 165px;
+  }
   .hero-unit {
     margin: 0;
     padding: 0;
     background: transparent;
     h1 {
-      margin: 0 0 15px;
+      margin: 0 0 18px;
       .font(30px, white); font-weight: 300;
       line-height: 40px;
     }

@@ -508,6 +508,12 @@ img {
     visibility: visible;
   }
 }
+@media (max-width: 767px) {
+  .navbar-fixed-top .navbar-inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 .delimiter {
   margin-top: 200px;
 }
@@ -823,7 +829,7 @@ section * {
   font-size: 35px;
   font-weight: normal;
   color: #ffffff;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 .header-6-sub .row {
   position: relative;
@@ -889,7 +895,7 @@ section * {
   position: relative;
   overflow: hidden;
   width: 220px;
-  margin: 50px auto;
+  margin: 50px auto 170px;
   border: 4px solid #fff;
 }
 .header-6-sub .player .btn-play {

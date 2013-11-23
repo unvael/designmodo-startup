@@ -7,9 +7,9 @@
 .header-11{
   z-index: 100;
   width: 100%;
- padding-top:0;
+  padding-top:0;
   padding-bottom:0;
-  height:80px;
+  height:90px;
     .navbar {
       position: absolute;
       z-index: 2; top: 0;
@@ -20,14 +20,16 @@
         margin:0 auto;
         top:0 !important;
       }
-      .navbar-form,.navbar-search {  margin: 0;  padding: 20px 0 19px 30px;}
+      .navbar-form,.navbar-search {  margin: 0;  padding: 26px 0 19px 30px;}
       .btn,.btn-group { margin-top: -1px;}
       .btn {padding-left: 18px; padding-right: 18px;}
       .btn.btn-primary {.btn-background(@button-primary-active);}
       .navbar-inner {background: none;}
       .brand {
-        padding-left: 0;    
+        padding-left: 0;  
+        padding-top: 30px;  
         .font(25px, @base);
+        font-weight: 600;
           img:first-child {
           float: left;
           margin: -10px 15px 0 0;
@@ -38,7 +40,9 @@
           margin-left: 25px;
           &:first-child {margin-left: 0;}
           &:active a, &.active a{.a-color(@link-color, @link-color);}
-          > a {padding: 29px 0 27px; .font(14px);
+          > a {padding: 35px 0 27px; .font(14px);
+            font-weight: 500;
+            letter-spacing: 1px;
             .a-color(inherit, @link-color);            
           }
         }
@@ -74,7 +78,7 @@
     padding-top:68px;
     padding-bottom:70px;
     .player{
-      margin: 40px 0 80px;
+      margin: 40px 0 45px;
     }
   }
   @media (max-width: 480px) {
@@ -82,7 +86,7 @@
     padding-bottom:70px;
     h3 { .font(26px, white);}
     .player{
-      margin: 40px 0 80px;
+      margin: 40px 0 45px;
     }
   }  
   .signup-form {

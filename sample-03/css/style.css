@@ -1013,7 +1013,7 @@ section * {
 .content-13.subscribe-form {
   padding-top: 40px;
   padding-bottom: 40px;
-  color: #fff;
+  color: #a1a9b1;
 }
 .content-13.subscribe-form .span4 {
   text-align: right;
@@ -1037,19 +1037,19 @@ section * {
   line-height: 59.99999999999999px;
   font-size: 50px;
   font-weight: normal;
-  color: #ffffff;
+  color: #a1a9b1;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   letter-spacing: -1px;
 }
 .content-13.subscribe-form input[type="text"]:-moz-placeholder {
-  color: #ffffff;
+  color: #a1a9b1;
 }
 .content-13.subscribe-form input[type="text"]::-webkit-input-placeholder {
-  color: #ffffff;
+  color: #a1a9b1;
 }
 .content-13.subscribe-form input[type="text"].placeholder {
-  color: #ffffff;
+  color: #a1a9b1;
 }
 .content-13.subscribe-form input[type="text"]::-webkit-input-placeholder {
   font-weight: 500;
@@ -1076,7 +1076,7 @@ section * {
   line-height: 59.99999999999999px;
   font-size: 50px;
   font-weight: normal;
-  color: #ffffff;
+  color: #a1a9b1;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .content-13.subscribe-form .btn {
@@ -1103,7 +1103,7 @@ section * {
     line-height: 27px;
     font-size: 25px;
     font-weight: normal;
-    color: #ffffff;
+    color: #a1a9b1;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: center;
   }

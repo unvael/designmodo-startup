@@ -1077,6 +1077,8 @@ section * {
   font-size: 48px;
   font-weight: normal;
   color: #ffffff;
+  font-weight: 600;
+  line-height: 56px;
 }
 @media (max-width: 480px) {
   .content-23 .hero-unit h1 {
@@ -1095,11 +1097,12 @@ section * {
   margin: 0;
   padding: 30px 40px;
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .content-23 .hero-unit.hero-unit-bordered h1 {
-    font-size: 22px;
+    font-size: 28px;
     font-weight: normal;
     color: #ffffff;
+    font-weight: 600;
   }
 }
 /* contacts */

@@ -621,6 +621,7 @@ section * {
   font-weight: normal;
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
 }
 .header-10 .navbar .brand img:first-child {
   float: left;
@@ -828,7 +829,7 @@ section * {
     font-size: 22px;
     font-weight: normal;
     color: #bdc3c7;
-    line-height: 21.6px;
+    line-height: 35px;
   }
 }
 .header-10-sub .hero-unit.hero-unit-bordered h1 {

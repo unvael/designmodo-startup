@@ -1190,6 +1190,7 @@ section * {
 @media (max-width: 767px) {
   .content-7 h3 {
     margin-bottom: 20px;
+    line-height: 36px;
   }
 }
 .content-7.v-center,

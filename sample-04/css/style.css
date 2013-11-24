@@ -622,6 +622,7 @@ section * {
   font-weight: normal;
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
 }
 .header-10 .navbar .brand img:first-child {
   float: left;
@@ -829,7 +830,7 @@ section * {
     font-size: 22px;
     font-weight: normal;
     color: #bdc3c7;
-    line-height: 21.6px;
+    line-height: 35px;
   }
 }
 .header-10-sub .hero-unit.hero-unit-bordered h1 {
@@ -913,6 +914,7 @@ section * {
 @media (max-width: 767px) {
   .content-7 h3 {
     margin-bottom: 20px;
+    line-height: 36px;
   }
 }
 .content-7.v-center,
@@ -1223,6 +1225,8 @@ section * {
   font-size: 48px;
   font-weight: normal;
   color: #ffffff;
+  font-weight: 600;
+  line-height: 56px;
 }
 @media (max-width: 480px) {
   .content-23 .hero-unit h1 {
@@ -1241,11 +1245,12 @@ section * {
   margin: 0;
   padding: 30px 40px;
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .content-23 .hero-unit.hero-unit-bordered h1 {
-    font-size: 22px;
+    font-size: 28px;
     font-weight: normal;
     color: #ffffff;
+    font-weight: 600;
   }
 }
 /* footer */

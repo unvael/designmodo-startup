@@ -15762,18 +15762,6 @@ section * {
   padding: 3px 9px;
   text-align: center;
 }
-body {
-  margin-top: 110px;
-}
-body.hovered {
-  background-color: #ecf0f1;
-}
-a {
-  cursor: pointer;
-}
-a.active {
-  cursor: default;
-}
 .dockbar {
   display: block;
   width: 100%;
@@ -15782,6 +15770,28 @@ a.active {
   margin: 0;
   overflow: visible;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+@media (max-width: 979px) {
+  .dockbar.navbar-fixed-top {
+    position: fixed;
+  }
+  .dockbar.navbar-fixed-top > menu {
+    padding: 0 20px;
+  }
+  .dockbar.navbar-fixed-top .container {
+    width: auto;
+  }
+}
+.dockbar .menu-btn {
+  display: none;
+}
+@media (max-width: 768px) {
+  .dockbar .menu-btn {
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
 }
 .dockbar .main-menu {
   display: block;
@@ -15803,6 +15813,18 @@ a.active {
   text-decoration: none;
   line-height: 65px;
 }
+@media (max-width: 979px) {
+  .dockbar .main-menu a.man-brand {
+    line-height: 29.999999999999996px;
+  }
+}
+@media (max-width: 768px) {
+  .dockbar .main-menu a.man-brand {
+    line-height: 65px;
+    width: auto;
+    margin-left: 20px;
+  }
+}
 .dockbar .main-menu a.man-brand .logotype {
   font-size: 16px;
   font-weight: normal;
@@ -15820,6 +15842,21 @@ a.active {
   display: inline-block;
   margin: 0;
 }
+@media (max-width: 768px) {
+  .dockbar .main-menu dl {
+    display: none;
+  }
+  .dockbar .main-menu dl.menu-visible {
+    background-color: #1f1b23;
+    display: block;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 65px;
+    width: 300px;
+    z-index: 2000;
+  }
+}
 .dockbar .main-menu dl dd {
   margin: 0 0 0 45px;
   line-height: 65px;
@@ -15828,6 +15865,24 @@ a.active {
 }
 .dockbar .main-menu dl dd:first-child {
   margin: 0;
+}
+@media (max-width: 768px) {
+  .dockbar .main-menu dl dd {
+    display: block;
+    margin: 0;
+    border-bottom: 1px dashed #333;
+    -webkit-box-sizing: 'border-box';
+    -moz-box-sizing: 'border-box';
+    box-sizing: 'border-box';
+    width: 100%;
+    line-height: 45px;
+    background-color: #1f1b23;
+  }
+  .dockbar .main-menu dl dd > a {
+    display: block;
+    width: 100%;
+    padding: 0 0 0 45px;
+  }
 }
 .dockbar .main-menu dl dd a {
   font-size: 12px;
@@ -15847,6 +15902,40 @@ a.active {
   text-decoration: none;
   color: white;
 }
+.dockbar .main-menu dl dd.sub-menu {
+  display: none;
+}
+@media (max-width: 768px) {
+  .dockbar .main-menu dl dd.sub-menu {
+    display: block;
+  }
+  .dockbar .main-menu dl dd.sub-menu dl {
+    position: relative;
+    top: auto;
+    display: block;
+  }
+  .dockbar .main-menu dl dd.sub-menu dl dd {
+    display: block;
+    margin: 0;
+    -webkit-box-sizing: 'border-box';
+    -moz-box-sizing: 'border-box';
+    box-sizing: 'border-box';
+    width: 100%;
+    background-color: #1f1b23;
+  }
+  .dockbar .main-menu dl dd.sub-menu dl dd > a {
+    display: block;
+    width: 100%;
+    padding: 0 0 0 65px;
+  }
+  .dockbar .main-menu dl dd.sub-menu dl dd > a.active {
+    text-decoration: none;
+    color: white;
+  }
+  .dockbar .main-menu dl dd.sub-menu dl dd > a.active:after {
+    display: none;
+  }
+}
 .dockbar .sub-menu {
   display: block;
   background-color: #f4f2d4;
@@ -15854,6 +15943,11 @@ a.active {
   padding: 0;
   width: 100%;
   box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .dockbar .sub-menu {
+    display: none;
+  }
 }
 .dockbar .sub-menu > div {
   height: 45px;
@@ -15918,6 +16012,18 @@ a.active {
   position: absolute;
   text-align: center;
   width: 100%;
+}
+body {
+  margin-top: 110px;
+}
+body.hovered {
+  background-color: #ecf0f1;
+}
+a {
+  cursor: pointer;
+}
+a.active {
+  cursor: default;
 }
 .mcontent {
   margin-top: 80px;

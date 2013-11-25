@@ -86,5 +86,9 @@
             $('.back-button:visible').click();
         });            
         
+        $('.menu-btn').click(function(){
+            $('.menu').toggleClass('menu-visible');
+        });
+        
     });
 })(jQuery);

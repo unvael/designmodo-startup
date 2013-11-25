@@ -15681,6 +15681,7 @@ section * {
   background-color: white;
 }
 .main-page .container {
+  background-color: #ffffef;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
@@ -15717,6 +15718,11 @@ section * {
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
+}
+.main-page .container p {
+  font-size: 16px;
+  font-weight: normal;
+  color: #7f8c8d;
 }
 .main-page .container small {
   font-size: 14px;
@@ -15767,13 +15773,13 @@ section * {
 }
 .faq .question:before {
   background-color: #FFFFFF;
-  border: 1px solid #000000;
-  content: "+";
+  border: 1px solid #ffeeee;
+  content: "-";
   display: inline-block;
   font-size: 16px;
   font-weight: normal;
-  color: #000000;
-  line-height: 10px;
+  color: #7f8c8d;
+  line-height: 5px;
   margin-top: 8px;
   position: absolute;
   text-align: center;
@@ -15781,8 +15787,8 @@ section * {
   height: 10px;
 }
 .faq .question.opened:before {
-  content: '-';
-  line-height: 5px;
+  content: '+';
+  line-height: 10px;
 }
 .faq .question p {
   font-size: 16px;
@@ -15791,6 +15797,7 @@ section * {
   padding-left: 30px;
 }
 .faq .question .answer {
+  border: 1px solid #ffeeee;
   display: none;
   padding: 20px 50px;
   background-color: white;

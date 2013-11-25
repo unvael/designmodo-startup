@@ -4,6 +4,7 @@
 
 
 .main-page{
+ 
   &.css-classes{
     table{
       width:100%;
@@ -46,6 +47,7 @@
   }
   
     .container{
+       background-color:#ffffef;
       .snippet-menu{
         z-index:100;
       }
@@ -73,6 +75,9 @@
         .font(25px, @h-text-color);
          font-family:@h-font-family;
          font-weight:300;
+      }
+      p{
+        .font(16px);
       }
       small{
         .font(14px, @silver);         
@@ -119,11 +124,11 @@
     cursor:pointer;
     &:before{
       background-color: #FFFFFF;
-      border: 1px solid #000000;      
-      content: "+";
+      border: 1px solid #ffeeee;      
+      content: "-";
       display: inline-block;
-      .font(16px,#000000);      
-      .line-height(10px);
+      .font(16px);      
+      .line-height(5px);
       margin-top: 8px;
       position: absolute;
       text-align: center;
@@ -132,8 +137,9 @@
     }
     &.opened{
       &:before{
-        content:'-';
-        .line-height(5px);
+        content:'+';
+        
+        .line-height(10px);
       }
     }
     
@@ -142,6 +148,7 @@
       padding-left:30px;
     }
     .answer{
+      border:1px solid #ffeeee;
       display:none;
       padding: 20px 50px;
       background-color:white;

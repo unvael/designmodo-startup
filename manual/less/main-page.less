@@ -113,4 +113,43 @@
       
     }
 }
-
+.faq{
+  
+  .question{    
+    cursor:pointer;
+    &:before{
+      background-color: #FFFFFF;
+      border: 1px solid #000000;      
+      content: "+";
+      display: inline-block;
+      .font(16px,#000000);      
+      .line-height(10px);
+      margin-top: 8px;
+      position: absolute;
+      text-align: center;
+      width: 10px; 
+      height:10px;
+    }
+    &.opened{
+      &:before{
+        content:'-';
+        .line-height(5px);
+      }
+    }
+    
+    p{
+      .font(16px);
+      padding-left:30px;
+    }
+    .answer{
+      display:none;
+      padding: 20px 50px;
+      background-color:white;
+      .border-radius(10px);
+      p{
+        .font(14px);
+      }
+      
+    }
+  }
+}

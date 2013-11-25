@@ -1,0 +1,21 @@
+<section class="main-page faq">
+    <div class="container bg-clouds">
+        <div class="row">
+            <div class="span10 offset1">
+                <h1>F.A.Q.</h1>
+                <div class="question opened">
+                    <p>I'm pull the Startup framework from the repository and all of it components have a demaged view. What does it meen?</p>
+                    <div class="answer">
+                        <p>The Startup Framework based on the Flat-UI framework and it repository contains Flat-UI as project submodule. 
+                            So this situation can appears if you pull the project without submodule.
+                            For fix it, you should execute thouse commands in
+                             your git console: </p>
+                            <p><code>git submodule init</code></p>
+                            <p><code>git submodule update</code></p>
+                        <p>After this submodule folder 'flat-ui' mustn't be empty, and Startup components have to view right way.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

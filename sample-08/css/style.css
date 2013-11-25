@@ -672,7 +672,7 @@ section * {
   font-size: 13px;
   font-weight: normal;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: 2px;
   color: #bdc3c7;
 }
@@ -1032,6 +1032,11 @@ section * {
 .content-12 .btn-wide:hover,
 .content-12 .btn-wide:active {
   background: #e74c3c;
+}
+@media (max-width: 767px) {
+  .content-12 .btn-wide {
+    font-size: 30px;
+  }
 }
 /**
  * Content 17 stylesheet  

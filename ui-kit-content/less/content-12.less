@@ -18,5 +18,8 @@
     font-weight: 300;
     .transition(~'0.25s color, 0.25s background-color');  
     &:hover, &:active { background: @danger;}
+    @media (max-width: 767px) {
+      font-size: 30px;
+    }
   }
 }

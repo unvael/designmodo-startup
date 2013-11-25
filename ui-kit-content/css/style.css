@@ -1505,6 +1505,11 @@ section * {
 .content-12 .btn-wide:active {
   background: #e74c3c;
 }
+@media (max-width: 767px) {
+  .content-12 .btn-wide {
+    font-size: 30px;
+  }
+}
 /**
  * Content 13 stylesheet  
  * */

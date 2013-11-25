@@ -3050,6 +3050,11 @@ section * {
 .content-12 .btn-wide:active {
   background: #e74c3c;
 }
+@media (max-width: 767px) {
+  .content-12 .btn-wide {
+    font-size: 30px;
+  }
+}
 /**
  * Content 13 stylesheet  
  * */
@@ -10601,16 +10606,6 @@ section * {
   width: 100%;
   height: 100%;
   vertical-align: middle;
-  /*
-      display:block;
-           position:relative;
-           margin-top:-25%;
-           padding-bottom:25%;
-           @media (max-width: 979px) {
-             margin-top:-45%;
-             padding-bottom:45%;
-           }*/
-
 }
 .header-18 .pt-controls > div {
   display: table-cell;
@@ -10626,6 +10621,7 @@ section * {
   height: 41px;
   width: 35px;
   float: left;
+  margin-left: 30px;
   font-size: 18px;
   font-weight: normal;
   color: #ffffff;
@@ -10650,8 +10646,19 @@ section * {
 .header-18 .pt-controls > div > *:active {
   background: rgba(0, 0, 0, 0.6);
 }
+@media (max-width: 767px) {
+  .header-18 .pt-controls > div > * {
+    margin-left: 0;
+  }
+}
 .header-18 .pt-controls > div > *.pt-control-next {
   float: right;
+  margin-right: 30px;
+}
+@media (max-width: 767px) {
+  .header-18 .pt-controls > div > *.pt-control-next {
+    margin-right: 0;
+  }
 }
 .header-18 .page-transitions.pt-first + .pt-controls .pt-control-prev {
   opacity: 0;
@@ -11719,7 +11726,7 @@ section * {
   font-size: 13px;
   font-weight: normal;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: 2px;
   color: #bdc3c7;
 }

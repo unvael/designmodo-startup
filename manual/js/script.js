@@ -45,12 +45,7 @@
             
             
             $(window).scrollTop(elemPos -110);
-//            if($('.'+id+'-map').length!=0){
-//                elem.css('border-bottom', '3px solid red').css('border-left', '3px solid red').css('border-right', '3px solid red');
-//            } else{
-//                elem.css('border', '3px solid red');
-//            }
-            
+
             $('html').addClass('read-manual');            
             $('.manual .' + id).show();
             $('.manual').scrollTop(0);

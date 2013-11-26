@@ -1,12 +1,25 @@
 @import '../../flat-ui/less/config.less';
 @import '../../flat-ui/less/mixins.less';
-/*only fo flat-ui free*/
-@import '../../common-files/less/flat-ui-free2.0.0-fix.less';
-/* end only for flat-ui free*/
+/*only fo flat-ui free*/@import '../../common-files/less/flat-ui-free2.0.0-fix.less';/* end only for flat-ui free*/
 @import '../../common-files/less/mixins.less';
 @import '../../common-files/less/common.less';
 @import '../../common-files/less/navbar.less';
 @import '../../common-files/less/helper.less';
+
+
+.mcontent {
+  margin-top: 80px;
+  > section, header, footer {
+  position: relative;
+  .box-sizing(border-box);
+    @media (max-width: 767px) {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+  }
+
+
+
 @import '../../ui-kit-blog/less/style.less';
 @import '../../ui-kit-contacts/less/style.less';
 @import '../../ui-kit-content/less/style.less';
@@ -15,6 +28,7 @@
 @import '../../ui-kit-projects/less/style.less';
 @import '../../ui-kit-crew/less/style.less';
 @import '../../ui-kit-footer/less/style.less';
+}
 @import 'main-page.less';
 @import 'dockbar.less';
 
@@ -26,14 +40,13 @@ body{
   }
 }
 
+
 a {
   cursor: pointer;
   &.active{cursor: default;}
 }
 
-.mcontent {
-  margin-top: 80px;
-}
+
 
 .read-manual {
   overflow: hidden;
@@ -62,6 +75,9 @@ a {
       min-width: 400px;
       .box-sizing(border-box);
       padding: 0 100px;
+      @media (max-width: 768px) { 
+         padding: 0 12px;
+        }
       overflow: auto;
       width: 70%;
       top: 0;

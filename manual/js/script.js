@@ -50,8 +50,10 @@
             
             $(window).scrollTop(elemPos -110);
 
-            $('html').addClass('read-manual');            
-            $('.manual .' + id).show();
+            $('html').addClass('read-manual');    
+            $('.manual .' + id).show('fast'); 
+            $('.manual .' + id + '> *').hide('fast');     
+            $('.manual .' + id + '> *').fadeIn(1800);
             $('.manual').scrollTop(0);
             
             $('html').click(function(e){            

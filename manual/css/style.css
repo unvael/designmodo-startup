@@ -16211,8 +16211,27 @@ a {
 a.active {
   cursor: default;
 }
+.manual {
+  width: 0;
+}
 .read-manual {
   overflow: hidden;
+}
+.read-manual body:before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  overflow: hidden;
+  position: fixed;
+  z-index: 850;
+  background: black;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
 }
 .read-manual .dockbar {
   display: none;
@@ -16232,6 +16251,11 @@ a.active {
   right: 70%;
 }
 .read-manual .mcontent .manual {
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: width 2s linear 0s;
+  -moz-transition: width 2s linear 0s;
+  -o-transition: width 2s linear 0s;
+  transition: width 2s linear 0s;
   display: block;
   position: fixed;
   z-index: 999;
@@ -16297,7 +16321,7 @@ a.active {
 }
 .read-manual .mcontent .manual > div .content-man {
   float: right;
-  max-width: 80%;
+  max-width: 76%;
   display: inline-block;
   margin-left: 25px;
   margin-top: -25px;

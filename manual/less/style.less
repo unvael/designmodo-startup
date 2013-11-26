@@ -45,9 +45,26 @@ a {
   &.active{cursor: default;}
 }
 
-
+.manual{
+  width:0; 
+}
 
 .read-manual {
+  body:before{
+    content:"";
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    display:block;
+    overflow:hidden;
+    position:fixed;
+    z-index:850;
+    background:black;
+    .opacity(30);
+  }
   overflow: hidden;
   .dockbar{
     display: none;
@@ -65,13 +82,14 @@ a {
     .content-24 img.image {
       right: 70%;
     }
-    .manual {
+    .manual {      
+      .transition(width 2s linear 0s);
       display: block;
       position: fixed;
       z-index: 999;
       min-height: 100%;
       max-width: 960px;
-      min-width: 400px;
+      min-width: 400px;      
       .box-sizing(border-box);
       padding: 0 100px;
       @media (max-width: 768px) { 
@@ -87,7 +105,7 @@ a {
         width: 100%;
       }
 
-      > div {
+      > div {        
         .font(14px);
         overflow: visible;
         letter-spacing: normal;
@@ -120,7 +138,8 @@ a {
 
         .content-man {
           float: right;
-          max-width: 80%;
+          max-width: 76%;
+          
           display: inline-block;
           margin-left: 25px;
           margin-top: -25px;
@@ -128,12 +147,12 @@ a {
           h1 {
             .font(34px, white);
             display: inline-block;
-            margin-bottom: 40px;
+            margin-bottom: 40px;            
           }
           h3 {
             .font(25px, white);
             margin-bottom: 40px;
-            margin-top: 40px;
+            margin-top: 40px;                   
           }
           p {
             .font(16px, @asbestos);

@@ -54,6 +54,16 @@
             $('html').addClass('read-manual');            
             $('.manual .' + id).show();
             $('.manual').scrollTop(0);
+            
+            $('html').click(function(e){            
+            var clickedElem = $(e.target);
+            var parentCE = $(e.target).parents();
+            if(!clickedElem.hasClass('read-man')&&!clickedElem.hasClass('manual')&&!parentCE.hasClass('manual')){
+                console.log(clickedElem, parentCE);
+                $('.back-button:visible').click();
+            }            
+        });     
+            
         });
         var backButton = $('.back-button');
         backButton.click(function() {
@@ -82,12 +92,16 @@
             showNum : false
         });
         
-        $('.mcontent * :not(.manual, .manual *, .read-man)').click(function(){
-            $('.back-button:visible').click();
-        });            
+               
         
         $('.menu-btn').click(function(){
             $('.menu').toggleClass('menu-visible');
+            $('html').click(function(e){
+                if(!$(e.target).hasClass('menu-btn')&&!$(e.target).hasClass('menu')&&!$(e.target).parents().hasClass('menu')){
+                  $('.menu').removeClass('menu-visible');
+                }
+            });
+               
         });
         
         

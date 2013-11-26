@@ -35,6 +35,10 @@
             var id = $(this).attr('id');
             
             var elem = $('.mcontent > .'+id+ ':not(.mask)');
+           
+            if(elem.length==0){                
+                elem = $('.mcontent > .'+id+ '-sub');               
+            }
             var elemPos = 0;
             
             if($('.'+id+'-map').length!=0){

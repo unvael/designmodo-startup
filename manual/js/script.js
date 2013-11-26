@@ -90,9 +90,10 @@
             $('.menu').toggleClass('menu-visible');
         });
         
+        
         $('.question').click(function(){
-           $(this).toggleClass('opened');
-           $('.answer', this).toggle(); 
+           $(this).toggleClass('opened');           
         });
+        
     });
 })(jQuery);

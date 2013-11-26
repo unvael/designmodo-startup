@@ -614,6 +614,52 @@ section * {
 .pt-page-ontop {
   z-index: 999;
 }
+.startup-kit_header h1 {
+  font-size: 45px;
+  font-weight: normal;
+  color: #2c3e50;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 59.99999999999999px;
+}
+.startup-kit_header p {
+  font-size: 18px;
+  font-weight: normal;
+  color: #7f8c8d;
+  font-family: Lato, sens-serif;
+  line-height: 29.999999999999996px;
+}
+@media (max-width: 480px) {
+  .startup-kit_header h1 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #2c3e50;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 36px;
+  }
+  .startup-kit_header p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #7f8c8d;
+    font-family: Lato, sens-serif;
+    line-height: 27px;
+  }
+}
+@media (max-width: 767px) {
+  .startup-kit_header h1 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #2c3e50;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 36px;
+  }
+  .startup-kit_header p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #7f8c8d;
+    font-family: Lato, sens-serif;
+    line-height: 27px;
+  }
+}
 /**
  * Blog 1 stylesheet  
  * */
@@ -1529,52 +1575,6 @@ section * {
   margin: 0 10px;
 }
 /*only fo flat-ui free*//* end only for flat-ui free*/
-.startup-kit_header h1 {
-  font-size: 45px;
-  font-weight: normal;
-  color: #2c3e50;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 59.99999999999999px;
-}
-.startup-kit_header p {
-  font-size: 18px;
-  font-weight: normal;
-  color: #7f8c8d;
-  font-family: Lato, sens-serif;
-  line-height: 29.999999999999996px;
-}
-@media (max-width: 480px) {
-  .startup-kit_header h1 {
-    font-size: 30px;
-    font-weight: normal;
-    color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 36px;
-  }
-  .startup-kit_header p {
-    font-size: 16px;
-    font-weight: normal;
-    color: #7f8c8d;
-    font-family: Lato, sens-serif;
-    line-height: 27px;
-  }
-}
-@media (max-width: 767px) {
-  .startup-kit_header h1 {
-    font-size: 30px;
-    font-weight: normal;
-    color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 36px;
-  }
-  .startup-kit_header p {
-    font-size: 16px;
-    font-weight: normal;
-    color: #7f8c8d;
-    font-family: Lato, sens-serif;
-    line-height: 27px;
-  }
-}
 /**
  * Copntact 1 stylesheet  
  * */
@@ -15788,12 +15788,12 @@ section * {
 .faq .question:before {
   background-color: #FFFFFF;
   border: 1px solid #ffeeee;
-  content: "-";
+  content: "+";
   display: inline-block;
   font-size: 16px;
   font-weight: normal;
   color: #7f8c8d;
-  line-height: 5px;
+  line-height: 10px;
   margin-top: 8px;
   position: absolute;
   text-align: center;
@@ -15801,8 +15801,11 @@ section * {
   height: 10px;
 }
 .faq .question.opened:before {
-  content: '+';
-  line-height: 10px;
+  content: '-';
+  line-height: 5px;
+}
+.faq .question.opened .answer {
+  display: block;
 }
 .faq .question p {
   font-size: 16px;

@@ -460,9 +460,13 @@ section * {
   z-index: 2;
 }
 @media (max-width: 767px) {
-  header {
+  header,
+  section {
     padding-left: 20px;
     padding-right: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
   }
 }
 .projects-* .pt-perspective {

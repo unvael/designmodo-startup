@@ -567,9 +567,13 @@ section * {
   z-index: 2;
 }
 @media (max-width: 767px) {
-  header {
+  header,
+  section {
     padding-left: 20px;
     padding-right: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
   }
 }
 /*only fo flat-ui free*//* end only for flat-ui free*/
@@ -609,52 +613,6 @@ section * {
 }
 .pt-page-ontop {
   z-index: 999;
-}
-.startup-kit_header h1 {
-  font-size: 45px;
-  font-weight: normal;
-  color: #2c3e50;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 59.99999999999999px;
-}
-.startup-kit_header p {
-  font-size: 18px;
-  font-weight: normal;
-  color: #7f8c8d;
-  font-family: Lato, sens-serif;
-  line-height: 29.999999999999996px;
-}
-@media (max-width: 480px) {
-  .startup-kit_header h1 {
-    font-size: 30px;
-    font-weight: normal;
-    color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 36px;
-  }
-  .startup-kit_header p {
-    font-size: 16px;
-    font-weight: normal;
-    color: #7f8c8d;
-    font-family: Lato, sens-serif;
-    line-height: 27px;
-  }
-}
-@media (max-width: 767px) {
-  .startup-kit_header h1 {
-    font-size: 30px;
-    font-weight: normal;
-    color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 36px;
-  }
-  .startup-kit_header p {
-    font-size: 16px;
-    font-weight: normal;
-    color: #7f8c8d;
-    font-family: Lato, sens-serif;
-    line-height: 27px;
-  }
 }
 /**
  * Blog 1 stylesheet  
@@ -1571,6 +1529,52 @@ section * {
   margin: 0 10px;
 }
 /*only fo flat-ui free*//* end only for flat-ui free*/
+.startup-kit_header h1 {
+  font-size: 45px;
+  font-weight: normal;
+  color: #2c3e50;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 59.99999999999999px;
+}
+.startup-kit_header p {
+  font-size: 18px;
+  font-weight: normal;
+  color: #7f8c8d;
+  font-family: Lato, sens-serif;
+  line-height: 29.999999999999996px;
+}
+@media (max-width: 480px) {
+  .startup-kit_header h1 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #2c3e50;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 36px;
+  }
+  .startup-kit_header p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #7f8c8d;
+    font-family: Lato, sens-serif;
+    line-height: 27px;
+  }
+}
+@media (max-width: 767px) {
+  .startup-kit_header h1 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #2c3e50;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 36px;
+  }
+  .startup-kit_header p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #7f8c8d;
+    font-family: Lato, sens-serif;
+    line-height: 27px;
+  }
+}
 /**
  * Copntact 1 stylesheet  
  * */
@@ -15645,6 +15649,9 @@ section * {
     margin-top: 9px;
   }
 }
+.main-page .row {
+  padding: 0 20px;
+}
 .main-page.css-classes table {
   width: 100%;
   border: 1px solid black;
@@ -15817,6 +15824,12 @@ section * {
   font-weight: normal;
   color: #7f8c8d;
 }
+.nav-visible .dockbar {
+  display: none;
+}
+.nav-visible .read-man {
+  display: none;
+}
 .dockbar {
   display: block;
   width: 100%;
@@ -15844,8 +15857,9 @@ section * {
   .dockbar .menu-btn {
     display: inline-block;
     float: right;
-    margin-right: 20px;
+    margin-right: 40px;
     margin-top: 20px;
+    position: relative;
   }
 }
 .dockbar .main-menu {
@@ -16265,8 +16279,20 @@ a.active {
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  font-size: 30px;
+  font-weight: normal;
+  color: #ffffff;
+}
+.read-man:hover {
+  border-color: white;
+}
+@media (max-width: 768px) {
+  .read-man {
+    margin-top: -42px;
+  }
 }
 .mask {
   display: none;

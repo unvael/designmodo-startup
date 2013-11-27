@@ -74,7 +74,7 @@
             $('html').addClass('read-manual');
             $('.manual .' + id).show('fast');
             $('.manual .' + id + '> *').hide('fast');
-            $('.manual .' + id + '> *').fadeIn(1800);
+            $('.manual .' + id + '> *').fadeIn();
             $('.manual').scrollTop(0);
 
             $('html').click(function(e) {

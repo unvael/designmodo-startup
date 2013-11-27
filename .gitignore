@@ -1,3 +1,4 @@
 .DS_Store
 node_modules
-build
+buildmanual/less/manual-panel.less.backup
+manual/less/manual-panel.less.backup

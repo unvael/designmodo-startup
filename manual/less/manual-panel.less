@@ -1,7 +1,3 @@
-.manual{
-  width:0; 
-}
-
 .read-manual {
   body:before{
     content:"";
@@ -15,13 +11,13 @@
     overflow:hidden;
     position:fixed;
     z-index:850;
-    background:black;
-    .opacity(30);
+    background:#1b1f23;
+    .opacity(95);
   }
   overflow: hidden;
   .dockbar{
-    display: none;
-  }
+    z-index:845;
+  }  
   .container {
     margin-left: 10px;
   }
@@ -35,29 +31,26 @@
     .content-24 img.image {
       right: 70%;
     }
-    .manual {      
-      .transition(width 1s linear 0s);
+  
+  .manual {
       display: block;
       position: fixed;
       z-index: 999;
-      min-height: 100%;
-      max-width: 960px;
-      min-width: 400px;      
+      min-height: 100%;         
       .box-sizing(border-box);
-      padding: 0 100px;
+      padding: 0;
       @media (max-width: 768px) { 
          padding: 0 12px;
         }
-      overflow: auto;
-      width: 70%;
+      overflow: auto;      
       top: 0;
       right: 0;
+      left:150px;
       background-color: #1B1E23;
-
       @media (max-width: 800px) {
         width: 100%;
       }
-
+      
       > div {      
         /* prism twilight theme */
           @import '../prism/themes/twilight.less';
@@ -67,12 +60,13 @@
         overflow: visible;
         letter-spacing: normal;
         position: absolute;
-        padding: 120px 0;
+        padding: 115px 130px 115px 166px;
+        .box-sizing(border-box);
         left: auto;
         right: auto;
         top: auto;
         bottom: auto;
-        width: auto;
+        width: 100%;
         background-color: transparent;
         * {
           text-align: left;
@@ -80,27 +74,30 @@
           padding-bottom: 0;
         }
         .back-button {
+         /*
           float: left;
-          display: inline-block;
-          background-color: transparent;
-          border-top: 2px @asbestos solid;
-          border-bottom: 0 none;
-          border-left: 2px @asbestos solid;
-          .transform(rotate(-45deg));
-          border-right: 0 none;
-          font-weight: 100;
-          height: 56px;
-          width: 56px;
+                   display: inline-block;
+                   background-color: transparent;
+                   border-top: 2px @asbestos solid;
+                   border-bottom: 0 none;
+                   border-left: 2px @asbestos solid;
+                   .transform(rotate(-45deg));
+                   border-right: 0 none;
+                   font-weight: 100;
+                   height: 56px;
+                   width: 56px;*/
+         
         }
 
         .content-man {
-          float: right;
-          max-width: 76%;
+          float: right;     
           
           display: inline-block;
+         /*
           margin-left: 25px;
-          margin-top: -25px;
-          padding-left: 25px;
+                   margin-top: -25px;
+                   padding-left: 25px;*/
+         
           h1 {
             .font(34px, white);
             display: inline-block;
@@ -132,7 +129,7 @@
                 float: left;
                 font-family: @h-font-family;
                 font-weight: bold;
-                margin: 0 25px 0 -50px;
+                margin: 0 0 0 -66px;
                 padding: 3px 9px;
                 text-align: center;
               }
@@ -183,6 +180,8 @@
         }
 
       }
-    }
+    
+  } 
   }
+ 
 }

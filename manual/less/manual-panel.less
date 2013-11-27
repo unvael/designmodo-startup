@@ -1,0 +1,188 @@
+.manual{
+  width:0; 
+}
+
+.read-manual {
+  body:before{
+    content:"";
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    display:block;
+    overflow:hidden;
+    position:fixed;
+    z-index:850;
+    background:black;
+    .opacity(30);
+  }
+  overflow: hidden;
+  .dockbar{
+    display: none;
+  }
+  .container {
+    margin-left: 10px;
+  }
+  .mcontent {
+    height: auto !important;
+    height: 100%;
+    min-height: 100%;
+    > div {
+      min-height: 100%;
+    }
+    .content-24 img.image {
+      right: 70%;
+    }
+    .manual {      
+      .transition(width 1s linear 0s);
+      display: block;
+      position: fixed;
+      z-index: 999;
+      min-height: 100%;
+      max-width: 960px;
+      min-width: 400px;      
+      .box-sizing(border-box);
+      padding: 0 100px;
+      @media (max-width: 768px) { 
+         padding: 0 12px;
+        }
+      overflow: auto;
+      width: 70%;
+      top: 0;
+      right: 0;
+      background-color: #1B1E23;
+
+      @media (max-width: 800px) {
+        width: 100%;
+      }
+
+      > div {      
+        /* prism twilight theme */
+          @import '../prism/themes/twilight.less';
+        /*end prism*/  
+          
+        .font(14px);
+        overflow: visible;
+        letter-spacing: normal;
+        position: absolute;
+        padding: 120px 0;
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        width: auto;
+        background-color: transparent;
+        * {
+          text-align: left;
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+        .back-button {
+          float: left;
+          display: inline-block;
+          background-color: transparent;
+          border-top: 2px @asbestos solid;
+          border-bottom: 0 none;
+          border-left: 2px @asbestos solid;
+          .transform(rotate(-45deg));
+          border-right: 0 none;
+          font-weight: 100;
+          height: 56px;
+          width: 56px;
+        }
+
+        .content-man {
+          float: right;
+          max-width: 76%;
+          
+          display: inline-block;
+          margin-left: 25px;
+          margin-top: -25px;
+          padding-left: 25px;
+          h1 {
+            .font(34px, white);
+            display: inline-block;
+            margin-bottom: 40px;            
+          }
+          h3 {
+            .font(25px, white);
+            margin-bottom: 40px;
+            margin-top: 40px;                   
+          }
+          p {
+            .font(16px, @asbestos);
+            padding-right: 20px;
+          }
+          > ol {
+            counter-reset: li;
+            list-style: none;
+            margin: 0;
+            > li {
+              position: relative;
+
+              &:before {
+                background: none repeat scroll 0 0 #BDC3C7;
+                .border-radius(100%);
+                color: #1B1E23;
+                content: counter(li, decimal);
+                counter-increment: li;
+                display: inline-block;
+                float: left;
+                font-family: @h-font-family;
+                font-weight: bold;
+                margin: 0 25px 0 -50px;
+                padding: 3px 9px;
+                text-align: center;
+              }
+            }
+          }
+
+         /*
+          .snippet-container {
+                     * {
+                       line-height: 1;
+                     }
+                     display: block;
+                     margin: 20px 0;
+                     .border-radius(0);
+                     border: 0 none;
+                     background-color: #000000;
+                     .font(14px, @asbestos);
+                     width: 95%;
+                     height: auto;
+                     max-height: 300px;
+                     overflow: auto;
+                   }*/
+         
+
+          strong {
+            color: gold;
+            font-weight: normal;
+          }
+          a {
+            color: gold;
+            font-weight: normal;
+            text-decoration: underline;
+            &:hover {
+              color: gold;
+              text-decoration: none;
+            }
+          }
+          hr {
+            color: #000000;
+            border-top: 1px solid #000000;
+            border-bottom: 1px solid black;
+            margin: 40px 0;
+          }
+        }
+        small {
+          color: white;
+          display: block;
+        }
+
+      }
+    }
+  }
+}

@@ -9,7 +9,7 @@
             Standard state –you can see now in the documentation.
             Second state – fixed-top state and you can see it for this block in the sample.
             Now the navigation bar is hidden, but you can activate it. For this you should remove class ".hidden" from this
-            <code>
+            <code class="language-markup">
                 &lt;header class="header-17 hidden"&gt;</code>
             .
         </p>
@@ -25,9 +25,9 @@
         <p>
             For using this block you should only paste next rows of code into your html file:
         </p>
-        <pre class="htmlCode">
+        <pre class=" language-markup"><code class=" language-markup">
 include "../../../ui-kit-header/for-tpl/header-17.html" 
-</pre>        
+</code></pre>         
 
        
  <h4>"LESS" version:</h4>
@@ -38,37 +38,37 @@ include "../../../ui-kit-header/for-tpl/header-17.html"
             you should paste same code (as in <a href="#h17-simple" class="inner-link">simple version</a>) and paste next code into your '<strong>.less</strong>' file after that
             rows that you already had to paste.
         </p>
-        <pre class="cssCode">
+        <pre class="language-scss"><code class="language-scss">
 @import '../../ui-kit-header/less/header-17.less';
-</pre>
+</code></pre> 
         <h4>All versions:</h4>
         <p>
             So about modifications which you can do.
         </p>
         <p>
             This block, as many others header blocks in our framework, has special place for background image.
-            The place for background image - <code>
+            The place for background image - <code class="language-markup">
                 &lt;div class=”background”&gt;...&lt;/div&gt;</code>
             For add your image as background you should add CSS rulers for this element. And you can manage opacity of this element. For example as this:
         </p>
-        <pre class="cssCode">
+        <pre class="language-scss"><code class="language-scss">
 .background {
     background-image:url(‘your image url’);
     opacity: opacity value;
 }
-</pre>
+</code></pre> 
         <p>
             In ‘Less’ version for opacity property you can use cross browser function:
         </p>
-        <pre class="cssCode">
+        <pre class="language-scss"><code class="language-scss">
 .opacity(value from 0 to 100);
-</pre>
+</code></pre> 
         <p>
             This block has content which you can replace to yours.
-            To make this you should replace content between tags <code>
+            To make this you should replace content between tags <code class="language-markup">
                 &lt;div class="hero-unit"&gt;...&lt;/div&gt;</code>
             .
-            And yet this block has a carousel. For replace content for its slaides please replae it between next tags <code>
+            And yet this block has a carousel. For replace content for its slaides please replae it between next tags <code class="language-markup">
                 &lt;div class=”pt-page”&gt; ... &lt;/div&gt;</code>
             .
         </p>

@@ -27,7 +27,8 @@
   border-bottom-color: #34495e !important;
   border-top-color: #34495e !important;
 }
-/*only fo flat-ui free*/body {
+/*only fo flat-ui free*/
+body {
   color: #34495e;
   font-family: "Lato", sans-serif;
   font-size: 14px;
@@ -15762,32 +15763,226 @@ section * {
     margin-top: 9px;
   }
 }
-.main-page .row {
+.manual-pages {
+  /* prism default theme */
+
+  /**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+  /* Code blocks */
+
+  /* Inline code */
+
+  /*end prism*/
+}
+.manual-pages code[class*="language-"],
+.manual-pages pre[class*="language-"] {
+  color: black;
+  text-shadow: 0 1px white;
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+.manual-pages pre[class*="language-"]::-moz-selection,
+.manual-pages pre[class*="language-"] ::-moz-selection,
+.manual-pages code[class*="language-"]::-moz-selection,
+.manual-pages code[class*="language-"] ::-moz-selection {
+  text-shadow: none;
+  background: #b3d4fc;
+}
+.manual-pages pre[class*="language-"]::selection,
+.manual-pages pre[class*="language-"] ::selection,
+.manual-pages code[class*="language-"]::selection,
+.manual-pages code[class*="language-"] ::selection {
+  text-shadow: none;
+  background: #b3d4fc;
+}
+@media print {
+  .manual-pages code[class*="language-"],
+  .manual-pages pre[class*="language-"] {
+    text-shadow: none;
+  }
+}
+.manual-pages pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+}
+.manual-pages :not(pre) > code[class*="language-"],
+.manual-pages pre[class*="language-"] {
+  background: #f5f2f0;
+}
+.manual-pages :not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+}
+.manual-pages .token.comment,
+.manual-pages .token.prolog,
+.manual-pages .token.doctype,
+.manual-pages .token.cdata {
+  color: slategray;
+}
+.manual-pages .token.punctuation {
+  color: #999;
+}
+.manual-pages .namespace {
+  opacity: .7;
+}
+.manual-pages .token.property,
+.manual-pages .token.tag,
+.manual-pages .token.boolean,
+.manual-pages .token.number,
+.manual-pages .token.constant,
+.manual-pages .token.symbol {
+  color: #905;
+}
+.manual-pages .token.selector,
+.manual-pages .token.attr-name,
+.manual-pages .token.string,
+.manual-pages .token.builtin {
+  color: #690;
+}
+.manual-pages .token.operator,
+.manual-pages .token.entity,
+.manual-pages .token.url,
+.manual-pages .language-css .token.string,
+.manual-pages .style .token.string,
+.manual-pages .token.variable {
+  color: #a67f59;
+  background: rgba(255, 255, 255, 0.5);
+}
+.manual-pages .token.atrule,
+.manual-pages .token.attr-value,
+.manual-pages .token.keyword {
+  color: #07a;
+}
+.manual-pages .token.regex,
+.manual-pages .token.important {
+  color: #e90;
+}
+.manual-pages .token.important {
+  font-weight: bold;
+}
+.manual-pages .token.entity {
+  cursor: help;
+}
+.manual-pages pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+.manual-pages .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  /* Same as .prism’s padding-top */
+
+  background: rgba(153, 122, 102, 0.08);
+  background: -moz-linear-gradient(left, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
+  background: -webkit-linear-gradient(left, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
+  background: -o-linear-gradient(left, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
+  background: linear-gradient(left, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+.manual-pages .line-highlight:before,
+.manual-pages .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: rgba(153, 122, 102, 0.4);
+  color: #f5f2f0;
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+.manual-pages .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}
+.manual-pages pre.line-numbers {
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber;
+}
+.manual-pages pre.line-numbers > code {
+  position: relative;
+}
+.manual-pages .line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -3.8em;
+  width: 3em;
+  /* works for line-numbers below 1000 lines */
+
+  letter-spacing: -1px;
+  border-right: 1px solid #999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.manual-pages .line-numbers-rows > span {
+  pointer-events: none;
+  display: block;
+  counter-increment: linenumber;
+}
+.manual-pages .line-numbers-rows > span:before {
+  content: counter(linenumber);
+  color: #999;
+  display: block;
+  padding-right: 0.8em;
+  text-align: right;
+}
+.manual-pages .row {
   padding: 0 20px;
 }
-.main-page.css-classes table {
+.manual-pages.css-classes table {
   width: 100%;
   border: 1px solid black;
 }
-.main-page.css-classes table td {
+.manual-pages.css-classes table td {
   border: 1px solid black;
   height: 100px;
   text-align: center;
 }
-.main-page.css-classes table td p {
+.manual-pages.css-classes table td p {
   font-size: 11px;
   font-weight: normal;
   color: #ffffff;
   background-color: black;
   border: 1px solid white;
 }
-.main-page.css-classes table.less-prop th {
+.manual-pages.css-classes table.less-prop th {
   font-size: 16px;
   font-weight: normal;
   color: #000000;
   font-weight: bold;
 }
-.main-page.css-classes table.less-prop td {
+.manual-pages.css-classes table.less-prop td {
   padding: 5px;
   border: 1px solid black;
   height: auto;
@@ -15796,18 +15991,18 @@ section * {
   font-weight: normal;
   color: #7f8c8d;
 }
-.main-page.css-classes table.less-prop td:first-child {
+.manual-pages.css-classes table.less-prop td:first-child {
   word-break: keep-all;
   color: #2c3e50;
   font-weight: bold;
 }
-.main-page.css-classes table.less-prop td p {
+.manual-pages.css-classes table.less-prop td p {
   font-size: 14px;
   font-weight: normal;
   color: #7f8c8d;
   background-color: white;
 }
-.main-page .container {
+.manual-pages .container {
   background-color: #ffffef;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -15817,10 +16012,10 @@ section * {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-.main-page .container .snippet-menu {
+.manual-pages .container .snippet-menu {
   z-index: 100;
 }
-.main-page .container h1 {
+.manual-pages .container h1 {
   margin-bottom: 20px;
   margin-top: 20px;
   font-size: 35px;
@@ -15828,7 +16023,7 @@ section * {
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.main-page .container h3 {
+.manual-pages .container h3 {
   margin-bottom: 20px;
   margin-top: 40px;
   font-size: 30px;
@@ -15837,7 +16032,7 @@ section * {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
-.main-page .container h4 {
+.manual-pages .container h4 {
   margin-bottom: 20px;
   margin-top: 40px;
   font-size: 25px;
@@ -15846,12 +16041,12 @@ section * {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
-.main-page .container p {
+.manual-pages .container p {
   font-size: 16px;
   font-weight: normal;
   color: #7f8c8d;
 }
-.main-page .container small {
+.manual-pages .container small {
   font-size: 14px;
   font-weight: normal;
   color: #bdc3c7;
@@ -15860,26 +16055,26 @@ section * {
   line-height: 10px;
   margin-bottom: 20px;
 }
-.main-page .container a {
+.manual-pages .container a {
   border-bottom: 1px dotted;
   color: #3498db;
 }
-.main-page .container a:hover,
-.main-page .container a:focus,
-.main-page .container a.active {
+.manual-pages .container a:hover,
+.manual-pages .container a:focus,
+.manual-pages .container a.active {
   color: #34495e;
 }
-.main-page .container ol {
+.manual-pages .container ol {
   counter-reset: li;
   list-style: none;
   margin: 0;
 }
-.main-page .container ol > li.step-desc {
+.manual-pages .container ol > li.step-desc {
   position: relative;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.main-page .container ol > li.step-desc:before {
+.manual-pages .container ol > li.step-desc:before {
   background: none repeat scroll 0 0 #BDC3C7;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
@@ -16123,7 +16318,7 @@ section * {
 }
 .dockbar .sub-menu {
   display: block;
-  background-color: #f4f2d4;
+  background-color: #ebebeb;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -16147,7 +16342,7 @@ section * {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: normal;
-  color: #9f9d84;
+  color: #1b1f23;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
 }
@@ -16171,7 +16366,7 @@ section * {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   text-decoration: underline;
-  color: #9f9d84;
+  color: #797b7d;
 }
 .dockbar .sub-menu dl dd a:hover,
 .dockbar .sub-menu dl dd a:focus,
@@ -16184,19 +16379,21 @@ section * {
 .dockbar .sub-menu dl dd a.active {
   text-decoration: none;
   color: #1b1f23;
-}
-.dockbar .sub-menu dl dd a.active:after {
-  color: #F4F2D4;
-  content: "▼";
-  display: block;
-  font-size: 25px;
-  font-weight: bolder;
-  line-height: 0;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  text-align: center;
-  width: 100%;
+  /*
+            &:after{
+                          color: #F4F2D4;
+                          content: "в–ј";
+                          display: block;
+                          font-size: 25px;
+                          font-weight: bolder;
+                          line-height: 0;
+                          margin: 0;
+                          padding: 0;
+                          position: absolute;
+                          text-align: center;
+                          width: 100%;
+                        }*/
+
 }
 body {
   margin-top: 110px;
@@ -16210,6 +16407,140 @@ a {
 }
 a.active {
   cursor: default;
+}
+.read-man {
+  margin-top: 24px;
+  position: absolute;
+  right: 24px;
+  z-index: 901;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 49px;
+  width: 49px;
+  border: 3px solid #f5f5f5;
+  font-size: 20px;
+  font-weight: normal;
+  color: #ffffff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  background-color: #2d353d;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+.read-man.small {
+  margin-top: 0;
+}
+.read-man:hover {
+  background-color: #23292f;
+}
+@media (max-width: 768px) {
+  .read-man {
+    margin-top: -42px;
+  }
+}
+.mask {
+  display: none;
+}
+.mask.active {
+  display: block;
+  background-color: #1b1f23;
+  background-size: auto;
+  position: absolute;
+  z-index: 900;
+  width: 100%;
+  text-align: center;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  opacity: 0.97;
+  filter: alpha(opacity=97);
+}
+.mask.active.big .container {
+  display: table;
+  height: 100%;
+}
+.mask.active.big .container > * {
+  vertical-align: top;
+  padding-top: 300px;
+}
+.mask.active.small .container {
+  display: table;
+  height: 100%;
+}
+.mask.active.small .container > * {
+  vertical-align: top;
+  padding-top: 10px;
+}
+.mask.active .container {
+  display: table;
+  height: 100%;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.mask.active .container > * {
+  vertical-align: middle;
+}
+.mask.active .hover-text {
+  display: table-cell;
+  background-color: transparent;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
+}
+.mask.active .hover-text .hu-border {
+  height: 78px;
+  width: 406px;
+  border: 3px solid white;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.mask.active .hover-text span {
+  font-size: 27px;
+  font-weight: normal;
+  color: #ffffff;
+  font-weight: 800;
+  display: inline-block;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
+  width: 78px;
+  border-right: 3px solid white;
+  position: relative;
+  float: left;
+  text-align: center;
+  padding: 22px 0;
+}
+.mask.active .hover-text h1 {
+  font-size: 18px;
+  font-weight: normal;
+  color: #ffffff;
+  font-weight: 800;
+  display: inline-block;
+  margin: 0;
+  padding: 27px 0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
+  width: 322px;
+  position: relative;
+  float: right;
 }
 .manual {
   width: 0;
@@ -16283,6 +16614,25 @@ a.active {
   }
 }
 .read-manual .mcontent .manual > div {
+  /* prism twilight theme */
+
+  /**
+ * prism.js Twilight theme
+ * Based (more or less) on the Twilight theme originally of Textmate fame.
+ * @author Remy Bach
+ */
+
+  /* Code blocks */
+
+  /* Text Selection colour */
+
+  /* Inline code */
+
+  /* Markup */
+
+  /* Make the tokens sit above the line highlight so the colours don't look faded. */
+
+  /*end prism*/
   font-size: 14px;
   font-weight: normal;
   color: #7f8c8d;
@@ -16296,6 +16646,294 @@ a.active {
   bottom: auto;
   width: auto;
   background-color: transparent;
+}
+.read-manual .mcontent .manual > div code[class*="language-"],
+.read-manual .mcontent .manual > div pre[class*="language-"] {
+  color: white;
+  direction: ltr;
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  text-align: left;
+  text-shadow: 0 -0.1em 0.2em #000000;
+  white-space: pre;
+  word-spacing: normal;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+.read-manual .mcontent .manual > div pre[class*="language-"],
+.read-manual .mcontent .manual > div :not(pre) > code[class*="language-"] {
+  background: #141414;
+  /* #141414 */
+
+}
+.read-manual .mcontent .manual > div pre[class*="language-"] {
+  border-radius: .5em;
+  border: 0.3em solid #545454;
+  /* #282A2B */
+
+  box-shadow: 1px 1px .5em black inset;
+  margin: .5em 0;
+  overflow: auto;
+  padding: 1em;
+}
+.read-manual .mcontent .manual > div pre[class*="language-"]::selection {
+  /* Safari */
+
+  background: #27292a;
+  /* #282A2B */
+
+}
+.read-manual .mcontent .manual > div pre[class*="language-"]::selection {
+  /* Firefox */
+
+  background: #27292a;
+  /* #282A2B */
+
+}
+.read-manual .mcontent .manual > div pre[class*="language-"]::-moz-selection,
+.read-manual .mcontent .manual > div pre[class*="language-"] ::-moz-selection,
+.read-manual .mcontent .manual > div code[class*="language-"]::-moz-selection,
+.read-manual .mcontent .manual > div code[class*="language-"] ::-moz-selection {
+  text-shadow: none;
+  background: rgba(237, 237, 237, 0.15);
+  /* #EDEDED */
+
+}
+.read-manual .mcontent .manual > div pre[class*="language-"]::selection,
+.read-manual .mcontent .manual > div pre[class*="language-"] ::selection,
+.read-manual .mcontent .manual > div code[class*="language-"]::selection,
+.read-manual .mcontent .manual > div code[class*="language-"] ::selection {
+  text-shadow: none;
+  background: rgba(237, 237, 237, 0.15);
+  /* #EDEDED */
+
+}
+.read-manual .mcontent .manual > div :not(pre) > code[class*="language-"] {
+  border-radius: .3em;
+  border: 0.13em solid #545454;
+  /* #545454 */
+
+  box-shadow: 1px 1px 0.3em -0.1em #000000 inset;
+  padding: .15em .2em .05em;
+}
+.read-manual .mcontent .manual > div .token.comment,
+.read-manual .mcontent .manual > div .token.prolog,
+.read-manual .mcontent .manual > div .token.doctype,
+.read-manual .mcontent .manual > div .token.cdata {
+  color: #787878;
+  /* #777777 */
+
+}
+.read-manual .mcontent .manual > div .token.punctuation {
+  opacity: .7;
+}
+.read-manual .mcontent .manual > div .namespace {
+  opacity: .7;
+}
+.read-manual .mcontent .manual > div .token.tag,
+.read-manual .mcontent .manual > div .token.boolean,
+.read-manual .mcontent .manual > div .token.number {
+  color: #cf694a;
+  /* #CF6A4C */
+
+}
+.read-manual .mcontent .manual > div .token.keyword,
+.read-manual .mcontent .manual > div .token.property,
+.read-manual .mcontent .manual > div .token.selector,
+.read-manual .mcontent .manual > div .token.constant,
+.read-manual .mcontent .manual > div .token.symbol,
+.read-manual .mcontent .manual > div .token.builtin {
+  color: #f9ee9a;
+  /* #F9EE98 */
+
+}
+.read-manual .mcontent .manual > div .token.attr-name,
+.read-manual .mcontent .manual > div .token.attr-value,
+.read-manual .mcontent .manual > div .token.string,
+.read-manual .mcontent .manual > div .token.operator,
+.read-manual .mcontent .manual > div .token.entity,
+.read-manual .mcontent .manual > div .token.url,
+.read-manual .mcontent .manual > div .language-css .token.string,
+.read-manual .mcontent .manual > div .style .token.string,
+.read-manual .mcontent .manual > div .token.variable {
+  color: #919e6b;
+  /* #8F9D6A */
+
+}
+.read-manual .mcontent .manual > div .token.atrule {
+  color: #7386a5;
+  /* #7587A6 */
+
+}
+.read-manual .mcontent .manual > div .token.regex,
+.read-manual .mcontent .manual > div .token.important {
+  color: #e9c163;
+  /* #E9C062 */
+
+}
+.read-manual .mcontent .manual > div .token.important {
+  font-weight: bold;
+}
+.read-manual .mcontent .manual > div .token.entity {
+  cursor: help;
+}
+.read-manual .mcontent .manual > div pre[data-line] {
+  padding: 1em 0 1em 3em;
+  position: relative;
+}
+.read-manual .mcontent .manual > div .language-markup .token.tag,
+.read-manual .mcontent .manual > div .language-markup .token.attr-name,
+.read-manual .mcontent .manual > div .language-markup .token.punctuation {
+  color: #ad895c;
+  /* #AC885B */
+
+}
+.read-manual .mcontent .manual > div .token {
+  position: relative;
+  z-index: 1;
+}
+.read-manual .mcontent .manual > div .line-highlight {
+  background: -moz-linear-gradient(left, rgba(84, 84, 84, 0.1) 70%, rgba(84, 84, 84, 0));
+  /* #545454 */
+
+  background: -o-linear-gradient(left, rgba(84, 84, 84, 0.1) 70%, rgba(84, 84, 84, 0));
+  /* #545454 */
+
+  background: -webkit-linear-gradient(left, rgba(84, 84, 84, 0.1) 70%, rgba(84, 84, 84, 0));
+  /* #545454 */
+
+  background: rgba(84, 84, 84, 0.25);
+  /* #545454 */
+
+  background: linear-gradient(left, rgba(84, 84, 84, 0.1) 70%, rgba(84, 84, 84, 0));
+  /* #545454 */
+
+  border-bottom: 1px dashed #545454;
+  /* #545454 */
+
+  border-top: 1px dashed #545454;
+  /* #545454 */
+
+  left: 0;
+  line-height: inherit;
+  margin-top: 0.75em;
+  /* Same as .prism’s padding-top */
+
+  padding: inherit 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  white-space: pre;
+  z-index: 0;
+}
+.read-manual .mcontent .manual > div .line-highlight:before,
+.read-manual .mcontent .manual > div .line-highlight[data-end]:after {
+  background-color: #8794a6;
+  /* #8794A6 */
+
+  border-radius: 999px;
+  box-shadow: 0 1px white;
+  color: #f5f2f0;
+  /* #F5F2F0 */
+
+  content: attr(data-start);
+  font: bold 65%/1.5 sans-serif;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  position: absolute;
+  text-align: center;
+  text-shadow: none;
+  top: .4em;
+  vertical-align: .3em;
+}
+.read-manual .mcontent .manual > div .line-highlight[data-end]:after {
+  bottom: .4em;
+  content: attr(data-end);
+  top: auto;
+}
+.read-manual .mcontent .manual > div pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+.read-manual .mcontent .manual > div .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  /* Same as .prism’s padding-top */
+
+  background: rgba(153, 122, 102, 0.08);
+  background: -moz-linear-gradient(left, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
+  background: -webkit-linear-gradient(left, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
+  background: -o-linear-gradient(left, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
+  background: linear-gradient(left, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+.read-manual .mcontent .manual > div .line-highlight:before,
+.read-manual .mcontent .manual > div .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: rgba(153, 122, 102, 0.4);
+  color: #f5f2f0;
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+.read-manual .mcontent .manual > div .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}
+.read-manual .mcontent .manual > div pre.line-numbers {
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber;
+}
+.read-manual .mcontent .manual > div pre.line-numbers > code {
+  position: relative;
+}
+.read-manual .mcontent .manual > div .line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -3.8em;
+  width: 3em;
+  /* works for line-numbers below 1000 lines */
+
+  letter-spacing: -1px;
+  border-right: 1px solid #999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.read-manual .mcontent .manual > div .line-numbers-rows > span {
+  pointer-events: none;
+  display: block;
+  counter-increment: linenumber;
+}
+.read-manual .mcontent .manual > div .line-numbers-rows > span:before {
+  content: counter(linenumber);
+  color: #999;
+  display: block;
+  padding-right: 0.8em;
+  text-align: right;
 }
 .read-manual .mcontent .manual > div * {
   text-align: left;
@@ -16412,79 +17050,4 @@ a.active {
 .read-manual .mcontent .manual > div small {
   color: white;
   display: block;
-}
-.read-man {
-  margin-top: 20px;
-  position: absolute;
-  right: 20px;
-  z-index: 901;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  border-radius: 100%;
-  height: 40px;
-  width: 40px;
-  border: 1px solid black;
-  font-size: 30px;
-  font-weight: normal;
-  color: #ffffff;
-}
-.read-man:hover {
-  border-color: white;
-}
-@media (max-width: 768px) {
-  .read-man {
-    margin-top: -42px;
-  }
-}
-.mask {
-  display: none;
-}
-.mask.active {
-  display: block;
-  background-color: #1B1E23;
-  background-size: auto;
-  position: absolute;
-  z-index: 900;
-  width: 100%;
-  text-align: center;
-  top: auto;
-  bottom: auto;
-  left: auto;
-  right: auto;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-  opacity: 0.8;
-  filter: alpha(opacity=80);
-}
-.mask.active.big .container {
-  display: table;
-  height: 100%;
-}
-.mask.active.big .container > * {
-  vertical-align: top;
-  padding-top: 300px;
-}
-.mask.active .container {
-  display: table;
-  height: 100%;
-}
-.mask.active .container > * {
-  vertical-align: middle;
-}
-.mask.active .hero-unit {
-  display: table-cell;
-  background-color: transparent;
-  padding: 0;
-  margin: 0 auto;
-}
-.mask.active .hero-unit.hero-unit-bordered h1 {
-  font-size: 22px;
-  font-weight: normal;
-  color: #ffffff;
-  font-weight: bold;
-  border: 8px solid white;
-  display: inline-block;
-  margin: 0;
-  padding: 10px 20px;
 }

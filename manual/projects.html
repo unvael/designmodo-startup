@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="../common-files/css/icon-font.css">
 <!-- end -->          
 <link rel="stylesheet" href="../common-files/css/animations.css">
-<link rel="stylesheet" href="css/jquery.snippet.min.css" />
+
 <link rel="stylesheet" href="css/style.css">
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
@@ -73,13 +73,13 @@
 <div class="mcontent">
 <!-- demo sections-->
 <!-- projects-1 -->
-<button class="btn-inverse read-man" id="projects-1">
+<button class="read-man" id="projects-1">
     ?
 </button>
 <div class="projects-1 mask">
     <div class="container">
-        <div class="hero-unit hero-unit-bordered">
-            <h1>HOW TO USE</h1>
+        <div class="hover-text">
+            <div class="hu-border"><span>?</span><h1>HOW TO USE THIS BLOCK</h1></div>
         </div>
     </div>
 </div>
@@ -175,13 +175,13 @@
 </div>
 
 <!-- projects-2 -->
-<button class="btn-inverse read-man" id="projects-2">
+<button class="read-man" id="projects-2">
     ?
 </button>
 <div class="projects-2 mask">
     <div class="container">
-        <div class="hero-unit hero-unit-bordered">
-            <h1>HOW TO USE</h1>
+        <div class="hover-text">
+            <div class="hu-border"><span>?</span><h1>HOW TO USE THIS BLOCK</h1></div>
         </div>
     </div>
 </div>
@@ -224,13 +224,13 @@
     &nbsp;
 </div>
 <!-- projects-3 -->
-<button class="btn-inverse read-man" id="projects-3">
+<button class="read-man" id="projects-3">
     ?
 </button>
 <div class="projects-3 mask">
     <div class="container">
-        <div class="hero-unit hero-unit-bordered">
-            <h1>HOW TO USE</h1>
+        <div class="hover-text">
+            <div class="hu-border"><span>?</span><h1>HOW TO USE THIS BLOCK</h1></div>
         </div>
     </div>
 </div>
@@ -301,13 +301,13 @@
     &nbsp;
 </div>
 <!-- projects-4 -->
-<button class="btn-inverse read-man" id="projects-4">
+<button class="read-man" id="projects-4">
     ?
 </button>
 <div class="projects-4 mask">
     <div class="container">
-        <div class="hero-unit hero-unit-bordered">
-            <h1>HOW TO USE</h1>
+        <div class="hover-text">
+            <div class="hu-border"><span>?</span><h1>HOW TO USE THIS BLOCK</h1></div>
         </div>
     </div>
 </div>
@@ -403,7 +403,7 @@
         <p>
             For using this block you should only paste next rows of code into your html file:
         </p>
-        <pre class="htmlCode">
+        <pre class=" language-markup"><code class=" language-markup">
 <section class="projects-1">
     <div class="container">
         <div class="title">
@@ -491,7 +491,7 @@
         </div>
     </div><!--/.container-->
 </section>
-</pre>        
+</code></pre>         
 
         
  <h4>"LESS" version:</h4>
@@ -502,9 +502,9 @@
             you should paste same code (as in <a href="#p1-simple" class="inner-link">simple version</a>) and paste next code into your '<strong>.less</strong>' file after that
             rows that you already had to paste.
         </p>
-        <pre class="cssCode">
+        <pre class="language-scss"><code class="language-scss">
 @import '../../ui-kit-projects/less/project-1.less';
-</pre>
+</code></pre> 
         <h4>All versions:</h4>
         <p>
             So about modifications which you can do.
@@ -513,7 +513,7 @@
             This block has navigation on top of it, area with logo and slogon (you can use it as banner)
             and block with three columns that consits special blocks for demonstrating your projects.
             You can modificate anyone of it, but you should remember that you can't reorganize the html structure if you want to leave functionality of this block as it exist now.
-            For add images into project boxes you should insert your image between <code>
+            For add images into project boxes you should insert your image between <code class="language-markup">
                 &lt;div class="photo"&gt;...&lt;/div&gt;</code>
             .
         </p>
@@ -546,7 +546,7 @@
         <p>
             For using this block you should only paste next rows of code into your html file:
         </p>
-        <pre class="htmlCode">
+        <pre class=" language-markup"><code class=" language-markup">
 <section class="projects-2">
     <div class="project-1 v-center">
         <div>
@@ -582,7 +582,7 @@
         </div><!--/v-center-->
     </div>
 </section>
-</pre>        
+</code></pre>         
 
         
  <h4>"LESS" version:</h4>
@@ -593,9 +593,9 @@
             you should paste same code (as in <a href="#p2-simple" class="inner-link">simple version</a>) and paste next code into your '<strong>.less</strong>' file after that
             rows that you already had to paste.
         </p>
-        <pre class="cssCode">
+        <pre class="language-scss"><code class="language-scss">
 @import '../../ui-kit-projects/less/project-2.less';
-</pre>
+</code></pre> 
         <h4>All versions:</h4>
         <p>
             So about modifications which you can do.
@@ -604,11 +604,11 @@
             This block is very simple.
             You can replace all texts and images.
             For change backgrounds, please use the css. For example you can change background like this:
-            <pre class="cssCode">
+            <pre class="language-scss"><code class="language-scss">
 .project-2 {
     background-image: url("your image");
 }
-</pre>               
+</code></pre>                
    
 
     </li>
@@ -650,7 +650,7 @@
         <p>
             For using this block you should only paste next rows of code into your html file:
         </p>
-        <pre class="htmlCode">
+        <pre class=" language-markup"><code class=" language-markup">
 <section class="projects-3">
     <div class="container">
         <h3>We love what we do.
@@ -714,7 +714,7 @@
         </div>
     </div><!--/.container-->
 </section>
-</pre>        
+</code></pre>         
 
         
  <h4>"LESS" version:</h4>
@@ -725,9 +725,9 @@
             you should paste same code (as in <a href="#p3-simple" class="inner-link">simple version</a>) and paste next code into your '<strong>.less</strong>' file after that
             rows that you already had to paste.
         </p>
-        <pre class="cssCode">
+        <pre class="language-scss"><code class="language-scss">
 @import '../../ui-kit-projects/less/project-3.less';
-</pre>
+</code></pre> 
         <h4>All versions:</h4>
         <p>
             So about modifications which you can do.
@@ -735,7 +735,7 @@
         <p>
             This block has slogon on top of it and block with three columns that consits special blocks for demonstrating your projects.
             You can modificate anyone of it, but you should remember that you can't reorganize the html structure if you want to leave functionality of this block as it exist now.
-            For add images into project boxes you should insert your image between <code>
+            For add images into project boxes you should insert your image between <code class="language-markup">
                 &lt;div class="photo"&gt;...&lt;/div&gt;</code>
             .
         </p>
@@ -778,7 +778,7 @@
         <p>
             For using this block you should only paste next rows of code into your html file:
         </p>
-        <pre class="htmlCode">
+        <pre class=" language-markup"><code class=" language-markup">
 <section class="projects-4">
     <div class="container">
         <h3>We love what we do.
@@ -840,7 +840,7 @@
         </div>
     </div><!--/.container-->
 </section>
-</pre>        
+</code></pre>         
 
         
  <h4>"LESS" version:</h4>
@@ -851,9 +851,9 @@
             you should paste same code (as in <a href="#p4-simple" class="inner-link">simple version</a>) and paste next code into your '<strong>.less</strong>' file after that
             rows that you already had to paste.
         </p>
-        <pre class="cssCode">
+        <pre class="language-scss"><code class="language-scss">
 @import '../../ui-kit-projects/less/project-4.less';
-</pre>
+</code></pre> 
         <h4>All versions:</h4>
         <p>
             So about modifications which you can do.
@@ -861,7 +861,7 @@
         <p>
             This block has slogon on top of it and block with three columns that consits special blocks for demonstrating your projects.
             You can modificate anyone of it, but you should remember that you can't reorganize the html structure if you want to leave functionality of this block as it exist now.
-            For add images into project boxes you should insert your image between <code>
+            For add images into project boxes you should insert your image between <code class="language-markup">
                 &lt;div class="photo"&gt;...&lt;/div&gt;</code>
             .
         </p>
@@ -885,7 +885,7 @@
 <script src="../common-files/js/jquery.svg.js"></script>
 <script src="../common-files/js/jquery.svganim.js"></script>
 <script src="../common-files/js/startup-kit.min.js"></script>      
-<script src="js/jquery.snippet.min.js"></script>
+<script src="prism/prism.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>   

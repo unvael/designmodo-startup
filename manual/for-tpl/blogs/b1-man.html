@@ -17,13 +17,13 @@
             that you had to read on the <a href="how_to_install.html">how to install</a> page
             of this documentation please make it first</small>
         <p>
-            you only need paste next rows between <code>
+            you only need paste next rows between <code class="language-markup">
                 &lt;body&gt;  ...  &lt;/body&gt;</code>
             into your html file.
         </p>
-        <pre class="htmlCode">
+        <pre class=" language-markup"><code class=" language-markup">
 include "../../../ui-kit-blog/for-tpl/blog-1.html" 
-</pre>        
+</code></pre>         
 
       
  <h4>"LESS" version:</h4>
@@ -34,10 +34,10 @@ include "../../../ui-kit-blog/for-tpl/blog-1.html"
             you should paste same code (as in <a href="#b1-simple" class="inner-link">simple version</a>) and paste next code into your '<strong>.less</strong>' file after that
             rows that you already had to paste.
         </p>
-        <pre class="cssCode">
+        <pre class="language-scss"><code class="language-scss">
 @import 'blog-common.less';   
 @import 'blog-1.less';
-</pre>
+</code></pre> 
         <h4>All versions:</h4>
         <p>
             So about modifications which you can do.
@@ -47,30 +47,30 @@ include "../../../ui-kit-blog/for-tpl/blog-1.html"
             <big><strong>Carousel</strong></big>
         </p>
         <p>
-            As you can see in code we have block <code>
+            As you can see in code we have block <code class="language-markup">
                 &lt;div id="b1-pt-1"&gt;...&lt;/div&gt;</code>
             - it's main block of the carousel.
-            In this block situated few pages <code>
+            In this block situated few pages <code class="language-markup">
                 &lt;div class="pt-page"&gt;...&lt;/div&gt;</code>
             For thouse elements you can change background, and you can do it in few ways. First way - you can change the part of class that start with
             <strong>bg-</strong> for this element. This way you can use reserved classes from Flat-UI, but it changed only color of carousels page background.
             Or second way - you can use css for change background for concrete element.
-            As example for <code>
+            As example for <code class="language-markup">
                 &lt;div class="pt-page-1"&gt;...&lt;/div&gt;</code>
             . You can do something like this:
         </p>
-        <pre class="cssCode">
+        <pre class="language-scss"><code class="language-scss">
 .pt-page-1{
     background-image:url('some image url');
     background-color: some color;
 }
-</pre>
+</code></pre> 
         <p>
-            You can change text for any of this carousel pages. For this you should change text in block <code>
+            You can change text for any of this carousel pages. For this you should change text in block <code class="language-markup">
                 &lt;div class="hero-unit"&gt;...&lt;/div&gt;</code>
         </p>
         <p>
-            And you can add new pages. For this you should copy one of blocks <code>
+            And you can add new pages. For this you should copy one of blocks <code class="language-markup">
                 &lt;div class="pt-page"&gt;...&lt;/div&gt;</code>
             ,
             replace class as <strong>pt-page-1</strong> to new class.

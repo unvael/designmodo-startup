@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="../common-files/css/icon-font.css">
 <!-- end -->          
 <link rel="stylesheet" href="../common-files/css/animations.css">
-<link rel="stylesheet" href="css/jquery.snippet.min.css" />
+
 <link rel="stylesheet" href="css/style.css">
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
@@ -73,13 +73,13 @@
 <div class="mcontent">
 <!-- demo sections-->
 <!-- blog-1 -->
-<button class="btn-inverse read-man" id="blog-1">
+<button class="read-man" id="blog-1">
     ?
 </button>
 <div class="blog-1 mask">
     <div class="container">
-        <div class="hero-unit hero-unit-bordered">
-            <h1>HOW TO USE</h1>
+        <div class="hover-text">
+              <div class="hu-border"><span>?</span><h1>HOW TO USE THIS BLOCK</h1></div>
         </div>
     </div>
 </div>
@@ -198,13 +198,13 @@
 </div>
 
 <!-- blog-2 -->
-<button class="btn-inverse read-man" id="blog-2">
+<button class="read-man" id="blog-2">
     ?
 </button>
 <div class="blog-2 mask">
     <div class="container">
-        <div class="hero-unit hero-unit-bordered">
-            <h1>HOW TO USE</h1>
+        <div class="hover-text">
+            <div class="hu-border"><span>?</span><h1>HOW TO USE THIS BLOCK</h1></div>
         </div>
     </div>
 </div>
@@ -257,13 +257,13 @@
     &nbsp;
 </div>
 <!-- blog-3 -->
-<button class="btn-inverse read-man" id="blog-3">
+<button class="read-man" id="blog-3">
     ?
 </button>
 <div class="blog-3 mask">
     <div class="container">
-        <div class="hero-unit hero-unit-bordered">
-            <h1>HOW TO USE</h1>
+        <div class="hover-text">
+            <div class="hu-border"><span>?</span><h1>HOW TO USE THIS BLOCK</h1></div>
         </div>
     </div>
 </div>
@@ -350,13 +350,13 @@
     &nbsp;
 </div>
 <!-- blog-4 -->
-<button class="btn-inverse read-man" id="blog-4">
+<button class="read-man" id="blog-4">
     ?
 </button>
 <div class="blog-4 mask">
     <div class="container">
-        <div class="hero-unit hero-unit-bordered">
-            <h1>HOW TO USE</h1>
+        <div class="hover-text">
+            <div class="hu-border"><span>?</span><h1>HOW TO USE THIS BLOCK</h1></div>
         </div>
     </div>
 </div>
@@ -460,13 +460,13 @@
     &nbsp;
 </div>
 <!-- blog-5 -->
-<button class="btn-inverse read-man" id="blog-5">
+<button class="read-man" id="blog-5">
     ?
 </button>
 <div class="blog-5 mask">
     <div class="container">
-        <div class="hero-unit hero-unit-bordered">
-            <h1>HOW TO USE</h1>
+        <div class="hover-text">
+            <div class="hu-border"><span>?</span><h1>HOW TO USE THIS BLOCK</h1></div>
         </div>
     </div>
 </div>
@@ -630,11 +630,11 @@
             that you had to read on the <a href="how_to_install.html">how to install</a> page
             of this documentation please make it first</small>
         <p>
-            you only need paste next rows between <code>
+            you only need paste next rows between <code class="language-markup">
                 &lt;body&gt;  ...  &lt;/body&gt;</code>
             into your html file.
         </p>
-        <pre class="htmlCode">
+        <pre class=" language-markup"><code class=" language-markup">
 <section class="blog-1">
     <div id="b1-pt-1" class="page-transitions pt-perspective">
         <div class="pt-page pt-page-1 pt-page-current bg-peter-river">
@@ -745,7 +745,7 @@
         </p>
     </div>
 </section>
-</pre>        
+</code></pre>         
 
       
  <h4>"LESS" version:</h4>
@@ -756,10 +756,10 @@
             you should paste same code (as in <a href="#b1-simple" class="inner-link">simple version</a>) and paste next code into your '<strong>.less</strong>' file after that
             rows that you already had to paste.
         </p>
-        <pre class="cssCode">
+        <pre class="language-scss"><code class="language-scss">
 @import 'blog-common.less';   
 @import 'blog-1.less';
-</pre>
+</code></pre> 
         <h4>All versions:</h4>
         <p>
             So about modifications which you can do.
@@ -769,30 +769,30 @@
             <big><strong>Carousel</strong></big>
         </p>
         <p>
-            As you can see in code we have block <code>
+            As you can see in code we have block <code class="language-markup">
                 &lt;div id="b1-pt-1"&gt;...&lt;/div&gt;</code>
             - it's main block of the carousel.
-            In this block situated few pages <code>
+            In this block situated few pages <code class="language-markup">
                 &lt;div class="pt-page"&gt;...&lt;/div&gt;</code>
             For thouse elements you can change background, and you can do it in few ways. First way - you can change the part of class that start with
             <strong>bg-</strong> for this element. This way you can use reserved classes from Flat-UI, but it changed only color of carousels page background.
             Or second way - you can use css for change background for concrete element.
-            As example for <code>
+            As example for <code class="language-markup">
                 &lt;div class="pt-page-1"&gt;...&lt;/div&gt;</code>
             . You can do something like this:
         </p>
-        <pre class="cssCode">
+        <pre class="language-scss"><code class="language-scss">
 .pt-page-1{
     background-image:url('some image url');
     background-color: some color;
 }
-</pre>
+</code></pre> 
         <p>
-            You can change text for any of this carousel pages. For this you should change text in block <code>
+            You can change text for any of this carousel pages. For this you should change text in block <code class="language-markup">
                 &lt;div class="hero-unit"&gt;...&lt;/div&gt;</code>
         </p>
         <p>
-            And you can add new pages. For this you should copy one of blocks <code>
+            And you can add new pages. For this you should copy one of blocks <code class="language-markup">
                 &lt;div class="pt-page"&gt;...&lt;/div&gt;</code>
             ,
             replace class as <strong>pt-page-1</strong> to new class.
@@ -830,11 +830,11 @@
             that you had to read on the <a href="how_to_install.html">how to install</a> page
             of this documentation please make it first</small>
         <p>
-            you only need paste next rows between <code>
+            you only need paste next rows between <code class="language-markup">
                 &lt;body&gt;  ...  &lt;/body&gt;</code>
             into your html file.
         </p>
-        <pre class="htmlCode">
+        <pre class=" language-markup"><code class=" language-markup">
 <section class="blog-2">
     <div class="background hidden-phone">
         <div class="container">
@@ -880,7 +880,7 @@
         </div>
     </div><!--/.container-->
 </section>
-</pre>        
+</code></pre>          
         
  <h4>"LESS" version</h4>
         <small>if you not already done all instructions
@@ -890,10 +890,10 @@
             you should paste same code (as in <a href="#b2-simple" class="inner-link">simple version</a>) and paste next code into your '<strong>.less</strong>' file after that
             rows that you already had to paste.
         </p>
-        <pre class="cssCode">
+        <pre class="language-scss"><code class="language-scss">
 @import 'blog-common.less';   
 @import 'blog-2.less';
-</pre>
+</code></pre>  
     </li>
     <li>
         <h3>Samples</h3>
@@ -929,11 +929,11 @@
             that you had to read on the <a href="how_to_install.html">how to install</a> page
             of this documentation please make it first</small>
         <p>
-            you only need paste next rows between <code>
+            you only need paste next rows between <code class="language-markup">
                 &lt;body&gt;  ...  &lt;/body&gt;</code>
             into your html file.
         </p>
-        <pre class="htmlCode">
+        <pre class=" language-markup"><code class=" language-markup">
 <section class="blog-3">
     <div class="container">
         <div class="title">
@@ -1013,7 +1013,7 @@
     </div><!--/.container-->
 </section>
 
-</pre>        
+</code></pre>         
         
  <h4>"LESS" version:</h4>
 
@@ -1024,10 +1024,10 @@
             you should paste same code (as in <a href="#b3-simple" class="inner-link">simple version</a>) and paste next code into your '<strong>.less</strong>' file after that
             rows that you already had to paste.
         </p>
-        <pre class="cssCode">
+        <pre class="language-scss"><code class="language-scss">
 @import 'blog-common.less';   
 @import 'blog-3.less';
-</pre>
+</code></pre> 
     </li>
 </ol>
         </div>
@@ -1057,11 +1057,11 @@
             that you had to read on the <a href="how_to_install.html">how to install</a> page
             of this documentation please make it first</small>
         <p>
-            you only need paste next rows between <code>
+            you only need paste next rows between <code class="language-markup">
                 &lt;body&gt;  ...  &lt;/body&gt;</code>
             into your html file.
         </p>
-        <pre class="htmlCode">
+        <pre class=" language-markup"><code class=" language-markup">
 <section class="blog-4">
     <div class="container">
         <div class="row">
@@ -1158,7 +1158,7 @@
         </div>
     </div><!--/.container-->
 </section>
-</pre>        
+</code></pre>         
         
  <h4>"LESS" version:</h4>
 
@@ -1169,10 +1169,10 @@
             you should paste same code (as in <a href="#b4-simple" class="inner-link">simple version</a>) and paste next code into your '<strong>.less</strong>' file after that
             rows that you already had to paste.
         </p>
-        <pre class="cssCode">
+        <pre class="language-scss"><code class="language-scss">
 @import 'blog-common.less';   
 @import 'blog-4.less';
-</pre>
+</code></pre> 
     </li>
 </ol>
         </div>
@@ -1202,11 +1202,11 @@
             that you had to read on the <a href="how_to_install.html">how to install</a> page
             of this documentation please make it first</small>
         <p>
-            you only need paste next rows between <code>
+            you only need paste next rows between <code class="language-markup">
                 &lt;body&gt;  ...  &lt;/body&gt;</code>
             into your html file.
         </p>
-        <pre class="htmlCode">
+        <pre class=" language-markup"><code class=" language-markup">
 <section class="blog-5">
     <div class="title">
         <div class="container">
@@ -1338,7 +1338,7 @@
         </div>
     </div><!--/.container-->
 </section>
-</pre>        
+</code></pre>         
         
  <h4>"LESS" version</h4>
 
@@ -1349,41 +1349,41 @@
             you should paste same code (as in <a href="#b5-simple" class="inner-link">simple version</a>) and paste next code into your '<strong>.less</strong>' file after that
             rows that you already had to paste.
         </p>
-        <pre class="cssCode">
+        <pre class="language-scss"><code class="language-scss">
 @import 'blog-common.less';   
 @import 'blog-5.less';
-</pre>
+</code></pre> 
         <h4>All versions</h4>
         <p>
             <big><strong>Carousel</strong></big>
         </p>
         <p>
-            As you can see in code we have block <code>
+            As you can see in code we have block <code class="language-markup">
                 &lt;div id="b1-pt-1"&gt;...&lt;/div&gt;</code>
             - it's main block of the carousel.
-            In this block situated few pages <code>
+            In this block situated few pages <code class="language-markup">
                 &lt;div class="pt-page"&gt;...&lt;/div&gt;</code>
             For thouse elements you can change background, and you can do it in few ways. First way - you can change the part of class that start with
             <strong>bg-</strong> for this element. This way you can use reserved classes from Flat-UI, but it changed only color of carousels page background.
             Or second way - you can use css for change background for concrete element.
-            As example for <code>
+            As example for <code class="language-markup">
                 &lt;div class="pt-page-1"&gt;...&lt;/div&gt;</code>
             . You can do something like this:
         </p>
-        <pre class="cssCode">
+        <pre class="language-scss"><code class="language-scss">
 .pt-page-1{
     background-image:url('some image url');
     background-color: some color;
 }
-</pre>
+</code></pre> 
         <p>
-            You can add text for any of this carousel pages. For this you should add content after <code>
+            You can add text for any of this carousel pages. For this you should add content after <code class="language-markup">
                 &lt;div class="box-icon"&gt;...&lt;/div&gt;</code>
             .
             But you should create style for this text by yourself.
         </p>
         <p>
-            And you can add new pages. For this you should copy one of blocks <code>
+            And you can add new pages. For this you should copy one of blocks <code class="language-markup">
                 &lt;div class="pt-page"&gt;...&lt;/div&gt;</code>
             ,
             replace class as <strong>pt-page-1</strong> to new class.
@@ -1414,7 +1414,7 @@
 <script src="../common-files/js/jquery.svg.js"></script>
 <script src="../common-files/js/jquery.svganim.js"></script>
 <script src="../common-files/js/startup-kit.min.js"></script>      
-<script src="js/jquery.snippet.min.js"></script>
+<script src="prism/prism.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>   

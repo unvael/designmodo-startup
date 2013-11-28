@@ -1,61 +1,32 @@
-.read-manual {
-  body:before{
-    content:"";
-    height:100%;
-    width:100%;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    display:block;
-    overflow:hidden;
-    position:fixed;
-    z-index:850;
-    background:#1b1f23;
-    .opacity(95);
-  }
-  overflow: hidden;
-  .dockbar{
-    z-index:845;
-  }  
-  .container {
-    margin-left: 10px;
-  }
-  .mcontent {
-    height: auto !important;
-    height: 100%;
-    min-height: 100%;
-    > div {
-      min-height: 100%;
-    }
-    .content-24 img.image {
-      right: 70%;
-    }
-  
-  .manual {
+
+.mcontent .manual {
+      .transition(left 2s linear 0s);
+      left:100%;     
+      right:-100%;
       display: block;
       position: fixed;
       z-index: 999;
       min-height: 100%;         
       .box-sizing(border-box);
+      .box-shadow(none);
       padding: 0;
       @media (max-width: 768px) { 
          padding: 0 12px;
         }
       overflow: auto;      
-      top: 0;
-      right: 0;
-      left:150px;
+      top: 0;      
       background-color: #1B1E23;
-      @media (max-width: 800px) {
+      
+      @media (max-width: 900px) {
         width: 100%;
       }
       
       > div {      
         /* prism twilight theme */
           @import '../prism/themes/twilight.less';
-        /*end prism*/  
-          
+        /*end prism*/
+        .transition(display 0s linear 2s);  
+        display:none;  
         .font(14px);
         overflow: visible;
         letter-spacing: normal;
@@ -74,29 +45,14 @@
           padding-bottom: 0;
         }
         .back-button {
-         /*
-          float: left;
-                   display: inline-block;
-                   background-color: transparent;
-                   border-top: 2px @asbestos solid;
-                   border-bottom: 0 none;
-                   border-left: 2px @asbestos solid;
-                   .transform(rotate(-45deg));
-                   border-right: 0 none;
-                   font-weight: 100;
-                   height: 56px;
-                   width: 56px;*/
-         
+            
         }
 
         .content-man {
           float: right;     
-          
+          width:100%;
           display: inline-block;
-         /*
-          margin-left: 25px;
-                   margin-top: -25px;
-                   padding-left: 25px;*/
+          .box-sizing(border-box);         
          
           h1 {
             .font(34px, white);
@@ -136,25 +92,7 @@
             }
           }
 
-         /*
-          .snippet-container {
-                     * {
-                       line-height: 1;
-                     }
-                     display: block;
-                     margin: 20px 0;
-                     .border-radius(0);
-                     border: 0 none;
-                     background-color: #000000;
-                     .font(14px, @asbestos);
-                     width: 95%;
-                     height: auto;
-                     max-height: 300px;
-                     overflow: auto;
-                   }*/
-         
-
-          strong {
+         strong {
             color: gold;
             font-weight: normal;
           }
@@ -180,8 +118,61 @@
         }
 
       }
+}
+
+body:before{
+  .transition(opacity 6s ease 0s);
+  .opacity(0); 
+  display:none;
+  content:"";
+  height:100%;
+  width:100%;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  display:block;
+  overflow:hidden;
+  position:fixed;
+  background:#1b1f23;
+  z-index:850;
+}
+
+.read-manual {
+  body:before{
+    .transition(opacity 1s ease 0s);
+     display:block;
+    .opacity(95);
+  }
+  overflow: hidden;
+  
+  .container {
+    margin-left: 10px;
+  }
+  .mcontent {
+    height: auto !important;
+    height: 100%;
+    min-height: 100%;
+    > div {
+      min-height: 100%;
+    }
+    .content-24 img.image {
+      right: 70%;
+    }   
     
-  } 
+    .manual{
+      -webkit-transition: left 2s linear 0s, box-shadow 3s ease 2s;
+      -moz-transition: left 2s linear 0s, box-shadow 3s ease 2s;
+      -o-transition: left 2s linear 0s, box-shadow 3s ease 2s;
+      transition: left 2s linear 0s, box-shadow 3s ease 2s;
+            
+      left:150px;
+      right:0;
+      @media (max-width: 900px) {
+        left:0;        
+      }      
+      .box-shadow(-5px 0 10px rgba(0,0,0,0.2));
+    }
   }
  
 }

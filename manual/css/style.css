@@ -975,6 +975,52 @@ body {
 .mcontent .pt-page-ontop {
   z-index: 999;
 }
+.mcontent .startup-kit_header h1 {
+  font-size: 45px;
+  font-weight: normal;
+  color: #2c3e50;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 59.99999999999999px;
+}
+.mcontent .startup-kit_header p {
+  font-size: 18px;
+  font-weight: normal;
+  color: #7f8c8d;
+  font-family: Lato, sens-serif;
+  line-height: 29.999999999999996px;
+}
+@media (max-width: 480px) {
+  .mcontent .startup-kit_header h1 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #2c3e50;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 36px;
+  }
+  .mcontent .startup-kit_header p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #7f8c8d;
+    font-family: Lato, sens-serif;
+    line-height: 27px;
+  }
+}
+@media (max-width: 767px) {
+  .mcontent .startup-kit_header h1 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #2c3e50;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 36px;
+  }
+  .mcontent .startup-kit_header p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #7f8c8d;
+    font-family: Lato, sens-serif;
+    line-height: 27px;
+  }
+}
 .mcontent .blog-1 .box-icon {
   margin: 0 auto 35px;
   text-align: center;
@@ -5544,52 +5590,6 @@ body {
   }
   .mcontent .content-31 .container .box {
     margin: 0 0 30px;
-  }
-}
-.mcontent .startup-kit_header h1 {
-  font-size: 45px;
-  font-weight: normal;
-  color: #2c3e50;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 59.99999999999999px;
-}
-.mcontent .startup-kit_header p {
-  font-size: 18px;
-  font-weight: normal;
-  color: #7f8c8d;
-  font-family: Lato, sens-serif;
-  line-height: 29.999999999999996px;
-}
-@media (max-width: 480px) {
-  .mcontent .startup-kit_header h1 {
-    font-size: 30px;
-    font-weight: normal;
-    color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 36px;
-  }
-  .mcontent .startup-kit_header p {
-    font-size: 16px;
-    font-weight: normal;
-    color: #7f8c8d;
-    font-family: Lato, sens-serif;
-    line-height: 27px;
-  }
-}
-@media (max-width: 767px) {
-  .mcontent .startup-kit_header h1 {
-    font-size: 30px;
-    font-weight: normal;
-    color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 36px;
-  }
-  .mcontent .startup-kit_header p {
-    font-size: 16px;
-    font-weight: normal;
-    color: #7f8c8d;
-    font-family: Lato, sens-serif;
-    line-height: 27px;
   }
 }
 .mcontent .header-1 {
@@ -16547,68 +16547,40 @@ a.active {
   position: relative;
   float: right;
 }
-.read-manual {
-  overflow: hidden;
-}
-.read-manual body:before {
-  content: "";
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: block;
-  overflow: hidden;
-  position: fixed;
-  z-index: 850;
-  background: #1b1f23;
-  opacity: 0.95;
-  filter: alpha(opacity=95);
-}
-.read-manual .dockbar {
-  z-index: 845;
-}
-.read-manual .container {
-  margin-left: 10px;
-}
-.read-manual .mcontent {
-  height: auto !important;
-  height: 100%;
-  min-height: 100%;
-}
-.read-manual .mcontent > div {
-  min-height: 100%;
-}
-.read-manual .mcontent .content-24 img.image {
-  right: 70%;
-}
-.read-manual .mcontent .manual {
+.mcontent .manual {
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: left 2s linear 0s;
+  -moz-transition: left 2s linear 0s;
+  -o-transition: left 2s linear 0s;
+  transition: left 2s linear 0s;
+  left: 100%;
+  right: -100%;
   display: block;
   position: fixed;
-  z-index: 999;
+  z-index: 1200;
   min-height: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
   padding: 0;
   overflow: auto;
   top: 0;
-  right: 0;
-  left: 150px;
   background-color: #1B1E23;
 }
 @media (max-width: 768px) {
-  .read-manual .mcontent .manual {
+  .mcontent .manual {
     padding: 0 12px;
   }
 }
-@media (max-width: 800px) {
-  .read-manual .mcontent .manual {
+@media (max-width: 900px) {
+  .mcontent .manual {
     width: 100%;
   }
 }
-.read-manual .mcontent .manual > div {
+.mcontent .manual > div {
   /* prism twilight theme */
 
   /**
@@ -16628,6 +16600,13 @@ a.active {
   /* Make the tokens sit above the line highlight so the colours don't look faded. */
 
   /*end prism*/
+
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: display 0s linear 2s;
+  -moz-transition: display 0s linear 2s;
+  -o-transition: display 0s linear 2s;
+  transition: display 0s linear 2s;
+  display: none;
   font-size: 14px;
   font-weight: normal;
   color: #7f8c8d;
@@ -16645,8 +16624,8 @@ a.active {
   width: 100%;
   background-color: transparent;
 }
-.read-manual .mcontent .manual > div code[class*="language-"],
-.read-manual .mcontent .manual > div pre[class*="language-"] {
+.mcontent .manual > div code[class*="language-"],
+.mcontent .manual > div pre[class*="language-"] {
   color: white;
   direction: ltr;
   font-family: Consolas, Monaco, 'Andale Mono', monospace;
@@ -16662,13 +16641,13 @@ a.active {
   -ms-hyphens: none;
   hyphens: none;
 }
-.read-manual .mcontent .manual > div pre[class*="language-"],
-.read-manual .mcontent .manual > div :not(pre) > code[class*="language-"] {
+.mcontent .manual > div pre[class*="language-"],
+.mcontent .manual > div :not(pre) > code[class*="language-"] {
   background: #141414;
   /* #141414 */
 
 }
-.read-manual .mcontent .manual > div pre[class*="language-"] {
+.mcontent .manual > div pre[class*="language-"] {
   border-radius: .5em;
   border: 0.3em solid #545454;
   /* #282A2B */
@@ -16678,39 +16657,39 @@ a.active {
   overflow: auto;
   padding: 1em;
 }
-.read-manual .mcontent .manual > div pre[class*="language-"]::selection {
+.mcontent .manual > div pre[class*="language-"]::selection {
   /* Safari */
 
   background: #27292a;
   /* #282A2B */
 
 }
-.read-manual .mcontent .manual > div pre[class*="language-"]::selection {
+.mcontent .manual > div pre[class*="language-"]::selection {
   /* Firefox */
 
   background: #27292a;
   /* #282A2B */
 
 }
-.read-manual .mcontent .manual > div pre[class*="language-"]::-moz-selection,
-.read-manual .mcontent .manual > div pre[class*="language-"] ::-moz-selection,
-.read-manual .mcontent .manual > div code[class*="language-"]::-moz-selection,
-.read-manual .mcontent .manual > div code[class*="language-"] ::-moz-selection {
+.mcontent .manual > div pre[class*="language-"]::-moz-selection,
+.mcontent .manual > div pre[class*="language-"] ::-moz-selection,
+.mcontent .manual > div code[class*="language-"]::-moz-selection,
+.mcontent .manual > div code[class*="language-"] ::-moz-selection {
   text-shadow: none;
   background: rgba(237, 237, 237, 0.15);
   /* #EDEDED */
 
 }
-.read-manual .mcontent .manual > div pre[class*="language-"]::selection,
-.read-manual .mcontent .manual > div pre[class*="language-"] ::selection,
-.read-manual .mcontent .manual > div code[class*="language-"]::selection,
-.read-manual .mcontent .manual > div code[class*="language-"] ::selection {
+.mcontent .manual > div pre[class*="language-"]::selection,
+.mcontent .manual > div pre[class*="language-"] ::selection,
+.mcontent .manual > div code[class*="language-"]::selection,
+.mcontent .manual > div code[class*="language-"] ::selection {
   text-shadow: none;
   background: rgba(237, 237, 237, 0.15);
   /* #EDEDED */
 
 }
-.read-manual .mcontent .manual > div :not(pre) > code[class*="language-"] {
+.mcontent .manual > div :not(pre) > code[class*="language-"] {
   border-radius: .3em;
   border: 0.13em solid #545454;
   /* #545454 */
@@ -16718,83 +16697,83 @@ a.active {
   box-shadow: 1px 1px 0.3em -0.1em #000000 inset;
   padding: .15em .2em .05em;
 }
-.read-manual .mcontent .manual > div .token.comment,
-.read-manual .mcontent .manual > div .token.prolog,
-.read-manual .mcontent .manual > div .token.doctype,
-.read-manual .mcontent .manual > div .token.cdata {
+.mcontent .manual > div .token.comment,
+.mcontent .manual > div .token.prolog,
+.mcontent .manual > div .token.doctype,
+.mcontent .manual > div .token.cdata {
   color: #787878;
   /* #777777 */
 
 }
-.read-manual .mcontent .manual > div .token.punctuation {
+.mcontent .manual > div .token.punctuation {
   opacity: .7;
 }
-.read-manual .mcontent .manual > div .namespace {
+.mcontent .manual > div .namespace {
   opacity: .7;
 }
-.read-manual .mcontent .manual > div .token.tag,
-.read-manual .mcontent .manual > div .token.boolean,
-.read-manual .mcontent .manual > div .token.number {
+.mcontent .manual > div .token.tag,
+.mcontent .manual > div .token.boolean,
+.mcontent .manual > div .token.number {
   color: #cf694a;
   /* #CF6A4C */
 
 }
-.read-manual .mcontent .manual > div .token.keyword,
-.read-manual .mcontent .manual > div .token.property,
-.read-manual .mcontent .manual > div .token.selector,
-.read-manual .mcontent .manual > div .token.constant,
-.read-manual .mcontent .manual > div .token.symbol,
-.read-manual .mcontent .manual > div .token.builtin {
+.mcontent .manual > div .token.keyword,
+.mcontent .manual > div .token.property,
+.mcontent .manual > div .token.selector,
+.mcontent .manual > div .token.constant,
+.mcontent .manual > div .token.symbol,
+.mcontent .manual > div .token.builtin {
   color: #f9ee9a;
   /* #F9EE98 */
 
 }
-.read-manual .mcontent .manual > div .token.attr-name,
-.read-manual .mcontent .manual > div .token.attr-value,
-.read-manual .mcontent .manual > div .token.string,
-.read-manual .mcontent .manual > div .token.operator,
-.read-manual .mcontent .manual > div .token.entity,
-.read-manual .mcontent .manual > div .token.url,
-.read-manual .mcontent .manual > div .language-css .token.string,
-.read-manual .mcontent .manual > div .style .token.string,
-.read-manual .mcontent .manual > div .token.variable {
+.mcontent .manual > div .token.attr-name,
+.mcontent .manual > div .token.attr-value,
+.mcontent .manual > div .token.string,
+.mcontent .manual > div .token.operator,
+.mcontent .manual > div .token.entity,
+.mcontent .manual > div .token.url,
+.mcontent .manual > div .language-css .token.string,
+.mcontent .manual > div .style .token.string,
+.mcontent .manual > div .token.variable {
   color: #919e6b;
   /* #8F9D6A */
 
 }
-.read-manual .mcontent .manual > div .token.atrule {
+.mcontent .manual > div .token.atrule {
   color: #7386a5;
   /* #7587A6 */
 
 }
-.read-manual .mcontent .manual > div .token.regex,
-.read-manual .mcontent .manual > div .token.important {
+.mcontent .manual > div .token.regex,
+.mcontent .manual > div .token.important {
   color: #e9c163;
   /* #E9C062 */
 
 }
-.read-manual .mcontent .manual > div .token.important {
+.mcontent .manual > div .token.important {
   font-weight: bold;
 }
-.read-manual .mcontent .manual > div .token.entity {
+.mcontent .manual > div .token.entity {
   cursor: help;
 }
-.read-manual .mcontent .manual > div pre[data-line] {
+.mcontent .manual > div pre[data-line] {
   padding: 1em 0 1em 3em;
   position: relative;
 }
-.read-manual .mcontent .manual > div .language-markup .token.tag,
-.read-manual .mcontent .manual > div .language-markup .token.attr-name,
-.read-manual .mcontent .manual > div .language-markup .token.punctuation {
+.mcontent .manual > div .language-markup .token.tag,
+.mcontent .manual > div .language-markup .token.attr-name,
+.mcontent .manual > div .language-markup .token.punctuation {
   color: #ad895c;
   /* #AC885B */
 
 }
-.read-manual .mcontent .manual > div .token {
+.mcontent .manual > div .token {
   position: relative;
   z-index: 1;
 }
-.read-manual .mcontent .manual > div .line-highlight {
+.mcontent .manual > div .line-highlight {
   background: -moz-linear-gradient(left, rgba(84, 84, 84, 0.1) 70%, rgba(84, 84, 84, 0));
   /* #545454 */
 
@@ -16828,8 +16807,8 @@ a.active {
   white-space: pre;
   z-index: 0;
 }
-.read-manual .mcontent .manual > div .line-highlight:before,
-.read-manual .mcontent .manual > div .line-highlight[data-end]:after {
+.mcontent .manual > div .line-highlight:before,
+.mcontent .manual > div .line-highlight[data-end]:after {
   background-color: #8794a6;
   /* #8794A6 */
 
@@ -16849,16 +16828,16 @@ a.active {
   top: .4em;
   vertical-align: .3em;
 }
-.read-manual .mcontent .manual > div .line-highlight[data-end]:after {
+.mcontent .manual > div .line-highlight[data-end]:after {
   bottom: .4em;
   content: attr(data-end);
   top: auto;
 }
-.read-manual .mcontent .manual > div pre[data-line] {
+.mcontent .manual > div pre[data-line] {
   position: relative;
   padding: 1em 0 1em 3em;
 }
-.read-manual .mcontent .manual > div .line-highlight {
+.mcontent .manual > div .line-highlight {
   position: absolute;
   left: 0;
   right: 0;
@@ -16875,8 +16854,8 @@ a.active {
   line-height: inherit;
   white-space: pre;
 }
-.read-manual .mcontent .manual > div .line-highlight:before,
-.read-manual .mcontent .manual > div .line-highlight[data-end]:after {
+.mcontent .manual > div .line-highlight:before,
+.mcontent .manual > div .line-highlight[data-end]:after {
   content: attr(data-start);
   position: absolute;
   top: .4em;
@@ -16892,20 +16871,20 @@ a.active {
   text-shadow: none;
   box-shadow: 0 1px white;
 }
-.read-manual .mcontent .manual > div .line-highlight[data-end]:after {
+.mcontent .manual > div .line-highlight[data-end]:after {
   content: attr(data-end);
   top: auto;
   bottom: .4em;
 }
-.read-manual .mcontent .manual > div pre.line-numbers {
+.mcontent .manual > div pre.line-numbers {
   position: relative;
   padding-left: 3.8em;
   counter-reset: linenumber;
 }
-.read-manual .mcontent .manual > div pre.line-numbers > code {
+.mcontent .manual > div pre.line-numbers > code {
   position: relative;
 }
-.read-manual .mcontent .manual > div .line-numbers .line-numbers-rows {
+.mcontent .manual > div .line-numbers .line-numbers-rows {
   position: absolute;
   pointer-events: none;
   top: 0;
@@ -16921,93 +16900,60 @@ a.active {
   -ms-user-select: none;
   user-select: none;
 }
-.read-manual .mcontent .manual > div .line-numbers-rows > span {
+.mcontent .manual > div .line-numbers-rows > span {
   pointer-events: none;
   display: block;
   counter-increment: linenumber;
 }
-.read-manual .mcontent .manual > div .line-numbers-rows > span:before {
+.mcontent .manual > div .line-numbers-rows > span:before {
   content: counter(linenumber);
   color: #999;
   display: block;
   padding-right: 0.8em;
   text-align: right;
 }
-.read-manual .mcontent .manual > div * {
+.mcontent .manual > div * {
   text-align: left;
   padding-top: 0;
   padding-bottom: 0;
 }
-.read-manual .mcontent .manual > div .back-button {
-  /*
-          float: left;
-                   display: inline-block;
-                   background-color: transparent;
-                   border-top: 2px @asbestos solid;
-                   border-bottom: 0 none;
-                   border-left: 2px @asbestos solid;
-                   .transform(rotate(-45deg));
-                   border-right: 0 none;
-                   font-weight: 100;
-                   height: 56px;
-                   width: 56px;*/
-
-}
-.read-manual .mcontent .manual > div .content-man {
+.mcontent .manual > div .content-man {
   float: right;
+  width: 100%;
   display: inline-block;
-  /*
-          margin-left: 25px;
-                   margin-top: -25px;
-                   padding-left: 25px;*/
-
-  /*
-          .snippet-container {
-                     * {
-                       line-height: 1;
-                     }
-                     display: block;
-                     margin: 20px 0;
-                     .border-radius(0);
-                     border: 0 none;
-                     background-color: #000000;
-                     .font(14px, @asbestos);
-                     width: 95%;
-                     height: auto;
-                     max-height: 300px;
-                     overflow: auto;
-                   }*/
-
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-.read-manual .mcontent .manual > div .content-man h1 {
+.mcontent .manual > div .content-man h1 {
   font-size: 34px;
   font-weight: normal;
   color: #ffffff;
   display: inline-block;
   margin-bottom: 40px;
 }
-.read-manual .mcontent .manual > div .content-man h3 {
+.mcontent .manual > div .content-man h3 {
   font-size: 25px;
   font-weight: normal;
   color: #ffffff;
   margin-bottom: 40px;
   margin-top: 40px;
 }
-.read-manual .mcontent .manual > div .content-man p {
+.mcontent .manual > div .content-man p {
   font-size: 16px;
   font-weight: normal;
   color: #7f8c8d;
   padding-right: 20px;
 }
-.read-manual .mcontent .manual > div .content-man > ol {
+.mcontent .manual > div .content-man > ol {
   counter-reset: li;
   list-style: none;
   margin: 0;
 }
-.read-manual .mcontent .manual > div .content-man > ol > li {
+.mcontent .manual > div .content-man > ol > li {
   position: relative;
 }
-.read-manual .mcontent .manual > div .content-man > ol > li:before {
+.mcontent .manual > div .content-man > ol > li:before {
   background: none repeat scroll 0 0 #BDC3C7;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
@@ -17023,26 +16969,91 @@ a.active {
   padding: 3px 9px;
   text-align: center;
 }
-.read-manual .mcontent .manual > div .content-man strong {
+.mcontent .manual > div .content-man strong {
   color: gold;
   font-weight: normal;
 }
-.read-manual .mcontent .manual > div .content-man a {
+.mcontent .manual > div .content-man a {
   color: gold;
   font-weight: normal;
   text-decoration: underline;
 }
-.read-manual .mcontent .manual > div .content-man a:hover {
+.mcontent .manual > div .content-man a:hover {
   color: gold;
   text-decoration: none;
 }
-.read-manual .mcontent .manual > div .content-man hr {
+.mcontent .manual > div .content-man hr {
   color: #000000;
   border-top: 1px solid #000000;
   border-bottom: 1px solid black;
   margin: 40px 0;
 }
-.read-manual .mcontent .manual > div small {
+.mcontent .manual > div small {
   color: white;
   display: block;
+}
+body:before {
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: opacity 6s ease 0s;
+  -moz-transition: opacity 6s ease 0s;
+  -o-transition: opacity 6s ease 0s;
+  transition: opacity 6s ease 0s;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  display: none;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  overflow: hidden;
+  position: fixed;
+  background: #1b1f23;
+  z-index: 850;
+}
+.read-manual {
+  overflow: hidden;
+}
+.read-manual body:before {
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: opacity 1s ease 0s;
+  -moz-transition: opacity 1s ease 0s;
+  -o-transition: opacity 1s ease 0s;
+  transition: opacity 1s ease 0s;
+  display: block;
+  opacity: 0.95;
+  filter: alpha(opacity=95);
+}
+.read-manual .container {
+  margin-left: 10px;
+}
+.read-manual .mcontent {
+  height: auto !important;
+  height: 100%;
+  min-height: 100%;
+}
+.read-manual .mcontent > div {
+  min-height: 100%;
+}
+.read-manual .mcontent .content-24 img.image {
+  right: 70%;
+}
+.read-manual .mcontent .manual {
+  -webkit-transition: left 2s linear 0s, box-shadow 3s ease 2s;
+  -moz-transition: left 2s linear 0s, box-shadow 3s ease 2s;
+  -o-transition: left 2s linear 0s, box-shadow 3s ease 2s;
+  transition: left 2s linear 0s, box-shadow 3s ease 2s;
+  left: 150px;
+  right: 0;
+  -webkit-box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 900px) {
+  .read-manual .mcontent .manual {
+    left: 0;
+  }
 }

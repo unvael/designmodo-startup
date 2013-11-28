@@ -44,7 +44,27 @@
           padding-bottom: 0;
         }
         .back-button {
-            
+            background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+            border: 0 none;
+            .border-radius(100%);
+            .font(20px,#394043);
+            float:left;            
+            display: inline-block;    
+            height: 38px;
+            .line-height(0);
+            padding: 0 0 2px;
+            .box-sizing(border-box);
+            margin: 0 0 0 -70px;
+            text-align: center;
+            width: 38px;           
+            &:hover{
+              .rotate(360deg);              
+              -webkit-transition: -webkit-transform 1s ease 0s, border 0.5s ease 1s;
+              -moz-transition: -moz-transform 1s ease 0s, border 0.5s ease 1s;
+              -o-transition: -o-transform 1s ease 0s, border 0.5s ease 1s;
+              transition: transform 1s ease 0s, border 0.5s ease 1s;              
+              border: 3px solid;              
+            }
         }
 
         .content-man {
@@ -54,7 +74,9 @@
           .box-sizing(border-box);         
          
           h1 {
-            .font(34px, white);
+            .font(35px, white);
+            .line-height(35px);
+            margin-top:0;
             display: inline-block;
             margin-bottom: 40px;            
           }
@@ -122,15 +144,15 @@
 body:before{
   .transition(opacity 6s ease 0s);
   .opacity(0); 
-  display:none;
+  display:block;
+  visibility:hidden;
   content:"";
   height:100%;
   width:100%;
   top:0;
   left:0;
   right:0;
-  bottom:0;
-  display:block;
+  bottom:0;  
   overflow:hidden;
   position:fixed;
   background:#1b1f23;
@@ -139,8 +161,8 @@ body:before{
 
 .read-manual {
   body:before{
-    .transition(opacity 1s ease 0s);
-     display:block;
+    visibility:visible;
+    .transition(opacity 1s ease 0s);     
     .opacity(95);
   }
   overflow: hidden;
@@ -163,11 +185,10 @@ body:before{
     }   
     
     .manual{
-      -webkit-transition: left 2s linear 0s, box-shadow 3s ease 2s;
-      -moz-transition: left 2s linear 0s, box-shadow 3s ease 2s;
-      -o-transition: left 2s linear 0s, box-shadow 3s ease 2s;
-      transition: left 2s linear 0s, box-shadow 3s ease 2s;
-            
+      -webkit-transition: left 2s linear 0s, -webkit-box-shadow 3s ease 2s;
+      -moz-transition: left 2s linear 0s, -moz-box-shadow 3s ease 2s;
+      -o-transition: left 2s linear 0s, -o-box-shadow 3s ease 2s;
+      transition: left 2s linear 0s, box-shadow 3s ease 2s;            
       left:150px;
       right:0;
       @media (max-width: 900px) {

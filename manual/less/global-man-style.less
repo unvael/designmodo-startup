@@ -39,9 +39,11 @@ a {
 
 .mask {
   display: none;
+  .opacity(0);
+  .transition(opacity 0.5s linear 0s);
 
   &.active {
-
+    
     display: block;
     background-color: #1b1f23;
     background-size: auto;
@@ -84,7 +86,7 @@ a {
       }
       .opacity(100);
     }
-
+    .transition(opacity 3s linear 0s);
     .opacity(97);
     .hover-text {
       display: table-cell;

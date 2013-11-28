@@ -975,6 +975,52 @@ body {
 .mcontent .pt-page-ontop {
   z-index: 999;
 }
+.mcontent .startup-kit_header h1 {
+  font-size: 45px;
+  font-weight: normal;
+  color: #2c3e50;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 59.99999999999999px;
+}
+.mcontent .startup-kit_header p {
+  font-size: 18px;
+  font-weight: normal;
+  color: #7f8c8d;
+  font-family: Lato, sens-serif;
+  line-height: 29.999999999999996px;
+}
+@media (max-width: 480px) {
+  .mcontent .startup-kit_header h1 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #2c3e50;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 36px;
+  }
+  .mcontent .startup-kit_header p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #7f8c8d;
+    font-family: Lato, sens-serif;
+    line-height: 27px;
+  }
+}
+@media (max-width: 767px) {
+  .mcontent .startup-kit_header h1 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #2c3e50;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 36px;
+  }
+  .mcontent .startup-kit_header p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #7f8c8d;
+    font-family: Lato, sens-serif;
+    line-height: 27px;
+  }
+}
 .mcontent .blog-1 .box-icon {
   margin: 0 auto 35px;
   text-align: center;
@@ -1873,52 +1919,6 @@ body {
 .mcontent .blog-5 .tags li {
   display: inline-block;
   margin: 0 10px;
-}
-.mcontent .startup-kit_header h1 {
-  font-size: 45px;
-  font-weight: normal;
-  color: #2c3e50;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 59.99999999999999px;
-}
-.mcontent .startup-kit_header p {
-  font-size: 18px;
-  font-weight: normal;
-  color: #7f8c8d;
-  font-family: Lato, sens-serif;
-  line-height: 29.999999999999996px;
-}
-@media (max-width: 480px) {
-  .mcontent .startup-kit_header h1 {
-    font-size: 30px;
-    font-weight: normal;
-    color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 36px;
-  }
-  .mcontent .startup-kit_header p {
-    font-size: 16px;
-    font-weight: normal;
-    color: #7f8c8d;
-    font-family: Lato, sens-serif;
-    line-height: 27px;
-  }
-}
-@media (max-width: 767px) {
-  .mcontent .startup-kit_header h1 {
-    font-size: 30px;
-    font-weight: normal;
-    color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 36px;
-  }
-  .mcontent .startup-kit_header p {
-    font-size: 16px;
-    font-weight: normal;
-    color: #7f8c8d;
-    font-family: Lato, sens-serif;
-    line-height: 27px;
-  }
 }
 .mcontent .contacts-1 h3 {
   font-size: 30px;
@@ -16455,6 +16455,13 @@ a.active {
 }
 .mask {
   display: none;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: opacity 0.5s linear 0s;
+  -moz-transition: opacity 0.5s linear 0s;
+  -o-transition: opacity 0.5s linear 0s;
+  transition: opacity 0.5s linear 0s;
 }
 .mask.active {
   display: block;
@@ -16471,6 +16478,11 @@ a.active {
   padding: 0;
   margin: 0;
   overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: opacity 3s linear 0s;
+  -moz-transition: opacity 3s linear 0s;
+  -o-transition: opacity 3s linear 0s;
+  transition: opacity 3s linear 0s;
   opacity: 0.97;
   filter: alpha(opacity=97);
 }
@@ -16921,6 +16933,39 @@ a.active {
   padding-top: 0;
   padding-bottom: 0;
 }
+.mcontent .manual > div .back-button {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border: 0 none;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  font-size: 20px;
+  font-weight: normal;
+  color: #394043;
+  float: left;
+  display: inline-block;
+  height: 38px;
+  line-height: 0;
+  padding: 0 0 2px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 0 0 -70px;
+  text-align: center;
+  width: 38px;
+}
+.mcontent .manual > div .back-button:hover {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 1s ease 0s, border 0.5s ease 1s;
+  -moz-transition: -moz-transform 1s ease 0s, border 0.5s ease 1s;
+  -o-transition: -o-transform 1s ease 0s, border 0.5s ease 1s;
+  transition: transform 1s ease 0s, border 0.5s ease 1s;
+  border: 3px solid;
+}
 .mcontent .manual > div .content-man {
   float: right;
   width: 100%;
@@ -16930,9 +16975,11 @@ a.active {
   box-sizing: border-box;
 }
 .mcontent .manual > div .content-man h1 {
-  font-size: 34px;
+  font-size: 35px;
   font-weight: normal;
   color: #ffffff;
+  line-height: 35px;
+  margin-top: 0;
   display: inline-block;
   margin-bottom: 40px;
 }
@@ -17004,7 +17051,8 @@ body:before {
   transition: opacity 6s ease 0s;
   opacity: 0;
   filter: alpha(opacity=0);
-  display: none;
+  display: block;
+  visibility: hidden;
   content: "";
   height: 100%;
   width: 100%;
@@ -17012,7 +17060,6 @@ body:before {
   left: 0;
   right: 0;
   bottom: 0;
-  display: block;
   overflow: hidden;
   position: fixed;
   background: #1b1f23;
@@ -17022,12 +17069,12 @@ body:before {
   overflow: hidden;
 }
 .read-manual body:before {
+  visibility: visible;
   -webkit-backface-visibility: hidden;
   -webkit-transition: opacity 1s ease 0s;
   -moz-transition: opacity 1s ease 0s;
   -o-transition: opacity 1s ease 0s;
   transition: opacity 1s ease 0s;
-  display: block;
   opacity: 0.95;
   filter: alpha(opacity=95);
 }
@@ -17054,9 +17101,9 @@ body:before {
   right: 70%;
 }
 .read-manual .mcontent .manual {
-  -webkit-transition: left 2s linear 0s, box-shadow 3s ease 2s;
-  -moz-transition: left 2s linear 0s, box-shadow 3s ease 2s;
-  -o-transition: left 2s linear 0s, box-shadow 3s ease 2s;
+  -webkit-transition: left 2s linear 0s, -webkit-box-shadow 3s ease 2s;
+  -moz-transition: left 2s linear 0s, -moz-box-shadow 3s ease 2s;
+  -o-transition: left 2s linear 0s, -o-box-shadow 3s ease 2s;
   transition: left 2s linear 0s, box-shadow 3s ease 2s;
   left: 150px;
   right: 0;

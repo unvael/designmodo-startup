@@ -31,7 +31,9 @@
                 $('#' + id).css('margin-top', (BlockId[id].bH - 49) / 2 + 'px');
             }
         }
-
+        
+        $('.manual > div').hide('fast');
+        
         var helpButton = $('.read-man');
         helpButton.each(function() {
 
@@ -51,6 +53,19 @@
 
             $(this).click(function() {
                 var id = $(this).attr('id');
+                $('.manual .' + id).show();
+                
+                $('html').addClass('read-manual');
+                var manWidth = function() {
+                    $('.manual').width($('body').outerWidth() - 150);
+                };
+                manWidth();
+                $(window).resize(function() {
+                    manWidth();
+                });          
+                
+                
+                
                 var elem = $('.mcontent > .' + id + ':not(.mask)');
                 if (elem.length == 0) {
                     elem = $('.mcontent > .' + id + '-sub');
@@ -63,15 +78,9 @@
                 }
                 $(window).scrollTop(elemPos - 110);
 
-                $('html').addClass('read-manual');
-                var manWidth = function() {
-                    $('.manual').width($('body').outerWidth() - 150);
-                };
-                manWidth();
-                $(window).resize(function() {
-                    manWidth();
-                });
-                $('.manual .' + id).show();
+                
+               
+                
 
                 $('.manual').scrollTop(0);
 
@@ -91,7 +100,7 @@
         var backButton = $('.back-button');
         backButton.click(function() {
             $('html').removeClass('read-manual');
-            $('.manual > div').hide(5000);
+            $('.manual > div').fadeOut(1000);
         });
 
         $('code.language-markup').each(function() {

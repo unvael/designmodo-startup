@@ -25,8 +25,7 @@
         /* prism twilight theme */
           @import '../prism/themes/twilight.less';
         /*end prism*/
-        .transition(display 0s linear 2s);  
-        display:none;  
+        .transition(display 0s linear 2s);          
         .font(14px);
         overflow: visible;
         letter-spacing: normal;
@@ -145,7 +144,10 @@ body:before{
     .opacity(95);
   }
   overflow: hidden;
-  
+  .dockbar{
+    .transition(z-index 0s);
+        z-index:840;
+      }
   .container {
     margin-left: 10px;
   }

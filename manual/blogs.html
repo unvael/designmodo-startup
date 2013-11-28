@@ -611,7 +611,7 @@
     <div class="blog-1">
         <button class="back-button">&#10005;</button>
         <div class="content-man">
-<h1>Block for creating blog. Codename "blog-1"</h1>
+<h1>Blog Block #1</h1>
 <ol>
     <li>
         <h3>Overview</h3>
@@ -623,16 +623,15 @@
         </p>
     </li>
     <li>
-        <h3>Code</h3>
-
-        <a id="b1-simple"></a><h4>Simple version:</h4>
-        <small>if you not already done all instructions
+        <h3>Installation</h3>
+        <p>if you not already done all instructions
             that you had to read on the <a href="how_to_install.html">how to install</a> page
-            of this documentation please make it first</small>
+            of this documentation please make it first</p>
+        
+    </li>
+    <li><a id="b1-simple"></a><h3>CSS version:</h3>
         <p>
-            you only need paste next rows between <code class="language-markup">
-                &lt;body&gt;  ...  &lt;/body&gt;</code>
-            into your html file.
+            For using this block you should only paste next rows of code into your html file:
         </p>
         <pre class=" language-markup"><code class=" language-markup">
 <section class="blog-1">
@@ -746,28 +745,23 @@
     </div>
 </section>
 </code></pre>         
-
-      
- <h4>"LESS" version:</h4>
-        <small>if you not already done all instructions
-            that you had to read on the <a href="how_to_install.html">how to install</a> page
-            of this documentation please make it first</small>
+</li>
+<li>      
+ <h3>LESS version:</h3>
         <p>
-            you should paste same code (as in <a href="#b1-simple" class="inner-link">simple version</a>) and paste next code into your '<strong>.less</strong>' file after that
-            rows that you already had to paste.
+            You should paste same code (as in <a class="inner-link" href="#b1-simple">simple version</a>) and paste next code into your '.less' file after that rows that you already had to paste.
         </p>
         <pre class="language-scss"><code class="language-scss">
 @import 'blog-common.less';   
 @import 'blog-1.less';
 </code></pre> 
-        <h4>All versions:</h4>
+</li>
+<li>
+        <h3>Component Modification</h3>
         <p>
             So about modifications which you can do.
         </p>
-
-        <p>
-            <big><strong>Carousel</strong></big>
-        </p>
+                
         <p>
             As you can see in code we have block <code class="language-markup">
                 &lt;div id="b1-pt-1"&gt;...&lt;/div&gt;</code>
@@ -798,9 +792,7 @@
             replace class as <strong>pt-page-1</strong> to new class.
             Each new page should has new class with new number.
         </p>
-        <p>
-            <big><strong>Content except carousel</strong></big>
-        </p>
+                
         <p>
             You can replace any text except code structure.
         </p>

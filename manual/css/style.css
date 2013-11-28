@@ -16566,10 +16566,10 @@ a.active {
 }
 .mcontent .manual {
   -webkit-backface-visibility: hidden;
-  -webkit-transition: left 2s linear 0s;
-  -moz-transition: left 2s linear 0s;
-  -o-transition: left 2s linear 0s;
-  transition: left 2s linear 0s;
+  -webkit-transition: left 1s linear 0s;
+  -moz-transition: left 1s linear 0s;
+  -o-transition: left 1s linear 0s;
+  transition: left 1s linear 0s;
   left: 100%;
   right: -100%;
   display: block;
@@ -16936,12 +16936,14 @@ a.active {
 .mcontent .manual > div .back-button {
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
   border: 0 none;
+  font-weight: 800;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
   font-size: 20px;
   font-weight: normal;
   color: #394043;
+  text-shadow: 0 0 1px #32383b;
   float: left;
   display: inline-block;
   height: 38px;
@@ -16960,10 +16962,10 @@ a.active {
   -ms-transform: rotate(360deg);
   -o-transform: rotate(360deg);
   transform: rotate(360deg);
-  -webkit-transition: -webkit-transform 1s ease 0s, border 0.5s ease 1s;
-  -moz-transition: -moz-transform 1s ease 0s, border 0.5s ease 1s;
-  -o-transition: -o-transform 1s ease 0s, border 0.5s ease 1s;
-  transition: transform 1s ease 0s, border 0.5s ease 1s;
+  -webkit-transition: -webkit-transform 0.5s ease 0s, border 0.2s ease 0.2s;
+  -moz-transition: -moz-transform 0.5s ease 0s, border 0.2s ease 0.2s;
+  -o-transition: -o-transform 0.5s ease 0s, border 0.2s ease 0.2s;
+  transition: transform 0.5s ease 0s, border 0.2s ease 0.2s;
   border: 3px solid;
 }
 .mcontent .manual > div .content-man {
@@ -16979,22 +16981,32 @@ a.active {
   font-weight: normal;
   color: #ffffff;
   line-height: 35px;
+  font-weight: 800;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: 0;
   display: inline-block;
-  margin-bottom: 40px;
+  margin-bottom: 0;
 }
 .mcontent .manual > div .content-man h3 {
-  font-size: 25px;
+  font-size: 28px;
   font-weight: normal;
   color: #ffffff;
-  margin-bottom: 40px;
-  margin-top: 40px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  margin-bottom: 48px;
+  margin-top: 95px;
 }
 .mcontent .manual > div .content-man p {
-  font-size: 16px;
+  font-size: 19px;
   font-weight: normal;
   color: #7f8c8d;
-  padding-right: 20px;
+  font-weight: 300;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0 0 48px 0;
+}
+.mcontent .manual > div .content-man p:last-child {
+  margin: 0;
 }
 .mcontent .manual > div .content-man > ol {
   counter-reset: li;
@@ -17021,27 +17033,49 @@ a.active {
   text-align: center;
 }
 .mcontent .manual > div .content-man strong {
-  color: gold;
+  color: #f1c40f;
   font-weight: normal;
 }
 .mcontent .manual > div .content-man a {
-  color: gold;
+  color: #f1c40f;
   font-weight: normal;
   text-decoration: underline;
 }
 .mcontent .manual > div .content-man a:hover {
-  color: gold;
+  color: #f1c40f;
   text-decoration: none;
 }
 .mcontent .manual > div .content-man hr {
-  color: #000000;
-  border-top: 1px solid #000000;
-  border-bottom: 1px solid black;
-  margin: 40px 0;
+  color: #191a1b;
+  border-top: 1px solid #191a1b;
+  border-bottom: 1px solid #191a1b;
+  margin: 53px 0 36px;
 }
-.mcontent .manual > div small {
-  color: white;
+.mcontent .manual > div .content-man code[class*="language-"] {
+  white-space: normal;
+  display: inline-block;
+  border: 0 none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.mcontent .manual > div .content-man pre[class*="language-"] {
+  border: 0 none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  position: relative;
+  max-height: 400px;
+  max-width: 100%;
+  margin: 48px 0 95px;
+}
+.mcontent .manual > div .content-man pre[class*="language-"] code[class*="language-"] {
+  white-space: pre;
   display: block;
+  border: 0 none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 body:before {
   -webkit-backface-visibility: hidden;
@@ -17101,10 +17135,10 @@ body:before {
   right: 70%;
 }
 .read-manual .mcontent .manual {
-  -webkit-transition: left 2s linear 0s, -webkit-box-shadow 3s ease 2s;
-  -moz-transition: left 2s linear 0s, -moz-box-shadow 3s ease 2s;
-  -o-transition: left 2s linear 0s, -o-box-shadow 3s ease 2s;
-  transition: left 2s linear 0s, box-shadow 3s ease 2s;
+  -webkit-transition: left 1s linear 0s, -webkit-box-shadow 0.5s ease 1s;
+  -moz-transition: left 1s linear 0s, -moz-box-shadow 0.5s ease 1s;
+  -o-transition: left 1s linear 0s, -o-box-shadow 0.5s ease 1s;
+  transition: left 1s linear 0s, box-shadow 0.5s ease 1s;
   left: 150px;
   right: 0;
   -webkit-box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);

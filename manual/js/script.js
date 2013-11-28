@@ -62,13 +62,18 @@
                 $('.manual .' + id).show();
                 
                 $('html').addClass('read-manual');
+                
                 var manWidth = function() {
                     $('.manual').width($('body').outerWidth() - 150);
                 };
+                if($(window).width()>900){
                 manWidth();
                 $(window).resize(function() {
+                    if($(window).width()>900){
                     manWidth();
+                    }
                 });          
+                }
                 
                 
                 

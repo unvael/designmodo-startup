@@ -1,5 +1,11 @@
 (function($) {
     $(function() {
+        
+        $('pre code.language-markup').each(function() {
+            $(this).text($(this).html());
+        });
+        
+        
         var BlockId = {};
         $('button.read-man').each(function() {
             BlockId[$(this).attr('id')] = {};
@@ -103,9 +109,7 @@
             $('.manual > div').fadeOut(1000);
         });
 
-        $('code.language-markup').each(function() {
-            $(this).text($(this).html());
-        });
+        
         /*
          $('pre.htmlCode').each(function() {
          $(this).text($(this).html());

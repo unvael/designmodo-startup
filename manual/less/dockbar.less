@@ -95,10 +95,10 @@
         display:none;
       }
       dd {
-        margin: 0 0 0 45px;
-        .line-height(65px);
-        display: inline-block;
-        padding: 0;
+        margin: 0 0 0 22px;
+        padding:17px 0;        
+        .line-height(31px);
+        display: inline-block;       
         &:first-child {
           margin: 0;
         }
@@ -117,13 +117,20 @@
             background-color: #1f1b23;
             
         }      
+        &:last-child a{
+            border-right:0 none;
+          }
         a {
           .font(12px, #919497);
           font-family: @h-font-family;
           font-weight: 500;
+          padding-right:22px;
           text-transform: uppercase;
           text-decoration: underline;
           .a-color(#919497, white);
+          display:block;
+          border-right:1px #272a2e solid;
+          
           &.active {
             text-decoration: none;
             color: white;

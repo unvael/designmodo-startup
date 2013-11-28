@@ -974,52 +974,6 @@ body {
 .mcontent .pt-page-ontop {
   z-index: 999;
 }
-.mcontent .startup-kit_header h1 {
-  font-size: 45px;
-  font-weight: normal;
-  color: #2c3e50;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 59.99999999999999px;
-}
-.mcontent .startup-kit_header p {
-  font-size: 18px;
-  font-weight: normal;
-  color: #7f8c8d;
-  font-family: Lato, sens-serif;
-  line-height: 29.999999999999996px;
-}
-@media (max-width: 480px) {
-  .mcontent .startup-kit_header h1 {
-    font-size: 30px;
-    font-weight: normal;
-    color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 36px;
-  }
-  .mcontent .startup-kit_header p {
-    font-size: 16px;
-    font-weight: normal;
-    color: #7f8c8d;
-    font-family: Lato, sens-serif;
-    line-height: 27px;
-  }
-}
-@media (max-width: 767px) {
-  .mcontent .startup-kit_header h1 {
-    font-size: 30px;
-    font-weight: normal;
-    color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 36px;
-  }
-  .mcontent .startup-kit_header p {
-    font-size: 16px;
-    font-weight: normal;
-    color: #7f8c8d;
-    font-family: Lato, sens-serif;
-    line-height: 27px;
-  }
-}
 .mcontent .blog-1 .box-icon {
   margin: 0 auto 35px;
   text-align: center;
@@ -1918,6 +1872,52 @@ body {
 .mcontent .blog-5 .tags li {
   display: inline-block;
   margin: 0 10px;
+}
+.mcontent .startup-kit_header h1 {
+  font-size: 45px;
+  font-weight: normal;
+  color: #2c3e50;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 59.99999999999999px;
+}
+.mcontent .startup-kit_header p {
+  font-size: 18px;
+  font-weight: normal;
+  color: #7f8c8d;
+  font-family: Lato, sens-serif;
+  line-height: 29.999999999999996px;
+}
+@media (max-width: 480px) {
+  .mcontent .startup-kit_header h1 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #2c3e50;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 36px;
+  }
+  .mcontent .startup-kit_header p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #7f8c8d;
+    font-family: Lato, sens-serif;
+    line-height: 27px;
+  }
+}
+@media (max-width: 767px) {
+  .mcontent .startup-kit_header h1 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #2c3e50;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 36px;
+  }
+  .mcontent .startup-kit_header p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #7f8c8d;
+    font-family: Lato, sens-serif;
+    line-height: 27px;
+  }
 }
 .mcontent .contacts-1 h3 {
   font-size: 30px;
@@ -16064,6 +16064,35 @@ body {
   margin: 55px 0 0 0;
   text-decoration: none;
 }
+.manual-pages .container .man-items {
+  margin: 110px 0;
+}
+.manual-pages .container .man-items > div:first-child {
+  margin: 0;
+}
+.manual-pages .container .man-items h3 {
+  font-size: 20px;
+  font-weight: normal;
+  color: #303336;
+}
+.manual-pages .container .man-items p {
+  font-size: 16px;
+  font-weight: normal;
+  color: #696f6f;
+  margin: 25px 0 0 0;
+}
+.manual-pages .container .man-items .learn-more {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: normal;
+  color: #1b1f23;
+  text-decoration: none;
+  border-bottom: 1px solid #d6d6d7;
+  margin: 18px 0 0 0;
+}
+.manual-pages .container .man-items .learn-more:hover {
+  border-bottom: 0 none;
+}
 /*
 
 
@@ -16221,10 +16250,10 @@ body {
   }
 }
 .dockbar .main-menu dl dd {
-  margin: 0 0 0 45px;
-  line-height: 65px;
+  margin: 0 0 0 22px;
+  padding: 17px 0;
+  line-height: 30.999999999999996px;
   display: inline-block;
-  padding: 0;
 }
 .dockbar .main-menu dl dd:first-child {
   margin: 0;
@@ -16247,14 +16276,20 @@ body {
     padding: 0 0 0 45px;
   }
 }
+.dockbar .main-menu dl dd:last-child a {
+  border-right: 0 none;
+}
 .dockbar .main-menu dl dd a {
   font-size: 12px;
   font-weight: normal;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
+  padding-right: 22px;
   text-transform: uppercase;
   text-decoration: underline;
   color: #919497;
+  display: block;
+  border-right: 1px #272a2e solid;
 }
 .dockbar .main-menu dl dd a:hover,
 .dockbar .main-menu dl dd a:focus,
@@ -16379,7 +16414,8 @@ body {
 
 }
 body {
-  margin-top: 139px;
+  margin-top: 112px;
+  position: relative;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 body.hovered {

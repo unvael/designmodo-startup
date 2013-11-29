@@ -20,10 +20,16 @@ body{
   }
 }
 
+a, button{
+  &:hover, &:focus{
+    outline:0 none;
+  }
+}
 
 a {
   cursor: pointer;
   &.active{cursor: default;}
+  
 }
 
 .read-man {

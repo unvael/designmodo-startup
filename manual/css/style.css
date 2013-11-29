@@ -16455,6 +16455,12 @@ body.colapsed-menu-active .colapsed-menu {
 body.wo-components {
   margin-top: 66px;
 }
+a:hover,
+button:hover,
+a:focus,
+button:focus {
+  outline: 0 none;
+}
 a {
   cursor: pointer;
 }

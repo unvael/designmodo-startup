@@ -48,40 +48,29 @@
                 </dl>
             </menu>
 </nav>
-<section class="manual-pages">
+<section class="manual-pages hti">
     <div class="container">
         <div class="row">
-            <div class="span10 offset1">
-                <h1>How to install</h1>
-                <p>Startup framework use HTML5 doctype! So your html file should start with next rows:</p>
-<xmp class="htmlCode">
- <!DOCTYPE html>
- <html lang="your site language">
-    ...
-</xmp>
+            <div class="span9">
+                <h1>Instalation</h1>
                 <p>
-                    First you need have the package of Startup Framework or have access to it repository on the Github.
-                </p> 
-                <p>For use it the folder with Startup framework should be placed into root folder of your project 
-                    (You can change it location, but you should be attentive with urls in this situation).</p>             
-                <p>                    
-                    The Startup framework has two abstract versions which you can use.                    
-                    <small>* Under the abstract versions we mean only logical parts. So in real we have one version.</small>
-
-                    <h3>The Simple version</h3>
-
-                <p>
-                    If you have no experience developing with "LESS", then you can use this version.
-                    <br/>
-                    For start developing with simple version you should know only html and css
-                    (and if you want do some more interesting effects - javascript).                    
+                    Startup framework use HTML5 doctype! So your html file should start with next rows:
                 </p>
-                
-                        <h4>Code</h4>
-                        <p>Lets Start!</p>
-                        <ol>
-                        <li id="firstStep" class="step-desc"><p>First you need insert next code into your HTML file:</p>
-<pre class=" language-markup"><code class=" language-markup">
+                <pre class=" language-markup"><code class=" language-markup">
+ <!--DOCTYPE html --> 
+ ...  
+</code></pre>
+                <p>
+                    For use it the folder with Startup framework should be placed into root folder of your project (You can change the location, but you should be attentive with urls in this situation).
+                </p>
+                <p>
+                    The Startup framework has two abstract versions which you can use.
+                </p>
+                <h2>Lets Start!</h2>
+                <p>
+                    First you need insert next code into your HTML file:
+                </p>
+                <pre class=" language-markup"><code class=" language-markup">
 <!-- this code between <header> ... </header> -->   
                    
 <link rel="stylesheet" href="(way to the startup folder)/flat-ui/bootstrap/css/bootstrap.css">
@@ -109,10 +98,11 @@
 <script src="(way to the startup folder)/common-files/js/jquery.svganim.js"></script>
 <script src="(way to the startup folder)/common-files/js/jquery.parallax.min.js"></script>       
 <script src="(way to the startup folder)/common-files/js/startup-kit.js"></script>                        
-</code></pre> 
-</li>
-<li class="step-desc"><p>Second step. You have to insert styles for elements which you want to use:</p>
-<pre class=" language-markup"><code class=" language-markup">
+</code></pre>
+                <p>
+                    Second step. You have to insert styles for elements which you want to use:
+                </p>
+                <pre class=" language-markup"><code class=" language-markup">
 <!-- header -->  
 <link rel="stylesheet" href="(way to the startup folder)/ui-kit-header/css/style.css">  
 <!-- content --> 
@@ -129,51 +119,72 @@
 <link rel="stylesheet" href="(way to the startup folder)/ui-kit-projects/css/style.css">
 <!-- footer -->
 <link rel="stylesheet" href="(way to the startup folder)/ui-kit-footer/css/style.css">   
-</code></pre>   
-</li>
-<li id="lastStep" class="step-desc"><p>Last that you need to do - choose block that you want and follow the instructions for it!</p>
-<ul>
-    <li><a href="headers.html">blocks for HEADER</a></li>
-    <li><a href="blogs.html">blocks for BLOG </a></li>
-    <li><a href="contacts.html">blocks for CONTACT </a></li>
-    <li><a href="contents.html">blocks for CONTENT </a></li>
-    <li><a href="prices.html">blocks for PRICE </a></li>
-    <li><a href="projects.html">blocks for PROJECT </a></li>
-    <li><a href="crews.html">blocks for CREW </a></li>
-    <li><a href="footers.html">blocks for FOOTER </a></li>
-</ul>
-</li>
-</ol>               
+</code></pre>                                   
 
-                <h3>The "LESS" version</h3>
+
 
                 <p>
-                    If you want to use "LESS" it's your choise.<br/>
-                    We made all to make usability of our framework simpler.  
+                    Last that you need to do - choose block that you want and follow the instructions for it!
                 </p>
-                <h4>Code</h4>
-                <ol>
-                <li class="step-desc"><p>First step is <a class="inner-link" href="#firstStep">equal to the simple version</a></p></li>
-                <li class="step-desc"><p>Second step. In your main '.less' file add next rows of code:</p>
-<pre class="language-scss"><code class="language-scss">
+                <!--
+                <a href="headers.html">blocks for HEADER</a>
+                <a href="blogs.html">blocks for BLOG </a>
+                <a href="contacts.html">blocks for CONTACT </a>
+                <a href="contents.html">blocks for CONTENT </a>
+                <a href="prices.html">blocks for PRICE </a>
+                <a href="projects.html">blocks for PROJECT </a>
+                <a href="crews.html">blocks for CREW </a>
+                <a href="footers.html">blocks for FOOTER </a>-->
+
+                <h2>The "LESS" version</h2>
+                <p>
+                    First step is <a class="inner-link" href="#firstStep">equal to the simple version</a>
+                </p>
+                <p>
+                    Second step. In your main '.less' file add next rows of code:
+                </p>
+                <pre class="language-scss"><code class="language-scss">
 @import '(way to the startup folder)/flat-ui/less/config.less';
 @import '(way to the startup folder)/flat-ui/less/mixins.less';
-/*only fo flat-ui free*/ @import '(way to the startup folder)/common-files/less/flat-ui-free2.0.0-fix.less'; /* end only for flat-ui free*/
+/*only fo flat-ui free*/ 
+    @import '(way to the startup folder)/common-files/less/flat-ui-free2.0.0-fix.less'; 
+/* end only for flat-ui free*/
 @import '(way to the startup folder)/common-files/less/mixins.less';
 @import '(way to the startup folder)/common-files/less/common.less';
 @import '(way to the startup folder)/common-files/less/navbar.less';
 @import '(way to the startup folder)/common-files/less/helper.less';
-</code></pre>                     
-                </li>
-                <li class="step-desc"><p>The last step is <a class="inner-link" href="#lastStep">equal to the simple version</a></p></li>
-                </ol>
-                <h3>Warning!</h3>
+</code></pre>                                                     
+                
+
+
                 <p>
-                    All components of Startup framework use responsive design. 
-                    Some of it could have differences between browser that support JavaScript and 
-                    browsers without JavaScript support. It's not critical difference. 
+                    The last step is <a class="inner-link" href="#lastStep">equal to the simple version</a>
+                </p>
+
+                <h2>Responsive Tip</h2>
+                <p>
+                    All components of Startup framework use responsive design. Some of it could have differences between 
+                    browser that support JavaScript and browsers without JavaScript support. It's not critical difference. 
                     But if you will develop product for these browsers, please be attentive and don't forget check the result.
                 </p>
+            </div>
+        </div>
+        
+        <div class="row man-items">
+            <div class="span3">
+                <h3>Flat UI</h3>
+                <p>Startup Framework based on Flat UI Free. You can add new elements using Flat UI Pro Version.</p>
+                <a href="flat-ui.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="span3">
+                <h3>Video Tutorials</h3>
+                <p>Video tutorials show you how to make a web-site for your startup from design to code.</p>
+                <a href="tutorials.html" class="learn-more">Watch Tutorials</a>
+            </div>           
+            <div class="span3">
+                <h3>Have a Question?</h3>
+                <p>You can leave your questions and comments on GitHub or e-mail us. Also we have F.A.Q.</p>
+                <a href="faq.html" class="learn-more">F.A.Q Page</a>
             </div>
         </div>
     </div>

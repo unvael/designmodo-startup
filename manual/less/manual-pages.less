@@ -7,6 +7,14 @@
 /* prism default theme */
   @import '../prism/themes/default.less';
 /*end prism*/  
+&.hti .container{
+  p{
+        .font(20px, #7f8c8d);
+        font-family:@h-font-family;
+        font-weight:normal;
+        margin:49px 0 0 0;
+      }
+}
   
   &.css-classes{
     table{
@@ -50,13 +58,19 @@
   }
   
     .container{      
-      h1{
-         
+      h1{         
          .font(35px, #1b1f23);
          font-family:@h-font-family;
          font-weight:800;
          margin:125px 0 0 0;
       }     
+      
+      h2{
+         .font(28px, #1b1f23);
+         font-family:@h-font-family;
+         font-weight:800;
+         margin:90px 0 0 0;
+      }
       p{
         .font(20px, #7f8c8d);
         font-family:@h-font-family;
@@ -79,13 +93,42 @@
         }
       }
       
+      code[class*="language-"]{
+              white-space:normal;
+              display:inline-block;
+              border:0 none;
+              .border-radius(0);
+      }
+          
+      pre[class*="language-"] {
+            border:0 none;
+            .border-radius(0);
+            position:relative;
+            max-width:100%;
+            margin:48px 0 0 0;
+            code[class*="language-"]{
+              white-space:pre;
+              display: block;
+              border:0 none;
+              .border-radius(0);
+            }
+      }
+      
       .man-items{
-        margin:110px 0;
+        margin:110px 0;        
+        position:relative;
+        > div, > div > div{
+          position:relative;
+        }
+        
         > div:first-child{
           margin:0;
         }
         h3{
           .font(20px, #303336);
+          @media (max-width: 768px) {
+            margin-top:40px;
+          }
         }
         p{
           .font(16px, #696f6f);
@@ -103,42 +146,22 @@
         }
       }
       
-      /*
-      a{
-              border-bottom:1px dotted;
-              .a-color(@peter-river, @base);
-            }
-             ol{
-                  counter-reset:li;            
-                  list-style:none;  
-                  margin:0;         
-                > li.step-desc {
-                    position:relative; 
-                    margin-top:20px;
-                    margin-bottom:20px;            
-                   
-                    &:before{
-                        background: none repeat scroll 0 0 #BDC3C7;
-                        .border-radius(100%);                 
-                        color: #1B1E23;
-                        content: counter(li, decimal);
-                        counter-increment: li;
-                        display: inline-block;
-                        float: left;
-                        font-family: @h-font-family;
-                        font-weight: bold;
-                        margin: 0 25px 0 -50px;
-                        padding: 3px 9px;
-                        text-align: center;
-                    }
-                } 
-              }   */
       
+      a{ 
+        border-bottom: 1px solid #d6d6d7;
+        .font(20px, #1b1f23);
+        text-decoration:none;
+        font-family:@h-font-family;
+        font-weight:300;  
+        &:hover{
+             border-bottom:0 none;
+        }      
+      }    
       
     }
 }
 
-/*
+
 
 
 .faq{
@@ -186,4 +209,4 @@
     }
   }
 }
-*/
+

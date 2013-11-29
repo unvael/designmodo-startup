@@ -4,19 +4,16 @@
         $('pre code.language-markup').each(function() {
             $(this).text($(this).html());
         });
-        
-        $('#open-close-menu').click(function() {            
-             console.log('clicked menu button');
+
+        $('#open-close-menu').click(function() {
             $('body').toggleClass('colapsed-menu-active');
         });
-        $('html').click(function(e) { 
-             console.warn('element clicked = ',$(e.target).attr('class'), '\n parent element = ', $(e.target).parents().attr('class'));          
-            if (!$(e.target).hasClass('menu-btn') && 
-            !$(e.target).hasClass('colapsed-menu') && 
-            !$(e.target).parents().hasClass('colapsed-menu') &&
-            !$(e.target).parents().hasClass('menu-btn')) {
-                console.log('hide menu by click to html');
-               $('body').removeClass('colapsed-menu-active');
+
+        
+        $('html').click(function(e) {
+            // console.warn('element clicked = ',$(e.target).attr('class'), '\n parent element = ', $(e.target).parents().attr('class'));
+            if (!$(e.target).hasClass('menu-btn') && !$(e.target).hasClass('colapsed-menu') && !$(e.target).parents().hasClass('colapsed-menu') && !$(e.target).parents().hasClass('menu-btn')) {
+                $('body').removeClass('colapsed-menu-active');
             }
         });
 

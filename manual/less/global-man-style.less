@@ -1,9 +1,19 @@
 body{
   margin-top: 112px;
+  @media (max-width: 979px) { 
+    margin-top: 66px;
+  }
   position:relative;
   font-family:@h-font-family;
   &.hovered{
     background-color: @clouds;
+  }
+  &.colapsed-menu-active{
+    height:100%;
+    overflow:hidden;
+    .colapsed-menu{
+            display:block !important;            
+    }
   }
 }
 
@@ -33,7 +43,7 @@ a {
     background-color:#23292f;
   }
   @media (max-width: 768px) {
-    margin-top:-42px;
+  //  margin-top:-42px;
   } 
   
 }

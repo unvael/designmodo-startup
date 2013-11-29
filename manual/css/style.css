@@ -974,52 +974,6 @@ body {
 .mcontent .pt-page-ontop {
   z-index: 999;
 }
-.mcontent .startup-kit_header h1 {
-  font-size: 45px;
-  font-weight: normal;
-  color: #2c3e50;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 59.99999999999999px;
-}
-.mcontent .startup-kit_header p {
-  font-size: 18px;
-  font-weight: normal;
-  color: #7f8c8d;
-  font-family: Lato, sens-serif;
-  line-height: 29.999999999999996px;
-}
-@media (max-width: 480px) {
-  .mcontent .startup-kit_header h1 {
-    font-size: 30px;
-    font-weight: normal;
-    color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 36px;
-  }
-  .mcontent .startup-kit_header p {
-    font-size: 16px;
-    font-weight: normal;
-    color: #7f8c8d;
-    font-family: Lato, sens-serif;
-    line-height: 27px;
-  }
-}
-@media (max-width: 767px) {
-  .mcontent .startup-kit_header h1 {
-    font-size: 30px;
-    font-weight: normal;
-    color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 36px;
-  }
-  .mcontent .startup-kit_header p {
-    font-size: 16px;
-    font-weight: normal;
-    color: #7f8c8d;
-    font-family: Lato, sens-serif;
-    line-height: 27px;
-  }
-}
 .mcontent .blog-1 .box-icon {
   margin: 0 auto 35px;
   text-align: center;
@@ -1918,6 +1872,52 @@ body {
 .mcontent .blog-5 .tags li {
   display: inline-block;
   margin: 0 10px;
+}
+.mcontent .startup-kit_header h1 {
+  font-size: 45px;
+  font-weight: normal;
+  color: #2c3e50;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 59.99999999999999px;
+}
+.mcontent .startup-kit_header p {
+  font-size: 18px;
+  font-weight: normal;
+  color: #7f8c8d;
+  font-family: Lato, sens-serif;
+  line-height: 29.999999999999996px;
+}
+@media (max-width: 480px) {
+  .mcontent .startup-kit_header h1 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #2c3e50;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 36px;
+  }
+  .mcontent .startup-kit_header p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #7f8c8d;
+    font-family: Lato, sens-serif;
+    line-height: 27px;
+  }
+}
+@media (max-width: 767px) {
+  .mcontent .startup-kit_header h1 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #2c3e50;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 36px;
+  }
+  .mcontent .startup-kit_header p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #7f8c8d;
+    font-family: Lato, sens-serif;
+    line-height: 27px;
+  }
 }
 .mcontent .contacts-1 h3 {
   font-size: 30px;
@@ -16166,9 +16166,64 @@ body {
   overflow: visible;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+.dockbar.navbar-fixed-top .colapsed-menu {
+  display: none;
+}
 @media (max-width: 979px) {
   .dockbar.navbar-fixed-top {
     position: fixed;
+  }
+  .dockbar.navbar-fixed-top .colapsed-menu {
+    float: right;
+    display: none;
+    max-width: 300px;
+    position: absolute;
+    right: 0;
+    top: 52px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+  .dockbar.navbar-fixed-top .colapsed-menu dl {
+    position: relative;
+    display: block;
+    margin: 0;
+  }
+  .dockbar.navbar-fixed-top .colapsed-menu dl dd {
+    border-bottom: 1px dashed #333;
+    line-height: 45px;
+    display: block;
+    margin: 0;
+    -webkit-box-sizing: 'border-box';
+    -moz-box-sizing: 'border-box';
+    box-sizing: 'border-box';
+    width: 100%;
+    float: left;
+    text-transform: uppercase;
+    background-color: #1f1b23;
+  }
+  .dockbar.navbar-fixed-top .colapsed-menu dl dd dd {
+    margin: 0 0 0 20px;
+    font-size: 12px;
+  }
+  .dockbar.navbar-fixed-top .colapsed-menu dl dd > a {
+    float: left;
+    display: block;
+    width: 100%;
+    padding: 0 0 0 65px;
+    color: #919497;
+  }
+  .dockbar.navbar-fixed-top .colapsed-menu dl dd > a:hover,
+  .dockbar.navbar-fixed-top .colapsed-menu dl dd > a:focus,
+  .dockbar.navbar-fixed-top .colapsed-menu dl dd > a.active {
+    color: #ffffff;
+  }
+  .dockbar.navbar-fixed-top .colapsed-menu dl dd > a.active {
+    text-decoration: none;
+    color: white;
+  }
+  .dockbar.navbar-fixed-top .colapsed-menu dl dd > a.active:after {
+    display: none;
   }
   .dockbar.navbar-fixed-top > menu {
     padding: 0 20px;
@@ -16180,7 +16235,7 @@ body {
 .dockbar .menu-btn {
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 979px) {
   .dockbar .menu-btn {
     display: inline-block;
     float: right;
@@ -16206,15 +16261,11 @@ body {
 }
 .dockbar .main-menu a.man-brand {
   display: inline-block;
+  float: left;
   text-decoration: none;
   line-height: 65px;
 }
 @media (max-width: 979px) {
-  .dockbar .main-menu a.man-brand {
-    line-height: 29.999999999999996px;
-  }
-}
-@media (max-width: 768px) {
   .dockbar .main-menu a.man-brand {
     line-height: 65px;
     width: auto;
@@ -16238,19 +16289,9 @@ body {
   display: inline-block;
   margin: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 979px) {
   .dockbar .main-menu dl {
     display: none;
-  }
-  .dockbar .main-menu dl.menu-visible {
-    background-color: #1f1b23;
-    display: block;
-    height: 100%;
-    position: fixed;
-    right: 0;
-    top: 65px;
-    width: 300px;
-    z-index: 2000;
   }
 }
 .dockbar .main-menu dl dd {
@@ -16261,24 +16302,6 @@ body {
 }
 .dockbar .main-menu dl dd:first-child {
   margin: 0;
-}
-@media (max-width: 768px) {
-  .dockbar .main-menu dl dd {
-    display: block;
-    margin: 0;
-    border-bottom: 1px dashed #333;
-    -webkit-box-sizing: 'border-box';
-    -moz-box-sizing: 'border-box';
-    box-sizing: 'border-box';
-    width: 100%;
-    line-height: 45px;
-    background-color: #1f1b23;
-  }
-  .dockbar .main-menu dl dd > a {
-    display: block;
-    width: 100%;
-    padding: 0 0 0 45px;
-  }
 }
 .dockbar .main-menu dl dd:last-child a {
   border-right: 0 none;
@@ -16304,49 +16327,14 @@ body {
   text-decoration: none;
   color: white;
 }
-.dockbar .main-menu dl dd.sub-menu {
-  display: none;
-}
-@media (max-width: 768px) {
-  .dockbar .main-menu dl dd.sub-menu {
-    display: block;
-  }
-  .dockbar .main-menu dl dd.sub-menu dl {
-    position: relative;
-    top: auto;
-    display: block;
-  }
-  .dockbar .main-menu dl dd.sub-menu dl dd {
-    display: block;
-    margin: 0;
-    -webkit-box-sizing: 'border-box';
-    -moz-box-sizing: 'border-box';
-    box-sizing: 'border-box';
-    width: 100%;
-    background-color: #1f1b23;
-  }
-  .dockbar .main-menu dl dd.sub-menu dl dd > a {
-    display: block;
-    width: 100%;
-    padding: 0 0 0 65px;
-  }
-  .dockbar .main-menu dl dd.sub-menu dl dd > a.active {
-    text-decoration: none;
-    color: white;
-  }
-  .dockbar .main-menu dl dd.sub-menu dl dd > a.active:after {
-    display: none;
-  }
-}
 .dockbar .sub-menu {
-  display: block;
   background-color: #ebebeb;
   margin: 0;
   padding: 0;
   width: 100%;
   box-sizing: border-box;
 }
-@media (max-width: 768px) {
+@media (max-width: 979px) {
   .dockbar .sub-menu {
     display: none;
   }
@@ -16401,29 +16389,26 @@ body {
 .dockbar .sub-menu dl dd a.active {
   text-decoration: none;
   color: #1b1f23;
-  /*
-            &:after{
-                          color: #F4F2D4;
-                          content: "в–ј";
-                          display: block;
-                          font-size: 25px;
-                          font-weight: bolder;
-                          line-height: 0;
-                          margin: 0;
-                          padding: 0;
-                          position: absolute;
-                          text-align: center;
-                          width: 100%;
-                        }*/
-
 }
 body {
   margin-top: 112px;
   position: relative;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+@media (max-width: 979px) {
+  body {
+    margin-top: 66px;
+  }
+}
 body.hovered {
   background-color: #ecf0f1;
+}
+body.colapsed-menu-active {
+  height: 100%;
+  overflow: hidden;
+}
+body.colapsed-menu-active .colapsed-menu {
+  display: block !important;
 }
 a {
   cursor: pointer;
@@ -16462,9 +16447,7 @@ a.active {
   background-color: #23292f;
 }
 @media (max-width: 768px) {
-  .read-man {
-    margin-top: -42px;
-  }
+  
 }
 .mask {
   display: none;

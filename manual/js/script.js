@@ -1,11 +1,25 @@
 (function($) {
     $(function() {
-        
+
         $('pre code.language-markup').each(function() {
             $(this).text($(this).html());
         });
         
-        
+        $('#open-close-menu').click(function() {            
+             console.log('clicked menu button');
+            $('body').toggleClass('colapsed-menu-active');
+        });
+        $('html').click(function(e) { 
+             console.warn('element clicked = ',$(e.target).attr('class'), '\n parent element = ', $(e.target).parents().attr('class'));          
+            if (!$(e.target).hasClass('menu-btn') && 
+            !$(e.target).hasClass('colapsed-menu') && 
+            !$(e.target).parents().hasClass('colapsed-menu') &&
+            !$(e.target).parents().hasClass('menu-btn')) {
+                console.log('hide menu by click to html');
+               $('body').removeClass('colapsed-menu-active');
+            }
+        });
+
         var BlockId = {};
         $('button.read-man').each(function() {
             BlockId[$(this).attr('id')] = {};
@@ -37,9 +51,9 @@
                 $('#' + id).css('margin-top', (BlockId[id].bH - 49) / 2 + 'px');
             }
         }
-        
+
         $('.manual > div').hide('fast');
-        
+
         var helpButton = $('.read-man');
         helpButton.each(function() {
 
@@ -60,23 +74,9 @@
             $(this).click(function() {
                 var id = $(this).attr('id');
                 $('.manual .' + id).show();
-                
+
                 $('html').addClass('read-manual');
-                
-                var manWidth = function() {
-                    $('.manual').width($('body').outerWidth() - 150);
-                };
-                if($(window).width()>900){
-                manWidth();
-                $(window).resize(function() {
-                    if($(window).width()>900){
-                    manWidth();
-                    }
-                });          
-                }
-                
-                
-                
+
                 var elem = $('.mcontent > .' + id + ':not(.mask)');
                 if (elem.length == 0) {
                     elem = $('.mcontent > .' + id + '-sub');
@@ -88,10 +88,6 @@
                     elemPos = elem.position().top;
                 }
                 $(window).scrollTop(elemPos - 110);
-
-                
-               
-                
 
                 $('.manual').scrollTop(0);
 
@@ -112,37 +108,6 @@
         backButton.click(function() {
             $('html').removeClass('read-manual');
             $('.manual > div').fadeOut(1000);
-        });
-
-        
-        /*
-         $('pre.htmlCode').each(function() {
-         $(this).text($(this).html());
-         });
-
-         $('.manual pre.htmlCode').snippet("html", {
-         style : "vim-dark"
-         });
-         $('.manual pre.cssCode').snippet("css", {
-         style : "vim-dark"
-         });
-         $('.main-page pre.htmlCode').snippet("html", {
-         style : "emacs",
-         showNum : false
-         });
-         $('.main-page pre.cssCode').snippet("css", {
-         style : "emacs",
-         showNum : false
-         });*/
-
-        $('.menu-btn').click(function() {
-            $('.menu').toggleClass('menu-visible');
-            $('html').click(function(e) {
-                if (!$(e.target).hasClass('menu-btn') && !$(e.target).hasClass('menu') && !$(e.target).parents().hasClass('menu')) {
-                    $('.menu').removeClass('menu-visible');
-                }
-            });
-
         });
 
         $('.question').click(function() {

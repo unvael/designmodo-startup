@@ -16635,9 +16635,42 @@ a.active {
   background-color: #1B1E23;
   width: 900px;
 }
+.mcontent .manual a.man-brand {
+  display: inline-block;
+  float: right;
+  padding: 115px 130px 0 0;
+  text-decoration: none;
+  line-height: 45px;
+}
+@media (max-width: 768px) {
+  .mcontent .manual a.man-brand {
+    padding: 20px;
+    width: auto;
+  }
+}
+@media (max-width: 400px) {
+  .mcontent .manual a.man-brand {
+    padding: 20px;
+    width: auto;
+    float: left;
+  }
+}
+.mcontent .manual a.man-brand .logotype {
+  font-size: 16px;
+  font-weight: normal;
+  color: #ffffff;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.mcontent .manual a.man-brand .doc-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #919497;
+  font-weight: normal;
+}
 @media (max-width: 768px) {
   .mcontent .manual {
-    padding: 0 12px;
+    padding: 0 20px;
   }
 }
 @media (max-width: 900px) {
@@ -16677,12 +16710,12 @@ a.active {
   overflow: visible;
   letter-spacing: normal;
   position: absolute;
-  padding: 115px 130px 115px 166px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  padding: 115px 130px 115px 166px;
   left: auto;
-  right: auto;
+  right: 0;
   top: auto;
   bottom: auto;
   width: 100%;
@@ -16976,6 +17009,17 @@ a.active {
   padding-right: 0.8em;
   text-align: right;
 }
+@media (max-width: 768px) {
+  .mcontent .manual > div {
+    left: 0;
+    padding: 20px 20px 20px 70px;
+  }
+}
+@media (max-width: 555px) {
+  .mcontent .manual > div {
+    padding: 80px 20px 20px 70px;
+  }
+}
 .mcontent .manual > div * {
   text-align: left;
   padding-top: 0;
@@ -17030,6 +17074,7 @@ a.active {
   color: #ffffff;
   line-height: 35px;
   font-weight: 800;
+  float: left;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: 0;
   display: inline-block;
@@ -17192,37 +17237,6 @@ body:before {
   -webkit-box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
   box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
-}
-.read-manual .mcontent .manual a.man-brand {
-  display: inline-block;
-  float: right;
-  text-decoration: none;
-  line-height: 45px;
-}
-@media (max-width: 979px) {
-  .read-manual .mcontent .manual a.man-brand {
-    line-height: 29.999999999999996px;
-  }
-}
-@media (max-width: 768px) {
-  .read-manual .mcontent .manual a.man-brand {
-    line-height: 65px;
-    width: auto;
-    margin-left: 20px;
-  }
-}
-.read-manual .mcontent .manual a.man-brand .logotype {
-  font-size: 16px;
-  font-weight: normal;
-  color: #ffffff;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-.read-manual .mcontent .manual a.man-brand .doc-title {
-  text-transform: uppercase;
-  font-size: 16px;
-  color: #919497;
-  font-weight: normal;
 }
 @media (max-width: 900px) {
   .read-manual .mcontent .manual {

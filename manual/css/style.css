@@ -15966,6 +15966,12 @@ body {
   font-weight: normal;
   margin: 49px 0 0 0;
 }
+.manual-pages.css-classes {
+  margin-top: 0;
+}
+.manual-pages.css-classes .container h1 {
+  margin-top: 0;
+}
 .manual-pages.css-classes table {
   width: 100%;
   border: 1px solid black;
@@ -16060,9 +16066,9 @@ body {
 }
 .manual-pages .container pre[class*="language-"] {
   border: 0 none;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   position: relative;
   max-width: 100%;
   margin: 48px 0 0 0;
@@ -16126,8 +16132,14 @@ body {
 .manual-pages .container a:hover {
   border-bottom: 0 none;
 }
+.faq .questions {
+  margin: 70px 0 0 0;
+}
 .faq .question {
   cursor: pointer;
+}
+.faq .question p {
+  margin: 0;
 }
 .faq .question:before {
   background-color: #FFFFFF;
@@ -16162,6 +16174,7 @@ body {
   display: none;
   padding: 20px 50px;
   background-color: white;
+  margin-bottom: 49px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -16170,6 +16183,10 @@ body {
   font-size: 14px;
   font-weight: normal;
   color: #7f8c8d;
+  margin-bottom: 20px;
+}
+.faq .question .answer pre {
+  margin-bottom: 20px;
 }
 .nav-visible .dockbar {
   display: none;
@@ -16434,6 +16451,9 @@ body.colapsed-menu-active {
 }
 body.colapsed-menu-active .colapsed-menu {
   display: block !important;
+}
+body.wo-components {
+  margin-top: 66px;
 }
 a {
   cursor: pointer;

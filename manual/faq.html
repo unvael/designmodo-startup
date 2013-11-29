@@ -20,7 +20,7 @@
     <script src="../flat-ui/js/jquery-1.8.3.min.js"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
 </head>
-<body>
+<body class="wo-components">
 <nav class="dockbar navbar-fixed-top">
     <menu class="main-menu">
         <div class="container">
@@ -51,8 +51,9 @@
 <section class="manual-pages faq">
     <div class="container">
         <div class="row">
-            <div class="span10 offset1">
+            <div class="span9">
                 <h1>F.A.Q.</h1>
+                <div class="questions">
                 <div class="question">
                     <p>I'm pull the Startup framework from the repository and all of it components have a demaged view. What does it meen?</p>
                     <div class="answer">
@@ -60,11 +61,25 @@
                             So this situation can appears if you pull the project without submodule.
                             For fix it, you should execute thouse commands in
                              your git console: </p>
-                            <p><code class="language-markup">git submodule init</code></p>
-                            <p><code class="language-markup">git submodule update</code></p>
+                            <pre class="language-bash"><code class="language-bash">
+git submodule init
+git submodule update
+</code></pre>
+                           
                         <p>After this submodule folder 'flat-ui' mustn't be empty, and Startup components have to view right way.</p>
                     </div>
                 </div>
+                <div class="question">
+                    <p>Is Startup framework has some specific CSS classes or it only uses classes from its based frameworks?</p>
+                    <div class="answer">
+                        <p>
+                            Startup framework is based on Flat-UI 2.0.0, but it has owned CSS classes and LESS mixins.<br/>
+                            You can watch it in the special <a href="startup-css-micro.html" target="_blank" class="inner-link">Memo</a>.                           
+                        </p>
+                        <p> We recomend save this page if you will work with our framework.</p>
+                    </div>
+                </div>
+                
                 
                 <div class="question">
                     <p>I want to use the 'less' version. How can I do it? </p>
@@ -108,7 +123,24 @@
                         </p>
                     </div>
                 </div>
-                
+                </div>
+            </div>
+        </div>
+        <div class="row man-items">
+            <div class="span3">
+                <h3>Installation</h3>
+                <p>Installation of Startup Framework doesn’t take much of your time. It’s easy!</p>
+                <a href="how_to_install.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="span3">
+                <h3>Flat UI</h3>
+                <p>Startup Framework based on Flat UI Free. You can add new elements using Flat UI Pro Version.</p>
+                <a href="flat-ui.html" class="learn-more">Learn More</a>
+            </div>
+           <div class="span3">
+                <h3>Video Tutorials</h3>
+                <p>Video tutorials show you how to make a web-site for your startup from design to code.</p>
+                <a href="tutorials.html" class="learn-more">Watch Tutorials</a>
             </div>
         </div>
     </div>

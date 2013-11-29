@@ -17,6 +17,10 @@
 }
   
   &.css-classes{
+    margin-top:0;
+    .container h1{
+      margin-top:0;
+    }
     table{
       width:100%;
       border:1px solid black;
@@ -102,7 +106,7 @@
           
       pre[class*="language-"] {
             border:0 none;
-            .border-radius(0);
+            .border-radius(5px);
             position:relative;
             max-width:100%;
             margin:48px 0 0 0;
@@ -165,8 +169,13 @@
 
 
 .faq{
- 
-  .question{    
+   .questions{
+      margin:70px 0 0 0;
+   }
+  .question{     
+    p{
+      margin:0;
+    }
     cursor:pointer;
     &:before{
       background-color: #FFFFFF;
@@ -188,7 +197,7 @@
         .line-height(5px);
       }
       .answer{
-        display:block;
+        display:block;        
       }
     }
     
@@ -201,11 +210,15 @@
       display:none;
       padding: 20px 50px;
       background-color:white;
+      margin-bottom:49px;
       .border-radius(10px);
       p{
         .font(14px);
+        margin-bottom:20px;
       }
-      
+      pre{
+        margin-bottom:20px;
+      }
     }
   }
 }

@@ -1166,6 +1166,8 @@ section * {
   margin-bottom: 29px;
   border-color: #ebedee;
   color: #7f8c8d;
+  font-size: 17px;
+  line-height: 22px;
 }
 .contacts-1 form input:focus,
 .contacts-1 form textarea:focus {

@@ -1760,11 +1760,6 @@ body > section {
   }
   .tpl-22-section-1 .hero-unit {
     padding: 0;
-    background: transparent;
-    color: #bdc3c7;
-  }
-  .tpl-22-section-1 .hero-unit h1 {
-    border-color: #bdc3c7;
   }
 }
 .content-18 h1 {
@@ -1788,6 +1783,9 @@ body > section {
 }
 .price-5 .plans .plan:hover {
   background-color: #fffeee;
+}
+.price-5 .plans .plan-2 .title {
+  border-color: #cf4436;
 }
 .price-5 .terms a {
   color: #7f8c8d;

@@ -4516,6 +4516,18 @@ section * {
 .header-14-sub .subscribe-form form .input-append input[type="text"] {
   border-color: white;
   border-right: 0;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  min-height: 0;
+}
+@media (max-width: 480px) {
+  .header-14-sub .subscribe-form form .input-append input[type="text"] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    min-height: 41px;
+  }
 }
 .header-14-sub .subscribe-form form .input-append .btn {
   padding-left: 30px;
@@ -4525,7 +4537,7 @@ section * {
   -moz-border-radius: 0 6px 6px 0;
   border-radius: 0 6px 6px 0;
 }
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   .header-14-sub .subscribe-form form .input-append .btn {
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;

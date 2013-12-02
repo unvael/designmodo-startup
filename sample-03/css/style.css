@@ -1231,9 +1231,21 @@ section * {
   }
 }
 .header-11-sub .background {
-  background-image: url("../img/img-1.jpg");
+  background-image: url("../img/Brazil_002.png");
   opacity: 0.8;
   filter: alpha(opacity=80);
+}
+.header-11-sub h3 {
+  color: #2c3e50;
+}
+.header-11-sub p {
+  color: #7f8c8d;
+}
+.header-11-sub .additional-links {
+  color: #7f8c8d;
+}
+.header-11-sub .additional-links a {
+  color: #697172;
 }
 .logos {
   background: #f1f1f1;

@@ -306,8 +306,10 @@ startupKit.uiKitHeader.header11 = function() {
     };
 
     $(window).resize(function() {
+        
         var player = $('.header-11-sub .player');
         if ($(window).width() < 751) {
+            console.log($(window).width());
             $('.header-11-sub .signup-form').before(player);
             $('.header-11-sub .player-wrapper').hide();
         } else {

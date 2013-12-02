@@ -1007,7 +1007,7 @@ section * {
 }
 .header-2 .navbar .nav > li > a {
   padding: 31px 0 27px;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: normal;
   font-weight: 400;
   letter-spacing: 1px;
@@ -3926,6 +3926,10 @@ section * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+.header-11-sub .signup-form form .btn {
+  padding-top: 11px;
+  padding-bottom: 11px;
 }
 @media (max-width: 767px) {
   .header-11-sub .signup-form form .btn {

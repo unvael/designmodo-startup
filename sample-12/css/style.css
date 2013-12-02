@@ -975,7 +975,7 @@ section * {
   height: 12px;
   margin-left: 7px;
   text-indent: -999px;
-  background-color: #bdc3c7;
+  background-color: #f1f1f1;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -1023,7 +1023,7 @@ section * {
   min-height: 100px;
   /* img height */
 
-  border-top: 1px solid #ecf0f1;
+  border-top: 2px solid #ecf0f1;
 }
 .content-10 .features .box.first,
 .content-10 .features .box:first-child,
@@ -1038,7 +1038,7 @@ section * {
 }
 .content-10 .features h6 {
   text-transform: none;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: normal;
   color: #2c3e50;
   font-family: Lato, sens-serif;

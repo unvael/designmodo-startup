@@ -943,8 +943,8 @@ section * {
  * Footer 1 stylesheet  
  * */
 .footer-1 {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 160px;
+  padding-bottom: 160px;
   font-size: 14px;
   color: #bdc3c7;
 }

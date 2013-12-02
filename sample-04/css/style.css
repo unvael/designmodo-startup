@@ -1383,6 +1383,11 @@ body > section.v-center > div {
 .content-23 {
   background-color: #1B1F23;
 }
+.content-23 .c23-video {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
 .content-23.custom-bg {
   background-image: url('../img/img-2.jpg');
   background-position: 50% 50%;

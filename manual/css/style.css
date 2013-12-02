@@ -3195,7 +3195,7 @@ body {
   height: 12px;
   margin-left: 7px;
   text-indent: -999px;
-  background-color: #bdc3c7;
+  background-color: #f1f1f1;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -3243,7 +3243,7 @@ body {
   min-height: 100px;
   /* img height */
 
-  border-top: 1px solid #ecf0f1;
+  border-top: 2px solid #ecf0f1;
 }
 .mcontent .content-10 .features .box.first,
 .mcontent .content-10 .features .box:first-child,
@@ -3258,7 +3258,7 @@ body {
 }
 .mcontent .content-10 .features h6 {
   text-transform: none;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: normal;
   color: #2c3e50;
   font-family: Lato, sens-serif;
@@ -5974,7 +5974,7 @@ body {
 }
 .mcontent .header-2 .navbar .nav > li > a {
   padding: 31px 0 27px;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: normal;
   font-weight: 400;
   letter-spacing: 1px;
@@ -14264,7 +14264,7 @@ body {
 .mcontent .footer-1 .lead {
   margin-bottom: 15px;
   margin-top: -10px;
-  font-size: 23px;
+  font-size: 22px;
   font-weight: normal;
   color: #ffffff;
   font-weight: 300;

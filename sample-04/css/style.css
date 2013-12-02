@@ -1371,6 +1371,11 @@ section * {
 .header-10 {
   background-color: #1b1f23;
 }
+.header-10 .btn:hover,
+.header-10 .btn.active,
+.header-10 .btn:focus {
+  background-color: #2ecc71;
+}
 body > section.v-center > div {
   padding-top: 80px;
   padding-bottom: 80px;

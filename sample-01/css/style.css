@@ -1208,11 +1208,20 @@ section * {
   padding-bottom: 80px;
 }
 .header-1-sub .pt-page-1 .background {
-  background-image: url('../img/img-1.jpg');
+  background-image: url('../img/NY_002.png');
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  background-position: 50% 30%;
 }
 .header-1-sub .pt-page-2 .background {
   background-image: url('../img/img-2.jpg');
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  background-position: 50% 30%;
 }
 .header-1-sub .pt-page-3 .background {
   background-image: url('../img/img-3.jpg');
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  background-position: 50% 30%;
 }

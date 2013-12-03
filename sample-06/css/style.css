@@ -601,8 +601,8 @@ section * {
   margin-top: -1px;
 }
 .header-3 .navbar .btn {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 26px;
+  padding-right: 26px;
   font-size: 14px;
   font-weight: normal;
   color: #ffffff;
@@ -763,7 +763,7 @@ section * {
 .header-3-sub h3 {
   font-size: 30px;
   font-weight: normal;
-  color: #ffffff;
+  color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 20px;
   font-weight: 300;
@@ -771,7 +771,7 @@ section * {
 .header-3-sub p {
   font-size: 16px;
   font-weight: normal;
-  color: #bdc3c7;
+  color: #7f8c8d;
   font-family: Lato, sens-serif;
 }
 @media (max-width: 480px) {
@@ -1143,7 +1143,6 @@ footer {
   }
 }
 .header-3-sub .background {
-  background-image: url('../img/img-1.jpg');
   opacity: 1;
   filter: alpha(opacity=100);
 }
@@ -1195,7 +1194,7 @@ footer {
 }
 .tpl-6-section-1 {
   overflow: hidden;
-  background-image: url('../img/img-1.jpg');
+  background-image: url('../img/NY_001.png');
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;

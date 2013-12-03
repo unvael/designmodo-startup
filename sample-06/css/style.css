@@ -1132,8 +1132,8 @@ section * {
 }
 body > section,
 footer {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 105px;
+  padding-bottom: 105px;
 }
 .header-3-sub .background {
   background-image: url('../img/img-1.jpg');
@@ -1155,6 +1155,7 @@ footer {
   padding-top: 130px;
 }
 .tpl-6-section-1 {
+  overflow: hidden;
   background-image: url('../img/img-1.jpg');
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -1166,6 +1167,14 @@ footer {
   padding-top: 265px;
   padding-bottom: 265px;
   text-align: center;
+}
+@media (max-width: 768px) {
+  .tpl-6-section-1 {
+    -webkit-background-size: auto 200%;
+    -moz-background-size: auto 200%;
+    -o-background-size: auto 200%;
+    background-size: auto 200%;
+  }
 }
 .tpl-6-section-1 h3 {
   font-size: 30px;

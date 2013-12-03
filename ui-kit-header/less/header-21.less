@@ -6,9 +6,9 @@
   padding-top:0;
   padding-bottom:0;
   z-index:100;
-  width:100%; height:80px;
+  width:100%; 
   .navbar {
-      margin: 100px 0 0;
+      margin: 130px 0 0;
       font-family: @h-font-family;
       &.navbar-fixed-top{
         position:fixed;
@@ -18,7 +18,7 @@
       @media (max-width: 480px) { margin: -5px 0 0;}
       .navbar-form,.navbar-search {
         margin: 0;
-        padding: 20px 0 19px 20px;
+        padding: 20px 0 0 20px;
         .btn,.btn-group {margin-top: -1px;}
         .btn {
           .box-sizing(border-box);  
@@ -39,7 +39,7 @@
       }
       .navbar-inner { background: none;}
       .brand {
-        padding-left: 0; padding-top: 18px;
+        padding-left: 0; padding-top: 18px; padding-bottom:0;
         .font(25px, @danger); font-weight: 800;
         img:first-child { float: left; margin: -10px 15px 0 0; }
       }
@@ -53,7 +53,7 @@
         }
         > li {
           > a {
-            padding: 29px 10px 27px;        
+            padding: 29px 10px 0;        
             .font(13px, @lightgray);font-family:@h-font-family; font-weight: 500;
             letter-spacing: 2px;
             .a-color(@lightgray, @danger);
@@ -110,7 +110,7 @@ p {.font(16px, @silver); .line-height(28.8px); font-weight:300;}
     &:hover, &:focus { color: white;  background: @base; }
     &:active { color: @lightgray;}  
     position: absolute;
-    left: 50%; bottom: 80px;
+    left: 50%; bottom: 130px;
     margin-left: -26.5px;
   }  
     padding-top: 20px; padding-bottom: 135px;  

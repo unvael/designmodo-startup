@@ -6957,10 +6957,9 @@ section * {
   padding-bottom: 0;
   z-index: 100;
   width: 100%;
-  height: 80px;
 }
 .header-21 .navbar {
-  margin: 100px 0 0;
+  margin: 130px 0 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .header-21 .navbar.navbar-fixed-top {
@@ -6980,7 +6979,7 @@ section * {
 .header-21 .navbar .navbar-form,
 .header-21 .navbar .navbar-search {
   margin: 0;
-  padding: 20px 0 19px 20px;
+  padding: 20px 0 0 20px;
 }
 .header-21 .navbar .navbar-form .btn,
 .header-21 .navbar .navbar-search .btn,
@@ -7024,6 +7023,7 @@ section * {
 .header-21 .navbar .brand {
   padding-left: 0;
   padding-top: 18px;
+  padding-bottom: 0;
   font-size: 25px;
   font-weight: normal;
   color: #e74c3c;
@@ -7047,7 +7047,7 @@ section * {
   }
 }
 .header-21 .navbar .nav > li > a {
-  padding: 29px 10px 27px;
+  padding: 29px 10px 0;
   font-size: 13px;
   font-weight: normal;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -7252,7 +7252,7 @@ section * {
   background: #ecf0f1;
   position: absolute;
   left: 50%;
-  bottom: 80px;
+  bottom: 130px;
   margin-left: -26.5px;
 }
 .header-21-sub .control-btn:hover,

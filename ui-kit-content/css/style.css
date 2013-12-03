@@ -983,6 +983,8 @@ section * {
  * */
 .content-6 {
   position: relative;
+  padding-top: 200px;
+  padding-bottom: 80px;
 }
 .content-6 h3 {
   margin: 0 0 21px;
@@ -1467,6 +1469,7 @@ section * {
  * */
 .content-12 {
   position: relative;
+  padding: 0;
 }
 .content-12 .wide {
   -webkit-box-sizing: border-box;
@@ -1999,6 +2002,8 @@ section * {
 .content-17 {
   position: relative;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .content-17 p {
   font-size: 18px;

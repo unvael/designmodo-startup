@@ -894,6 +894,7 @@ section * {
  * */
 .content-12 {
   position: relative;
+  padding: 0;
 }
 .content-12 .wide {
   -webkit-box-sizing: border-box;

@@ -1303,8 +1303,8 @@ body {
   }
 }
 .mcontent .blog-2 {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   position: relative;
   background-color: #32ccae;
   font-family: "Lato", sans-serif;
@@ -2841,6 +2841,8 @@ body {
 }
 .mcontent .content-6 {
   position: relative;
+  padding-top: 200px;
+  padding-bottom: 80px;
 }
 .mcontent .content-6 h3 {
   margin: 0 0 21px;
@@ -3307,6 +3309,7 @@ body {
 }
 .mcontent .content-12 {
   position: relative;
+  padding: 0;
 }
 .mcontent .content-12 .wide {
   -webkit-box-sizing: border-box;
@@ -3824,6 +3827,8 @@ body {
 .mcontent .content-17 {
   position: relative;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .mcontent .content-17 p {
   font-size: 18px;
@@ -11869,10 +11874,9 @@ body {
   padding-bottom: 0;
   z-index: 100;
   width: 100%;
-  height: 80px;
 }
 .mcontent .header-21 .navbar {
-  margin: 100px 0 0;
+  margin: 130px 0 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .mcontent .header-21 .navbar.navbar-fixed-top {
@@ -11892,7 +11896,7 @@ body {
 .mcontent .header-21 .navbar .navbar-form,
 .mcontent .header-21 .navbar .navbar-search {
   margin: 0;
-  padding: 20px 0 19px 20px;
+  padding: 20px 0 0 20px;
 }
 .mcontent .header-21 .navbar .navbar-form .btn,
 .mcontent .header-21 .navbar .navbar-search .btn,
@@ -11936,6 +11940,7 @@ body {
 .mcontent .header-21 .navbar .brand {
   padding-left: 0;
   padding-top: 18px;
+  padding-bottom: 0;
   font-size: 25px;
   font-weight: normal;
   color: #e74c3c;
@@ -11959,7 +11964,7 @@ body {
   }
 }
 .mcontent .header-21 .navbar .nav > li > a {
-  padding: 29px 10px 27px;
+  padding: 29px 10px 0;
   font-size: 13px;
   font-weight: normal;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -12164,7 +12169,7 @@ body {
   background: #ecf0f1;
   position: absolute;
   left: 50%;
-  bottom: 80px;
+  bottom: 130px;
   margin-left: -26.5px;
 }
 .mcontent .header-21-sub .control-btn:hover,
@@ -15112,8 +15117,8 @@ body {
   min-height: 300px;
 }
 .mcontent .footer-9 {
-  padding-top: 120px;
-  padding-bottom: 80px;
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 .mcontent .footer-9 h6 {
   font-size: 18px;

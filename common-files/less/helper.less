@@ -111,3 +111,21 @@ header{
     .box-sizing(border-box);
   }
 }
+
+.nav-visible{
+.nav-collapse .navbar-form, .nav-collapse .navbar-search {
+  border-bottom: 0 none;
+  border-top: 0 none;
+  box-shadow: none;
+  margin: 10px 0;
+  padding: 10px 15px;
+  a.btn{
+    border-color:white;
+    color:white;
+    &:hover, &:focus{
+      color:@c-text-color;
+      background-color:white;
+    }
+  }
+}
+}

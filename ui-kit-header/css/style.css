@@ -572,6 +572,26 @@ section * {
     box-sizing: border-box;
   }
 }
+.nav-visible .nav-collapse .navbar-form,
+.nav-visible .nav-collapse .navbar-search {
+  border-bottom: 0 none;
+  border-top: 0 none;
+  box-shadow: none;
+  margin: 10px 0;
+  padding: 10px 15px;
+}
+.nav-visible .nav-collapse .navbar-form a.btn,
+.nav-visible .nav-collapse .navbar-search a.btn {
+  border-color: white;
+  color: white;
+}
+.nav-visible .nav-collapse .navbar-form a.btn:hover,
+.nav-visible .nav-collapse .navbar-search a.btn:hover,
+.nav-visible .nav-collapse .navbar-form a.btn:focus,
+.nav-visible .nav-collapse .navbar-search a.btn:focus {
+  color: #7f8c8d;
+  background-color: white;
+}
 .startup-kit_header h1 {
   font-size: 45px;
   font-weight: normal;
@@ -6957,10 +6977,9 @@ section * {
   padding-bottom: 0;
   z-index: 100;
   width: 100%;
-  height: 80px;
 }
 .header-21 .navbar {
-  margin: 100px 0 0;
+  margin: 130px 0 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .header-21 .navbar.navbar-fixed-top {
@@ -6980,7 +6999,7 @@ section * {
 .header-21 .navbar .navbar-form,
 .header-21 .navbar .navbar-search {
   margin: 0;
-  padding: 20px 0 19px 20px;
+  padding: 20px 0 0 20px;
 }
 .header-21 .navbar .navbar-form .btn,
 .header-21 .navbar .navbar-search .btn,
@@ -6993,7 +7012,7 @@ section * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 7px 18px 8px;
+  padding: 7px 26px 8px;
   background: none;
   border: 2px solid #e74c3c;
   color: #e74c3c;
@@ -7024,6 +7043,7 @@ section * {
 .header-21 .navbar .brand {
   padding-left: 0;
   padding-top: 18px;
+  padding-bottom: 0;
   font-size: 25px;
   font-weight: normal;
   color: #e74c3c;
@@ -7047,7 +7067,7 @@ section * {
   }
 }
 .header-21 .navbar .nav > li > a {
-  padding: 29px 10px 27px;
+  padding: 29px 10px 0;
   font-size: 13px;
   font-weight: normal;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -7252,7 +7272,7 @@ section * {
   background: #ecf0f1;
   position: absolute;
   left: 50%;
-  bottom: 80px;
+  bottom: 130px;
   margin-left: -26.5px;
 }
 .header-21-sub .control-btn:hover,
@@ -7262,6 +7282,11 @@ section * {
 }
 .header-21-sub .control-btn:active {
   color: #bdc3c7;
+}
+@media (max-width: 768px) {
+  .header-21-sub .control-btn {
+    bottom: 80px;
+  }
 }
 .header-21-sub .lead {
   color: #bdc3c7;

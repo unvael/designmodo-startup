@@ -1316,6 +1316,10 @@ body > section {
 .content-23 {
   background-color: #1B1F23;
 }
+.content-23 .control-btn {
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
 .footer-12 {
   padding: 40px;
   border-bottom: 2px solid #EBEDEE;

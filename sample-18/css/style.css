@@ -580,7 +580,7 @@ section * {
   width: 100%;
   padding-top: 0;
   padding-bottom: 0;
-  height: 80px;
+  height: 90px;
   background: #233240;
   color: white;
 }
@@ -598,7 +598,7 @@ section * {
 .header-10 .navbar .navbar-form,
 .header-10 .navbar .navbar-search {
   margin: 0;
-  padding: 20px 0 19px 60px;
+  padding: 25px 0 19px 60px;
 }
 .header-10 .navbar .btn,
 .header-10 .navbar .btn-group {
@@ -619,7 +619,7 @@ section * {
 }
 .header-10 .navbar .brand {
   padding-left: 0;
-  padding-top: 21px;
+  padding-top: 26px;
   font-size: 25px;
   font-weight: normal;
   color: #ffffff;
@@ -637,7 +637,7 @@ section * {
   margin-left: 0;
 }
 .header-10 .navbar .nav > li > a {
-  padding: 29px 0 27px;
+  padding: 34px 0 27px;
   font-size: 17px;
   font-weight: normal;
   color: #7f8c8d;
@@ -875,7 +875,7 @@ section * {
   filter: alpha(opacity=80);
   position: absolute;
   left: 50%;
-  bottom: 80px;
+  bottom: 90px;
   margin-left: -26.5px;
 }
 .header-10-sub .control-btn:hover,

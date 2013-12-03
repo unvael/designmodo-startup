@@ -1049,7 +1049,7 @@ section * {
   filter: alpha(opacity=30);
   position: absolute;
   left: 50%;
-  bottom: 80px;
+  bottom: 90px;
   margin-left: -26.5px;
 }
 .content-23 .control-btn:hover,

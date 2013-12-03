@@ -581,7 +581,7 @@ section * {
   width: 100%;
   padding-top: 0;
   padding-bottom: 0;
-  height: 80px;
+  height: 90px;
   background: #233240;
   color: white;
 }
@@ -599,7 +599,7 @@ section * {
 .header-10 .navbar .navbar-form,
 .header-10 .navbar .navbar-search {
   margin: 0;
-  padding: 20px 0 19px 60px;
+  padding: 25px 0 19px 60px;
 }
 .header-10 .navbar .btn,
 .header-10 .navbar .btn-group {
@@ -620,7 +620,7 @@ section * {
 }
 .header-10 .navbar .brand {
   padding-left: 0;
-  padding-top: 21px;
+  padding-top: 26px;
   font-size: 25px;
   font-weight: normal;
   color: #ffffff;
@@ -638,7 +638,7 @@ section * {
   margin-left: 0;
 }
 .header-10 .navbar .nav > li > a {
-  padding: 29px 0 27px;
+  padding: 34px 0 27px;
   font-size: 17px;
   font-weight: normal;
   color: #7f8c8d;
@@ -876,7 +876,7 @@ section * {
   filter: alpha(opacity=80);
   position: absolute;
   left: 50%;
-  bottom: 80px;
+  bottom: 90px;
   margin-left: -26.5px;
 }
 .header-10-sub .control-btn:hover,
@@ -965,7 +965,7 @@ section * {
   font-size: 18px;
   font-weight: normal;
   color: #e74c3c;
-  margin-top: 55px;
+  margin-top: 60px;
   text-transform: none;
 }
 .content-7 h6:first-child {
@@ -1028,13 +1028,13 @@ section * {
   font-weight: normal;
   color: #34495e;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 46px 0;
+  margin: 70px 0 35px;
 }
 .content-8 p {
   font-size: 18px;
   font-weight: normal;
   color: #7f8c8d;
-  margin-bottom: 48px;
+  margin-bottom: 43px;
 }
 .content-8 .btn.btn-clear {
   -webkit-box-sizing: border-box;
@@ -1047,7 +1047,7 @@ section * {
   color: #7f8c8d;
   font-weight: bold;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 12px 28px 13px;
+  padding: 12px 28px 12px;
   color: #e74c3c;
 }
 .content-8 .btn.btn-clear:hover,
@@ -1118,7 +1118,7 @@ section * {
   position: relative;
 }
 .content-11 .btn {
-  margin-left: 30px;
+  margin-left: 33px;
   font-size: 14px;
   font-weight: normal;
   color: #ffffff;
@@ -1197,7 +1197,7 @@ section * {
   filter: alpha(opacity=30);
   position: absolute;
   left: 50%;
-  bottom: 80px;
+  bottom: 90px;
   margin-left: -26.5px;
 }
 .content-23 .control-btn:hover,
@@ -1262,8 +1262,8 @@ section * {
  * */
 .footer-3 {
   font-size: 14px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 65px;
+  padding-bottom: 65px;
   background: #2c3e50;
   color: #bdc3c7;
 }
@@ -1377,8 +1377,8 @@ section * {
   background-color: #2ecc71;
 }
 body > section.v-center > div {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .content-23 {
   background-color: #1B1F23;

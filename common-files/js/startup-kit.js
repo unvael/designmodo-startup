@@ -410,12 +410,12 @@ startupKit.uiKitHeader.header18 = function() {
     pt.init('#h-18-pt-main');
 
     $('.header-18 .pt-control-prev').on('click', function() {
-        pt.gotoPage(55, 'prev');
+        pt.gotoPage(5, 'prev');
         return false;
     });
 
     $('.header-18 .pt-control-next').on('click', function() {
-        pt.gotoPage(54, 'next');
+        pt.gotoPage(6, 'next');
         return false;
     });
 

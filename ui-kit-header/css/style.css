@@ -1239,8 +1239,8 @@ section * {
   margin-top: -1px;
 }
 .header-3 .navbar .btn {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 26px;
+  padding-right: 26px;
   font-size: 14px;
   font-weight: normal;
   color: #ffffff;
@@ -1401,7 +1401,7 @@ section * {
 .header-3-sub h3 {
   font-size: 30px;
   font-weight: normal;
-  color: #ffffff;
+  color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 20px;
   font-weight: 300;
@@ -1409,7 +1409,7 @@ section * {
 .header-3-sub p {
   font-size: 16px;
   font-weight: normal;
-  color: #bdc3c7;
+  color: #7f8c8d;
   font-family: Lato, sens-serif;
 }
 @media (max-width: 480px) {
@@ -5965,7 +5965,7 @@ section * {
 }
 @media (max-width: 767px) {
   .header-18 .pt-controls > div > * {
-    margin-left: 0;
+    margin-left: 20px;
   }
 }
 .header-18 .pt-controls > div > *.pt-control-next {
@@ -5974,7 +5974,7 @@ section * {
 }
 @media (max-width: 767px) {
   .header-18 .pt-controls > div > *.pt-control-next {
-    margin-right: 0;
+    margin-right: 20px;
   }
 }
 .header-18 .page-transitions.pt-first + .pt-controls .pt-control-prev {
@@ -6071,7 +6071,7 @@ section * {
   top: 0;
   left: 0;
   visibility: hidden;
-  overflow: hidden;
+  overflow: auto;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -6101,7 +6101,7 @@ section * {
 }
 .header-18 .header-18-sub .header-18-section .t-row {
   display: table-row;
-  height: 90%;
+  height: 100%;
 }
 .header-18 .header-18-sub .header-18-section .t-row > div {
   padding-left: 35px;
@@ -6113,8 +6113,13 @@ section * {
   position: relative;
 }
 .header-18 .header-18-sub .header-18-section .t-row.footer {
-  height: 10%;
+  height: 61px;
   vertical-align: bottom;
+}
+@media (max-width: 767px) {
+  .header-18 .header-18-sub .header-18-section .t-row.footer {
+    height: auto;
+  }
 }
 .header-18 .header-18-sub .header-18-section .t-row.footer footer {
   padding: 15px 0;
@@ -6155,8 +6160,11 @@ section * {
     margin: 26px auto 0;
   }
   .header-18 .header-18-sub .header-18-section .t-row.footer footer .btns .btn {
-    margin: 0;
+    margin: 0 30px;
     display: block;
+  }
+  .header-18 .header-18-sub .header-18-section .t-row.footer footer .btns .btn:first-child {
+    margin-left: 30px;
   }
   .header-18 .header-18-sub .header-18-section .t-row.footer footer .btns .btn + .btn {
     margin-top: 9px;

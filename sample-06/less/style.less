@@ -33,7 +33,7 @@ footer {
 }
 
 .header-3-sub .background{
-  background-image: url('../img/img-1.jpg');
+ // background-image: url('../img/img-1.jpg');
   .opacity(100);
   @media (max-width: 768px) {
     .background-size(auto 200%);
@@ -50,7 +50,7 @@ footer {
 }
 
 .content-28 {
-  background-color: #f2f3f4;
+  background-color: #f4f5f6;
   @media (max-width: 768px) {
     padding-top: 105px;
     padding-bottom: 0;
@@ -75,8 +75,14 @@ footer {
 }
 
 .tpl-6-section-1 {
+  position:relative;
+ .tpl-6-mask{
+   position:absolute;
+   top:0; left:0; right:0; bottom:0;
+   .opacity(50);
+ }
   overflow:hidden;  
-  background-image: url('../img/img-1.jpg');
+  background-image: url('../img/NY_001.png');
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;

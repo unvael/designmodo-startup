@@ -606,8 +606,8 @@ section * {
   margin-top: -1px;
 }
 .header-10 .navbar .btn {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 26px;
+  padding-right: 26px;
 }
 .header-10 .navbar .btn.btn-primary {
   font-size: 15px;
@@ -808,7 +808,7 @@ section * {
 }
 .header-10-sub .hero-unit h1 {
   margin: 0 0 30px;
-  font-size: 48px;
+  font-size: 45px;
   font-weight: normal;
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1388,8 +1388,12 @@ body > section.v-center > div {
   height: 100%;
   width: 100%;
 }
+.content-23 .control-btn {
+  opacity: 0.1;
+  filter: alpha(opacity=10);
+}
 .content-23.custom-bg {
-  background-image: url('../img/img-2.jpg');
+  background-image: url('../img/Italy_001.png');
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;

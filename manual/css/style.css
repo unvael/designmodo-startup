@@ -10886,7 +10886,7 @@ body {
 }
 @media (max-width: 767px) {
   .mcontent .header-18 .pt-controls > div > * {
-    margin-left: 0;
+    margin-left: 20px;
   }
 }
 .mcontent .header-18 .pt-controls > div > *.pt-control-next {
@@ -10895,7 +10895,7 @@ body {
 }
 @media (max-width: 767px) {
   .mcontent .header-18 .pt-controls > div > *.pt-control-next {
-    margin-right: 0;
+    margin-right: 20px;
   }
 }
 .mcontent .header-18 .page-transitions.pt-first + .pt-controls .pt-control-prev {
@@ -10992,7 +10992,7 @@ body {
   top: 0;
   left: 0;
   visibility: hidden;
-  overflow: hidden;
+  overflow: auto;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -11022,7 +11022,7 @@ body {
 }
 .mcontent .header-18 .header-18-sub .header-18-section .t-row {
   display: table-row;
-  height: 90%;
+  height: 100%;
 }
 .mcontent .header-18 .header-18-sub .header-18-section .t-row > div {
   padding-left: 35px;
@@ -11034,8 +11034,13 @@ body {
   position: relative;
 }
 .mcontent .header-18 .header-18-sub .header-18-section .t-row.footer {
-  height: 10%;
+  height: 61px;
   vertical-align: bottom;
+}
+@media (max-width: 767px) {
+  .mcontent .header-18 .header-18-sub .header-18-section .t-row.footer {
+    height: auto;
+  }
 }
 .mcontent .header-18 .header-18-sub .header-18-section .t-row.footer footer {
   padding: 15px 0;

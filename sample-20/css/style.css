@@ -1058,6 +1058,7 @@ section * {
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
+  line-height: 50px;
   text-align: center;
 }
 @media (max-width: 767px) {

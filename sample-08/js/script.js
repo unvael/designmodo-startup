@@ -36,7 +36,16 @@ function fadedEls(el, shift) {
         
         $(window).resize(function() {
             var sH = $(window).height();
-            $('section.header-21-sub').css('height', (sH - $('header').outerHeight()) + 'px');            
+            $('section.header-21-sub').css('height', (sH - $('header').outerHeight()) + 'px');  
+                
+                if($(window).width()<= 768){
+                    console.log($(window).width());
+                    $('section.content-17').css('height', (sH + 'px'));  
+                } else{
+                    $('section.content-17').css('height', 'auto');
+                }
+           
+                   
         });        
 
 

@@ -4,8 +4,12 @@
 .blog-2 {
   padding-top: 200px;
   padding-bottom: 200px;
+  @media (max-width: 768px) { 
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
   position: relative;
-  background-color: #32ccae;
+  background-color: @clouds;
   font-family: @base-font-family;
   color: #35495d;
 

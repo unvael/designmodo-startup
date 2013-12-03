@@ -1165,7 +1165,7 @@ footer {
   }
 }
 .content-28 {
-  background-color: #f2f3f4;
+  background-color: #f4f5f6;
 }
 @media (max-width: 768px) {
   .content-28 {
@@ -1193,6 +1193,7 @@ footer {
   }
 }
 .tpl-6-section-1 {
+  position: relative;
   overflow: hidden;
   background-image: url('../img/NY_001.png');
   background-position: 50% 50%;
@@ -1205,6 +1206,15 @@ footer {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+.tpl-6-section-1 .tpl-6-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
 }
 @media (max-width: 768px) {
   .tpl-6-section-1 {

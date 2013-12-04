@@ -663,7 +663,7 @@ section * {
   margin-left: 0;
 }
 .header-22 .navbar .nav > li > a {
-  padding: 29px 0 27px;
+  padding: 40px 0;
   font-size: 13px;
   font-weight: normal;
   font-weight: bold;
@@ -772,7 +772,7 @@ section * {
 }
 .header-22-sub {
   position: relative;
-  padding-top: 68px;
+  padding-top: 190px;
 }
 .header-22-sub.v-center,
 .header-22-sub .v-center {
@@ -819,6 +819,7 @@ section * {
   color: #34495e;
   font-weight: 300;
   text-align: center;
+  line-height: 50px;
 }
 .header-22-sub .container {
   opacity: 0;
@@ -835,13 +836,13 @@ section * {
 }
 @media (max-width: 480px) {
   .header-22-sub {
-    padding-top: 30px;
+    padding-top: 50px;
   }
   .header-22-sub h3 {
-    font-size: 25px;
+    font-size: 37px;
     font-weight: normal;
     color: #34495e;
-    text-align: left;
+    line-height: 50px;
     margin-bottom: 30px;
   }
 }
@@ -857,18 +858,18 @@ section * {
   font-weight: normal;
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-bottom: 24px;
+  margin-bottom: 35px;
   font-weight: 300;
 }
 .content-2 p {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: normal;
   color: #7f8c8d;
   font-family: Lato, sens-serif;
   line-height: 29.999999999999996px;
 }
 .content-2 .btns {
-  margin-top: 38px;
+  margin-top: 50px;
   font-size: 15px;
   font-weight: normal;
   color: #7f8c8d;
@@ -922,11 +923,12 @@ section * {
 }
 .content-7 h3 {
   text-align: center;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: normal;
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 80px;
+  line-height: 42px;
   font-weight: 800;
   letter-spacing: -1px;
 }
@@ -997,6 +999,8 @@ section * {
   font-weight: normal;
   color: #7f8c8d;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 32px;
+  font-weight: 300;
 }
 @media (max-width: 767px) {
   .content-7 .row > [class*="span"] {
@@ -1162,8 +1166,8 @@ body > section {
   -o-background-size: cover;
   background-size: cover;
   border-top: 11px solid #95A5A6;
-  padding-bottom: 160px;
-  padding-top: 160px;
+  padding-bottom: 150px;
+  padding-top: 140px;
 }
 .content-2 .btn.btn-clear {
   -webkit-box-sizing: border-box;
@@ -1201,11 +1205,23 @@ body > section {
 .content-2 .btn.btn-large.btn-clear {
   padding: 11px 26px 12px;
 }
+@media (max-width: 480px) {
+  .content-2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
 .content-2.first {
   background: none repeat scroll 0 0 #EBEDEE;
   border-top: 11px solid #95A5A6;
-  padding-bottom: 160px;
-  padding-top: 160px;
+  padding-bottom: 140px;
+  padding-top: 135px;
+}
+@media (max-width: 480px) {
+  .content-2.first {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 .content-11 {
   background: none repeat scroll 0 0 #EBEDEE;
@@ -1214,7 +1230,40 @@ body > section {
   font-weight: normal;
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding-bottom: 80px;
-  padding-top: 80px;
+  padding-bottom: 50px;
+  font-weight: 300;
+  padding-top: 50px;
   text-align: center;
+}
+.content-11 .btn {
+  padding-left: 28px;
+  padding-right: 28px;
+}
+.header-22-sub {
+  padding-bottom: 230px;
+}
+@media (max-width: 480px) {
+  .header-22-sub {
+    padding-bottom: 50px;
+  }
+}
+.content-15 {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+@media (max-width: 480px) {
+  .content-15 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+.content-7 {
+  padding-top: 140px;
+  padding-bottom: 150px;
+}
+@media (max-width: 480px) {
+  .content-7 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }

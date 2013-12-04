@@ -926,11 +926,12 @@ section * {
 }
 .content-7 h3 {
   text-align: center;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: normal;
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 80px;
+  line-height: 42px;
   font-weight: 800;
   letter-spacing: -1px;
 }
@@ -1001,6 +1002,8 @@ section * {
   font-weight: normal;
   color: #7f8c8d;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 32px;
+  font-weight: 300;
 }
 @media (max-width: 767px) {
   .content-7 .row > [class*="span"] {

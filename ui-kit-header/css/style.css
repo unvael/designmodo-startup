@@ -7373,7 +7373,7 @@ section * {
   margin-left: 0;
 }
 .header-22 .navbar .nav > li > a {
-  padding: 29px 0 27px;
+  padding: 40px 0;
   font-size: 13px;
   font-weight: normal;
   font-weight: bold;
@@ -7482,7 +7482,7 @@ section * {
 }
 .header-22-sub {
   position: relative;
-  padding-top: 68px;
+  padding-top: 190px;
 }
 .header-22-sub.v-center,
 .header-22-sub .v-center {
@@ -7529,6 +7529,7 @@ section * {
   color: #34495e;
   font-weight: 300;
   text-align: center;
+  line-height: 50px;
 }
 .header-22-sub .container {
   opacity: 0;
@@ -7545,13 +7546,13 @@ section * {
 }
 @media (max-width: 480px) {
   .header-22-sub {
-    padding-top: 30px;
+    padding-top: 50px;
   }
   .header-22-sub h3 {
-    font-size: 25px;
+    font-size: 37px;
     font-weight: normal;
     color: #34495e;
-    text-align: left;
+    line-height: 50px;
     margin-bottom: 30px;
   }
 }

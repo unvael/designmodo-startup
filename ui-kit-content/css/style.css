@@ -1340,7 +1340,7 @@ section * {
   font-size: 14px;
   font-weight: normal;
   color: #7f8c8d;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 @media (max-width: 767px) {
   .content-9 .span3 {
@@ -1519,7 +1519,7 @@ section * {
   color: #7f8c8d;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #ffffff;
-  background: #ecf0f1;
+  background: #1abc9c;
   font-weight: 300;
   -webkit-backface-visibility: hidden;
   -webkit-transition: 0.25s color, 0.25s background-color;
@@ -1657,7 +1657,7 @@ section * {
   }
 }
 .content-14 h3 {
-  margin: 0 0 21px;
+  margin: 0 0 5px;
   text-align: center;
   font-size: 35px;
   font-weight: normal;
@@ -1684,7 +1684,7 @@ section * {
   }
 }
 .content-14 .features {
-  margin-top: 75px;
+  margin-top: 55px;
 }
 .content-14 .features.v-center,
 .content-14 .features .v-center {
@@ -1774,70 +1774,56 @@ section * {
   right: 85%;
   margin-top: 30px;
 }
-.content-14 .features .box-1 {
-  top: 380px;
+.content-14 .features .box-1,
+.content-14 .features .box-5 {
+  top: 112px;
   font-size: 14px;
   font-weight: normal;
   color: #7f8c8d;
 }
 @media (max-width: 979px) and (min-width: 768px) {
-  .content-14 .features .box-1 {
+  .content-14 .features .box-1,
+  .content-14 .features .box-5 {
     top: 320px;
   }
 }
-.content-14 .features .box-2 {
-  top: 920px;
+.content-14 .features .box-2,
+.content-14 .features .box-6 {
+  top: 375px;
   font-size: 14px;
   font-weight: normal;
   color: #7f8c8d;
 }
 @media (max-width: 979px) and (min-width: 768px) {
-  .content-14 .features .box-2 {
+  .content-14 .features .box-2,
+  .content-14 .features .box-6 {
     top: 720px;
   }
 }
-.content-14 .features .box-3 {
-  top: 1460px;
+.content-14 .features .box-3,
+.content-14 .features .box-7 {
+  top: 625px;
   font-size: 14px;
   font-weight: normal;
   color: #7f8c8d;
 }
 @media (max-width: 979px) and (min-width: 768px) {
-  .content-14 .features .box-3 {
+  .content-14 .features .box-3,
+  .content-14 .features .box-7 {
     top: 1140px;
   }
 }
-.content-14 .features .box-4 {
-  top: 130px;
+.content-14 .features .box-4,
+.content-14 .features .box-8 {
+  top: 880px;
   font-size: 14px;
   font-weight: normal;
   color: #7f8c8d;
 }
 @media (max-width: 979px) and (min-width: 768px) {
-  .content-14 .features .box-4 {
+  .content-14 .features .box-4,
+  .content-14 .features .box-8 {
     top: 10px;
-  }
-}
-.content-14 .features .box-5 {
-  top: 660px;
-  font-size: 14px;
-  font-weight: normal;
-  color: #7f8c8d;
-}
-@media (max-width: 979px) and (min-width: 768px) {
-  .content-14 .features .box-5 {
-    top: 440px;
-  }
-}
-.content-14 .features .box-6 {
-  top: 1210px;
-  font-size: 14px;
-  font-weight: normal;
-  color: #7f8c8d;
-}
-@media (max-width: 979px) and (min-width: 768px) {
-  .content-14 .features .box-6 {
-    top: 850px;
   }
 }
 @media (max-width: 480px) {

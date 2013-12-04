@@ -1416,6 +1416,12 @@ section * {
   font-family: Lato, sens-serif;
   font-weight: normal;
 }
+@media (max-width: 768px) {
+  .footer-9 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
 @media (max-width: 480px) {
   .footer-9 .box {
     margin-top: 33px;
@@ -1808,6 +1814,11 @@ section * {
     font-weight: 800;
   }
 }
+@media (max-width: 1199px) {
+  .footer-12 {
+    font-size: 82px;
+  }
+}
 @media (max-width: 979px) and (min-width: 768px) {
   .footer-12 {
     font-size: 56px;
@@ -1818,10 +1829,13 @@ section * {
 }
 @media (max-width: 767px) {
   .footer-12 {
-    font-size: 46px;
+    font-size: 36px;
     font-weight: normal;
     color: rgba(44, 62, 80, 0.2);
     font-weight: 800;
+  }
+  .footer-12 [class*="fui-"] {
+    font-size: 32px;
   }
 }
 @media (max-width: 480px) {

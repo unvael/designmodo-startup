@@ -942,7 +942,7 @@ section * {
   font-size: 14px;
   font-weight: normal;
   color: #7f8c8d;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 @media (max-width: 767px) {
   .content-9 .span3 {

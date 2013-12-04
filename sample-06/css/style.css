@@ -902,7 +902,7 @@ section * {
   font-size: 14px;
   font-weight: normal;
   color: #7f8c8d;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 @media (max-width: 767px) {
   .content-9 .span3 {
@@ -938,7 +938,7 @@ section * {
   color: #7f8c8d;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #ffffff;
-  background: #ecf0f1;
+  background: #1abc9c;
   font-weight: 300;
   -webkit-backface-visibility: hidden;
   -webkit-transition: 0.25s color, 0.25s background-color;

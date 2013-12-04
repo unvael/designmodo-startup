@@ -4,12 +4,24 @@
 .header-13{
   position: absolute;
   width:100%;
-  margin:130px auto;
+  margin:140px auto;
   z-index: 5;
   padding-top:0;
   padding-bottom:0;
-  @media (max-width: 767px) {  text-align: center;}
-  .brand img{ width:100px !important; height:100px !important; }
+  @media (max-width: 767px) {
+    text-align: center;
+
+    .brand {
+      position: absolute;
+      top: -120px;
+      left: 50%;
+      margin-left: -50px;
+      @media (max-width: 480px) {
+        top: 0;
+      }
+    }
+  }
+  .brand img{ width:100px !important; height:100px !important; margin-top: 10px !important; }
   
   .opacity(0);
   .loaded & {.transition(~'.6s 1.4s top, 1.2s 1.4s opacity'); .opacity(100);}
@@ -22,13 +34,13 @@
 .header-13-sub{
   position:relative;
   .v-center;
-  padding-top:130px;
+  padding-top:140px;
   padding-bottom: 130px; 
   color: @silver;
   h3 { .font(29px, white); font-family: @h-font-family; margin-bottom:26px; font-weight:300;}
   .lead {.font(22px,@silver); font-family: @h-font-family; font-weight:300;}
   .span5.offset1 {
-    margin-top: 200px;
+    margin-top: 220px;
     @media (max-width: 767px) { margin-top: 0;}
   }  
   .btn {

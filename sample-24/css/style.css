@@ -633,7 +633,7 @@ section * {
   }
 }
 .header-14-sub h3 {
-  margin: 0 0 40px;
+  margin: 0 0 30px;
 }
 .header-14-sub .header-14 {
   margin-bottom: 65px;
@@ -654,7 +654,7 @@ section * {
   display: table;
   border-collapse: collapse;
   padding: 0;
-  margin: 190px auto;
+  margin: 190px auto 170px;
   background: transparent;
   color: white;
 }
@@ -743,10 +743,15 @@ section * {
   }
 }
 .header-14-sub {
-  padding-bottom: 0;
+  padding-bottom: 120px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+@media (max-width: 480px) {
+  .header-14-sub {
+    padding-bottom: 50px;
+  }
 }
 .header-14-sub .background {
   background-image: url("../img/img-1.jpg");

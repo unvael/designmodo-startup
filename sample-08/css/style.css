@@ -1052,7 +1052,7 @@ section * {
   color: #7f8c8d;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #ffffff;
-  background: #ecf0f1;
+  background: #1abc9c;
   font-weight: 300;
   -webkit-backface-visibility: hidden;
   -webkit-transition: 0.25s color, 0.25s background-color;
@@ -1259,6 +1259,12 @@ section * {
   font-family: Lato, sens-serif;
   font-weight: normal;
 }
+@media (max-width: 768px) {
+  .footer-9 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
 @media (max-width: 480px) {
   .footer-9 .box {
     margin-top: 33px;
@@ -1271,6 +1277,9 @@ body > section,
 footer {
   padding-top: 80px;
   padding-bottom: 80px;
+}
+.content-12 .btn-wide {
+  background-color: #ecf0f1;
 }
 .content-12 .btn-wide:hover,
 .content-12 .btn-wide:active,

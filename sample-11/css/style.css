@@ -1305,14 +1305,14 @@ footer > .container {
   padding-bottom: 80px;
 }
 .content-3.v-center {
-  padding-top: 153px;
-  padding-bottom: 0;
-}
-.content-3.v-center:first-child {
   padding-top: 135px;
+  padding-bottom: 18px;
 }
 .header-6-sub .background {
   background-image: url("../img/img-1.jpg");
   opacity: 0.8;
   filter: alpha(opacity=80);
+}
+.footer-10 {
+  margin-top: 72px;
 }

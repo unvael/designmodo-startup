@@ -1286,3 +1286,7 @@ footer {
 .content-12 .btn-wide.active {
   background-color: #34495e;
 }
+.blog-2 .background .span4 > div {
+  background-image: url('../img/img-1.jpg');
+  background-position: -80% 0;
+}

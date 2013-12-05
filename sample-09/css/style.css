@@ -900,13 +900,14 @@ section * {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   line-height: 32px;
+  margin-bottom: 8px;
 }
 .content-20 .features h6 {
   font-size: 18px;
   font-weight: normal;
   color: #ffffff;
   font-family: Lato, sens-serif;
-  margin-top: 50px;
+  margin-top: 38px;
 }
 @media (max-width: 767px) {
   .content-20 .features h6 {
@@ -992,7 +993,7 @@ section * {
   }
 }
 .content-3 .delimiter {
-  margin-top: 120px;
+  margin-top: 130px;
   padding-top: 70px;
   border-top: 2px solid #ecf0f1;
 }
@@ -1002,6 +1003,8 @@ section * {
   }
 }
 .content-3 .features h6 {
+  margin-top: 0;
+  margin-bottom: 28px;
   font-size: 20px;
   font-weight: normal;
   color: #34495e;
@@ -1010,6 +1013,8 @@ section * {
   text-transform: none;
 }
 .content-3 .features p {
+  margin-top: 0;
+  margin-bottom: 0;
   line-height: 26px;
 }
 .content-3.mirror .aligment {
@@ -1109,8 +1114,8 @@ section * {
   }
 }
 body > section.v-center > div {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .header-4,
 .content-20 {
@@ -1134,7 +1139,7 @@ body > section.v-center > div {
   font-weight: normal;
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 30px 0;
+  margin: 63px 0;
 }
 .content-3.bg-clouds .delimiter {
   border-color: rgba(189, 195, 199, 0.4);

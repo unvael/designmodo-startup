@@ -1117,6 +1117,12 @@ body > section.v-center > div {
   padding-top: 200px;
   padding-bottom: 200px;
 }
+@media (max-width: 768px) {
+  body > section.v-center > div {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
 .header-4,
 .content-20 {
   padding: 0;

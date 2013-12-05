@@ -9,7 +9,7 @@
         });        
 
         // Parallax
-        $('.header-6-sub .background').parallax('50%', 0.3, true);        
+        $('.header-6-sub .background').parallax('50%', -0.3, true);
         $(window).resize().scroll();
     });
 

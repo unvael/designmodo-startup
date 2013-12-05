@@ -558,6 +558,14 @@ section * {
   opacity: 0.2;
   filter: alpha(opacity=20);
 }
+@media (max-width: 768px) {
+  .background {
+    -webkit-background-size: auto 200%;
+    -moz-background-size: auto 200%;
+    -o-background-size: auto 200%;
+    background-size: auto 200%;
+  }
+}
 .container {
   position: relative;
   z-index: 2;
@@ -1309,7 +1317,7 @@ footer > .container {
   padding-bottom: 18px;
 }
 .header-6-sub .background {
-  background-image: url("../img/img-1.jpg");
+  background-image: url("../img/NY_001.png");
   opacity: 0.8;
   filter: alpha(opacity=80);
 }

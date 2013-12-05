@@ -579,6 +579,10 @@ section * {
     box-sizing: border-box;
   }
 }
+.nav-visible .navbar .nav-collapse .nav > li > a:hover,
+.nav-visible .navbar .nav-collapse .nav > li > li a:focus {
+  background-color: transparent;
+}
 .nav-visible .nav-collapse .navbar-form,
 .nav-visible .nav-collapse .navbar-search {
   border-bottom: 0 none;

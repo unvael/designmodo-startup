@@ -1155,7 +1155,7 @@ body > section.v-center > div {
   padding: 0;
 }
 .header-4 .background {
-  background-image: url("../img/img-1.jpg");
+  background-image: url("../img/Hawaii_001.png");
   opacity: 1;
   filter: alpha(opacity=100);
 }
@@ -1179,4 +1179,7 @@ body > section.v-center > div {
 }
 .content-20 {
   background-color: #1F2225;
+}
+.content-20 .btn-huge {
+  background-color: #14ddb3;
 }

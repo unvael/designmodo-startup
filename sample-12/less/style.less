@@ -16,8 +16,8 @@
 @import '../../ui-kit-footer/less/footer-11.less';
 
 body > section {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 98px;
+  padding-bottom: 98px;
 }
 
 body > section,
@@ -37,6 +37,7 @@ footer {
     max-width: none;
     position: absolute;        
     right: -100px;
+    height: 100%;
     .opacity(0);
     
     &.ani-processed {
@@ -69,8 +70,20 @@ footer {
 }
 
 .tpl-12-section-1 {
+  h3{
+    .font(30px, @h-text-color);
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  p{
+    margin-top: 48px;
+    margin-bottom: 0;
+    .font(16px);
+    font-family: @h-font-family;
+  }
   .logos {
-    margin-top: 30px;
+    margin-top: 48px;
     display: table;
     width: 100%;
 
@@ -87,10 +100,12 @@ footer {
 
 .tpl-12-section-2 {
   border-top: 0;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 130px;
+  padding-bottom: 130px;
 
   h3 {
+    .font(30px, @h-text-color);
+    font-weight:300;
     margin: 0 0 38px;
     text-align: center;
   }
@@ -98,9 +113,10 @@ footer {
   .signup-form {
     form {
       margin: 30px auto 0;
-  
+      input{border: 2px solid #dee1e3;}
       input,
       button {
+
         float: left;
         width: 21.8%;
         margin: 0 0 0 2.3%;
@@ -122,6 +138,8 @@ footer {
           margin: 10px 0 0;
           display: block;
           float: none;
+          height: 41px;
+          .box-sizing(border-box);
         }
   
         &:first-child {

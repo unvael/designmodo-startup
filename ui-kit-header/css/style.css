@@ -6448,6 +6448,14 @@ section * {
   margin: -10px 15px 0 0;
   position: relative;
   z-index: 2;
+  border: 1px solid #e74c3c;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #e74c3c;
 }
 .header-19 .navbar .brand > span {
   position: relative;
@@ -6607,7 +6615,7 @@ section * {
   right: 0;
   bottom: 0;
   max-width: none;
-  width: 38.5%;
+  height: 70%;
 }
 .header-19-sub > .container {
   position: relative;
@@ -6900,7 +6908,7 @@ section * {
 @media (max-width: 767px) {
   .header-20-sub .pull-right {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 48px;
   }
 }
 .header-20-sub .img-wrapper {

@@ -183,12 +183,12 @@ startupKit.uiKitHeader.header5 = function() {
     pt1.init('#h-5-pt-1');
 
     $('#h-5-pt-1 .pt-control-prev').on('click', function() {
-        pt1.gotoPage(28, 'prev');
+        pt1.gotoPage(5, 'prev');
         return false;
     });
 
     $('#h-5-pt-1 .pt-control-next').on('click', function() {
-        pt1.gotoPage(29, 'next');
+        pt1.gotoPage(6, 'next');
         return false;
     });
 

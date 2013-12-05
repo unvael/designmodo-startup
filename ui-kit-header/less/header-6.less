@@ -102,7 +102,10 @@
       .loaded & {
         .transition(~'.4s .8s top, 1.2s .8s opacity');
         top: 90px; .opacity(100);
-      }       
+        @media (max-width: 768px) {
+          top:50px;
+        }
+      }
       @media (max-width: 480px) {        
         .transition-duration(0)!important;
         .transition-delay(0)!important;    
@@ -119,7 +122,11 @@
   width: 100%; 
   overflow: hidden;   
   padding-top:280px;
-  padding-bottom:90px;  
+  padding-bottom:90px;
+  @media (max-width: 768px) {
+    padding-top: 120px;
+    padding-bottom: 50px;
+  }
   overflow: hidden;
   color: @silver;
   text-align: center;

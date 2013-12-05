@@ -32,11 +32,15 @@
   .features {   
     h6{
       margin-top: 0;
-      margin-bottom: 28px;
+      margin-bottom: 22px;
       .font(20px, @base);
       font-family:@c-font-family;
       font-weight:bold;
       text-transform: none;
+      @media (max-width: 767px) {
+        margin-top: 30px;
+        margin-bottom: 15px;
+      }
     }
     p {
       margin-top: 0;

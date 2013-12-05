@@ -1006,52 +1006,6 @@ body {
 .mcontent .pt-page-ontop {
   z-index: 999;
 }
-.mcontent .startup-kit_header h1 {
-  font-size: 45px;
-  font-weight: normal;
-  color: #2c3e50;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 59.99999999999999px;
-}
-.mcontent .startup-kit_header p {
-  font-size: 18px;
-  font-weight: normal;
-  color: #7f8c8d;
-  font-family: Lato, sens-serif;
-  line-height: 29.999999999999996px;
-}
-@media (max-width: 480px) {
-  .mcontent .startup-kit_header h1 {
-    font-size: 30px;
-    font-weight: normal;
-    color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 36px;
-  }
-  .mcontent .startup-kit_header p {
-    font-size: 16px;
-    font-weight: normal;
-    color: #7f8c8d;
-    font-family: Lato, sens-serif;
-    line-height: 27px;
-  }
-}
-@media (max-width: 767px) {
-  .mcontent .startup-kit_header h1 {
-    font-size: 30px;
-    font-weight: normal;
-    color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 36px;
-  }
-  .mcontent .startup-kit_header p {
-    font-size: 16px;
-    font-weight: normal;
-    color: #7f8c8d;
-    font-family: Lato, sens-serif;
-    line-height: 27px;
-  }
-}
 .mcontent .blog-1 .box-icon {
   margin: 0 auto 35px;
   text-align: center;
@@ -1957,6 +1911,52 @@ body {
   display: inline-block;
   margin: 0 10px;
 }
+.mcontent .startup-kit_header h1 {
+  font-size: 45px;
+  font-weight: normal;
+  color: #2c3e50;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 59.99999999999999px;
+}
+.mcontent .startup-kit_header p {
+  font-size: 18px;
+  font-weight: normal;
+  color: #7f8c8d;
+  font-family: Lato, sens-serif;
+  line-height: 29.999999999999996px;
+}
+@media (max-width: 480px) {
+  .mcontent .startup-kit_header h1 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #2c3e50;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 36px;
+  }
+  .mcontent .startup-kit_header p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #7f8c8d;
+    font-family: Lato, sens-serif;
+    line-height: 27px;
+  }
+}
+@media (max-width: 767px) {
+  .mcontent .startup-kit_header h1 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #2c3e50;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 36px;
+  }
+  .mcontent .startup-kit_header p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #7f8c8d;
+    font-family: Lato, sens-serif;
+    line-height: 27px;
+  }
+}
 .mcontent .contacts-1 h3 {
   font-size: 30px;
   margin: 0 0 60px;
@@ -2740,13 +2740,19 @@ body {
 }
 .mcontent .content-3 .features h6 {
   margin-top: 0;
-  margin-bottom: 28px;
+  margin-bottom: 22px;
   font-size: 20px;
   font-weight: normal;
   color: #34495e;
   font-family: Lato, sens-serif;
   font-weight: bold;
   text-transform: none;
+}
+@media (max-width: 767px) {
+  .mcontent .content-3 .features h6 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
 }
 .mcontent .content-3 .features p {
   margin-top: 0;
@@ -9726,7 +9732,7 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 7px 18px 8px;
+  padding: 8px 28px;
   background-color: transparent;
   border: 2px solid white;
   color: white;
@@ -9955,7 +9961,7 @@ body {
   font-weight: 600;
   border: 8px solid white;
   display: inline-block;
-  margin: 337px 0 198px;
+  margin: 230px 0 198px;
   padding: 30px 40px;
 }
 .mcontent .header-15-sub .hero-unit p {

@@ -1419,8 +1419,8 @@ body > section {
 }
 @media (max-width: 480px) {
   body > section {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 90px;
+    padding-bottom: 90px;
   }
 }
 .header-5 .home {
@@ -1579,7 +1579,7 @@ body > section {
   text-align: center;
 }
 .tpl-10-section-1 .article-info > * {
-  margin: 0 20px;
+  margin: 0;
 }
 .tpl-10-section-1 .article-info [class*="fui-"] {
   position: relative;

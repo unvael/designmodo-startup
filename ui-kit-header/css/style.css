@@ -4702,7 +4702,7 @@ section * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 7px 18px 8px;
+  padding: 8px 28px;
   background-color: transparent;
   border: 2px solid white;
   color: white;
@@ -4931,7 +4931,7 @@ section * {
   font-weight: 600;
   border: 8px solid white;
   display: inline-block;
-  margin: 337px 0 198px;
+  margin: 230px 0 198px;
   padding: 30px 40px;
 }
 .header-15-sub .hero-unit p {

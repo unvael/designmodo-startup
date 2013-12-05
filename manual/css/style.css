@@ -7353,6 +7353,7 @@ body {
   font-weight: normal;
   color: #ffffff;
   margin-bottom: 30px;
+  font-weight: 300;
 }
 .mcontent .header-6-sub .row {
   position: relative;
@@ -7362,7 +7363,7 @@ body {
   font-size: 24px;
   font-weight: normal;
   color: rgba(255, 255, 255, 0.7);
-  font-weight: 100;
+  font-weight: 300;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .mcontent .header-6-sub .container > .row:first-child {

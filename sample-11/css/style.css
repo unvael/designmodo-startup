@@ -853,6 +853,7 @@ section * {
   font-weight: normal;
   color: #ffffff;
   margin-bottom: 30px;
+  font-weight: 300;
 }
 .header-6-sub .row {
   position: relative;
@@ -862,7 +863,7 @@ section * {
   font-size: 24px;
   font-weight: normal;
   color: rgba(255, 255, 255, 0.7);
-  font-weight: 100;
+  font-weight: 300;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .header-6-sub .container > .row:first-child {
@@ -1302,6 +1303,13 @@ body > section,
 footer > .container {
   padding-top: 80px;
   padding-bottom: 80px;
+}
+.content-3.v-center {
+  padding-top: 153px;
+  padding-bottom: 0;
+}
+.content-3.v-center:first-child {
+  padding-top: 135px;
 }
 .header-6-sub .background {
   background-image: url("../img/img-1.jpg");

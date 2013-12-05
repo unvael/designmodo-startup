@@ -918,7 +918,8 @@ section * {
 /* contents */
 .content-26 {
   position: relative;
-  padding: 145px 0;
+  padding-top: 150px;
+  padding-bottom: 150px;
   text-align: center;
 }
 .content-26 .lead {
@@ -1237,8 +1238,8 @@ section * {
 }
 .content-26,
 .content-11 {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 .content-11 {
   background: none;

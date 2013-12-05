@@ -3335,7 +3335,8 @@ section * {
 }
 .content-26 {
   position: relative;
-  padding: 145px 0;
+  padding-top: 150px;
+  padding-bottom: 150px;
   text-align: center;
 }
 .content-26 .lead {

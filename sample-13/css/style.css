@@ -1009,6 +1009,15 @@ section * {
   border: 0;
   display: block;
 }
+.header-7-sub {
+  overflow: visible;
+}
+.header-7-sub .pt-controls {
+  position: fixed;
+  top: 50%;
+  margin-top: 0!important;
+  margin-bottom: 0 !important;
+}
 .header-7-sub .h-7-section-2 {
   background: #f1c40f;
 }

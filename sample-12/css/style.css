@@ -1267,6 +1267,7 @@ footer {
   max-width: none;
   position: absolute;
   right: -100px;
+  height: 100%;
   opacity: 0;
   filter: alpha(opacity=0);
 }

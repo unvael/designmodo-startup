@@ -609,7 +609,8 @@ section * {
 .header-4 .v-center > div {
   display: table-cell;
   vertical-align: middle;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   float: none;
 }
 @media (min-width: 768px) {
@@ -621,6 +622,14 @@ section * {
   }
 }
 @media (max-width: 767px) {
+  .header-4.v-center,
+  .header-4 .v-center {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .header-4.v-center.row,
   .header-4 .v-center.row {
     display: block;
@@ -698,7 +707,8 @@ section * {
 .content-20 .v-center > div {
   display: table-cell;
   vertical-align: middle;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   float: none;
 }
 @media (min-width: 768px) {
@@ -710,6 +720,14 @@ section * {
   }
 }
 @media (max-width: 767px) {
+  .content-20.v-center,
+  .content-20 .v-center {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .content-20.v-center.row,
   .content-20 .v-center.row {
     display: block;
@@ -954,7 +972,8 @@ section * {
 .content-3 .v-center > div {
   display: table-cell;
   vertical-align: middle;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   float: none;
 }
 @media (min-width: 768px) {
@@ -966,6 +985,14 @@ section * {
   }
 }
 @media (max-width: 767px) {
+  .content-3.v-center,
+  .content-3 .v-center {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .content-3.v-center.row,
   .content-3 .v-center.row {
     display: block;

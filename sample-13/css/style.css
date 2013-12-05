@@ -855,6 +855,7 @@ section * {
   .header-7-sub section > div {
     vertical-align: top;
     padding-bottom: 70px;
+    padding-top: 200px;
   }
 }
 .header-7-sub .h-7-section-1 > div {
@@ -1012,14 +1013,16 @@ section * {
 .header-7-sub {
   overflow: visible;
 }
-.header-7-sub .pt-controls {
-  position: fixed;
-  top: 50%;
-  margin-top: 0!important;
-  margin-bottom: 0 !important;
+@media (min-width: 768px) {
+  .header-7-sub .pt-controls {
+    position: fixed;
+    top: 50%;
+    margin-top: 0!important;
+    margin-bottom: 0 !important;
+  }
 }
 .header-7-sub .h-7-section-2 {
-  background: #f1c40f;
+  background: #2d2e2e;
 }
 .header-7-sub .h-7-section-2 .span8 > img {
   margin-bottom: 70px;
@@ -1067,6 +1070,7 @@ section * {
 }
 .header-7-sub .h-7-section-5 .lead {
   color: rgba(44, 62, 80, 0.55);
+  margin-bottom: 60px;
 }
 .header-7-sub .h-7-section-5 .additional-links {
   font-size: 12px;
@@ -1083,7 +1087,7 @@ section * {
   color: #667071;
 }
 .header-7-sub .h-7-section-5 .signup-form form {
-  margin: 30px 0 0;
+  margin: 0;
 }
 .header-7-sub .h-7-section-5 .signup-form input[type="text"],
 .header-7-sub .h-7-section-5 .signup-form input[type="password"] {
@@ -1092,6 +1096,11 @@ section * {
 }
 .header-7-sub .h-7-section-5 .signup-form .btn-large {
   font-weight: bold;
+}
+.header-7-sub .h-7-section-5 .signup-form .btn-large:hover,
+.header-7-sub .h-7-section-5 .signup-form .btn-large.active,
+.header-7-sub .h-7-section-5 .signup-form .btn-large:active {
+  background-color: #f1c40f;
 }
 .header-7-sub .h-7-section-5 .signup-form .controls-row:first-child + .controls-row {
   display: table;

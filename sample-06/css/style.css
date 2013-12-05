@@ -1048,7 +1048,7 @@ section * {
 }
 .content-30 .features h6 {
   text-transform: none;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
   color: #1abc9c;
   font-family: Lato, sens-serif;
@@ -1096,7 +1096,7 @@ section * {
     text-align: center;
   }
   .content-30 .features .img {
-    margin: 33px auto;
+    margin: 60px auto;
   }
   .content-30 .features img[src*="arrow-"] {
     display: none;
@@ -1110,7 +1110,7 @@ section * {
     filter: alpha(opacity=100);
   }
   .content-30 .features > * + * {
-    margin-top: 33px;
+    margin-top: 60px;
   }
   .content-30 .features .img {
     margin: 15px auto;
@@ -1122,7 +1122,7 @@ section * {
     text-align: left;
   }
   .content-30 .features .description-top {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
   }
   .content-30 .features h6 {
     margin-bottom: 5px;

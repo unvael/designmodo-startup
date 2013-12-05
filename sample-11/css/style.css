@@ -652,6 +652,11 @@ section * {
   top: 7px;
   right: 0;
 }
+@media (max-width: 768px) {
+  .header-6 .navbar .social-btns {
+    display: none;
+  }
+}
 .header-6 .navbar .social-btns > * {
   display: inline-block;
   margin-left: 15px;
@@ -728,6 +733,11 @@ section * {
   border: 0;
   background: none!important;
   color: white;
+}
+@media (max-width: 768px) {
+  .header-6 .navbar .btn-navbar {
+    float: right;
+  }
 }
 .header-6 .navbar .btn-navbar:hover,
 .header-6 .navbar .btn-navbar:focus {
@@ -981,7 +991,7 @@ section * {
 @media (max-width: 767px) {
   .header-6-sub .signup-form form input,
   .header-6-sub .signup-form form button {
-    width: 23.2%;
+    width: 20%;
   }
 }
 @media (max-width: 480px) {
@@ -1200,6 +1210,11 @@ section * {
   .footer-10 nav .span2 + .span2 + .span2 + .span2 {
     clear: none;
     margin-top: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .footer-10 .box {
+    margin-top: 33px;
   }
 }
 @media (max-width: 480px) {

@@ -32,6 +32,9 @@
         img:first-child {float: left; margin: -10px 15px 0 0; }
       }    
       .social-btns {
+        @media (max-width: 768px) {
+          display: none;
+        }
         white-space: nowrap;
         position: absolute;
         top: 7px; right: 0;    
@@ -77,6 +80,7 @@
       }    
       // "icon only" style
       .btn-navbar {
+        @media (max-width: 768px) {float: right;}
         float: none;
         margin: 0 auto 25px;
         padding: 0;
@@ -179,7 +183,7 @@
         margin: 0 0 0 2.3%;  
         @media (min-width: 1200px) { width: 22%; }  
         @media (max-width: 979px) and (min-width: 768px) { width: 21.4%; }  
-        @media (max-width: 767px) { width: 23.2%;}  
+        @media (max-width: 767px) { width: 20%;}
         @media (max-width: 480px) {
           width: 100%;
           margin: 10px 0 0;

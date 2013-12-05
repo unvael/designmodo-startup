@@ -1546,6 +1546,11 @@ section * {
     margin-top: 30px;
   }
 }
+@media (max-width: 767px) {
+  .footer-10 .box {
+    margin-top: 33px;
+  }
+}
 @media (max-width: 480px) {
   .footer-10 .box {
     margin-top: 33px;

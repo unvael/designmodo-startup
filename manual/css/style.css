@@ -7152,6 +7152,11 @@ body {
   top: 7px;
   right: 0;
 }
+@media (max-width: 768px) {
+  .mcontent .header-6 .navbar .social-btns {
+    display: none;
+  }
+}
 .mcontent .header-6 .navbar .social-btns > * {
   display: inline-block;
   margin-left: 15px;
@@ -7228,6 +7233,11 @@ body {
   border: 0;
   background: none!important;
   color: white;
+}
+@media (max-width: 768px) {
+  .mcontent .header-6 .navbar .btn-navbar {
+    float: right;
+  }
 }
 .mcontent .header-6 .navbar .btn-navbar:hover,
 .mcontent .header-6 .navbar .btn-navbar:focus {
@@ -7481,7 +7491,7 @@ body {
 @media (max-width: 767px) {
   .mcontent .header-6-sub .signup-form form input,
   .mcontent .header-6-sub .signup-form form button {
-    width: 23.2%;
+    width: 20%;
   }
 }
 @media (max-width: 480px) {
@@ -15481,6 +15491,11 @@ body {
   .mcontent .footer-10 nav .span2 + .span2 + .span2 + .span2 {
     clear: none;
     margin-top: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .mcontent .footer-10 .box {
+    margin-top: 33px;
   }
 }
 @media (max-width: 480px) {

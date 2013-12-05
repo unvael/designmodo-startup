@@ -8,9 +8,7 @@
             $(this).closest('.control-group, form').removeClass('focus');
         });        
 
-        // Parallax
-        $('.header-6-sub .background').parallax('50%', -0.3, true);
-        $(window).resize().scroll();
+
     });
 
     $(window).load(function() {

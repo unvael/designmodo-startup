@@ -789,7 +789,7 @@ section * {
 @media (max-width: 767px) {
   .header-20-sub .pull-right {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 48px;
   }
 }
 .header-20-sub .img-wrapper {
@@ -1387,6 +1387,10 @@ footer {
     margin: 10px 0 0;
     display: block;
     float: none;
+    height: 41px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
   }
 }
 .tpl-12-section-2 .signup-form form input:first-child,

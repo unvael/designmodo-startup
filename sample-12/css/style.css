@@ -1039,11 +1039,11 @@ section * {
   font-weight: normal;
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-bottom: 24px;
+  margin-bottom: 48px;
   font-weight: 300;
 }
 .content-10 p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
   color: #7f8c8d;
 }
@@ -1196,7 +1196,7 @@ section * {
   }
 }
 .footer-11 .additional-links .lead {
-  margin-bottom: 20px;
+  margin-bottom: 28px;
   font-size: 24px;
   font-weight: normal;
   color: #34495e;
@@ -1247,8 +1247,8 @@ section * {
   }
 }
 body > section {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 98px;
+  padding-bottom: 98px;
 }
 body > section,
 footer {
@@ -1307,8 +1307,24 @@ footer {
 .footer-11 nav ul li a.active {
   color: #bdc3c7;
 }
+.tpl-12-section-1 h3 {
+  font-size: 30px;
+  font-weight: normal;
+  color: #2c3e50;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.tpl-12-section-1 p {
+  margin-top: 48px;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: normal;
+  color: #7f8c8d;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 .tpl-12-section-1 .logos {
-  margin-top: 30px;
+  margin-top: 48px;
   display: table;
   width: 100%;
 }
@@ -1323,15 +1339,22 @@ footer {
 }
 .tpl-12-section-2 {
   border-top: 0;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 .tpl-12-section-2 h3 {
+  font-size: 30px;
+  font-weight: normal;
+  color: #2c3e50;
+  font-weight: 300;
   margin: 0 0 38px;
   text-align: center;
 }
 .tpl-12-section-2 .signup-form form {
   margin: 30px auto 0;
+}
+.tpl-12-section-2 .signup-form form input {
+  border: 2px solid #dee1e3;
 }
 .tpl-12-section-2 .signup-form form input,
 .tpl-12-section-2 .signup-form form button {

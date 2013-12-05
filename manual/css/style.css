@@ -3318,11 +3318,11 @@ body {
   font-weight: normal;
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-bottom: 24px;
+  margin-bottom: 48px;
   font-weight: 300;
 }
 .mcontent .content-10 p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
   color: #7f8c8d;
 }
@@ -15726,7 +15726,7 @@ body {
   }
 }
 .mcontent .footer-11 .additional-links .lead {
-  margin-bottom: 20px;
+  margin-bottom: 28px;
   font-size: 24px;
   font-weight: normal;
   color: #34495e;

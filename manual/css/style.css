@@ -5707,7 +5707,8 @@ body {
     filter: alpha(opacity=0);
   }
   .mcontent .content-31 .container .img img + img {
-    max-width: 60%;
+    margin-top: 30px;
+    max-width: 100%;
     opacity: 1;
     filter: alpha(opacity=100);
   }

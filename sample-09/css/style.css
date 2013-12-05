@@ -1121,6 +1121,14 @@ body > section.v-center > div {
   opacity: 1;
   filter: alpha(opacity=100);
 }
+@media (max-width: 768px) {
+  .header-4 .background {
+    -webkit-background-size: auto 200%;
+    -moz-background-size: auto 200%;
+    -o-background-size: auto 200%;
+    background-size: auto 200%;
+  }
+}
 .price-1 h3 {
   font-size: 30px;
   font-weight: normal;

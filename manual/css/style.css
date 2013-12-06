@@ -3983,7 +3983,7 @@ body {
 .mcontent .content-18 .carousel:before {
   content: url('../../ui-kit-content/img/quote.png');
   display: block;
-  margin: 0 auto 60px;
+  margin: 0 auto 95px;
   text-align: center;
 }
 .mcontent .content-18 .carousel .quote-text {
@@ -3999,7 +3999,7 @@ body {
 }
 .mcontent .content-18 .carousel .quote-author {
   max-width: 620px;
-  margin: 40px auto 0;
+  margin: 45px auto 0;
   padding: 0 20px;
   font-size: 18px;
   font-weight: normal;
@@ -4044,7 +4044,7 @@ body {
   right: 0;
 }
 .mcontent .content-18 .carousel .carousel-inner {
-  padding-bottom: 75px;
+  padding-bottom: 0;
 }
 .mcontent .content-18 .carousel .item {
   -webkit-backface-visibility: hidden;
@@ -4086,7 +4086,7 @@ body {
   }
 }
 .mcontent .content-18 .quotes > * {
-  margin-top: 20px;
+  margin-top: 48px;
 }
 .mcontent .content-18 .quotes h6 {
   text-transform: none;
@@ -5166,8 +5166,8 @@ body {
 }
 .mcontent .content-26 {
   position: relative;
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 125px;
+  padding-bottom: 125px;
   text-align: center;
 }
 .mcontent .content-26 .lead {
@@ -5176,6 +5176,7 @@ body {
   color: #7f8c8d;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
+  margin-bottom: 0;
 }
 .mcontent .content-26 h3 {
   font-size: 35px;
@@ -5183,7 +5184,7 @@ body {
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  margin: 0 0 27px;
+  margin: 0 0 36px;
 }
 @media (max-width: 767px) {
   .mcontent .content-26 .features {
@@ -5202,7 +5203,7 @@ body {
 }
 .mcontent .content-27 {
   position: relative;
-  padding: 95px 0;
+  padding: 120px 0;
 }
 .mcontent .content-27 svg,
 .mcontent .content-27 .svg {
@@ -5228,7 +5229,7 @@ body {
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: left;
-  margin-bottom: 35px;
+  margin-bottom: 43px;
   font-weight: 300;
 }
 .mcontent .content-27 p {
@@ -5250,7 +5251,7 @@ body {
   }
 }
 .mcontent .content-27 .btns {
-  margin-top: 50px;
+  margin-top: 45px;
 }
 .mcontent .content-27 .btns > * {
   display: inline-block;
@@ -5279,6 +5280,10 @@ body {
 @media (max-width: 480px) {
   .mcontent .content-27 .btns .btn:not(:first-child) {
     float: none;
+    color: white;
+  }
+  .mcontent .content-27 .btns .btn:not(:first-child):focus {
+    outline: none;
   }
 }
 @media (min-width: 481px) {
@@ -5355,7 +5360,7 @@ body {
   position: relative;
   overflow: hidden;
   height: 360px;
-  margin: 30px auto 50px;
+  margin: 40px auto 50px;
 }
 .mcontent .content-29 .player .btn-play {
   -webkit-box-sizing: border-box;
@@ -7945,7 +7950,7 @@ body {
   position: relative;
   top: 0;
   z-index: 2;
-  margin: 30px 0 10px;
+  margin: 18px 0 10px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .mcontent .header-8 .navbar.navbar-fixed-top {
@@ -7978,6 +7983,7 @@ body {
   .mcontent .header-8 .navbar .nav > li {
     float: none;
     display: inline-block;
+    line-height: 14.999999999999998px;
   }
 }
 .mcontent .header-8 .navbar .nav > li {
@@ -7991,7 +7997,7 @@ body {
   font-size: 16px;
   font-weight: normal;
   color: #7f8c8d;
-  font-weight: bold;
+  font-weight: 500;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #95a5a6;
 }
@@ -8108,21 +8114,21 @@ body {
 }
 .mcontent .header-8-sub {
   position: relative;
-  padding-top: 100px;
+  padding-top: 101px;
   padding-bottom: 0;
 }
 .mcontent .header-8-sub h3 {
   font-size: 35px;
   font-weight: normal;
-  color: #ffffff;
-  margin-bottom: 35px;
+  color: #2c3e50;
+  margin-bottom: 42px;
   text-align: center;
   font-weight: 300;
 }
 .mcontent .header-8-sub .lead {
   font-size: 24px;
   font-weight: normal;
-  color: rgba(255, 255, 255, 0.7);
+  color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
   font-weight: 300;
@@ -8131,7 +8137,7 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 80px;
+  margin-top: 87px;
 }
 .mcontent .header-9 {
   z-index: 100;

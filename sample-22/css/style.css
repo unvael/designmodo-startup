@@ -1446,7 +1446,7 @@ section * {
 .content-18 .carousel:before {
   content: url('../../ui-kit-content/img/quote.png');
   display: block;
-  margin: 0 auto 60px;
+  margin: 0 auto 95px;
   text-align: center;
 }
 .content-18 .carousel .quote-text {
@@ -1462,7 +1462,7 @@ section * {
 }
 .content-18 .carousel .quote-author {
   max-width: 620px;
-  margin: 40px auto 0;
+  margin: 45px auto 0;
   padding: 0 20px;
   font-size: 18px;
   font-weight: normal;
@@ -1507,7 +1507,7 @@ section * {
   right: 0;
 }
 .content-18 .carousel .carousel-inner {
-  padding-bottom: 75px;
+  padding-bottom: 0;
 }
 .content-18 .carousel .item {
   -webkit-backface-visibility: hidden;
@@ -1549,7 +1549,7 @@ section * {
   }
 }
 .content-18 .quotes > * {
-  margin-top: 20px;
+  margin-top: 48px;
 }
 .content-18 .quotes h6 {
   text-transform: none;

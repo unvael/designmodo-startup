@@ -1016,7 +1016,7 @@ section * {
 @media (min-width: 768px) {
   .header-7-sub .pt-controls {
     position: fixed;
-    top: 50%;
+    top: 40%;
     margin-top: 0!important;
     margin-bottom: 0 !important;
   }

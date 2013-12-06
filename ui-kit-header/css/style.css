@@ -4206,7 +4206,6 @@ section * {
 .header-12-sub .aside {
   position: relative;
   background: #3498db;
-  max-width: 220px;
   float: right;
   text-align: center;
   padding-left: 95px;
@@ -4214,7 +4213,7 @@ section * {
   margin-top: -80px;
   margin-bottom: -80px;
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 117px;
 }
 .header-12-sub .aside:before {
   content: '';

@@ -9250,7 +9250,6 @@ body {
 .mcontent .header-12-sub .aside {
   position: relative;
   background: #3498db;
-  max-width: 220px;
   float: right;
   text-align: center;
   padding-left: 95px;
@@ -9258,7 +9257,7 @@ body {
   margin-top: -80px;
   margin-bottom: -80px;
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 117px;
 }
 .mcontent .header-12-sub .aside:before {
   content: '';
@@ -15870,7 +15869,7 @@ body {
   }
 }
 .mcontent .footer-13 {
-  padding-top: 40px;
+  padding-top: 44px;
   padding-bottom: 40px;
   background: #ebedee;
   text-align: center;

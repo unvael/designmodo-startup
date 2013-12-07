@@ -2870,10 +2870,10 @@ body {
 .mcontent .content-5 .features > [class*="span"] > [class*="fui-"] {
   position: absolute;
   left: -60px;
-  top: 5px;
-  font-size: 34px;
+  top: 7px;
+  font-size: 25px;
   font-weight: normal;
-  color: #bdc3c7;
+  color: #2c3e50;
 }
 @media (max-width: 767px) {
   .mcontent .content-5 .features > [class*="span"] > [class*="fui-"] {

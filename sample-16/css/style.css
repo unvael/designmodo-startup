@@ -1000,6 +1000,9 @@ content-9 p {
 .header-9 .navbar .nav > li > a.active {
   color: white;
 }
+.header-9-sub {
+  padding-bottom: 150px;
+}
 .header-9-sub .background {
   background-image: url('../img/img-1.jpg');
   opacity: 1;
@@ -1025,6 +1028,13 @@ content-9 p {
   font-weight: 800;
   line-height: 46.00000000000001px;
   letter-spacing: 0;
+}
+@media (max-width: 768px) {
+  .header-9-sub .hero-unit.bordered p {
+    font-size: 36px;
+    font-weight: normal;
+    color: #ffffff;
+  }
 }
 .header-9-sub .wide-text.text-warning {
   font-size: 13px;

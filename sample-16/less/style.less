@@ -46,6 +46,7 @@ p, content-9 p{
   }
 }
 .header-9-sub {
+
   .background{
     background-image:url('../img/img-1.jpg');
     .opacity(100);
@@ -59,6 +60,9 @@ p, content-9 p{
     margin-bottom: 40px;
     p{
       .font(46px, white);
+      @media (max-width: 768px) {
+        .font(36px, white);
+      }
       font-family: @h-font-family;
       font-weight: 800;
       .line-height(46px);

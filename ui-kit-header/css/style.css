@@ -5235,7 +5235,6 @@ section * {
   transition: left 0.4s;
 }
 .header-16 .navbar .nav-collapse {
-  z-index: 997;
   left: 0;
   bottom: auto;
   top: -100%;

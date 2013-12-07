@@ -16,8 +16,11 @@
   @import 'navbar.less';
 }
 
-.header-custom-sub{  
-  height:100%
+
+
+.header-custom-sub{
+  .v-center;
+  height:100%;
   color: white;
   text-align: center;
   @media (max-width: 480px) { min-height: 0; padding-bottom: 20px;}
@@ -25,11 +28,12 @@
     height:100%;
   }
   .background{
-    background-image:url("../img/img-1.jpg");
-    .opacity(100);
+    background-image:url("../img/NY_001.png");
+    .opacity(40);
   }
   .hero-unit{
-    padding:280px 60px 190px;
+
+    //padding:280px 60px 190px;
     background:transparent;    
     .headline{ 
      display:inline-block;
@@ -55,6 +59,42 @@
       }
     }
      
+  }
+}
+@media (max-width: 767px) {
+
+  .header-custom-sub .hero-unit{
+
+    .box-sizing(border-box);
+  }
+  .projects-2{
+    padding: 0;
+  }
+  .header-custom-sub .v-center {
+    padding-left:0 ;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 565px) {
+  .header-custom-sub .hero-unit .headline {
+    span:first-child {
+      .font(25px, white);
+      font-family: @h-font-family;
+      font-weight: 600;
+      padding: 10px;
+      border-bottom: 7px solid white;
+      border-right:0 none ;
+
+    }
+    span {
+      display:block;
+      .font(11px, white);
+      font-weight: 600;
+      padding: 10px 15px;
+
+      text-align: center;
+    }
   }
 }
 

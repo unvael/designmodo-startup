@@ -19,9 +19,8 @@ body > section,
 }
 
 h3,
-h6,
-.content-9 h3,
-.content-9 h6 {
+h6{
+
   color: @h-text-color;
   font-family: @h-font-family;
   font-weight: 300;
@@ -29,12 +28,23 @@ h6,
 
 h3 {
   font-size: 30px;
+  margin-bottom: 36px;
 }
 
-p {
-  font-size: 16px;
+p, content-9 p{
+  font-size: 18px;
+  font-family: @h-font-family;
 }
 
+.header-9 .navbar .brand {
+  .a-color(#aa5a17, white);
+}
+.header-9 .navbar .nav > li > a{
+  .a-color(#aa5a17, white);
+  &.active{
+    color: white;
+  }
+}
 .header-9-sub {
   .background{
     background-image:url('../img/img-1.jpg');
@@ -60,7 +70,7 @@ p {
     .font(13px, white);
     font-family: @h-font-family;
     font-weight: 500;
-    letter-spacing: 2px;
+    letter-spacing: 1.6px;
     text-transform: uppercase;
 
   }
@@ -239,10 +249,11 @@ aside {
       margin: 0;
       font-size: 13px;
       font-family: @h-font-family;
-      letter-spacing: 0.2em;
+      letter-spacing: 1.6px;
 
       li {
-        margin-bottom: 12px;
+        margin-bottom: 25px;
+        .line-height(13px);
 
         a {
           .a-color(#1b1f23, @c-text-color);
@@ -264,14 +275,7 @@ aside {
     padding-right: 20px;
 
 
-    h6 {
-      font-size: 13px;
-      color: @lightgray;
-      letter-spacing: 0.2em;
-      border-bottom: 2px solid @lightgray;
-      margin-bottom: 50px;
-      padding-bottom: 7px;
-    }
+
 
     [class*="fui-"] {
       .font(24px, @h-text-color) ;

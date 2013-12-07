@@ -967,18 +967,38 @@ body > section,
   padding-bottom: 80px;
 }
 h3,
-h6,
-.content-9 h3,
-.content-9 h6 {
+h6 {
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
 h3 {
   font-size: 30px;
+  margin-bottom: 36px;
 }
-p {
-  font-size: 16px;
+p,
+content-9 p {
+  font-size: 18px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.header-9 .navbar .brand {
+  color: #aa5a17;
+}
+.header-9 .navbar .brand:hover,
+.header-9 .navbar .brand:focus,
+.header-9 .navbar .brand.active {
+  color: #ffffff;
+}
+.header-9 .navbar .nav > li > a {
+  color: #aa5a17;
+}
+.header-9 .navbar .nav > li > a:hover,
+.header-9 .navbar .nav > li > a:focus,
+.header-9 .navbar .nav > li > a.active {
+  color: #ffffff;
+}
+.header-9 .navbar .nav > li > a.active {
+  color: white;
 }
 .header-9-sub .background {
   background-image: url('../img/img-1.jpg');
@@ -1012,7 +1032,7 @@ p {
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
-  letter-spacing: 2px;
+  letter-spacing: 1.6px;
   text-transform: uppercase;
 }
 /* ribbon */
@@ -1170,10 +1190,11 @@ aside nav ul {
   margin: 0;
   font-size: 13px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  letter-spacing: 0.2em;
+  letter-spacing: 1.6px;
 }
 aside nav ul li {
-  margin-bottom: 12px;
+  margin-bottom: 25px;
+  line-height: 13px;
 }
 aside nav ul li a {
   color: #1b1f23;
@@ -1196,14 +1217,6 @@ aside .bottom-box {
   position: absolute;
   bottom: 80px;
   padding-right: 20px;
-}
-aside .bottom-box h6 {
-  font-size: 13px;
-  color: #bdc3c7;
-  letter-spacing: 0.2em;
-  border-bottom: 2px solid #bdc3c7;
-  margin-bottom: 50px;
-  padding-bottom: 7px;
 }
 aside .bottom-box [class*="fui-"] {
   font-size: 24px;

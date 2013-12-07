@@ -970,7 +970,9 @@ h3,
 h6,
 .content-9 h3,
 .content-9 h6 {
-  color: #f39c12;
+  color: #2c3e50;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
 }
 h3 {
   font-size: 30px;
@@ -1174,27 +1176,26 @@ aside nav ul li {
   margin-bottom: 12px;
 }
 aside nav ul li a {
-  color: #34495e;
+  color: #1b1f23;
   font-weight: 500;
 }
 aside nav ul li a:hover,
 aside nav ul li a:focus,
 aside nav ul li a.active {
-  color: #bdc3c7;
+  color: #7f8c8d;
 }
 aside nav ul li.active a {
-  color: #bdc3c7;
+  color: #7f8c8d;
 }
 aside nav ul li.active a:hover,
 aside nav ul li.active a:focus,
 aside nav ul li.active a.active {
-  color: #bdc3c7;
+  color: #7f8c8d;
 }
 aside .bottom-box {
   position: absolute;
   bottom: 80px;
   padding-right: 20px;
-  color: rgba(149, 165, 166, 0.8);
 }
 aside .bottom-box h6 {
   font-size: 13px;
@@ -1206,5 +1207,6 @@ aside .bottom-box h6 {
 }
 aside .bottom-box [class*="fui-"] {
   font-size: 24px;
-  color: #f39c12;
+  font-weight: normal;
+  color: #2c3e50;
 }

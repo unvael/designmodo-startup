@@ -22,7 +22,9 @@ h3,
 h6,
 .content-9 h3,
 .content-9 h6 {
-  color: #f39c12;
+  color: @h-text-color;
+  font-family: @h-font-family;
+  font-weight: 300;
 }
 
 h3 {
@@ -203,6 +205,7 @@ p {
 }
 
 
+
 /* sidebar */
 aside {
   position: relative;
@@ -242,13 +245,13 @@ aside {
         margin-bottom: 12px;
 
         a {
-          .a-color(@base, @lightgray);
+          .a-color(#1b1f23, @c-text-color);
           font-weight: 500;
         }
 
         &.active {
           a {
-            .a-color(@lightgray, @lightgray);
+            .a-color(@c-text-color, @c-text-color);
           }
         }
       }
@@ -259,7 +262,7 @@ aside {
     position: absolute;
     bottom: 80px;
     padding-right: 20px;
-    color: rgba(149, 165, 166, 0.8);
+
 
     h6 {
       font-size: 13px;
@@ -271,8 +274,8 @@ aside {
     }
 
     [class*="fui-"] {
-      font-size: 24px;
-      color: #f39c12;
+      .font(24px, @h-text-color) ;
+
     }
   }
 }

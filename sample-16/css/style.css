@@ -1141,6 +1141,9 @@ content-9 p {
   margin-bottom: 30px;
   max-width: 200px;
 }
+.content-features .description h6 {
+  text-transform: none;
+}
 @media (max-width: 767px) {
   .content-features .description {
     margin-bottom: 0;

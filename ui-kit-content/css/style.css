@@ -2830,6 +2830,7 @@ section * {
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
+  text-transform: none;
 }
 .content-22 p {
   font-size: 18px;

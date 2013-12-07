@@ -1410,11 +1410,14 @@ body {
   height: 100%;
   width: 1000px;
   margin: 0;
-  background: url('../../ui-kit-blog/img/img-1.jpg') 50% 50% no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+.mcontent .blog-2 .background .span4 > div img {
+  height: 100%;
+  width: auto;
 }
 @media (max-width: 480px) {
   .mcontent .blog-2 h3 img {

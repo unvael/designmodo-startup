@@ -29,7 +29,7 @@
 }
 /*only fo flat-ui free*/body {
   color: #34495e;
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.231;
 }
@@ -37,7 +37,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
 a {
@@ -564,7 +564,7 @@ section * {
   font-size: 18px;
   font-weight: normal;
   color: #7f8c8d;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 29.999999999999996px;
 }
 @media (max-width: 480px) {
@@ -579,7 +579,7 @@ section * {
     font-size: 16px;
     font-weight: normal;
     color: #7f8c8d;
-    font-family: Lato, sens-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 27px;
   }
 }
@@ -595,7 +595,7 @@ section * {
     font-size: 16px;
     font-weight: normal;
     color: #7f8c8d;
-    font-family: Lato, sens-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 27px;
   }
 }
@@ -665,7 +665,7 @@ section * {
 .projects-1 .head-box .brand {
   margin-bottom: 17px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 23px;
   color: #34495e;
 }
@@ -872,7 +872,7 @@ section * {
 }
 .projects-2 .content {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   letter-spacing: 1px;
   font-size: 13px;
 }
@@ -883,7 +883,7 @@ section * {
   margin: 18px 0 0;
   font-size: 13px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  ffont-weight: 500;
 }
 @media (max-width: 480px) {
   .projects-2 .wide-text {
@@ -1092,7 +1092,7 @@ section * {
 .projects-3 .projects .name {
   color: #34495e;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: 10px;
   -webkit-backface-visibility: hidden;
   -webkit-transition: color 0.4s;
@@ -1186,7 +1186,7 @@ section * {
 .projects-4 .projects .name {
   color: #34495e;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: 5px;
   display: block;
 }

@@ -29,7 +29,7 @@
 }
 /*only fo flat-ui free*/body {
   color: #34495e;
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.231;
 }
@@ -37,7 +37,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
 a {
@@ -548,7 +548,7 @@ section * {
   font-size: 18px;
   font-weight: normal;
   color: #7f8c8d;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 29.999999999999996px;
 }
 @media (max-width: 480px) {
@@ -563,7 +563,7 @@ section * {
     font-size: 16px;
     font-weight: normal;
     color: #7f8c8d;
-    font-family: Lato, sens-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 27px;
   }
 }
@@ -579,7 +579,7 @@ section * {
     font-size: 16px;
     font-weight: normal;
     color: #7f8c8d;
-    font-family: Lato, sens-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 27px;
   }
 }
@@ -876,7 +876,7 @@ section * {
   padding-bottom: 200px;
   position: relative;
   background-color: #ecf0f1;
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #35495d;
 }
 @media (max-width: 768px) {
@@ -888,7 +888,7 @@ section * {
 .blog-2 h3 {
   margin: 0 0 20px;
   font-size: 35px;
-  font-weight: bold;
+  font-weight: 500;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: -1px;
 }
@@ -906,7 +906,7 @@ section * {
 }
 .blog-2 h6 {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 500;
   margin: 0 0 30px;
   text-transform: none;
 }
@@ -977,8 +977,8 @@ section * {
 }
 .blog-3 h6 {
   font-size: 20px;
-  font-family: "Lato", sans-serif;
-  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
   margin: 0 0 25px;
   text-transform: none;
 }
@@ -1051,7 +1051,7 @@ section * {
 .blog-3 .links * {
   font-size: 13px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: #bdc3c7;
@@ -1065,7 +1065,7 @@ section * {
 .blog-3 .links a {
   color: #1abc9c;
   font-size: 20px;
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   text-transform: none;
   letter-spacing: normal;
@@ -1091,8 +1091,8 @@ section * {
 }
 .blog-4 h6 {
   font-size: 20px;
-  font-family: "Lato", sans-serif;
-  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
   margin: 0 0 25px;
   text-transform: none;
 }
@@ -1171,8 +1171,8 @@ section * {
 }
 .blog-4 .related-articles h6 {
   font-size: 19px;
-  font-family: "Lato", sans-serif;
-  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
   margin: 0 0 30px;
 }
 .blog-4 .related-articles ul,
@@ -1191,7 +1191,7 @@ section * {
 .blog-4 .related-articles a {
   color: #1abc9c;
   font-size: 17px;
-  font-weight: bold;
+  font-weight: 500;
 }
 .blog-4 .related-articles a:hover,
 .blog-4 .related-articles a:focus,
@@ -1386,9 +1386,9 @@ section * {
 .blog-5 .quote .author {
   margin-top: 35px;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 500;
   color: #2980b9;
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 0;
 }
 @media (max-width: 767px) {

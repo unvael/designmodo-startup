@@ -29,7 +29,7 @@
 }
 /*only fo flat-ui free*/body {
   color: #34495e;
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.231;
 }
@@ -37,7 +37,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
 a {
@@ -1388,8 +1388,8 @@ section * {
   font-size: 20px;
   font-weight: normal;
   color: #e74c3c;
-  font-family: Lato, sens-serif;
-  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
 .content-15 .features h6:first-child {
   margin-top: auto;
@@ -1467,7 +1467,7 @@ section * {
   font-size: 18px;
   font-weight: normal;
   color: #3498db;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
 .content-18 .carousel .controls {
@@ -1556,8 +1556,8 @@ section * {
   font-size: 18px;
   font-weight: normal;
   color: #2c3e50;
-  font-family: Lato, sens-serif;
-  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
 /* prices */
 .ribbon {
@@ -1775,7 +1775,7 @@ section * {
   margin: 40px 0 20px;
   color: #95a5a6;
   font-size: 12px;
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 18px;
 }
 .price-5 .terms a {

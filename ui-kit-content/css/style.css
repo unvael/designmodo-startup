@@ -30,7 +30,7 @@
 }
 /*only fo flat-ui free*/body {
   color: #34495e;
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.231;
 }
@@ -38,7 +38,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
 a {
@@ -512,7 +512,7 @@ section * {
   font-size: 18px;
   font-weight: normal;
   color: #7f8c8d;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 29.999999999999996px;
 }
 @media (max-width: 480px) {
@@ -527,7 +527,7 @@ section * {
     font-size: 16px;
     font-weight: normal;
     color: #7f8c8d;
-    font-family: Lato, sens-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 27px;
   }
 }
@@ -543,7 +543,7 @@ section * {
     font-size: 16px;
     font-weight: normal;
     color: #7f8c8d;
-    font-family: Lato, sens-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 27px;
   }
 }
@@ -564,26 +564,26 @@ section * {
   font-size: 18px;
   font-weight: normal;
   color: #7f8c8d;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .content-1 .box-video {
   margin-top: 40px;
   font-size: 16px;
   font-weight: normal;
   color: #7f8c8d;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .content-1 .box-video p {
   font-size: 16px;
   font-weight: normal;
   color: #7f8c8d;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .content-1 .box-video h6 {
   font-size: 20px;
   font-weight: normal;
   color: #2c3e50;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: none;
 }
 .content-1 .box-video .btns {
@@ -724,7 +724,7 @@ section * {
   font-size: 18px;
   font-weight: normal;
   color: #7f8c8d;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 29.999999999999996px;
 }
 .content-2 .btns {
@@ -791,7 +791,7 @@ section * {
   font-size: 16px;
   font-weight: normal;
   color: #7f8c8d;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 29.999999999999996px;
 }
 @media (max-width: 767px) {
@@ -871,7 +871,7 @@ section * {
   font-size: 20px;
   font-weight: normal;
   color: #34495e;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   text-transform: none;
 }
@@ -910,7 +910,7 @@ section * {
   font-size: 16px;
   font-weight: normal;
   color: #7f8c8d;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 26px;
 }
 .content-4 .features h6 {
@@ -918,7 +918,7 @@ section * {
   font-size: 24px;
   font-weight: normal;
   color: #34495e;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   text-transform: none;
 }
@@ -1024,7 +1024,7 @@ section * {
   font-size: 22px;
   font-weight: normal;
   color: #34495e;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   margin-bottom: 14px;
   text-transform: none;
@@ -1140,7 +1140,7 @@ section * {
   font-size: 22px;
   font-weight: normal;
   color: #34495e;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   margin-bottom: 14px;
   text-transform: none;
@@ -1305,7 +1305,7 @@ section * {
   font-size: 14px;
   font-weight: normal;
   color: #7f8c8d;
-  font-weight: bold;
+  font-weight: 500;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 12px 28px 12px;
   color: #e74c3c;
@@ -1394,7 +1394,7 @@ section * {
   font-size: 18px;
   font-weight: normal;
   color: #34495e;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
 .content-9 .span3 {
@@ -1506,7 +1506,7 @@ section * {
   font-size: 22px;
   font-weight: normal;
   color: #2c3e50;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 15px;
@@ -1798,8 +1798,8 @@ section * {
   text-transform: none;
   color: #e74c3c;
   font-size: 18px;
-  font-family: Lato, sens-serif;
-  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
 .content-14 .features .row {
   margin-top: 70px;
@@ -1941,8 +1941,8 @@ section * {
   font-size: 20px;
   font-weight: normal;
   color: #e74c3c;
-  font-family: Lato, sens-serif;
-  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
 .content-15 .features h6:first-child {
   margin-top: auto;
@@ -2117,7 +2117,7 @@ section * {
   font-size: 22px;
   font-weight: normal;
   color: #2c3e50;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 25px;
 }
 .content-17 .carousel .item {
@@ -2176,7 +2176,7 @@ section * {
   font-size: 18px;
   font-weight: normal;
   color: #3498db;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
 .content-18 .carousel .controls {
@@ -2265,8 +2265,8 @@ section * {
   font-size: 18px;
   font-weight: normal;
   color: #2c3e50;
-  font-family: Lato, sens-serif;
-  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
 /**
  * Content 19 stylesheet  
@@ -2349,7 +2349,7 @@ section * {
   font-size: 18px;
   font-weight: normal;
   color: #2c3e50;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
 .content-19 .span3 .quote .quote-author-photo {
@@ -2457,7 +2457,7 @@ section * {
   font-size: 18px;
   font-weight: normal;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 500;
   margin: 0 0 9px;
 }
 .content-20 .signup-form,
@@ -2509,7 +2509,7 @@ section * {
   font-size: 15px;
   font-weight: normal;
   color: #34495e;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .content-20 .signup-form form .control-group {
   margin-bottom: 23px;
@@ -2606,7 +2606,7 @@ section * {
   font-size: 14px;
   font-weight: normal;
   color: #95a5a6;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .content-20 .features big {
   display: block;
@@ -2622,7 +2622,7 @@ section * {
   font-size: 18px;
   font-weight: normal;
   color: #ffffff;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: 38px;
 }
 @media (max-width: 767px) {
@@ -2772,8 +2772,8 @@ section * {
   font-size: 20px;
   font-weight: normal;
   color: #2c3e50;
-  font-family: Lato, sens-serif;
-  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
 .content-21 .features.features-tabs .features-body p {
   font-size: 16px;
@@ -2852,7 +2852,7 @@ section * {
   font-size: 14px;
   font-weight: normal;
   color: #bdc3c7;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: relative;
   max-width: 220px;
   background: url("../../ui-kit-content/img/line-l@2x.png") no-repeat scroll center top / 50% auto rgba(0, 0, 0, 0);
@@ -3004,7 +3004,7 @@ section * {
   font-weight: normal;
   color: #2ecc71;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
 }
 .content-22 .btn.btn-clear:hover,
 .content-22 .btn.btn-clear:focus {
@@ -3135,7 +3135,7 @@ section * {
   font-size: 46px;
   font-weight: normal;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 500;
   border: 8px solid white;
   display: inline-block;
   margin: 0;
@@ -3167,7 +3167,7 @@ section * {
   display: inline-block;
   position: absolute;
   right: 50%;
-  margin-right: 20px;
+  margin-right: 100px;
 }
 .content-24 .span6.offset6 {
   position: relative;
@@ -3257,7 +3257,7 @@ section * {
   font-weight: normal;
   color: #2ecc71;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
 }
 .content-24 .btn.btn-clear:hover,
 .content-24 .btn.btn-clear:focus {
@@ -3329,7 +3329,7 @@ section * {
   font-size: 18px;
   font-weight: normal;
   color: #7f8c8d;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: 45px;
   font-weight: 500;
 }
@@ -3370,8 +3370,8 @@ section * {
 .content-26 .features h6 {
   text-transform: none;
   margin-top: 37px;
-  font-family: Lato, sens-serif;
-  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
   font-size: 18px;
 }
 .content-26 .features > * {
@@ -3412,7 +3412,7 @@ section * {
   font-size: 16px;
   font-weight: normal;
   color: #7f8c8d;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 29.6px;
 }
 .content-27 .btn {
@@ -3624,7 +3624,7 @@ section * {
   font-size: 16px;
   font-weight: normal;
   color: #1abc9c;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
 .content-30 .features img[src*="arrow-"] {
@@ -3753,7 +3753,7 @@ section * {
   line-height: 40px;
   font-size: 24px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   -webkit-backface-visibility: hidden;
   -webkit-transition: 0.6s background-color;
   -moz-transition: 0.6s background-color;

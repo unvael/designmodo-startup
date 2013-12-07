@@ -29,7 +29,7 @@
 }
 /*only fo flat-ui free*/body {
   color: #34495e;
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.231;
 }
@@ -37,7 +37,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
 a {
@@ -808,7 +808,7 @@ section * {
   font-size: 16px;
   font-weight: normal;
   color: #bdc3c7;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .header-11-sub .additional-links {
   opacity: 0.5;
@@ -850,7 +850,7 @@ section * {
   }
 }
 .header-11-sub .signup-form form {
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: 40px;
 }
 .header-11-sub .signup-form form .controls-row:first-child + .controls-row {

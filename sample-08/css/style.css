@@ -29,7 +29,7 @@
 }
 /*only fo flat-ui free*/body {
   color: #34495e;
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.231;
 }
@@ -37,7 +37,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
 a {
@@ -1049,7 +1049,7 @@ section * {
   font-size: 22px;
   font-weight: normal;
   color: #34495e;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   margin-bottom: 14px;
   text-transform: none;
@@ -1135,7 +1135,7 @@ section * {
   font-size: 22px;
   font-weight: normal;
   color: #2c3e50;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 25px;
 }
 .content-17 .carousel .item {
@@ -1169,7 +1169,7 @@ section * {
   padding-bottom: 200px;
   position: relative;
   background-color: #ecf0f1;
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #35495d;
 }
 @media (max-width: 768px) {
@@ -1181,7 +1181,7 @@ section * {
 .blog-2 h3 {
   margin: 0 0 20px;
   font-size: 35px;
-  font-weight: bold;
+  font-weight: 500;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: -1px;
 }
@@ -1199,7 +1199,7 @@ section * {
 }
 .blog-2 h6 {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 500;
   margin: 0 0 30px;
   text-transform: none;
 }
@@ -1276,7 +1276,7 @@ section * {
   font-size: 18px;
   font-weight: normal;
   color: #34495e;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   text-transform: none;
 }
@@ -1284,13 +1284,13 @@ section * {
   font-size: 16px;
   font-weight: normal;
   color: #7f8c8d;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 26px;
 }
 .footer-9 a {
   font-size: 16px;
   color: #e74c3c;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
 @media (max-width: 768px) {

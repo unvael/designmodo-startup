@@ -29,7 +29,7 @@
 }
 /*only fo flat-ui free*/body {
   color: #34495e;
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.231;
 }
@@ -37,7 +37,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
 a {
@@ -639,7 +639,7 @@ section * {
   margin: 9px 0 0 50px;
 }
 .header-12 .navbar .nav a {
-  font-weight: bold;
+  font-weight: 500;
   color: #bdc3c7;
   letter-spacing: 2px;
 }
@@ -945,7 +945,7 @@ section * {
   font-size: 18px;
   font-weight: normal;
   color: #2c3e50;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
 .content-19 .span3 .quote .quote-author-photo {

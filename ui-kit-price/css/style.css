@@ -29,7 +29,7 @@
 }
 /*only fo flat-ui free*/body {
   color: #34495e;
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.231;
 }
@@ -37,7 +37,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
 a {
@@ -538,7 +538,7 @@ section * {
   font-size: 18px;
   font-weight: normal;
   color: #7f8c8d;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 29.999999999999996px;
 }
 @media (max-width: 480px) {
@@ -553,7 +553,7 @@ section * {
     font-size: 16px;
     font-weight: normal;
     color: #7f8c8d;
-    font-family: Lato, sens-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 27px;
   }
 }
@@ -569,7 +569,7 @@ section * {
     font-size: 16px;
     font-weight: normal;
     color: #7f8c8d;
-    font-family: Lato, sens-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 27px;
   }
 }
@@ -685,7 +685,7 @@ section * {
 .price-2 .plans .title .price {
   margin: 10px 0 13px;
   font-size: 100px;
-  font-weight: bold;
+  font-weight: 500;
 }
 .price-2 .plans .title .price .currency {
   font-size: 24px;
@@ -997,7 +997,7 @@ section * {
   color: #1abc9c;
   font-size: 18px;
   font-weight: 700;
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: none;
 }
 .price-4 .description-detail [class*="fui-"] {
@@ -1202,7 +1202,7 @@ section * {
   margin: 40px 0 20px;
   color: #95a5a6;
   font-size: 12px;
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 18px;
 }
 .price-5 .terms a {

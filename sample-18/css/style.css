@@ -29,7 +29,7 @@
 }
 /*only fo flat-ui free*/body {
   color: #34495e;
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.231;
 }
@@ -37,7 +37,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
 a {
@@ -881,7 +881,7 @@ section * {
   font-size: 46px;
   font-weight: normal;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 500;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   border: 8px solid white;
   display: inline-block;
@@ -1075,8 +1075,8 @@ section * {
   font-size: 20px;
   font-weight: normal;
   color: #2c3e50;
-  font-family: Lato, sens-serif;
-  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
 .content-21 .features.features-tabs .features-body p {
   font-size: 16px;
@@ -1155,7 +1155,7 @@ section * {
   font-size: 14px;
   font-weight: normal;
   color: #bdc3c7;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: relative;
   max-width: 220px;
   background: url("../../ui-kit-content/img/line-l@2x.png") no-repeat scroll center top / 50% auto rgba(0, 0, 0, 0);
@@ -1307,7 +1307,7 @@ section * {
   font-weight: normal;
   color: #2ecc71;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
 }
 .content-22 .btn.btn-clear:hover,
 .content-22 .btn.btn-clear:focus {
@@ -1338,7 +1338,7 @@ section * {
   display: inline-block;
   position: absolute;
   right: 50%;
-  margin-right: 20px;
+  margin-right: 100px;
 }
 .content-24 .span6.offset6 {
   position: relative;
@@ -1428,7 +1428,7 @@ section * {
   font-weight: normal;
   color: #2ecc71;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
 }
 .content-24 .btn.btn-clear:hover,
 .content-24 .btn.btn-clear:focus {
@@ -1524,7 +1524,7 @@ section * {
 .price-2 .plans .title .price {
   margin: 10px 0 13px;
   font-size: 100px;
-  font-weight: bold;
+  font-weight: 500;
 }
 .price-2 .plans .title .price .currency {
   font-size: 24px;

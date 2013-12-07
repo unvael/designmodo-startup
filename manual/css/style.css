@@ -30,7 +30,7 @@
 /*only fo flat-ui free*/
 body {
   color: #34495e;
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.231;
 }
@@ -38,7 +38,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
 a {
@@ -1018,7 +1018,7 @@ body {
   font-size: 18px;
   font-weight: normal;
   color: #7f8c8d;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 29.999999999999996px;
 }
 @media (max-width: 480px) {
@@ -1033,7 +1033,7 @@ body {
     font-size: 16px;
     font-weight: normal;
     color: #7f8c8d;
-    font-family: Lato, sens-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 27px;
   }
 }
@@ -1049,7 +1049,7 @@ body {
     font-size: 16px;
     font-weight: normal;
     color: #7f8c8d;
-    font-family: Lato, sens-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 27px;
   }
 }
@@ -1340,7 +1340,7 @@ body {
   padding-bottom: 200px;
   position: relative;
   background-color: #ecf0f1;
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #35495d;
 }
 @media (max-width: 768px) {
@@ -1352,7 +1352,7 @@ body {
 .mcontent .blog-2 h3 {
   margin: 0 0 20px;
   font-size: 35px;
-  font-weight: bold;
+  font-weight: 500;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: -1px;
 }
@@ -1370,7 +1370,7 @@ body {
 }
 .mcontent .blog-2 h6 {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 500;
   margin: 0 0 30px;
   text-transform: none;
 }
@@ -1438,8 +1438,8 @@ body {
 }
 .mcontent .blog-3 h6 {
   font-size: 20px;
-  font-family: "Lato", sans-serif;
-  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
   margin: 0 0 25px;
   text-transform: none;
 }
@@ -1512,7 +1512,7 @@ body {
 .mcontent .blog-3 .links * {
   font-size: 13px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: #bdc3c7;
@@ -1526,7 +1526,7 @@ body {
 .mcontent .blog-3 .links a {
   color: #1abc9c;
   font-size: 20px;
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   text-transform: none;
   letter-spacing: normal;
@@ -1549,8 +1549,8 @@ body {
 }
 .mcontent .blog-4 h6 {
   font-size: 20px;
-  font-family: "Lato", sans-serif;
-  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
   margin: 0 0 25px;
   text-transform: none;
 }
@@ -1629,8 +1629,8 @@ body {
 }
 .mcontent .blog-4 .related-articles h6 {
   font-size: 19px;
-  font-family: "Lato", sans-serif;
-  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
   margin: 0 0 30px;
 }
 .mcontent .blog-4 .related-articles ul,
@@ -1649,7 +1649,7 @@ body {
 .mcontent .blog-4 .related-articles a {
   color: #1abc9c;
   font-size: 17px;
-  font-weight: bold;
+  font-weight: 500;
 }
 .mcontent .blog-4 .related-articles a:hover,
 .mcontent .blog-4 .related-articles a:focus,
@@ -1841,9 +1841,9 @@ body {
 .mcontent .blog-5 .quote .author {
   margin-top: 35px;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 500;
   color: #2980b9;
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 0;
 }
 @media (max-width: 767px) {
@@ -1975,8 +1975,8 @@ body {
 .mcontent .contacts-1 h6,
 .mcontent .contacts-1 .h6 {
   margin: 0 0 12px;
-  font-family: "Lato", sans-serif;
-  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
   font-size: 18px;
   text-transform: none;
 }
@@ -2096,8 +2096,8 @@ body {
 .mcontent .contacts-2 h6,
 .mcontent .contacts-2 .h6 {
   margin: 0 0 15px;
-  font-family: "Lato", sans-serif;
-  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
   font-size: 18px;
   text-transform: none;
 }
@@ -2211,8 +2211,8 @@ body {
 .mcontent .contacts-3 h6,
 .mcontent .contacts-3 .h6 {
   margin: 0 0 15px;
-  font-family: "Lato", sans-serif;
-  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
   font-size: 18px;
   text-transform: none;
 }
@@ -2447,26 +2447,26 @@ body {
   font-size: 18px;
   font-weight: normal;
   color: #7f8c8d;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .mcontent .content-1 .box-video {
   margin-top: 40px;
   font-size: 16px;
   font-weight: normal;
   color: #7f8c8d;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .mcontent .content-1 .box-video p {
   font-size: 16px;
   font-weight: normal;
   color: #7f8c8d;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .mcontent .content-1 .box-video h6 {
   font-size: 20px;
   font-weight: normal;
   color: #2c3e50;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: none;
 }
 .mcontent .content-1 .box-video .btns {
@@ -2604,7 +2604,7 @@ body {
   font-size: 18px;
   font-weight: normal;
   color: #7f8c8d;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 29.999999999999996px;
 }
 .mcontent .content-2 .btns {
@@ -2668,7 +2668,7 @@ body {
   font-size: 16px;
   font-weight: normal;
   color: #7f8c8d;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 29.999999999999996px;
 }
 @media (max-width: 767px) {
@@ -2748,7 +2748,7 @@ body {
   font-size: 20px;
   font-weight: normal;
   color: #34495e;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   text-transform: none;
 }
@@ -2784,7 +2784,7 @@ body {
   font-size: 16px;
   font-weight: normal;
   color: #7f8c8d;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 26px;
 }
 .mcontent .content-4 .features h6 {
@@ -2792,7 +2792,7 @@ body {
   font-size: 24px;
   font-weight: normal;
   color: #34495e;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   text-transform: none;
 }
@@ -2895,7 +2895,7 @@ body {
   font-size: 22px;
   font-weight: normal;
   color: #34495e;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   margin-bottom: 14px;
   text-transform: none;
@@ -3008,7 +3008,7 @@ body {
   font-size: 22px;
   font-weight: normal;
   color: #34495e;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   margin-bottom: 14px;
   text-transform: none;
@@ -3167,7 +3167,7 @@ body {
   font-size: 14px;
   font-weight: normal;
   color: #7f8c8d;
-  font-weight: bold;
+  font-weight: 500;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 12px 28px 12px;
   color: #e74c3c;
@@ -3253,7 +3253,7 @@ body {
   font-size: 18px;
   font-weight: normal;
   color: #34495e;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
 .mcontent .content-9 .span3 {
@@ -3362,7 +3362,7 @@ body {
   font-size: 22px;
   font-weight: normal;
   color: #2c3e50;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 15px;
@@ -3642,8 +3642,8 @@ body {
   text-transform: none;
   color: #e74c3c;
   font-size: 18px;
-  font-family: Lato, sens-serif;
-  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
 .mcontent .content-14 .features .row {
   margin-top: 70px;
@@ -3782,8 +3782,8 @@ body {
   font-size: 20px;
   font-weight: normal;
   color: #e74c3c;
-  font-family: Lato, sens-serif;
-  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
 .mcontent .content-15 .features h6:first-child {
   margin-top: auto;
@@ -3952,7 +3952,7 @@ body {
   font-size: 22px;
   font-weight: normal;
   color: #2c3e50;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 25px;
 }
 .mcontent .content-17 .carousel .item {
@@ -4008,7 +4008,7 @@ body {
   font-size: 18px;
   font-weight: normal;
   color: #3498db;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
 .mcontent .content-18 .carousel .controls {
@@ -4097,8 +4097,8 @@ body {
   font-size: 18px;
   font-weight: normal;
   color: #2c3e50;
-  font-family: Lato, sens-serif;
-  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
 .mcontent .content-19 {
   position: relative;
@@ -4178,7 +4178,7 @@ body {
   font-size: 18px;
   font-weight: normal;
   color: #2c3e50;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
 .mcontent .content-19 .span3 .quote .quote-author-photo {
@@ -4286,7 +4286,7 @@ body {
   font-size: 18px;
   font-weight: normal;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 500;
   margin: 0 0 9px;
 }
 .mcontent .content-20 .signup-form,
@@ -4338,7 +4338,7 @@ body {
   font-size: 15px;
   font-weight: normal;
   color: #34495e;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .mcontent .content-20 .signup-form form .control-group {
   margin-bottom: 23px;
@@ -4435,7 +4435,7 @@ body {
   font-size: 14px;
   font-weight: normal;
   color: #95a5a6;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .mcontent .content-20 .features big {
   display: block;
@@ -4451,7 +4451,7 @@ body {
   font-size: 18px;
   font-weight: normal;
   color: #ffffff;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: 38px;
 }
 @media (max-width: 767px) {
@@ -4601,8 +4601,8 @@ body {
   font-size: 20px;
   font-weight: normal;
   color: #2c3e50;
-  font-family: Lato, sens-serif;
-  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
 .mcontent .content-21 .features.features-tabs .features-body p {
   font-size: 16px;
@@ -4681,7 +4681,7 @@ body {
   font-size: 14px;
   font-weight: normal;
   color: #bdc3c7;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: relative;
   max-width: 220px;
   background: url("../../ui-kit-content/img/line-l@2x.png") no-repeat scroll center top / 50% auto rgba(0, 0, 0, 0);
@@ -4833,7 +4833,7 @@ body {
   font-weight: normal;
   color: #2ecc71;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
 }
 .mcontent .content-22 .btn.btn-clear:hover,
 .mcontent .content-22 .btn.btn-clear:focus {
@@ -4964,7 +4964,7 @@ body {
   font-size: 46px;
   font-weight: normal;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 500;
   border: 8px solid white;
   display: inline-block;
   margin: 0;
@@ -4996,7 +4996,7 @@ body {
   display: inline-block;
   position: absolute;
   right: 50%;
-  margin-right: 20px;
+  margin-right: 100px;
 }
 .mcontent .content-24 .span6.offset6 {
   position: relative;
@@ -5086,7 +5086,7 @@ body {
   font-weight: normal;
   color: #2ecc71;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
 }
 .mcontent .content-24 .btn.btn-clear:hover,
 .mcontent .content-24 .btn.btn-clear:focus {
@@ -5158,7 +5158,7 @@ body {
   font-size: 18px;
   font-weight: normal;
   color: #7f8c8d;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: 45px;
   font-weight: 500;
 }
@@ -5199,8 +5199,8 @@ body {
 .mcontent .content-26 .features h6 {
   text-transform: none;
   margin-top: 37px;
-  font-family: Lato, sens-serif;
-  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
   font-size: 18px;
 }
 .mcontent .content-26 .features > * {
@@ -5241,7 +5241,7 @@ body {
   font-size: 16px;
   font-weight: normal;
   color: #7f8c8d;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 29.6px;
 }
 .mcontent .content-27 .btn {
@@ -5453,7 +5453,7 @@ body {
   font-size: 16px;
   font-weight: normal;
   color: #1abc9c;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
 .mcontent .content-30 .features img[src*="arrow-"] {
@@ -5582,7 +5582,7 @@ body {
   line-height: 40px;
   font-size: 24px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   -webkit-backface-visibility: hidden;
   -webkit-transition: 0.6s background-color;
   -moz-transition: 0.6s background-color;
@@ -6518,7 +6518,7 @@ body {
   font-size: 16px;
   font-weight: normal;
   color: #7f8c8d;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 @media (max-width: 480px) {
   .mcontent .header-3-sub {
@@ -7758,7 +7758,7 @@ body {
   background: #2c3e50;
 }
 .mcontent .header-7-sub section h6 {
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .mcontent .header-7-sub section .span8 {
   text-align: center;
@@ -8746,7 +8746,7 @@ body {
   font-size: 46px;
   font-weight: normal;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 500;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   border: 8px solid white;
   display: inline-block;
@@ -9002,7 +9002,7 @@ body {
   font-size: 16px;
   font-weight: normal;
   color: #bdc3c7;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .mcontent .header-11-sub .additional-links {
   opacity: 0.5;
@@ -9044,7 +9044,7 @@ body {
   }
 }
 .mcontent .header-11-sub .signup-form form {
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: 40px;
 }
 .mcontent .header-11-sub .signup-form form .controls-row:first-child + .controls-row {
@@ -9178,7 +9178,7 @@ body {
   margin: 9px 0 0 50px;
 }
 .mcontent .header-12 .navbar .nav a {
-  font-weight: bold;
+  font-weight: 500;
   color: #bdc3c7;
   letter-spacing: 2px;
 }
@@ -9662,7 +9662,7 @@ body {
   font-size: 46px;
   font-weight: normal;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 500;
 }
 .mcontent .header-14-sub .hero-unit p {
   margin: 0;
@@ -11016,7 +11016,7 @@ body {
   font-size: 18px;
   font-weight: normal;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: none;
 }
 .mcontent .header-17-sub .pt-perspective {
@@ -11945,7 +11945,7 @@ body {
   font-size: 18px;
   font-weight: normal;
   color: #7f8c8d;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 30px;
 }
 .mcontent .header-20-sub .btn {
@@ -12117,7 +12117,7 @@ body {
   font-size: 16px;
   font-weight: normal;
   color: #34495e;
-  font-weight: bold;
+  font-weight: 500;
 }
 @media (max-width: 767px) {
   .mcontent .header-20-sub .videos .description {
@@ -12861,7 +12861,7 @@ body {
 .mcontent .price-2 .plans .title .price {
   margin: 10px 0 13px;
   font-size: 100px;
-  font-weight: bold;
+  font-weight: 500;
 }
 .mcontent .price-2 .plans .title .price .currency {
   font-size: 24px;
@@ -13167,7 +13167,7 @@ body {
   color: #1abc9c;
   font-size: 18px;
   font-weight: 700;
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: none;
 }
 .mcontent .price-4 .description-detail [class*="fui-"] {
@@ -13369,7 +13369,7 @@ body {
   margin: 40px 0 20px;
   color: #95a5a6;
   font-size: 12px;
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 18px;
 }
 .mcontent .price-5 .terms a {
@@ -13496,7 +13496,7 @@ body {
 .mcontent .projects-1 .head-box .brand {
   margin-bottom: 17px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 23px;
   color: #34495e;
 }
@@ -13700,7 +13700,7 @@ body {
 }
 .mcontent .projects-2 .content {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   letter-spacing: 1px;
   font-size: 13px;
 }
@@ -13711,7 +13711,7 @@ body {
   margin: 18px 0 0;
   font-size: 13px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  ffont-weight: 500;
 }
 @media (max-width: 480px) {
   .mcontent .projects-2 .wide-text {
@@ -13917,7 +13917,7 @@ body {
 .mcontent .projects-3 .projects .name {
   color: #34495e;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: 10px;
   -webkit-backface-visibility: hidden;
   -webkit-transition: color 0.4s;
@@ -14008,7 +14008,7 @@ body {
 .mcontent .projects-4 .projects .name {
   color: #34495e;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: 5px;
   display: block;
 }
@@ -15023,7 +15023,7 @@ body {
 .mcontent .footer-4 .brand {
   font-size: 20px;
   font-weight: normal;
-  font-weight: bold;
+  font-weight: 500;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #ffffff;
 }
@@ -15093,7 +15093,7 @@ body {
   font-weight: normal;
   color: #34495e;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 18px;
 }
 .mcontent .footer-6 .brand:hover,
@@ -15511,7 +15511,7 @@ body {
   font-size: 18px;
   font-weight: normal;
   color: #34495e;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   text-transform: none;
 }
@@ -15519,13 +15519,13 @@ body {
   font-size: 16px;
   font-weight: normal;
   color: #7f8c8d;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 26px;
 }
 .mcontent .footer-9 a {
   font-size: 16px;
   color: #e74c3c;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
 @media (max-width: 768px) {
@@ -16315,7 +16315,7 @@ body {
   color: #e90;
 }
 .manual-pages .token.important {
-  font-weight: bold;
+  font-weight: 500;
 }
 .manual-pages .token.entity {
   cursor: help;
@@ -17290,7 +17290,7 @@ a.active {
 
 }
 .mcontent .manual > div .token.important {
-  font-weight: bold;
+  font-weight: 500;
 }
 .mcontent .manual > div .token.entity {
   cursor: help;
@@ -17560,7 +17560,7 @@ a.active {
   display: inline-block;
   float: left;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   margin: 0 0 0 -66px;
   padding: 3px 9px;
   text-align: center;

@@ -1780,6 +1780,7 @@ section * {
 .price-5 .terms a {
   text-decoration: underline;
   color: #1abc9c;
+  font-weight: normal;
 }
 .price-5 .terms a:hover {
   text-decoration: none;
@@ -1874,6 +1875,11 @@ body > section {
 .content-18 h1 {
   font-size: 71px;
   margin-bottom: 60px;
+}
+@media (max-width: 480px) {
+  .content-18 h1 {
+    font-size: 36px;
+  }
 }
 .content-18 .carousel {
   margin-bottom: 20px;
@@ -1988,4 +1994,8 @@ body > section {
     opacity: 1;
     filter: alpha(opacity=100);
   }
+}
+.price-5 {
+  margin-top: 75px;
+  color: #95a5a6;
 }

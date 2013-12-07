@@ -13370,6 +13370,7 @@ body {
 .mcontent .price-5 .terms a {
   text-decoration: underline;
   color: #1abc9c;
+  font-weight: normal;
 }
 .mcontent .price-5 .terms a:hover {
   text-decoration: none;

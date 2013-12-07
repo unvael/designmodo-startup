@@ -1031,7 +1031,7 @@ section * {
   -o-background-size: 322px 418px;
   background-size: 322px 418px;
 }
-@media (max-width: 979px) and (min-width: 768px) {
+@media (max-width: 979px) {
   .content-21 .features.features-tabs .features-bodies {
     background-position: -15% 50%;
   }

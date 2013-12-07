@@ -1592,6 +1592,7 @@ body > section {
 }
 .tpl-10-section-1 .article-info > * {
   margin: 0;
+  padding-right: 20px;
 }
 .tpl-10-section-1 .article-info [class*="fui-"] {
   position: relative;

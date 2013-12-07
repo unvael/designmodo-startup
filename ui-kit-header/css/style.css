@@ -3297,26 +3297,43 @@ section * {
   position: relative;
   z-index: 51;
 }
-.header-9-sub .hero-unit {
-  margin: 0;
-  padding: 0;
-  background: transparent;
+.header-9-sub .hero-unit.bordered {
+  display: inline-block;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 8px solid white;
+  padding: 26px 25px;
+  margin-bottom: 40px;
+  background: transparent none;
 }
-.header-9-sub .hero-unit img {
-  margin-bottom: 20px;
-}
-.header-9-sub .hero-unit p {
-  font-size: 30px;
+.header-9-sub .hero-unit.bordered p {
+  font-size: 46px;
   font-weight: normal;
-  color: inherit;
-  font-family: 'Patrick Hand SC', cursive;
-  letter-spacing: 6px;
+  color: #ffffff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  line-height: 46.00000000000001px;
+  letter-spacing: 0;
 }
-.header-9-sub .hero-unit p.text-warning {
-  font-size: 25px;
+@media (max-width: 768px) {
+  .header-9-sub .hero-unit.bordered p {
+    font-size: 36px;
+    font-weight: normal;
+    color: #ffffff;
+  }
+}
+.header-9-sub .wide-text.text-warning {
+  font-size: 13px;
   font-weight: normal;
-  color: #f1c40f;
-  letter-spacing: 9px;
+  color: #ffffff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
 }
 .header-9-sub .hero-unit {
   opacity: 0;

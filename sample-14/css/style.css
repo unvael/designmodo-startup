@@ -1235,11 +1235,12 @@ section * {
     margin: 0;
   }
 }
-.content-26,
-.content-11 {
+.content-26 {
   padding-top: 150px;
   padding-bottom: 150px;
 }
 .content-11 {
+  padding-top: 90px;
+  padding-bottom: 90px;
   background: none;
 }

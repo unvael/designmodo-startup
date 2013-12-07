@@ -38,6 +38,30 @@ p {
     background-image:url('../img/img-1.jpg');
     .opacity(100);
   }
+  .hero-unit.bordered{
+    display: inline-block;
+    .border-radius(0);
+    .box-sizing(border-box);
+    border: 8px solid white;
+    padding: 26px 25px;
+    margin-bottom: 40px;
+    p{
+      .font(46px, white);
+      font-family: @h-font-family;
+      font-weight: 800;
+      .line-height(46px);
+      letter-spacing: 0;
+    }
+  }
+
+  .wide-text.text-warning{
+    .font(13px, white);
+    font-family: @h-font-family;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+  }
   
 }
 

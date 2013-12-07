@@ -856,7 +856,7 @@ section * {
 @media (max-width: 480px) {
   .header-9-sub {
     padding-top: 150px;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
     background-attachment: scroll;
     background-position: 50% 50%!important;
   }
@@ -999,9 +999,6 @@ content-9 p {
 }
 .header-9 .navbar .nav > li > a.active {
   color: white;
-}
-.header-9-sub {
-  padding-bottom: 150px;
 }
 .header-9-sub .background {
   background-image: url('../img/img-1.jpg');
@@ -1182,6 +1179,14 @@ aside .sidebar-content {
   width: 160px;
   padding: 80px 20px 80px 0;
 }
+@media (max-width: 480px) {
+  aside .sidebar-content {
+    position: relative;
+    height: auto !important;
+    width: 100%;
+    padding: 40px 0;
+  }
+}
 aside .sidebar-content:before {
   content: '';
   display: block;
@@ -1203,12 +1208,24 @@ aside nav ul {
   letter-spacing: 1.6px;
 }
 aside nav ul li {
-  margin-bottom: 25px;
-  line-height: 13px;
+  padding-bottom: 20px;
+}
+aside nav ul li:last-child {
+  padding-bottom: 0;
+}
+@media (max-width: 480px) {
+  aside nav ul li {
+    padding: 10px 20px;
+    border-bottom: 2px solid #bdc3c7;
+  }
+  aside nav ul li:last-child {
+    border-bottom: 0 none;
+  }
 }
 aside nav ul li a {
   color: #1b1f23;
   font-weight: 500;
+  line-height: 13px;
 }
 aside nav ul li a:hover,
 aside nav ul li a:focus,

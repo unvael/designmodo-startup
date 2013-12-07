@@ -3334,7 +3334,7 @@ section * {
 @media (max-width: 480px) {
   .header-9-sub {
     padding-top: 150px;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
     background-attachment: scroll;
     background-position: 50% 50%!important;
   }

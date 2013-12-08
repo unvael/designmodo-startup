@@ -1275,6 +1275,7 @@ footer {
   color: #1abc9c;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
+  text-transform: uppercase;
 }
 @media (max-width: 480px) {
   .tpl-6-section-1 {

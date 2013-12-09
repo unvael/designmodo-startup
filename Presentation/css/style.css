@@ -637,3 +637,153 @@ body {
   line-height: 28px;
   padding: 0 20px;
 }
+.presentation-componentsSamples {
+  position: relative;
+  background: #2c2e2f;
+}
+.presentation-componentsSamples .presentation-componentsSamples-inner {
+  position: relative;
+  height: 774px;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -ms-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+  opacity: .5;
+}
+.presentation-componentsSamples .presentation-componentsSamples-inner .cards {
+  display: block;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-size: cover;
+  position: absolute;
+  background-position: center center;
+}
+.presentation-componentsSamples .presentation-componentsSamples-inner .layer-1 {
+  background: url(../img/componentsSamples/bg-01.jpg) no-repeat;
+  z-index: 120;
+}
+.presentation-componentsSamples .presentation-componentsSamples-inner .layer-2 {
+  background: url(../img/componentsSamples/bg-02.jpg) no-repeat;
+  z-index: 119;
+}
+.presentation-componentsSamples .presentation-componentsSamples-inner .layer-3 {
+  background: url(../img/componentsSamples/bg-03.jpg) no-repeat;
+  z-index: 118;
+}
+.presentation-componentsSamples .presentation-componentsSamples-inner .layer-4 {
+  background: url(../img/componentsSamples/bg-04.jpg) no-repeat;
+  z-index: 117;
+}
+.presentation-componentsSamples .presentation-componentsSamples-inner .layer-5 {
+  background: url(../img/componentsSamples/bg-05.jpg) no-repeat;
+  z-index: 116;
+}
+.presentation-componentsSamples .presentation-componentsSamples-inner .layer-6 {
+  background: url(../img/componentsSamples/bg-06.jpg) no-repeat;
+  z-index: 115;
+}
+.presentation-componentsSamples .presentation-componentsSamples-inner .layer-7 {
+  background: url(../img/componentsSamples/bg-07.jpg) no-repeat;
+  z-index: 114;
+}
+.presentation-componentsSamples .presentation-componentsSamples-inner .layer-8 {
+  background: url(../img/componentsSamples/bg-08.jpg) no-repeat;
+  z-index: 113;
+}
+.presentation-componentsSamples .presentation-componentsSamples-inner .layer-9 {
+  background: url(../img/componentsSamples/bg-09.jpg) no-repeat;
+  z-index: 112;
+}
+.presentation-componentsSamples .presentation-componentsSamples-inner .layer-10 {
+  background: url(../img/componentsSamples/bg-10.jpg) no-repeat;
+  z-index: 111;
+}
+.presentation-componentsSamples .presentation-componentsSamples-inner .layer-11 {
+  background: url(../img/componentsSamples/bg-11.jpg) no-repeat;
+  z-index: 110;
+}
+.presentation-componentsSamples .presentation-componentsSamples-inner .layer-12 {
+  background: url(../img/componentsSamples/bg-12.jpg) no-repeat;
+  z-index: 109;
+}
+.presentation-componentsSamples .presentation-componentsSamples-inner .layer-13 {
+  background: url(../img/componentsSamples/bg-13.jpg) no-repeat;
+  z-index: 108;
+}
+.presentation-componentsSamples .presentation-componentsSamples-inner .layer-14 {
+  background: url(../img/componentsSamples/bg-14.jpg) no-repeat;
+  z-index: 107;
+}
+.presentation-componentsSamples .presentation-componentsSamples-inner .layer-15 {
+  background: url(../img/componentsSamples/bg-15.jpg) no-repeat;
+  z-index: 106;
+}
+.presentation-componentsSamples .presentation-componentsSamples-inner .layer-16 {
+  background: url(../img/componentsSamples/bg-16.jpg) no-repeat;
+  z-index: 105;
+}
+.presentation-componentsSamples .presentation-componentsSamples-inner .layer-17 {
+  background: url(../img/componentsSamples/bg-17.jpg) no-repeat;
+  z-index: 104;
+}
+.presentation-componentsSamples .presentation-componentsSamples-inner .layer-18 {
+  background: url(../img/componentsSamples/bg-18.jpg) no-repeat;
+  z-index: 103;
+}
+.presentation-componentsSamples .presentation-componentsSamples-inner .layer-19 {
+  background: url(../img/componentsSamples/bg-19.jpg) no-repeat;
+  z-index: 102;
+}
+.presentation-componentsSamples .presentation-componentsSamples-inner .layer-20 {
+  background: url(../img/componentsSamples/bg-20.jpg) no-repeat;
+  z-index: 101;
+}
+@media (max-width: 767px) {
+  .presentation-componentsSamples .presentation-componentsSamples-inner {
+    height: 500px;
+  }
+}
+@media (max-width: 767px) {
+  .presentation-componentsSamples {
+    padding: 0;
+  }
+}
+.presentation-componentsSamples a {
+  display: block;
+  width: 562px;
+  border: 6px solid #ebebeb;
+  height: 106px;
+  font-size: 46px;
+  line-height: 106px;
+  font-weight: 800;
+  position: absolute;
+  top: 304px;
+  left: 50%;
+  margin-left: -287px;
+  z-index: 121;
+  letter-spacing: -2px;
+  color: #ebebeb;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .presentation-componentsSamples a {
+    top: 200px;
+    font-size: 32px;
+    width: 450px;
+    height: 88px;
+    line-height: 88px;
+    margin-left: -231px;
+  }
+}
+@media (max-width: 479px) {
+  .presentation-componentsSamples a {
+    top: 214px;
+    font-size: 26px;
+    width: 300px;
+    height: 60px;
+    line-height: 60px;
+    margin-left: -156px;
+  }
+}

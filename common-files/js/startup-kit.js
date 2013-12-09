@@ -449,6 +449,11 @@ startupKit.uiKitHeader.header22 = function() {
     startupKit.uiKitHeader._inFixedMode('.header-22');
 };
 
+/* Header 23*/
+startupKit.uiKitHeader.header23 = function() {
+    startupKit.uiKitHeader._inFixedMode('.header-23');
+};
+
 
 /**
  *  Contents 

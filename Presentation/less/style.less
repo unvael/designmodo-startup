@@ -94,6 +94,7 @@ html, body{
 .presentation-componentsSamples {
   position: relative;
   background: #2c2e2f;
+  font-family: @proxima;
   .presentation-componentsSamples-inner {
     position: relative;
     height: 774px;
@@ -171,6 +172,140 @@ html, body{
       height: 60px;
       line-height: 60px;
       margin-left: -156px;
+    }
+  }
+}
+
+.presentation-demoVersion {
+  padding-top: 280px;
+  height: 1115px;
+  position: relative;
+  color: #696f6f;
+
+  @media (max-width: 767px) {
+    padding-bottom: 35px;
+    height: auto;
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: #696f6f;
+  }
+
+  > * {
+    position: relative;
+  }
+
+  .background {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    .opacity(100);
+    > .container{
+      height: 100%;
+      @media (max-width: 767px) {
+        height: 218px;
+      }
+    }
+
+    .span4 {
+      position: absolute;
+      height: 100%;
+      > div {
+        position: absolute;
+        right: 0;
+        height: 100%;
+        width: 1400px;
+        margin: 0;
+        background: url('../img/demoVersion/img.png') 100% 0 no-repeat;
+        @media (max-width: 767px) {
+          width: 768px;
+          background-image: url('../img/demoVersion/img-mobile.png');
+          background-color: #e9e8e6;
+        }
+      }
+    }
+  }
+  .header {
+    margin: 0 0 60px;
+    h2 {
+      font-size: 46px;
+      color: #303336;
+      line-height: 52px;
+      margin: 0;
+      font-weight: 800;
+      letter-spacing: -3px;
+      font-family: @proxima;
+      @media (max-width: 767px) {
+        font-size: 31px;
+      }
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+  }
+  p {
+    font-size: 20px;
+    line-height: 36px;
+    margin: 0 0 40px;
+    font-family: @proxima;
+    @media (max-width: 767px) {
+      font-size: 18px;
+      line-height: 34px;
+      margin-bottom: 0;
+    }
+  }
+  .btn {
+    .box-sizing(border-box);
+    background: none;
+    border: 2px solid #303336;
+    .font(18px);
+    font-weight: 500;
+    padding: 18px 30px;
+    color: #303336;
+    &:hover, &:focus {
+      background: #303336;
+      color: #fff;
+    }
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+  h3 {
+    margin: 80px 0 30px;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 500;
+    font-family: @proxima;
+    color: #303336;
+    @media (max-width: 767px) {
+      margin-top: 20px;
+      margin-bottom: 15px;
+    }
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 16px;
+    font-family: @proxima;
+    @media (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+    li {
+      margin: 0 0 15px;
+      @media (max-width: 767px) {
+        margin-bottom: 10px;
+      }
+    }
+    strong {
+      display: inline-block;
+      min-width: 22px;
+      color: #303336;
     }
   }
 }

@@ -387,7 +387,7 @@ section * {
   font-size: 15px;
   font-weight: normal;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 500;
 }
 .header-10 .navbar .btn.btn-primary:hover,
 .header-10 .navbar .btn.btn-primary:focus {

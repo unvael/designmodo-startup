@@ -821,7 +821,7 @@ section * {
   font-weight: normal;
   color: #34495e;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
 }
 .content-9 .span3 {
   font-size: 14px;

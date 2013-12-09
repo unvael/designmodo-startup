@@ -1300,7 +1300,7 @@ section * {
   font-weight: normal;
   color: #34495e;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: 14px;
   text-transform: none;
 }

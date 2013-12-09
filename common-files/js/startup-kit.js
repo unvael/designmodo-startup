@@ -41,6 +41,7 @@ startupKit.uiKitHeader._inFixedMode = function(headerClass) {
     if ($(headerClass + ' .navbar').hasClass('navbar-fixed-top')) {
 
         var s1 = $(headerClass + '-sub'), s1StopScroll = s1.outerHeight() - 70;
+        
         var antiflicker = $('<div class="' + headerClass.slice(1) + '-startup-antiflicker" style="position: fixed; z-index: 25; left: 0; top: 0; width: 100%; height: 70px; background: #fff;" />');
         s1.before(antiflicker);
         var s1Placeholder = $('<div />');

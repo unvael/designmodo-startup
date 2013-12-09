@@ -679,7 +679,7 @@ section * {
   padding: 40px 0;
   font-size: 13px;
   font-weight: normal;
-  font-weight: bold;
+  font-weight: 500;
   letter-spacing: 1px;
   color: #bdc3c7;
 }

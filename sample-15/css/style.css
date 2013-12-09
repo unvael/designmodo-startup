@@ -845,7 +845,7 @@ section * {
   font-weight: normal;
   color: #3498db;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
 }
 .content-18 .carousel .controls {
   position: relative;

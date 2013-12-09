@@ -3363,7 +3363,7 @@ section * {
   font-weight: normal;
   color: #7f8c8d;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 25px;
   opacity: 0;
   filter: alpha(opacity=0);
@@ -3456,7 +3456,7 @@ section * {
   font-size: 15px;
   font-weight: normal;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 500;
 }
 .header-10 .navbar .navbar-inner {
   background: none;
@@ -7521,7 +7521,7 @@ section * {
   padding: 40px 0;
   font-size: 13px;
   font-weight: normal;
-  font-weight: bold;
+  font-weight: 500;
   letter-spacing: 1px;
   color: #bdc3c7;
 }

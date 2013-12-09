@@ -946,7 +946,7 @@ section * {
   font-weight: normal;
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
 }
 .content-19 .span3 .quote .quote-author-photo {
   position: absolute;

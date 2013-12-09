@@ -1430,7 +1430,7 @@ section * {
   font-weight: normal;
   color: #34495e;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: none;
 }
 .footer-9 p {
@@ -1709,7 +1709,7 @@ section * {
 .footer-11 nav ul li a {
   font-size: 18px;
   font-weight: normal;
-  font-weight: bold;
+  font-weight: 500;
   color: #34495e;
 }
 .footer-11 nav ul li a:hover,
@@ -1777,7 +1777,7 @@ section * {
   color: #34495e;
 }
 .footer-11 .additional-links .lead b {
-  font-weight: bold;
+  font-weight: 500;
 }
 .footer-11 .additional-links a {
   margin: 0 10px;

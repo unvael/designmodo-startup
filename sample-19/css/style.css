@@ -997,7 +997,7 @@ section * {
   font-weight: normal;
   color: #34495e;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: none;
 }
 @media (max-width: 767px) {

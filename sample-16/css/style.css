@@ -885,7 +885,7 @@ section * {
   font-weight: normal;
   color: #7f8c8d;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 25px;
   opacity: 0;
   filter: alpha(opacity=0);
@@ -966,7 +966,7 @@ section * {
   font-weight: normal;
   color: #34495e;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
 }
 .content-9 .span3 {
   font-size: 14px;

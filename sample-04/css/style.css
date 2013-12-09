@@ -646,7 +646,7 @@ section * {
   font-size: 15px;
   font-weight: normal;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 500;
 }
 .header-10 .navbar .navbar-inner {
   background: none;

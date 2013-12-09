@@ -1,0 +1,91 @@
+@import '../../flat-ui/less/config.less';
+@import '../../flat-ui/less/mixins.less';
+/*only fo flat-ui free*/ @import '../../common-files/less/flat-ui-free2.0.0-fix.less'; /* end only for flat-ui free*/
+@import '../../common-files/less/mixins.less';
+@import '../../common-files/less/common.less';
+// @import '../../common-files/less/navbar.less';
+@import '../../common-files/less/helper.less';
+
+@proxima:  'proxima-nova', sans-serif;
+
+html, body{
+  height:100%;
+}
+.presentation-header{
+  position:absolute;
+  top:100px;
+  padding-top:0;
+  padding-bottom:0;
+  width:100%;
+  .navbar-inner{
+    background-color:transparent;
+    .nav li > a{
+      .font(18px, #696b6d);
+      font-family:@proxima;
+      font-weight:normal;
+      letter-spacing:-0.2px;
+      padding:10px 37px 10px 0;
+      .a-color(#696b6d, #b7b8b9);
+    } 
+    .social-btns{
+      li > a{
+       padding:10px 15px 10px 0;
+      > [class*="fui-"] {
+          font-size:20px;         
+        }
+      }
+    }
+  }
+  
+  
+}
+.presentation-header-sub{
+  height:100%;
+  background-color:#1b1f23;
+  .background{   
+    .opacity(15);
+    video{
+      height:auto !important;
+    }
+  }  
+  .v-center{
+    .v-center();
+    height:100%;
+    h3{
+      .font(21px, white);
+      font-family:@proxima;
+      font-weight:300;
+      span{
+        font-weight:800;
+      }
+      padding:15px 0;
+    }
+    h2{
+        margin:0;
+        .font(28px, white);
+        font-family:@proxima;
+        font-weight:300;
+        span{
+         font-weight:800;
+         display:block;
+        }
+        letter-spacing:-0.25px;
+    }
+    .button-place{
+      text-align:center;
+    .btn-play{
+      > [class*="fui-"] {
+        .font(28px, white);
+        .line-height(28px);
+        padding: 0 20px;
+      }
+      width:67px;
+      height:67px;
+      .border-radius(100%);
+      border:3px white solid;
+      background-color:transparent;
+    }
+    }
+  }
+ 
+}

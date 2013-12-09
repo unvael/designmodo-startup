@@ -29,7 +29,7 @@
 }
 /*only fo flat-ui free*/body {
   color: #34495e;
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.231;
 }
@@ -37,7 +37,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
 a {
@@ -431,6 +431,7 @@ img {
     overflow: auto!important;
     background: #222527;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: none;
   }
   .navbar .nav-collapse::-webkit-scrollbar {
     display: none;
@@ -1205,7 +1206,7 @@ section * {
 .projects-3 .projects .name {
   color: #34495e;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: 10px;
   -webkit-backface-visibility: hidden;
   -webkit-transition: color 0.4s;
@@ -1592,6 +1593,7 @@ body > section {
 }
 .tpl-10-section-1 .article-info > * {
   margin: 0;
+  padding-right: 20px;
 }
 .tpl-10-section-1 .article-info [class*="fui-"] {
   position: relative;

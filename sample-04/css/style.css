@@ -30,7 +30,7 @@
 }
 /*only fo flat-ui free*/body {
   color: #34495e;
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.231;
 }
@@ -38,7 +38,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
 a {
@@ -432,6 +432,7 @@ img {
     overflow: auto!important;
     background: #222527;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: none;
   }
   .navbar .nav-collapse::-webkit-scrollbar {
     display: none;
@@ -881,7 +882,7 @@ section * {
   font-size: 46px;
   font-weight: normal;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 500;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   border: 8px solid white;
   display: inline-block;
@@ -1098,7 +1099,7 @@ section * {
   font-size: 14px;
   font-weight: normal;
   color: #7f8c8d;
-  font-weight: bold;
+  font-weight: 500;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 12px 28px 12px;
   color: #e74c3c;
@@ -1313,7 +1314,7 @@ section * {
   font-size: 46px;
   font-weight: normal;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 500;
   border: 8px solid white;
   display: inline-block;
   margin: 0;

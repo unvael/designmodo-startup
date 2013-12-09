@@ -44,7 +44,7 @@ function fadedEls(el, shift) {
         // Sections height
         $(window).resize(function() {
             var sH = $(window).height();
-            $('section, header').css('height', sH + 'px');
+            $('header').css('height', sH + 'px');
         });
 
         // Faded elements
@@ -52,7 +52,7 @@ function fadedEls(el, shift) {
         fadedEls($('.content-3 .features'), 75);
 
         // Parallax
-        $('.header-4 .background').parallax('50%', 0.3, true);
+        $('.header-4 .background').parallax('50%', -0.3, true);
 
         // responsive
         $(window).resize(function() {

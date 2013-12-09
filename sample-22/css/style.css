@@ -29,7 +29,7 @@
 }
 /*only fo flat-ui free*/body {
   color: #34495e;
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.231;
 }
@@ -37,7 +37,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
 a {
@@ -431,6 +431,7 @@ img {
     overflow: auto!important;
     background: #222527;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: none;
   }
   .navbar .nav-collapse::-webkit-scrollbar {
     display: none;
@@ -856,7 +857,6 @@ section * {
   transition: left 0.4s;
 }
 .header-16 .navbar .nav-collapse {
-  z-index: 997;
   left: 0;
   bottom: auto;
   top: -100%;
@@ -1388,8 +1388,8 @@ section * {
   font-size: 20px;
   font-weight: normal;
   color: #e74c3c;
-  font-family: Lato, sens-serif;
-  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
 .content-15 .features h6:first-child {
   margin-top: auto;
@@ -1446,7 +1446,7 @@ section * {
 .content-18 .carousel:before {
   content: url('../../ui-kit-content/img/quote.png');
   display: block;
-  margin: 0 auto 60px;
+  margin: 0 auto 95px;
   text-align: center;
 }
 .content-18 .carousel .quote-text {
@@ -1462,12 +1462,12 @@ section * {
 }
 .content-18 .carousel .quote-author {
   max-width: 620px;
-  margin: 40px auto 0;
+  margin: 45px auto 0;
   padding: 0 20px;
   font-size: 18px;
   font-weight: normal;
   color: #3498db;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
 .content-18 .carousel .controls {
@@ -1507,7 +1507,7 @@ section * {
   right: 0;
 }
 .content-18 .carousel .carousel-inner {
-  padding-bottom: 75px;
+  padding-bottom: 0;
 }
 .content-18 .carousel .item {
   -webkit-backface-visibility: hidden;
@@ -1549,15 +1549,15 @@ section * {
   }
 }
 .content-18 .quotes > * {
-  margin-top: 20px;
+  margin-top: 48px;
 }
 .content-18 .quotes h6 {
   text-transform: none;
   font-size: 18px;
   font-weight: normal;
   color: #2c3e50;
-  font-family: Lato, sens-serif;
-  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
 /* prices */
 .ribbon {
@@ -1775,12 +1775,13 @@ section * {
   margin: 40px 0 20px;
   color: #95a5a6;
   font-size: 12px;
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 18px;
 }
 .price-5 .terms a {
   text-decoration: underline;
   color: #1abc9c;
+  font-weight: normal;
 }
 .price-5 .terms a:hover {
   text-decoration: none;
@@ -1875,6 +1876,11 @@ body > section {
 .content-18 h1 {
   font-size: 71px;
   margin-bottom: 60px;
+}
+@media (max-width: 480px) {
+  .content-18 h1 {
+    font-size: 36px;
+  }
 }
 .content-18 .carousel {
   margin-bottom: 20px;
@@ -1989,4 +1995,8 @@ body > section {
     opacity: 1;
     filter: alpha(opacity=100);
   }
+}
+.price-5 {
+  margin-top: 75px;
+  color: #95a5a6;
 }

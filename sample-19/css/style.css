@@ -29,7 +29,7 @@
 }
 /*only fo flat-ui free*/body {
   color: #34495e;
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.231;
 }
@@ -37,7 +37,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
 a {
@@ -431,6 +431,7 @@ img {
     overflow: auto!important;
     background: #222527;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: none;
   }
   .navbar .nav-collapse::-webkit-scrollbar {
     display: none;
@@ -915,7 +916,7 @@ section * {
   font-size: 16px;
   font-weight: normal;
   color: #7f8c8d;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 29.999999999999996px;
 }
 @media (max-width: 767px) {
@@ -995,7 +996,7 @@ section * {
   font-size: 20px;
   font-weight: normal;
   color: #34495e;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   text-transform: none;
 }
@@ -1044,7 +1045,7 @@ section * {
   font-weight: normal;
   color: inherit;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 800;
+  font-weight: 500;
   text-align: center;
   margin: 0 100px;
 }
@@ -1118,8 +1119,10 @@ section * {
     margin-top: 0;
   }
   .footer-14 .social-btns {
-    margin: 30px 0 0;
-    position: static;
+    margin: 0 0 30px ;
+    position: relative;
+    display: block;
+    float: none;
   }
 }
 body > section,
@@ -1166,4 +1169,15 @@ body > section {
     padding-top: 20px;
     padding-bottom: 50px;
   }
+}
+.footer-14 {
+  background-color: #171717;
+}
+.footer-14 a {
+  color: #bdc3c7;
+}
+.footer-14 a:hover,
+.footer-14 a:focus,
+.footer-14 a.active {
+  color: #e74c3c;
 }

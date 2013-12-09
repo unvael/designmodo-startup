@@ -29,7 +29,7 @@
 }
 /*only fo flat-ui free*/body {
   color: #34495e;
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.231;
 }
@@ -37,7 +37,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
 a {
@@ -431,6 +431,7 @@ img {
     overflow: auto!important;
     background: #222527;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: none;
   }
   .navbar .nav-collapse::-webkit-scrollbar {
     display: none;
@@ -638,7 +639,7 @@ section * {
   margin: 9px 0 0 50px;
 }
 .header-12 .navbar .nav a {
-  font-weight: bold;
+  font-weight: 500;
   color: #bdc3c7;
   letter-spacing: 2px;
 }
@@ -732,7 +733,6 @@ section * {
 .header-12-sub .aside {
   position: relative;
   background: #3498db;
-  max-width: 220px;
   float: right;
   text-align: center;
   padding-left: 95px;
@@ -740,7 +740,7 @@ section * {
   margin-top: -80px;
   margin-bottom: -80px;
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 117px;
 }
 .header-12-sub .aside:before {
   content: '';
@@ -945,7 +945,7 @@ section * {
   font-size: 18px;
   font-weight: normal;
   color: #2c3e50;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
 .content-19 .span3 .quote .quote-author-photo {
@@ -1083,7 +1083,7 @@ section * {
  * Footer 13 stylesheet  
  * */
 .footer-13 {
-  padding-top: 40px;
+  padding-top: 44px;
   padding-bottom: 40px;
   background: #ebedee;
   text-align: center;
@@ -1166,7 +1166,7 @@ body > section {
   padding-bottom: 80px;
 }
 .logos {
-  padding-top: 90px;
+  padding-top: 100px;
   padding-bottom: 0px;
 }
 .logos > .container {
@@ -1188,13 +1188,21 @@ body > section {
   }
 }
 .header-12-sub .background {
-  background-image: url("../img/img-1.jpg");
-  opacity: 0.9;
-  filter: alpha(opacity=90);
+  background-image: url("../img/NY_001.png");
+  opacity: 0.3;
+  filter: alpha(opacity=30);
 }
 .header-12-sub .aside,
 .header-12-sub .aside:before {
   background-color: #e74c3c;
+}
+.content-19 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.price-1 {
+  padding-top: 115px;
+  padding-bottom: 115px;
 }
 .price-1 > .container > h3 {
   text-align: center;

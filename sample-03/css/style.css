@@ -29,7 +29,7 @@
 }
 /*only fo flat-ui free*/body {
   color: #34495e;
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.231;
 }
@@ -37,7 +37,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
 a {
@@ -431,6 +431,7 @@ img {
     overflow: auto!important;
     background: #222527;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: none;
   }
   .navbar .nav-collapse::-webkit-scrollbar {
     display: none;
@@ -807,7 +808,7 @@ section * {
   font-size: 16px;
   font-weight: normal;
   color: #bdc3c7;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .header-11-sub .additional-links {
   opacity: 0.5;
@@ -849,7 +850,7 @@ section * {
   }
 }
 .header-11-sub .signup-form form {
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: 40px;
 }
 .header-11-sub .signup-form form .controls-row:first-child + .controls-row {
@@ -1076,19 +1077,19 @@ section * {
   line-height: 59.99999999999999px;
   font-size: 50px;
   font-weight: normal;
-  color: #a1a9b1;
+  color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   letter-spacing: -1px;
 }
 .content-13.subscribe-form input[type="text"]:-moz-placeholder {
-  color: #a1a9b1;
+  color: #ffffff;
 }
 .content-13.subscribe-form input[type="text"]::-webkit-input-placeholder {
-  color: #a1a9b1;
+  color: #ffffff;
 }
 .content-13.subscribe-form input[type="text"].placeholder {
-  color: #a1a9b1;
+  color: #ffffff;
 }
 .content-13.subscribe-form input[type="text"]::-webkit-input-placeholder {
   font-weight: 500;

@@ -43,7 +43,7 @@ function fadedEls(el, shift) {
         
 
         // Parallax
-        $('.header-13-sub .background').parallax('50%', 0.3, true);
+        $('.header-13-sub .background').parallax('50%', -0.3, true);
         $('.content-23.first').parallax('50%', 0.3, true);
 
         // Faded elements

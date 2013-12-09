@@ -4,10 +4,10 @@
 .projects-2 {
   background: #000;
   color: #fff;
-
+.v-center;
   .content {
     font-family: @h-font-family;
-    font-weight: bold;
+    font-weight: 500;
     letter-spacing: 1px;
     font-size: 13px;
   }
@@ -19,8 +19,7 @@
     margin: 18px 0 0;
     font-size: 13px;
     font-family: @h-font-family;
-    font-weight: bold;
-
+    ffont-weight: 500;
     @media (max-width: 480px) {
       letter-spacing: 0.25em;
       word-spacing: 0.25em;
@@ -73,26 +72,50 @@
     background: 50% 50% no-repeat;
     .background-size(cover);
     .transition(.6s opacity);
-    .opacity(40);
+    .opacity(30);
 
     &:hover {
       .opacity(100);
     }
 
     @media (max-width: 767px) {
-      margin-right: -20px;
-      margin-left: -20px;
+
       padding-right: 20px;
       padding-left: 20px;
     }
   }
 
   .project-1 {
-    background-image: url('../../ui-kit-projects/img/img-2.jpg');
+    background-image: url('../../ui-kit-projects/img/Hawaii_001.png');
+    .container{
+      h1{
+        .font(50px, white);
+        font-family: @h-font-family;
+        font-weight: 800;
+        letter-spacing: 0px;
+        margin-bottom: 12px;
+      }
+      p{
+        .font(30px, white);
+        font-family: @h-font-family;
+        font-weight: 300;
+        letter-spacing: 0px;
+        padding-top: 0;
+        .line-height(30px);
+
+      }
+
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 25px;
+        }
+        p{font-size: 15px;}
+      }
+    }
   }
 
   .project-2 {
-    background-image: url('../../ui-kit-projects/img/img-3.jpg');
+    background-image: url('../../ui-kit-projects/img/Italy_001.png');
 
     @media (max-width: 480px) {
       .hero-unit h1 {
@@ -102,10 +125,10 @@
   }
 
   .project-3 {
-    background-image: url('../../ui-kit-projects/img/img-4.jpg');
+    background-image: url('../../ui-kit-projects/img/NY_002.png');
 
     [class*="fui-"] {
-      font-size: 24px;
+      font-size: 95px;
     }
   }
 }

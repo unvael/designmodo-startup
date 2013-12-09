@@ -899,7 +899,7 @@ section * {
 .projects-3 .projects .name {
   color: #34495e;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: 10px;
   -webkit-backface-visibility: hidden;
   -webkit-transition: color 0.4s;
@@ -1358,7 +1358,7 @@ body > section {
   font-size: 14px;
   font-weight: normal;
   color: #7f8c8d;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .footer-5 p a {
   text-decoration: underline;

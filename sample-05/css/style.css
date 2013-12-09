@@ -29,7 +29,7 @@
 }
 /*only fo flat-ui free*/body {
   color: #34495e;
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.231;
 }
@@ -37,7 +37,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
 a {
@@ -431,6 +431,7 @@ img {
     overflow: auto!important;
     background: #222527;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: none;
   }
   .navbar .nav-collapse::-webkit-scrollbar {
     display: none;
@@ -986,7 +987,7 @@ section * {
   font-size: 18px;
   font-weight: normal;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: none;
 }
 .header-17-sub .pt-perspective {
@@ -1087,26 +1088,26 @@ section * {
   font-size: 18px;
   font-weight: normal;
   color: #7f8c8d;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .content-1 .box-video {
   margin-top: 40px;
   font-size: 16px;
   font-weight: normal;
   color: #7f8c8d;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .content-1 .box-video p {
   font-size: 16px;
   font-weight: normal;
   color: #7f8c8d;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .content-1 .box-video h6 {
   font-size: 20px;
   font-weight: normal;
   color: #2c3e50;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: none;
 }
 .content-1 .box-video .btns {
@@ -1277,10 +1278,10 @@ section * {
 .content-5 .features > [class*="span"] > [class*="fui-"] {
   position: absolute;
   left: -60px;
-  top: 5px;
-  font-size: 34px;
+  top: 7px;
+  font-size: 25px;
   font-weight: normal;
-  color: #bdc3c7;
+  color: #2c3e50;
 }
 @media (max-width: 767px) {
   .content-5 .features > [class*="span"] > [class*="fui-"] {
@@ -1298,7 +1299,7 @@ section * {
   font-size: 22px;
   font-weight: normal;
   color: #34495e;
-  font-family: Lato, sens-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   margin-bottom: 14px;
   text-transform: none;
@@ -1336,19 +1337,19 @@ section * {
   line-height: 59.99999999999999px;
   font-size: 50px;
   font-weight: normal;
-  color: #a1a9b1;
+  color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   letter-spacing: -1px;
 }
 .content-13.subscribe-form input[type="text"]:-moz-placeholder {
-  color: #a1a9b1;
+  color: #ffffff;
 }
 .content-13.subscribe-form input[type="text"]::-webkit-input-placeholder {
-  color: #a1a9b1;
+  color: #ffffff;
 }
 .content-13.subscribe-form input[type="text"].placeholder {
-  color: #a1a9b1;
+  color: #ffffff;
 }
 .content-13.subscribe-form input[type="text"]::-webkit-input-placeholder {
   font-weight: 500;

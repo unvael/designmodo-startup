@@ -249,9 +249,9 @@ startupKit.uiKitHeader.header7 = function() {
         var curPage = $(this).parent().children('.active').index();
         var nextPage = $(this).index();
         $('.header-7-sub').css('background-color',$('#h-7-pt-main').children('.pt-page').eq(nextPage).find('section').css('background-color'));
-        var ani = 44;
+        var ani = 5;
         if (curPage < nextPage) {
-            ani = 45;
+            ani = 6;
         }
 
         pt.gotoPage(ani, nextPage);

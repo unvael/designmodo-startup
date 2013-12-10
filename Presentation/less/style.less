@@ -11,7 +11,8 @@
 
 @proxima: 'proxima-nova', sans-serif;
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -480,7 +481,7 @@ a, button {
     }
   }
   .header {
-    margin: 0 0 60px;
+    margin: 0 0 55px;
     h2 {
       font-size: 46px;
       color: #303336;
@@ -491,6 +492,7 @@ a, button {
       font-family: @proxima;
       @media (max-width: 767px) {
         font-size: 31px;
+        letter-spacing: -2px;
       }
     }
     @media (max-width: 767px) {
@@ -525,14 +527,14 @@ a, button {
     }
   }
   h3 {
-    margin: 80px 0 30px;
+    margin: 85px 0 25px;
     font-size: 20px;
     line-height: 40px;
     font-weight: 500;
     font-family: @proxima;
     color: #303336;
     @media (max-width: 767px) {
-      margin-top: 20px;
+      margin-top: 25px;
       margin-bottom: 15px;
     }
   }
@@ -555,6 +557,94 @@ a, button {
       display: inline-block;
       min-width: 22px;
       color: #303336;
+    }
+  }
+}
+
+.content-32 {
+  color: #696f6f;
+  padding-top: 15px;
+  padding-bottom: 170px;
+  @media (max-width: 767px) {
+    padding-bottom: 50px;
+  }
+  h3 {
+    font-size: 46px;
+    margin-top: 170px;
+    line-height: 54px;
+    color: #303336;
+    font-weight: 700;
+    letter-spacing: -3px;
+    font-family: @proxima;
+    @media (max-width: 767px) {
+      margin-top: 30px;
+      margin-bottom: 25px;
+      font-size: 26px;
+      line-height: 32px;
+      letter-spacing: -2px;
+      text-align: left;
+    }
+  }
+  .features {
+    margin-top: 80px;
+    padding-top: 100px;
+    h6 {
+      font-family: @proxima;
+      margin-bottom: 15px;
+      font-weight: 700;
+      @media (max-width: 767px) {
+        margin-bottom: 20px;
+        margin-top: 40px;
+      }
+    }
+    @media (max-width: 767px) {
+      margin-top: -20px;
+      border: 0;
+      padding-top: 0;
+      padding-bottom: 5px;
+    }
+  }
+  .lead {
+    color: #696f6f;
+    @media (max-width: 767px) {
+      text-align: left;
+      font-size: 18px;
+      line-height: 34px;
+    }
+  }
+  .screenshots {
+    .clearfix;
+    margin: 110px 0 0 -20px;
+    @media (max-width: 479px) {
+      margin-left: -30px;
+      margin-right: -20px;
+      margin-top: 50px;
+    }
+    .screen {
+      width: 25%;
+      float: left;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 0 0 20px 20px;
+      text-align: center;
+      &.double {
+        width: 50%;
+        @media (max-width: 479px) {
+          width: 66.66%;
+        }
+      }
+      @media (max-width: 479px) {
+        padding-bottom: 10px;
+        padding-left: 10px;
+        width: 33.33%;
+      }
+    }
+    img {
+      vertical-align: top;
+      max-width: 100%;
+      -webkit-box-shadow: 5px 5px 15px rgba(0,0,0,.05);
+      box-shadow: 5px 5px 15px rgba(0,0,0,.05);
     }
   }
 }

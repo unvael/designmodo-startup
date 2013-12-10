@@ -7,19 +7,20 @@
 @import '../../common-files/less/common.less';
 // @import '../../common-files/less/navbar.less';
 @import '../../common-files/less/helper.less';
-
 @import '../../ui-kit-content/less/content-32.less';
 
-@proxima:  'proxima-nova', sans-serif;
+@proxima: 'proxima-nova', sans-serif;
 
 html, body {
   height: 100%;
 }
-a, button{
-  &:hover, &:focus{
+
+a, button {
+  &:hover, &:focus {
     outline: none;
   }
 }
+
 .presentation-mask {
   z-index: 1000;
   background-color: #000000;
@@ -55,8 +56,8 @@ a, button{
   padding-top: 0;
   padding-bottom: 0;
   width: 100%;
-  .brand > img{
-    width:auto;
+  .brand > img {
+    width: auto;
     max-width: none;
   }
   .navbar-inner {
@@ -68,8 +69,8 @@ a, button{
       letter-spacing: -0.2px;
       padding: 10px 37px 10px 0;
       .a-color(#696b6d, #b7b8b9);
-      &.active{
-        color:#b7b8b9;
+      &.active {
+        color: #b7b8b9;
       }
     }
     .social-btns {
@@ -81,7 +82,7 @@ a, button{
         }
       }
     }
-    .inner-btn{
+    .inner-btn {
       display: none;
     }
   }
@@ -92,18 +93,18 @@ a, button{
     min-width: 30%;
     background: black;
     position: fixed;
-    bottom:0;
+    bottom: 0;
     top: 0;
     right: 0;
 
-    .inner-btn{
+    .inner-btn {
       display: block;
-      float:none;
+      float: none;
     }
 
-    .pull-right{
+    .pull-right {
       float: none;
-      width:auto;
+      width: auto;
     }
     .nav li > a {
       .font(18px, #696b6d);
@@ -112,8 +113,8 @@ a, button{
       letter-spacing: -0.2px;
       padding: 20px;
       .a-color(#696b6d, #b7b8b9);
-      &:hover, &:focus, &.active{
-          background-color: transparent;
+      &:hover, &:focus, &.active {
+        background-color: transparent;
 
       }
     }
@@ -189,17 +190,95 @@ a, button{
 
 }
 
-.presentation-simple-block{
-  padding-top:150px;
+.presentation-simple-block {
+  padding-top: 150px;
   padding-bottom: 150px;
-  h3{
+  h3 {
     .font(30px, #303336);
     font-family: @proxima;
     font-weight: 800;
-    letter-spacing:-0.6px;
+    letter-spacing: -0.6px;
 
   }
 }
+
+.presentation-slide-block {
+  padding-top: 110px;
+  padding-bottom: 110px;
+  .right-block {
+    width: 2492px;
+    position: absolute;
+
+  }
+  .presentation-controls {
+    position: absolute;
+    ul {
+      margin: 0;
+      li {
+        list-style: none;
+        width: 7px;
+        height: 7px;
+        border: 1px solid #505656;
+        .rotate(45deg);
+        margin-right: 12px;
+        display: inline-block;
+        &.active {
+          border: 1px solid #303336;
+          background-color: #303336;
+        }
+      }
+    }
+  }
+
+  h1 {
+    .font(45px, #303336);
+    font-family: @proxima;
+    font-weight: 800;
+    letter-spacing: -0.6px;
+    .line-height(52px);
+    margin: 35px 0;
+  }
+
+  p.lead {
+    .font(20px, #505656);
+    font-family: @proxima;
+    font-weight: normal;
+    letter-spacing: 0;
+    .line-height(36px);
+    margin: 0;
+  }
+
+  .features {
+    margin: 28px 0 0 0;
+    .item {
+      margin: 46px 0 0 0;
+      h3 {
+        margin: 35px 0 0 0;
+        .font(20px, #303336);
+        font-family: @proxima;
+        font-weight: 800;
+        letter-spacing: -0.2px;
+      }
+
+      p {
+        .font(16px, #505656);
+        font-family: @proxima;
+        font-weight: normal;
+        letter-spacing: 0;
+        .line-height(26px);
+        margin: 24px 0 0 0;
+      }
+      img {
+      }
+    }
+  }
+
+
+&.sb-1 {
+  background: url("../img/slideBlock/bg-1.png") repeat 0 0;
+}
+
+  }
 
 .presentation-componentsSamples {
   position: relative;
@@ -375,7 +454,7 @@ a, button{
     top: 0;
     bottom: 0;
     .opacity(100);
-    > .container{
+    > .container {
       height: 100%;
       @media (max-width: 767px) {
         height: 218px;

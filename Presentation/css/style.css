@@ -801,6 +801,83 @@ button:focus {
   font-weight: 800;
   letter-spacing: -0.6px;
 }
+.presentation-slide-block {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+.presentation-slide-block .right-block {
+  width: 2492px;
+  position: absolute;
+}
+.presentation-slide-block .presentation-controls {
+  position: absolute;
+}
+.presentation-slide-block .presentation-controls ul {
+  margin: 0;
+}
+.presentation-slide-block .presentation-controls ul li {
+  list-style: none;
+  width: 7px;
+  height: 7px;
+  border: 1px solid #505656;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-right: 12px;
+  display: inline-block;
+}
+.presentation-slide-block .presentation-controls ul li.active {
+  border: 1px solid #303336;
+  background-color: #303336;
+}
+.presentation-slide-block h1 {
+  font-size: 45px;
+  font-weight: normal;
+  color: #303336;
+  font-family: 'proxima-nova', sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.6px;
+  line-height: 52px;
+  margin: 35px 0;
+}
+.presentation-slide-block p.lead {
+  font-size: 20px;
+  color: #505656;
+  font-family: 'proxima-nova', sans-serif;
+  font-weight: normal;
+  letter-spacing: 0;
+  line-height: 36px;
+  margin: 0;
+}
+.presentation-slide-block .features {
+  margin: 28px 0 0 0;
+}
+.presentation-slide-block .features .item {
+  margin: 46px 0 0 0;
+}
+.presentation-slide-block .features .item h3 {
+  margin: 35px 0 0 0;
+  font-size: 20px;
+  font-weight: normal;
+  color: #303336;
+  font-family: 'proxima-nova', sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.2px;
+}
+.presentation-slide-block .features .item p {
+  font-size: 16px;
+  color: #505656;
+  font-family: 'proxima-nova', sans-serif;
+  font-weight: normal;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin: 24px 0 0 0;
+}
+.presentation-slide-block.sb-1 {
+  background: url("../img/slideBlock/bg-1.png") repeat 0 0;
+}
 .presentation-componentsSamples {
   position: relative;
   background: #2c2e2f;

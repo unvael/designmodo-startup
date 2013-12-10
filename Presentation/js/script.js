@@ -2,31 +2,31 @@ $(document).ready(function () {
 
 
 
-// var iframe = $('#pPlayer')[0];
-// var player = $f(iframe);
-// 	player.addEvent('ready', function() {});
+var iframe = $('#pPlayer')[0];
+var player = $f(iframe);
+	player.addEvent('ready', function() {});
 
 
-//      function addEvent(element, eventName, callback) {
-//                     if (element.addEventListener) {
-//                         element.addEventListener(eventName, callback, false);
-//                     }
-//                     else {
-//                         element.attachEvent(eventName, callback, false);
-//                     }
-//                 }
+     function addEvent(element, eventName, callback) {
+                    if (element.addEventListener) {
+                        element.addEventListener(eventName, callback, false);
+                    }
+                    else {
+                        element.attachEvent(eventName, callback, false);
+                    }
+                }
 
-//     $('#play').click(function () {
-//         $('.presentation-mask').fadeIn('slow');
-//         $('.presentation-popup-video').fadeIn('slow');
-//         player.api('play')
-//         $('.presentation-mask').click(function () {
-//             player.api('pause');
-//             $('.presentation-popup-video').fadeOut('slow');
-//             $('.presentation-mask').fadeOut('slow');
+    $('#play').click(function () {
+        $('.presentation-mask').fadeIn('slow');
+        $('.presentation-popup-video').fadeIn('slow');
+        player.api('play')
+        $('.presentation-mask').click(function () {
+            player.api('pause');
+            $('.presentation-popup-video').fadeOut('slow');
+            $('.presentation-mask').fadeOut('slow');
 
-//         });
-//     });
+        });
+    });
 
     var videobackground = new $.backgroundVideo($('#bgVideo'), {
         "align": "centerXY",

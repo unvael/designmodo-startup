@@ -86,9 +86,12 @@ var player = $f(iframe);
 
         ctrlTrigger.hover(function () {
           sliderList.addClass('titles-on');
-        }, function () {
-          sliderList.removeClass('titles-on');
         });
+
+        bottomSliderCtrl.mouseleave(function () {
+            sliderList.removeClass('titles-on');
+        });
+
         var scrollers = $(".scroller").mCustomScrollbar({
           scrollButtons:{
             enable: false

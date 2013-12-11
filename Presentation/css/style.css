@@ -754,7 +754,7 @@ button:focus {
   padding: 15px 0;
 }
 .presentation-header-sub .v-center h3 span {
-  font-weight: 800;
+  font-weight: 700;
 }
 .presentation-header-sub .v-center h2 {
   margin: 0;
@@ -766,7 +766,7 @@ button:focus {
   letter-spacing: -0.25px;
 }
 .presentation-header-sub .v-center h2 span {
-  font-weight: 800;
+  font-weight: 700;
   display: block;
 }
 .presentation-header-sub .v-center .button-place {
@@ -802,7 +802,7 @@ button:focus {
   font-weight: normal;
   color: #303336;
   font-family: 'proxima-nova', sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.6px;
 }
 .presentation-scroll-block {
@@ -863,7 +863,7 @@ button:focus {
   font-weight: normal;
   color: #303336;
   font-family: 'proxima-nova', sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.6px;
   line-height: 52px;
   margin: 35px 0;
@@ -889,7 +889,7 @@ button:focus {
   font-weight: normal;
   color: #303336;
   font-family: 'proxima-nova', sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.2px;
 }
 .presentation-scroll-block .features .item p {
@@ -1025,7 +1025,7 @@ button:focus {
   height: 106px;
   font-size: 46px;
   line-height: 106px;
-  font-weight: 800;
+  font-weight: 700;
   position: absolute;
   top: 304px;
   left: 50%;
@@ -1120,7 +1120,7 @@ button:focus {
   color: #303336;
   line-height: 52px;
   margin: 0;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -3px;
   font-family: 'proxima-nova', sans-serif;
 }

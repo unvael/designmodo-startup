@@ -16,6 +16,11 @@ body {
   height: 100%;
 }
 
+.disable-hover,
+.disable-hover * {
+  pointer-events: none !important;
+}
+
 a, button {
   &:hover, &:focus {
     outline: none;
@@ -1242,3 +1247,4 @@ a, button {
     }
   }
 }
+

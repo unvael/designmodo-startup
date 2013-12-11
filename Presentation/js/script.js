@@ -5,6 +5,7 @@ $(document).ready(function() {
     player.addEvent('ready', function() {
     });
 
+<<<<<<< HEAD
     function addEvent(element, eventName, callback) {
         if (element.addEventListener) {
             element.addEventListener(eventName, callback, false);
@@ -12,6 +13,27 @@ $(document).ready(function() {
             element.attachEvent(eventName, callback, false);
         }
     }
+=======
+//disable hover effects while scrolling
+var disableHoverEffects = function() {
+	var body = document.body,
+		timer;
+
+	window.addEventListener('scroll', function() {
+	  clearTimeout(timer);
+	  if(!body.classList.contains('disable-hover')) {
+		body.classList.add('disable-hover')
+	  }
+  
+	  timer = setTimeout(function(){
+		body.classList.remove('disable-hover')
+	  },500);
+	}, false);
+}
+disableHoverEffects();
+
+
+>>>>>>> 108ef87bbcc74a0c80b0c3de45426b6429a867e4
 
 
     $('#play').click(function() {
@@ -171,12 +193,23 @@ $(document).ready(function() {
         var sliderItems = $('li', sliderList);
         var sliderAmount = sliderItems.length;
 
+<<<<<<< HEAD
         ctrlTrigger.hover(function() {
             sliderList.addClass('titles-on');
         }, function() {
             sliderList.removeClass('titles-on');
+=======
+        ctrlTrigger.hover(function () {
+          sliderList.addClass('titles-on');
+>>>>>>> 108ef87bbcc74a0c80b0c3de45426b6429a867e4
         });
+
+        bottomSliderCtrl.mouseleave(function () {
+            sliderList.removeClass('titles-on');
+        });
+
         var scrollers = $(".scroller").mCustomScrollbar({
+<<<<<<< HEAD
             scrollButtons : {
                 enable : Boolean
             },
@@ -186,6 +219,17 @@ $(document).ready(function() {
                 updateOnContentResize : true
             },
             contentTouchScroll : true
+=======
+          scrollButtons:{
+            enable: false
+          },
+          autoDraggerLength: true,
+          contentTouchScroll: true,
+          advanced: {
+            updateOnBrowserResize: true,
+            updateOnContentResize: true
+          }
+>>>>>>> 108ef87bbcc74a0c80b0c3de45426b6429a867e4
         });
 
         var bottomSubSlider = $('.additional-slider .sub-slider:first').bxSlider({
@@ -197,11 +241,20 @@ $(document).ready(function() {
         });
 
         var bottomSlider = $('.additional-slider .bxslider:first').bxSlider({
+<<<<<<< HEAD
             'controls' : false,
             'pagerCustom' : '.additional-slider .container-slider-controls ul',
             'mode' : 'horizontal',
             'easing' : 'ease-in-out',
             'adaptiveHeight' : true
+=======
+          'controls': false,
+          'pagerCustom': '.additional-slider .container-slider-controls ul',
+          'mode': 'horizontal',
+          'easing': 'ease-in-out',
+          'adaptiveHeight': true,
+          'preventDefaultSwipeX': false
+>>>>>>> 108ef87bbcc74a0c80b0c3de45426b6429a867e4
         });
 
     }

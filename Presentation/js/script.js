@@ -119,12 +119,12 @@ $(document).ready(function() {
 
     };
 
-    presentationScrollBlock('scrollBlock-1');
-    presentationScrollBlock('scrollBlock-2');
-    $(window).resize(function() {
-        presentationScrollBlock('scrollBlock-1');
-        presentationScrollBlock('scrollBlock-2');
-    });
+    // presentationScrollBlock('scrollBlock-1');
+    // presentationScrollBlock('scrollBlock-2');
+    // $(window).resize(function() {
+    //     presentationScrollBlock('scrollBlock-1');
+    //     presentationScrollBlock('scrollBlock-2');
+    // });
 
     var dof = $('.presentation-componentsSamples-inner');
     dof.mousemove(function(e) {
@@ -165,6 +165,16 @@ $(document).ready(function() {
             window.oldHovered = rounded;
         }
     });
+    
+    var topSliderWr = $('#topslider-wrapper');
+    if (topSliderWr.length > 0) {
+        var topSlider = $('#topslider', topSliderWr).bxSlider({
+            'controls' : false,
+            'pagerCustom' : '#topslider-wrapper #topsliderCtrl',
+            'easing' : 'ease-in-out',
+            'adaptiveHeight' : true
+        });
+    }
 
     var bottomSliderCtrl = $('.additional-slider .container-slider-controls:first');
     if (bottomSliderCtrl.length > 0) {

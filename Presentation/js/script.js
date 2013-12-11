@@ -263,10 +263,14 @@ $(document).ready(function() {
     }
     
     var samplesGrid = $('#samples-grid');
+    var componentGrid = $('#component-grid');
 	// initialize
 	samplesGrid.masonry({
 	  itemSelector: '.screen'
 	});
+    componentGrid.masonry({
+      itemSelector: '.screen'
+    });
 	
 	var scrollorama = $.superscrollorama({
 			triggerAtCenter: false,

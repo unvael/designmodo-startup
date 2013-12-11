@@ -950,85 +950,86 @@ button:focus {
   background-size: cover;
   position: absolute;
   background-position: center center;
+  background-repeat: no-repeat;
 }
 .presentation-componentsSamples .presentation-componentsSamples-inner .layer-1 {
-  background: url(../img/componentsSamples/bg-01.jpg) no-repeat;
+  background-image: url(../img/componentsSamples/bg-01.jpg);
   z-index: 120;
 }
 .presentation-componentsSamples .presentation-componentsSamples-inner .layer-2 {
-  background: url(../img/componentsSamples/bg-02.jpg) no-repeat;
+  background-image: url(../img/componentsSamples/bg-02.jpg);
   z-index: 119;
 }
 .presentation-componentsSamples .presentation-componentsSamples-inner .layer-3 {
-  background: url(../img/componentsSamples/bg-03.jpg) no-repeat;
+  background-image: url(../img/componentsSamples/bg-03.jpg);
   z-index: 118;
 }
 .presentation-componentsSamples .presentation-componentsSamples-inner .layer-4 {
-  background: url(../img/componentsSamples/bg-04.jpg) no-repeat;
+  background-image: url(../img/componentsSamples/bg-04.jpg);
   z-index: 117;
 }
 .presentation-componentsSamples .presentation-componentsSamples-inner .layer-5 {
-  background: url(../img/componentsSamples/bg-05.jpg) no-repeat;
+  background-image: url(../img/componentsSamples/bg-05.jpg);
   z-index: 116;
 }
 .presentation-componentsSamples .presentation-componentsSamples-inner .layer-6 {
-  background: url(../img/componentsSamples/bg-06.jpg) no-repeat;
+  background-image: url(../img/componentsSamples/bg-06.jpg);
   z-index: 115;
 }
 .presentation-componentsSamples .presentation-componentsSamples-inner .layer-7 {
-  background: url(../img/componentsSamples/bg-07.jpg) no-repeat;
+  background-image: url(../img/componentsSamples/bg-07.jpg);
   z-index: 114;
 }
 .presentation-componentsSamples .presentation-componentsSamples-inner .layer-8 {
-  background: url(../img/componentsSamples/bg-08.jpg) no-repeat;
+  background-image: url(../img/componentsSamples/bg-08.jpg);
   z-index: 113;
 }
 .presentation-componentsSamples .presentation-componentsSamples-inner .layer-9 {
-  background: url(../img/componentsSamples/bg-09.jpg) no-repeat;
+  background-image: url(../img/componentsSamples/bg-09.jpg);
   z-index: 112;
 }
 .presentation-componentsSamples .presentation-componentsSamples-inner .layer-10 {
-  background: url(../img/componentsSamples/bg-10.jpg) no-repeat;
+  background-image: url(../img/componentsSamples/bg-10.jpg);
   z-index: 111;
 }
 .presentation-componentsSamples .presentation-componentsSamples-inner .layer-11 {
-  background: url(../img/componentsSamples/bg-11.jpg) no-repeat;
+  background-image: url(../img/componentsSamples/bg-11.jpg);
   z-index: 110;
 }
 .presentation-componentsSamples .presentation-componentsSamples-inner .layer-12 {
-  background: url(../img/componentsSamples/bg-12.jpg) no-repeat;
+  background-image: url(../img/componentsSamples/bg-12.jpg);
   z-index: 109;
 }
 .presentation-componentsSamples .presentation-componentsSamples-inner .layer-13 {
-  background: url(../img/componentsSamples/bg-13.jpg) no-repeat;
+  background-image: url(../img/componentsSamples/bg-13.jpg);
   z-index: 108;
 }
 .presentation-componentsSamples .presentation-componentsSamples-inner .layer-14 {
-  background: url(../img/componentsSamples/bg-14.jpg) no-repeat;
+  background-image: url(../img/componentsSamples/bg-14.jpg);
   z-index: 107;
 }
 .presentation-componentsSamples .presentation-componentsSamples-inner .layer-15 {
-  background: url(../img/componentsSamples/bg-15.jpg) no-repeat;
+  background-image: url(../img/componentsSamples/bg-15.jpg);
   z-index: 106;
 }
 .presentation-componentsSamples .presentation-componentsSamples-inner .layer-16 {
-  background: url(../img/componentsSamples/bg-16.jpg) no-repeat;
+  background-image: url(../img/componentsSamples/bg-16.jpg);
   z-index: 105;
 }
 .presentation-componentsSamples .presentation-componentsSamples-inner .layer-17 {
-  background: url(../img/componentsSamples/bg-17.jpg) no-repeat;
+  background-image: url(../img/componentsSamples/bg-17.jpg);
   z-index: 104;
 }
 .presentation-componentsSamples .presentation-componentsSamples-inner .layer-18 {
-  background: url(../img/componentsSamples/bg-18.jpg) no-repeat;
+  background-image: url(../img/componentsSamples/bg-18.jpg);
   z-index: 103;
 }
 .presentation-componentsSamples .presentation-componentsSamples-inner .layer-19 {
-  background: url(../img/componentsSamples/bg-19.jpg) no-repeat;
+  background-image: url(../img/componentsSamples/bg-19.jpg);
   z-index: 102;
 }
 .presentation-componentsSamples .presentation-componentsSamples-inner .layer-20 {
-  background: url(../img/componentsSamples/bg-20.jpg) no-repeat;
+  background-image: url(../img/componentsSamples/bg-20.jpg);
   z-index: 101;
 }
 @media (max-width: 767px) {
@@ -1189,6 +1190,9 @@ button:focus {
   background: #303336;
   color: #fff;
 }
+.presentation-demoVersion .btn:link {
+  text-decoration: none;
+}
 @media (max-width: 767px) {
   .presentation-demoVersion .btn {
     display: none;
@@ -1241,6 +1245,97 @@ button:focus {
 @media (max-width: 767px) {
   .content-32 {
     padding-bottom: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .content-32 .row {
+    margin-left: -20px;
+  }
+  .content-32 .container {
+    width: 940px;
+  }
+  .content-32 [class*="span"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 20px;
+  }
+  .content-32 .container,
+  .content-32 .navbar-static-top .container,
+  .content-32 .navbar-fixed-top .container,
+  .content-32 .navbar-fixed-bottom .container {
+    width: 940px;
+  }
+  .content-32 .span12 {
+    width: 940px;
+  }
+  .content-32 .span11 {
+    width: 860px;
+  }
+  .content-32 .span10 {
+    width: 780px;
+  }
+  .content-32 .span9 {
+    width: 700px;
+  }
+  .content-32 .span8 {
+    width: 620px;
+  }
+  .content-32 .span7 {
+    width: 540px;
+  }
+  .content-32 .span6 {
+    width: 460px;
+  }
+  .content-32 .span5 {
+    width: 380px;
+  }
+  .content-32 .span4 {
+    width: 300px;
+  }
+  .content-32 .span3 {
+    width: 220px;
+  }
+  .content-32 .span2 {
+    width: 140px;
+  }
+  .content-32 .span1 {
+    width: 60px;
+  }
+  .content-32 .offset12 {
+    margin-left: 980px;
+  }
+  .content-32 .offset11 {
+    margin-left: 900px;
+  }
+  .content-32 .offset10 {
+    margin-left: 820px;
+  }
+  .content-32 .offset9 {
+    margin-left: 740px;
+  }
+  .content-32 .offset8 {
+    margin-left: 660px;
+  }
+  .content-32 .offset7 {
+    margin-left: 580px;
+  }
+  .content-32 .offset6 {
+    margin-left: 500px;
+  }
+  .content-32 .offset5 {
+    margin-left: 420px;
+  }
+  .content-32 .offset4 {
+    margin-left: 340px;
+  }
+  .content-32 .offset3 {
+    margin-left: 260px;
+  }
+  .content-32 .offset2 {
+    margin-left: 180px;
+  }
+  .content-32 .offset1 {
+    margin-left: 100px;
   }
 }
 .content-32 h3 {
@@ -1325,7 +1420,6 @@ button:focus {
 }
 .content-32 .screenshots .screen {
   width: 25%;
-  float: left;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;

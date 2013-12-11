@@ -261,6 +261,33 @@ $(document).ready(function() {
             console.log(dragger, 'dragger');
         } 
     }
+    
+    var samplesGrid = $('#samples-grid');
+	// initialize
+	samplesGrid.masonry({
+	  itemSelector: '.screen'
+	});
+	
+	var scrollorama = $.superscrollorama({
+			triggerAtCenter: false,
+			playoutAnimations: true
+		});	
+			
+		
+	scrollorama.pin('#useful-components', 500, {
+		offset: 150,
+		onPin: function() {
+			this.el.css('right', 0);
+		},
+		anim: (new TimelineLite())
+	    .append(TweenMax.fromTo($('#useful-components-header'), 0.2, {css: {opacity: 0}, immediateRender: true}, {css:{opacity: 1}}))
+	    .append(TweenMax.fromTo($('#useful-components-features'), 0.2, {css: {opacity: 0}, immediateRender: true}, {css:{opacity: 1}}))	
+	});
+	scrollorama.addTween(
+		'#useful-components-features', 
+		TweenMax.fromTo($('#component-grid'), 0.2, {css: {opacity: 0}, immediateRender: true}, {css:{opacity: 1}}, 200),
+		0
+	);
 });
 
 function roundNum(num) {

@@ -560,6 +560,10 @@ html,
 body {
   height: 100%;
 }
+.disable-hover,
+.disable-hover * {
+  pointer-events: none !important;
+}
 a:hover,
 button:hover,
 a:focus,
@@ -1470,8 +1474,6 @@ button:focus {
 }
 .additional-slider .scroller {
   margin-top: 230px;
-  /*overflow:auto;*/
-
   height: 690px;
 }
 .additional-slider .scroller header {
@@ -1483,6 +1485,16 @@ button:focus {
 .additional-slider .scroller .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
   background: #d1d2d3;
   width: 5px;
+}
+.additional-slider .scroller .mCSB_container {
+  padding-bottom: 107px;
+}
+.additional-slider .scroller-bg {
+  background: url("../img/bottomSLider/text-gradient-white.png") 50% 100% repeat-x;
+  height: 107px;
+  position: relative;
+  z-index: 2;
+  margin-top: -107px;
 }
 @media (max-width: 1200px) {
   .additional-slider header,
@@ -1624,6 +1636,7 @@ button:focus {
   background-position: 0 -26px;
   transition: none;
   color: #696f6f;
+  cursor: pointer;
 }
 .additional-slider .container-slider-controls ul li a:hover,
 .additional-slider .container-slider-controls ul li afocus {
@@ -1638,9 +1651,12 @@ button:focus {
   background: none;
   padding-top: 0;
   height: auto;
+  width: auto;
   border-bottom: 1px dashed #696f6f;
 }
-.additional-slider .container-slider-controls ul.titles-on li.active a {
+.additional-slider .container-slider-controls ul.titles-on li .active,
+.additional-slider .container-slider-controls ul.titles-on li a:hover,
+.additional-slider .container-slider-controls ul.titles-on li a:focus {
   border-bottom: none;
   color: #303336;
 }
@@ -1706,7 +1722,7 @@ button:focus {
   border: none;
   border-radius: 0;
   height: 60px;
-  width: 40px;
+  width: 75px;
   display: block;
   border-bottom: 1px dashed #40454b;
   margin: 0;

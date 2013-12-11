@@ -560,6 +560,10 @@ html,
 body {
   height: 100%;
 }
+.disable-hover,
+.disable-hover * {
+  pointer-events: none !important;
+}
 a:hover,
 button:hover,
 a:focus,
@@ -750,7 +754,7 @@ button:focus {
   padding: 15px 0;
 }
 .presentation-header-sub .v-center h3 span {
-  font-weight: 800;
+  font-weight: 700;
 }
 .presentation-header-sub .v-center h2 {
   margin: 0;
@@ -762,7 +766,7 @@ button:focus {
   letter-spacing: -0.25px;
 }
 .presentation-header-sub .v-center h2 span {
-  font-weight: 800;
+  font-weight: 700;
   display: block;
 }
 .presentation-header-sub .v-center .button-place {
@@ -798,25 +802,51 @@ button:focus {
   font-weight: normal;
   color: #303336;
   font-family: 'proxima-nova', sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.6px;
 }
-.presentation-slide-block {
+.presentation-scroll-block {
+  position: relative;
+  z-index: 2;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 32px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+.presentation-scroll-block .container {
   padding-top: 110px;
   padding-bottom: 110px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 1063px;
+  width: auto;
 }
-.presentation-slide-block .right-block {
-  width: 2492px;
+.presentation-scroll-block .container .row {
+  height: 100%;
+  width: auto;
+}
+.presentation-scroll-block .right-block {
+  display: inline-block;
+  background-color: transparent;
+  z-index: 1;
   position: absolute;
+  padding-top: 46px;
 }
-.presentation-slide-block .presentation-controls {
+.presentation-scroll-block .presentation-controls {
   position: absolute;
+  z-index: 100;
+  width: 300px;
+  left: 0;
 }
-.presentation-slide-block .presentation-controls ul {
-  margin: 0;
-}
-.presentation-slide-block .presentation-controls ul li {
+.presentation-scroll-block .presentation-controls ul li {
   list-style: none;
+  cursor: pointer;
   width: 7px;
   height: 7px;
   border: 1px solid #505656;
@@ -828,21 +858,21 @@ button:focus {
   margin-right: 12px;
   display: inline-block;
 }
-.presentation-slide-block .presentation-controls ul li.active {
+.presentation-scroll-block .presentation-controls ul li.active {
   border: 1px solid #303336;
   background-color: #303336;
 }
-.presentation-slide-block h1 {
+.presentation-scroll-block h1 {
   font-size: 45px;
   font-weight: normal;
   color: #303336;
   font-family: 'proxima-nova', sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.6px;
   line-height: 52px;
   margin: 35px 0;
 }
-.presentation-slide-block p.lead {
+.presentation-scroll-block p.lead {
   font-size: 20px;
   color: #505656;
   font-family: 'proxima-nova', sans-serif;
@@ -851,22 +881,22 @@ button:focus {
   line-height: 36px;
   margin: 0;
 }
-.presentation-slide-block .features {
+.presentation-scroll-block .features {
   margin: 28px 0 0 0;
 }
-.presentation-slide-block .features .item {
+.presentation-scroll-block .features .item {
   margin: 46px 0 0 0;
 }
-.presentation-slide-block .features .item h3 {
+.presentation-scroll-block .features .item h3 {
   margin: 35px 0 0 0;
   font-size: 20px;
   font-weight: normal;
   color: #303336;
   font-family: 'proxima-nova', sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.2px;
 }
-.presentation-slide-block .features .item p {
+.presentation-scroll-block .features .item p {
   font-size: 16px;
   color: #505656;
   font-family: 'proxima-nova', sans-serif;
@@ -875,8 +905,24 @@ button:focus {
   line-height: 26px;
   margin: 24px 0 0 0;
 }
-.presentation-slide-block.sb-1 {
-  background: url("../img/slideBlock/bg-1.png") repeat 0 0;
+.presentation-scroll-block.sb-1 {
+  background: url("../img/scrollBlock/scroll-block-1-bg.png") repeat 0 0;
+}
+.presentation-scroll-block.sb-1 .right-block {
+  width: 2490px;
+  height: 899px;
+  background: url('../img/scrollBlock/img-block-1.png') no-repeat left 28px;
+  margin-left: -80px;
+}
+.presentation-scroll-block.sb-2 .right-block {
+  width: 2560px;
+  height: 1063px;
+  background: url('../img/scrollBlock/img-block-2.png') no-repeat left top;
+  margin: 0;
+  left: 0;
+  top: 0;
+  padding: 0;
+  z-index: -1;
 }
 .presentation-componentsSamples {
   position: relative;
@@ -999,7 +1045,7 @@ button:focus {
   height: 106px;
   font-size: 46px;
   line-height: 106px;
-  font-weight: 800;
+  font-weight: 700;
   position: absolute;
   top: 304px;
   left: 50%;
@@ -1094,7 +1140,7 @@ button:focus {
   color: #303336;
   line-height: 52px;
   margin: 0;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -3px;
   font-family: 'proxima-nova', sans-serif;
 }
@@ -1448,8 +1494,6 @@ button:focus {
 }
 .additional-slider .scroller {
   margin-top: 230px;
-  /*overflow:auto;*/
-
   height: 690px;
 }
 .additional-slider .scroller header {
@@ -1461,6 +1505,16 @@ button:focus {
 .additional-slider .scroller .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
   background: #d1d2d3;
   width: 5px;
+}
+.additional-slider .scroller .mCSB_container {
+  padding-bottom: 107px;
+}
+.additional-slider .scroller-bg {
+  background: url("../img/bottomSLider/text-gradient-white.png") 50% 100% repeat-x;
+  height: 107px;
+  position: relative;
+  z-index: 2;
+  margin-top: -107px;
 }
 @media (max-width: 1200px) {
   .additional-slider header,
@@ -1602,6 +1656,7 @@ button:focus {
   background-position: 0 -26px;
   transition: none;
   color: #696f6f;
+  cursor: pointer;
 }
 .additional-slider .container-slider-controls ul li a:hover,
 .additional-slider .container-slider-controls ul li afocus {
@@ -1616,9 +1671,12 @@ button:focus {
   background: none;
   padding-top: 0;
   height: auto;
+  width: auto;
   border-bottom: 1px dashed #696f6f;
 }
-.additional-slider .container-slider-controls ul.titles-on li.active a {
+.additional-slider .container-slider-controls ul.titles-on li .active,
+.additional-slider .container-slider-controls ul.titles-on li a:hover,
+.additional-slider .container-slider-controls ul.titles-on li a:focus {
   border-bottom: none;
   color: #303336;
 }
@@ -1684,7 +1742,7 @@ button:focus {
   border: none;
   border-radius: 0;
   height: 60px;
-  width: 40px;
+  width: 75px;
   display: block;
   border-bottom: 1px dashed #40454b;
   margin: 0;

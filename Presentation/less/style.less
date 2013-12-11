@@ -13,7 +13,12 @@
 
 html,
 body {
-  height: 100%;
+  height: 100%;  
+}
+
+.disable-hover,
+.disable-hover * {
+  pointer-events: none !important;
 }
 
 a, button {
@@ -151,7 +156,7 @@ a, button {
       font-family: @proxima;
       font-weight: 300;
       span {
-        font-weight: 800;
+        font-weight: 700;
       }
       text-align: right;
       padding: 15px 0;
@@ -162,7 +167,7 @@ a, button {
       font-family: @proxima;
       font-weight: 300;
       span {
-        font-weight: 800;
+        font-weight: 700;
         display: block;
       }
       letter-spacing: -0.25px;
@@ -197,26 +202,50 @@ a, button {
   h3 {
     .font(30px, #303336);
     font-family: @proxima;
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: -0.6px;
 
   }
 }
 
-.presentation-slide-block {
-  padding-top: 110px;
-  padding-bottom: 110px;
+.presentation-scroll-block {
+  position:relative;
+  z-index:2;
+  padding-top:0;
+  padding-bottom:0;
+  margin-bottom:32px;
+  .box-sizing(border-box);
+  .container{   
+    padding-top: 110px;
+    padding-bottom: 110px;
+    .box-sizing(border-box);
+    height:1063px;
+    width:auto;
+    .row{
+      height:100%;
+      width:auto;
+    }
+  }  
+  width:100%;
+  overflow-x:hidden;
+  overflow-y:visible;
   .right-block {
-    width: 2492px;
-    position: absolute;
-
+    display:inline-block;
+    background-color:transparent;
+    z-index:1;    
+    position:absolute;
+    padding-top:46px;
   }
   .presentation-controls {
     position: absolute;
+    z-index:100;
+    width:300px;
+    left:0;
     ul {
-      margin: 0;
+      
       li {
         list-style: none;
+        cursor:pointer;
         width: 7px;
         height: 7px;
         border: 1px solid #505656;
@@ -234,7 +263,7 @@ a, button {
   h1 {
     .font(45px, #303336);
     font-family: @proxima;
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: -0.6px;
     .line-height(52px);
     margin: 35px 0;
@@ -257,7 +286,7 @@ a, button {
         margin: 35px 0 0 0;
         .font(20px, #303336);
         font-family: @proxima;
-        font-weight: 800;
+        font-weight: 700;
         letter-spacing: -0.2px;
       }
 
@@ -276,7 +305,27 @@ a, button {
 
 
 &.sb-1 {
-  background: url("../img/slideBlock/bg-1.png") repeat 0 0;
+  background: url("../img/scrollBlock/scroll-block-1-bg.png") repeat 0 0;
+  .right-block{
+    width:2490px;
+    height:899px;
+    background:url('../img/scrollBlock/img-block-1.png') no-repeat left 28px;
+    margin-left:-80px;
+  }
+}
+
+&.sb-2 {
+ 
+   .right-block{
+     width:2560px;
+     height:1063px;
+     background:url('../img/scrollBlock/img-block-2.png') no-repeat left top;
+     margin:0;
+     left:0;
+     top:0;
+     padding:0;
+     z-index:-1;
+   }
 }
 
   }
@@ -398,7 +447,7 @@ a, button {
     height: 106px;
     font-size: 46px;
     line-height: 106px;
-    font-weight: 800;
+    font-weight: 700;
     position: absolute;
     top: 304px;
     left: 50%;
@@ -487,7 +536,7 @@ a, button {
       color: #303336;
       line-height: 52px;
       margin: 0;
-      font-weight: 800;
+      font-weight: 700;
       letter-spacing: -3px;
       font-family: @proxima;
       @media (max-width: 767px) {
@@ -785,7 +834,6 @@ a, button {
   }
   .scroller{
     margin-top:230px;
-    /*overflow:auto;*/
     height:690px;
     header{
       padding-top:0;
@@ -801,6 +849,16 @@ a, button {
         }
       }
     }
+    .mCSB_container{
+      padding-bottom:107px;
+    }
+  }
+  .scroller-bg{
+    background:url("../img/bottomSLider/text-gradient-white.png") 50% 100% repeat-x;
+    height:107px;
+    position:relative;
+    z-index:2;
+    margin-top:-107px;
   }
   @media (max-width:1200px) {
     header, .scroller{
@@ -934,6 +992,7 @@ a, button {
           background-position:0 -26px;
           transition:none;
           color:#696f6f;
+          cursor:pointer;
           &:hover,&focus{
             background-position:0 -13px;
           }
@@ -948,9 +1007,10 @@ a, button {
             background:none;
             padding-top:0;
             height:auto;
+            width:auto;
             border-bottom:1px dashed #696f6f;
           }
-          &.active a{
+          .active,a:hover,a:focus{
             border-bottom:none;
             color:#303336;
           }
@@ -1019,7 +1079,7 @@ a, button {
       border:none;
       border-radius:0;
       height:60px;
-      width:40px;
+      width:75px;
       display:block;
       border-bottom:1px dashed #40454b;
       margin:0;
@@ -1231,3 +1291,4 @@ a, button {
     }
   }
 }
+

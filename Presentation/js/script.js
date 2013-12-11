@@ -256,10 +256,6 @@ $(document).ready(function() {
                 
             }
         });
-
-        if (dragger.length > 0) {
-            console.log(dragger, 'dragger');
-        } 
     }
     
     var samplesGrid = $('#samples-grid');

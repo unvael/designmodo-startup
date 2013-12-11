@@ -796,6 +796,9 @@ button:focus {
 .presentation-simple-block {
   padding-top: 150px;
   padding-bottom: 150px;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
 }
 .presentation-simple-block h3 {
   font-size: 30px;
@@ -1551,11 +1554,13 @@ button:focus {
   padding: 0;
 }
 .additional-slider .background-img {
-  width: 1638px;
+  width: 100%;
   position: absolute;
   z-index: 0;
   top: 0;
   background-color: #d5e3e0;
+  background-position: 100% 0;
+  background-repeat: no-repeat;
 }
 .additional-slider .background-img .sub-slider-ctrl {
   position: absolute;
@@ -1599,6 +1604,8 @@ button:focus {
     height: 218px;
     right: 0;
     margin-right: -130px;
+    padding-left: 130px;
+    padding-right: 130px;
   }
   .additional-slider .container-slider .bxslider li {
     min-height: 0;

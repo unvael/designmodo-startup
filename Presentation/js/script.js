@@ -94,10 +94,6 @@ var player = $f(iframe);
             enable: Boolean
           },
           autoDraggerLength: true,
-          advanced:{
-            updateOnBrowserResize: true,
-            updateOnContentResize: true
-          },
           contentTouchScroll:true
         });
 

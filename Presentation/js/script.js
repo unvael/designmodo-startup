@@ -122,6 +122,57 @@ var player = $f(iframe);
         });
 
     }
+
+    var qtyField = $('#edit-qty');
+
+    if (qtyField.length > 0) {
+        qtyField.data('prevVal', 1);
+        qtyField.val(1);
+
+        var qtyFieldChange = function () {
+            var theVal = qtyField.val();
+            console.log('theVal', theVal);
+            if (theVal > 25 || theVal < 1) {
+                qtyField.val(qtyField.data('prevVal'));
+            } else {
+                qtyField.data('prevVal', theVal);
+            }
+        };
+
+        // qtyField.change(qtyFieldChange);
+        qtyField.keyup(qtyFieldChange);
+
+        var xmod = 1;
+        var ymod = 1;
+        var modStep = 20; // step by PX
+
+        var dragger = qtyField.draggable({
+            cancel: false,
+            scroll: false,
+            revert: true,
+            revertDuration: 0,
+            drag: function(event, ui) {
+                var pos = ui.position;
+
+                if (pos.left < modStep && pos.left > -1*modStep) {
+                    xmod = 1;
+                } else if ((pos.left > (modStep * xmod) && pos.left < modStep * (xmod + 1)))  {
+                    xmod++;
+                    qtyField.val(parseInt(qtyField.val()) + 1);
+                    qtyFieldChange();
+                } else if(pos.left < -1*(modStep * xmod) && pos.left < -1*(modStep * (xmod + 1))) {
+                    xmod++;
+                    qtyField.val(parseInt(qtyField.val()) - 1);
+                    qtyFieldChange();
+                }
+                
+            }
+        });
+
+        if (dragger.length > 0) {
+            console.log(dragger, 'dragger');
+        } 
+    }
 });
 
 function roundNum(num) {

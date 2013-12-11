@@ -105,19 +105,22 @@ var player = $f(iframe);
 
         ctrlTrigger.hover(function () {
           sliderList.addClass('titles-on');
-        }, function () {
-          sliderList.removeClass('titles-on');
         });
+
+        bottomSliderCtrl.mouseleave(function () {
+            sliderList.removeClass('titles-on');
+        });
+
         var scrollers = $(".scroller").mCustomScrollbar({
           scrollButtons:{
-            enable: Boolean
+            enable: false
           },
           autoDraggerLength: true,
-          advanced:{
+          contentTouchScroll: true,
+          advanced: {
             updateOnBrowserResize: true,
             updateOnContentResize: true
-          },
-          contentTouchScroll:true
+          }
         });
 
         var bottomSubSlider = $('.additional-slider .sub-slider:first').bxSlider({
@@ -133,7 +136,8 @@ var player = $f(iframe);
           'pagerCustom': '.additional-slider .container-slider-controls ul',
           'mode': 'horizontal',
           'easing': 'ease-in-out',
-          'adaptiveHeight': true
+          'adaptiveHeight': true,
+          'preventDefaultSwipeX': false
         });
 
     }

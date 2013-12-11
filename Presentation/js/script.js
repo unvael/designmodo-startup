@@ -183,7 +183,7 @@ $(document).ready(function() {
         
         var scrollers = $(".scroller").mCustomScrollbar({
             scrollButtons : {
-                enable : Boolean
+                enable : true
             },
             autoDraggerLength : true,
             advanced : {

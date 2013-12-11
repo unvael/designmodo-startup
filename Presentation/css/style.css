@@ -560,6 +560,10 @@ html,
 body {
   height: 100%;
 }
+.disable-hover,
+.disable-hover * {
+  pointer-events: none !important;
+}
 a:hover,
 button:hover,
 a:focus,

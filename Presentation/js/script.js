@@ -237,13 +237,13 @@ $(document).ready(function() {
             drag: function(event, ui) {
                 var pos = ui.position;
 
-                if (pos.left < modStep && pos.left > -1*modStep) {
+                if (pos.left < modStep && pos.left > -1*modStep && pos.top < modStep && pos.top > -1*modStep) {
                     xmod = 1;
-                } else if ((pos.left > (modStep * xmod) && pos.left < modStep * (xmod + 1)))  {
+                } else if ((pos.left > (modStep * xmod) && pos.left < modStep * (xmod + 1)) || (pos.top < -1*(modStep * xmod) && pos.top < -1*(modStep * (xmod + 1))))  {
                     xmod++;
                     qtyField.val(parseInt(qtyField.val()) + 1);
                     qtyFieldChange();
-                } else if(pos.left < -1*(modStep * xmod) && pos.left < -1*(modStep * (xmod + 1))) {
+                } else if(pos.left < -1*(modStep * xmod) && pos.left < -1*(modStep * (xmod + 1)) || (pos.top > (modStep * xmod) && pos.top < modStep * (xmod + 1))) {
                     xmod++;
                     qtyField.val(parseInt(qtyField.val()) - 1);
                     qtyFieldChange();

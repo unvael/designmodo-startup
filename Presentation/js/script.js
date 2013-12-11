@@ -173,11 +173,14 @@ $(document).ready(function() {
         var sliderItems = $('li', sliderList);
         var sliderAmount = sliderItems.length;
 
-        ctrlTrigger.hover(function() {
-            sliderList.addClass('titles-on');
-        }, function() {
+        ctrlTrigger.hover(function () {
+          sliderList.addClass('titles-on');
+        });
+
+        bottomSliderCtrl.mouseleave(function () {
             sliderList.removeClass('titles-on');
         });
+        
         var scrollers = $(".scroller").mCustomScrollbar({
             scrollButtons : {
                 enable : Boolean

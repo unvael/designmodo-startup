@@ -216,6 +216,7 @@ a, button {
     padding-top: 110px;
     padding-bottom: 110px;
     .box-sizing(border-box);
+    height:1063px;
     width:auto;
     .row{
       height:100%;
@@ -228,8 +229,7 @@ a, button {
   .right-block {
     display:inline-block;
     background-color:transparent;
-    z-index:1;
-    width: 2492px;
+    z-index:1;    
     position:absolute;
     padding-top:46px;
   }
@@ -242,6 +242,7 @@ a, button {
       
       li {
         list-style: none;
+        cursor:pointer;
         width: 7px;
         height: 7px;
         border: 1px solid #505656;
@@ -302,6 +303,12 @@ a, button {
 
 &.sb-1 {
   background: url("../img/scrollBlock/scroll-block-1-bg.png") repeat 0 0;
+  .right-block{
+    width:2490px;
+    height:899px;
+    background:url('../img/scrollBlock/img-block-1.png') no-repeat left 28px;
+    margin-left:-80px;
+  }
 }
 
   }

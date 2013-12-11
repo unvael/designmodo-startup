@@ -276,20 +276,45 @@ $(document).ready(function() {
 			triggerAtCenter: false,
 			playoutAnimations: true
 		});	
+			
 		
-		
-var pinAnimations = new TimelineLite();
-    pinAnimations
-        .append([
-            TweenMax.to($('#slide-a1'), 1.5, {css:{right:'+=2200px', ease:Bounce.easeOut}, delay:0.2}),
-        ]);		
-		
-	scrollorama.pin('#useful-components', 1000, {
+	scrollorama.pin('#useful-components', 500, {
 		offset: 150,
 		onPin: function() {
 			this.el.css('right', 0);
-		} 
+		},
+		anim: (new TimelineLite())
+	    .append(TweenMax.fromTo($('#useful-components-header'), 0.2, {css: {opacity: 0}, immediateRender: true}, {css:{opacity: 1}}))
+	    .append(TweenMax.fromTo($('#useful-components-features'), 0.2, {css: {opacity: 0}, immediateRender: true}, {css:{opacity: 1}}))	
 	});
+	scrollorama.addTween(
+		'#useful-components-features', 
+		TweenMax.fromTo($('#component-grid'), 0.2, {css: {opacity: 0}, immediateRender: true}, {css:{opacity: 1}}, 200),
+		0
+	);
+	
+	if (Modernizr.touch) {
+			var scrollPos = 0;
+			// using iScroll but deacting -webkit-transform because pin wouldn't work becasue of a webkit bug: https://code.google.com/p/chromium/issues/detail?id=20574
+			var myScroll = new iScroll('viewport-wrapper', {vScrollbar: true, hScroll: false, vScroll: true, bounce: false, useTransform: false, useTransition: false});
+			function animationLoop () {
+					// make sure to have the requestAnimationFrame polyfill by Paul Irish: https://gist.github.com/paulirish/1579671
+					window.requestAnimationFrame(animationLoop);
+					if (myScroll.y != scrollPos) { // if position has changed
+							scrollPos = myScroll.y;
+							// udate scrollcontainer position
+							controller.setScrollContainerOffset(0, -myScroll.y);
+							// force an immediate update
+							controller.triggerCheckAnim(true);
+					}
+			}
+			// when deactivating transform in iScroll (useTransform:false) requestAnimationFrame is not triggered during touchmove
+			$("#viewport-wrapper").get(0).addEventListener("touchmove", function() {
+					animationLoop ();
+			});
+			
+			animationLoop ();
+	}
 	
 });
 

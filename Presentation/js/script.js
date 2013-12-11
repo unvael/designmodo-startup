@@ -91,10 +91,14 @@ var player = $f(iframe);
         });
         var scrollers = $(".scroller").mCustomScrollbar({
           scrollButtons:{
-            enable: Boolean
+            enable: false
           },
           autoDraggerLength: true,
-          contentTouchScroll:true
+          contentTouchScroll: true,
+          advanced: {
+            updateOnBrowserResize: true,
+            updateOnContentResize: true
+          }
         });
 
         var bottomSubSlider = $('.additional-slider .sub-slider:first').bxSlider({
@@ -110,7 +114,8 @@ var player = $f(iframe);
           'pagerCustom': '.additional-slider .container-slider-controls ul',
           'mode': 'horizontal',
           'easing': 'ease-in-out',
-          'adaptiveHeight': true
+          'adaptiveHeight': true,
+          'preventDefaultSwipeX': false
         });
 
     }

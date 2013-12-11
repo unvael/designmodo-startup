@@ -51,9 +51,9 @@ $(document).ready(function() {
         if (parts % 1 > 0)
             parts = parts - (parts % 1) + 1;
 
-        $('.presentation-controls ul', scrollBlock).html('');
+        scrollBlock.find('.presentation-controls ul').html('');
         for (var i = 1; i <= parts; i++) {
-            $('.presentation-controls ul', scrollBlock).append('<li data-part=' + i + '></li>');
+            scrollBlock.find('.presentation-controls ul').append('<li data-part=' + i + '></li>');
         }
 
         var partWidth = sbWidth / parts;
@@ -73,7 +73,8 @@ $(document).ready(function() {
                 if (scrollBlock.scrollLeft() == startPoint(i)) {
                     $('li', scrollBlock).removeClass('active');
                     $('li[data-part="' + i + '"]', scrollBlock).addClass('active');
-                    $('.presentation-controls', scrollBlock).css('left', scrollBlock.scrollLeft());
+                   
+                    scrollBlock.find('.presentation-controls', scrollBlock).css('left', scrollBlock.scrollLeft());
                 }
             }
         };
@@ -86,18 +87,17 @@ $(document).ready(function() {
             var part = $(this).attr('data-part');
             scrollBlock.animate({
                 scrollLeft : startPoint(part)
-            }, 800);
+            }, 'slow');
 
         });
 
-        $(window).on("mousewheel", function(e, d) {
-            console.log( test = e);
+        $(window).on("mousewheel", function(e, d) {            
             if ($(window).width() > 900) {
                 if ($(window).scrollTop() >= topPosition && $(window).scrollTop() <= bottomPosition) {
                     $(window).scrollTop(topPosition);
                     e.preventDefault();                    
                     if (d < 0) {
-                        if ($('li.active', scrollBlock).attr('data-part') == $('li:last-child', scrollBlock).attr('data-part')) {
+                        if (scrollBlock.find('li.active').attr('data-part') == scrollBlock.find('li:last-child').attr('data-part')) {
                             $(window).scrollTop(bottomPosition+1);
                         } else {
                             $(window).scrollTop(topPosition);
@@ -120,8 +120,10 @@ $(document).ready(function() {
     };
 
     presentationScrollBlock('scrollBlock-1');
+    presentationScrollBlock('scrollBlock-2');
     $(window).resize(function() {
         presentationScrollBlock('scrollBlock-1');
+        presentationScrollBlock('scrollBlock-2');
     });
 
     var dof = $('.presentation-componentsSamples-inner');

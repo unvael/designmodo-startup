@@ -1,6 +1,25 @@
 $(document).ready(function () {
 
 
+//disable hover effects while scrolling
+var disableHoverEffects = function() {
+	var body = document.body,
+		timer;
+
+	window.addEventListener('scroll', function() {
+	  clearTimeout(timer);
+	  if(!body.classList.contains('disable-hover')) {
+		body.classList.add('disable-hover')
+	  }
+  
+	  timer = setTimeout(function(){
+		body.classList.remove('disable-hover')
+	  },500);
+	}, false);
+}
+disableHoverEffects();
+
+
 
 var iframe = $('#pPlayer')[0];
 var player = $f(iframe);

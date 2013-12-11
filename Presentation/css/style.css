@@ -691,9 +691,6 @@ button:focus {
   opacity: 0.15;
   filter: alpha(opacity=15);
 }
-.presentation-header-sub .background video {
-  height: auto !important;
-}
 .presentation-header-sub .v-center {
   height: 100%;
 }

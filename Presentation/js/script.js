@@ -26,13 +26,19 @@ $(document).ready(function() {
         });
     });
 
+
     var videobackground = new $.backgroundVideo($('#bgVideo'), {
         "align" : "centerXY",
         "path" : "video/",
-        "height" : "auto",
-        "width" : "100%",
+        "width": 1280,
+        "height": 720,
         "filename" : "preview",
         "types" : ["mp4", "ogg", "webm"]
+    });
+
+    $('.presentation-header-sub').height($(window).height());
+    $(window).resize(function(){
+        $('.presentation-header-sub').height($(window).height());
     });
 
     var presentationScrollBlock = function(id) {

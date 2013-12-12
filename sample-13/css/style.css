@@ -666,6 +666,7 @@ section * {
   font-weight: normal;
   color: #7f8c8d;
   text-transform: none;
+  font-weight: 500;
 }
 .header-7-sub h1,
 .header-7-sub .h1,
@@ -813,6 +814,7 @@ section * {
   font-weight: normal;
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
 .header-7-sub .brand img:first-child {
   float: left;
@@ -907,6 +909,7 @@ section * {
   font-size: 18px;
   font-weight: normal;
   color: #ffffff;
+  font-weight: 500;
 }
 .header-7-sub .h-7-section-1 .box:first-child {
   margin-left: 0;
@@ -1100,7 +1103,7 @@ section * {
 }
 .header-7-sub .h-7-section-5 .lead {
   color: rgba(44, 62, 80, 0.55);
-  margin-bottom: 60px;
+  margin-bottom: 58px;
 }
 .header-7-sub .h-7-section-5 .additional-links {
   font-size: 12px;

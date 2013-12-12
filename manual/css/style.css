@@ -10133,6 +10133,11 @@ body {
   color: #ffffff;
   font-weight: 500;
 }
+@media (max-width: 767px) {
+  .mcontent .header-14-sub .hero-unit h1 {
+    text-align: center;
+  }
+}
 .mcontent .header-14-sub .hero-unit p {
   margin: 0;
   font-size: 13px;

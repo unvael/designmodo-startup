@@ -3610,6 +3610,7 @@ body {
   font-weight: normal;
   color: #34495e;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
 @media (max-width: 767px) {
   .mcontent .content-14 h3 {
@@ -5023,6 +5024,7 @@ body {
     font-weight: normal;
     color: #ffffff;
     font-weight: 600;
+    line-height: 33px;
   }
 }
 .mcontent .content-23 .hero-unit.hero-unit-bordered h1 {

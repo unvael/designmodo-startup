@@ -838,6 +838,51 @@ startupKit.uiKitContent.content31 = function() {
     })($('.content-31'));
 };
 
+/* Content 32*/
+startupKit.uiKitContent.content32 = function() {}
+
+/* Content 33*/
+startupKit.uiKitContent.content33 = function() {}
+
+/* Content 34*/
+startupKit.uiKitContent.content34 = function() {
+    $(window).resize(function() {
+        var maxH = 0;
+        $('.content-34 section').each(function() {
+            var h = $(this).outerHeight();
+            if (h > maxH)
+                maxH = h;
+        });
+        $('.content-34 .page-transitions').css('height', maxH + 'px');
+        var ctrlsHeight = $('.content-34 .pt-controls').height();
+        $('.content-34 .pt-controls').css('margin-top', (-1) * (maxH) / 2 - ctrlsHeight + 'px');
+        $('.content-34 .pt-controls').css('padding-bottom', (maxH) / 2 + ctrlsHeight + 'px');
+    });
+    // PageTransitions
+    var pt = PageTransitions();
+    pt.init('#content-34-pt-main');
+    $('.content-34 .pt-controls .pt-indicators > *').on('click', function() {
+        if ($(this).hasClass('active'))
+            return false;
+        var curPage = $(this).parent().children('.active').index();
+        var nextPage = $(this).index();
+        var ani = 5;
+        if (curPage < nextPage) {
+            ani = 6;
+        }
+        pt.gotoPage(ani, nextPage);
+        $(this).addClass('active').parent().children().not(this).removeClass('active');        
+        return false;
+    });
+}
+
+/* Content 35*/
+startupKit.uiKitContent.content35 = function() {}
+
+/* Content 36*/
+startupKit.uiKitContent.content36 = function() {}
+
+
 /**
  * Blogs 
  */

@@ -1238,6 +1238,9 @@ body > section {
   padding-top: 115px;
   padding-bottom: 115px;
 }
+.price-1 .plan .btn {
+  background-color: #e74c3c;
+}
 .price-1 > .container > h3 {
   text-align: center;
   font-size: 35px;
@@ -1253,5 +1256,5 @@ body > section {
   margin: 0 0 20px;
 }
 .price-1 > .container .plans {
-  margin-top: 40px;
+  margin-top: 63px;
 }

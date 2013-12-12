@@ -855,6 +855,11 @@ section * {
   margin: 0 auto 95px;
   text-align: center;
 }
+@media (max-width: 767px) {
+  .content-18 .carousel:before {
+    margin-bottom: 45px;
+  }
+}
 .content-18 .carousel .quote-text {
   max-width: 620px;
   margin: 0 auto;
@@ -1056,7 +1061,7 @@ section * {
 }
 .content-27 .btns > * {
   display: inline-block;
-  margin-left: 40px;
+  margin-left: 32px;
   vertical-align: middle;
 }
 .content-27 .btns > *:first-child {

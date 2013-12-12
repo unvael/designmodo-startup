@@ -2184,6 +2184,11 @@ section * {
   margin: 0 auto 95px;
   text-align: center;
 }
+@media (max-width: 767px) {
+  .content-18 .carousel:before {
+    margin-bottom: 45px;
+  }
+}
 .content-18 .carousel .quote-text {
   max-width: 620px;
   margin: 0 auto;
@@ -2833,7 +2838,7 @@ section * {
     border-bottom-left-radius: 6px;
   }
   .content-21 .features.features-tabs .features-body {
-    padding: 60px 50px 60px 50px;
+    padding: 60px 20px 60px 20px;
   }
 }
 .content-22 {
@@ -3468,7 +3473,7 @@ section * {
 }
 .content-27 .btns > * {
   display: inline-block;
-  margin-left: 40px;
+  margin-left: 32px;
   vertical-align: middle;
 }
 .content-27 .btns > *:first-child {
@@ -3874,9 +3879,33 @@ section * {
 }
 .content-31 .container .pt-controls {
   position: absolute;
-  bottom: 90px;
   left: 0;
   right: 0;
+}
+@media (min-width: 1200px) {
+  .content-31 .container .pt-controls {
+    bottom: 120px;
+  }
+}
+@media (min-width: 723px) and (max-width: 1200px) {
+  .content-31 .container .pt-controls {
+    bottom: 90px;
+  }
+}
+@media (min-width: 643px) and (max-width: 722px) {
+  .content-31 .container .pt-controls {
+    bottom: 120px;
+  }
+}
+@media (min-width: 611px) and (max-width: 642px) {
+  .content-31 .container .pt-controls {
+    bottom: 80px;
+  }
+}
+@media (min-width: 400px) and (max-width: 611px) {
+  .content-31 .container .pt-controls {
+    bottom: 120px;
+  }
 }
 .content-31 .container .pt-controls > * {
   position: relative;

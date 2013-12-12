@@ -907,7 +907,7 @@ section * {
   font-size: 12px;
   font-weight: normal;
   color: #ffffff;
-  font-weight: 400;
+  font-weight: 500;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 4px;
 }
@@ -1063,6 +1063,7 @@ section * {
 }
 .footer-14 a {
   color: #95a5a6;
+  font-weight: 500;
 }
 .footer-14 a:hover,
 .footer-14 a:focus,

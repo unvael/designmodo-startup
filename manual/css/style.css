@@ -4031,6 +4031,11 @@ body {
   margin: 0 auto 95px;
   text-align: center;
 }
+@media (max-width: 767px) {
+  .mcontent .content-18 .carousel:before {
+    margin-bottom: 45px;
+  }
+}
 .mcontent .content-18 .carousel .quote-text {
   max-width: 620px;
   margin: 0 auto;
@@ -4677,7 +4682,7 @@ body {
     border-bottom-left-radius: 6px;
   }
   .mcontent .content-21 .features.features-tabs .features-body {
-    padding: 60px 50px 60px 50px;
+    padding: 60px 20px 60px 20px;
   }
 }
 .mcontent .content-22 {
@@ -5312,7 +5317,7 @@ body {
 }
 .mcontent .content-27 .btns > * {
   display: inline-block;
-  margin-left: 40px;
+  margin-left: 32px;
   vertical-align: middle;
 }
 .mcontent .content-27 .btns > *:first-child {
@@ -5718,9 +5723,33 @@ body {
 }
 .mcontent .content-31 .container .pt-controls {
   position: absolute;
-  bottom: 90px;
   left: 0;
   right: 0;
+}
+@media (min-width: 1200px) {
+  .mcontent .content-31 .container .pt-controls {
+    bottom: 120px;
+  }
+}
+@media (min-width: 723px) and (max-width: 1200px) {
+  .mcontent .content-31 .container .pt-controls {
+    bottom: 90px;
+  }
+}
+@media (min-width: 643px) and (max-width: 722px) {
+  .mcontent .content-31 .container .pt-controls {
+    bottom: 120px;
+  }
+}
+@media (min-width: 611px) and (max-width: 642px) {
+  .mcontent .content-31 .container .pt-controls {
+    bottom: 80px;
+  }
+}
+@media (min-width: 400px) and (max-width: 611px) {
+  .mcontent .content-31 .container .pt-controls {
+    bottom: 120px;
+  }
 }
 .mcontent .content-31 .container .pt-controls > * {
   position: relative;
@@ -9162,12 +9191,14 @@ body {
     font-weight: normal;
     color: #ffffff;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
   }
   .mcontent .header-10-sub .hero-unit p {
     font-size: 22px;
     font-weight: normal;
     color: #bdc3c7;
     line-height: 35px;
+    font-weight: 300;
   }
 }
 .mcontent .header-10-sub .hero-unit.hero-unit-bordered h1 {
@@ -9186,6 +9217,7 @@ body {
     font-size: 22px;
     font-weight: normal;
     color: #ffffff;
+    font-weight: 500;
   }
 }
 @media (max-width: 480px) {
@@ -10432,7 +10464,7 @@ body {
   font-size: 12px;
   font-weight: normal;
   color: #ffffff;
-  font-weight: 400;
+  font-weight: 500;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 4px;
 }
@@ -11912,6 +11944,11 @@ body {
   opacity: 0;
   filter: alpha(opacity=0);
 }
+@media (max-width: 767px) {
+  .mcontent .header-19 .navbar {
+    top: 90px;
+  }
+}
 .mcontent .header-19 .navbar .navbar-inner {
   background: none;
 }
@@ -12078,8 +12115,17 @@ body {
   transition: left 0.4s;
 }
 .mcontent .header-19 .nav-visible.navbar .nav-collapse {
-  left: 28%!important;
+  left: 50%!important;
   visibility: visible;
+}
+@media (max-width: 400px) {
+  .mcontent .header-19 .nav-visible.navbar .nav-collapse {
+    left: 0 !important;
+    width: 100%;
+  }
+}
+.mcontent .nav-visible body > .header-19-sub {
+  left: -50%;
 }
 .mcontent .header-19-sub {
   padding-top: 340px;
@@ -12087,6 +12133,11 @@ body {
   background: #ebedee;
   overflow: hidden;
   position: relative;
+}
+@media (max-width: 767px) {
+  .mcontent .header-19-sub {
+    padding-top: 255px;
+  }
 }
 .mcontent .header-19-sub > img {
   position: absolute;
@@ -12192,7 +12243,7 @@ body {
 }
 @media (max-width: 480px) {
   .mcontent .header-19-sub {
-    padding-top: 190px;
+    padding-top: 255px;
     padding-bottom: 100px;
   }
   .mcontent .header-19-sub h1 {
@@ -13580,7 +13631,7 @@ body {
 }
 .mcontent .price-2 .plans .description b {
   color: #7f8c8d;
-  font-weight: 700;
+  font-weight: 500;
 }
 .mcontent .price-2 .plans .description .description-box {
   text-align: left;
@@ -13684,6 +13735,7 @@ body {
 }
 .mcontent .price-3 .plan b {
   color: #7f8c8d;
+  font-weight: 500;
 }
 .mcontent .price-3 .plan .title {
   color: #2c3e50;
@@ -13759,6 +13811,7 @@ body {
 }
 .mcontent .price-4 .plan .description b {
   color: #7f8c8d;
+  font-weight: 500;
 }
 .mcontent .price-4 .plan .description .description-box {
   padding: 16px 0;
@@ -13870,7 +13923,7 @@ body {
   color: #fff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 3px;
   white-space: nowrap;
 }
@@ -16711,6 +16764,7 @@ body {
 }
 .mcontent .footer-14 a {
   color: #95a5a6;
+  font-weight: 500;
 }
 .mcontent .footer-14 a:hover,
 .mcontent .footer-14 a:focus,

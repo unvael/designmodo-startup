@@ -1310,7 +1310,7 @@ section * {
 }
 .footer-7 a {
   color: #bdc3c7;
-  font-weight: normal;
+  font-weight: 500;
 }
 .footer-7 a:hover,
 .footer-7 a:focus,
@@ -1331,6 +1331,7 @@ section * {
   font-size: 14px;
   font-weight: normal;
   color: inherit;
+  font-weight: 500;
 }
 @media (max-width: 767px) {
   .footer-7 nav ul li {
@@ -1338,6 +1339,7 @@ section * {
     font-size: 12px;
     font-weight: normal;
     color: inherit;
+    font-weight: 500;
   }
 }
 .footer-7 nav ul li .scroll-top {

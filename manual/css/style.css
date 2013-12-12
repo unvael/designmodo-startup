@@ -15640,7 +15640,7 @@ body {
 }
 .mcontent .footer-7 a {
   color: #bdc3c7;
-  font-weight: normal;
+  font-weight: 500;
 }
 .mcontent .footer-7 a:hover,
 .mcontent .footer-7 a:focus,
@@ -15661,6 +15661,7 @@ body {
   font-size: 14px;
   font-weight: normal;
   color: inherit;
+  font-weight: 500;
 }
 @media (max-width: 767px) {
   .mcontent .footer-7 nav ul li {
@@ -15668,6 +15669,7 @@ body {
     font-size: 12px;
     font-weight: normal;
     color: inherit;
+    font-weight: 500;
   }
 }
 .mcontent .footer-7 nav ul li .scroll-top {

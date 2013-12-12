@@ -14493,6 +14493,9 @@ body {
   transition: 0.6s opacity;
   opacity: 0.15;
   filter: alpha(opacity=15);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .mcontent .projects-2 > *:hover {
   opacity: 1;
@@ -14547,6 +14550,7 @@ body {
 }
 .mcontent .projects-2 .project-3 [class*="fui-"] {
   font-size: 95px;
+  line-height: 95px;
 }
 .mcontent .projects-3 h3 {
   margin: 0 0 80px;

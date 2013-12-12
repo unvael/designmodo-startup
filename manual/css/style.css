@@ -13056,6 +13056,7 @@ body {
   text-align: center;
   color: #bdc3c7;
   font-size: 18px;
+  font-weight: normal;
 }
 .mcontent .price-1 .plan > * {
   padding-left: 10px;
@@ -13075,6 +13076,7 @@ body {
   padding-top: 22px;
   border-top: 2px solid #ebedee;
   line-height: 28px;
+  font-weight: normal;
 }
 .mcontent .price-1 .plan .description b {
   font-weight: 500;

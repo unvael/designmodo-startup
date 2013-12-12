@@ -1032,6 +1032,7 @@ section * {
   text-align: center;
   color: #bdc3c7;
   font-size: 18px;
+  font-weight: normal;
 }
 .price-1 .plan > * {
   padding-left: 10px;
@@ -1051,6 +1052,7 @@ section * {
   padding-top: 22px;
   border-top: 2px solid #ebedee;
   line-height: 28px;
+  font-weight: normal;
 }
 .price-1 .plan .description b {
   font-weight: 500;

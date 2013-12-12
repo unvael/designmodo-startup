@@ -3113,6 +3113,10 @@ body {
   font-weight: 300;
 }
 @media (max-width: 767px) {
+  .mcontent .content-7 .v-center {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .mcontent .content-7 .row > [class*="span"] {
     margin-top: 45px;
   }

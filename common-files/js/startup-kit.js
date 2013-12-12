@@ -41,8 +41,16 @@ startupKit.uiKitHeader._inFixedMode = function(headerClass) {
     if ($(headerClass + ' .navbar').hasClass('navbar-fixed-top')) {
 
         var s1 = $(headerClass + '-sub'), s1StopScroll = s1.outerHeight() - 70;
+
+        if($(headerClass).outerHeight()>0){
+            var antiflickerColor = $(headerClass).css('background-color');
+        }else if($(headerClass+'-sub').length > 0){
+            var antiflickerColor = $(headerClass+'-sub').css('background-color');
+        }else{
+            var antiflickerColor='#fff';
+        }
         
-        var antiflicker = $('<div class="' + headerClass.slice(1) + '-startup-antiflicker" style="position: fixed; z-index: 25; left: 0; top: 0; width: 100%; height: 70px; background: #fff;" />');
+        var antiflicker = $('<div class="' + headerClass.slice(1) + '-startup-antiflicker" style="position: fixed; z-index: 25; left: 0; top: 0; width: 100%; height: 70px; background: '+antiflickerColor+';" />');
         s1.before(antiflicker);
         var s1Placeholder = $('<div />');
         s1Placeholder.hide().height(s1.outerHeight());

@@ -9,7 +9,7 @@
   color: @silver;
   line-height: 25px;
   text-align: center;
-  a {.a-color(@silver, mix(@silver, black, 85%)); font-weight: normal;}
+  a {.a-color(@silver, mix(@silver, black, 85%)); font-weight: 500;}
   nav {
     
     font-family: @h-font-family;
@@ -21,9 +21,11 @@
         min-width: 100px;
         .line-height(25px);
         .font(14px, inherit);
+        font-weight: 500;
         @media (max-width: 767px) {
           min-width: 70px;
           .font(12px, inherit);
+          font-weight: 500;
         }
         .scroll-top {
           display: inline-block;
@@ -32,6 +34,7 @@
           .border-radius(50%);
          // overflow: hidden;
           .font(16px, inherit);
+
           .a-color(white, white);
           background: @silver;
           &:hover, &:focus { background: mix(@silver, black, 85%);}

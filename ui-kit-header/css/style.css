@@ -413,6 +413,27 @@ h3 {
 img {
   -webkit-backface-visibility: hidden;
 }
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #7f8c8d;
+}
 .navbar .subnav {
   display: none;
 }
@@ -2303,7 +2324,7 @@ section * {
 }
 @media (max-width: 768px) {
   .loaded .header-6 .navbar {
-    top: 50px;
+    top: 65px;
   }
 }
 @media (max-width: 480px) {
@@ -2337,7 +2358,7 @@ section * {
 }
 @media (max-width: 768px) {
   .header-6-sub {
-    padding-top: 120px;
+    padding-top: 150px;
     padding-bottom: 50px;
   }
 }
@@ -2449,6 +2470,10 @@ section * {
 .header-6-sub .signup-form form button {
   float: left;
   width: 21.8%;
+  height: 41px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0 0 0 2.3%;
 }
 @media (min-width: 1200px) {
@@ -2514,6 +2539,7 @@ section * {
   font-weight: normal;
   color: #7f8c8d;
   text-transform: none;
+  font-weight: 500;
 }
 .header-7-sub h1,
 .header-7-sub .h1,
@@ -2661,6 +2687,7 @@ section * {
   font-weight: normal;
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
 .header-7-sub .brand img:first-child {
   float: left;
@@ -2701,6 +2728,10 @@ section * {
   display: table;
   width: 100%;
   background: #2c3e50;
+}
+.header-7-sub section > div {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .header-7-sub section h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -2755,6 +2786,7 @@ section * {
   font-size: 18px;
   font-weight: normal;
   color: #ffffff;
+  font-weight: 500;
 }
 .header-7-sub .h-7-section-1 .box:first-child {
   margin-left: 0;
@@ -6797,6 +6829,7 @@ section * {
   padding: 28px 0 27px;
   font-size: 18px;
   font-weight: normal;
+  font-weight: 500;
   color: #bdc3c7;
 }
 .header-20 .navbar .nav > li > a:hover,

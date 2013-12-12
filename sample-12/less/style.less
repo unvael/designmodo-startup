@@ -100,8 +100,12 @@ footer {
 
 .tpl-12-section-2 {
   border-top: 0;
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding-top: 128px;
+  padding-bottom: 128px;
+  @media (max-width: 767px) {
+    padding-top: 108px;
+    padding-bottom: 108px;
+  }
 
   h3 {
     .font(30px, @h-text-color);

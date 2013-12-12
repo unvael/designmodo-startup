@@ -1172,6 +1172,11 @@ content-9 p {
 }
 .content-features .description h6 {
   text-transform: none;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2c3e50;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
 @media (max-width: 767px) {
   .content-features .description {
@@ -1245,7 +1250,7 @@ aside .sidebar-content:before {
   right: 0;
   width: 5000px;
   height: 100%;
-  background: #ecf0f1;
+  background: #f5f7f8;
 }
 aside .sidebar-content > * {
   position: relative;

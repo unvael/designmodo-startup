@@ -2729,6 +2729,10 @@ section * {
   width: 100%;
   background: #2c3e50;
 }
+.header-7-sub section > div {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .header-7-sub section h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }

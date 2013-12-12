@@ -11916,6 +11916,7 @@ body {
   padding: 28px 0 27px;
   font-size: 18px;
   font-weight: normal;
+  font-weight: 500;
   color: #bdc3c7;
 }
 .mcontent .header-20 .navbar .nav > li > a:hover,

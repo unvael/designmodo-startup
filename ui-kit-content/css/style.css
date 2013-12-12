@@ -3874,9 +3874,33 @@ section * {
 }
 .content-31 .container .pt-controls {
   position: absolute;
-  bottom: 90px;
   left: 0;
   right: 0;
+}
+@media (min-width: 1200px) {
+  .content-31 .container .pt-controls {
+    bottom: 120px;
+  }
+}
+@media (min-width: 723px) and (max-width: 1200px) {
+  .content-31 .container .pt-controls {
+    bottom: 90px;
+  }
+}
+@media (min-width: 643px) and (max-width: 722px) {
+  .content-31 .container .pt-controls {
+    bottom: 120px;
+  }
+}
+@media (min-width: 611px) and (max-width: 642px) {
+  .content-31 .container .pt-controls {
+    bottom: 80px;
+  }
+}
+@media (min-width: 400px) and (max-width: 611px) {
+  .content-31 .container .pt-controls {
+    bottom: 120px;
+  }
 }
 .content-31 .container .pt-controls > * {
   position: relative;

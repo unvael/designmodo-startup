@@ -6497,6 +6497,11 @@ section * {
   opacity: 0;
   filter: alpha(opacity=0);
 }
+@media (max-width: 767px) {
+  .header-19 .navbar {
+    top: 90px;
+  }
+}
 .header-19 .navbar .navbar-inner {
   background: none;
 }
@@ -6673,6 +6678,11 @@ section * {
   overflow: hidden;
   position: relative;
 }
+@media (max-width: 767px) {
+  .header-19-sub {
+    padding-top: 255px;
+  }
+}
 .header-19-sub > img {
   position: absolute;
   right: 0;
@@ -6777,7 +6787,7 @@ section * {
 }
 @media (max-width: 480px) {
   .header-19-sub {
-    padding-top: 190px;
+    padding-top: 255px;
     padding-bottom: 100px;
   }
   .header-19-sub h1 {

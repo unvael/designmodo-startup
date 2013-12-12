@@ -1835,6 +1835,7 @@ section * {
   }
   .footer-11 nav ul li:first-child {
     margin-top: 0;
+    border-bottom: 0 none;
   }
   .footer-11 .social-btns {
     position: static;

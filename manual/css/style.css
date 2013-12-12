@@ -16236,6 +16236,7 @@ body {
   }
   .mcontent .footer-11 nav ul li:first-child {
     margin-top: 0;
+    border-bottom: 0 none;
   }
   .mcontent .footer-11 .social-btns {
     position: static;

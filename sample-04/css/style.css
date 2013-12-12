@@ -363,6 +363,7 @@ footer {
   border-color: #7f8c8d;
 }
 body {
+  overflow-x: hidden;
   color: #7f8c8d;
   line-height: 1.29;
 }

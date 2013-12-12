@@ -7748,6 +7748,15 @@ section * {
   text-align: center;
   line-height: 50px;
 }
+@media (max-width: 767px) {
+  .header-22-sub h3 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #2c3e50;
+    font-weight: 300;
+    text-align: center;
+  }
+}
 .header-22-sub .container {
   opacity: 0;
   filter: alpha(opacity=0);
@@ -7766,9 +7775,11 @@ section * {
     padding-top: 50px;
   }
   .header-22-sub h3 {
-    font-size: 37px;
+    font-size: 30px;
     font-weight: normal;
     color: #34495e;
+    font-weight: 300;
+    text-align: center;
     line-height: 50px;
     margin-bottom: 30px;
   }

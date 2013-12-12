@@ -1398,7 +1398,11 @@ body {
   position: relative;
 }
 .mcontent .blog-2 .promo {
-  margin: -20px 0 66px;
+  margin: -20px 0 49px;
+}
+.mcontent .blog-2 .btn {
+  padding: 11px 22px;
+  margin-top: 24px;
 }
 .mcontent .blog-2 .background {
   display: block;

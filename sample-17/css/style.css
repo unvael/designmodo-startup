@@ -1043,7 +1043,7 @@ section * {
 .price-1 .plan .title {
   color: #2c3e50;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 8px;
 }
 .price-1 .plan .description {
@@ -1051,6 +1051,9 @@ section * {
   padding-top: 22px;
   border-top: 2px solid #ebedee;
   line-height: 28px;
+}
+.price-1 .plan .description b {
+  font-weight: 500;
 }
 .price-1 .plan .btn {
   min-width: 150px;

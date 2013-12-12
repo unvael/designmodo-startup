@@ -2303,7 +2303,7 @@ section * {
 }
 @media (max-width: 768px) {
   .loaded .header-6 .navbar {
-    top: 50px;
+    top: 65px;
   }
 }
 @media (max-width: 480px) {
@@ -2337,7 +2337,7 @@ section * {
 }
 @media (max-width: 768px) {
   .header-6-sub {
-    padding-top: 120px;
+    padding-top: 150px;
     padding-bottom: 50px;
   }
 }
@@ -2449,6 +2449,10 @@ section * {
 .header-6-sub .signup-form form button {
   float: left;
   width: 21.8%;
+  height: 41px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0 0 0 2.3%;
 }
 @media (min-width: 1200px) {

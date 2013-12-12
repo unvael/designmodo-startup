@@ -833,6 +833,9 @@ section * {
     width: 100%;
   }
 }
+.nav-visible body > .header-19-sub {
+  left: -50%;
+}
 .header-19-sub {
   padding-top: 340px;
   padding-bottom: 200px;

@@ -12113,6 +12113,9 @@ body {
     width: 100%;
   }
 }
+.mcontent .nav-visible body > .header-19-sub {
+  left: -50%;
+}
 .mcontent .header-19-sub {
   padding-top: 340px;
   padding-bottom: 200px;

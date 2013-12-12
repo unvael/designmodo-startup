@@ -8004,3 +8004,7 @@ section * {
     margin: 40px 0;
   }
 }
+.header-23-sub .background {
+  opacity: 0.1;
+  filter: alpha(opacity=10);
+}

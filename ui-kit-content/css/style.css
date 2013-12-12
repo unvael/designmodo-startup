@@ -4225,12 +4225,15 @@ section * {
 }
 .content-35 .btn {
   font-weight: 500;
-  background: #2c3e50;
   padding-left: 26px;
   padding-right: 26px;
+  margin-bottom: 20px;
+}
+.content-35 .btn.btn-inverse {
+  background: #2c3e50;
 }
 .content-35 .columns {
-  padding-top: 80px;
+  margin-top: 60px;
 }
 .content-35 .columns h3 {
   font-size: 20px;

@@ -6069,12 +6069,15 @@ body {
 }
 .mcontent .content-35 .btn {
   font-weight: 500;
-  background: #2c3e50;
   padding-left: 26px;
   padding-right: 26px;
+  margin-bottom: 20px;
+}
+.mcontent .content-35 .btn.btn-inverse {
+  background: #2c3e50;
 }
 .mcontent .content-35 .columns {
-  padding-top: 80px;
+  margin-top: 60px;
 }
 .mcontent .content-35 .columns h3 {
   font-size: 20px;
@@ -13438,6 +13441,10 @@ body {
   .mcontent .header-23-sub .hero-unit .btn-play {
     margin: 40px 0;
   }
+}
+.mcontent .header-23-sub .background {
+  opacity: 0.1;
+  filter: alpha(opacity=10);
 }
 .mcontent .ribbon {
   display: block;

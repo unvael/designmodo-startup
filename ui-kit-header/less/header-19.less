@@ -115,8 +115,12 @@
     
    
     .nav-visible.navbar .nav-collapse {
-           left: 28%!important;
+           left: 50%!important;
            visibility: visible;
+      @media (max-width: 400px) {
+        left: 0 !important;
+        width:100%;
+      }
     }
        
    

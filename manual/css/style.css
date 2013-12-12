@@ -12104,8 +12104,14 @@ body {
   transition: left 0.4s;
 }
 .mcontent .header-19 .nav-visible.navbar .nav-collapse {
-  left: 28%!important;
+  left: 50%!important;
   visibility: visible;
+}
+@media (max-width: 400px) {
+  .mcontent .header-19 .nav-visible.navbar .nav-collapse {
+    left: 0 !important;
+    width: 100%;
+  }
 }
 .mcontent .header-19-sub {
   padding-top: 340px;

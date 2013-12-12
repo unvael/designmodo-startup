@@ -930,6 +930,11 @@ section * {
     width: 61.4%;
   }
 }
+@media (min-width: 979px) and (max-width: 1200px) {
+  .content-20 .signup-form form .site-link input[type="text"] {
+    width: 61.4%;
+  }
+}
 .content-20 .features {
   margin-top: 40px;
   font-size: 14px;

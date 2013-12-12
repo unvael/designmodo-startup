@@ -4409,6 +4409,7 @@ body {
   width: 25.9%;
 }
 .mcontent .content-20 .signup-form form .btn {
+  height: 54px;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
@@ -4448,6 +4449,11 @@ body {
     margin-left: 0;
     width: 100%;
     float: none;
+  }
+}
+@media (max-width: 468px) {
+  .mcontent .content-20 .signup-form form .site-link input[type="text"] {
+    width: 61.4%;
   }
 }
 .mcontent .content-20 .features {

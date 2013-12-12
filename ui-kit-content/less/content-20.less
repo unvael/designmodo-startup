@@ -54,12 +54,13 @@
           }
         }
         .btn {
-          
+          height:54px;
           .border-radius(0);
           position: absolute;
           left: 0; right: 0; bottom: 0;
           .font(17px,white);
           width:100%;
+
         }
         @media (max-width: 767px) {
           display: block;
@@ -86,6 +87,13 @@
          
         }
       }
+    @media (max-width: 468px ) {
+      form {
+        .site-link input[type="text"]{
+          width: 61.4%;
+        }
+      }
+    }
   }
   .features {
     margin-top:40px;

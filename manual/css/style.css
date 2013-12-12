@@ -8944,7 +8944,7 @@ body {
   width: 100%;
   padding-top: 0;
   padding-bottom: 0;
-  height: 90px;
+  height: 80px;
   background: #233240;
   color: white;
 }
@@ -8962,7 +8962,7 @@ body {
 .mcontent .header-10 .navbar .navbar-form,
 .mcontent .header-10 .navbar .navbar-search {
   margin: 0;
-  padding: 25px 0 19px 60px;
+  padding: 20px 0 19px 60px;
 }
 .mcontent .header-10 .navbar .btn,
 .mcontent .header-10 .navbar .btn-group {
@@ -8983,7 +8983,7 @@ body {
 }
 .mcontent .header-10 .navbar .brand {
   padding-left: 0;
-  padding-top: 26px;
+  padding-top: 25px;
   font-size: 25px;
   font-weight: normal;
   color: #ffffff;
@@ -9001,7 +9001,7 @@ body {
   margin-left: 0;
 }
 .mcontent .header-10 .navbar .nav > li > a {
-  padding: 34px 0 27px;
+  padding: 29px 0 27px;
   font-size: 17px;
   font-weight: normal;
   color: #7f8c8d;

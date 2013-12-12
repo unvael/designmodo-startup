@@ -1482,6 +1482,11 @@ section * {
   margin: 0 auto 95px;
   text-align: center;
 }
+@media (max-width: 767px) {
+  .content-18 .carousel:before {
+    margin-bottom: 45px;
+  }
+}
 .content-18 .carousel .quote-text {
   max-width: 620px;
   margin: 0 auto;

@@ -3720,12 +3720,14 @@ section * {
     font-weight: normal;
     color: #ffffff;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
   }
   .header-10-sub .hero-unit p {
     font-size: 22px;
     font-weight: normal;
     color: #bdc3c7;
     line-height: 35px;
+    font-weight: 300;
   }
 }
 .header-10-sub .hero-unit.hero-unit-bordered h1 {
@@ -3744,6 +3746,7 @@ section * {
     font-size: 22px;
     font-weight: normal;
     color: #ffffff;
+    font-weight: 500;
   }
 }
 @media (max-width: 480px) {

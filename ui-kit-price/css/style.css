@@ -776,7 +776,7 @@ section * {
 }
 .price-2 .plans .description b {
   color: #7f8c8d;
-  font-weight: 700;
+  font-weight: 500;
 }
 .price-2 .plans .description .description-box {
   text-align: left;
@@ -883,6 +883,7 @@ section * {
 }
 .price-3 .plan b {
   color: #7f8c8d;
+  font-weight: 500;
 }
 .price-3 .plan .title {
   color: #2c3e50;
@@ -961,6 +962,7 @@ section * {
 }
 .price-4 .plan .description b {
   color: #7f8c8d;
+  font-weight: 500;
 }
 .price-4 .plan .description .description-box {
   padding: 16px 0;

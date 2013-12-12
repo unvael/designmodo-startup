@@ -4682,7 +4682,7 @@ body {
     border-bottom-left-radius: 6px;
   }
   .mcontent .content-21 .features.features-tabs .features-body {
-    padding: 60px 50px 60px 50px;
+    padding: 60px 20px 60px 20px;
   }
 }
 .mcontent .content-22 {
@@ -9188,12 +9188,14 @@ body {
     font-weight: normal;
     color: #ffffff;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
   }
   .mcontent .header-10-sub .hero-unit p {
     font-size: 22px;
     font-weight: normal;
     color: #bdc3c7;
     line-height: 35px;
+    font-weight: 300;
   }
 }
 .mcontent .header-10-sub .hero-unit.hero-unit-bordered h1 {
@@ -9212,6 +9214,7 @@ body {
     font-size: 22px;
     font-weight: normal;
     color: #ffffff;
+    font-weight: 500;
   }
 }
 @media (max-width: 480px) {
@@ -13621,7 +13624,7 @@ body {
 }
 .mcontent .price-2 .plans .description b {
   color: #7f8c8d;
-  font-weight: 700;
+  font-weight: 500;
 }
 .mcontent .price-2 .plans .description .description-box {
   text-align: left;
@@ -13725,6 +13728,7 @@ body {
 }
 .mcontent .price-3 .plan b {
   color: #7f8c8d;
+  font-weight: 500;
 }
 .mcontent .price-3 .plan .title {
   color: #2c3e50;
@@ -13800,6 +13804,7 @@ body {
 }
 .mcontent .price-4 .plan .description b {
   color: #7f8c8d;
+  font-weight: 500;
 }
 .mcontent .price-4 .plan .description .description-box {
   padding: 16px 0;

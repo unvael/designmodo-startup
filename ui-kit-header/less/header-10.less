@@ -75,8 +75,8 @@
     h1 { margin: 0 0 30px;  .font(45px, white); font-family: @h-font-family; font-weight:300;}
     p {.font(25px, @silver); font-family: @h-font-family; font-weight:300; .line-height(37.5px);}
     @media (max-width: 480px) {
-      h1 {.font(36px, white); font-family: @h-font-family;}
-      p {.font(22px,@silver); .line-height(35px);}
+      h1 {.font(36px, white); font-family: @h-font-family; font-weight:300;}
+      p {.font(22px,@silver); .line-height(35px); font-weight:300;}
     }
   }
   .hero-unit.hero-unit-bordered {
@@ -86,7 +86,7 @@
       display: inline-block;
       margin: 0; padding: 30px 40px;
     }
-    @media (max-width: 480px) { h1 {.font(22px, white); }}
+    @media (max-width: 480px) { h1 {.font(22px, white); font-weight: 500; }}
   }  
   color: white;
   text-align: center;

@@ -14491,8 +14491,8 @@ body {
   -moz-transition: 0.6s opacity;
   -o-transition: 0.6s opacity;
   transition: 0.6s opacity;
-  opacity: 0.3;
-  filter: alpha(opacity=30);
+  opacity: 0.15;
+  filter: alpha(opacity=15);
 }
 .mcontent .projects-2 > *:hover {
   opacity: 1;

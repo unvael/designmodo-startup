@@ -1330,6 +1330,7 @@ section * {
   font-size: 18px;
   font-weight: normal;
   color: #e74c3c;
+  font-weight: 500;
   margin-top: 60px;
   text-transform: none;
 }
@@ -1671,7 +1672,7 @@ section * {
 }
 .price-5 .plans .title .price {
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: normal;
   margin: 0 0 4px;
 }
@@ -1711,7 +1712,7 @@ section * {
 }
 .price-5 .plans .description big {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 500;
   color: #1abc9c;
   display: block;
   margin-bottom: 10px;
@@ -1732,7 +1733,7 @@ section * {
 }
 .price-5 .plans .description-more big {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 500;
   color: #1abc9c;
   display: block;
   margin-bottom: 8px;
@@ -1775,7 +1776,6 @@ section * {
 @media (max-width: 767px) {
   .price-5 .plans {
     display: block;
-    margin-top: 80px;
     border: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -1869,6 +1869,9 @@ body > section {
   }
   .tpl-22-section-1 .hero-unit {
     padding: 0;
+  }
+  .tpl-22-section-1 .hero-unit h1 {
+    font-size: 30px;
   }
 }
 .content-18 h1 {
@@ -2041,6 +2044,6 @@ body > section {
   }
 }
 .price-5 {
-  margin-top: 75px;
+  margin-top: 45px;
   color: #95a5a6;
 }

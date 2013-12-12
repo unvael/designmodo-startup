@@ -1245,6 +1245,7 @@ section * {
   font-size: 18px;
   font-weight: normal;
   color: #e74c3c;
+  font-weight: 500;
   margin-top: 60px;
   text-transform: none;
 }

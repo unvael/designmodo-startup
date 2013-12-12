@@ -3125,6 +3125,7 @@ body {
   font-size: 18px;
   font-weight: normal;
   color: #e74c3c;
+  font-weight: 500;
   margin-top: 60px;
   text-transform: none;
 }
@@ -13946,7 +13947,7 @@ body {
 }
 .mcontent .price-5 .plans .title .price {
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: normal;
   margin: 0 0 4px;
 }
@@ -13986,7 +13987,7 @@ body {
 }
 .mcontent .price-5 .plans .description big {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 500;
   color: #1abc9c;
   display: block;
   margin-bottom: 10px;
@@ -14007,7 +14008,7 @@ body {
 }
 .mcontent .price-5 .plans .description-more big {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 500;
   color: #1abc9c;
   display: block;
   margin-bottom: 8px;
@@ -14050,7 +14051,6 @@ body {
 @media (max-width: 767px) {
   .mcontent .price-5 .plans {
     display: block;
-    margin-top: 80px;
     border: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;

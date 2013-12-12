@@ -1184,8 +1184,8 @@ section * {
   }
 }
 body > section.v-center > div {
-  padding-top: 198px;
-  padding-bottom: 198px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 @media (max-width: 768px) {
   body > section.v-center > div {
@@ -1208,6 +1208,16 @@ body > section.v-center > div {
     -moz-background-size: auto 200%;
     -o-background-size: auto 200%;
     background-size: auto 200%;
+  }
+}
+.price-1 > div {
+  padding-top: 198px;
+  padding-bottom: 200px;
+}
+@media (max-width: 768px) {
+  .price-1 > div {
+    padding-top: 98px;
+    padding-bottom: 98px;
   }
 }
 .price-1 h3 {

@@ -494,6 +494,13 @@ img {
   .navbar .nav-collapse .navbar-form,
   .navbar .nav-collapse .navbar-search {
     padding: 10px 35px;
+    border-bottom: 0 none;
+    border-top: 0 none;
+    box-shadow: none;
+  }
+  .navbar .nav-collapse .navbar-form:focus,
+  .navbar .nav-collapse .navbar-search:focus {
+    outline: 0 none;
   }
   body > *,
   .navbar .nav-collapse {

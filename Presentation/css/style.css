@@ -1500,7 +1500,7 @@ button:focus {
 }
 @media (min-width: 1200px) {
   .container .container-wrapper {
-    padding-left: 610px;
+    padding-left: 585px;
     padding-right: 100px;
   }
 }
@@ -1520,7 +1520,7 @@ button:focus {
 }
 .container .container-description {
   max-width: 460px;
-  margin-bottom: 75px;
+  margin-bottom: 66px;
 }
 .container .container-description p {
   font-size: 20px;
@@ -1635,6 +1635,7 @@ button:focus {
 }
 .additional-slider header {
   padding-top: 230px;
+  padding-bottom: 55px;
 }
 .additional-slider .scroller {
   margin-top: 230px;
@@ -1762,10 +1763,10 @@ button:focus {
 .additional-slider .container-slider-controls {
   position: absolute;
   left: 50%;
-  top: 146px;
+  top: 148px;
   right: 0;
   z-index: 10;
-  margin-left: 20px;
+  margin-left: 0;
 }
 @media (max-width: 1200px) {
   .additional-slider .container-slider-controls {
@@ -1920,7 +1921,7 @@ button:focus {
   background: #27ae60;
 }
 .btw-sell .discount-label {
-  font-size: 30px;
+  font-size: 27px;
   color: #8d8f91;
   line-height: 2em;
   display: inline-block;
@@ -1941,7 +1942,7 @@ button:focus {
   font-size: 17px;
   line-height: 25px;
   width: 180px;
-  margin: 50px auto 0;
+  margin: 42px auto 0;
 }
 .btw-sell .btw-sell-info span {
   color: #fff;

@@ -19,9 +19,9 @@
         <p>
             For using this block you should only paste next rows of code into your html file:
         </p>
-        <pre class=" language-markup"><code class=" language-markup">
+        <pre class="htmlCode">
 include "../../../ui-kit-header/for-tpl/header-7.html" 
-</code></pre>         
+</pre>        
 
         
  <h4>"LESS" version:</h4>
@@ -32,37 +32,37 @@ include "../../../ui-kit-header/for-tpl/header-7.html"
             you should paste same code (as in <a href="#h7-simple" class="inner-link">simple version</a>) and paste next code into your '<strong>.less</strong>' file after that
             rows that you already had to paste.
         </p>
-        <pre class="language-scss"><code class="language-scss">
+        <pre class="cssCode">
 @import '../../ui-kit-header/less/header-7.less';
-</code></pre> 
+</pre>
         <h4>All versions:</h4>
         <p>
             So about modifications which you can do.
         </p>
         <p>
             This block, as many others header blocks in our framework, has special place for background image.
-            The place for background image - <code class="language-markup">
+            The place for background image - <code>
                 &lt;div class=”background”&gt;...&lt;/div&gt;</code>
             For add your image as background you should add CSS rulers for this element. And you can manage opacity of this element. For example as this:
         </p>
-        <pre class="language-scss"><code class="language-scss">
+        <pre class="cssCode">
 .background {
     background-image:url(‘your image url’);
     opacity: opacity value;
 }
-</code></pre> 
+</pre>
         <p>
             In ‘Less’ version for opacity property you can use cross browser function:
         </p>
-        <pre class="language-scss"><code class="language-scss">
+        <pre class="cssCode">
 .opacity(value from 0 to 100);
-</code></pre> 
+</pre>
         <p>
             This header block is very specific and you can use it as presentation. So you can use it as wrapper for all your site content.
             It has Carousel.
             One slide - one page.
             You can change content for slides of this carousel.
-            For this you should replace content inside <code class="language-markup">
+            For this you should replace content inside <code>
                 &lt;div class=”pt-page”&gt; ... &lt;/div&gt;</code>
         </p>
         <p>

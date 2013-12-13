@@ -17769,6 +17769,9 @@ a.active {
   background-color: #1B1E23;
   width: 900px;
 }
+.mcontent .manual .content-7 h3 {
+  line-height: 1.2em;
+}
 .mcontent .manual a.man-brand {
   display: inline-block;
   float: right;

@@ -3464,7 +3464,7 @@ section * {
   width: 100%;
   padding-top: 0;
   padding-bottom: 0;
-  height: 90px;
+  height: 80px;
   background: #233240;
   color: white;
 }
@@ -3482,7 +3482,7 @@ section * {
 .header-10 .navbar .navbar-form,
 .header-10 .navbar .navbar-search {
   margin: 0;
-  padding: 25px 0 19px 60px;
+  padding: 20px 0 19px 60px;
 }
 .header-10 .navbar .btn,
 .header-10 .navbar .btn-group {
@@ -3503,7 +3503,7 @@ section * {
 }
 .header-10 .navbar .brand {
   padding-left: 0;
-  padding-top: 26px;
+  padding-top: 25px;
   font-size: 25px;
   font-weight: normal;
   color: #ffffff;
@@ -3521,7 +3521,7 @@ section * {
   margin-left: 0;
 }
 .header-10 .navbar .nav > li > a {
-  padding: 34px 0 27px;
+  padding: 29px 0 27px;
   font-size: 17px;
   font-weight: normal;
   color: #7f8c8d;
@@ -3720,12 +3720,14 @@ section * {
     font-weight: normal;
     color: #ffffff;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
   }
   .header-10-sub .hero-unit p {
     font-size: 22px;
     font-weight: normal;
     color: #bdc3c7;
     line-height: 35px;
+    font-weight: 300;
   }
 }
 .header-10-sub .hero-unit.hero-unit-bordered h1 {
@@ -3744,6 +3746,7 @@ section * {
     font-size: 22px;
     font-weight: normal;
     color: #ffffff;
+    font-weight: 500;
   }
 }
 @media (max-width: 480px) {
@@ -4662,6 +4665,11 @@ section * {
   color: #ffffff;
   font-weight: 500;
 }
+@media (max-width: 767px) {
+  .header-14-sub .hero-unit h1 {
+    text-align: center;
+  }
+}
 .header-14-sub .hero-unit p {
   margin: 0;
   font-size: 13px;
@@ -5005,7 +5013,7 @@ section * {
   font-size: 12px;
   font-weight: normal;
   color: #ffffff;
-  font-weight: 400;
+  font-weight: 500;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 4px;
 }
@@ -7745,6 +7753,15 @@ section * {
   text-align: center;
   line-height: 50px;
 }
+@media (max-width: 767px) {
+  .header-22-sub h3 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #2c3e50;
+    font-weight: 300;
+    text-align: center;
+  }
+}
 .header-22-sub .container {
   opacity: 0;
   filter: alpha(opacity=0);
@@ -7763,9 +7780,11 @@ section * {
     padding-top: 50px;
   }
   .header-22-sub h3 {
-    font-size: 37px;
+    font-size: 30px;
     font-weight: normal;
     color: #34495e;
+    font-weight: 300;
+    text-align: center;
     line-height: 50px;
     margin-bottom: 30px;
   }
@@ -7989,4 +8008,8 @@ section * {
   .header-23-sub .hero-unit .btn-play {
     margin: 40px 0;
   }
+}
+.header-23-sub .background {
+  opacity: 0.1;
+  filter: alpha(opacity=10);
 }

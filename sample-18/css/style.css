@@ -642,7 +642,7 @@ section * {
   width: 100%;
   padding-top: 0;
   padding-bottom: 0;
-  height: 90px;
+  height: 80px;
   background: #233240;
   color: white;
 }
@@ -660,7 +660,7 @@ section * {
 .header-10 .navbar .navbar-form,
 .header-10 .navbar .navbar-search {
   margin: 0;
-  padding: 25px 0 19px 60px;
+  padding: 20px 0 19px 60px;
 }
 .header-10 .navbar .btn,
 .header-10 .navbar .btn-group {
@@ -681,7 +681,7 @@ section * {
 }
 .header-10 .navbar .brand {
   padding-left: 0;
-  padding-top: 26px;
+  padding-top: 25px;
   font-size: 25px;
   font-weight: normal;
   color: #ffffff;
@@ -699,7 +699,7 @@ section * {
   margin-left: 0;
 }
 .header-10 .navbar .nav > li > a {
-  padding: 34px 0 27px;
+  padding: 29px 0 27px;
   font-size: 17px;
   font-weight: normal;
   color: #7f8c8d;
@@ -898,12 +898,14 @@ section * {
     font-weight: normal;
     color: #ffffff;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
   }
   .header-10-sub .hero-unit p {
     font-size: 22px;
     font-weight: normal;
     color: #bdc3c7;
     line-height: 35px;
+    font-weight: 300;
   }
 }
 .header-10-sub .hero-unit.hero-unit-bordered h1 {
@@ -922,6 +924,7 @@ section * {
     font-size: 22px;
     font-weight: normal;
     color: #ffffff;
+    font-weight: 500;
   }
 }
 @media (max-width: 480px) {
@@ -1128,7 +1131,7 @@ section * {
     border-bottom-left-radius: 6px;
   }
   .content-21 .features.features-tabs .features-body {
-    padding: 60px 50px 60px 50px;
+    padding: 60px 20px 60px 20px;
   }
 }
 .content-22 {
@@ -1617,7 +1620,7 @@ section * {
 }
 .price-2 .plans .description b {
   color: #7f8c8d;
-  font-weight: 700;
+  font-weight: 500;
 }
 .price-2 .plans .description .description-box {
   text-align: left;
@@ -1983,6 +1986,7 @@ body > section.price-2 {
     font-size: 36px;
     font-weight: normal;
     color: #ffffff;
+    font-weight: 800;
   }
 }
 .header-10-sub .wide-text.text-warning {
@@ -2002,7 +2006,7 @@ body > section.price-2 {
   background-color: #212A33;
 }
 .price-2 .plans {
-  margin-top: 100px;
+  margin-top: 30px;
 }
 .price-2 .span8 {
   text-align: center;
@@ -2011,5 +2015,6 @@ body > section.price-2 {
   font-size: 30px;
   font-weight: normal;
   color: #2c3e50;
+  font-weight: 500;
   margin: 0 0 30px;
 }

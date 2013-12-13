@@ -14,11 +14,16 @@
   position:absolute;
   width:100%;
   @import 'navbar.less';
+  .navbar{
+    padding-left:20px;
+    padding-right: 20px;
+  }
 }
 
 
 
 .header-custom-sub{
+  background-color: #1b1b1b;
   .v-center;
   height:100%;
   color: white;
@@ -29,16 +34,16 @@
   }
   .background{
     background-image:url("../img/NY_001.png");
-    .opacity(40);
+    .opacity(50);
   }
   .hero-unit{
-
+    padding:60px 0;
     //padding:280px 60px 190px;
     background:transparent;    
     .headline{ 
      display:inline-block;
      margin: 0;
-     padding:0;
+
      line-height:0;
      border:7px solid white;     
       span:first-child{
@@ -77,6 +82,9 @@
 }
 
 @media (max-width: 565px) {
+  .header-custom-sub .hero-unit{
+    zoom: 1.5;
+  }
   .header-custom-sub .hero-unit .headline {
     span:first-child {
       .font(25px, white);

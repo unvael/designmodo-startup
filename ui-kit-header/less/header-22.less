@@ -81,6 +81,10 @@
     .font(37px, @base); font-weight: 300;
     text-align: center;
     line-height: 50px;
+    @media (max-width: 767px) {
+      .font(30px, @h-text-color); font-weight: 300;
+      text-align: center;
+    }
   }
   
   .container {
@@ -90,7 +94,9 @@
   @media (max-width: 480px) {
     padding-top:50px;
     h3 {
-     .font(37px,@base);
+     .font(30px,@base);
+      font-weight: 300;
+      text-align: center;
       line-height: 50px;
       margin-bottom: 30px;
     }

@@ -881,6 +881,7 @@ section * {
   font-weight: normal;
   color: #34495e;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
 @media (max-width: 767px) {
   .content-14 h3 {
@@ -1176,6 +1177,7 @@ section * {
     font-weight: normal;
     color: #ffffff;
     font-weight: 600;
+    line-height: 33px;
   }
 }
 .content-23 .hero-unit.hero-unit-bordered h1 {
@@ -1431,8 +1433,8 @@ body > section {
 }
 @media (max-width: 768px) {
   .content-14 {
-    padding-top: 50px;
-    padding-bottom: 50px !important;
+    padding-top: 80px;
+    padding-bottom: 80px !important;
   }
 }
 .content-9 {
@@ -1441,8 +1443,8 @@ body > section {
 }
 @media (max-width: 768px) {
   .content-9 {
-    padding-top: 50px;
-    padding-bottom: 50px !important;
+    padding-top: 80px;
+    padding-bottom: 80px !important;
   }
 }
 .contacts-1 {

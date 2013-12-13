@@ -1028,7 +1028,7 @@ section * {
   backface-visibility: visible;
 }
 .header-18 .header-18-sub .header-18-section.s2 .img img:first-child {
-  visibility: visible;
+  visibility: hidden;
 }
 .header-18 .header-18-sub .header-18-section.s2 .img:hover img[src*="/twitter-2@2x"] {
   -webkit-transform: rotateY(180deg);
@@ -1106,4 +1106,7 @@ section * {
   .header-18 .header-18-sub .header-18-section.s2 .signup-form form {
     margin-bottom: 4px;
   }
+}
+.header-18 .header-18-sub .pt-page-current .header-18-section .img img[src*="/twitter-1@2x"] {
+  visibility: visible;
 }

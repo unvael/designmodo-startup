@@ -643,7 +643,7 @@ section * {
   width: 100%;
   padding-top: 0;
   padding-bottom: 0;
-  height: 90px;
+  height: 80px;
   background: #233240;
   color: white;
 }
@@ -661,7 +661,7 @@ section * {
 .header-10 .navbar .navbar-form,
 .header-10 .navbar .navbar-search {
   margin: 0;
-  padding: 25px 0 19px 60px;
+  padding: 20px 0 19px 60px;
 }
 .header-10 .navbar .btn,
 .header-10 .navbar .btn-group {
@@ -682,7 +682,7 @@ section * {
 }
 .header-10 .navbar .brand {
   padding-left: 0;
-  padding-top: 26px;
+  padding-top: 25px;
   font-size: 25px;
   font-weight: normal;
   color: #ffffff;
@@ -700,7 +700,7 @@ section * {
   margin-left: 0;
 }
 .header-10 .navbar .nav > li > a {
-  padding: 34px 0 27px;
+  padding: 29px 0 27px;
   font-size: 17px;
   font-weight: normal;
   color: #7f8c8d;
@@ -899,12 +899,14 @@ section * {
     font-weight: normal;
     color: #ffffff;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
   }
   .header-10-sub .hero-unit p {
     font-size: 22px;
     font-weight: normal;
     color: #bdc3c7;
     line-height: 35px;
+    font-weight: 300;
   }
 }
 .header-10-sub .hero-unit.hero-unit-bordered h1 {
@@ -923,6 +925,7 @@ section * {
     font-size: 22px;
     font-weight: normal;
     color: #ffffff;
+    font-weight: 500;
   }
 }
 @media (max-width: 480px) {
@@ -1046,6 +1049,7 @@ section * {
   font-size: 18px;
   font-weight: normal;
   color: #e74c3c;
+  font-weight: 500;
   margin-top: 60px;
   text-transform: none;
 }
@@ -1342,6 +1346,7 @@ section * {
     font-weight: normal;
     color: #ffffff;
     font-weight: 600;
+    line-height: 33px;
   }
 }
 .content-23 .hero-unit.hero-unit-bordered h1 {

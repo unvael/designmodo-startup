@@ -714,6 +714,11 @@ section * {
   color: #ffffff;
   font-weight: 500;
 }
+@media (max-width: 767px) {
+  .header-14-sub .hero-unit h1 {
+    text-align: center;
+  }
+}
 .header-14-sub .hero-unit p {
   margin: 0;
   font-size: 13px;

@@ -776,7 +776,7 @@ section * {
 }
 .price-2 .plans .description b {
   color: #7f8c8d;
-  font-weight: 700;
+  font-weight: 500;
 }
 .price-2 .plans .description .description-box {
   text-align: left;
@@ -883,6 +883,7 @@ section * {
 }
 .price-3 .plan b {
   color: #7f8c8d;
+  font-weight: 500;
 }
 .price-3 .plan .title {
   color: #2c3e50;
@@ -961,6 +962,7 @@ section * {
 }
 .price-4 .plan .description b {
   color: #7f8c8d;
+  font-weight: 500;
 }
 .price-4 .plan .description .description-box {
   padding: 16px 0;
@@ -1075,13 +1077,13 @@ section * {
   color: #fff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 3px;
   white-space: nowrap;
 }
 .price-5 .plans .title .price {
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: normal;
   margin: 0 0 4px;
 }
@@ -1121,7 +1123,7 @@ section * {
 }
 .price-5 .plans .description big {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 500;
   color: #1abc9c;
   display: block;
   margin-bottom: 10px;
@@ -1142,7 +1144,7 @@ section * {
 }
 .price-5 .plans .description-more big {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 500;
   color: #1abc9c;
   display: block;
   margin-bottom: 8px;
@@ -1185,7 +1187,6 @@ section * {
 @media (max-width: 767px) {
   .price-5 .plans {
     display: block;
-    margin-top: 80px;
     border: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;

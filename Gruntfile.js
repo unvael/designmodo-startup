@@ -40,7 +40,32 @@ module.exports = function(grunt) {
         cwd: '.',
         flatten: true,
       },      
-    },    
+    },
+    copy: {
+    	release: {
+    		expand: true,
+    		force: true,
+			files: [
+				{src: ['common-files/**'], dest: 'build-release/'},
+				{src: ['ui-kit-*/**'], dest: 'build-release/ui-kit/'},
+				{src: ['sample-*/**'], dest: 'build-release/samples/'},
+				{src: ['manual/**'], dest: 'build-release/'},
+			]
+		}	   	
+    },
+    clean: {
+    	prerelease: {
+    		src: 'build-release/'
+    	},
+    	release: {
+    		src: [
+    			'build-release/manual/templates', 
+    			'build-release/manual/for-tpl',
+    			'build-release/ui-kit/ui-kit-*/for-tpl',
+    			'build-release/ui-kit/ui-kit-*/templates',
+    		]
+    	}
+    }   
     
   });
 
@@ -50,7 +75,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-includes');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.registerTask('default', ['less']);
   grunt.registerTask('build-manual', ['includes:manual']);
   grunt.registerTask('build-kit', ['includes:kit']);
+  grunt.registerTask('release', ['build-kit', 'build-manual', 'clean:prerelease', 'copy:release', 'clean:release']);
 };

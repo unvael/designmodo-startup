@@ -7,17 +7,18 @@ module.exports = function(grunt) {
     less: {
 	  files: {
 	    expand: true,
-	    src: ['ui-kit-*/less/style.less', 'sample-*/less/style.less', 'hipstafood/less/style.less', 'crumbs/less/style.less', 'manual/less/style.less', 'Presentation/less/style.less'],
+	    src: [
+			'ui-kit/ui-kit-*/less/style.less',
+			'samples/sample-*/less/style.less',
+			'hipstafood/less/style.less',
+			'crumbs/less/style.less',
+			'manual/less/style.less',
+			'Presentation/less/style.less'
+	    ],
 	    rename: function(src, dest) {
 			return dest.replace('less/style.less', 'css/style.css');
 	    },
 	  },
-    },
-    watch: {
-      less: {
-        files: ['ui-kit-*/less/*.less', 'sample-*/less/*.less', 'common-files/less/*.less', 'hipstafood/less/*.less', 'crumbs/less/*.less', 'manual/less/*.less', 'Presentation/less/*.less'],
-        tasks: 'less',
-      }
     },
     includes: {
       manual: {
@@ -28,14 +29,14 @@ module.exports = function(grunt) {
       },
       kit: {
       	files: [
-      		{src: 'ui-kit-blog/templates/*.html', dest: 'ui-kit-blog/', flatten: true},
-       		{src: 'ui-kit-contacts/templates/*.html', dest: 'ui-kit-contacts/', flatten: true},
-       		{src: 'ui-kit-content/templates/*.html', dest: 'ui-kit-content/', flatten: true},
-       		{src: 'ui-kit-crew/templates/*.html', dest: 'ui-kit-crew/', flatten: true},
-       		{src: 'ui-kit-footer/templates/*.html', dest: 'ui-kit-footer/', flatten: true},
-       		{src: 'ui-kit-header/templates/*.html', dest: 'ui-kit-header/', flatten: true},
-       		{src: 'ui-kit-price/templates/*.html', dest: 'ui-kit-price/', flatten: true}, 		  
-       		{src: 'ui-kit-projects/templates/*.html', dest: 'ui-kit-projects/', flatten: true}, 	       		     		
+      		{src: 'ui-kit/ui-kit-blog/templates/*.html', dest: 'ui-kit/ui-kit-blog/', flatten: true},
+       		{src: 'ui-kit/ui-kit-contacts/templates/*.html', dest: 'ui-kit/ui-kit-contacts/', flatten: true},
+       		{src: 'ui-kit/ui-kit-content/templates/*.html', dest: 'ui-kit/ui-kit-content/', flatten: true},
+       		{src: 'ui-kit/ui-kit-crew/templates/*.html', dest: 'ui-kit/ui-kit-crew/', flatten: true},
+       		{src: 'ui-kit/ui-kit-footer/templates/*.html', dest: 'ui-kit/ui-kit-footer/', flatten: true},
+       		{src: 'ui-kit/ui-kit-header/templates/*.html', dest: 'ui-kit/ui-kit-header/', flatten: true},
+       		{src: 'ui-kit/ui-kit-price/templates/*.html', dest: 'ui-kit/ui-kit-price/', flatten: true}, 		  
+       		{src: 'ui-kit/ui-kit-projects/templates/*.html', dest: 'ui-kit/ui-kit-projects/', flatten: true}, 	       		     		
       	],
       },      
     },
@@ -45,9 +46,10 @@ module.exports = function(grunt) {
     		force: true,
 			files: [
 				{src: ['common-files/**'], dest: 'build-release/'},
-				{src: ['ui-kit-*/**'], dest: 'build-release/ui-kit/'},
-				{src: ['sample-*/**'], dest: 'build-release/samples/'},
+				{src: ['ui-kit/**'], dest: 'build-release/'},
+				{src: ['samples/**'], dest: 'build-release/'},
 				{src: ['manual/**'], dest: 'build-release/'},
+				{src: ['flat-ui/**'], dest: 'build-release/'},
 			]
 		}	   	
     },

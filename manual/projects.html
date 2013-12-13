@@ -351,10 +351,11 @@
 
 <!-- manual sections -->
 <div class="manual">
+    <a href="index.html" class="man-brand"> <span class="logotype">Startup</span> <span class="doc-title">user manual</span></a>
     <div class="projects-1">
         <button class="back-button">&#10005;</button>
         <div class="content-man">
-<h1>Block for showing projects. Codename “projects-1”.</h1>
+<h1>Block Progects #1</h1>
 <ol>
     <li>
         <h3>Overview</h3>
@@ -366,17 +367,19 @@
         </p>
     </li>
     <li>
-        <h3>Code</h3>
-
-        <a id="p1-simple"></a><h4>Simple version:</h4>
-        <small>if you not already done all instructions
+        <h3>Installation</h3>
+        <p>
+            if you not already done all instructions
             that you had to read on the <a href="how_to_install.html">how to install</a> page
-            of this documentation please make it first</small>
-
+            of this documentation please make it first
+        </p>
+    </li>
+    <li>
+        <h3>CSS version:</h3>
         <p>
             For using this block you should only paste next rows of code into your html file:
         </p>
-        <pre class="htmlCode">
+        <pre class="language-markup"><code class="language-markup">
 <section class="projects-1">
     <div class="container">
         <div class="title">
@@ -445,21 +448,20 @@
     <!--/.container-->
 </section>
 
-</pre>        
-
-        
- <h4>"LESS" version:</h4>
-        <small>if you not already done all instructions
-            that you had to read on the <a href="how_to_install.html">how to install</a> page
-            of this documentation please make it first</small>
+        </code></pre>
+    </li>
+    <li>
+        <h3>LESS version:</h3>
         <p>
-            you should paste same code (as in <a href="#p1-simple" class="inner-link">simple version</a>) and paste next code into your '<strong>.less</strong>' file after that
+            you should paste same code (as in <strong>simple version</strong>) and paste next code into your '<strong>.less</strong>' file after that
             rows that you already had to paste.
         </p>
-        <pre class="cssCode">
-@import '../../ui-kit/ui-kit-projects/less/project-1.less';
-</pre>
-        <h4>All versions:</h4>
+        <pre class="language-scss"><code>
+@import '../../ui-kit-projects/less/project-1.less';
+        </code></pre>
+    </li>
+    <li>
+        <h3>Component Modification:</h3>
         <p>
             So about modifications which you can do.
         </p>
@@ -467,7 +469,7 @@
             This block has navigation on top of it, area with logo and slogon (you can use it as banner)
             and block with three columns that consits special blocks for demonstrating your projects.
             You can modificate anyone of it, but you should remember that you can't reorganize the html structure if you want to leave functionality of this block as it exist now.
-            For add images into project boxes you should insert your image between <code>
+            For add images into project boxes you should insert your image between <code class="language-markup">
                 &lt;div class="photo"&gt;...&lt;/div&gt;</code>
             .
         </p>
@@ -478,7 +480,7 @@
     <div class="projects-2">
         <button class="back-button">&#10005;</button>
         <div class="content-man">
-<h1>Block for showing projects. Codename “projects-2”.</h1>
+<h1>Block Progects #2</h1>
 <ol>
     <li>
         <h3>Overview</h3>
@@ -490,17 +492,19 @@
         </p>
     </li>
     <li>
-        <h3>Code</h3>
-
-        <a id="p2-simple"></a><h4>Simple version:</h4>
-        <small>if you not already done all instructions
+        <h3>Installation</h3>
+        <p>
+            if you not already done all instructions
             that you had to read on the <a href="how_to_install.html">how to install</a> page
-            of this documentation please make it first</small>
-
+            of this documentation please make it first
+        </p>
+    </li>
+    <li>
+        <h3>CSS version:</h3>
         <p>
             For using this block you should only paste next rows of code into your html file:
         </p>
-        <pre class="htmlCode">
+        <pre class="language-markup"><code class="language-markup">
 <section class="projects-2">
     <div class="project-1 v-center">
         <div><!--v-center-->
@@ -537,21 +541,20 @@
         <!--/v-center-->
     </div>
 </section>
-</pre>        
-
-        
- <h4>"LESS" version:</h4>
-        <small>if you not already done all instructions
-            that you had to read on the <a href="how_to_install.html">how to install</a> page
-            of this documentation please make it first</small>
+        </code></pre>
+    </li>
+    <li>
+        <h3>LESS version:</h3>
         <p>
-            you should paste same code (as in <a href="#p2-simple" class="inner-link">simple version</a>) and paste next code into your '<strong>.less</strong>' file after that
+            you should paste same code (as in <strong>simple version</strong>) and paste next code into your '<strong>.less</strong>' file after that
             rows that you already had to paste.
         </p>
-        <pre class="cssCode">
-@import '../../ui-kit/ui-kit-projects/less/project-2.less';
-</pre>
-        <h4>All versions:</h4>
+        <pre class="language-scss"><code>
+@import '../../ui-kit-projects/less/project-2.less';
+        </code></pre>
+    </li>
+    <li>
+        <h3>Component Modification:</h3>
         <p>
             So about modifications which you can do.
         </p>
@@ -559,11 +562,11 @@
             This block is very simple.
             You can replace all texts and images.
             For change backgrounds, please use the css. For example you can change background like this:
-            <pre class="cssCode">
+            <pre class="language-css"><code class="language-css">
 .project-2 {
     background-image: url("your image");
 }
-</pre>               
+    </code></pre>
    
 
     </li>
@@ -583,7 +586,7 @@
     <div class="projects-3">
         <button class="back-button">&#10005;</button>
         <div class="content-man">
-<h1>Block for showing projects. Codename “projects-3”.</h1>
+<h1>Block Progects #3</h1>
 <ol>
     <li>
         <h3>Overview</h3>
@@ -595,17 +598,19 @@
         </p>
     </li>
     <li>
-        <h3>Code</h3>
-
-        <a id="p3-simple"></a><h4>Simple version:</h4>
-        <small>if you not already done all instructions
+        <h3>Installation</h3>
+        <p>
+            if you not already done all instructions
             that you had to read on the <a href="how_to_install.html">how to install</a> page
-            of this documentation please make it first</small>
-
+            of this documentation please make it first
+        </p>
+    </li>
+    <li>
+        <h3>CSS version:</h3>
         <p>
             For using this block you should only paste next rows of code into your html file:
         </p>
-        <pre class="htmlCode">
+        <pre class="language-markup"><code class="language-markup">
 <section class="projects-3">
     <div class="container">
         <h3>We love what we do. <br> This is features of our products</h3>
@@ -653,28 +658,27 @@
     </div>
     <!--/.container-->
 </section>
-</pre>        
-
-        
- <h4>"LESS" version:</h4>
-        <small>if you not already done all instructions
-            that you had to read on the <a href="how_to_install.html">how to install</a> page
-            of this documentation please make it first</small>
+        </code></pre>
+    </li>
+    <li>
+        <h3>LESS version:</h3>
         <p>
-            you should paste same code (as in <a href="#p3-simple" class="inner-link">simple version</a>) and paste next code into your '<strong>.less</strong>' file after that
+            you should paste same code (as in <strong>simple version</strong>) and paste next code into your '<strong>.less</strong>' file after that
             rows that you already had to paste.
         </p>
-        <pre class="cssCode">
-@import '../../ui-kit/ui-kit-projects/less/project-3.less';
-</pre>
-        <h4>All versions:</h4>
+        <pre class="language-scss"><code>
+@import '../../ui-kit-projects/less/project-3.less';
+        </code></pre>
+    </li>
+    <li>
+        <h3>Component Modification:</h3>
         <p>
             So about modifications which you can do.
         </p>
         <p>
             This block has slogon on top of it and block with three columns that consits special blocks for demonstrating your projects.
             You can modificate anyone of it, but you should remember that you can't reorganize the html structure if you want to leave functionality of this block as it exist now.
-            For add images into project boxes you should insert your image between <code>
+            For add images into project boxes you should insert your image between <code class="language-markup">
                 &lt;div class="photo"&gt;...&lt;/div&gt;</code>
             .
         </p>
@@ -695,7 +699,7 @@
     <div class="projects-4">
         <button class="back-button">&#10005;</button>
         <div class="content-man">
-<h1>Block for showing projects. Codename “projects-4”.</h1>
+<h1>Block Progects #4</h1>
 <ol>
     <li>
         <h3>Overview</h3>
@@ -707,17 +711,19 @@
         </p>
     </li>
     <li>
-        <h3>Code</h3>
-
-        <a id="p4-simple"></a><h4>Simple version:</h4>
-        <small>if you not already done all instructions
-            that you had to read on the <a href="how_to_install.html">how to install</a> page
-            of this documentation please make it first</small>
-
+    <h3>Installation</h3>
+    <p>
+        if you not already done all instructions
+        that you had to read on the <a href="how_to_install.html">how to install</a> page
+        of this documentation please make it first
+    </p>
+</li>
+    <li>
+        <h3>CSS version:</h3>
         <p>
             For using this block you should only paste next rows of code into your html file:
         </p>
-        <pre class="htmlCode">
+        <pre class="language-markup"><code class="language-markup">
 <section class="projects-4">
     <div class="container">
         <h3>We love what we do. <br> This is features of our products</h3>
@@ -778,28 +784,27 @@
     </div>
     <!--/.container-->
 </section>
-</pre>        
-
-        
- <h4>"LESS" version:</h4>
-        <small>if you not already done all instructions
-            that you had to read on the <a href="how_to_install.html">how to install</a> page
-            of this documentation please make it first</small>
+        </code></pre>
+    </li>
+    <li>
+        <h3>LESS version:</h3>
         <p>
-            you should paste same code (as in <a href="#p4-simple" class="inner-link">simple version</a>) and paste next code into your '<strong>.less</strong>' file after that
+            you should paste same code (as in <strong>simple version</strong>) and paste next code into your '<strong>.less</strong>' file after that
             rows that you already had to paste.
         </p>
-        <pre class="cssCode">
-@import '../../ui-kit/ui-kit-projects/less/project-4.less';
-</pre>
-        <h4>All versions:</h4>
+        <pre class="language-scss"><code>
+@import '../../ui-kit-projects/less/project-4.less';
+        </code></pre>
+    </li>
+    <li>
+        <h3>Component Modification:</h3>
         <p>
             So about modifications which you can do.
         </p>
         <p>
             This block has slogon on top of it and block with three columns that consits special blocks for demonstrating your projects.
             You can modificate anyone of it, but you should remember that you can't reorganize the html structure if you want to leave functionality of this block as it exist now.
-            For add images into project boxes you should insert your image between <code>
+            For add images into project boxes you should insert your image between <code class="language-markup">
                 &lt;div class="photo"&gt;...&lt;/div&gt;</code>
             .
         </p>

@@ -4034,7 +4034,7 @@ body {
   text-align: center;
 }
 .mcontent .content-18 .carousel:before {
-  content: url('../../ui-kit-content/img/quote.png');
+  content: url('../../ui-kit/ui-kit-content/img/quote.png');
   display: block;
   margin: 0 auto 95px;
   text-align: center;
@@ -4164,7 +4164,7 @@ body {
   position: relative;
 }
 .mcontent .content-19 .span7 .quote:before {
-  content: url('../../ui-kit-content/img/quote.png');
+  content: url('../../ui-kit/ui-kit-content/img/quote.png');
   position: absolute;
   top: 0;
   left: -60px;
@@ -4617,7 +4617,7 @@ body {
 }
 .mcontent .content-21 .features.features-tabs .features-bodies {
   position: relative;
-  background: #ebedee url('../../ui-kit-content/img/screen@2x.png') 0 50% no-repeat;
+  background: #ebedee url('../../ui-kit/ui-kit-content/img/screen@2x.png') 0 50% no-repeat;
   -webkit-background-size: 322px 418px;
   -moz-background-size: 322px 418px;
   -o-background-size: 322px 418px;
@@ -4749,7 +4749,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: relative;
   max-width: 220px;
-  background: url("../../ui-kit-content/img/line-l@2x.png") no-repeat scroll center top / 50% auto rgba(0, 0, 0, 0);
+  background: url("../../ui-kit/ui-kit-content/img/line-l@2x.png") no-repeat scroll center top / 50% auto rgba(0, 0, 0, 0);
   padding-top: 110px;
   opacity: 0;
   filter: alpha(opacity=0);
@@ -14211,7 +14211,7 @@ body {
   top: 0;
   right: 0;
   bottom: 0;
-  background: #ebedee url('../../ui-kit-projects/img/ipad@2x.png') 100% 50% no-repeat;
+  background: #ebedee url('../../ui-kit/ui-kit-projects/img/ipad@2x.png') 100% 50% no-repeat;
   -webkit-background-size: 826px 772px;
   -moz-background-size: 826px 772px;
   -o-background-size: 826px 772px;
@@ -14522,7 +14522,7 @@ body {
   }
 }
 .mcontent .projects-2 .project-1 {
-  background-image: url('../../ui-kit-projects/img/Hawaii_001.png');
+  background-image: url('../../ui-kit/ui-kit-projects/img/Hawaii_001.png');
 }
 .mcontent .projects-2 .project-1 .container h1 {
   font-size: 50px;
@@ -14552,7 +14552,7 @@ body {
   }
 }
 .mcontent .projects-2 .project-2 {
-  background-image: url('../../ui-kit-projects/img/Italy_001.png');
+  background-image: url('../../ui-kit/ui-kit-projects/img/Italy_001.png');
 }
 @media (max-width: 480px) {
   .mcontent .projects-2 .project-2 .hero-unit h1 {
@@ -14560,7 +14560,7 @@ body {
   }
 }
 .mcontent .projects-2 .project-3 {
-  background-image: url('../../ui-kit-projects/img/NY_002.png');
+  background-image: url('../../ui-kit/ui-kit-projects/img/NY_002.png');
 }
 .mcontent .projects-2 .project-3 [class*="fui-"] {
   font-size: 95px;

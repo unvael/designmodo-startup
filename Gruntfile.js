@@ -28,17 +28,15 @@ module.exports = function(grunt) {
       },
       kit: {
       	files: [
-      		{src: 'ui-kit-blog/templates/*.html', dest: 'ui-kit-blog/'},
-       		{src: 'ui-kit-contacts/templates/*.html', dest: 'ui-kit-contacts/'},
-       		{src: 'ui-kit-content/templates/*.html', dest: 'ui-kit-content/'},
-       		{src: 'ui-kit-crew/templates/*.html', dest: 'ui-kit-crew/'},
-       		{src: 'ui-kit-footer/templates/*.html', dest: 'ui-kit-footer/'},
-       		{src: 'ui-kit-header/templates/*.html', dest: 'ui-kit-header/'},
-       		{src: 'ui-kit-price/templates/*.html', dest: 'ui-kit-price/'}, 		  
-       		{src: 'ui-kit-projects/templates/*.html', dest: 'ui-kit-projects/'}, 	       		     		
+      		{src: 'ui-kit-blog/templates/*.html', dest: 'ui-kit-blog/', flatten: true},
+       		{src: 'ui-kit-contacts/templates/*.html', dest: 'ui-kit-contacts/', flatten: true},
+       		{src: 'ui-kit-content/templates/*.html', dest: 'ui-kit-content/', flatten: true},
+       		{src: 'ui-kit-crew/templates/*.html', dest: 'ui-kit-crew/', flatten: true},
+       		{src: 'ui-kit-footer/templates/*.html', dest: 'ui-kit-footer/', flatten: true},
+       		{src: 'ui-kit-header/templates/*.html', dest: 'ui-kit-header/', flatten: true},
+       		{src: 'ui-kit-price/templates/*.html', dest: 'ui-kit-price/', flatten: true}, 		  
+       		{src: 'ui-kit-projects/templates/*.html', dest: 'ui-kit-projects/', flatten: true}, 	       		     		
       	],
-        cwd: '.',
-        flatten: true,
       },      
     },
     copy: {
@@ -80,5 +78,5 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['less']);
   grunt.registerTask('build-manual', ['includes:manual']);
   grunt.registerTask('build-kit', ['includes:kit']);
-  grunt.registerTask('release', ['build-kit', 'build-manual', 'clean:prerelease', 'copy:release', 'clean:release']);
+  grunt.registerTask('release', ['less', 'build-kit', 'build-manual', 'clean:prerelease', 'copy:release', 'clean:release']);
 };

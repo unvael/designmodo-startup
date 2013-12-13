@@ -27,11 +27,11 @@
       left: 0;
       .backface-visibility(visible);
     }
-    
-    img:first-child {
-      visibility: visible;
-    }
 
+    img:first-child {
+      visibility: hidden;
+    }
+    
     &:hover {
       img[src*="/twitter-2@2x"] {
         -webkit-transform: rotateY(180deg);
@@ -110,4 +110,7 @@
         }
     }
   }  
+}
+.header-18 .header-18-sub .pt-page-current .header-18-section .img img[src*="/twitter-1@2x"] {
+  visibility: visible;
 }

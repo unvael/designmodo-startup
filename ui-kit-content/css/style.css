@@ -4305,6 +4305,7 @@ section * {
 @media (max-width: 767px) {
   .content-35 .background .span4 > div img {
     height: auto;
+    min-height: 250px;
   }
 }
 @media (max-width: 767px) {

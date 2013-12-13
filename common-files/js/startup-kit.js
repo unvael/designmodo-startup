@@ -855,8 +855,7 @@ startupKit.uiKitContent.content34 = function() {
         });
         $('.content-34 .page-transitions').css('height', maxH + 'px');
         var ctrlsHeight = $('.content-34 .pt-controls').height();
-        $('.content-34 .pt-controls').css('margin-top', (-1) * (maxH) / 2 - ctrlsHeight + 'px');
-        $('.content-34 .pt-controls').css('padding-bottom', (maxH) / 2 + ctrlsHeight + 'px');
+        $('.content-34 .pt-controls').css('margin-top', (-1) * ctrlsHeight / 2 + 'px');
     });
     // PageTransitions
     var pt = PageTransitions();

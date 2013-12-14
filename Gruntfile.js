@@ -108,5 +108,5 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['less']);
   grunt.registerTask('build-manual', ['includes:manual', 'prettify:after-build-manual']);
   grunt.registerTask('build-kit', ['includes:kit', 'prettify:after-build-kit']);
-  grunt.registerTask('release', ['less', 'build-kit', 'build-manual', 'clean:prerelease', 'copy:release', 'clean:release']);
+  grunt.registerTask('release', ['less', 'build-kit', 'build-manual', 'lineending', 'clean:prerelease', 'copy:release', 'clean:release']);
 };

@@ -66,12 +66,17 @@ module.exports = function(grunt) {
 				{src: ['samples/**'], dest: 'build-release/'},
 				{src: ['manual/**'], dest: 'build-release/'},
 				{src: ['flat-ui/**'], dest: 'build-release/'},
+				{src: ['demo/common-files/**'], dest: 'build-demo/'},
+				{src: ['demo/ui-kit/**'], dest: 'build-demo/'},
+				{src: ['demo/samples/**'], dest: 'build-demo/'},
+				{src: ['demo/manual/**'], dest: 'build-demo/'},
+				{src: ['demo/flat-ui/**'], dest: 'build-demo/'}                                
 			]
 		}	   	
     },
     clean: {
     	prerelease: {
-    		src: 'build-release/'
+    		src: ['build-release/', 'build-demo/']
     	},
     	release: {
     		src: [
@@ -79,6 +84,10 @@ module.exports = function(grunt) {
     			'build-release/manual/for-tpl',
     			'build-release/ui-kit/ui-kit-*/for-tpl',
     			'build-release/ui-kit/ui-kit-*/templates',
+    			'build-demo/demo/manual/templates', 
+    			'build-demo/demo/manual/for-tpl',
+    			'build-demo/demo/ui-kit/ui-kit-*/for-tpl',
+    			'build-demo/demo/ui-kit/ui-kit-*/templates',                        
     		]
     	}
     },
@@ -102,7 +111,7 @@ module.exports = function(grunt) {
 		},
 		'after-build-kit': {
 			expand: true,
-			src: ['ui-kit/ui-kit-*/*.html'],
+			src: ['ui-kit/ui-kit-*/*.html', 'demo/ui-kit/ui-kit-*/*.html']
 		}			
 	}
     

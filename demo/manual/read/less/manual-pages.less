@@ -1,0 +1,221 @@
+//-- start header startup-kit  ------------------------------------------------
+@import "../../../common-files/less/startup-kit_header.less";
+
+//-- end of header startap-kit ------------------------------------------------
+
+.manual-pages {
+  /* prism default theme */
+  @import '../../js/prism/themes/default.less';
+  /*end prism*/
+  &.hti .container {
+    p {
+      .font(20px, #7f8c8d);
+      font-family: @h-font-family;
+      font-weight: normal;
+      margin: 49px 0 0 0;
+    }
+  }
+
+  &.css-classes {
+    margin-top: 0;
+    .container h1 {
+      margin-top: 0;
+    }
+    table {
+      width: 100%;
+      border: 1px solid black;
+      td {
+        border: 1px solid black;
+        height: 100px;
+        text-align: center;
+        p {
+          .font(11px, white);
+          background-color: black;
+          border: 1px solid white;
+        }
+
+      }
+      &.less-prop {
+        th {
+          .font(16px, black);
+          font-weight: 500;
+
+        }
+        td {
+          padding: 5px;
+          border: 1px solid black;
+          height: auto;
+          text-align: left;
+          .font(14px);
+          &:first-child {
+            word-break: keep-all;
+            color: @h-text-color;
+            font-weight: 500;
+          }
+          p {
+            .font(14px);
+            background-color: white;
+          }
+        }
+      }
+    }
+  }
+
+  .container {
+    h1 {
+      .font(35px, #1b1f23);
+      font-family: @h-font-family;
+      font-weight: 800;
+      margin: 125px 0 0 0;
+    }
+
+    h2 {
+      .font(28px, #1b1f23);
+      font-family: @h-font-family;
+      font-weight: 800;
+      margin: 90px 0 0 0;
+    }
+    p {
+      .font(20px, #7f8c8d);
+      font-family: @h-font-family;
+      font-weight: normal;
+      margin: 70px 0 0 0;
+    }
+    .man-button {
+      display: inline-block;
+      .font(18px, #303336);
+      font-family: @h-font-family;
+      font-weight: 500;
+      padding: 19px 31px;
+      border: 3px #303336 solid;
+      .border-radius(10px);
+      margin: 55px 0 0 0;
+      text-decoration: none;
+      &:hover {
+        background-color: #303336;
+        color: white;
+      }
+    }
+
+    code[class*="language-"] {
+      white-space: normal;
+      display: inline-block;
+      border: 0 none;
+      .border-radius(0);
+    }
+
+    pre[class*="language-"] {
+      border: 0 none;
+      .border-radius(5px);
+      position: relative;
+      max-width: 100%;
+      margin: 48px 0 0 0;
+      code[class*="language-"] {
+        white-space: pre;
+        display: block;
+        border: 0 none;
+        .border-radius(0);
+      }
+    }
+
+    .man-items {
+      margin: 110px 0;
+      position: relative;
+      > div, > div > div {
+        position: relative;
+      }
+
+      > div:first-child {
+        margin: 0;
+      }
+      h3 {
+        .font(20px, #303336);
+        @media (max-width: 768px) {
+          margin-top: 40px;
+        }
+      }
+      p {
+        .font(16px, #696f6f);
+        margin: 25px 0 0 0;
+      }
+      .learn-more {
+        display: inline-block;
+        .font(16px, #1b1f23);
+        text-decoration: none;
+        border-bottom: 1px solid #d6d6d7;
+        margin: 18px 0 0 0;
+        &:hover {
+          border-bottom: 0 none;
+        }
+      }
+    }
+
+    a {
+      border-bottom: 1px solid #d6d6d7;
+      .font(20px, #1b1f23);
+      text-decoration: none;
+      font-family: @h-font-family;
+      font-weight: 300;
+      &:hover {
+        border-bottom: 0 none;
+      }
+    }
+
+  }
+}
+
+.faq {
+  .questions {
+    margin: 70px 0 0 0;
+  }
+  .question {
+    p {
+      margin: 0;
+    }
+    cursor: pointer;
+    &:before {
+      background-color: #FFFFFF;
+      border: 1px solid #ffeeee;
+      content: "+";
+      display: inline-block;
+      .font(16px);
+      .line-height(10px);
+
+      margin-top: 8px;
+      position: absolute;
+      text-align: center;
+      width: 10px;
+      height: 10px;
+    }
+    &.opened {
+      &:before {
+        content: '-';
+        .line-height(5px);
+      }
+      .answer {
+        display: block;
+      }
+    }
+
+    p {
+      .font(16px);
+      padding-left: 30px;
+    }
+    .answer {
+      border: 1px solid #ffeeee;
+      display: none;
+      padding: 20px 50px;
+      background-color: white;
+      margin-bottom: 49px;
+      .border-radius(10px);
+      p {
+        .font(14px);
+        margin-bottom: 20px;
+      }
+      pre {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+

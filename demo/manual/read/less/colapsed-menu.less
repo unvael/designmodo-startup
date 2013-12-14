@@ -1,0 +1,45 @@
+.colapsed-menu {
+  float: right;
+  display: none;
+  max-width: 300px;
+  position: absolute;
+  right: 0;
+  top: 52px;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  dl {
+    position: relative;
+    display: block;
+    margin: 0;
+    dd {
+      border-bottom: 1px dashed #333;
+      .line-height(45px);
+      display: block;
+      margin: 0;
+      .box-sizing('border-box');
+      width: 100%;
+      float: left;
+      text-transform: uppercase;
+      dd {
+        margin: 0 0 0 20px;
+        font-size: 12px;
+      }
+      > a {
+        float: left;
+        display: block;
+        width: 100%;
+        padding: 0 0 0 65px;
+        .a-color(#919497, white);
+        &.active {
+          text-decoration: none;
+          color: white;
+          &:after {
+            display: none;
+          }
+        }
+      }
+      background-color: #1f1b23;
+    }
+  }
+}

@@ -26,13 +26,10 @@
         <h3>CSS version:</h3>
 
         <p>
-            you only need paste next rows between <code class="language-markup">
-            &lt;body&gt; ... &lt;/body&gt;</code>
+            you only need paste next rows between <code class="language-markup">&lt;body&gt; ... &lt;/body&gt;</code>
             into your html file.
         </p>
-        <pre class="language-markup"><code class="language-markup">
-            include "../../../ui-kit/ui-kit-blog/for-tpl/blog-5.html"
-        </code></pre>
+        <pre class="language-markup"><code class="language-markup">include "../../../ui-kit/ui-kit-blog/for-tpl/blog-5.html"</code></pre>
 
     </li>
     <li>
@@ -43,10 +40,8 @@
             file after that
             rows that you already had to paste.
         </p>
-        <pre class="language-scss"><code>
-            @import 'blog-common.less';
-            @import 'blog-5.less';
-        </code></pre>
+        <pre class="language-scss"><code>@import 'blog-common.less';
+            @import 'blog-5.less';</code></pre>
         <h4>All versions</h4>
 
         <p>
@@ -54,37 +49,30 @@
         </p>
 
         <p>
-            As you can see in code we have block <code class="language-markup">
-            &lt;div id="b1-pt-1"&gt;...&lt;/div&gt;</code>
+            As you can see in code we have block <code class="language-markup">&lt;div id="b1-pt-1"&gt;...&lt;/div&gt;</code>
             - it's main block of the carousel.
-            In this block situated few pages <code class="language-markup">
-            &lt;div class="pt-page"&gt;...&lt;/div&gt;</code>
+            In this block situated few pages <code class="language-markup">&lt;div class="pt-page"&gt;...&lt;/div&gt;</code>
             For thouse elements you can change background, and you can do it in few ways. First way - you can change the
             part of class that start with
             <strong>bg-</strong> for this element. This way you can use reserved classes from Flat-UI, but it changed
             only color of carousels page background.
             Or second way - you can use css for change background for concrete element.
-            As example for <code class="language-markup">
-            &lt;div class="pt-page-1"&gt;...&lt;/div&gt;</code>
+            As example for <code class="language-markup">&lt;div class="pt-page-1"&gt;...&lt;/div&gt;</code>
             . You can do something like this:
         </p>
-        <pre class="language-css"><code>
-            .pt-page-1{
+        <pre class="language-css"><code>.pt-page-1{
             background-image:url('some image url');
             background-color: some color;
-            }
-        </code></pre>
+            }</code></pre>
         <p>
             You can add text for any of this carousel pages. For this you should add content after <code
-                class="language-markup">
-            &lt;div class="box-icon"&gt;...&lt;/div&gt;</code>
+                class="language-markup">&lt;div class="box-icon"&gt;...&lt;/div&gt;</code>
             .
             But you should create style for this text by yourself.
         </p>
 
         <p>
-            And you can add new pages. For this you should copy one of blocks <code class="language-markup">
-            &lt;div class="pt-page"&gt;...&lt;/div&gt;</code>
+            And you can add new pages. For this you should copy one of blocks <code class="language-markup">&lt;div class="pt-page"&gt;...&lt;/div&gt;</code>
             ,
             replace class as <strong>pt-page-1</strong> to new class.
             Each new page should has new class with new number.

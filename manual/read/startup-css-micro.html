@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8">
     <title>Startup-kit - CSS &amp; Less</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,357 +15,368 @@
     <link rel="stylesheet" href="../read/css/style.css">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-    <script src="../../flat-ui/js/html5shiv.js"></script>
-    <![endif]-->
+<script src="../../flat-ui/js/html5shiv.js"></script>
+<![endif]-->
     <script src="../../flat-ui/js/jquery-1.8.3.min.js"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
-</head>
-<body>
-
-<section class="manual-pages css-classes">
-
-<div class="container">
-<div class="row">
-<div class="span9 ">
-<h1>The CSS &amp; Less helper.</h1>
-
-<h2>Background classes:</h2>
-<table>
-    <tr>
-        <td class="bg-white">
-            <p>
-                class="bg-white"
-            </p></td>
-        <td class="bg-black">
-            <p>
-                class="bg-black"
-            </p></td>
-        <td class="bg-turquoise">
-            <p>
-                class="bg-turquoise"
-            </p></td>
-        <td class="bg-green-sea">
-            <p>
-                class="bg-green-sea"
-            </p></td>
-        <td class="bg-emerland">
-            <p>
-                class="bg-emerland"
-            </p></td>
-        <td class="bg-nephritis">
-            <p>
-                class="bg-nephritis"
-            </p></td>
-    </tr>
-    <tr>
-        <td class="bg-peter-river">
-            <p>
-                class="bg-peter-river"
-            </p></td>
-        <td class="bg-belize-hole">
-            <p>
-                class="bg-belize-hole"
-            </p></td>
-        <td class="bg-amethyst">
-            <p>
-                class="bg-amethyst"
-            </p></td>
-        <td class="bg-wisteria">
-            <p>
-                class="bg-wisteria"
-            </p></td>
-        <td class="bg-wet-asphalt">
-            <p>
-                class="bg-wet-asphalt"
-            </p></td>
-        <td class="bg-midnight-blue">
-            <p>
-                class="bg-midnight-blue"
-            </p></td>
-    </tr>
-    <tr>
-        <td class="bg-sun-flower">
-            <p>
-                class="bg-sun-flower"
-            </p></td>
-        <td class="bg-orange">
-            <p>
-                class="bg-orange"
-            </p></td>
-        <td class="bg-carrot">
-            <p>
-                class="bg-carrot"
-            </p></td>
-        <td class="bg-pumpkin">
-            <p>
-                class="bg-pumpkin"
-            </p></td>
-        <td class="bg-alizarin">
-            <p>
-                class="bg-alizarin"
-            </p></td>
-        <td class="bg-pomegranate">
-            <p>
-                class="bg-pomegranate"
-            </p></td>
-    </tr>
-    <tr>
-        <td class="bg-clouds">
-            <p>
-                class="bg-clouds"
-            </p></td>
-        <td class="bg-silver">
-            <p>
-                class="bg-silver"
-            </p></td>
-        <td class="bg-concrete">
-            <p>
-                class="bg-concrete"
-            </p></td>
-        <td class="bg-asbestos">
-            <p>
-                class="bg-asbestos"
-            </p></td>
-    </tr>
-    <tr>
-        <td colspan="6"><h4>Special backgrounds:</h4></td>
-    </tr>
-    <tr>
-        <td class="bg-base">
-            <p>
-                class="bg-base"
-            </p></td>
-        <td class="bg-firm">
-            <p>
-                class="bg-firm"
-            </p></td>
-        <td class="bg-success">
-            <p>
-                class="bg-success"
-            </p></td>
-        <td class="bg-danger">
-            <p>
-                class="bg-danger"
-            </p></td>
-        <td class="bg-warning">
-            <p>
-                class="bg-warning"
-            </p></td>
-        <td class="bg-info">
-            <p>
-                class="bg-info"
-            </p></td>
-    </tr>
-</table>
-
-<h2>Less mixins:</h2>
-<table class="less-prop">
-    <thead>
-    <th>Mixin</th>
-    <th>Using for</th>
-    </thead>
-    <tbody>
-    <tr>
-        <td>.clearfix()</td>
-        <td>The problem happens when a floated element is within a container box,
-            that element does not automatically force the container’s height adjust
-            to the floated element. When an element is floated, its parent no
-            longer contains it because the float is removed from the flow.
-            Use this for fix it.
-        </td>
-    </tr>
-    <tr>
-        <td>.center-block()</td>
-        <td>Center-align a block level element</td>
-    </tr>
-    <tr>
-        <td>.a-color(@color)</td>
-        <td>Make link color</td>
-    </tr>
-    <tr>
-        <td>.a-color(@color; @color-active)</td>
-        <td>Make link color for each of two states (normal and hover)</td>
-    </tr>
-    <tr>
-        <td>.btn-background(@color)</td>
-        <td>Make background for a button</td>
-    </tr>
-    <tr>
-        <th colspan="2">CSS3 PROPERTIES for crosbrowser solving.</th>
-    </tr>
-    <tr>
-        <td>.border-radius(@radius)</td>
-        <td>Border Radius</td>
-    </tr>
-    <tr>
-        <td>.border-top-left-radius(@radius)</td>
-        <td>Border Radius for top left corner</td>
-    </tr>
-    <tr>
-        <td> .border-top-right-radius(@radius)</td>
-        <td>Border Radius for top right corner</td>
-    </tr>
-    <tr>
-        <td>.border-bottom-right-radius(@radius)</td>
-        <td>Border Radius for bottom right corner</td>
-    </tr>
-    <tr>
-        <td>.border-bottom-left-radius(@radius)</td>
-        <td>Border Radius for bottom left corner</td>
-    </tr>
-    <tr>
-        <td>.border-top-radius(@radius)</td>
-        <td>Border Radius for both top corners</td>
-    </tr>
-    <tr>
-        <td> .border-right-radius(@radius)</td>
-        <td>Border Radius for both right corners</td>
-    </tr>
-    <tr>
-        <td> .border-bottom-radius(@radius)</td>
-        <td>Border Radius for both bottom corners</td>
-    </tr>
-    <tr>
-        <td> .border-left-radius(@radius)</td>
-        <td>Border Radius for both left corners</td>
-    </tr>
-    <tr>
-        <td> .box-shadow(@shadow)</td>
-        <td>Box drop shadow</td>
-    </tr>
-    <tr>
-        <td> .transition(@transition)</td>
-        <td>Transition</td>
-    </tr>
-    <tr>
-        <td> .transition-delay(@transition-delay)</td>
-        <td>Transition Delay</td>
-    </tr>
-    <tr>
-        <td> .transition-duration(@transition-duration)</td>
-        <td>Transition Duration</td>
-    </tr>
-    <tr>
-        <td> .rotate(@degrees)</td>
-        <td>Transformation - Rotate</td>
-    </tr>
-    <tr>
-        <td> .scale(@ratio)</td>
-        <td>Transformation - Scale</td>
-    </tr>
-    <tr>
-        <td>.translate(@x, @y)</td>
-        <td>Transformation - Translate</td>
-    </tr>
-    <tr>
-        <td>.skew(@x, @y)</td>
-        <td>Transformation - Skew</td>
-    </tr>
-    <tr>
-        <td>.translate3d(@x, @y, @z)</td>
-        <td>Transformation - Translate in 3D</td>
-    </tr>
-    <tr>
-        <td>.transform-origin(@origin)</td>
-        <td>Transformation - Transform-origin</td>
-    </tr>
-    <tr>
-        <td>.backface-visibility(@visibility)</td>
-        <td> Backface visibility. Prevent browsers from flickering when using CSS 3D transforms.
-            Default value is `visible`, but can be changed to `hidden
-        </td>
-    </tr>
-    <tr>
-        <td>.background-clip(@clip)</td>
-        <td>Background clipping. Heads up: FF 3.6 and under need "padding" instead of "padding-box"</td>
-    </tr>
-    <tr>
-        <td>.background-size(@size)</td>
-        <td>Background sizing</td>
-    </tr>
-    <tr>
-        <td>.box-sizing(@boxmodel)</td>
-        <td>Box sizing</td>
-    </tr>
-
-    <tr>
-        <td>.content-columns(@columnCount, @columnGap)</td>
-        <td>CSS3 Content Columns</td>
-    </tr>
-    <tr>
-        <td>.hyphens(@mode: auto)</td>
-        <td>Optional hyphenation</td>
-    </tr>
-    <tr>
-        <td>.opacity(@opacity)</td>
-        <td>Opacity</td>
-    </tr>
-    <tr>
-        <th colspan="2">Another mixins</th>
-    </tr>
-    <tr>
-        <td>.user-select(@select)</td>
-        <td>User select. For selecting text on the page</td>
-    </tr>
-    <tr>
-        <td>.resizable(@direction)</td>
-        <td>Resize anything</td>
-    </tr>
-    <tr>
-        <td>.gradientBar(
-            @primaryColor,
-            @secondaryColor,
-            @textColor,
-            @textShadow
-            )
-        </td>
-        <td>Gradient Bar Colors for buttons and alerts</td>
-    </tr>
-    <tr>
-        <td>.reset-filter()</td>
-        <td>Reset filters for IE</td>
-    </tr>
-    <tr>
-        <td> .v-center()</td>
-        <td>Vertical centering</td>
-    </tr>
-    <tr>
-        <th colspan="2">Base framework mixins</th>
-    </tr>
-    <tr>
-        <td>.font(@font-size,@color)</td>
-        <td>Сonvert the font size according to the base font of framework. The @font-size param in 'px'.</td>
-    </tr>
-    <tr>
-        <td>.line-height(@line-height)</td>
-        <td>Сonvert the line-height property according to the base line-height property of framework.<br/> The
-            @line-height in 'px'
-        </td>
-    </tr>
-    </tbody>
-</table>
-
-
-</div>
-
-</div>
-</div>
-
-</section>
-
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="../../flat-ui/js/bootstrap.min.js"></script>
-<!--[if lt IE 8]>
+  </head>
+  <body>
+    <section class="manual-pages css-classes">
+      <div class="container">
+        <div class="row">
+          <div class="span9 ">
+            <h1>The CSS &amp; Less helper.</h1>
+            <h2>Background classes:</h2>
+            <table>
+              <tr>
+                <td class="bg-white">
+                  <p>
+                    class="bg-white"
+                  </p>
+                </td>
+                <td class="bg-black">
+                  <p>
+                    class="bg-black"
+                  </p>
+                </td>
+                <td class="bg-turquoise">
+                  <p>
+                    class="bg-turquoise"
+                  </p>
+                </td>
+                <td class="bg-green-sea">
+                  <p>
+                    class="bg-green-sea"
+                  </p>
+                </td>
+                <td class="bg-emerland">
+                  <p>
+                    class="bg-emerland"
+                  </p>
+                </td>
+                <td class="bg-nephritis">
+                  <p>
+                    class="bg-nephritis"
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="bg-peter-river">
+                  <p>
+                    class="bg-peter-river"
+                  </p>
+                </td>
+                <td class="bg-belize-hole">
+                  <p>
+                    class="bg-belize-hole"
+                  </p>
+                </td>
+                <td class="bg-amethyst">
+                  <p>
+                    class="bg-amethyst"
+                  </p>
+                </td>
+                <td class="bg-wisteria">
+                  <p>
+                    class="bg-wisteria"
+                  </p>
+                </td>
+                <td class="bg-wet-asphalt">
+                  <p>
+                    class="bg-wet-asphalt"
+                  </p>
+                </td>
+                <td class="bg-midnight-blue">
+                  <p>
+                    class="bg-midnight-blue"
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="bg-sun-flower">
+                  <p>
+                    class="bg-sun-flower"
+                  </p>
+                </td>
+                <td class="bg-orange">
+                  <p>
+                    class="bg-orange"
+                  </p>
+                </td>
+                <td class="bg-carrot">
+                  <p>
+                    class="bg-carrot"
+                  </p>
+                </td>
+                <td class="bg-pumpkin">
+                  <p>
+                    class="bg-pumpkin"
+                  </p>
+                </td>
+                <td class="bg-alizarin">
+                  <p>
+                    class="bg-alizarin"
+                  </p>
+                </td>
+                <td class="bg-pomegranate">
+                  <p>
+                    class="bg-pomegranate"
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="bg-clouds">
+                  <p>
+                    class="bg-clouds"
+                  </p>
+                </td>
+                <td class="bg-silver">
+                  <p>
+                    class="bg-silver"
+                  </p>
+                </td>
+                <td class="bg-concrete">
+                  <p>
+                    class="bg-concrete"
+                  </p>
+                </td>
+                <td class="bg-asbestos">
+                  <p>
+                    class="bg-asbestos"
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="6">
+                  <h4>Special backgrounds:</h4>
+                </td>
+              </tr>
+              <tr>
+                <td class="bg-base">
+                  <p>
+                    class="bg-base"
+                  </p>
+                </td>
+                <td class="bg-firm">
+                  <p>
+                    class="bg-firm"
+                  </p>
+                </td>
+                <td class="bg-success">
+                  <p>
+                    class="bg-success"
+                  </p>
+                </td>
+                <td class="bg-danger">
+                  <p>
+                    class="bg-danger"
+                  </p>
+                </td>
+                <td class="bg-warning">
+                  <p>
+                    class="bg-warning"
+                  </p>
+                </td>
+                <td class="bg-info">
+                  <p>
+                    class="bg-info"
+                  </p>
+                </td>
+              </tr>
+            </table>
+            <h2>Less mixins:</h2>
+            <table class="less-prop">
+              <thead>
+                <th>Mixin</th>
+                <th>Using for</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>.clearfix()</td>
+                  <td>The problem happens when a floated element is within a container box, that element does not automatically force the container’s height adjust to the floated element. When an element is floated, its parent no longer contains it because
+                    the float is removed from the flow. Use this for fix it.
+                  </td>
+                </tr>
+                <tr>
+                  <td>.center-block()</td>
+                  <td>Center-align a block level element</td>
+                </tr>
+                <tr>
+                  <td>.a-color(@color)</td>
+                  <td>Make link color</td>
+                </tr>
+                <tr>
+                  <td>.a-color(@color; @color-active)</td>
+                  <td>Make link color for each of two states (normal and hover)</td>
+                </tr>
+                <tr>
+                  <td>.btn-background(@color)</td>
+                  <td>Make background for a button</td>
+                </tr>
+                <tr>
+                  <th colspan="2">CSS3 PROPERTIES for crosbrowser solving.</th>
+                </tr>
+                <tr>
+                  <td>.border-radius(@radius)</td>
+                  <td>Border Radius</td>
+                </tr>
+                <tr>
+                  <td>.border-top-left-radius(@radius)</td>
+                  <td>Border Radius for top left corner</td>
+                </tr>
+                <tr>
+                  <td>.border-top-right-radius(@radius)</td>
+                  <td>Border Radius for top right corner</td>
+                </tr>
+                <tr>
+                  <td>.border-bottom-right-radius(@radius)</td>
+                  <td>Border Radius for bottom right corner</td>
+                </tr>
+                <tr>
+                  <td>.border-bottom-left-radius(@radius)</td>
+                  <td>Border Radius for bottom left corner</td>
+                </tr>
+                <tr>
+                  <td>.border-top-radius(@radius)</td>
+                  <td>Border Radius for both top corners</td>
+                </tr>
+                <tr>
+                  <td>.border-right-radius(@radius)</td>
+                  <td>Border Radius for both right corners</td>
+                </tr>
+                <tr>
+                  <td>.border-bottom-radius(@radius)</td>
+                  <td>Border Radius for both bottom corners</td>
+                </tr>
+                <tr>
+                  <td>.border-left-radius(@radius)</td>
+                  <td>Border Radius for both left corners</td>
+                </tr>
+                <tr>
+                  <td>.box-shadow(@shadow)</td>
+                  <td>Box drop shadow</td>
+                </tr>
+                <tr>
+                  <td>.transition(@transition)</td>
+                  <td>Transition</td>
+                </tr>
+                <tr>
+                  <td>.transition-delay(@transition-delay)</td>
+                  <td>Transition Delay</td>
+                </tr>
+                <tr>
+                  <td>.transition-duration(@transition-duration)</td>
+                  <td>Transition Duration</td>
+                </tr>
+                <tr>
+                  <td>.rotate(@degrees)</td>
+                  <td>Transformation - Rotate</td>
+                </tr>
+                <tr>
+                  <td>.scale(@ratio)</td>
+                  <td>Transformation - Scale</td>
+                </tr>
+                <tr>
+                  <td>.translate(@x, @y)</td>
+                  <td>Transformation - Translate</td>
+                </tr>
+                <tr>
+                  <td>.skew(@x, @y)</td>
+                  <td>Transformation - Skew</td>
+                </tr>
+                <tr>
+                  <td>.translate3d(@x, @y, @z)</td>
+                  <td>Transformation - Translate in 3D</td>
+                </tr>
+                <tr>
+                  <td>.transform-origin(@origin)</td>
+                  <td>Transformation - Transform-origin</td>
+                </tr>
+                <tr>
+                  <td>.backface-visibility(@visibility)</td>
+                  <td>Backface visibility. Prevent browsers from flickering when using CSS 3D transforms. Default value is `visible`, but can be changed to `hidden
+                  </td>
+                </tr>
+                <tr>
+                  <td>.background-clip(@clip)</td>
+                  <td>Background clipping. Heads up: FF 3.6 and under need "padding" instead of "padding-box"</td>
+                </tr>
+                <tr>
+                  <td>.background-size(@size)</td>
+                  <td>Background sizing</td>
+                </tr>
+                <tr>
+                  <td>.box-sizing(@boxmodel)</td>
+                  <td>Box sizing</td>
+                </tr>
+                <tr>
+                  <td>.content-columns(@columnCount, @columnGap)</td>
+                  <td>CSS3 Content Columns</td>
+                </tr>
+                <tr>
+                  <td>.hyphens(@mode: auto)</td>
+                  <td>Optional hyphenation</td>
+                </tr>
+                <tr>
+                  <td>.opacity(@opacity)</td>
+                  <td>Opacity</td>
+                </tr>
+                <tr>
+                  <th colspan="2">Another mixins</th>
+                </tr>
+                <tr>
+                  <td>.user-select(@select)</td>
+                  <td>User select. For selecting text on the page</td>
+                </tr>
+                <tr>
+                  <td>.resizable(@direction)</td>
+                  <td>Resize anything</td>
+                </tr>
+                <tr>
+                  <td>.gradientBar( @primaryColor, @secondaryColor, @textColor, @textShadow )
+                  </td>
+                  <td>Gradient Bar Colors for buttons and alerts</td>
+                </tr>
+                <tr>
+                  <td>.reset-filter()</td>
+                  <td>Reset filters for IE</td>
+                </tr>
+                <tr>
+                  <td>.v-center()</td>
+                  <td>Vertical centering</td>
+                </tr>
+                <tr>
+                  <th colspan="2">Base framework mixins</th>
+                </tr>
+                <tr>
+                  <td>.font(@font-size,@color)</td>
+                  <td>Сonvert the font size according to the base font of framework. The @font-size param in 'px'.</td>
+                </tr>
+                <tr>
+                  <td>.line-height(@line-height)</td>
+                  <td>Сonvert the line-height property according to the base line-height property of framework.
+                    <br/>The @line-height in 'px'
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../../flat-ui/js/bootstrap.min.js"></script>
+    <!--[if lt IE 8]>
 <script src="../../flat-ui/js/icon-font-ie7.js"></script>
 <![endif]-->
-<script src="../../common-files/js/jquery.scrollTo-1.4.3.1-min.js"></script>
-<script src="../../common-files/js/modernizr.custom.js"></script>
-<script src="../../common-files/js/page-transitions.js"></script>
-<script src="../../common-files/js/easing.min.js"></script>
-<script src="../../common-files/js/jquery.svg.js"></script>
-<script src="../../common-files/js/jquery.svganim.js"></script>
-<script src="../../common-files/js/startup-kit.js"></script>
-<script src="../prism/prism.js"></script>
-<script src="../js/script.js"></script>
-</body>
+    <script src="../../common-files/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+    <script src="../../common-files/js/modernizr.custom.js"></script>
+    <script src="../../common-files/js/page-transitions.js"></script>
+    <script src="../../common-files/js/easing.min.js"></script>
+    <script src="../../common-files/js/jquery.svg.js"></script>
+    <script src="../../common-files/js/jquery.svganim.js"></script>
+    <script src="../../common-files/js/startup-kit.js"></script>
+    <script src="../prism/prism.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
 </html>

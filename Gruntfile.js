@@ -21,6 +21,9 @@ module.exports = function(grunt) {
 	  },
     },
     includes: {
+		options: {
+			includeRegexp: /include\s+"(\S+)"/,
+		},
       manual: {
         src: ['manual/templates/*.html'],
         cwd: '.',

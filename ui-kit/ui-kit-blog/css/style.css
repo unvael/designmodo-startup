@@ -559,51 +559,200 @@ section * {
 .pt-page-ontop {
   z-index: 999;
 }
-.startup-kit_header h1 {
-  font-size: 45px;
-  font-weight: normal;
-  color: #2c3e50;
+.nav-visible .dockbar {
+  display: none;
+}
+.nav-visible .read-man {
+  display: none;
+}
+.dockbar {
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: z-index 4s ease 0s;
+  -moz-transition: z-index 4s ease 0s;
+  -o-transition: z-index 4s ease 0s;
+  transition: z-index 4s ease 0s;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 59.99999999999999px;
 }
-.startup-kit_header p {
-  font-size: 18px;
+.dockbar.navbar-fixed-top .colapsed-menu {
+  display: none;
+}
+@media (max-width: 979px) {
+  .dockbar.navbar-fixed-top {
+    position: fixed;
+  }
+  .dockbar.navbar-fixed-top .colapsed-menu {
+    float: right;
+    display: none;
+    max-width: 300px;
+    position: absolute;
+    right: 0;
+    top: 52px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+  .dockbar.navbar-fixed-top .colapsed-menu dl {
+    position: relative;
+    display: block;
+    margin: 0;
+  }
+  .dockbar.navbar-fixed-top .colapsed-menu dl dd {
+    border-bottom: 1px dashed #333;
+    line-height: 45px;
+    display: block;
+    margin: 0;
+    -webkit-box-sizing: 'border-box';
+    -moz-box-sizing: 'border-box';
+    box-sizing: 'border-box';
+    width: 100%;
+    float: left;
+    text-transform: uppercase;
+    background-color: #1f1b23;
+  }
+  .dockbar.navbar-fixed-top .colapsed-menu dl dd dd {
+    margin: 0 0 0 20px;
+    font-size: 12px;
+  }
+  .dockbar.navbar-fixed-top .colapsed-menu dl dd > a {
+    float: left;
+    display: block;
+    width: 100%;
+    padding: 0 0 0 65px;
+    color: #919497;
+  }
+  .dockbar.navbar-fixed-top .colapsed-menu dl dd > a:hover,
+  .dockbar.navbar-fixed-top .colapsed-menu dl dd > a:focus,
+  .dockbar.navbar-fixed-top .colapsed-menu dl dd > a.active {
+    color: #ffffff;
+  }
+  .dockbar.navbar-fixed-top .colapsed-menu dl dd > a.active {
+    text-decoration: none;
+    color: white;
+  }
+  .dockbar.navbar-fixed-top .colapsed-menu dl dd > a.active:after {
+    display: none;
+  }
+  .dockbar.navbar-fixed-top > menu {
+    padding: 0 20px;
+  }
+  .dockbar.navbar-fixed-top .container {
+    width: auto;
+  }
+}
+.dockbar .menu-btn {
+  display: none;
+}
+@media (max-width: 979px) {
+  .dockbar .menu-btn {
+    display: inline-block;
+    float: right;
+    margin-right: 40px;
+    margin-top: 20px;
+    position: relative;
+  }
+}
+.dockbar .main-menu {
+  display: block;
+  overflow: hidden;
+  background-color: #1f1b23;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0;
+}
+.dockbar .main-menu > div {
+  height: 65px;
+}
+.dockbar .main-menu > div > div {
+  height: 65px;
+}
+.dockbar .main-menu a.man-brand {
+  display: inline-block;
+  float: left;
+  text-decoration: none;
+  line-height: 65px;
+}
+@media (max-width: 979px) {
+  .dockbar .main-menu a.man-brand {
+    line-height: 65px;
+    width: auto;
+    margin-left: 20px;
+  }
+}
+.dockbar .main-menu a.man-brand .logotype {
+  font-size: 16px;
   font-weight: normal;
-  color: #7f8c8d;
+  color: #ffffff;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.dockbar .main-menu a.man-brand .doc-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #919497;
+  font-weight: normal;
+}
+.dockbar .main-menu dl {
+  display: inline-block;
+  margin: 0;
+}
+@media (max-width: 979px) {
+  .dockbar .main-menu dl {
+    display: none;
+  }
+}
+.dockbar .main-menu dl dd {
+  margin: 0;
+  padding: 17px 0;
+  line-height: 30.999999999999996px;
+  display: inline-block;
+}
+.dockbar .main-menu dl dd a {
+  font-size: 12px;
+  font-weight: normal;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 29.999999999999996px;
+  font-weight: 500;
+  padding-right: 22px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #919497;
+  display: block;
 }
-@media (max-width: 480px) {
-  .startup-kit_header h1 {
-    font-size: 30px;
-    font-weight: normal;
-    color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 36px;
-  }
-  .startup-kit_header p {
-    font-size: 16px;
-    font-weight: normal;
-    color: #7f8c8d;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 27px;
-  }
+.dockbar .main-menu dl dd a:hover,
+.dockbar .main-menu dl dd a:focus,
+.dockbar .main-menu dl dd a.active {
+  color: #ffffff;
 }
-@media (max-width: 767px) {
-  .startup-kit_header h1 {
-    font-size: 30px;
-    font-weight: normal;
-    color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 36px;
-  }
-  .startup-kit_header p {
-    font-size: 16px;
-    font-weight: normal;
-    color: #7f8c8d;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 27px;
-  }
+.dockbar .main-menu dl dd a.active {
+  text-decoration: none;
+  color: white;
+}
+body {
+  margin-top: 66px;
+  position: relative;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body.hovered {
+  background-color: #ecf0f1;
+}
+body.colapsed-menu-active {
+  height: 100%;
+  overflow: hidden;
+}
+body.colapsed-menu-active .colapsed-menu {
+  display: block !important;
+}
+body .delimiter-big {
+  margin-top: 180px;
+}
+body .delimiter {
+  margin-top: 30px;
 }
 /**
  * Blog 1 stylesheet  
@@ -736,7 +885,7 @@ section * {
 }
 .blog-1 .title h3 {
   font-size: 30px;
-  color: #3498db;
+  color: #2c3e50;
   margin: 0;
   font-weight: 300;
 }
@@ -1030,7 +1179,7 @@ section * {
 .blog-3 .img {
   height: 380px;
   margin: 110px 0;
-  background: url('../img/img-2.jpg') 50% 50% no-repeat;
+  background: url('../../../common-files/img/Brazil_002.png') 50% 80% no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1123,6 +1272,8 @@ section * {
   text-transform: none;
 }
 .blog-4 .img {
+  height: 242px;
+  width: 538px;
   margin: 70px 0;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -1147,7 +1298,7 @@ section * {
   letter-spacing: -1px;
 }
 .blog-4 .quote:before {
-  content: url('../img/quote-up.png');
+  content: url('../../../common-files/icons/quote-up.png');
   position: absolute;
   top: -17px;
   left: -40px;
@@ -1404,7 +1555,7 @@ section * {
   letter-spacing: -1px;
 }
 .blog-5 .quote:before {
-  content: url('../img/quote-down.png');
+  content: url('../../../common-files/icons/quote-down.png');
   display: block;
   margin: 0 auto 35px;
   text-align: center;

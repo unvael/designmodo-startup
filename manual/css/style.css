@@ -1040,51 +1040,200 @@ body {
 .mcontent .pt-page-ontop {
   z-index: 999;
 }
-.mcontent .startup-kit_header h1 {
-  font-size: 45px;
-  font-weight: normal;
-  color: #2c3e50;
+.mcontent .nav-visible .dockbar {
+  display: none;
+}
+.mcontent .nav-visible .read-man {
+  display: none;
+}
+.mcontent .dockbar {
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: z-index 4s ease 0s;
+  -moz-transition: z-index 4s ease 0s;
+  -o-transition: z-index 4s ease 0s;
+  transition: z-index 4s ease 0s;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 59.99999999999999px;
 }
-.mcontent .startup-kit_header p {
-  font-size: 18px;
+.mcontent .dockbar.navbar-fixed-top .colapsed-menu {
+  display: none;
+}
+@media (max-width: 979px) {
+  .mcontent .dockbar.navbar-fixed-top {
+    position: fixed;
+  }
+  .mcontent .dockbar.navbar-fixed-top .colapsed-menu {
+    float: right;
+    display: none;
+    max-width: 300px;
+    position: absolute;
+    right: 0;
+    top: 52px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+  .mcontent .dockbar.navbar-fixed-top .colapsed-menu dl {
+    position: relative;
+    display: block;
+    margin: 0;
+  }
+  .mcontent .dockbar.navbar-fixed-top .colapsed-menu dl dd {
+    border-bottom: 1px dashed #333;
+    line-height: 45px;
+    display: block;
+    margin: 0;
+    -webkit-box-sizing: 'border-box';
+    -moz-box-sizing: 'border-box';
+    box-sizing: 'border-box';
+    width: 100%;
+    float: left;
+    text-transform: uppercase;
+    background-color: #1f1b23;
+  }
+  .mcontent .dockbar.navbar-fixed-top .colapsed-menu dl dd dd {
+    margin: 0 0 0 20px;
+    font-size: 12px;
+  }
+  .mcontent .dockbar.navbar-fixed-top .colapsed-menu dl dd > a {
+    float: left;
+    display: block;
+    width: 100%;
+    padding: 0 0 0 65px;
+    color: #919497;
+  }
+  .mcontent .dockbar.navbar-fixed-top .colapsed-menu dl dd > a:hover,
+  .mcontent .dockbar.navbar-fixed-top .colapsed-menu dl dd > a:focus,
+  .mcontent .dockbar.navbar-fixed-top .colapsed-menu dl dd > a.active {
+    color: #ffffff;
+  }
+  .mcontent .dockbar.navbar-fixed-top .colapsed-menu dl dd > a.active {
+    text-decoration: none;
+    color: white;
+  }
+  .mcontent .dockbar.navbar-fixed-top .colapsed-menu dl dd > a.active:after {
+    display: none;
+  }
+  .mcontent .dockbar.navbar-fixed-top > menu {
+    padding: 0 20px;
+  }
+  .mcontent .dockbar.navbar-fixed-top .container {
+    width: auto;
+  }
+}
+.mcontent .dockbar .menu-btn {
+  display: none;
+}
+@media (max-width: 979px) {
+  .mcontent .dockbar .menu-btn {
+    display: inline-block;
+    float: right;
+    margin-right: 40px;
+    margin-top: 20px;
+    position: relative;
+  }
+}
+.mcontent .dockbar .main-menu {
+  display: block;
+  overflow: hidden;
+  background-color: #1f1b23;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0;
+}
+.mcontent .dockbar .main-menu > div {
+  height: 65px;
+}
+.mcontent .dockbar .main-menu > div > div {
+  height: 65px;
+}
+.mcontent .dockbar .main-menu a.man-brand {
+  display: inline-block;
+  float: left;
+  text-decoration: none;
+  line-height: 65px;
+}
+@media (max-width: 979px) {
+  .mcontent .dockbar .main-menu a.man-brand {
+    line-height: 65px;
+    width: auto;
+    margin-left: 20px;
+  }
+}
+.mcontent .dockbar .main-menu a.man-brand .logotype {
+  font-size: 16px;
   font-weight: normal;
-  color: #7f8c8d;
+  color: #ffffff;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.mcontent .dockbar .main-menu a.man-brand .doc-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #919497;
+  font-weight: normal;
+}
+.mcontent .dockbar .main-menu dl {
+  display: inline-block;
+  margin: 0;
+}
+@media (max-width: 979px) {
+  .mcontent .dockbar .main-menu dl {
+    display: none;
+  }
+}
+.mcontent .dockbar .main-menu dl dd {
+  margin: 0;
+  padding: 17px 0;
+  line-height: 30.999999999999996px;
+  display: inline-block;
+}
+.mcontent .dockbar .main-menu dl dd a {
+  font-size: 12px;
+  font-weight: normal;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 29.999999999999996px;
+  font-weight: 500;
+  padding-right: 22px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #919497;
+  display: block;
 }
-@media (max-width: 480px) {
-  .mcontent .startup-kit_header h1 {
-    font-size: 30px;
-    font-weight: normal;
-    color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 36px;
-  }
-  .mcontent .startup-kit_header p {
-    font-size: 16px;
-    font-weight: normal;
-    color: #7f8c8d;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 27px;
-  }
+.mcontent .dockbar .main-menu dl dd a:hover,
+.mcontent .dockbar .main-menu dl dd a:focus,
+.mcontent .dockbar .main-menu dl dd a.active {
+  color: #ffffff;
 }
-@media (max-width: 767px) {
-  .mcontent .startup-kit_header h1 {
-    font-size: 30px;
-    font-weight: normal;
-    color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 36px;
-  }
-  .mcontent .startup-kit_header p {
-    font-size: 16px;
-    font-weight: normal;
-    color: #7f8c8d;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 27px;
-  }
+.mcontent .dockbar .main-menu dl dd a.active {
+  text-decoration: none;
+  color: white;
+}
+.mcontent body {
+  margin-top: 66px;
+  position: relative;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.mcontent body.hovered {
+  background-color: #ecf0f1;
+}
+.mcontent body.colapsed-menu-active {
+  height: 100%;
+  overflow: hidden;
+}
+.mcontent body.colapsed-menu-active .colapsed-menu {
+  display: block !important;
+}
+.mcontent body .delimiter-big {
+  margin-top: 180px;
+}
+.mcontent body .delimiter {
+  margin-top: 30px;
 }
 .mcontent .blog-1 .box-icon {
   margin: 0 auto 35px;
@@ -1214,7 +1363,7 @@ body {
 }
 .mcontent .blog-1 .title h3 {
   font-size: 30px;
-  color: #3498db;
+  color: #2c3e50;
   margin: 0;
   font-weight: 300;
 }
@@ -1502,7 +1651,7 @@ body {
 .mcontent .blog-3 .img {
   height: 380px;
   margin: 110px 0;
-  background: url('../../ui-kit-blog/img/img-2.jpg') 50% 50% no-repeat;
+  background: url('../../../common-files/img/Brazil_002.png') 50% 80% no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1527,7 +1676,7 @@ body {
   font-weight: 300;
 }
 .mcontent .blog-3 .quote:before {
-  content: url('../../ui-kit-blog/img/quote-up.png');
+  content: url('../img/quote-up.png');
   position: absolute;
   top: -17px;
   left: -40px;
@@ -1592,6 +1741,8 @@ body {
   text-transform: none;
 }
 .mcontent .blog-4 .img {
+  height: 242px;
+  width: 538px;
   margin: 70px 0;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -1616,7 +1767,7 @@ body {
   letter-spacing: -1px;
 }
 .mcontent .blog-4 .quote:before {
-  content: url('../../ui-kit-blog/img/quote-up.png');
+  content: url('../../../common-files/icons/quote-up.png');
   position: absolute;
   top: -17px;
   left: -40px;
@@ -1870,7 +2021,7 @@ body {
   letter-spacing: -1px;
 }
 .mcontent .blog-5 .quote:before {
-  content: url('../../ui-kit-blog/img/quote-down.png');
+  content: url('../../../common-files/icons/quote-down.png');
   display: block;
   margin: 0 auto 35px;
   text-align: center;
@@ -2346,7 +2497,7 @@ body {
   }
 }
 .mcontent .contacts-4 {
-  background: #34495e url('../../ui-kit-contacts/img/map.png') 50% 50% no-repeat;
+  background: #34495e url('../img/map.png') 50% 50% no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -4034,7 +4185,7 @@ body {
   text-align: center;
 }
 .mcontent .content-18 .carousel:before {
-  content: url('../../ui-kit/ui-kit-content/img/quote.png');
+  content: url('../img/quote.png');
   display: block;
   margin: 0 auto 95px;
   text-align: center;
@@ -4164,7 +4315,7 @@ body {
   position: relative;
 }
 .mcontent .content-19 .span7 .quote:before {
-  content: url('../../ui-kit/ui-kit-content/img/quote.png');
+  content: url('../img/quote.png');
   position: absolute;
   top: 0;
   left: -60px;
@@ -4617,7 +4768,7 @@ body {
 }
 .mcontent .content-21 .features.features-tabs .features-bodies {
   position: relative;
-  background: #ebedee url('../../ui-kit/ui-kit-content/img/screen@2x.png') 0 50% no-repeat;
+  background: #ebedee url('../img/screen@2x.png') 0 50% no-repeat;
   -webkit-background-size: 322px 418px;
   -moz-background-size: 322px 418px;
   -o-background-size: 322px 418px;
@@ -4749,7 +4900,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: relative;
   max-width: 220px;
-  background: url("../../ui-kit/ui-kit-content/img/line-l@2x.png") no-repeat scroll center top / 50% auto rgba(0, 0, 0, 0);
+  background: url("../img/line-l@2x.png") no-repeat scroll center top / 50% auto rgba(0, 0, 0, 0);
   padding-top: 110px;
   opacity: 0;
   filter: alpha(opacity=0);
@@ -14211,7 +14362,7 @@ body {
   top: 0;
   right: 0;
   bottom: 0;
-  background: #ebedee url('../../ui-kit/ui-kit-projects/img/ipad@2x.png') 100% 50% no-repeat;
+  background: #ebedee url('../img/ipad@2x.png') 100% 50% no-repeat;
   -webkit-background-size: 826px 772px;
   -moz-background-size: 826px 772px;
   -o-background-size: 826px 772px;
@@ -14522,7 +14673,7 @@ body {
   }
 }
 .mcontent .projects-2 .project-1 {
-  background-image: url('../../ui-kit/ui-kit-projects/img/Hawaii_001.png');
+  background-image: url('../img/Hawaii_001.png');
 }
 .mcontent .projects-2 .project-1 .container h1 {
   font-size: 50px;
@@ -14552,7 +14703,7 @@ body {
   }
 }
 .mcontent .projects-2 .project-2 {
-  background-image: url('../../ui-kit/ui-kit-projects/img/Italy_001.png');
+  background-image: url('../img/Italy_001.png');
 }
 @media (max-width: 480px) {
   .mcontent .projects-2 .project-2 .hero-unit h1 {
@@ -14560,7 +14711,7 @@ body {
   }
 }
 .mcontent .projects-2 .project-3 {
-  background-image: url('../../ui-kit/ui-kit-projects/img/NY_002.png');
+  background-image: url('../img/NY_002.png');
 }
 .mcontent .projects-2 .project-3 [class*="fui-"] {
   font-size: 95px;

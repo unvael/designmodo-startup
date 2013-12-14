@@ -1484,7 +1484,7 @@ section * {
   text-align: center;
 }
 .content-18 .carousel:before {
-  content: url('../../ui-kit-content/img/quote.png');
+  content: url('../img/quote.png');
   display: block;
   margin: 0 auto 95px;
   text-align: center;

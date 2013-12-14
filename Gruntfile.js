@@ -24,7 +24,7 @@ module.exports = function(grunt) {
       manual: {
         src: ['manual/templates/*.html'],
         cwd: '.',
-        dest: 'manual/',
+        dest: 'manual/read/',
         flatten: true,
       },
       kit: {

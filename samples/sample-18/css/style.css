@@ -1058,7 +1058,7 @@ section * {
 }
 .content-21 .features.features-tabs .features-bodies {
   position: relative;
-  background: #ebedee url('../../ui-kit-content/img/screen@2x.png') 0 50% no-repeat;
+  background: #ebedee url('../img/screen@2x.png') 0 50% no-repeat;
   -webkit-background-size: 322px 418px;
   -moz-background-size: 322px 418px;
   -o-background-size: 322px 418px;
@@ -1190,7 +1190,7 @@ section * {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: relative;
   max-width: 220px;
-  background: url("../../ui-kit-content/img/line-l@2x.png") no-repeat scroll center top / 50% auto rgba(0, 0, 0, 0);
+  background: url("../img/line-l@2x.png") no-repeat scroll center top / 50% auto rgba(0, 0, 0, 0);
   padding-top: 110px;
   opacity: 0;
   filter: alpha(opacity=0);

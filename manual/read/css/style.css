@@ -17206,6 +17206,7 @@ body {
   /* Inline code */
 
   /*end prism*/
+
 }
 .manual-pages code[class*="language-"],
 .manual-pages pre[class*="language-"] {
@@ -18672,4 +18673,19 @@ body:before {
   .read-manual .mcontent .manual {
     left: 0;
   }
+}
+.delimiter-big {
+  margin-top: 180px;
+}
+.delimiter {
+  margin-top: 30px;
+}
+section.content-30,
+section.content-33 {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+section[class*=content-] {
+  margin-top: 0;
+  margin-bottom: 0;
 }

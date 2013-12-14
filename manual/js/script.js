@@ -1,16 +1,16 @@
-(function($) {
-    $(function() {
+(function ($) {
+    $(function () {
 
-        $('pre code.language-markup').each(function() {
+        $('pre code.language-markup').each(function () {
             $(this).text($(this).html());
         });
 
-        $('#open-close-menu').click(function() {
+        $('#open-close-menu').click(function () {
             $('body').toggleClass('colapsed-menu-active');
         });
 
-        
-        $('html').click(function(e) {
+
+        $('html').click(function (e) {
             // console.warn('element clicked = ',$(e.target).attr('class'), '\n parent element = ', $(e.target).parents().attr('class'));
             if (!$(e.target).hasClass('menu-btn') && !$(e.target).hasClass('colapsed-menu') && !$(e.target).parents().hasClass('colapsed-menu') && !$(e.target).parents().hasClass('menu-btn')) {
                 $('body').removeClass('colapsed-menu-active');
@@ -18,7 +18,7 @@
         });
 
         var BlockId = {};
-        $('button.read-man').each(function() {
+        $('button.read-man').each(function () {
             BlockId[$(this).attr('id')] = {};
             BlockId[$(this).attr('id')].bH = 0;
         });
@@ -52,9 +52,9 @@
         $('.manual > div').hide('fast');
 
         var helpButton = $('.read-man');
-        helpButton.each(function() {
+        helpButton.each(function () {
 
-            $(this).hover(function() {
+            $(this).hover(function () {
                 $('body').toggleClass('hovered');
                 var id = $(this).attr('id');
                 var heightMask = BlockId[id].bH;
@@ -68,27 +68,27 @@
                 $('.' + id + '.mask').toggleClass('active');
             });
 
-            $(this).click(function() {
+            $(this).click(function () {
                 var id = $(this).attr('id');
                 $('.manual .' + id).show();
 
                 $('html').addClass('read-manual');
 
-                var elem = $('.mcontent > .' + id + ':not(.mask)');
-                if (elem.length == 0) {
-                    elem = $('.mcontent > .' + id + '-sub');
-                }
-                var elemPos = 0;
-                if ($('.' + id + '-map').length != 0) {
-                    elemPos = $(this).position().top + 110;
-                } else {
-                    elemPos = elem.position().top;
-                }
-                $(window).scrollTop(elemPos - 110);
+//                var elem = $('.mcontent > .' + id + ':not(.mask)');
+//                if (elem.length == 0) {
+//                    elem = $('.mcontent > .' + id + '-sub');
+//                }
+//                var elemPos = 0;
+//                if ($('.' + id + '-map').length != 0) {
+//                    elemPos = $(this).position().top + 110;
+//                } else {
+//                    elemPos = elem.position().top;
+//                }
+//                $(window).scrollTop(elemPos - 110);
+//
+//                $('.manual').scrollTop(0);
 
-                $('.manual').scrollTop(0);
-
-                $('html').click(function(e) {
+                $('html').click(function (e) {
                     var clickedElem = $(e.target);
                     var parentCE = $(e.target).parents();
                     if (!clickedElem.hasClass('read-man') && !clickedElem.hasClass('manual') && !parentCE.hasClass('manual')) {
@@ -102,12 +102,12 @@
         });
 
         var backButton = $('.back-button');
-        backButton.click(function() {
+        backButton.click(function () {
             $('html').removeClass('read-manual');
             $('.manual > div').fadeOut(1000);
         });
 
-        $('.question').click(function() {
+        $('.question').click(function () {
             $(this).toggleClass('opened');
         });
 

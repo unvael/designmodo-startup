@@ -12,7 +12,7 @@ module.exports = function(grunt) {
 			'samples/sample-*/less/style.less',
 			'hipstafood/less/style.less',
 			'crumbs/less/style.less',
-			'manual/less/style.less',
+			'manual/read/less/style.less',
 			'Presentation/less/style.less'
 	    ],
 	    rename: function(src, dest) {

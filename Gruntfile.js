@@ -65,7 +65,16 @@ module.exports = function(grunt) {
     			'build-release/ui-kit/ui-kit-*/templates',
     		]
     	}
-    }   
+    },
+	lineending: {
+		options: {
+			eol: 'crlf'
+		},
+		files: {
+			expand: true,
+			src: ['**/*.less', '**/*.css', '**/*.js', '**/*.html']
+		}
+	}
     
   });
 
@@ -77,6 +86,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-lineending');
   grunt.registerTask('default', ['less']);
   grunt.registerTask('build-manual', ['includes:manual']);
   grunt.registerTask('build-kit', ['includes:kit']);

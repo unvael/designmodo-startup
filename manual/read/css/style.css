@@ -1040,6 +1040,210 @@ body {
 .mcontent .pt-page-ontop {
   z-index: 999;
 }
+.mcontent .nav-visible .dockbar {
+  display: none;
+}
+.mcontent .nav-visible .read-man {
+  display: none;
+}
+.mcontent .dockbar {
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: z-index 4s ease 0s;
+  -moz-transition: z-index 4s ease 0s;
+  -o-transition: z-index 4s ease 0s;
+  transition: z-index 4s ease 0s;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.mcontent .dockbar.navbar-fixed-top .colapsed-menu {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .mcontent .dockbar.navbar-fixed-top {
+    position: fixed;
+  }
+  .mcontent .dockbar.navbar-fixed-top .colapsed-menu {
+    float: right;
+    display: none;
+    max-width: 300px;
+    position: absolute;
+    right: 0;
+    top: 52px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+  .mcontent .dockbar.navbar-fixed-top .colapsed-menu dl {
+    position: relative;
+    display: block;
+    margin: 0;
+  }
+  .mcontent .dockbar.navbar-fixed-top .colapsed-menu dl dd {
+    border-bottom: 1px dashed #333;
+    line-height: 45px;
+    display: block;
+    margin: 0;
+    -webkit-box-sizing: 'border-box';
+    -moz-box-sizing: 'border-box';
+    box-sizing: 'border-box';
+    width: 100%;
+    float: left;
+    text-transform: uppercase;
+    background-color: #1f1b23;
+  }
+  .mcontent .dockbar.navbar-fixed-top .colapsed-menu dl dd dd {
+    margin: 0 0 0 20px;
+    font-size: 12px;
+  }
+  .mcontent .dockbar.navbar-fixed-top .colapsed-menu dl dd > a {
+    float: left;
+    display: block;
+    width: 100%;
+    padding: 0 0 0 65px;
+    color: #919497;
+  }
+  .mcontent .dockbar.navbar-fixed-top .colapsed-menu dl dd > a:hover,
+  .mcontent .dockbar.navbar-fixed-top .colapsed-menu dl dd > a:focus,
+  .mcontent .dockbar.navbar-fixed-top .colapsed-menu dl dd > a.active {
+    color: #ffffff;
+  }
+  .mcontent .dockbar.navbar-fixed-top .colapsed-menu dl dd > a.active {
+    text-decoration: none;
+    color: white;
+  }
+  .mcontent .dockbar.navbar-fixed-top .colapsed-menu dl dd > a.active:after {
+    display: none;
+  }
+  .mcontent .dockbar.navbar-fixed-top > menu {
+    padding: 0 20px;
+  }
+  .mcontent .dockbar.navbar-fixed-top .container {
+    width: auto;
+  }
+}
+.mcontent .dockbar .menu-btn {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .mcontent .dockbar .menu-btn {
+    display: inline-block;
+    float: right;
+    margin-right: 40px;
+    margin-top: 20px;
+    position: relative;
+  }
+}
+.mcontent .dockbar .main-menu {
+  display: block;
+  overflow: hidden;
+  background-color: #1f1b23;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0;
+}
+.mcontent .dockbar .main-menu > div {
+  height: 65px;
+}
+.mcontent .dockbar .main-menu > div > div {
+  height: 65px;
+}
+.mcontent .dockbar .main-menu a.man-brand {
+  display: inline-block;
+  float: left;
+  text-decoration: none;
+  line-height: 65px;
+}
+@media (max-width: 1200px) {
+  .mcontent .dockbar .main-menu a.man-brand {
+    line-height: 65px;
+    width: auto;
+    margin-left: 20px;
+  }
+}
+.mcontent .dockbar .main-menu a.man-brand .logotype {
+  font-size: 16px;
+  font-weight: normal;
+  color: #ffffff;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.mcontent .dockbar .main-menu a.man-brand .doc-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #919497;
+  font-weight: normal;
+}
+.mcontent .dockbar .main-menu dl {
+  display: inline-block;
+  margin: 0;
+}
+@media (max-width: 1200px) {
+  .mcontent .dockbar .main-menu dl {
+    display: none;
+  }
+}
+.mcontent .dockbar .main-menu dl dd {
+  margin: 0;
+  padding: 17px 0;
+  line-height: 30.999999999999996px;
+  display: inline-block;
+}
+.mcontent .dockbar .main-menu dl dd a {
+  font-size: 12px;
+  font-weight: normal;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  padding-right: 22px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #919497;
+  display: block;
+}
+.mcontent .dockbar .main-menu dl dd a:hover,
+.mcontent .dockbar .main-menu dl dd a:focus,
+.mcontent .dockbar .main-menu dl dd a.active {
+  color: #ffffff;
+}
+.mcontent .dockbar .main-menu dl dd a.active {
+  text-decoration: none;
+  color: white;
+}
+.mcontent body {
+  margin-top: 66px;
+  position: relative;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.mcontent body.hovered {
+  background-color: #ecf0f1;
+}
+.mcontent body.colapsed-menu-active {
+  height: 100%;
+  overflow: hidden;
+}
+.mcontent body.colapsed-menu-active .colapsed-menu {
+  display: block !important;
+}
+.mcontent body .delimiter-big {
+  margin-top: 180px;
+}
+.mcontent body .delimiter {
+  margin-top: 30px;
+}
+.mcontent body section.content-30,
+.mcontent body section.content-33 {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+.mcontent body section[class*=content-] {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .mcontent .blog-1 .box-icon {
   margin: 0 auto 35px;
   text-align: center;
@@ -2432,210 +2636,6 @@ body {
   .mcontent .contacts-5 .box.box-first {
     margin-top: 0;
   }
-}
-.mcontent .nav-visible .dockbar {
-  display: none;
-}
-.mcontent .nav-visible .read-man {
-  display: none;
-}
-.mcontent .dockbar {
-  -webkit-backface-visibility: hidden;
-  -webkit-transition: z-index 4s ease 0s;
-  -moz-transition: z-index 4s ease 0s;
-  -o-transition: z-index 4s ease 0s;
-  transition: z-index 4s ease 0s;
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  overflow: visible;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-.mcontent .dockbar.navbar-fixed-top .colapsed-menu {
-  display: none;
-}
-@media (max-width: 1200px) {
-  .mcontent .dockbar.navbar-fixed-top {
-    position: fixed;
-  }
-  .mcontent .dockbar.navbar-fixed-top .colapsed-menu {
-    float: right;
-    display: none;
-    max-width: 300px;
-    position: absolute;
-    right: 0;
-    top: 52px;
-    width: auto;
-    margin: 0;
-    padding: 0;
-  }
-  .mcontent .dockbar.navbar-fixed-top .colapsed-menu dl {
-    position: relative;
-    display: block;
-    margin: 0;
-  }
-  .mcontent .dockbar.navbar-fixed-top .colapsed-menu dl dd {
-    border-bottom: 1px dashed #333;
-    line-height: 45px;
-    display: block;
-    margin: 0;
-    -webkit-box-sizing: 'border-box';
-    -moz-box-sizing: 'border-box';
-    box-sizing: 'border-box';
-    width: 100%;
-    float: left;
-    text-transform: uppercase;
-    background-color: #1f1b23;
-  }
-  .mcontent .dockbar.navbar-fixed-top .colapsed-menu dl dd dd {
-    margin: 0 0 0 20px;
-    font-size: 12px;
-  }
-  .mcontent .dockbar.navbar-fixed-top .colapsed-menu dl dd > a {
-    float: left;
-    display: block;
-    width: 100%;
-    padding: 0 0 0 65px;
-    color: #919497;
-  }
-  .mcontent .dockbar.navbar-fixed-top .colapsed-menu dl dd > a:hover,
-  .mcontent .dockbar.navbar-fixed-top .colapsed-menu dl dd > a:focus,
-  .mcontent .dockbar.navbar-fixed-top .colapsed-menu dl dd > a.active {
-    color: #ffffff;
-  }
-  .mcontent .dockbar.navbar-fixed-top .colapsed-menu dl dd > a.active {
-    text-decoration: none;
-    color: white;
-  }
-  .mcontent .dockbar.navbar-fixed-top .colapsed-menu dl dd > a.active:after {
-    display: none;
-  }
-  .mcontent .dockbar.navbar-fixed-top > menu {
-    padding: 0 20px;
-  }
-  .mcontent .dockbar.navbar-fixed-top .container {
-    width: auto;
-  }
-}
-.mcontent .dockbar .menu-btn {
-  display: none;
-}
-@media (max-width: 1200px) {
-  .mcontent .dockbar .menu-btn {
-    display: inline-block;
-    float: right;
-    margin-right: 40px;
-    margin-top: 20px;
-    position: relative;
-  }
-}
-.mcontent .dockbar .main-menu {
-  display: block;
-  overflow: hidden;
-  background-color: #1f1b23;
-  margin: 0;
-  box-sizing: border-box;
-  width: 100%;
-  padding: 0;
-}
-.mcontent .dockbar .main-menu > div {
-  height: 65px;
-}
-.mcontent .dockbar .main-menu > div > div {
-  height: 65px;
-}
-.mcontent .dockbar .main-menu a.man-brand {
-  display: inline-block;
-  float: left;
-  text-decoration: none;
-  line-height: 65px;
-}
-@media (max-width: 1200px) {
-  .mcontent .dockbar .main-menu a.man-brand {
-    line-height: 65px;
-    width: auto;
-    margin-left: 20px;
-  }
-}
-.mcontent .dockbar .main-menu a.man-brand .logotype {
-  font-size: 16px;
-  font-weight: normal;
-  color: #ffffff;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-.mcontent .dockbar .main-menu a.man-brand .doc-title {
-  text-transform: uppercase;
-  font-size: 16px;
-  color: #919497;
-  font-weight: normal;
-}
-.mcontent .dockbar .main-menu dl {
-  display: inline-block;
-  margin: 0;
-}
-@media (max-width: 1200px) {
-  .mcontent .dockbar .main-menu dl {
-    display: none;
-  }
-}
-.mcontent .dockbar .main-menu dl dd {
-  margin: 0;
-  padding: 17px 0;
-  line-height: 30.999999999999996px;
-  display: inline-block;
-}
-.mcontent .dockbar .main-menu dl dd a {
-  font-size: 12px;
-  font-weight: normal;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  padding-right: 22px;
-  text-transform: uppercase;
-  text-decoration: underline;
-  color: #919497;
-  display: block;
-}
-.mcontent .dockbar .main-menu dl dd a:hover,
-.mcontent .dockbar .main-menu dl dd a:focus,
-.mcontent .dockbar .main-menu dl dd a.active {
-  color: #ffffff;
-}
-.mcontent .dockbar .main-menu dl dd a.active {
-  text-decoration: none;
-  color: white;
-}
-.mcontent body {
-  margin-top: 66px;
-  position: relative;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-.mcontent body.hovered {
-  background-color: #ecf0f1;
-}
-.mcontent body.colapsed-menu-active {
-  height: 100%;
-  overflow: hidden;
-}
-.mcontent body.colapsed-menu-active .colapsed-menu {
-  display: block !important;
-}
-.mcontent body .delimiter-big {
-  margin-top: 180px;
-}
-.mcontent body .delimiter {
-  margin-top: 30px;
-}
-.mcontent body section.content-30,
-.mcontent body section.content-33 {
-  padding-bottom: 0;
-  padding-top: 0;
-}
-.mcontent body section[class*=content-] {
-  margin-top: 0;
-  margin-bottom: 0;
 }
 .mcontent .content-1 {
   position: relative;

@@ -74,6 +74,20 @@ module.exports = function(grunt) {
 			expand: true,
 			src: ['**/*.less', '**/*.css', '**/*.js', '**/*.html']
 		}
+	},
+	prettify: {
+		templates: {
+			expand: true,
+			src: ['ui-kit/**/*.html', 'samples/**/*.html', 'manual/**/*.html'],
+		},	
+		'after-build-manual': {
+			expand: true,
+			src: ['manual/read/*.html'],
+		},
+		'after-build-kit': {
+			expand: true,
+			src: ['ui-kit/ui-kit-*/*.html'],
+		}			
 	}
     
   });
@@ -87,8 +101,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-lineending');
+  grunt.loadNpmTasks('grunt-prettify');
   grunt.registerTask('default', ['less']);
-  grunt.registerTask('build-manual', ['includes:manual']);
-  grunt.registerTask('build-kit', ['includes:kit']);
+  grunt.registerTask('build-manual', ['includes:manual', 'prettify:after-build-manual']);
+  grunt.registerTask('build-kit', ['includes:kit', 'prettify:after-build-kit']);
   grunt.registerTask('release', ['less', 'build-kit', 'build-manual', 'clean:prerelease', 'copy:release', 'clean:release']);
 };

@@ -1190,7 +1190,7 @@ section * {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: relative;
   max-width: 220px;
-  background: url("../img/line-l@2x.png") no-repeat scroll center top / 50% auto rgba(0, 0, 0, 0);
+  background: url("../../../common-files/img/content/line-l@2x.png") no-repeat scroll center top / 50% auto rgba(0, 0, 0, 0);
   padding-top: 110px;
   opacity: 0;
   filter: alpha(opacity=0);

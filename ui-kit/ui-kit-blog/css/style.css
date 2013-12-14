@@ -1220,7 +1220,7 @@ body section[class*=content-] {
   font-weight: 300;
 }
 .blog-3 .quote:before {
-  content: url('../img/quote-up.png');
+  content: url('../../../common-files/icons/quote-up.png');
   position: absolute;
   top: -17px;
   left: -40px;

@@ -582,7 +582,7 @@ section * {
 .dockbar.navbar-fixed-top .colapsed-menu {
   display: none;
 }
-@media (max-width: 979px) {
+@media (max-width: 1200px) {
   .dockbar.navbar-fixed-top {
     position: fixed;
   }
@@ -648,7 +648,7 @@ section * {
 .dockbar .menu-btn {
   display: none;
 }
-@media (max-width: 979px) {
+@media (max-width: 1200px) {
   .dockbar .menu-btn {
     display: inline-block;
     float: right;
@@ -678,7 +678,7 @@ section * {
   text-decoration: none;
   line-height: 65px;
 }
-@media (max-width: 979px) {
+@media (max-width: 1200px) {
   .dockbar .main-menu a.man-brand {
     line-height: 65px;
     width: auto;
@@ -702,7 +702,7 @@ section * {
   display: inline-block;
   margin: 0;
 }
-@media (max-width: 979px) {
+@media (max-width: 1200px) {
   .dockbar .main-menu dl {
     display: none;
   }
@@ -753,6 +753,15 @@ body .delimiter-big {
 }
 body .delimiter {
   margin-top: 30px;
+}
+body section.content-30,
+body section.content-33 {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+body section[class*=content-] {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 /**
  * Blog 1 stylesheet  
@@ -886,6 +895,8 @@ body .delimiter {
 .blog-1 .title h3 {
   font-size: 30px;
   color: #2c3e50;
+  line-height: 36px;
+  letter-spacing: 0;
   margin: 0;
   font-weight: 300;
 }
@@ -1175,6 +1186,11 @@ body .delimiter {
 .blog-3 .title img {
   display: block;
   margin: 0 auto 37px;
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  transform: rotate(-30deg);
 }
 .blog-3 .img {
   height: 380px;

@@ -906,7 +906,7 @@ section * {
   position: relative;
 }
 .content-19 .span7 .quote:before {
-  content: url('../img/quote.png');
+  content: url('../../../common-files/icons/quote-up-mb.png');
   position: absolute;
   top: 0;
   left: -60px;

@@ -545,7 +545,7 @@ section * {
 .dockbar.navbar-fixed-top .colapsed-menu {
   display: none;
 }
-@media (max-width: 979px) {
+@media (max-width: 1200px) {
   .dockbar.navbar-fixed-top {
     position: fixed;
   }
@@ -611,7 +611,7 @@ section * {
 .dockbar .menu-btn {
   display: none;
 }
-@media (max-width: 979px) {
+@media (max-width: 1200px) {
   .dockbar .menu-btn {
     display: inline-block;
     float: right;
@@ -641,7 +641,7 @@ section * {
   text-decoration: none;
   line-height: 65px;
 }
-@media (max-width: 979px) {
+@media (max-width: 1200px) {
   .dockbar .main-menu a.man-brand {
     line-height: 65px;
     width: auto;
@@ -665,7 +665,7 @@ section * {
   display: inline-block;
   margin: 0;
 }
-@media (max-width: 979px) {
+@media (max-width: 1200px) {
   .dockbar .main-menu dl {
     display: none;
   }
@@ -716,6 +716,15 @@ body .delimiter-big {
 }
 body .delimiter {
   margin-top: 30px;
+}
+body section.content-30,
+body section.content-33 {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+body section[class*=content-] {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 /**
  * Footer 1 stylesheet  

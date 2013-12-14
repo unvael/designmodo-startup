@@ -545,7 +545,7 @@ section * {
 .dockbar.navbar-fixed-top .colapsed-menu {
   display: none;
 }
-@media (max-width: 979px) {
+@media (max-width: 1200px) {
   .dockbar.navbar-fixed-top {
     position: fixed;
   }
@@ -611,7 +611,7 @@ section * {
 .dockbar .menu-btn {
   display: none;
 }
-@media (max-width: 979px) {
+@media (max-width: 1200px) {
   .dockbar .menu-btn {
     display: inline-block;
     float: right;
@@ -641,7 +641,7 @@ section * {
   text-decoration: none;
   line-height: 65px;
 }
-@media (max-width: 979px) {
+@media (max-width: 1200px) {
   .dockbar .main-menu a.man-brand {
     line-height: 65px;
     width: auto;
@@ -665,7 +665,7 @@ section * {
   display: inline-block;
   margin: 0;
 }
-@media (max-width: 979px) {
+@media (max-width: 1200px) {
   .dockbar .main-menu dl {
     display: none;
   }
@@ -717,13 +717,23 @@ body .delimiter-big {
 body .delimiter {
   margin-top: 30px;
 }
+body section.content-30,
+body section.content-33 {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+body section[class*=content-] {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 /**
  * Crew 1 stylesheet  
  * */
 .crew-1 h3 {
   margin: 0 0 73px;
   font-size: 30px;
-  text-align: center;
+  text-align: left;
+  font-weight: 300;
 }
 .crew-1 .members {
   display: table;
@@ -850,7 +860,8 @@ body .delimiter {
 .crew-2 h3 {
   margin: 0 0 73px;
   font-size: 30px;
-  text-align: center;
+  text-align: left;
+  font-weight: 300;
 }
 .crew-2 .members {
   display: table;
@@ -1004,6 +1015,7 @@ body .delimiter {
   margin: 0 0 20px;
   font-size: 30px;
   text-align: left;
+  font-weight: 300;
 }
 @media (max-width: 767px) {
   .crew-3 h3 {
@@ -1180,6 +1192,7 @@ body .delimiter {
   margin: 0 0 73px;
   font-size: 30px;
   text-align: center;
+  font-weight: 300;
 }
 .crew-4 .members {
   display: table;

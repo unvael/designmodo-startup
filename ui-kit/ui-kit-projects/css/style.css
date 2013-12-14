@@ -598,7 +598,7 @@ section * {
 .dockbar.navbar-fixed-top .colapsed-menu {
   display: none;
 }
-@media (max-width: 979px) {
+@media (max-width: 1200px) {
   .dockbar.navbar-fixed-top {
     position: fixed;
   }
@@ -664,7 +664,7 @@ section * {
 .dockbar .menu-btn {
   display: none;
 }
-@media (max-width: 979px) {
+@media (max-width: 1200px) {
   .dockbar .menu-btn {
     display: inline-block;
     float: right;
@@ -694,7 +694,7 @@ section * {
   text-decoration: none;
   line-height: 65px;
 }
-@media (max-width: 979px) {
+@media (max-width: 1200px) {
   .dockbar .main-menu a.man-brand {
     line-height: 65px;
     width: auto;
@@ -718,7 +718,7 @@ section * {
   display: inline-block;
   margin: 0;
 }
-@media (max-width: 979px) {
+@media (max-width: 1200px) {
   .dockbar .main-menu dl {
     display: none;
   }
@@ -770,6 +770,15 @@ body .delimiter-big {
 body .delimiter {
   margin-top: 30px;
 }
+body section.content-30,
+body section.content-33 {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+body section[class*=content-] {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 /**
  * Project 1 stylesheet  
  * */
@@ -812,7 +821,7 @@ body .delimiter {
   top: 0;
   right: 0;
   bottom: 0;
-  background: #ebedee url('../img/ipad@2x.png') 100% 50% no-repeat;
+  background: #ebedee url('../../../common-files/img/header/ipad@2x.png') 100% 50% no-repeat;
   -webkit-background-size: 826px 772px;
   -moz-background-size: 826px 772px;
   -o-background-size: 826px 772px;
@@ -1126,7 +1135,7 @@ body .delimiter {
   }
 }
 .projects-2 .project-1 {
-  background-image: url('../img/Hawaii_001.png');
+  background-image: url('../../../common-files/img/Hawaii_001.png');
 }
 .projects-2 .project-1 .container h1 {
   font-size: 50px;
@@ -1156,7 +1165,7 @@ body .delimiter {
   }
 }
 .projects-2 .project-2 {
-  background-image: url('../img/Italy_001.png');
+  background-image: url('../../../common-files/img/Italy_001.png');
 }
 @media (max-width: 480px) {
   .projects-2 .project-2 .hero-unit h1 {
@@ -1164,7 +1173,7 @@ body .delimiter {
   }
 }
 .projects-2 .project-3 {
-  background-image: url('../img/NY_002.png');
+  background-image: url('../../../common-files/img/NY_002.png');
 }
 .projects-2 .project-3 [class*="fui-"] {
   font-size: 95px;

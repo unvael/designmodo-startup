@@ -18,7 +18,7 @@
   font-family: @h-font-family;
   &.navbar-fixed-top{
     .colapsed-menu{display:none;}
-    @media (max-width: 979px) {
+    @media (max-width: 1200px) {
 
       .colapsed-menu{
         float: right;
@@ -79,7 +79,7 @@
   }
   .menu-btn{
     display:none;
-    @media (max-width: 979px) {
+    @media (max-width: 1200px) {
       display:inline-block;
       float:right;
       margin-right:40px;
@@ -107,7 +107,7 @@
       text-decoration: none;
       .line-height(65px);
 
-      @media (max-width: 979px) {
+      @media (max-width: 1200px) {
         .line-height(65px);
         width: auto;
         margin-left: 20px;
@@ -127,7 +127,7 @@
     dl {
       display: inline-block;
       margin: 0;
-      @media (max-width: 979px) {
+      @media (max-width: 1200px) {
         display:none;
 
       }
@@ -179,5 +179,12 @@ body{
   }
   .delimiter{
     margin-top: 30px;
+  }
+  section.content-30, section.content-33 {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  section[class*=content-]{
+    margin-top: 0; margin-bottom: 0;
   }
 }

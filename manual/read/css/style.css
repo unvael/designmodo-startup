@@ -1141,7 +1141,7 @@ body {
 .mcontent .dockbar .main-menu {
   display: block;
   overflow: hidden;
-  background-color: #1f1b23;
+  background-color: #1b1f23;
   margin: 0;
   box-sizing: border-box;
   width: 100%;
@@ -17745,7 +17745,6 @@ body {
   .dockbar .menu-btn {
     display: inline-block;
     float: right;
-    margin-right: 40px;
     margin-top: 20px;
     position: relative;
   }
@@ -17753,7 +17752,7 @@ body {
 .dockbar .main-menu {
   display: block;
   overflow: hidden;
-  background-color: #1f1b23;
+  background-color: #1b1f23;
   margin: 0;
   box-sizing: border-box;
   width: 100%;

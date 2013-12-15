@@ -39,6 +39,9 @@
                     BlockId[id].bH += $('.' + id + '-sub').outerHeight();
                 }
             }
+            if(id == 'content-34'){
+                BlockId[id].bH += 893;
+            }
             if ($('.' + id + '-map').length != 0) {
                 BlockId[id].bH += $('.' + id + '-map').outerHeight();
             }

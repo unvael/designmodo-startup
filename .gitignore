@@ -3,5 +3,6 @@ node_modules
 buildmanual/less/manual-panel.less.backup
 manual/less/manual-panel.less.backup
 build-release
+build-demo
 /nbproject/private/
 nbproject

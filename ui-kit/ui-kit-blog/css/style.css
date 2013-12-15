@@ -605,7 +605,7 @@ section * {
     margin: 0;
   }
   .dockbar.navbar-fixed-top .colapsed-menu dl dd {
-    border-bottom: 1px solid #272b2f;
+    border-bottom: 1px solid #202428;
     line-height: 45px;
     display: block;
     margin: 0;
@@ -617,7 +617,12 @@ section * {
     text-transform: uppercase;
     background-color: #1f1b23;
   }
+  .dockbar.navbar-fixed-top .colapsed-menu dl dd:hover dd,
+  .dockbar.navbar-fixed-top .colapsed-menu dl dd:focus dd {
+    display: block;
+  }
   .dockbar.navbar-fixed-top .colapsed-menu dl dd dd {
+    display: none;
     margin: 0 0 0 20px;
     font-size: 12px;
     border: 0 none;

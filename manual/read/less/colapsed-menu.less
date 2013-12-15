@@ -14,7 +14,7 @@
     display: block;
     margin: 0;
     dd {
-      border-bottom: 1px solid #272b2f;
+      border-bottom: 1px solid #202428;
       .line-height(45px);
       display: block;
       margin: 0;
@@ -22,7 +22,13 @@
       width: 100%;
       float: left;
       text-transform: uppercase;
+      &:hover, &:focus{
+        dd{
+          display: block;
+        }
+      }
       dd {
+        display: none;
         margin: 0 0 0 20px;
         font-size: 12px;
         border: 0 none;

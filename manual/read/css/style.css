@@ -1054,6 +1054,8 @@ body {
   transition: z-index 4s ease 0s;
   display: block;
   width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -1070,10 +1072,10 @@ body {
   .mcontent .dockbar.navbar-fixed-top .colapsed-menu {
     float: right;
     display: none;
-    max-width: 300px;
+    max-width: 400px;
     position: absolute;
     right: 0;
-    top: 52px;
+    top: 67px;
     width: auto;
     margin: 0;
     padding: 0;
@@ -1084,7 +1086,7 @@ body {
     margin: 0;
   }
   .mcontent .dockbar.navbar-fixed-top .colapsed-menu dl dd {
-    border-bottom: 1px dashed #333;
+    border-bottom: 1px solid #272b2f;
     line-height: 45px;
     display: block;
     margin: 0;
@@ -1099,6 +1101,7 @@ body {
   .mcontent .dockbar.navbar-fixed-top .colapsed-menu dl dd dd {
     margin: 0 0 0 20px;
     font-size: 12px;
+    border: 0 none;
   }
   .mcontent .dockbar.navbar-fixed-top .colapsed-menu dl dd > a {
     float: left;
@@ -1120,7 +1123,7 @@ body {
     display: none;
   }
   .mcontent .dockbar.navbar-fixed-top > menu {
-    padding: 0 20px;
+    padding: 0 0 0 20px;
   }
   .mcontent .dockbar.navbar-fixed-top .container {
     width: auto;
@@ -1133,9 +1136,22 @@ body {
   .mcontent .dockbar .menu-btn {
     display: inline-block;
     float: right;
-    margin-right: 40px;
-    margin-top: 20px;
     position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 66px;
+    height: 66px;
+    background: none #1b1f23;
+    border: 0 none;
+    border-left: 1px solid #272b2f;
+    color: #919497;
+  }
+  .mcontent .dockbar .menu-btn:hover,
+  .mcontent .dockbar .menu-btn:focus {
+    border: 0 none;
+    border-left: 1px solid #272b2f;
+    color: #ffffff;
   }
 }
 .mcontent .dockbar .main-menu {
@@ -1143,6 +1159,8 @@ body {
   overflow: hidden;
   background-color: #1b1f23;
   margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   padding: 0;
@@ -1163,7 +1181,6 @@ body {
   .mcontent .dockbar .main-menu a.man-brand {
     line-height: 65px;
     width: auto;
-    margin-left: 20px;
   }
 }
 .mcontent .dockbar .main-menu a.man-brand .logotype {
@@ -1215,7 +1232,7 @@ body {
   color: white;
 }
 .mcontent body {
-  margin-top: 66px;
+  padding-top: 66px;
   position: relative;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -17666,6 +17683,8 @@ body {
   transition: z-index 4s ease 0s;
   display: block;
   width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -17682,10 +17701,10 @@ body {
   .dockbar.navbar-fixed-top .colapsed-menu {
     float: right;
     display: none;
-    max-width: 300px;
+    max-width: 400px;
     position: absolute;
     right: 0;
-    top: 52px;
+    top: 67px;
     width: auto;
     margin: 0;
     padding: 0;
@@ -17696,7 +17715,7 @@ body {
     margin: 0;
   }
   .dockbar.navbar-fixed-top .colapsed-menu dl dd {
-    border-bottom: 1px dashed #333;
+    border-bottom: 1px solid #272b2f;
     line-height: 45px;
     display: block;
     margin: 0;
@@ -17706,11 +17725,12 @@ body {
     width: 100%;
     float: left;
     text-transform: uppercase;
-    background-color: #1f1b23;
+    background-color: #1b1f23;
   }
   .dockbar.navbar-fixed-top .colapsed-menu dl dd dd {
     margin: 0 0 0 20px;
     font-size: 12px;
+    border: 0 none;
   }
   .dockbar.navbar-fixed-top .colapsed-menu dl dd > a {
     float: left;
@@ -17732,7 +17752,7 @@ body {
     display: none;
   }
   .dockbar.navbar-fixed-top > menu {
-    padding: 0 20px;
+    padding: 0 0 0 20px;
   }
   .dockbar.navbar-fixed-top .container {
     width: auto;
@@ -17745,8 +17765,22 @@ body {
   .dockbar .menu-btn {
     display: inline-block;
     float: right;
-    margin-top: 20px;
     position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 66px;
+    height: 66px;
+    background: none #1b1f23;
+    border: 0 none;
+    border-left: 1px solid #272b2f;
+    color: #919497;
+  }
+  .dockbar .menu-btn:hover,
+  .dockbar .menu-btn:focus {
+    border: 0 none;
+    border-left: 1px solid #272b2f;
+    color: #ffffff;
   }
 }
 .dockbar .main-menu {
@@ -17754,6 +17788,8 @@ body {
   overflow: hidden;
   background-color: #1b1f23;
   margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   padding: 0;
@@ -17774,7 +17810,6 @@ body {
   .dockbar .main-menu a.man-brand {
     line-height: 65px;
     width: auto;
-    margin-left: 20px;
   }
 }
 .dockbar .main-menu a.man-brand .logotype {
@@ -17902,7 +17937,7 @@ body {
 }
 @media (max-width: 979px) {
   body {
-    margin-top: 66px;
+    padding-top: 66px;
   }
 }
 body.hovered {
@@ -17911,6 +17946,9 @@ body.hovered {
 body.colapsed-menu-active {
   height: 100%;
   overflow: hidden;
+}
+body.colapsed-menu-active .dockbar {
+  border-bottom: 1px solid #272b2f;
 }
 body.colapsed-menu-active .colapsed-menu {
   display: block !important;

@@ -433,6 +433,14 @@ input[type="color"],
   font-weight: normal;
   color: #7f8c8d;
 }
+a:hover,
+button:hover,
+a:focus,
+button:focus,
+a:active,
+button:active {
+  outline: none;
+}
 .navbar .subnav {
   display: none;
 }
@@ -1449,7 +1457,7 @@ section * {
   background: #1b1e21;
 }
 .header-23-sub .background {
-  background: url(../img/header-1.jpg) no-repeat;
+  background-image: url(../img/header-1.jpg);
 }
 .mask {
   z-index: 1000;

@@ -4,24 +4,21 @@
         <h3>Overview</h3>
 
         <p>
-            This block was developed as standard content block.
-            Each block that marked as 'content' could be used multiple time in one page.
+            This block was developed as a standard content block. Each block that is marked as 'content' can be used multiple times on one page.
         </p>
     </li>
     <li>
         <h3>Installation</h3>
 
         <p>
-            if you not already done all instructions
-            that you had to read on the <a href="how_to_install.html">how to install</a> page
-            of this documentation please make it first
+        If you haven't already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
         </p>
     </li>
     <li>
         <h3>CSS version:</h3>
 
         <p>
-            For using this block you should only paste next rows of code into your html file:
+            To use this block, simply copy and paste the following rows into your HTML file:
         </p>
        <pre class="language-markup"><code class="language-markup">include "../../../ui-kit/ui-kit-content/for-tpl/content-31.html"</code></pre>
     </li>
@@ -29,9 +26,7 @@
         <h3>LESS version:</h3>
 
         <p>
-            you should paste same code (as in <strong>simple version</strong>) and paste next code into your '<strong>.less</strong>'
-            file after that
-            rows that you already had to paste.
+            Copy the same code as in <a href="#c31-simple" class="inner-link">simple version</a>and paste it in your '<strong>.less</strong>' file. Put the following line after that code:
         </p>
        <pre class="language-scss"><code>@import '../../ui-kit/ui-kit-content/less/content-31.less';</code></pre>
     </li>
@@ -41,35 +36,29 @@
         <p>
             In this section you will see what modifications you can do to the block.
         </p>
-
         <p>
             This block as any content block based on grid.
             You can modificate any element of this block, but you should save the html
             structure if you want to save view and functionality of it.
         </p>
-
         <p>
-            This block has special wrapper which use elements <code class="language-markup">&lt;div class="number"&gt;...&lt;/div&gt;</code> as animated list markers.
-            It consists from another inner blocks. You can use anoter content blocks inside this block.
+            This block has a special wrapper which uses <code class="language-markup">&lt;div class="number"&gt;...&lt;/div&gt;</code> elements as animated list markers.
+            The list consists of inner blocks. You can use other content blocks inside this block.
+        </p>
+        <p>
+            There are two special inner blocks specifically developed for this content block.
+            The first special block has a title and some text on the top and an image on the bottom.
+        </p>
+        <p>
+            The second special block is a carousel.
+            You can change the content for any of the slides in this carousel by replacing the content inside <code class="language-markup">&lt;div class=”pt-page”&gt; ... &lt;/div&gt;</code>.
         </p>
 
         <p>
-            This block has two elements - blocks which was developed special for it.
-            First block has title and text on top of it and image in the bottom.
+            You can add any number of new inner blocks to the numbered list, but you should use the same structure for all of them.
         </p>
-
         <p>
-            The second block - caroucel.
-            You can change content for slides of this carousel.
-            For this you should replace content inside <code class="language-markup">&lt;div class="pt-page"&gt; ... &lt;/div&gt;</code>
-        </p>
-
-        <p>
-            You can add the new blocks into this block, but you should use the same structure for any of iner blocks.
-        </p>
-
-        <p>
-            Structure of inner block:
+            Inner block structure:
         </p>
         <pre class="language-markup"><code class="language-markup"><div class="row">
                 <div class="number">

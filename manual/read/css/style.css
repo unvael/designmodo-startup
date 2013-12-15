@@ -18600,8 +18600,8 @@ a.active {
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  margin-bottom: 48px;
-  margin-top: 95px;
+  margin-bottom: 46px;
+  margin-top: 93px;
 }
 .mcontent .manual > div .content-man p {
   font-size: 19px;
@@ -18619,23 +18619,24 @@ a.active {
   counter-reset: li;
   list-style: none;
   margin: 0;
+  float: left;
 }
 .mcontent .manual > div .content-man > ol > li {
   position: relative;
 }
 .mcontent .manual > div .content-man > ol > li:before {
-  background: none repeat scroll 0 0 #BDC3C7;
+  background: none repeat scroll 0 0 #394043;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
-  color: #1B1E23;
+  color: #1B1f23;
   content: counter(li, decimal);
   counter-increment: li;
   display: inline-block;
   float: left;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
-  margin: 0 0 0 -66px;
+  margin: 5px 0 0 -66px;
   padding: 3px 9px;
   text-align: center;
 }
@@ -18673,16 +18674,31 @@ a.active {
   border-radius: 0;
   position: relative;
   max-height: 400px;
-  max-width: 100%;
+  max-width: 700px;
+  width: 100%;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   margin: 48px 0 95px;
 }
 .mcontent .manual > div .content-man pre[class*="language-"] code[class*="language-"] {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
   white-space: pre;
   display: block;
+  max-width: 700px;
+  width: 100%;
   border: 0 none;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 body:before {
   -webkit-backface-visibility: hidden;

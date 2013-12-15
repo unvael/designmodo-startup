@@ -1141,7 +1141,7 @@ body {
 .mcontent .dockbar .main-menu {
   display: block;
   overflow: hidden;
-  background-color: #1f1b23;
+  background-color: #1b1f23;
   margin: 0;
   box-sizing: border-box;
   width: 100%;
@@ -17395,52 +17395,81 @@ body {
   margin: 49px 0 0 0;
 }
 .manual-pages.css-classes {
-  margin-top: 0;
+  margin-top: 9px;
+  margin-bottom: 114px;
 }
-.manual-pages.css-classes .container h1 {
-  margin-top: 0;
-}
-.manual-pages.css-classes table {
-  width: 100%;
-  border: 1px solid black;
-}
-.manual-pages.css-classes table td {
-  border: 1px solid black;
-  height: 100px;
-  text-align: center;
-}
-.manual-pages.css-classes table td p {
-  font-size: 11px;
+.manual-pages.css-classes .micro-content > .title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 20px;
   font-weight: normal;
-  color: #ffffff;
-  background-color: black;
-  border: 1px solid white;
+  color: #303336;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
-.manual-pages.css-classes table.less-prop th {
+.manual-pages.css-classes .micro-content > .text {
+  margin-top: 0;
+  padding-bottom: 30px;
   font-size: 16px;
   font-weight: normal;
-  color: #000000;
+  color: #696f6f;
+  padding-top: 5px;
+}
+.manual-pages.css-classes .container h1 {
+  margin-top: 95px;
+  margin-bottom: 30px;
+}
+.manual-pages.css-classes .micro {
+  padding-top: 30px;
+}
+.manual-pages.css-classes .micro .micro-item .preview {
+  float: left;
+  font-size: 18px;
+  font-weight: normal;
+  color: #ffffff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  width: 40%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 0 none;
+  text-align: center;
+  height: 75px;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  vertical-align: bottom;
+}
+.manual-pages.css-classes .micro .micro-item .preview.bg-white {
+  color: #bdc3c7;
+  border: 3px solid #bdc3c7;
+}
+.manual-pages.css-classes .micro .micro-item .desc {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 75px;
+  width: 60%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 0 none;
+  float: left;
+}
+.manual-pages.css-classes .micro .micro-item .desc .title {
+  padding: 0;
+  font-size: 20px;
+  font-weight: normal;
+  color: #303336;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
 }
-.manual-pages.css-classes table.less-prop td {
-  padding: 5px;
-  border: 1px solid black;
-  height: auto;
-  text-align: left;
-  font-size: 14px;
+.manual-pages.css-classes .micro .micro-item .desc .text {
+  font-size: 16px;
   font-weight: normal;
-  color: #7f8c8d;
-}
-.manual-pages.css-classes table.less-prop td:first-child {
-  word-break: keep-all;
-  color: #2c3e50;
-  font-weight: 500;
-}
-.manual-pages.css-classes table.less-prop td p {
-  font-size: 14px;
-  font-weight: normal;
-  color: #7f8c8d;
-  background-color: white;
+  color: #696f6f;
+  padding-top: 5px;
 }
 .manual-pages .container h1 {
   font-size: 35px;
@@ -17448,6 +17477,7 @@ body {
   color: #1b1f23;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 800;
+  letter-spacing: -2px;
   margin: 125px 0 0 0;
 }
 .manual-pages .container h2 {
@@ -17456,6 +17486,7 @@ body {
   color: #1b1f23;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 800;
+  letter-spacing: -2px;
   margin: 90px 0 0 0;
 }
 .manual-pages .container p {
@@ -17483,6 +17514,10 @@ body {
 .manual-pages .container .man-button:hover {
   background-color: #303336;
   color: white;
+  border: 3px #303336 solid;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
 }
 .manual-pages .container code[class*="language-"] {
   white-space: normal;
@@ -17500,6 +17535,7 @@ body {
   position: relative;
   max-width: 100%;
   margin: 48px 0 0 0;
+  padding: 20px !important;
 }
 .manual-pages .container pre[class*="language-"] code[class*="language-"] {
   white-space: pre;
@@ -17709,7 +17745,6 @@ body {
   .dockbar .menu-btn {
     display: inline-block;
     float: right;
-    margin-right: 40px;
     margin-top: 20px;
     position: relative;
   }
@@ -17717,7 +17752,7 @@ body {
 .dockbar .main-menu {
   display: block;
   overflow: hidden;
-  background-color: #1f1b23;
+  background-color: #1b1f23;
   margin: 0;
   box-sizing: border-box;
   width: 100%;
@@ -17861,7 +17896,7 @@ body {
   color: #1b1f23;
 }
 body {
-  margin-top: 112px;
+  padding-top: 112px;
   position: relative;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -17881,7 +17916,7 @@ body.colapsed-menu-active .colapsed-menu {
   display: block !important;
 }
 body.wo-components {
-  margin-top: 66px;
+  padding-top: 66px;
 }
 a:hover,
 button:hover,

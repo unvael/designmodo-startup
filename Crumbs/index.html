@@ -19,7 +19,12 @@
     </head>
 
     <body>
-        
+    <div class="crumbs-mask"></div>
+    <div class="crumbs-popup-video">
+        <iframe id="cPlayer"
+                src="https://player.vimeo.com/video/66675976?title=0&amp;byline=0&amp;portrait=0&amp;api=1&amp;player_id=cPlayer"
+                frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
 <!-- header-10 -->
 
         <header class="header-10">
@@ -80,7 +85,7 @@
                  </div>
                  <div class="row hero-unit">
                      <div class="span1">
-                         <a href="#" class="player-button"><span class="fui-play"> </span></a>
+                         <a id="play" class="player-button"><span class="fui-play"> </span></a>
                      </div>
                      <div class="span3">
                          <a href="#">
@@ -508,7 +513,8 @@
         <script src="./startup/common-files/js/jquery.scrollTo-1.4.3.1-min.js"></script>
         <script src="./startup/common-files/js/jquery.parallax.min.js"></script>
         <script src="./startup/common-files/js/startup-kit.js"></script>
-          
+
+        <script src="./js/froogaloop.min.js"></script>
         <script src="./js/script.js"></script>
     </body>
 </html>

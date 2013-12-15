@@ -17514,6 +17514,10 @@ body {
 .manual-pages .container .man-button:hover {
   background-color: #303336;
   color: white;
+  border: 3px #303336 solid;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
 }
 .manual-pages .container code[class*="language-"] {
   white-space: normal;

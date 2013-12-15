@@ -63,88 +63,100 @@
           <div class="span9">
             <h1>Instalation</h1>
             <p>
-              Startup framework use HTML5 doctype! So your html file should start with next rows:
+              Startup framework uses HTML5 doctype! So your HTML file should start with following rows:
             </p>
             <pre class="language-markup"><code>&lt;!--DOCTYPE html --&gt;
-...</code></pre>
-            <p>
-              For use it the folder with Startup framework should be placed into root folder of your project (You can change the location, but you should be attentive with urls in this situation).
+                    ...</code></pre>
+            <p>First, you need to have the Startup framework package or have access to its repository on Github.
             </p>
-            <p>
-              The Startup framework has two abstract versions which you can use.
-            </p>
+            <p>Place the folder containing the Startup framework into the root directory of your project. (You can change its location, but you should be careful with the URLs in that case).</p>
+            <p>The Startup framework has two abstract versions for your use.</p>
             <h2>Lets Start!</h2>
             <p>
-              First you need insert next code into your HTML file:
+              If you have no experience developing with "LESS", you can use this version. In order to start developing with the css version you only need to know HTML and CSS (and JavaScript, if you want do more interesting effects).
             </p>
+            <p>First step. Put following code into your HTML file:</p>
             <pre class="language-markup"><code>&lt;!-- this code between &lt;header&gt; ... &lt;/header&gt; --&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;(way to the startup folder)/flat-ui/bootstrap/css/bootstrap.css&quot;&gt;
-&lt;link rel=&quot;stylesheet&quot;
-      href=&quot;(way to the startup folder)/flat-ui/bootstrap/css/bootstrap-responsive.css&quot;&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;(way to the startup folder)/flat-ui/css/flat-ui.css&quot;&gt;
-&lt;!-- Using only with Flat-UI (free)--&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;(way to the startup folder)/common-files/css/icon-font.css&quot;&gt;
-&lt;!-- end --&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;(way to the startup folder)/common-files/css/animations.css&quot;&gt;
-&lt;script src=&quot;(way to the startup folder)/flat-ui/js/jquery-1.8.3.min.js&quot;&gt;&lt;/script&gt;
-&lt;!-- this code directly before &lt;/body&gt; --&gt;
-&lt;script src=&quot;(way to the startup folder)/flat-ui/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
-&lt;!--[if lt IE 8]&gt;
-&lt;script src=&quot;../flat-ui/js/icon-font-ie7.js&quot;&gt;&lt;/script&gt;
-&lt;![endif]--&gt;
-&lt;script src=&quot;(way to the startup folder)/common-files/js/jquery.scrollTo-1.4.3.1-min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;(way to the startup folder)/common-files/js/modernizr.custom.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;(way to the startup folder)/common-files/js/page-transitions.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;(way to the startup folder)/common-files/js/easing.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;(way to the startup folder)/common-files/js/jquery.svg.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;(way to the startup folder)/common-files/js/jquery.svganim.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;(way to the startup folder)/common-files/js/jquery.parallax.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;(way to the startup folder)/common-files/js/startup-kit.js&quot;&gt;&lt;/script&gt;</code></pre>
+                    &lt;link rel=&quot;stylesheet&quot; href=&quot;(way to the startup
+                    folder)/flat-ui/bootstrap/css/bootstrap.css&quot;&gt;
+                    &lt;link rel=&quot;stylesheet&quot;
+                    href=&quot;(way to the startup folder)/flat-ui/bootstrap/css/bootstrap-responsive.css&quot;&gt;
+                    &lt;link rel=&quot;stylesheet&quot; href=&quot;(way to the startup folder)/flat-ui/css/flat-ui.css&quot;&gt;
+                    &lt;!-- Using only with Flat-UI (free)--&gt;
+                    &lt;link rel=&quot;stylesheet&quot; href=&quot;(way to the startup
+                    folder)/common-files/css/icon-font.css&quot;&gt;
+                    &lt;!-- end --&gt;
+                    &lt;link rel=&quot;stylesheet&quot; href=&quot;(way to the startup
+                    folder)/common-files/css/animations.css&quot;&gt;
+                    &lt;script src=&quot;(way to the startup folder)/flat-ui/js/jquery-1.8.3.min.js&quot;&gt;&lt;/script&gt;
+                    &lt;!-- this code directly before &lt;/body&gt; --&gt;
+                    &lt;script src=&quot;(way to the startup folder)/flat-ui/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+                    &lt;!--[if lt IE 8]&gt;
+                    &lt;script src=&quot;../flat-ui/js/icon-font-ie7.js&quot;&gt;&lt;/script&gt;
+                    &lt;![endif]--&gt;
+                    &lt;script src=&quot;(way to the startup folder)/common-files/js/jquery.scrollTo-1.4.3.1-min.js&quot;&gt;&lt;/script&gt;
+                    &lt;script src=&quot;(way to the startup folder)/common-files/js/modernizr.custom.js&quot;&gt;&lt;/script&gt;
+                    &lt;script src=&quot;(way to the startup folder)/common-files/js/page-transitions.js&quot;&gt;&lt;/script&gt;
+                    &lt;script src=&quot;(way to the startup folder)/common-files/js/easing.min.js&quot;&gt;&lt;/script&gt;
+                    &lt;script src=&quot;(way to the startup folder)/common-files/js/jquery.svg.js&quot;&gt;&lt;/script&gt;
+                    &lt;script src=&quot;(way to the startup folder)/common-files/js/jquery.svganim.js&quot;&gt;&lt;/script&gt;
+                    &lt;script src=&quot;(way to the startup folder)/common-files/js/jquery.parallax.min.js&quot;&gt;&lt;/script&gt;
+                    &lt;script src=&quot;(way to the startup folder)/common-files/js/startup-kit.js&quot;&gt;&lt;/script&gt;</code></pre>
             <p>
-              Second step. You have to insert styles for elements which you want to use:
+              Second step. Insert the styles for the elements you want to use:
             </p>
             <pre class="language-markup"><code>&lt;!-- header --&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;(way to the startup folder)/ui-kit-header/css/style.css&quot;&gt;
-&lt;!-- content --&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;(way to the startup folder)/ui-kit-content/css/style.css&quot;&gt;
-&lt;!-- blog --&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;(way to the startup folder)/ui-kit-blog/css/style.css&quot;&gt;
-&lt;!-- contacts --&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;(way to the startup folder)/ui-kit-contacts/css/style.css&quot;&gt;
-&lt;!-- crew --&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;(way to the startup folder)/ui-kit-crew/css/style.css&quot;&gt;
-&lt;!-- price --&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;(way to the startup folder)/ui-kit-price/css/style.css&quot;&gt;
-&lt;!-- projects --&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;(way to the startup folder)/ui-kit-projects/css/style.css&quot;&gt;
-&lt;!-- footer --&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;(way to the startup folder)/ui-kit-footer/css/style.css&quot;&gt;</code></pre>
+                    &lt;link rel=&quot;stylesheet&quot; href=&quot;(way to the startup
+                    folder)/ui-kit-header/css/style.css&quot;&gt;
+                    &lt;!-- content --&gt;
+                    &lt;link rel=&quot;stylesheet&quot; href=&quot;(way to the startup
+                    folder)/ui-kit-content/css/style.css&quot;&gt;
+                    &lt;!-- blog --&gt;
+                    &lt;link rel=&quot;stylesheet&quot; href=&quot;(way to the startup folder)/ui-kit-blog/css/style.css&quot;&gt;
+                    &lt;!-- contacts --&gt;
+                    &lt;link rel=&quot;stylesheet&quot; href=&quot;(way to the startup
+                    folder)/ui-kit-contacts/css/style.css&quot;&gt;
+                    &lt;!-- crew --&gt;
+                    &lt;link rel=&quot;stylesheet&quot; href=&quot;(way to the startup folder)/ui-kit-crew/css/style.css&quot;&gt;
+                    &lt;!-- price --&gt;
+                    &lt;link rel=&quot;stylesheet&quot; href=&quot;(way to the startup
+                    folder)/ui-kit-price/css/style.css&quot;&gt;
+                    &lt;!-- projects --&gt;
+                    &lt;link rel=&quot;stylesheet&quot; href=&quot;(way to the startup
+                    folder)/ui-kit-projects/css/style.css&quot;&gt;
+                    &lt;!-- footer --&gt;
+                    &lt;link rel=&quot;stylesheet&quot; href=&quot;(way to the startup
+                    folder)/ui-kit-footer/css/style.css&quot;&gt;</code></pre>
             <p>
-              Last that you need to do - choose block that you want and follow the instructions for it!
+              Finally, choose the block you want to use and follow the instructions for it!
             </p>
             <h2>The "LESS" version</h2>
             <p>
-              First step is <a class="inner-link" href="#firstStep">equal to the simple version</a>
+              It's your choice, if you want to use "LESS". We have done everything to make the usability of our framework simpler.
             </p>
             <p>
-              Second step. In your main '.less' file add next rows of code:
+              The first step is <a class="inner-link" href="#firstStep">the same as with the simple version.</a>
             </p>
-            <pre class="language-scss"><code class="language-scss">@import '(way to the startup folder)/flat-ui/less/config.less';
-@import '(way to the startup folder)/flat-ui/less/mixins.less';
-/*only fo flat-ui free*/
-@import '(way to the startup folder)/common-files/less/flat-ui-free2.0.0-fix.less';
-/* end only for flat-ui free*/
-@import '(way to the startup folder)/common-files/less/mixins.less';
-@import '(way to the startup folder)/common-files/less/common.less';
-@import '(way to the startup folder)/common-files/less/navbar.less';
-@import '(way to the startup folder)/common-files/less/helper.less';</code></pre>
             <p>
-              The last step is <a class="inner-link" href="#lastStep">equal to the simple version</a>
+              Second step. In your main '.less' file add the following lines of code:
+            </p>
+            <pre class="language-scss"><code class="language-scss">@import '(way to the startup
+                    folder)/flat-ui/less/config.less';
+                    @import '(way to the startup folder)/flat-ui/less/mixins.less';
+                    /*only fo flat-ui free*/
+                    @import '(way to the startup folder)/common-files/less/flat-ui-free2.0.0-fix.less';
+                    /* end only for flat-ui free*/
+                    @import '(way to the startup folder)/common-files/less/mixins.less';
+                    @import '(way to the startup folder)/common-files/less/common.less';
+                    @import '(way to the startup folder)/common-files/less/navbar.less';
+                    @import '(way to the startup folder)/common-files/less/helper.less';</code></pre>
+            <p>
+              The last step is <a class="inner-link" href="#lastStep">the same as with the simple version.</a>
             </p>
             <h2>Responsive Tip</h2>
             <p>
-              All components of Startup framework use responsive design. Some of it could have differences between browser that support JavaScript and browsers without JavaScript support. It's not critical difference. But if you will develop product for these browsers,
-              please be attentive and don't forget check the result.
+              All components of Startup framework use responsive design. Some of them could have differences between browsers that support JavaScript and browsers without JavaScript support. Those differences are not critical. But if you are developing a product for
+              these particular browsers, please be careful and don't forget to test the result.
             </p>
           </div>
         </div>

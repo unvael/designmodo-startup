@@ -42,12 +42,14 @@ body > section.v-center > div {
   }
 }
 .content-23{
-  .c23-video{
-    position:absolute;
-    height:100%;
-    width:100%;
-    
+  #bgVideo{
+    overflow: hidden;
+    > video{
+      position: absolute !important;
+      top:0 !important;
+    }
   }
+  overflow: hidden;
   .control-btn{
     .opacity(10);
   }

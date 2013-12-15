@@ -1515,12 +1515,15 @@ body > section.v-center > div {
   }
 }
 .content-23 {
+  overflow: hidden;
   background-color: #1B1F23;
 }
-.content-23 .c23-video {
-  position: absolute;
-  height: 100%;
-  width: 100%;
+.content-23 #bgVideo {
+  overflow: hidden;
+}
+.content-23 #bgVideo > video {
+  position: absolute !important;
+  top: 0 !important;
 }
 .content-23 .control-btn {
   opacity: 0.1;

@@ -1457,7 +1457,7 @@ section * {
   background: #1b1e21;
 }
 .header-23-sub .background {
-  background: url(../img/header-1.jpg) no-repeat;
+  background-image: url(../img/header-1.jpg);
 }
 .mask {
   z-index: 1000;

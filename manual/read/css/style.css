@@ -18601,6 +18601,9 @@ a.active {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+.mcontent .manual > div .content-man span {
+  line-height: 20px;
+}
 .mcontent .manual > div .content-man:hover,
 .mcontent .manual > div .content-man:focus {
   opacity: 1;

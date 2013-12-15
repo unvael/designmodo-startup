@@ -18751,6 +18751,10 @@ body:before {
 }
 .read-manual {
   overflow: hidden;
+  /*.container {
+    margin-left: 10px;
+  }*/
+
 }
 .read-manual body:before {
   visibility: visible;
@@ -18769,9 +18773,6 @@ body:before {
   -o-transition: z-index 0s;
   transition: z-index 0s;
   z-index: 840;
-}
-.read-manual .container {
-  margin-left: 10px;
 }
 .read-manual .mcontent {
   height: auto !important;

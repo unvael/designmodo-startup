@@ -128,8 +128,8 @@
         .font(28px, white);
         font-family: @h-font-family;
         font-weight: 300;
-        margin-bottom: 48px;
-        margin-top: 95px;
+        margin-bottom: 46px;
+        margin-top: 93px;
       }
       p {
         .font(19px, @asbestos);
@@ -145,20 +145,21 @@
         counter-reset: li;
         list-style: none;
         margin: 0;
+        float: left;
         > li {
           position: relative;
 
           &:before {
-            background: none repeat scroll 0 0 #BDC3C7;
+            background: none repeat scroll 0 0 #394043;
             .border-radius(100%);
-            color: #1B1E23;
+            color: #1B1f23;
             content: counter(li, decimal);
             counter-increment: li;
             display: inline-block;
             float: left;
             font-family: @h-font-family;
             font-weight: 500;
-            margin: 0 0 0 -66px;
+            margin: 5px 0 0 -66px;
             padding: 3px 9px;
             text-align: center;
           }
@@ -197,13 +198,20 @@
         .border-radius(0);
         position: relative;
         max-height: 400px;
-        max-width: 100%;
+        max-width: 700px;
+        width: 100%;
+        .box-shadow(none);
+        .box-sizing(border-box);
         margin: 48px 0 95px;
         code[class*="language-"] {
+          .box-shadow(none);
           white-space: pre;
           display: block;
+          max-width: 700px;
+          width: 100%;
           border: 0 none;
           .border-radius(0);
+          .box-sizing(border-box);
         }
       }
 

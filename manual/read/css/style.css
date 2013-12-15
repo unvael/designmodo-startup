@@ -17531,6 +17531,7 @@ body {
   position: relative;
   max-width: 100%;
   margin: 48px 0 0 0;
+  padding: 20px !important;
 }
 .manual-pages .container pre[class*="language-"] code[class*="language-"] {
   white-space: pre;

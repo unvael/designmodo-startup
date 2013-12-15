@@ -17477,6 +17477,7 @@ body {
   color: #1b1f23;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 800;
+  letter-spacing: -2px;
   margin: 125px 0 0 0;
 }
 .manual-pages .container h2 {
@@ -17485,6 +17486,7 @@ body {
   color: #1b1f23;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 800;
+  letter-spacing: -2px;
   margin: 90px 0 0 0;
 }
 .manual-pages .container p {

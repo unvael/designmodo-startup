@@ -44,8 +44,8 @@ function fadedEls(el, shift) {
          
         
         // Parallax
-        $('.header-10-sub .background').parallax('50%', -0.3, true);
-        $('.content-24 .img').parallax('50%', 0.15, true);
+//        $('.header-10-sub .background').parallax('50%', -0.3, true);
+//        $('.content-24 .img').parallax('50%', 0.15, true);
 
         // Features
         $(window).resize(function() {

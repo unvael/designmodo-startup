@@ -17,45 +17,70 @@
   }
 
   &.css-classes {
-    margin-top: 0;
-    .container h1 {
-      margin-top: 0;
+    .micro-content >.title{
+      margin-top:30px;
+      margin-bottom: 30px;
+      .font(20px, #303336);
+      font-family: @h-font-family;
+      font-weight: 500;
     }
-    table {
-      width: 100%;
-      border: 1px solid black;
-      td {
-        border: 1px solid black;
-        height: 100px;
-        text-align: center;
-        p {
-          .font(11px, white);
-          background-color: black;
-          border: 1px solid white;
-        }
 
-      }
-      &.less-prop {
-        th {
-          .font(16px, black);
-          font-weight: 500;
+    .micro-content >.text{
+      margin-top: 0;
+      padding-bottom: 30px;
+      .font(16px,#696f6f);
+      padding-top: 5px;
+    }
 
+    margin-top: 9px;
+    margin-bottom: 114px;
+    .container h1 {
+      margin-top: 95px;
+      margin-bottom: 30px;
+    }
+    .micro {
+      padding-top: 30px;
+      .micro-item {
+        .preview {
+          float: left;
+          .font(18px, white);
+          font-family: @h-font-family;
+          font-weight: 300;
+          width: 40%;
+          .box-sizing(border-box);
+          border: 0 none;
+
+          text-align: center;
+          height: 75px;
+          padding-top: 40px;
+          padding-bottom: 10px;
+          vertical-align: bottom;
+          &.bg-white {
+            color: @silver;
+            border: 3px solid @silver;
+          }
         }
-        td {
-          padding: 5px;
-          border: 1px solid black;
-          height: auto;
-          text-align: left;
-          .font(14px);
-          &:first-child {
-            word-break: keep-all;
-            color: @h-text-color;
+        .desc {
+          padding-top:10px;
+          padding-bottom: 10px;
+          padding-left: 20px;
+          padding-right: 20px;
+          .title{
+            padding:0;
+            .font(20px, #303336);
+            font-family: @h-font-family;
             font-weight: 500;
           }
-          p {
-            .font(14px);
-            background-color: white;
+          .text{
+            .font(16px,#696f6f);
+            padding-top: 5px;
           }
+          height: 75px;
+          width: 60%;
+          .box-sizing(border-box);
+          border: 0 none;
+          float: left;
+
         }
       }
     }
@@ -66,6 +91,7 @@
       .font(35px, #1b1f23);
       font-family: @h-font-family;
       font-weight: 800;
+      letter-spacing: -2px;
       margin: 125px 0 0 0;
     }
 
@@ -73,6 +99,7 @@
       .font(28px, #1b1f23);
       font-family: @h-font-family;
       font-weight: 800;
+      letter-spacing: -2px;
       margin: 90px 0 0 0;
     }
     p {
@@ -94,6 +121,8 @@
       &:hover {
         background-color: #303336;
         color: white;
+        border: 3px #303336 solid;
+        .border-radius(10px);
       }
     }
 
@@ -110,6 +139,7 @@
       position: relative;
       max-width: 100%;
       margin: 48px 0 0 0;
+      padding: 20px !important;
       code[class*="language-"] {
         white-space: pre;
         display: block;

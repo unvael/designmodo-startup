@@ -11,7 +11,7 @@
   .transition(z-index 4s ease 0s);
   display: block;
   width: 100%;
-  box-sizing: border-box;
+  .box-sizing(border-box);
   padding: 0;
   margin: 0;
   overflow: visible;
@@ -23,7 +23,7 @@
     @media (max-width: 979px) {
       @import "colapsed-menu";
       > menu {
-        padding: 0 20px;
+        padding: 0 0 0 20px;
       }
 
       position: fixed;
@@ -38,17 +38,28 @@
     @media (max-width: 979px) {
       display: inline-block;
       float: right;
-      margin-right: 40px;
-      margin-top: 20px;
       position: relative;
+      .box-sizing(border-box);
+      width:66px;
+      height: 66px;
+      background: none #1b1f23;
+      border: 0 none;
+      border-left: 1px solid #272b2f;
+      color: #919497;
+      &:hover, &:focus{
+        border: 0 none;
+        border-left: 1px solid #272b2f;
+        color: #ffffff;
+      }
+
     }
   }
   .main-menu {
     display: block;
     overflow: hidden;
-    background-color: #1f1b23;
+    background-color: #1b1f23;
     margin: 0;
-    box-sizing: border-box;
+    .box-sizing(border-box);
     width: 100%;
     padding: 0;
     > div {
@@ -66,7 +77,7 @@
       @media (max-width: 979px) {
         .line-height(65px);
         width: auto;
-        margin-left: 20px;
+
       }
       .logotype {
         .font(16px, white);

@@ -4,27 +4,24 @@
         <h3>Overview</h3>
 
         <p>
-            This block has carousel in which you can paste images and slogan that you want,
-            block with headline, and content block with menu.
-            This block has special grid for content.
-            All of this components you can modificate as you want.
+            This block has a carousel, a headline area, and a content area with navigation menu. You can use any images and text for the carousel slides.
+            This block uses a special grid for the content.
+            You can modify any of these components as you wish.
         </p>
     </li>
     <li>
         <h3>Installation</h3>
 
         <p>
-            if you not already done all instructions
-            that you had to read on the <a href="how_to_install.html">how to install</a> page
-            of this documentation please make it first
+            If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
         </p>
     </li>
     <li>
         <h3>CSS version:</h3>
 
         <p>
-            you only need paste next rows between <code class="language-markup">&lt;body&gt; ... &lt;/body&gt;</code>
-            into your html file.
+            All you need to do is copy and paste these lines of code between <code class="language-markup">&lt;body&gt; ... &lt;/body&gt;</code>
+            into your HTML file.
         </p>
         <pre class="htmlCode"><code class="language-markup">include "../../../ui-kit/ui-kit-blog/for-tpl/blog-1.html"</code></pre>
     </li>
@@ -32,12 +29,11 @@
         <h3>LESS version:</h3>
 
         <p>
-            you should paste same code (as in <strong>simple version</strong>) and paste next code into your '<strong>.less</strong>'
-            file after that
-            rows that you already had to paste.
+            Copy the same code as in css version and paste it in your '<strong>.less</strong>'
+            file. Put the following lines after that code:
         </p>
         <pre class="language-scss"><code class="language-scss">@import 'blog-common.less';
-            @import 'blog-1.less';</code></pre>
+@import 'blog-1.less';</code></pre>
     </li>
     <li>
         <h3>Component Modification:</h3>
@@ -47,43 +43,31 @@
         </p>
 
         <p>
-            <big><strong>Carousel</strong></big>
-        </p>
-
-        <p>
-            As you can see in code we have block <code class="language-markup">&lt;div id="b1-pt-1"&gt;...&lt;/div&gt;</code>
-            - it's main block of the carousel.
-            In this block situated few pages <code class="language-markup">&lt;div class="pt-page"&gt;...&lt;/div&gt;</code>
-            For thouse elements you can change background, and you can do it in few ways. First way - you can change the
-            part of class that start with
-            <strong>bg-</strong> for this element. This way you can use reserved classes from Flat-UI, but it changed
-            only color of carousels page background.
-            Or second way - you can use css for change background for concrete element.
-            As example for <code class="language-markup">&lt;div class="pt-page-1"&gt;...&lt;/div&gt;</code>
-            . You can do something like this:
+            As you can see in code we have block <code class="language-markup">&lt;div id="b1-pt-1"&gt;...&lt;/div&gt;</code>, 
+            the main block of the carousel.
+            There are a few page elements in this block: <code class="language-markup">&lt;div class="pt-page"&gt;...&lt;/div&gt;</code>
+            You can change the background of those elements in a few different ways. One way is changing the part of the class that starts with
+            <strong>bg-</strong> for this element. This way you can use reserved classes from Flat-UI, but it will only change the background color of the carousel page.
+            Another way is to use CSS to change the background for a specific element.
+            As an example for block <code class="language-markup">&lt;div class="pt-page-1"&gt;...&lt;/div&gt;</code>, you can do something like this:
         </p>
         <pre class="language-css"><code class="language-css">.pt-page-1{
-            background-image:url('some image url');
-            background-color: some color;
-            }</code></pre>
+    background-image:url('some image url');
+    background-color: some color;
+}</code></pre>
         <p>
-            You can change text for any of this carousel pages. For this you should change text in block <code
+            You can change the text for any of these carousel pages. To do so you need to change the text in the following block: <code
                 class="language-markup">&lt;div class="hero-unit"&gt;...&lt;/div&gt;</code>
         </p>
 
         <p>
-            And you can add new pages. For this you should copy one of blocks <code class="language-markup">&lt;div class="pt-page"&gt;...&lt;/div&gt;</code>
-            ,
-            replace class as <strong>pt-page-1</strong> to new class.
-            Each new page should has new class with new number.
+            You can also add new pages to the carousel by copying one of blocks <code class="language-markup">&lt;div class="pt-page"&gt;...&lt;/div&gt;</code>
+            and 
+            changing the class <strong>pt-page-1</strong> to a new one with a new number.
         </p>
 
         <p>
-            <big><strong>Content except carousel</strong></big>
-        </p>
-
-        <p>
-            You can replace any text except code structure.
+            You can replace any text in the block but you should maintain the HTML structure.
         </p>
     </li>
 </ol>

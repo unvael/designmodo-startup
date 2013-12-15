@@ -31,7 +31,7 @@
         <p>
             Copy the same code as in <a href="#h4-simple" class="inner-link">simple version</a>and paste it in your '<strong>.less</strong>' file. Put the following line after that code:
         </p>
-        <pre class="language-scss"><code>@import '../../ui-kit/ui-kit-header/less/header-4.less';</code></pre>
+        <pre class="language-scss"><code class="language-scss">@import '../../ui-kit/ui-kit-header/less/header-4.less';</code></pre>
     </li>
     <li>
         <h3>Component Modification:</h3>
@@ -41,18 +41,18 @@
         </p>
 
         <p>
-            This block, as many other header blocks in our framework, has a special place for background image, which is: <code class="language-markup">&lt;div class=”background”&gt;...&lt;/div&gt;</code>.
+            This block, as many other header blocks in our framework, has a special place for background image, which is: <code class="language-markup">&lt;div class="background"&gt;...&lt;/div&gt;</code>.
             To put your own image as background you need to add CSS rules for this element. You can also manage the opacity for this element. Here is an example:
         </p>
-        <pre class="cssCode">.background {
-	background-image:url(‘your image url’);
+        <pre class="cssCode"><code class="language-scss">.background {
+	background-image:url('your image url’);
 	opacity: opacity value;
 }
-</pre>
+</code></pre>
         <p>
-            In ‘Less’ version for opacity property you can use cross browser function:
+            In 'Less’ version for opacity property you can use cross browser function:
         </p>
-        <pre class="cssCode">.opacity(value from 0 to 100);</pre>
+        <pre class="cssCode"><code class="language-scss">.opacity(value from 0 to 100);</code></pre>
         <p>
             You can replace the content of this block with your own.
             In order to do this you need to replace the content between the tags <code class="language-markup">&lt;div class="hero-unit"&gt;...&lt;/div&gt;</code>

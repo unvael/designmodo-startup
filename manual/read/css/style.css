@@ -18031,7 +18031,7 @@ a.active {
 }
 .mask.active {
   display: block;
-  background-color: #1b1f23;
+  background-color: #1b1f23 !important;
   background-image: none !important;
   background-size: auto;
   position: absolute;
@@ -18052,6 +18052,9 @@ a.active {
   transition: opacity 3s linear 0s;
   opacity: 0.97;
   filter: alpha(opacity=97);
+}
+.mask.active .container {
+  background: none transparent !important;
 }
 .mask.active.big .container {
   display: table;

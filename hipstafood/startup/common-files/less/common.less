@@ -56,11 +56,10 @@
 .bordered.bg-concrete {      border-color: @asbestos};
 
 @h-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-@c-font-family: @h-font-family;
+@c-font-family: Lato, sens-serif;
 
 // common styles
 body {
-  overflow-x:hidden;
   color: @asbestos;
   line-height: 1.29;
   @media (max-width: 767px) {
@@ -101,10 +100,4 @@ h3 {
 // force best img interpolation in Chrome
 img {
   -webkit-backface-visibility: hidden;
-}
-
-
-textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input{
-  font-family: @h-font-family;
-  .font(16px);
 }

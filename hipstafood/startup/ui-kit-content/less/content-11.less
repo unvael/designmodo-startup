@@ -1,0 +1,21 @@
+/**
+ * Content 11 stylesheet  
+ * */
+.content-11 {
+  text-align: center;
+  padding-top: 35px; padding-bottom: 35px;
+  background: rgba(241, 196, 15, 0.1);  
+  .font(24px, @base); font-family: @h-font-family;
+  font-weight: 300;
+  > .container {position: relative;}
+  .btn {
+    margin-left: 30px;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.19em;
+  }
+  @media (max-width: 480px) {
+    > .container > span {display: block;}
+    .btn {margin: 30px 0 0;}
+  }
+}

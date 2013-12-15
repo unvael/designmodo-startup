@@ -20,7 +20,7 @@
     overflow: auto!important;
     background: #222527;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    display: none;
+
     &::-webkit-scrollbar {
       display: none;
     }
@@ -73,10 +73,6 @@
     .navbar-form,
     .navbar-search {
       padding: 10px 35px;
-      &:focus{outline: 0 none;}
-      border-bottom: 0 none;
-      border-top: 0 none;
-      box-shadow:none;
     }
   }
 
@@ -95,12 +91,5 @@
       left: 28%!important;
       visibility: visible;
     }
-  }
-}
-
-@media (max-width: 767px) {
-  .navbar-fixed-top .navbar-inner {
-    padding-left: 20px;
-    padding-right: 20px;
   }
 }

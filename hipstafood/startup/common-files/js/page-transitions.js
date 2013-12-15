@@ -1,4 +1,7 @@
 
+// modified by Vasso (vasso.etc@gmail.com)
+
+
 var PageTransitions = function() {
 
   var $main, $pages, pagesCount,

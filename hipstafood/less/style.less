@@ -1,5 +1,5 @@
-@import '../startup/flat-ui/less/config.less';
-@import '../startup/flat-ui/less/mixins.less';
+@import '../startup/flat-ui-pro/less/config.less';
+@import '../startup/flat-ui-pro/less/mixins.less';
 @import '../startup/common-files/less/mixins.less';
 @import '../startup/common-files/less/common.less';
 @import '../startup/common-files/less/navbar.less';
@@ -8,16 +8,16 @@
 
 
 /* header */
-@import '../startup/ui-kit/ui-kit-header/less/header-10.less';
+@import '../startup/ui-kit-header/less/header-10.less';
 
 /* content */
-@import '../startup/ui-kit/ui-kit-content/less/content-7.less';
-@import '../startup/ui-kit/ui-kit-content/less/content-8.less';
-@import '../startup/ui-kit/ui-kit-content/less/content-13.less';
-@import '../startup/ui-kit/ui-kit-content/less/content-23.less';
+@import '../startup/ui-kit-content/less/content-7.less';
+@import '../startup/ui-kit-content/less/content-8.less';
+@import '../startup/ui-kit-content/less/content-13.less';
+@import '../startup/ui-kit-content/less/content-23.less';
 
 /* footer */
-@import '../startup/ui-kit/ui-kit-footer/less/footer-3.less';
+@import '../startup/ui-kit-footer/less/footer-3.less';
 
 @proxima:  'proxima-nova', sans-serif;
 
@@ -38,27 +38,24 @@ section{
     .a-color(@silver, @c-text-color);
   }
 @-webkit-keyframes ani-mouse {
-  0%     { opacity: 1; top: 29%; }  
+  0%     { opacity: 1; top: 29%; }
   15%    { opacity: 1; top: 50%; }
-  40%    { opacity: 0; top: 50%; }  
-  45%    { opacity: 0; top: 29%; }
-  46%    { opacity: 1; top: 29%; }
+  50%    { opacity: 0; top: 50%; }
+  100%   { opacity: 0; top: 29%; }
 }
 
 @-moz-keyframes ani-mouse {
-  0%     { opacity: 1; top: 29%; }  
+  0%     { opacity: 1; top: 29%; }
   15%    { opacity: 1; top: 50%; }
-  40%    { opacity: 0; top: 50%; }
-  45%    { opacity: 0; top: 29%; }  
-  46%    { opacity: 1; top: 29%; }
+  50%    { opacity: 0; top: 50%; }
+  100%   { opacity: 0; top: 29%; }
 }
 
 @keyframes ani-mouse {
-  0%     { opacity: 1; top: 29%; }  
+  0%     { opacity: 1; top: 29%; }
   15%    { opacity: 1; top: 50%; }
-  40%    { opacity: 0; top: 50%; }  
-  45%    { opacity: 0; top: 29%; }
-  46%    { opacity: 1; top: 29%; }
+  50%    { opacity: 0; top: 50%; }
+  100%   { opacity: 0; top: 29%; }
 }
   
    .background{

@@ -13,7 +13,10 @@ module.exports = function(grunt) {
 			'hipstafood/less/style.less',
 			'crumbs/less/style.less',
 			'manual/read/less/style.less',
-			'Presentation/less/style.less'
+			'Presentation/less/style.less',
+			'demo/ui-kit/ui-kit-*/less/style.less',
+			'demo/samples/sample-*/less/style.less',
+			'demo/manual/read/less/style.less',                        
 	    ],
 	    rename: function(src, dest) {
 			return dest.replace('less/style.less', 'css/style.css');
@@ -28,8 +31,14 @@ module.exports = function(grunt) {
         src: ['manual/templates/*.html'],
         cwd: '.',
         dest: 'manual/read/',
-        flatten: true,
+        flatten: true
       },
+      'demo-manual': {
+        src: ['demo/manual/templates/*.html'],
+        cwd: '.',
+        dest: 'demo/manual/read/',
+        flatten: true
+      },      
       kit: {
       	files: [
       		{src: 'ui-kit/ui-kit-blog/templates/*.html', dest: 'ui-kit/ui-kit-blog/', flatten: true},
@@ -39,7 +48,11 @@ module.exports = function(grunt) {
        		{src: 'ui-kit/ui-kit-footer/templates/*.html', dest: 'ui-kit/ui-kit-footer/', flatten: true},
        		{src: 'ui-kit/ui-kit-header/templates/*.html', dest: 'ui-kit/ui-kit-header/', flatten: true},
        		{src: 'ui-kit/ui-kit-price/templates/*.html', dest: 'ui-kit/ui-kit-price/', flatten: true}, 		  
-       		{src: 'ui-kit/ui-kit-projects/templates/*.html', dest: 'ui-kit/ui-kit-projects/', flatten: true}, 	       		     		
+       		{src: 'ui-kit/ui-kit-projects/templates/*.html', dest: 'ui-kit/ui-kit-projects/', flatten: true}, 
+       		{src: 'demo/ui-kit/ui-kit-content/templates/*.html', dest: 'demo/ui-kit/ui-kit-content/', flatten: true},
+       		{src: 'demo/ui-kit/ui-kit-footer/templates/*.html', dest: 'demo/ui-kit/ui-kit-footer/', flatten: true},
+       		{src: 'demo/ui-kit/ui-kit-header/templates/*.html', dest: 'demo/ui-kit/ui-kit-header/', flatten: true},
+       		{src: 'demo/ui-kit/ui-kit-price/templates/*.html', dest: 'demo/ui-kit/ui-kit-price/', flatten: true}, 		                
       	],
       },      
     },
@@ -53,19 +66,30 @@ module.exports = function(grunt) {
 				{src: ['samples/**'], dest: 'build-release/'},
 				{src: ['manual/**'], dest: 'build-release/'},
 				{src: ['flat-ui/**'], dest: 'build-release/'},
+				{src: ['demo/common-files/**'], dest: 'build-demo/'},
+				{src: ['demo/ui-kit/**'], dest: 'build-demo/'},
+				{src: ['demo/samples/**'], dest: 'build-demo/'},
+				{src: ['demo/manual/**'], dest: 'build-demo/'},
+				{src: ['demo/flat-ui/**'], dest: 'build-demo/'}                                
 			]
 		}	   	
     },
     clean: {
     	prerelease: {
-    		src: 'build-release/'
+    		src: ['build-release/', 'build-demo/']
     	},
     	release: {
     		src: [
     			'build-release/manual/templates', 
     			'build-release/manual/for-tpl',
+                        'build-release/manual/read/less',
     			'build-release/ui-kit/ui-kit-*/for-tpl',
     			'build-release/ui-kit/ui-kit-*/templates',
+    			'build-demo/demo/manual/templates', 
+    			'build-demo/demo/manual/for-tpl',
+    			'build-demo/demo/ui-kit/ui-kit-*/for-tpl',
+    			'build-demo/demo/ui-kit/ui-kit-*/templates',
+                        'build-demo/demo/manual/read/less'                        
     		]
     	}
     },
@@ -85,11 +109,11 @@ module.exports = function(grunt) {
 		},	
 		'after-build-manual': {
 			expand: true,
-			src: ['manual/read/*.html'],
+			src: ['manual/read/*.html', 'demo/manual/read/*.html']
 		},
 		'after-build-kit': {
 			expand: true,
-			src: ['ui-kit/ui-kit-*/*.html'],
+			src: ['ui-kit/ui-kit-*/*.html', 'demo/ui-kit/ui-kit-*/*.html']
 		}			
 	}
     
@@ -106,7 +130,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-lineending');
   grunt.loadNpmTasks('grunt-prettify');
   grunt.registerTask('default', ['less']);
-  grunt.registerTask('build-manual', ['includes:manual', 'prettify:after-build-manual']);
+  grunt.registerTask('build-manual', ['includes:manual', 'includes:demo-manual', 'prettify:after-build-manual']);
   grunt.registerTask('build-kit', ['includes:kit', 'prettify:after-build-kit']);
   grunt.registerTask('release', ['less', 'build-kit', 'build-manual', 'lineending', 'clean:prerelease', 'copy:release', 'clean:release']);
 };

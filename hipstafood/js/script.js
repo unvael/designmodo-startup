@@ -40,6 +40,12 @@ function fadedEls(el, shift) {
         return false;
     });    
 
+        // Sections height & scrolling
+        $(window).resize(function() {
+            var sH = $(window).height();
+            $('section.header-10-sub').css('height', (sH - $('header').outerHeight()) + 'px');
+        });        
+
         // Parallax
       
         $('.header-10-sub,.header-10-sub .background').each(function() {

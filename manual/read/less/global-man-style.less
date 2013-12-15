@@ -1,7 +1,7 @@
 body {
   padding-top: 112px;
   @media (max-width: 979px) {
-    margin-top: 66px;
+    padding-top: 66px;
   }
   position: relative;
   font-family: @h-font-family;
@@ -11,6 +11,9 @@ body {
   &.colapsed-menu-active {
     height: 100%;
     overflow: hidden;
+    .dockbar{
+      border-bottom: 1px solid #272b2f;
+    }
     .colapsed-menu {
       display: block !important;
     }

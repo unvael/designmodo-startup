@@ -11,7 +11,7 @@
   .transition(z-index 4s ease 0s);
   display: block;
   width: 100%;
-  box-sizing: border-box;
+  .box-sizing(border-box);
   padding: 0;
   margin: 0;
   overflow: visible;
@@ -23,10 +23,10 @@
       .colapsed-menu{
         float: right;
         display:none;
-        max-width: 300px;
+        max-width: 400px;
         position: absolute;
         right: 0;
-        top: 52px;
+        top: 67px;
         width: auto;
         margin:0;
         padding:0;
@@ -35,7 +35,7 @@
           display:block;
           margin:0;
           dd{
-            border-bottom:1px dashed #333;
+            border-bottom:1px solid #202428;
             .line-height(45px);
             display:block;
             margin:0;
@@ -43,9 +43,16 @@
             width:100%;
             float:left;
             text-transform:uppercase;
+            &:hover, &:focus{
+              dd{
+                display: block;
+              }
+            }
             dd{
+              display: none;
               margin:0 0 0 20px;
               font-size:12px;
+              border: 0 none;
             }
             >a{
               float:left;
@@ -69,7 +76,7 @@
 
 
 
-      > menu {padding:0 20px;}
+      > menu {padding:0 0 0 20px;}
       position:fixed;
       .container{
         width:auto;
@@ -80,10 +87,22 @@
   .menu-btn{
     display:none;
     @media (max-width: 1200px) {
-      display:inline-block;
-      float:right;
-      margin-top:20px;
-      position:relative;
+      display: inline-block;
+      float: right;
+      position: relative;
+      .box-sizing(border-box);
+      width:66px;
+      height: 66px;
+      background: none #1b1f23;
+      border: 0 none;
+      border-left: 1px solid #272b2f;
+      color: #919497;
+      &:hover, &:focus{
+        border: 0 none;
+        border-left: 1px solid #272b2f;
+        color: #ffffff;
+      }
+
     }
   }
   .main-menu {
@@ -91,7 +110,7 @@
     overflow: hidden;
     background-color: #1b1f23;
     margin: 0;
-    box-sizing: border-box;
+    .box-sizing(border-box);
     width: 100%;
     padding: 0;
     > div {
@@ -109,7 +128,7 @@
       @media (max-width: 1200px) {
         .line-height(65px);
         width: auto;
-        margin-left: 20px;
+
       }
       .logotype {
         .font(16px, white);
@@ -159,7 +178,7 @@
 }
 
 body{
-  margin-top: 66px;
+  padding-top: 66px;
   position:relative;
   font-family:@h-font-family;
   &.hovered{

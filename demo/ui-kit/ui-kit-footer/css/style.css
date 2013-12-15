@@ -433,6 +433,14 @@ input[type="color"],
   font-weight: normal;
   color: #7f8c8d;
 }
+a:hover,
+button:hover,
+a:focus,
+button:focus,
+a:active,
+button:active {
+  outline: none;
+}
 .delimiter {
   margin-top: 200px;
 }
@@ -747,10 +755,6 @@ body section.content-33 {
 body section[class*=content-] {
   margin-top: 0;
   margin-bottom: 0;
-}
-body .disabled {
-  color: #484d51 !important;
-  cursor: default;
 }
 /**
  * Footer 2 stylesheet  

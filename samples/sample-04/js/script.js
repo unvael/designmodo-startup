@@ -42,7 +42,7 @@ function fadedEls(el, shift) {
         $(window).resize(function() {
             var sH = $(window).height();
             $('section.header-10-sub').css('height', (sH - $('header').outerHeight()) + 'px');
-            $('section:not(.header-10-sub):not(.content-11)').css('height', sH + 'px');
+           // $('section:not(.header-10-sub):not(.content-11)').css('height', sH + 'px');
         });        
 
         // Parallax

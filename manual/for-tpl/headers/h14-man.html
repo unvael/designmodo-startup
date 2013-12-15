@@ -4,25 +4,21 @@
         <h3>Overview</h3>
 
         <p>
-            This block was developed as special header block.
-            All blocks that marked as header should use once on one page.
-            This header block doesn't has navigation bar, but you always can add it.
+            This block was developed as a special header block. All blocks that are marked as header should only be used once on one page. This header block doesn't have a navigation bar, but you can always add it.
         </p>
     </li>
     <li>
         <h3>Installation</h3>
 
         <p>
-            if you not already done all instructions
-            that you had to read on the <a href="how_to_install.html">how to install</a> page
-            of this documentation please make it first
+        If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
         </p>
     </li>
     <li>
         <h3>CSS version:</h3>
 
         <p>
-            For using this block you should only paste next rows of code into your html file:
+            To use this block, copy and paste the following line of code into your HTML file:
         </p>
         <pre class="language-markup"><code class="language-markup">include "../../../ui-kit/ui-kit-header/for-tpl/header-14.html"</code></pre>
     </li>
@@ -30,9 +26,7 @@
         <h3>LESS version:</h3>
 
         <p>
-            you should paste same code (as in <strong>simple version</strong>) and paste next code into your '<strong>.less</strong>'
-            file after that
-            rows that you already had to paste.
+           Copy the same code as in <a href="#h14-simple" class="inner-link">simple version</a> and paste it in your '<strong>.less</strong>' file. Put the following line after that code:
         </p>
         <pre class="language-scss"><code class="language-scss">@import '../../ui-kit/ui-kit-header/less/header-14.less';</code></pre>
     </li>
@@ -44,28 +38,25 @@
         </p>
 
         <p>
-            This block, as many others header blocks in our framework, has special place for background image.
-            The place for background image - <code class="language-markup">&lt;div class=”background”&gt;...&lt;/div&gt;</code>
-            For add your image as background you should add CSS rulers for this element. And you can manage opacity of
-            this element. For example as this:
+            This block, as many other header blocks in our framework, has a special place for background image, which is: <code class="language-markup">&lt;div class=”background”&gt;...&lt;/div&gt;</code>
+            To put your own image as background you need to add CSS rules for this element. You can also manage the opacity for this element. Here is an example:
         </p>
         <pre class="language-css"><code class="language-css">.background {
-            background-image:url(‘your image url’);
-            opacity: opacity value;
-            }</code></pre>
+	background-image:url(‘your image url’);
+	opacity: opacity value;
+}</code></pre>
         <p>
-            In ‘Less’ version for opacity property you can use cross browser function:
+            In the “Less” version, you can use the cross browser function for the opacity property:
         </p>
         <pre class="language-scss"><code class="language-scss">.opacity(value from 0 to 100);</code></pre>
         <p>
-            This block has content which you can replace to yours.
-            To make this you should replace content between tags <code class="language-markup">&lt;div class="span8 offset2"&gt;...&lt;/div&gt;</code>
+            You can replace the content in this block with your own. In order to do this you need to replace the content between the tags <code class="language-markup">&lt;div class="span8 offset2"&gt;...&lt;/div&gt;</code>
             .
-            In this block '.herro-unit' it's only logo!
+            The '.herro-unit' in this block is used as the logo!
         </p>
         <p>
-            And this block has an form <code class="language-markup">&lt;div class="subscribe-form"&gt;&lt;form&gt;...&lt;/form&gt;&lt;/div&gt;</code>
-            which data you can sand to the server or do somethig else.
+            This block also has a form: <code class="language-markup">&lt;div class="subscribe-form"&gt;&lt;form&gt;...&lt;/form&gt;&lt;/div&gt;</code>. 
+            You can use the data from the form in any way that you wish.
         </p>
     </li>
     <li>

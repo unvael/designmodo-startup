@@ -2879,20 +2879,21 @@ opacity: opacity value;
               <li>
                 <h3>Overview</h3>
                 <p>
-                  This block was developed as special header block. All blocks that marked as header should use once on one page. All header blocks have navigation bar. And any navigation bar has two states. Standard state –you can see now in the documentation. Second
-                  state – fixed-top state and you can see it for this block in the sample.
+                  This block was developed as a special header block. All blocks that are marked as header should only be used once on one page. This header block has a navigation bar, which can have two states. The standard state is described further in this documentation
+                  and the fixed-top state is shown in the example for this for this block. The navigation bar is hidden now, but you can activate it at any time by just removing the class ".hidden" from
+                  <code class="language-markup">&lt;header class="header-11 hidden"&gt;</code>
                 </p>
               </li>
               <li>
                 <h3>Installation</h3>
                 <p>
-                  if you not already done all instructions that you had to read on the <a href="how_to_install.html">how to install</a> page of this documentation please make it first
+                  If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
                 </p>
               </li>
               <li>
                 <h3>CSS version:</h3>
                 <p>
-                  For using this block you should only paste next rows of code into your html file:
+                  To use this block, copy and paste the following line of code into your HTML file:
                 </p>
                 <pre class="language-markup"><code class="language-markup"><header class="header-11 hidden">
     <div class="container">
@@ -2964,7 +2965,7 @@ opacity: opacity value;
               <li>
                 <h3>LESS version:</h3>
                 <p>
-                  you should paste same code (as in <strong>simple version</strong>) and paste next code into your '<strong>.less</strong>' file after that rows that you already had to paste.
+                  Copy the same code as in <a href="#h11-simple" class="inner-link">simple version</a> and paste it in your '<strong>.less</strong>' file. Put the following line after that code:
                 </p>
                 <pre class="language-scss"><code class="language-scss">@import '../../ui-kit/ui-kit-header/less/header-11.less';</code></pre>
               </li>
@@ -2974,23 +2975,28 @@ opacity: opacity value;
                   In this section you will see what modifications you can do to the block.
                 </p>
                 <p>
-                  This block, as many others header blocks in our framework, has special place for background image. The place for background image - <code class="language-markup">&lt;div class=”background”&gt;...&lt;/div&gt;</code>For add your image as
-                  background you should add CSS rulers for this element. And you can manage opacity of this element. For example as this:
+                  This block, as many other header blocks in our framework, has a special place for background image, which is: <code class="language-markup">&lt;div class=”background”&gt;...&lt;/div&gt;</code>. To put your own image as background you
+                  need to add CSS rules for this element. You can also manage the opacity for this elementsent. Here is an example:
                 </p>
                 <pre class="language-css"><code class="language-css">.background {
-            background-image:url(‘your image url’);
-            opacity: opacity value;
-            }</code></pre>
+	background-image:url(‘your image url’);
+	opacity: opacity value;
+}</code></pre>
                 <p>
-                  This block has content which you can replace to yours. To make this you should replace content between tags <code class="language-markup">&lt;div class="span4"&gt;...&lt;/div&gt;</code>
+                  In the “Less” version, you can use the cross browser function for the opacity property:
                 </p>
+                <pre class="language-scss"><code class="language-scss">.opacity(value from 0 to 100);</code></pre>
                 <p>
-                  The block has special section for add video - <code class="language-markup">&lt;div class="player"&gt;...&lt;/div&gt;</code>.
-                </p>
-                <p>
-                  And yet this block has special functionality for sing-up, it realised as form <code class="language-markup">&lt;div class="signup-form"&gt; &lt;form&gt;...&lt;/form&gt;&lt;/div&gt;</code>which data you can send to the server or do something
-                  else.
-                </p>
+                  <p>
+                    You can replace the content in this block with your own. In order to do this you need to replace the content between the tags <code>&lt;div class="span4"&gt;...&lt;/div&gt;</code>.
+                  </p>
+                  <p>
+                    This block has a video container where you can put your own video: <code class="language-markup">&lt;div class="player"&gt;...&lt;/div&gt;</code>.
+                  </p>
+                  <p>
+                    This block also has a special sign up functionality which is implemented with the following form: <code class="language-markup">&lt;div class="signup-form"&gt; &lt;form&gt;...&lt;/form&gt;&lt;/div&gt;</code>. You can send the data from
+                    the form to the server or so something else with it.
+                  </p>
               </li>
               <li>
                 <h3>Samples</h3>
@@ -3013,20 +3019,20 @@ opacity: opacity value;
               <li>
                 <h3>Overview</h3>
                 <p>
-                  This block was developed as special header block. All blocks that marked as header should use once on one page. All header blocks have navigation bar. And any navigation bar has two states. Standard state –you can see now in the documentation. Second
-                  state – fixed-top state and you can see it for this block in the sample.
+                  This block was developed as a special header block. All blocks that are marked as header should only be used once on one page. This block has a specific navigation bar which only has a standard state as shown in the documentation (on the left side of
+                  your current screen).
                 </p>
               </li>
               <li>
                 <h3>Installation</h3>
                 <p>
-                  if you not already done all instructions that you had to read on the <a href="how_to_install.html">how to install</a> page of this documentation please make it first
+                  If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
                 </p>
               </li>
               <li>
                 <h3>CSS version:</h3>
                 <p>
-                  For using this block you should only paste next rows of code into your html file:
+                  To use this block, copy and paste the following line of code into your HTML file:
                 </p>
                 <pre class="language-markup"><code class="language-markup"><header class="header-12">
     <div class="container">
@@ -3075,7 +3081,7 @@ opacity: opacity value;
               <li>
                 <h3>LESS version:</h3>
                 <p>
-                  you should paste same code (as in <strong>simple version</strong>) and paste next code into your '<strong>.less</strong>' file after that rows that you already had to paste.
+                  Copy the same code as in <a href="#h12-simple" class="inner-link">simple version</a> and paste it in your '<strong>.less</strong>' file. Put the following line after that code:
                 </p>
                 <pre class="language-scss"><code class="language-scss">@import '../../ui-kit/ui-kit-header/less/header-12.less';</code></pre>
               </li>
@@ -3085,22 +3091,22 @@ opacity: opacity value;
                   In this section you will see what modifications you can do to the block.
                 </p>
                 <p>
-                  This block, as many others header blocks in our framework, has special place for background image. The place for background image - <code class="language-markup">&lt;div class=”background”&gt;...&lt;/div&gt;</code>For add your image as
-                  background you should add CSS rulers for this element. And you can manage opacity of this element. For example as this:
+                  This block, as many other header blocks in our framework, has a special place for background image, which is: <code class="language-markup">&lt;div class=”background”&gt;...&lt;/div&gt;</code>To put your own image as background you need
+                  to add CSS rules for this element. You can also manage the opacity for this element. Here is an example:
                 </p>
                 <pre class="language-css"><code class="language-css">.background {
-            background-image:url(‘your image url’);
-            opacity: opacity value;
-            }</code></pre>
+	background-image:url(‘your image url’);
+	opacity: opacity value;
+}</code></pre>
                 <p>
-                  In ‘Less’ version for opacity property you can use cross browser function:
+                  In the “Less” version, you can use the cross browser function for the opacity property:
                 </p>
                 <pre class="language-scss"><code class="language-scss">.opacity(value from 0 to 100);</code></pre>
                 <p>
-                  This block consist from two inner blocks. One of this it standart content block <code class="language-markup">&lt;div class="hero-unit"&gt;...&lt;/div&gt;</code>.
+                  This block consist of two inner blocks. One of them is the standard content block: <code class="language-markup">&lt;div class="hero-unit"&gt;...&lt;/div&gt;</code>
                 </p>
                 <p>
-                  Second block - <code class="language-markup">&lt;div class="aside"&gt;...&lt;/div&gt;</code>with promo and coast.
+                  The second block is intended for promotions, as seen in the documentation: <code class="language-markup">&lt;div class="aside"&gt;...&lt;/div&gt;</code>.
                 </p>
               </li>
               <li>
@@ -3124,20 +3130,19 @@ opacity: opacity value;
               <li>
                 <h3>Overview</h3>
                 <p>
-                  This block was developed as special header block. All blocks that marked as header should use once on one page. All header blocks have navigation bar. And any navigation bar has two states. Standard state –you can see now in the documentation. Second
-                  state – fixed-top state and you can see it for this block in the sample.
+                  This block was developed as a special header block. All blocks that are marked as header should only be used once on one page. This header block doesn't have a navigation bar, but you can always add it.
                 </p>
               </li>
               <li>
                 <h3>Installation</h3>
                 <p>
-                  if you not already done all instructions that you had to read on the <a href="how_to_install.html">how to install</a> page of this documentation please make it first
+                  If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
                 </p>
               </li>
               <li>
                 <h3>CSS version:</h3>
                 <p>
-                  For using this block you should only paste next rows of code into your html file:
+                  To use this block, copy and paste the following line of code into your HTML file:
                 </p>
                 <pre class="language-markup"><code class="language-markup"><header class="header-13">
     <div class="container">
@@ -3176,7 +3181,7 @@ opacity: opacity value;
               <li>
                 <h3>LESS version:</h3>
                 <p>
-                  you should paste same code (as in <strong>simple version</strong>) and paste next code into your '<strong>.less</strong>' file after that rows that you already had to paste.
+                  Copy the same code as in <a href="#h13-simple" class="inner-link">simple version</a> and paste it in your '<strong>.less</strong>' file. Put the following line after that code:
                 </p>
                 <pre class="language-scss"><code class="language-scss">@import '../../ui-kit/ui-kit-header/less/header-13.less';</code></pre>
               </li>
@@ -3186,20 +3191,20 @@ opacity: opacity value;
                   In this section you will see what modifications you can do to the block.
                 </p>
                 <p>
-                  This block, as many others header blocks in our framework, has special place for background image. The place for background image - <code class="language-markup">&lt;div class=”background”&gt;...&lt;/div&gt;</code>For add your image as
-                  background you should add CSS rulers for this element. And you can manage opacity of this element. For example as this:
+                  This block, as many other header blocks in our framework, has a special place for background image, which is: <code class="language-markup">&lt;div class=”background”&gt;...&lt;/div&gt;</code>To put your own image as background you need
+                  to add CSS rules for this element. You can also manage the opacity for this element. Here is an example:
                 </p>
                 <pre class="language-css"><code class="language-css">.background {
-            background-image:url(‘your image url’);
-            opacity: opacity value;
-            }</code></pre>
+	background-image:url(‘your image url’);
+	opacity: opacity value;
+}</code></pre>
                 <p>
-                  In ‘Less’ version for opacity property you can use cross browser function:
+                  In the “Less” version, you can use the cross browser function for the opacity property:
                 </p>
                 <pre class="language-scss"><code class="language-scss">.opacity(value from 0 to 100);</code></pre>
                 <p>
-                  This block has content which you can replace to yours. To make this you should replace content between tags <code class="language-markup">&lt;div class="span5 offset1"&gt;...&lt;/div&gt;</code>. And this block has an image at the right
-                  side. Both of those parts and logo have animation effect.
+                  You can replace the content in this block with your own. In order to do this you need to replace the content between the tags <code class="language-markup">&lt;div class="span5 offset1"&gt;...&lt;/div&gt;</code>. This block also has an
+                  image on the right side. These two parts and the logo all have animation effects.
                 </p>
               </li>
               <li>
@@ -3223,19 +3228,19 @@ opacity: opacity value;
               <li>
                 <h3>Overview</h3>
                 <p>
-                  This block was developed as special header block. All blocks that marked as header should use once on one page. This header block doesn't has navigation bar, but you always can add it.
+                  This block was developed as a special header block. All blocks that are marked as header should only be used once on one page. This header block doesn't have a navigation bar, but you can always add it.
                 </p>
               </li>
               <li>
                 <h3>Installation</h3>
                 <p>
-                  if you not already done all instructions that you had to read on the <a href="how_to_install.html">how to install</a> page of this documentation please make it first
+                  If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
                 </p>
               </li>
               <li>
                 <h3>CSS version:</h3>
                 <p>
-                  For using this block you should only paste next rows of code into your html file:
+                  To use this block, copy and paste the following line of code into your HTML file:
                 </p>
                 <pre class="language-markup"><code class="language-markup"><section class="header-14-sub bg-midnight-blue">
     <div class="background">&nbsp;</div>
@@ -3270,7 +3275,7 @@ opacity: opacity value;
               <li>
                 <h3>LESS version:</h3>
                 <p>
-                  you should paste same code (as in <strong>simple version</strong>) and paste next code into your '<strong>.less</strong>' file after that rows that you already had to paste.
+                  Copy the same code as in <a href="#h14-simple" class="inner-link">simple version</a> and paste it in your '<strong>.less</strong>' file. Put the following line after that code:
                 </p>
                 <pre class="language-scss"><code class="language-scss">@import '../../ui-kit/ui-kit-header/less/header-14.less';</code></pre>
               </li>
@@ -3280,22 +3285,23 @@ opacity: opacity value;
                   In this section you will see what modifications you can do to the block.
                 </p>
                 <p>
-                  This block, as many others header blocks in our framework, has special place for background image. The place for background image - <code class="language-markup">&lt;div class=”background”&gt;...&lt;/div&gt;</code>For add your image as
-                  background you should add CSS rulers for this element. And you can manage opacity of this element. For example as this:
+                  This block, as many other header blocks in our framework, has a special place for background image, which is: <code class="language-markup">&lt;div class=”background”&gt;...&lt;/div&gt;</code>To put your own image as background you need
+                  to add CSS rules for this element. You can also manage the opacity for this element. Here is an example:
                 </p>
                 <pre class="language-css"><code class="language-css">.background {
-            background-image:url(‘your image url’);
-            opacity: opacity value;
-            }</code></pre>
+	background-image:url(‘your image url’);
+	opacity: opacity value;
+}</code></pre>
                 <p>
-                  In ‘Less’ version for opacity property you can use cross browser function:
+                  In the “Less” version, you can use the cross browser function for the opacity property:
                 </p>
                 <pre class="language-scss"><code class="language-scss">.opacity(value from 0 to 100);</code></pre>
                 <p>
-                  This block has content which you can replace to yours. To make this you should replace content between tags <code class="language-markup">&lt;div class="span8 offset2"&gt;...&lt;/div&gt;</code>. In this block '.herro-unit' it's only logo!
+                  You can replace the content in this block with your own. In order to do this you need to replace the content between the tags <code class="language-markup">&lt;div class="span8 offset2"&gt;...&lt;/div&gt;</code>. The '.herro-unit' in
+                  this block is used as the logo!
                 </p>
                 <p>
-                  And this block has an form <code class="language-markup">&lt;div class="subscribe-form"&gt;&lt;form&gt;...&lt;/form&gt;&lt;/div&gt;</code>which data you can sand to the server or do somethig else.
+                  This block also has a form: <code class="language-markup">&lt;div class="subscribe-form"&gt;&lt;form&gt;...&lt;/form&gt;&lt;/div&gt;</code>. You can use the data from the form in any way that you wish.
                 </p>
               </li>
               <li>
@@ -3319,20 +3325,20 @@ opacity: opacity value;
               <li>
                 <h3>Overview</h3>
                 <p>
-                  This block was developed as special header block. All blocks that marked as header should use once on one page. All header blocks have navigation bar. And any navigation bar has two states. Standard state –you can see now in the documentation. Second
-                  state – fixed-top state and you can see it for this block in the sample.
+                  This block was developed as a special header block. All blocks that are marked as header should only be used once on one page. This header block has a navigation bar, which can have two states. The standard state is described further in this documentation
+                  and the fixed-top state is shown in the example for this for this block.
                 </p>
               </li>
               <li>
                 <h3>Installation</h3>
                 <p>
-                  if you not already done all instructions that you had to read on the <a href="how_to_install.html">how to install</a> page of this documentation please make it first
+                  If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
                 </p>
               </li>
               <li>
                 <h3>CSS version:</h3>
                 <p>
-                  For using this block you should only paste next rows of code into your html file:
+                  To use this block, copy and paste the following line of code into your HTML file:
                 </p>
                 <pre class="language-markup"><code class="language-markup"><header class="header-15 hidden">
     <div class="container">
@@ -3369,7 +3375,7 @@ opacity: opacity value;
               <li>
                 <h3>LESS version:</h3>
                 <p>
-                  you should paste same code (as in <strong>simple version</strong>) and paste next code into your '<strong>.less</strong>' file after that rows that you already had to paste.
+                  Copy the same code as in <a href="#h15-simple" class="inner-link">simple version</a> and paste it in your '<strong>.less</strong>' file. Put the following line after that code:
                 </p>
                 <pre class="language-scss"><code class="language-scss">@import '../../ui-kit/ui-kit-header/less/header-15.less';</code></pre>
               </li>
@@ -3379,19 +3385,19 @@ opacity: opacity value;
                   In this section you will see what modifications you can do to the block.
                 </p>
                 <p>
-                  This block, as many others header blocks in our framework, has special place for background image. The place for background image - <code class="language-markup">&lt;div class=”background”&gt;...&lt;/div&gt;</code>For add your image as
-                  background you should add CSS rulers for this element. And you can manage opacity of this element. For example as this:
+                  This block, as many other header blocks in our framework, has a special place for background image, which is: <code class="language-markup">&lt;div class=”background”&gt;...&lt;/div&gt;</code>To put your own image as background you need
+                  to add CSS rules for this element. You can also manage the opacity for this element. Here is an example:
                 </p>
                 <pre class="language-css"><code class="language-css">.background {
-            background-image:url(‘your image url’);
-            opacity: opacity value;
-            }</code></pre>
+	background-image:url(‘your image url’);
+	opacity: opacity value;
+}</code></pre>
                 <p>
-                  In ‘Less’ version for opacity property you can use cross browser function:
+                  In the “Less” version, you can use the cross browser function for the opacity property:
                 </p>
                 <pre class="language-scss"><code class="language-scss">.opacity(value from 0 to 100);</code></pre>
                 <p>
-                  This block has content which you can replace to yours. To make this you should replace content between tags <code class="language-markup">&lt;div class="hero-unit"&gt;...&lt;/div&gt;</code>
+                  You can replace the content in this block with your own. In order to do this you need to replace the content between the tags <code class="language-markup">&lt;div class="hero-unit"&gt;...&lt;/div&gt;</code>.
                 </p>
               </li>
               <li>
@@ -3415,19 +3421,19 @@ opacity: opacity value;
               <li>
                 <h3>Overview</h3>
                 <p>
-                  This block was developed as special header block. All blocks that marked as header should use once on one page. All header blocks have navigation bar. For this block navigation bar has only standart state.
+                  This block was developed as a special header block. All blocks that are marked as header should only be used once on one page. This header block has a navigation bar, which only has a standard state.
                 </p>
               </li>
               <li>
                 <h3>Installation</h3>
                 <p>
-                  if you not already done all instructions that you had to read on the <a href="how_to_install.html">how to install</a> page of this documentation please make it first
+                  If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
                 </p>
               </li>
               <li>
                 <h3>CSS version:</h3>
                 <p>
-                  For using this block you should only paste next rows of code into your html file:
+                  To use this block, copy and paste the following line of code into your HTML file:
                 </p>
                 <pre class="language-markup"><code class="language-markup"><header class="header-16 no-shift">
     <div class="container">
@@ -3509,7 +3515,7 @@ opacity: opacity value;
               <li>
                 <h3>LESS version:</h3>
                 <p>
-                  you should paste same code (as in <strong>simple version</strong>) and paste next code into your '<strong>.less</strong>' file after that rows that you already had to paste.
+                  Copy the same code as in <a href="#h16-simple" class="inner-link">simple version</a> and paste it in your '<strong>.less</strong>' file. Put the following line after that code:
                 </p>
                 <pre class="language-scss"><code class="language-scss">@import '../../ui-kit/ui-kit-header/less/header-16.less';</code></pre>
               </li>
@@ -3519,19 +3525,19 @@ opacity: opacity value;
                   In this section you will see what modifications you can do to the block.
                 </p>
                 <p>
-                  This block, as many others header blocks in our framework, has special place for background image. The place for background image - <code class="language-markup">&lt;div class=”background”&gt;...&lt;/div&gt;</code>For add your image as
-                  background you should add CSS rulers for this element. And you can manage opacity of this element. For example as this:
+                  This block, as many other header blocks in our framework, has a special place for background image, which is: <code class="language-markup">
+            &lt;div class=”background”&gt;...&lt;/div&gt;</code>To put your own image as background you need to add CSS rules for this element. You can also manage the opacity for this element. Here is an example:
                 </p>
                 <pre class="language-css"><code class="language-css">.background {
-            background-image:url(‘your image url’);
-            opacity: opacity value;
-            }</code></pre>
+	background-image:url(‘your image url’);
+	opacity: opacity value;
+}</code></pre>
                 <p>
-                  In ‘Less’ version for opacity property you can use cross browser function:
+                  In the “Less” version, you can use the cross browser function for the opacity property:
                 </p>
                 <pre class="language-scss"><code class="language-scss">.opacity(value from 0 to 100);</code></pre>
                 <p>
-                  This block has special button for goto next content block and collapsed menu. To make this you should replace content between tags <code class="language-markup">&lt;div class="hero-unit"&gt;...&lt;/div&gt;</code>.
+                  This block has a collapsible menu and a special button for jumping to the next content block. The content is located inside tags <code class="language-markup">&lt;div class="hero-unit"&gt;...&lt;/div&gt;</code>.
                 </p>
               </li>
               <li>
@@ -3555,21 +3561,21 @@ opacity: opacity value;
               <li>
                 <h3>Overview</h3>
                 <p>
-                  This block was developed as special header block. All blocks that marked as header should use once on one page. All header blocks have navigation bar. And any navigation bar has two states. Standard state –you can see now in the documentation. Second
-                  state – fixed-top state and you can see it for this block in the sample. Now the navigation bar is hidden, but you can activate it. For this you should remove class ".hidden" from this
-                  <code class=" language-markup">&lt;header class="header-17 hidden"&gt;</code>.
+                  This block was developed as a special header block. All blocks that are marked as header should only be used once on one page. This header block has a navigation bar, which can have two states. The standard state is described further in this documentation
+                  and the fixed-top state is shown in the example for this for this block. The navigation bar is hidden by default, but you can activate it by removing the class ".hidden" from the following element:
+                  <code class="language-markup">&lt;header class="header-17 hidden"&gt;</code>.
                 </p>
               </li>
               <li>
                 <h3>Installation</h3>
                 <p>
-                  if you not already done all instructions that you had to read on the <a href="how_to_install.html">how to install</a> page of this documentation please make it first
+                  If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
                 </p>
               </li>
               <li>
                 <h3>CSS version:</h3>
                 <p>
-                  For using this block you should only paste next rows of code into your html file:
+                  To use this block, copy and paste the following line of code into your HTML file:
                 </p>
                 <pre class="language-markup"><code class="language-markup"><header class="header-17">
     <div class="container">
@@ -3680,7 +3686,7 @@ opacity: opacity value;
               <li>
                 <h3>LESS version:</h3>
                 <p>
-                  you should paste same code (as in <strong>simple version</strong>) and paste next code into your '<strong>.less</strong>' file after that rows that you already had to paste.
+                  Copy the same code as in <a href="#h17-simple" class="inner-link">simple version</a> and paste it in your '<strong>.less</strong>' file. Put the following line after that code:
                 </p>
                 <pre class="language-scss"><code class="language-scss">@import '../../ui-kit/ui-kit-header/less/header-17.less';</code></pre>
               </li>
@@ -3690,20 +3696,20 @@ opacity: opacity value;
                   In this section you will see what modifications you can do to the block.
                 </p>
                 <p>
-                  This block, as many others header blocks in our framework, has special place for background image. The place for background image - <code class="language-markup">&lt;div class=”background”&gt;...&lt;/div&gt;</code>For add your image as
-                  background you should add CSS rulers for this element. And you can manage opacity of this element. For example as this:
+                  This block, as many other header blocks in our framework, has a special place for background image, which is: <code class="language-markup">&lt;div class=”background”&gt;...&lt;/div&gt;</code>To put your own image as background you need
+                  to add CSS rules for this element. You can also manage the opacity for this element. Here is an example:
                 </p>
                 <pre class="language-css"><code class="language-css">.background {
-            background-image:url(‘your image url’);
-            opacity: opacity value;
-            }</code></pre>
+	background-image:url(‘your image url’);
+	opacity: opacity value;
+}</code></pre>
                 <p>
-                  In ‘Less’ version for opacity property you can use cross browser function:
+                  In the “Less” version, you can use the cross browser function for the opacity property:
                 </p>
                 <pre class="language-scss"><code class="language-scss">.opacity(value from 0 to 100);</code></pre>
                 <p>
-                  This block has content which you can replace to yours. To make this you should replace content between tags <code class="language-markup">&lt;div class="hero-unit"&gt;...&lt;/div&gt;</code>. And yet this block has a carousel. For replace
-                  content for its slaides please replae it between next tags <code class="language-markup">&lt;div class=”pt-page”&gt; ... &lt;/div&gt;</code>.
+                  You can replace the content in this block with your own. In order to do this you need to replace the content between the tags <code class="language-markup">&lt;div class="hero-unit"&gt;...&lt;/div&gt;</code>. This block also has a carousel.
+                  In order to replace the content on any of the slides place it between these tags: <code class="language-markup">&lt;div class=”pt-page”&gt; ... &lt;/div&gt;</code>.
                 </p>
               </li>
               <li>
@@ -3727,19 +3733,19 @@ opacity: opacity value;
               <li>
                 <h3>Overview</h3>
                 <p>
-                  This block was developed as special header block. All blocks that marked as header should use once on one page. But this block is very specific, you can use it as presentation. It doesn't has standart navigation bar.
+                  This block was developed as a special header block. All blocks that are marked as header should only be used once on one page. This block is very specific and you can use it to make a presentation. It doesn't have a standart navigation bar.
                 </p>
               </li>
               <li>
                 <h3>Installation</h3>
                 <p>
-                  if you not already done all instructions that you had to read on the <a href="how_to_install.html">how to install</a> page of this documentation please make it first
+                  If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
                 </p>
               </li>
               <li>
                 <h3>CSS version:</h3>
                 <p>
-                  For using this block you should only paste next rows of code into your html file:
+                  To use this block, copy and paste the following line of code into your HTML file:
                 </p>
                 <pre class="language-markup"><code class="language-markup"><div class="header-18">
     <div id="h-18-pt-main" class="header-18-sub page-transitions pt-perspective">
@@ -3816,7 +3822,7 @@ opacity: opacity value;
               <li>
                 <h3>LESS version:</h3>
                 <p>
-                  you should paste same code (as in <strong>simple version</strong>) and paste next code into your '<strong>.less</strong>' file after that rows that you already had to paste.
+                  Copy the same code as in <a href="#h18-simple" class="inner-link">simple version</a> and paste it in your '<strong>.less</strong>' file. Put the following line after that code:
                 </p>
                 <pre class="language-scss"><code class="language-scss">@import '../../ui-kit/ui-kit-header/less/header-18.less';</code></pre>
               </li>
@@ -3826,26 +3832,27 @@ opacity: opacity value;
                   In this section you will see what modifications you can do to the block.
                 </p>
                 <p>
-                  This block, as many others header blocks in our framework, has special place for background image. The place for background image - <code class="language-markup">&lt;div class=”background”&gt;...&lt;/div&gt;</code>For add your image as
-                  background you should add CSS rulers for this element. And you can manage opacity of this element. For example as this:
+                  This block, as many others header blocks in our framework, has a special place for background image, which is: <code class="language-markup">&lt;div class=”background”&gt;...&lt;/div&gt;</code>To put your own image as background you need
+                  to add CSS rules for this element. You can also manage the opacity for this element. Here is an example:
                 </p>
                 <pre class="language-css"><code class="language-css">.background {
-            background-image:url(‘your image url’);
-            opacity: opacity value;
-            }</code></pre>
+	background-image:url(‘your image url’);
+	opacity: opacity value;
+}</code></pre>
                 <p>
-                  In ‘Less’ version for opacity property you can use cross browser function:
+                  In the “Less” version, you can use the cross browser function for the opacity property:
                 </p>
                 <pre class="language-scss"><code class="language-scss">.opacity(value from 0 to 100);</code></pre>
                 <p>
-                  This header block is very specific and you can use it as presentation. So you can use it as wrapper for all your site content. It has Carousel. One slide - one page. You can change content for slides of this carousel. For this you should replace content
-                  inside <code class="language-markup">&lt;div class=”pt-page”&gt; ... &lt;/div&gt;</code>
+                  This header block is very specific and you can use it as a presentation. It can be a wrapper for all of your content. This block has a carousel where each slide represents a page. You can change the content of the slides by replacing the content inside
+                  <code
+                  class="language-markup">&lt;div class=”pt-page”&gt; ... &lt;/div&gt;</code>.
                 </p>
                 <p>
-                  This block has ‘.background’ tag for slides not for the main block because it has sense (you should have chance to change background for anyone of slides).
+                  This block has a “.background” attribute for the slides, so you can change the background for any one of slides individually.
                 </p>
                 <p>
-                  But anyway you can use it as header... It means if you want place content after this block you can do it.
+                  You can also use this block as a regular header, which means you can place content after it if you wish.
                 </p>
               </li>
               <li>
@@ -3869,20 +3876,20 @@ opacity: opacity value;
               <li>
                 <h3>Overview</h3>
                 <p>
-                  This block was developed as special header block. All blocks that marked as header should use once on one page. All header blocks have navigation bar. And any navigation bar has two states. Standard state –you can see now in the documentation. Second
-                  state – fixed-top state and you can see it for this block in the sample.
+                  This block was developed as a special header block. All blocks that are marked as header should only be used once on one page. This header block has a navigation bar, which can have two states. The standard state is described further in this documentation
+                  and the fixed-top state is shown in the example for this for this block.
                 </p>
               </li>
               <li>
                 <h3>Installation</h3>
                 <p>
-                  if you not already done all instructions that you had to read on the <a href="how_to_install.html">how to install</a> page of this documentation please make it first
+                  If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
                 </p>
               </li>
               <li>
                 <h3>CSS version:</h3>
                 <p>
-                  For using this block you should only paste next rows of code into your html file:
+                  To use this block, copy and paste the following line of code into your HTML file:
                 </p>
                 <pre class="language-markup"><code class="language-markup"><header class="header-19">
     <div class="container">
@@ -3946,7 +3953,7 @@ opacity: opacity value;
               <li>
                 <h3>LESS version:</h3>
                 <p>
-                  you should paste same code (as in <strong>simple version</strong>) and paste next code into your '<strong>.less</strong>' file after that rows that you already had to paste.
+                  Copy the same code as in <a href="#h19-simple" class="inner-link">simple version</a> and paste it in your '<strong>.less</strong>' file. Put the following line after that code:
                 </p>
                 <pre class="language-scss"><code class="language-scss">@import '../../ui-kit/ui-kit-header/less/header-19.less';</code></pre>
               </li>
@@ -3956,20 +3963,20 @@ opacity: opacity value;
                   In this section you will see what modifications you can do to the block.
                 </p>
                 <p>
-                  This block, as many others header blocks in our framework, has special place for background image. The place for background image - <code class="language-markup">&lt;div class=”background”&gt;...&lt;/div&gt;</code>For add your image as
-                  background you should add CSS rulers for this element. And you can manage opacity of this element. For example as this:
+                  This block, as many others header blocks in our framework, has a special place for background image, which is: <code class="language-markup">&lt;div class=”background”&gt;...&lt;/div&gt;</code>To put your own image as background you need
+                  to add CSS rules for this element. You can also manage the opacity for this element. Here is an example:
                 </p>
                 <pre class="language-css"><code class="language-css">.background {
-            background-image:url(‘your image url’);
-            opacity: opacity value;
-            }</code></pre>
+	background-image:url(‘your image url’);
+	opacity: opacity value;
+}</code></pre>
                 <p>
-                  In ‘Less’ version for opacity property you can use cross browser function:
+                  In the “Less” version, you can use the cross browser function for the opacity property:
                 </p>
                 <pre class="language-scss"><code class="language-scss">.opacity(value from 0 to 100);</code></pre>
                 <p>
-                  This block has content which you can replace to yours. To make this you should replace content between tags <code class="language-markup">&lt;div class="span8"&gt;...&lt;/div&gt;</code>And the block has two buttons in this content, you
-                  can use these as you wish, you can make links or use JavaScript for making special actions for these.
+                  You can replace the content in this block with your own. In order to do this you need to replace the content between the tags <code class="language-markup">&lt;div class="span8"&gt;...&lt;/div&gt;</code>This block also has two buttons,
+                  which you can use as you wish. You can put links or use JavaScript to perform special actions.
                 </p>
               </li>
               <li>
@@ -3993,20 +4000,20 @@ opacity: opacity value;
               <li>
                 <h3>Overview</h3>
                 <p>
-                  This block was developed as special header block. All blocks that marked as header should use once on one page. All header blocks have navigation bar. And any navigation bar has two states. Standard state –you can see now in the documentation. Second
-                  state – fixed-top state and you can see it for this block in the sample .
+                  This block was developed as a special header block. All blocks that are marked as header should only be used once on one page. This header block has a navigation bar, which can have two states. The standard state is described further in this documentation
+                  and the fixed-top state is shown in the example for this for this block.
                 </p>
               </li>
               <li>
                 <h3>Installation</h3>
                 <p>
-                  if you not already done all instructions that you had to read on the <a href="how_to_install.html">how to install</a> page of this documentation please make it first
+                  If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
                 </p>
               </li>
               <li>
                 <h3>CSS version:</h3>
                 <p>
-                  For using this block you should only paste next rows of code into your html file:
+                  To use this block, copy and paste the following line of code into your HTML file:
                 </p>
                 <pre class="language-markup"><code class="language-markup"><header class="header-20 hidden">
     <div class="container">
@@ -4083,7 +4090,7 @@ opacity: opacity value;
               <li>
                 <h3>LESS version:</h3>
                 <p>
-                  you should paste same code (as in <strong>simple version</strong>) and paste next code into your '<strong>.less</strong>' file after that rows that you already had to paste.
+                  Copy the same code as in <a href="#h20-simple" class="inner-link">simple version</a> and paste it in your '<strong>.less</strong>' file. Put the following line after that code:
                 </p>
                 <pre class="language-scss"><code class="language-scss">@import '../../ui-kit/ui-kit-header/less/header-20.less';</code></pre>
               </li>
@@ -4093,22 +4100,22 @@ opacity: opacity value;
                   In this section you will see what modifications you can do to the block.
                 </p>
                 <p>
-                  This block, as many others header blocks in our framework, has special place for background image. The place for background image - <code class="language-markup">&lt;div class=”background”&gt;...&lt;/div&gt;</code>For add your image as
-                  background you should add CSS rulers for this element. And you can manage opacity of this element. For example as this:
+                  This block, as many others header blocks in our framework, has a special place for background image, which is: <code class="language-markup">&lt;div class=”background”&gt;...&lt;/div&gt;</code>To put your own image as background you need
+                  to add CSS rules for this element. You can also manage the opacity for this element. Here is an example:
                 </p>
                 <pre class="language-css"><code class="language-css">.background {
-            background-image:url(‘your image url’);
-            opacity: opacity value;
-            }</code></pre>
+	background-image:url(‘your image url’);
+	opacity: opacity value;
+}</code></pre>
                 <p>
-                  In ‘Less’ version for opacity property you can use cross browser function:
+                  In the “Less” version, you can use the cross browser function for the opacity property:
                 </p>
                 <pre class="language-scss"><code class="language-scss">.opacity(value from 0 to 100);</code></pre>
                 <p>
-                  This block has animated images in the right part <code class="language-markup">&lt;div class="span4 offset2 pull-right"&gt;...&lt;/div&gt;</code>You can replase this images to yours.
+                  This block has animated images in the right section: <code class="language-markup">&lt;div class="span4 offset2 pull-right"&gt;...&lt;/div&gt;</code>. You can replace those with your own.
                 </p>
                 <p>
-                  And the block has list with places for video in the bottom <code class="language-markup">&lt;div class="videos"&gt;...&lt;/div&gt;</code>.
+                  The block also has a list of videos on the bottom: <code class="language-markup">&lt;div class="videos"&gt;...&lt;/div&gt;</code>
                 </p>
               </li>
               <li>
@@ -4132,20 +4139,20 @@ opacity: opacity value;
               <li>
                 <h3>Overview</h3>
                 <p>
-                  This block was developed as special header block. All blocks that marked as header should use once on one page. All header blocks have navigation bar. And any navigation bar has two states. Standard state –you can see now in the documentation. Second
-                  state – fixed-top state and you can see it for this block in the sample.
+                  This block was developed as a special header block. All blocks that are marked as header should only be used once on one page. This header block has a navigation bar, which can have two states. The standard state is described further in this documentation
+                  and the fixed-top state is shown in the example for this for this block.
                 </p>
               </li>
               <li>
                 <h3>Installation</h3>
                 <p>
-                  if you not already done all instructions that you had to read on the <a href="how_to_install.html">how to install</a> page of this documentation please make it first
+                  If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
                 </p>
               </li>
               <li>
                 <h3>CSS version:</h3>
                 <p>
-                  For using this block you should only paste next rows of code into your html file:
+                  To use this block, copy and paste the following line of code into your HTML file:
                 </p>
                 <pre class="language-markup"><code class="language-markup"><header class="header-21">
     <div class="container">
@@ -4185,7 +4192,7 @@ opacity: opacity value;
               <li>
                 <h3>LESS version:</h3>
                 <p>
-                  you should paste same code (as in <strong>simple version</strong>) and paste next code into your '<strong>.less</strong>' file after that rows that you already had to paste.
+                  Copy the same code as in <a href="#h21-simple" class="inner-link">simple version</a> and paste it in your '<strong>.less</strong>' file. Put the following line after that code:
                 </p>
                 <pre class="language-scss"><code class="language-scss">@import '../../ui-kit/ui-kit-header/less/header-21.less';</code></pre>
               </li>
@@ -4195,22 +4202,22 @@ opacity: opacity value;
                   In this section you will see what modifications you can do to the block.
                 </p>
                 <p>
-                  This block, as many others header blocks in our framework, has special place for background image. The place for background image - <code class="language-markup">&lt;div class=”background”&gt;...&lt;/div&gt;</code>For add your image as
-                  background you should add CSS rulers for this element. And you can manage opacity of this element. For example as this:
+                  This block, as many others header blocks in our framework, has a special place for background image, which is: <code class="language-markup">&lt;div class=”background”&gt;...&lt;/div&gt;</code>To put your own image as background you need
+                  to add CSS rules for this element. You can also manage the opacity for this element. Here is an example:
                 </p>
                 <pre class="language-css"><code class="language-css">.background {
-            background-image:url(‘your image url’);
-            opacity: opacity value;
-            }</code></pre>
+	background-image:url(‘your image url’);
+	opacity: opacity value;
+}</code></pre>
                 <p>
-                  In ‘Less’ version for opacity property you can use cross browser function:
+                  In the “Less” version, you can use the cross browser function for the opacity property:
                 </p>
                 <pre class="language-scss"><code class="language-scss">.opacity(value from 0 to 100);</code></pre>
                 <p>
-                  This block has logo with slogon which you can replace to yours, it situated between <code class="language-markup">&lt;div class="container"&gt;...&lt;/div&gt;</code>.
+                  This block has a logo with slogan which you can replace with your own. It is located between <code class="language-markup">&lt;div class="container"&gt;...&lt;/div&gt;</code>
                 </p>
                 <p>
-                  And it has special button that has functionality for goto next content block.
+                  This block also has a special button for jumping to the next content block.
                 </p>
               </li>
               <li>
@@ -4234,20 +4241,20 @@ opacity: opacity value;
               <li>
                 <h3>Overview</h3>
                 <p>
-                  This block was developed as special header block. All blocks that marked as header should use once on one page. All header blocks have navigation bar. And any navigation bar has two states. Standard state –you can see now in the documentation. Second
-                  state – fixed-top state and you can see it for this block in the sample.
+                  This block was developed as a special header block. All blocks that are marked as header should only be used once on one page. This header block has a navigation bar, which can have two states. The standard state is described further in this documentation
+                  and the fixed-top state is shown in the example for this for this block.
                 </p>
               </li>
               <li>
                 <h3>Installation</h3>
                 <p>
-                  if you not already done all instructions that you had to read on the <a href="how_to_install.html">how to install</a> page of this documentation please make it first
+                  If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
                 </p>
               </li>
               <li>
                 <h3>CSS version:</h3>
                 <p>
-                  For using this block you should only paste next rows of code into your html file:
+                  To use this block, copy and paste the following line of code into your HTML file:
                 </p>
                 <pre class="language-markup"><code class="language-markup"><header class="header-22">
     <span class="fui-cmd hidden-phone"> </span>
@@ -4302,7 +4309,7 @@ opacity: opacity value;
               <li>
                 <h3>LESS version:</h3>
                 <p>
-                  you should paste same code (as in <strong>simple version</strong>) and paste next code into your '<strong>.less</strong>' file after that rows that you already had to paste.
+                  Copy the same code as in <a href="#h22-simple" class="inner-link">simple version</a> and paste it in your '<strong>.less</strong>' file. Put the following line after that code:
                 </p>
                 <pre class="language-scss"><code class="language-scss">@import '../../ui-kit/ui-kit-header/less/header-22.less';</code></pre>
               </li>
@@ -4312,22 +4319,22 @@ opacity: opacity value;
                   In this section you will see what modifications you can do to the block.
                 </p>
                 <p>
-                  This block, as many others header blocks in our framework, has special place for background image. The place for background image - <code class="language-markup">&lt;div class=”background”&gt;...&lt;/div&gt;</code>For add your image as
-                  background you should add CSS rulers for this element. And you can manage opacity of this element. For example as this:
+                  This block, as many others header blocks in our framework, has a special place for background image, which is: <code class="language-markup">&lt;div class=”background”&gt;...&lt;/div&gt;</code>To put your own image as background you need
+                  to add CSS rules for this element. You can also manage the opacity for this element. Here is an example:
                 </p>
                 <pre class="language-css"><code class="language-css">.background {
-            background-image:url(‘your image url’);
-            opacity: opacity value;
-            }</code></pre>
+	background-image:url(‘your image url’);
+	opacity: opacity value;
+}</code></pre>
                 <p>
-                  In ‘Less’ version for opacity property you can use cross browser function:
+                  In the “Less” version, you can use the cross browser function for the opacity property:
                 </p>
                 <pre class="language-scss"><code class="language-scss">.opacity(value from 0 to 100);</code></pre>
                 <p>
-                  This block has slogon which you can replace to yours, it situated between <code class="language-markup">&lt;div class="span10 offset1"&gt;...&lt;/div&gt;</code>.
+                  This block has a slogan which you can replace with your own. It is located between <code>&lt;div class="span10 offset1"&gt;...&lt;/div&gt;</code>.
                 </p>
                 <p>
-                  And it has content in two columns which you can replace to yours, it situated between <code class="language-markup">&lt;div class="span6"&gt;...&lt;/div&gt;</code>.
+                  You can also replace the content in the two columns located between <code class="language-markup">&lt;div class="span6"&gt;...&lt;/div&gt;</code>.
                 </p>
               </li>
               <li>
@@ -4351,20 +4358,20 @@ opacity: opacity value;
               <li>
                 <h3>Overview</h3>
                 <p>
-                  This block was developed as special header block. All blocks that marked as header should use once on one page. All header blocks have navigation bar. And any navigation bar has two states. Standard state –you can see now in the documentation. Second
-                  state – fixed-top state and you can see it for this block in the sample.
+                  This block was developed as a special header block. All blocks that are marked as header should only be used once on one page. This header block has a navigation bar, which can have two states. The standard state is described further in this documentation
+                  and the fixed-top state is shown in the example for this for this block.
                 </p>
               </li>
               <li>
                 <h3>Installation</h3>
                 <p>
-                  if you not already done all instructions that you had to read on the <a href="how_to_install.html">how to install</a> page of this documentation please make it first
+                  If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
                 </p>
               </li>
               <li>
                 <h3>CSS version:</h3>
                 <p>
-                  For using this block you should only paste next rows of code into your html file:
+                  To use this block, copy and paste the following line of code into your HTML file:
                 </p>
                 <pre class="language-markup"><code class="language-markup"><header class="header-23">
     <div class="container">
@@ -4413,7 +4420,7 @@ opacity: opacity value;
               <li>
                 <h3>LESS version:</h3>
                 <p>
-                  you should paste same code (as in <strong>simple version</strong>) and paste next code into your '<strong>.less</strong>' file after that rows that you already had to paste.
+                  Copy the same code as in <a href="#h21-simple" class="inner-link">simple version</a> and paste it in your '<strong>.less</strong>' file. Put the following line after that code:
                 </p>
                 <pre class="language-scss"><code class="language-scss">@import '../../ui-kit/ui-kit-header/less/header-23.less';</code></pre>
               </li>
@@ -4423,15 +4430,15 @@ opacity: opacity value;
                   In this section you will see what modifications you can do to the block.
                 </p>
                 <p>
-                  This block, as many others header blocks in our framework, has special place for background image. The place for background image - <code class="language-markup">&lt;div class=”background”&gt;...&lt;/div&gt;</code>For add your image as
-                  background you should add CSS rulers for this element. And you can manage opacity of this element. For example as this:
+                  This block, as many others header blocks in our framework, has a special place for background image, which is: <code class="language-markup">&lt;div class=”background”&gt;...&lt;/div&gt;</code>To put your own image as background you need
+                  to add CSS rules for this element. You can also manage the opacity for this element. Here is an example:
                 </p>
                 <pre class="language-css"><code class="language-css">.background {
-            background-image:url(‘your image url’);
-            opacity: opacity value;
-            }</code></pre>
+	background-image:url(‘your image url’);
+	opacity: opacity value;
+}</code></pre>
                 <p>
-                  In ‘Less’ version for opacity property you can use cross browser function:
+                  In the “Less” version, you can use the cross browser function for the opacity property:
                 </p>
                 <pre class="language-scss"><code class="language-scss">.opacity(value from 0 to 100);</code></pre>
               </li>

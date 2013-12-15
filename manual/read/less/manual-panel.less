@@ -1,5 +1,6 @@
 
 .mcontent .manual {
+
   .content-7 h3 {
     line-height: 1.2em;
   }
@@ -54,6 +55,12 @@
   }
 
   > div {
+    background-image: none !important;
+    .opacity(100);
+    &:hover, &:focus{
+      .opacity(100);
+    }
+
     /* prism twilight theme */
     @import '../../js/prism/themes/twilight.less';
     /*end prism*/
@@ -109,6 +116,10 @@
     }
 
     .content-man {
+      .opacity(100);
+      &:hover,&:focus{
+        .opacity(100);
+      }
       float: right;
       width: 100%;
       display: inline-block;

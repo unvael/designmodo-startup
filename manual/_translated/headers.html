@@ -1,753 +1,4 @@
-<!-- manual sections -->
-<div class="manual">
-    <div class="header-1">
-        <button class="back-button"></button>
-        <div class="content-man">
-<h1>Header block. Codename: “header-1”</h1>
-<ol>
-    <li>
-        <h3>Overview</h3>
-        <p>
-            This block was developed as a special header block. All blocks that are marked as header should only be used once on one page. This header block has a navigation bar, which can have two states. The standard state is described further in this documentation and the fixed-top state is shown in the example for this for this block.
-        </p>
-    </li>
-    <li>
-        <h3>Code</h3>
 
-        <a id="h1-simple"></a><h4>Simple version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
-
-        <p>
-            To use this block, copy and paste the following line of code into your HTML file:
-        </p>
-        <pre class="htmlCode">...</pre>        
-
-        
- <h4>"LESS" version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
-        <p>
-            Copy the same code as in <a href="#h1-simple" class="inner-link">simple version</a> and paste it in your '<strong>.less</strong>' file. Put the following line after that code:
-        </p>
-        <pre class="cssCode">
-@import '../../ui-kit-header/less/header-1.less';
-</pre>
-        <h4>All versions:</h4>
-        <p>
-            In this section you will see what modifications you can do to the block. 
-        </p>
-        <p>
-            This block, as many other header blocks in our framework, has a special place for background image, which is: <code>
-                &lt;div class=”background”&gt;...&lt;/div&gt;</code>.
-            To put your own image as background you need to add CSS rules for this element. You can also manage the opacity for this element. Here is an example:
-
-        </p>
-        <pre class="cssCode">
-.background {
-    background-image:url(‘your image url’);
-    opacity: opacity value;
-}
-</pre>
-        <p>
-            In the “Less” version, you can use the cross browser function for the opacity property:
-
-        </p>
-        <pre class="cssCode">
-.opacity(value from 0 to 100);
-</pre>
-        <p>
-            This block has a special functionality carousel. You can modify the content of the carousel slides by replacing the content inside <code>
-                &lt;div class=”pt-page”&gt; ... &lt;/div&gt;</code>.
-            This block has a “.background” attribute for the slides, so you can change the background for any one of slides individually.
-
-        </p>
-    </li>
-    <li>
-        <h3>Samples</h3>
-        <p>
-            We have created this example for you to see how this block looks combined with other content.
-        </p>
-        <hr/>
-        <p>
-            You can see it in <a href="../sample-01/index.htm" class="inner-link" target="_blank">sample # 1</a>.
-        </p>
-    </li>
-</ol>
-        </div>
-    </div>    
-    <div class="header-2">
-        <button class="back-button"></button>
-        <div class="content-man">
-<h1>Header block. Codename: “header-2”</h1>
-<ol>
-    <li>
-        <h3>Overview</h3>
-        <p>
-            This block was developed as a special header block. All blocks that are marked as header should only be used once on one page. This header block has a navigation bar, which can have two states. The standard state is described further in this documentation and the fixed-top state is shown in the example for this for this block.
-        </p>
-    </li>
-    <li>
-        <h3>Code</h3>
-
-        <a id="h2-simple"></a><h4>Simple version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
-
-        <p>
-            To use this block, simply copy and paste the following code into your HTML file:
-        </p>
-        <pre class="htmlCode">...</pre>        
-
-       
- <h4>"LESS" version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
-        <p>
-            Copy the same code as in <a href="#h2-simple" class="inner-link">simple version</a>) and paste it in your '<strong>.less</strong>' file. Put the following line after that code:
-        </p>
-        <pre class="cssCode">
-@import '../../ui-kit-header/less/header-2.less';
-</pre>
-        <h4>All versions:</h4>
-        <p>
-            Here are the modifications you can do to this block:
-        </p>
-        <p>
-            This block, as many other header blocks in our framework, has a special place for background image, which is: <code>
-                &lt;div class=”background”&gt;...&lt;/div&gt;</code>.
-            To put your own image as background you need to add CSS rules for this element. You can also manage the opacity for this element. Here is an example:
-        </p>
-        <pre class="cssCode">
-.background {
-    background-image:url(‘your image url’);
-    opacity: opacity value;
-}
-</pre>
-        <p>
-            In the “Less” version, you can use the cross browser function for the opacity property:
-        </p>
-        <pre class="cssCode">
-.opacity(value from 0 to 100);
-</pre>
-        <p>You can replace the content in this block with your own.
-            In order to do that you need to replace the content between the tags <code>
-                &lt;div class="hero-unit"&gt;...&lt;/div&gt;</code>.
-            This block has two buttons in the content that you can use however as you wish - you
-            can have links or use JavaScript for special actions.
-        </p>
-    </li>
-    <li>
-        <h3>Samples</h3>
-        <p>
-            We have created this example for you to see how this block looks combined with other content.
-        </p>
-        <hr/>
-        <p>
-            You can see it in <a href="../sample-02/index.htm" class="inner-link" target="_blank">sample # 2</a>.
-        </p>
-    </li>
-</ol>
-        </div>
-    </div>    
-    <div class="header-3">
-        <button class="back-button"></button>
-        <div class="content-man">
-<h1>Header block. Codename: “header-3”</h1>
-<ol>
-    <li>
-        <h3>Overview</h3>
-        <p>
-            This block was developed as a special header block. All blocks that are marked as header should only be used once on one page. This header block has a navigation bar, which can have two states. The standard state is described further in this documentation and the fixed-top state is shown in the example for this for this block.
-        </p>
-    </li>
-    <li>
-        <h3>Code</h3>
-
-        <a id="h3-simple"></a><h4>Simple version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
-
-        <p>
-            To use this block, simply copy and paste the following line of code into your HTML file:
-        </p>
-        <pre class="htmlCode">...</pre>        
-
-        
- <h4>"LESS" version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page
-            of this documentation please do that first</small>
-        <p>
-            Copy the same code as in <a href="#h3-simple" class="inner-link">simple version</a> and paste it into your '<strong>.less</strong>' file. Put the following line after that code:
-        </p>
-        <pre class="cssCode">
-@import '../../ui-kit-header/less/header-3.less';
-</pre>
-        <h4>All versions:</h4>
-        <p>
-            In this section you will see what modifications you can do to the block.
-        </p>
-        <p>
-            This block, as many other header blocks in our framework, has a special place for background image, which is: <code>
-                &lt;div class=”background”&gt;...&lt;/div&gt;</code>.
-            To put your own image as background you need to add CSS rules for this element. You can also manage the opacity for this element. Here is an example:
-        </p>
-        <pre class="cssCode">
-.background {
-    background-image:url(‘your image url’);
-    opacity: opacity value;
-}
-</pre>
-        <p>
-            In the “Less” version, you can use the cross browser function for the opacity property:
-        </p>
-        <pre class="cssCode">
-.opacity(value from 0 to 100);
-</pre>
-        <p>
-            You can replace the content in this block with your own. In order to do this you need to replace the content between the tags <code>
-                &lt;div class="span6"&gt;...&lt;/div&gt;</code>
-            .
-        </p>
-    </li>
-    <li>
-        <h3>Samples</h3>
-        <p>
-            We have created this example for you to see how this block looks combined with other content.
-        </p>
-        <hr/>
-        <p>
-            You can see it in <a href="../sample-06/index.htm" class="inner-link" target="_blank">sample # 6</a>.
-        </p>
-    </li>
-</ol>
-        </div>
-    </div>    
-    <div class="header-4">
-        <button class="back-button"></button>
-        <div class="content-man">
-<h1>Header block. Codename: “header-4”</h1>
-<ol>
-    <li>
-        <h3>Overview</h3>
-        <p>
-            This block was developed as a special header block.
-            All blocks that are marked as header should only be used once on one page. 
-            This header block doesn't have a navigation bar, but you can always add it.
-        </p>
-    </li>
-    <li>
-        <h3>Code</h3>
-
-        <a id="h4-simple"></a><h4>Simple version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page
-            of this documentation please do that first.</small>
-
-        <p>
-            To use this block, copy and paste the following line of code into your HTML file:
-        </p>
-        <pre class="htmlCode">...</pre>        
-
-        
- <h4>"LESS" version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation please do it first.</small>
-        <p>
-            Copy the same code as in <a href="#h4-simple" class="inner-link">simple version</a>and paste it in your '<strong>.less</strong>' file. Put the following line after that code:
-        </p>
-        <pre class="cssCode">
-@import '../../ui-kit-header/less/header-4.less';
-</pre>
-        <h4>All versions:</h4>
-        <p>
-            In this section you will see what modifications you can do to the block.
-        </p>
-        <p>
-            This block, as many other header blocks in our framework, has a special place for background image, which is: <code>
-                &lt;div class=”background”&gt;...&lt;/div&gt;</code>.
-            To put your own image as background you need to add CSS rules for this element. You can also manage the opacity for this element. Here is an example:
-        </p>
-        <pre class="cssCode">
-.background {
-    background-image:url(‘your image url’);
-    opacity: opacity value;
-}
-</pre>
-        <p>
-            In the “Less” version, you can use the cross browser function for the opacity property:
-        </p>
-        <pre class="cssCode">
-.opacity(value from 0 to 100);
-</pre>
-        <p>
-            You can replace the content of this block with your own.
-            In order to do this you need to replace the content between the tags <code>
-                &lt;div class="hero-unit"&gt;...&lt;/div&gt;</code>
-            .
-        </p>
-    </li>
-    <li>
-        <h3>Samples</h3>
-        <p>
-            We have created this example for you to see how this block looks combined with other content.
-        </p>
-        <hr/>
-        <p>
-            You can see it in <a href="../sample-09/index.htm" class="inner-link" target="_blank">sample # 9</a>.
-        </p>
-    </li>
-</ol>
-        </div>
-    </div>    
-    <div class="header-5">
-        <button class="back-button"></button>
-        <div class="content-man">
-<h1>Header block. Codename: “header-5”</h1>
-<ol>
-    <li>
-        <h3>Overview</h3>
-        <p>
-            This block was developed as a special header block. All blocks that are marked as header should only be used once on one page. This header block has a navigation bar, which can have two states. The standard state is described further in this documentation and the fixed-top state is shown in the example for this for this block.
-        </p>
-    </li>
-    <li>
-        <h3>Code</h3>
-
-        <a id="h5-simple"></a><h4>Simple version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
-        <p>
-            To use this block, copy and paste the following line of code into your HTML file:
-        </p>
-        <pre class="htmlCode">...</pre>        
-
-        
- <h4>"LESS" version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
-        <p>
-            Copy the same code as in <a href="#h5-simple" class="inner-link">simple version</a> and paste it in your '<strong>.less</strong>' file. Put the following line after that code:
-        </p>
-        <pre class="cssCode">
-@import '../../ui-kit-header/less/header-5.less';
-</pre>
-        <h4>All versions:</h4>
-        <p>
-            In this section you will see what modifications you can do to the block.
-        </p>
-        <p>
-            This block, as many other header blocks in our framework, has a special place for background image, which is:<code>
-                &lt;div class=”background”&gt;...&lt;/div&gt;</code>.
-             To put your own image as background you need to add CSS rules for this element. You can also manage the opacity for this element. Here is an example:
-        </p>
-        <pre class="cssCode">
-.background {
-    background-image:url(‘your image url’);
-    opacity: opacity value;
-}
-</pre>
-        <p>
-            In the “Less” version, you can use the cross browser function for the opacity property:
-        </p>
-        <pre class="cssCode">
-.opacity(value from 0 to 100);
-</pre>
-        <p>
-            This block has a special functionality carousel. You can modify the content of the carousel slides by replacing the content inside <code>
-                &lt;div class=”pt-page”&gt; ... &lt;/div&gt;</code>.
-            This block has a “.background” attribute for the slides, so you can change the background for any one of slides individually.
-        </p>
-        <p>
-            This block also has search functionality which is implemented with the following form: <code>
-                &lt;form class="navbar-search"&gt;...&lt;/form&gt;</code>. You can send the data from the search form to the server or do something else with it.
-        </p>
-    </li>
-    <li>
-        <h3>Samples</h3>
-        <p>
-            We have created this example for you to see how this block looks combined with other content.
-        </p>
-        <hr/>
-        <p>
-            You can see it in <a href="../sample-10/index.htm" class="inner-link" target="_blank">sample # 10</a>.
-        </p>
-    </li>
-</ol>
-        </div>
-    </div>    
-    <div class="header-6">
-        <button class="back-button"></button>
-        <div class="content-man">
-<h1>Header block. Codename: “header-6”</h1>
-<ol>
-    <li>
-        <h3>Overview</h3>
-        <p>
-            This block was developed as a special header block. All blocks that are marked as header should only be used once on one page. This header block has a navigation bar, which can have two states. The standard state is described further in this documentation and the fixed-top state is shown in the example for this for this block.
-        </p>
-    </li>
-    <li>
-        <h3>Code</h3>
-
-        <a id="h6-simple"></a><h4>Simple version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
-        <p>
-            To use this block, copy and paste the following line of code into your HTML file:
-        </p>
-        <pre class="htmlCode">...</pre>        
-
-        
- <h4>"LESS" version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
-        <p>
-            Copy the same code as in <a href="#h6-simple" class="inner-link">simple version</a> and paste it in your '<strong>.less</strong>' file. Put the following line after that code:
-        </p>
-        <pre class="cssCode">
-@import '../../ui-kit-header/less/header-6.less';
-</pre>
-        <h4>All versions:</h4>
-        <p>
-            In this section you will see what modifications you can do to the block.
-        </p>
-        <p>
-            This block, as many other header blocks in our framework, has a special place for background image, which is: <code>
-                &lt;div class=”background”&gt;...&lt;/div&gt;</code>.
-            To put your own image as background you need to add CSS rules for this element. You can also manage the opacity for this element. Here is an example:
-        </p>
-        <pre class="cssCode">
-.background {
-    background-image:url(‘your image url’);
-    opacity: opacity value;
-}
-</pre>
-        <p>
-            In the “Less” version, you can use the cross browser function for the opacity property:
-        </p>
-        <pre class="cssCode">
-.opacity(value from 0 to 100);
-</pre>
-        <p>
-            You can replace the content in this block with your own. In order to do this you need to replace the content between the tags <code>
-                &lt;div class="span8 offset2"&gt;...&lt;/div&gt;</code>
-            .
-        </p>
-        <p>
-            This block has an area for video, which you can insert between the tags <code>
-                &lt;div class="player"&gt;...&lt;/div&gt;</code>
-            .
-        </p>
-        <p>
-            It also has subscription functionality for subscribing which is implemented using the following form: <code>
-                &lt;div class="signup-form"&gt; &lt;form&gt;...&lt;/form&gt;</code>. You can send the data from the form to the server or do something else with it.
-        </p>
-    </li>
-    <li>
-        <h3>Samples</h3>
-        <p>
-            We have created this example for you to see how this block looks combined with other content.
-        </p>
-        <hr/>
-        <p>
-            You can see it in <a href="../sample-11/index.htm" class="inner-link" target="_blank">sample # 11</a>.
-        </p>
-    </li>
-</ol>
-        </div>
-    </div>    
-    <div class="header-7">
-        <button class="back-button"></button>
-        <div class="content-man">
-<h1>Header block. Codename: “header-7”</h1>
-<ol>
-    <li>
-        <h3>Overview</h3>
-        <p>
-            This block was developed as a special header block.
-            All blocks that are marked as header should only be used once on one page.
-            However, this block is very specific and it does not have a standard navigation bar.
-            You can use this block to make a presentation.
-        </p>
-    </li>
-    <li>
-        <h3>Code</h3>
-
-        <a id="h7-simple"></a><h4>Simple version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
-        <p>
-            To use this block, copy and paste the following line of code into your HTML file:
-        </p>
-        <pre class="htmlCode">...</pre>        
-
-        
- <h4>"LESS" version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
-        <p>
-            Copy the same code as in <a href="#h7-simple" class="inner-link">simple version</a> and paste it in your '<strong>.less</strong>' file. Put the following line after that code:
-        </p>
-        <pre class="cssCode">
-@import '../../ui-kit-header/less/header-7.less';
-</pre>
-        <h4>All versions:</h4>
-        <p>
-            In this section you will see what modifications you can do to the block.
-        </p>
-        <p>
-            This block, as many other header blocks in our framework, has a special place for background image, which is: <code>
-                &lt;div class=”background”&gt;...&lt;/div&gt;</code>.
-            To put your own image as background you need to add CSS rules for this element. You can also manage the opacity for this element. Here is an example:
-        </p>
-        <pre class="cssCode">
-.background {
-    background-image:url(‘your image url’);
-    opacity: opacity value;
-}
-</pre>
-        <p>
-            In the “Less” version, you can use the cross browser function for the opacity property:
-        </p>
-        <pre class="cssCode">
-.opacity(value from 0 to 100);
-</pre>
-        <p>
-            This header block is very specific and you can use it as a presentation, so it can be a wrapper for all your site content.
-            This block has a carousel where each slide can be one page.
-            You can change the content for each of slides by replacing the content inside <code>
-                &lt;div class=”pt-page”&gt; ... &lt;/div&gt;</code>.
-        </p>
-        <p>
-            This block has a “.background” attribute for the slides, so you can change the background for any one of slides individually.
-        </p>
-        <p>
-            You can also use this block as a header, which means if you want place content after this block you can do it.
-        </p>
-    </li>
-    <li>
-        <h3>Samples</h3>
-        <p>
-            We have created this example for you to see how this block looks combined with other content.
-        </p>
-        <hr/>
-        <p>
-            You can see it in <a href="../sample-13/index.htm" class="inner-link" target="_blank">sample # 13</a>.
-        </p>
-    </li>
-</ol>
-        </div>
-    </div>
-    <div class="header-8">
-        <button class="back-button"></button>
-        <div class="content-man">
-<h1>Header block. Codename: “header-8”</h1>
-<ol>
-    <li>
-        <h3>Overview</h3>
-        <p>
-            This block was developed as a special header block. All blocks that are marked as header should only be used once on one page. This header block has a navigation bar, which can have two states. The standard state is described further in this documentation and the fixed-top state is shown in the example for this for this block.
-        </p>
-    </li>
-    <li>
-        <h3>Code</h3>
-
-        <a id="h8-simple"></a><h4>Simple version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
-
-        <p>
-            To use this block, copy and paste the following line of code into your HTML file:
-        </p>
-        <pre class="htmlCode">...</pre>        
-
-       
- <h4>"LESS" version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
-        <p>
-            Copy the same code as in <a href="#h8-simple" class="inner-link">simple version</a> and paste it in your '<strong>.less</strong>' file. Put the following line after that code:
-        </p>
-        <pre class="cssCode">
-@import '../../ui-kit-header/less/header-8.less';
-</pre>
-        <h4>All versions:</h4>
-        <p>
-            In this section you will see what modifications you can do to the block.
-        </p>
-        <p>
-            This block, as many other header blocks in our framework, has a special place for background image, which is: <code>
-                &lt;div class=”background”&gt;...&lt;/div&gt;</code>.
-            To put your own image as background you need to add CSS rules for this element. You can also manage the opacity for this element. Here is an example:
-        </p>
-        <pre class="cssCode">
-.background {
-    background-image:url(‘your image url’);
-    opacity: opacity value;
-}
-</pre>
-        <p>
-            In the “Less” version, you can use the cross browser function for the opacity property:
-        </p>
-        <pre class="cssCode">
-.opacity(value from 0 to 100);
-</pre>
-        <p>
-            You can replace the content in this block with your own. In order to do this you need to replace the content between the tags <code>
-                &lt;div class="span8 offset2"&gt;...&lt;/div&gt;</code>.
-        </p>
-    </li>
-    <li>
-        <h3>Samples</h3>
-        <p>
-            We have created this example for you to see how this block looks combined with other content.
-        </p>
-        <hr/>
-        <p>
-            You can see it in <a href="../sample-15/index.htm" class="inner-link" target="_blank">sample # 15</a>.
-        </p>
-    </li>
-</ol>
-        </div>
-    </div>    
-    <div class="header-9">
-        <button class="back-button"></button>
-        <div class="content-man">
-<h1>Header block. Codename: “header-9”</h1>
-<ol>
-    <li>
-        <h3>Overview</h3>
-        <p>
-            This block was developed as a special header block. All blocks that are marked as header should only be used once on one page. 
-            This header block has a navigation bar, which can have two states. The standard state is described further in this documentation and the fixed-top state is shown in the example for this for this block.
-        </p>
-    </li>
-    <li>
-        <h3>Code</h3>
-
-        <a id="h9-simple"></a><h4>Simple version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
-
-        <p>
-            To use this block, simply copy and paste the following line of code into your HTML file:
-        </p>
-        <pre class="htmlCode">...</pre>        
-
-        
- <h4>"LESS" version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
-        <p>
-            Copy the same code as in <a href="#h9-simple" class="inner-link">simple version</a> and paste it in your '<strong>.less</strong>' file. Put the following line after that code:
-        </p>
-        <pre class="cssCode">
-@import '../../ui-kit-header/less/header-9.less';
-</pre>
-        <h4>All versions:</h4>
-        <p>
-            In this section you will see what modifications you can do to the block.
-        </p>
-        <p>
-            This block, as many other header blocks in our framework, has a special place for background image, which is: <code>
-                &lt;div class=”background”&gt;...&lt;/div&gt;</code>
-            To put your own image as background you need to add CSS rules for this element. You can also manage the opacity for this element. Here is an example:
-        </p>
-        <pre class="cssCode">
-.background {
-    background-image:url(‘your image url’);
-    opacity: opacity value;
-}
-</pre>
-        <p>
-            In the “Less” version, you can use the cross browser function for the opacity property:
-        </p>
-        <pre class="cssCode">
-.opacity(value from 0 to 100);
-</pre>
-        <p>
-            You can replace the content in this block with your own. In order to do this you need to replace the content between the tags <code>
-                &lt;div class="hero-unit"&gt;...&lt;/div&gt;</code>.
-        </p>
-        <p>
-            The block also has a sub navigation which is implemented as links in the bottom of the block.
-            It is located inside <code>
-                &lt;div class="nav-steps"&gt;...&lt;/div&gt;</code>.
-        </p>
-    </li>
-    <li>
-        <h3>Samples</h3>
-        <p>
-            We have created this example for you to see how this block looks combined with other content.
-        </p>
-        <hr/>
-        <p>
-            You can see it in <a href="../sample-16/index.htm" class="inner-link" target="_blank">sample # 16</a>.
-        </p>
-    </li>
-</ol>
-        </div>
-    </div>   
-    <div class="header-10">
-        <button class="back-button"></button>
-        <div class="content-man">
-<h1>Header block. Codename: “header-10”</h1>
-<ol>
-    <li>
-        <h3>Overview</h3>
-        <p>
-            This block was developed as a special header block. All blocks that are marked as header should only be used once on one page. This header block has a navigation bar, which can have two states. The standard state is described further in this documentation and the fixed-top state is shown in the example for this for this block.
-        </p>
-    </li>
-    <li>
-        <h3>Code</h3>
-
-        <a id="h10-simple"></a><h4>Simple version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
-
-        <p>
-            To use this block, simply copy and paste the following line of code into your HTML file:
-        </p>
-        <pre class="htmlCode">...</pre>        
-
-       
- <h4>"LESS" version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
-        <p>
-            Copy the same code as in <a href="#h10-simple" class="inner-link">simple version</a> and paste it in your '<strong>.less</strong>' file. Put the following line after that code:
-        </p>
-        <pre class="cssCode">
-@import '../../ui-kit-header/less/header-10.less';
-</pre>
-        <h4>All versions:</h4>
-        <p>
-            In this section you will see what modifications you can do to the block.
-        </p>
-        <p>
-            This block, as many other header blocks in our framework, has a special place for background image, which is: <code>
-                &lt;div class=”background”&gt;...&lt;/div&gt;</code>.
-            To put your own image as background you need to add CSS rules for this element. You can also manage the opacity for this element. Here is an example:
-        </p>
-        <pre class="cssCode">
-.background {
-    background-image:url(‘your image url’);
-    opacity: opacity value;
-}
-</pre>
-        <p>
-            In the “Less” version, you can use the cross browser function for the opacity property:
-        </p>
-        <pre class="cssCode">
-.opacity(value from 0 to 100);
-</pre>
-        <p>
-            You can replace the content in this block with your own. In order to do this you need to replace the content between the tags <code>
-                &lt;div class="hero-unit"&gt;...&lt;/div&gt;</code>.
-        </p>
-        <p>
-            This block also has a special button for jumping to the next content block.
-        </p>
-    </li>
-    <li>
-        <h3>Samples</h3>
-        <p>
-            We have created this example for you to see how this block looks combined with other content.
-        </p>
-        <hr/>
-        <p>
-            You can see it in <a href="../sample-4/index.htm" class="inner-link" target="_blank">sample # 4</a> and <a href="../sample-18/index.htm" class="inner-link" target="_blank">sample # 18</a>.
-        </p>
-    </li>
-</ol>
-        </div>
-    </div>    
-    <div class="header-11">
-        <button class="back-button"></button>
-        <div class="content-man">
 <h1>Header block. Codename: “header-11”</h1>
 <ol>
     <li>
@@ -764,7 +15,7 @@
         <h3>Code</h3>
 
         <a id="h11-simple"></a><h4>Simple version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
+        If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
 
         <p>
             To use this block, copy and paste the following line of code into your HTML file:
@@ -773,7 +24,7 @@
 
         
  <h4>"LESS" version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
+        If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
         <p>
             Copy the same code as in <a href="#h11-simple" class="inner-link">simple version</a> and paste it in your '<strong>.less</strong>' file. Put the following line after that code:
         </p>
@@ -844,7 +95,7 @@
         <h3>Code</h3>
 
         <a id="h12-simple"></a><h4>Simple version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
+        If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
 
 
         <p>
@@ -854,7 +105,7 @@
 
         
  <h4>"LESS" version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
+        If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
 
         <p>
             Copy the same code as in <a href="#h12-simple" class="inner-link">simple version</a> and paste it in your '<strong>.less</strong>' file. Put the following line after that code:
@@ -922,7 +173,7 @@
         <h3>Code</h3>
 
         <a id="h13-simple"></a><h4>Simple version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
+        If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
 
         <p>
             To use this block, copy and paste the following line of code into your HTML file:
@@ -931,7 +182,7 @@
 
        
  <h4>"LESS" version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
+        If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
         <p>
             Copy the same code as in <a href="#h13-simple" class="inner-link">simple version</a> and paste it in your '<strong>.less</strong>' file. Put the following line after that code:
         </p>
@@ -992,7 +243,7 @@
         <h3>Code</h3>
 
         <a id="h14-simple"></a><h4>Simple version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
+        If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
 
         <p>
             To use this block, copy and paste the following line of code into your HTML file:
@@ -1001,7 +252,7 @@
 
         
  <h4>"LESS" version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
+        If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
         <p>
             Copy the same code as in <a href="#h14-simple" class="inner-link">simple version</a> and paste it in your '<strong>.less</strong>' file. Put the following line after that code:
         </p>
@@ -1069,7 +320,7 @@
         <h3>Code</h3>
 
         <a id="h15-simple"></a><h4>Simple version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
+        If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
 
         <p>
             To use this block, copy and paste the following line of code into your HTML file:
@@ -1078,7 +329,7 @@
 
         
  <h4>"LESS" version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
+        If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
         <p>
             Copy the same code as in <a href="#h15-simple" class="inner-link">simple version</a> and paste it in your '<strong>.less</strong>' file. Put the following line after that code:
         </p>
@@ -1140,7 +391,7 @@
         <h3>Code</h3>
 
         <a id="h16-simple"></a><h4>Simple version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
+        If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
 
 
         <p>
@@ -1150,7 +401,7 @@
 
        
  <h4>"LESS" version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
+        If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
 
         <p>
             Copy the same code as in <a href="#h16-simple" class="inner-link">simple version</a> and paste it in your '<strong>.less</strong>' file. Put the following line after that code:
@@ -1218,7 +469,7 @@
         <h3>Code</h3>
 
         <a id="h17-simple"></a><h4>Simple version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
+        If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
 
 
         <p>
@@ -1228,7 +479,7 @@
 
        
  <h4>"LESS" version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
+        If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
 
         <p>
             Copy the same code as in <a href="#h17-simple" class="inner-link">simple version</a> and paste it in your '<strong>.less</strong>' file. Put the following line after that code:
@@ -1297,7 +548,7 @@
         <h3>Code</h3>
 
         <a id="h18-simple"></a><h4>Simple version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
+        If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
 
         <p>
             To use this block, copy and paste the following line of code into your HTML file:
@@ -1306,7 +557,7 @@
 
         
  <h4>"LESS" version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
+        If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
 
         <p>
             Copy the same code as in <a href="#h18-simple" class="inner-link">simple version</a> and paste it in your '<strong>.less</strong>' file. Put the following line after that code:
@@ -1376,7 +627,7 @@
         <h3>Code</h3>
 
         <a id="h19-simple"></a><h4>Simple version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
+        If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
 
 
         <p>
@@ -1386,7 +637,7 @@
 
         
  <h4>"LESS" version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
+        If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
 
         <p>
             Copy the same code as in <a href="#h19-simple" class="inner-link">simple version</a> and paste it in your '<strong>.less</strong>' file. Put the following line after that code:
@@ -1450,7 +701,7 @@
         <h3>Code</h3>
 
         <a id="h20-simple"></a><h4>Simple version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
+        If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
 
 
         <p>
@@ -1460,7 +711,7 @@
 
         
  <h4>"LESS" version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
+        If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
 
         <p>
             Copy the same code as in <a href="#h20-simple" class="inner-link">simple version</a> and paste it in your '<strong>.less</strong>' file. Put the following line after that code:
@@ -1528,7 +779,7 @@
         <h3>Code</h3>
 
         <a id="h21-simple"></a><h4>Simple version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
+        If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
 
 
         <p>
@@ -1538,7 +789,7 @@
 
         
  <h4>"LESS" version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
+        If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
 
         <p>
            Copy the same code as in <a href="#h21-simple" class="inner-link">simple version</a> and paste it in your '<strong>.less</strong>' file. Put the following line after that code:
@@ -1604,7 +855,7 @@
         <h3>Code</h3>
 
         <a id="h22-simple"></a><h4>Simple version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
+        If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
 
 
         <p>
@@ -1614,7 +865,7 @@
 
         
  <h4>"LESS" version:</h4>
-        <small>If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.</small>
+        If you haven’t already done all the instructions from the <a href="how_to_install.html">how to install</a> page of this documentation, please do that first.
 
         <p>
             Copy the same code as in <a href="#h22-simple" class="inner-link">simple version</a> and paste it in your '<strong>.less</strong>' file. Put the following line after that code:

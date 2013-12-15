@@ -647,6 +647,8 @@ section * {
   transition: z-index 4s ease 0s;
   display: block;
   width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -663,10 +665,10 @@ section * {
   .dockbar.navbar-fixed-top .colapsed-menu {
     float: right;
     display: none;
-    max-width: 300px;
+    max-width: 400px;
     position: absolute;
     right: 0;
-    top: 52px;
+    top: 67px;
     width: auto;
     margin: 0;
     padding: 0;
@@ -677,7 +679,7 @@ section * {
     margin: 0;
   }
   .dockbar.navbar-fixed-top .colapsed-menu dl dd {
-    border-bottom: 1px dashed #333;
+    border-bottom: 1px solid #202428;
     line-height: 45px;
     display: block;
     margin: 0;
@@ -689,9 +691,15 @@ section * {
     text-transform: uppercase;
     background-color: #1f1b23;
   }
+  .dockbar.navbar-fixed-top .colapsed-menu dl dd:hover dd,
+  .dockbar.navbar-fixed-top .colapsed-menu dl dd:focus dd {
+    display: block;
+  }
   .dockbar.navbar-fixed-top .colapsed-menu dl dd dd {
+    display: none;
     margin: 0 0 0 20px;
     font-size: 12px;
+    border: 0 none;
   }
   .dockbar.navbar-fixed-top .colapsed-menu dl dd > a {
     float: left;
@@ -713,7 +721,7 @@ section * {
     display: none;
   }
   .dockbar.navbar-fixed-top > menu {
-    padding: 0 20px;
+    padding: 0 0 0 20px;
   }
   .dockbar.navbar-fixed-top .container {
     width: auto;
@@ -726,16 +734,31 @@ section * {
   .dockbar .menu-btn {
     display: inline-block;
     float: right;
-    margin-right: 40px;
-    margin-top: 20px;
     position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 66px;
+    height: 66px;
+    background: none #1b1f23;
+    border: 0 none;
+    border-left: 1px solid #272b2f;
+    color: #919497;
+  }
+  .dockbar .menu-btn:hover,
+  .dockbar .menu-btn:focus {
+    border: 0 none;
+    border-left: 1px solid #272b2f;
+    color: #ffffff;
   }
 }
 .dockbar .main-menu {
   display: block;
   overflow: hidden;
-  background-color: #1f1b23;
+  background-color: #1b1f23;
   margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   padding: 0;
@@ -756,7 +779,6 @@ section * {
   .dockbar .main-menu a.man-brand {
     line-height: 65px;
     width: auto;
-    margin-left: 20px;
   }
 }
 .dockbar .main-menu a.man-brand .logotype {
@@ -808,7 +830,7 @@ section * {
   color: white;
 }
 body {
-  margin-top: 66px;
+  padding-top: 66px;
   position: relative;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -836,6 +858,10 @@ body section.content-33 {
 body section[class*=content-] {
   margin-top: 0;
   margin-bottom: 0;
+}
+body .disabled {
+  color: #484d51 !important;
+  cursor: default;
 }
 /**
  * Header 10 stylesheet  
@@ -1519,4 +1545,77 @@ body section[class*=content-] {
   .header-11-sub .player {
     height: 160px;
   }
+}
+.demo {
+  background-color: #f2f3f4;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.demo .img {
+  text-align: center;
+  height: 48px;
+  padding-bottom: 100px;
+}
+.demo h3 {
+  font-size: 46px;
+  font-weight: normal;
+  color: #1b1f23;
+  font-weight: 800;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: -0.6px;
+  text-align: center;
+  margin-bottom: 38px;
+}
+@media (max-width: 400px) {
+  .demo h3 {
+    font-size: 27px;
+    font-weight: normal;
+    color: #1b1f23;
+    font-weight: 800;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: -0.6px;
+  }
+}
+.demo p {
+  font-size: 20px;
+  font-weight: normal;
+  color: #7e7e7e;
+  letter-spacing: -0.2px;
+  line-height: 30.999999999999996px;
+  margin-bottom: 45px;
+}
+@media (max-width: 400px) {
+  .demo p {
+    font-size: 18px;
+    font-weight: normal;
+    color: #1b1f23;
+    letter-spacing: -0.2px;
+  }
+}
+.demo .centered {
+  text-align: center;
+}
+.demo .centered .btn {
+  margin-top: 0;
+  font-size: 22px;
+  font-weight: normal;
+  color: #ffffff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  margin-bottom: 0;
+  background-color: #27ae60;
+  padding: 15px 20px;
+}
+@media (max-width: 400px) {
+  .demo .centered .btn {
+    font-size: 20px;
+    font-weight: normal;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+}
+.demo .centered .btn:hover,
+.demo .centered .btn:focus {
+  background-color: #1b1f23;
 }

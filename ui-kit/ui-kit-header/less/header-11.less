@@ -108,7 +108,7 @@
           }  
           input {
             width: 100%; height: 41px;
-            .box-sizing(border-box);          
+            .box-sizing(border-box);         
           }
         }  
         .btn {
@@ -119,7 +119,10 @@
             &:active,&.active {background-color: mix(@button-primary-active, black, 85%);}
           }
         }  
-        input[type="text"], input[type="password"] { border-color: white!important;}
+        input[type="text"], input[type="password"] { 
+            border-color: white!important;
+            @media (max-width: 767px) {height: 41px;}
+        }
       }
       @media (max-width: 480px) {form {margin-top: 25px;}}
   }

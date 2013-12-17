@@ -1,7 +1,7 @@
 //--  HELPER FUNCTIONS AND VARIABLES ----------------------------------------------------------------------------
 
 @h-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-@c-font-family: Lato, sens-serif;
+@c-font-family: @h-font-family;
 @h-text-color: @midnight-blue;
 @c-text-color: @asbestos;
 
@@ -49,7 +49,10 @@ section{ *{z-index:2;} }
   left: 0; top: 0; right: 0; bottom: 0; z-index:1;
   background: 50% 50% no-repeat;
   .background-size(cover);
-  .opacity(20);  
+  .opacity(20);
+  @media (max-width: 768px) {
+    .background-size(auto 200%);
+  }
 }
 .container{
   position:relative;
@@ -108,5 +111,27 @@ section{ *{z-index:2;} }
 header{
   @media (max-width: 767px){
     padding-left:20px; padding-right:20px;
+    .box-sizing(border-box);
   }
+}
+
+.nav-visible{
+ .navbar .nav-collapse .nav >li > a:hover, .navbar .nav-collapse .nav >li > li a:focus{
+    background-color: transparent;
+  }
+.nav-collapse .navbar-form, .nav-collapse .navbar-search {
+  border-bottom: 0 none;
+  border-top: 0 none;
+  box-shadow: none;
+  margin: 10px 0;
+  padding: 10px 15px;
+  a.btn{
+    border-color:white;
+    color:white;
+    &:hover, &:focus{
+      color:@c-text-color;
+      background-color:white;
+    }
+  }
+}
 }

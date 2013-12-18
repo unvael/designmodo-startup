@@ -11,7 +11,7 @@
       @media (max-width: 767px) { text-align: center; }
     }
     form {margin: 0; position: relative;}
-    input[type="text"] {
+    input[type="text"],input[type="email"] {
       width: 100%;
       height: auto;
       margin: 0;
@@ -46,7 +46,7 @@
       position: absolute;
       padding-left: 6px;
       .line-height(60px);
-      .font(50px,#a1a9b1) ; font-family: @h-font-family;    
+      .font(50px,white) ; font-family: @h-font-family;
     }  
     .btn {
       margin-top: 8px;
@@ -59,12 +59,13 @@
       }
     }
     @media (max-width: 480px) {
-      input[type="text"],
+      input[type="text"],input[type="email"],
+
       .ani-placeholder {
         width: 100%;
         margin-bottom: 33px;
         .line-height(27px);
-        .font(25px, #a1a9b1); font-family: @h-font-family;
+        .font(25px, white); font-family: @h-font-family;
         text-align: center;
       }
     }

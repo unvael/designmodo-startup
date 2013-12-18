@@ -1115,7 +1115,8 @@ section * {
   margin: 0;
   position: relative;
 }
-.content-13.subscribe-form input[type="text"] {
+.content-13.subscribe-form input[type="text"],
+.content-13.subscribe-form input[type="email"] {
   width: 100%;
   height: auto;
   margin: 0;
@@ -1130,28 +1131,35 @@ section * {
   font-weight: 500;
   letter-spacing: -1px;
 }
-.content-13.subscribe-form input[type="text"]:-moz-placeholder {
+.content-13.subscribe-form input[type="text"]:-moz-placeholder,
+.content-13.subscribe-form input[type="email"]:-moz-placeholder {
   color: #ffffff;
 }
-.content-13.subscribe-form input[type="text"]::-webkit-input-placeholder {
+.content-13.subscribe-form input[type="text"]::-webkit-input-placeholder,
+.content-13.subscribe-form input[type="email"]::-webkit-input-placeholder {
   color: #ffffff;
 }
-.content-13.subscribe-form input[type="text"].placeholder {
+.content-13.subscribe-form input[type="text"].placeholder,
+.content-13.subscribe-form input[type="email"].placeholder {
   color: #ffffff;
 }
-.content-13.subscribe-form input[type="text"]::-webkit-input-placeholder {
+.content-13.subscribe-form input[type="text"]::-webkit-input-placeholder,
+.content-13.subscribe-form input[type="email"]::-webkit-input-placeholder {
   font-weight: 500;
   letter-spacing: -1px;
 }
-.content-13.subscribe-form input[type="text"]:-moz-placeholder {
+.content-13.subscribe-form input[type="text"]:-moz-placeholder,
+.content-13.subscribe-form input[type="email"]:-moz-placeholder {
   font-weight: 500;
   letter-spacing: -1px;
 }
-.content-13.subscribe-form input[type="text"]::-moz-placeholder {
+.content-13.subscribe-form input[type="text"]::-moz-placeholder,
+.content-13.subscribe-form input[type="email"]::-moz-placeholder {
   font-weight: 500;
   letter-spacing: -1px;
 }
-.content-13.subscribe-form input[type="text"]:-ms-input-placeholder {
+.content-13.subscribe-form input[type="text"]:-ms-input-placeholder,
+.content-13.subscribe-form input[type="email"]:-ms-input-placeholder {
   font-weight: 500;
   letter-spacing: -1px;
 }
@@ -1164,7 +1172,7 @@ section * {
   line-height: 59.99999999999999px;
   font-size: 50px;
   font-weight: normal;
-  color: #a1a9b1;
+  color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .content-13.subscribe-form .btn {
@@ -1185,13 +1193,14 @@ section * {
 }
 @media (max-width: 480px) {
   .content-13.subscribe-form input[type="text"],
+  .content-13.subscribe-form input[type="email"],
   .content-13.subscribe-form .ani-placeholder {
     width: 100%;
     margin-bottom: 33px;
     line-height: 27px;
     font-size: 25px;
     font-weight: normal;
-    color: #a1a9b1;
+    color: #ffffff;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: center;
   }

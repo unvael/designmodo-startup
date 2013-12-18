@@ -3447,16 +3447,11 @@ a.active {
   float: right;
 }
 .mcontent .manual {
-  -webkit-backface-visibility: hidden;
-  -webkit-transition: right 1s linear 0s;
-  -moz-transition: right 1s linear 0s;
-  -o-transition: right 1s linear 0s;
-  transition: right 1s linear 0s;
   left: 100%;
   right: -100%;
   display: block;
   position: fixed;
-  z-index: 999;
+  z-index: 1040;
   min-height: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -3540,11 +3535,6 @@ a.active {
 
   /*end prism*/
 
-  -webkit-backface-visibility: hidden;
-  -webkit-transition: display 0s linear 2s;
-  -moz-transition: display 0s linear 2s;
-  -o-transition: display 0s linear 2s;
-  transition: display 0s linear 2s;
   font-size: 14px;
   font-weight: normal;
   color: #7f8c8d;
@@ -4043,51 +4033,38 @@ a.active {
   box-sizing: border-box;
 }
 body:before {
-  -webkit-backface-visibility: hidden;
-  -webkit-transition: opacity 6s ease 0s;
-  -moz-transition: opacity 6s ease 0s;
-  -o-transition: opacity 6s ease 0s;
-  transition: opacity 6s ease 0s;
   opacity: 0;
   filter: alpha(opacity=0);
   display: block;
-  visibility: hidden;
+  visibility: visible;
   content: "";
   height: 100%;
   width: 100%;
   top: 0;
-  left: 0;
-  right: 0;
+  left: 100%;
+  right: -100%;
   bottom: 0;
   overflow: hidden;
   position: fixed;
   background: #1b1f23;
-  z-index: 850;
+  z-index: 1035;
+  -webkit-transition: -webkit-opacity 1s linear 0s;
+  -moz-transition: -moz-opacity 1s linear 0s;
+  -o-transition: -o-opacity 1s linear 0s;
+  transition: opacity 1s linear 0s;
 }
 .read-manual {
   overflow: hidden;
-  /*.container {
-    margin-left: 10px;
-  }*/
-
+}
+.read-manual .mask.active {
+  display: none;
 }
 .read-manual body:before {
-  visibility: visible;
-  -webkit-backface-visibility: hidden;
-  -webkit-transition: opacity 1s ease 0s;
-  -moz-transition: opacity 1s ease 0s;
-  -o-transition: opacity 1s ease 0s;
-  transition: opacity 1s ease 0s;
+  left: 0;
+  right: 0;
   opacity: 0.95;
   filter: alpha(opacity=95);
-}
-.read-manual .dockbar {
-  -webkit-backface-visibility: hidden;
-  -webkit-transition: z-index 0s;
-  -moz-transition: z-index 0s;
-  -o-transition: z-index 0s;
-  transition: z-index 0s;
-  z-index: 840;
+  visibility: visible;
 }
 .read-manual .mcontent {
   height: auto !important;

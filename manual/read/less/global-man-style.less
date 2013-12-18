@@ -1,4 +1,25 @@
 body {
+
+  &:before {
+    .opacity(0);
+    display: block;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    overflow: hidden;
+    position: fixed;
+    background: #1b1f23;
+    z-index: 1035;
+    -webkit-transition: -webkit-opacity 1s linear 0s, right 0.5s linear 1s;
+    -moz-transition: -moz-opacity 1s linear 0s, right 0.5s linear 1s;
+    -o-transition: -o-opacity 1s linear 0s, right 0.5s linear 1s;
+    transition: opacity 1s linear 0s, right 0.5s linear 1s;
+  }
+
+
   padding-top: 112px;
   @media (max-width: 979px) {
     padding-top: 66px;
@@ -67,10 +88,12 @@ a {
 .mask {
   display: none;
   .opacity(0);
-  .transition(opacity 0.5s linear 0s);
+  -webkit-transition: -webkit-opacity 1s linear 0s;
+  -moz-transition: -moz-opacity 1s linear 0s;
+  -o-transition: -o-opacity 1s linear 0s;
+  transition: opacity 1s linear 0s;
 
   &.active {
-
     display: block;
     background-color: #1b1f23 !important;
     .container{
@@ -117,7 +140,7 @@ a {
       }
       .opacity(100);
     }
-    .transition(opacity 3s linear 0s);
+
     .opacity(97);
     .hover-text {
       display: table-cell;

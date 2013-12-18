@@ -18001,6 +18001,25 @@ body {
   position: relative;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+body:before {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  display: block;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: -100%;
+  bottom: 0;
+  overflow: hidden;
+  position: fixed;
+  background: #1b1f23;
+  z-index: 1035;
+  -webkit-transition: -webkit-opacity 1s linear 0s, right 0.5s linear 1s;
+  -moz-transition: -moz-opacity 1s linear 0s, right 0.5s linear 1s;
+  -o-transition: -o-opacity 1s linear 0s, right 0.5s linear 1s;
+  transition: opacity 1s linear 0s, right 0.5s linear 1s;
+}
 @media (max-width: 979px) {
   body {
     padding-top: 66px;
@@ -18071,11 +18090,10 @@ a.active {
   display: none;
   opacity: 0;
   filter: alpha(opacity=0);
-  -webkit-backface-visibility: hidden;
-  -webkit-transition: opacity 0.5s linear 0s;
-  -moz-transition: opacity 0.5s linear 0s;
-  -o-transition: opacity 0.5s linear 0s;
-  transition: opacity 0.5s linear 0s;
+  -webkit-transition: -webkit-opacity 1s linear 0s;
+  -moz-transition: -moz-opacity 1s linear 0s;
+  -o-transition: -o-opacity 1s linear 0s;
+  transition: opacity 1s linear 0s;
 }
 .mask.active {
   display: block;
@@ -18093,11 +18111,6 @@ a.active {
   padding: 0;
   margin: 0;
   overflow: hidden;
-  -webkit-backface-visibility: hidden;
-  -webkit-transition: opacity 3s linear 0s;
-  -moz-transition: opacity 3s linear 0s;
-  -o-transition: opacity 3s linear 0s;
-  transition: opacity 3s linear 0s;
   opacity: 0.97;
   filter: alpha(opacity=97);
 }
@@ -18183,7 +18196,11 @@ a.active {
   float: right;
 }
 .mcontent .manual {
-  left: 100%;
+  -webkit-transition: right 1s linear 0s, -webkit-box-shadow 0.5s ease 1s;
+  -moz-transition: right 1s linear 0s, -moz-box-shadow 0.5s ease 1s;
+  -o-transition: right 1s linear 0s, -o-box-shadow 0.5s ease 1s;
+  transition: right 1s linear 0s, box-shadow 0.5s ease 1s;
+  left: auto;
   right: -100%;
   display: block;
   position: fixed;
@@ -18200,6 +18217,16 @@ a.active {
   top: 0;
   background-color: #1B1E23;
   width: 900px;
+}
+@media (max-width: 768px) {
+  .mcontent .manual {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 900px) {
+  .mcontent .manual {
+    width: 100%;
+  }
 }
 .mcontent .manual .content-7 h3 {
   line-height: 1.2em;
@@ -18236,16 +18263,6 @@ a.active {
   font-size: 16px;
   color: #919497;
   font-weight: normal;
-}
-@media (max-width: 768px) {
-  .mcontent .manual {
-    padding: 0 20px;
-  }
-}
-@media (max-width: 900px) {
-  .mcontent .manual {
-    width: 100%;
-  }
 }
 .mcontent .manual > div {
   background-image: none !important;
@@ -18768,27 +18785,6 @@ a.active {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-body:before {
-  opacity: 0;
-  filter: alpha(opacity=0);
-  display: block;
-  visibility: visible;
-  content: "";
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 100%;
-  right: -100%;
-  bottom: 0;
-  overflow: hidden;
-  position: fixed;
-  background: #1b1f23;
-  z-index: 1035;
-  -webkit-transition: -webkit-opacity 1s linear 0s;
-  -moz-transition: -moz-opacity 1s linear 0s;
-  -o-transition: -o-opacity 1s linear 0s;
-  transition: opacity 1s linear 0s;
-}
 .read-manual {
   overflow: hidden;
 }
@@ -18800,7 +18796,6 @@ body:before {
   right: 0;
   opacity: 0.95;
   filter: alpha(opacity=95);
-  visibility: visible;
 }
 .read-manual .mcontent {
   height: auto !important;
@@ -18814,11 +18809,6 @@ body:before {
   right: 70%;
 }
 .read-manual .mcontent .manual {
-  -webkit-transition: right 1s linear 0s, -webkit-box-shadow 0.5s ease 1s;
-  -moz-transition: right 1s linear 0s, -moz-box-shadow 0.5s ease 1s;
-  -o-transition: right 1s linear 0s, -o-box-shadow 0.5s ease 1s;
-  transition: right 1s linear 0s, box-shadow 0.5s ease 1s;
-  left: auto;
   right: 0;
   -webkit-box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);

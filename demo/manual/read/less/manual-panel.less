@@ -33,12 +33,12 @@
     }
   }
 
-  .transition(right 1s linear 0s);
+  //.transition(right 1s linear 0s);
   left: 100%;
   right: -100%;
   display: block;
   position: fixed;
-  z-index: 999;
+  z-index: 1040;
   min-height: 100%;
   .box-sizing(border-box);
   .box-shadow(none);
@@ -64,7 +64,7 @@
     /* prism twilight theme */
     @import '../../js/prism/themes/twilight.less';
     /*end prism*/
-    .transition(display 0s linear 2s);
+   // .transition(display 0s linear 2s);
     .font(14px);
     overflow: visible;
     letter-spacing: normal;
@@ -235,37 +235,42 @@
 }
 
 body:before {
-  .transition(opacity 6s ease 0s);
+ // .transition(opacity 6s ease 0s);
   .opacity(0);
   display: block;
-  visibility: hidden;
+  visibility: visible;
   content: "";
   height: 100%;
   width: 100%;
   top: 0;
-  left: 0;
-  right: 0;
+  left: 100%;
+  right: -100%;
   bottom: 0;
   overflow: hidden;
   position: fixed;
   background: #1b1f23;
-  z-index: 850;
+  z-index: 1035;
+  -webkit-transition: -webkit-opacity 1s linear 0s;
+  -moz-transition: -moz-opacity 1s linear 0s;
+  -o-transition: -o-opacity 1s linear 0s;
+  transition: opacity 1s linear 0s;
 }
 
 .read-manual {
+  .mask.active{
+    display:none;
+  }
   body:before {
-    visibility: visible;
-    .transition(opacity 1s ease 0s);
+    left: 0;
+    right: 0;
     .opacity(95);
+    visibility: visible;
+
+
   }
   overflow: hidden;
-  .dockbar {
-    .transition(z-index 0s);
-    z-index: 840;
-  }
-  /*.container {
-    margin-left: 10px;
-  }*/
+
+
   .mcontent {
     height: auto !important;
     height: 100%;

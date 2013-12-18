@@ -1019,6 +1019,14 @@ body section[class*=content-] {
     margin: 30px 0 0;
   }
 }
+@media (max-width: 614px) {
+  .content-11 > .container > span {
+    display: block;
+  }
+  .content-11 .btn {
+    margin: 30px 0 0;
+  }
+}
 /**
  * Content 13 stylesheet  
  * */

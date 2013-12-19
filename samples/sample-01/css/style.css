@@ -983,6 +983,8 @@ section * {
  * Content 4 stylesheet  
  * */
 .content-4 {
+  padding-top: 128px;
+  padding-bottom: 120px;
   position: relative;
 }
 .content-4 h3 {

@@ -940,6 +940,8 @@ body {
   margin-bottom: 0;
 }
 .mcontent .content-7 {
+  padding-top: 128px;
+  padding-bottom: 130px;
   position: relative;
   text-align: center;
 }
@@ -1072,6 +1074,8 @@ body {
   max-height: 100%;
 }
 .mcontent .content-8 {
+  padding-top: 130px;
+  padding-bottom: 130px;
   position: relative;
   text-align: center;
 }
@@ -2254,6 +2258,10 @@ body {
   right: -5px;
   top: 0;
 }
+.mcontent .price-1 {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
 .mcontent .price-1 .plan {
   position: relative;
   -webkit-box-sizing: border-box;
@@ -3282,18 +3290,15 @@ body:before {
   position: fixed;
   background: #1b1f23;
   z-index: 1035;
-  -webkit-transition: -webkit-opacity 1s linear 0s, right 0.5s linear 1s;
-  -moz-transition: -moz-opacity 1s linear 0s, right 0.5s linear 1s;
-  -o-transition: -o-opacity 1s linear 0s, right 0.5s linear 1s;
-  transition: opacity 1s linear 0s, right 0.5s linear 1s;
+  -webkit-transition: -webkit-opacity 0.3s linear 0s, right 0.1s linear 0.7s;
+  -moz-transition: -moz-opacity 0.3s linear 0s, right 0.1s linear 0.7s;
+  -o-transition: -o-opacity 0.3s linear 0s, right 0.1s linear 0.7s;
+  transition: opacity 0.3s linear 0s, right 0.1s linear 0.7s;
 }
 @media (max-width: 979px) {
   body {
     padding-top: 66px;
   }
-}
-body.hovered {
-  background-color: #ecf0f1;
 }
 body.colapsed-menu-active {
   height: 100%;
@@ -3463,10 +3468,10 @@ a.active {
   float: right;
 }
 .mcontent .manual {
-  -webkit-transition: right 1s linear 0s, -webkit-box-shadow 0.5s ease 1s;
-  -moz-transition: right 1s linear 0s, -moz-box-shadow 0.5s ease 1s;
-  -o-transition: right 1s linear 0s, -o-box-shadow 0.5s ease 1s;
-  transition: right 1s linear 0s, box-shadow 0.5s ease 1s;
+  -webkit-transition: right 0.5s ease-out 0s, -webkit-box-shadow 0.2s ease 0.5s;
+  -moz-transition: right 0.5s ease-out 0s, -moz-box-shadow 0.2s ease 0.5s;
+  -o-transition: right 0.5s ease-out 0s, -o-box-shadow 0.2s ease 0.5s;
+  transition: right 0.5s ease-out 0s, box-shadow 0.2s ease 0.5s;
   left: auto;
   right: -100%;
   display: block;
@@ -3895,7 +3900,7 @@ a.active {
   float: left;
   display: inline-block;
   height: 38px;
-  line-height: 0;
+  line-height: 30.999999999999996px;
   padding: 0 0 2px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;

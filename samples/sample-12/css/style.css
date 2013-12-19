@@ -1018,6 +1018,8 @@ section * {
  * Content 10 stylesheet  
  * */
 .content-10 {
+  padding-top: 130px;
+  padding-bottom: 125px;
   position: relative;
 }
 .content-10 .carousel {
@@ -1296,6 +1298,8 @@ footer {
   border-top: 2px solid #ecf0f1;
 }
 .content-10 {
+  padding-top: 98px;
+  padding-bottom: 98px;
   overflow: hidden;
 }
 .content-10 .features .box {

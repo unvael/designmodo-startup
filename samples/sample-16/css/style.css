@@ -980,6 +980,8 @@ section * {
  * Content 9 stylesheet  
  * */
 .content-9 {
+  padding-top: 130px;
+  padding-bottom: 130px;
   position: relative;
   padding-bottom: 0;
 }

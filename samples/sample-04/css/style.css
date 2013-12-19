@@ -983,6 +983,8 @@ section * {
  * Content 7 stylesheet  
  * */
 .content-7 {
+  padding-top: 128px;
+  padding-bottom: 130px;
   position: relative;
   text-align: center;
 }
@@ -1118,6 +1120,8 @@ section * {
  * Content 8 stylesheet  
  * */
 .content-8 {
+  padding-top: 130px;
+  padding-bottom: 130px;
   position: relative;
   text-align: center;
 }
@@ -1518,6 +1522,18 @@ body > section.v-center > div {
 }
 @media (max-width: 767px) {
   body > section.v-center > div {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+.content-7,
+.content-8 {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+@media (max-width: 767px) {
+  .content-7,
+  .content-8 {
     padding-top: 100px;
     padding-bottom: 100px;
   }

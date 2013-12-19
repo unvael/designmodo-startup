@@ -856,6 +856,8 @@ section * {
  * Content 2 stylesheet  
  * */
 .content-2 {
+  padding-top: 128px;
+  padding-bottom: 130px;
   position: relative;
 }
 .content-2 h3 {
@@ -923,6 +925,8 @@ section * {
  * Content 9 stylesheet  
  * */
 .content-9 {
+  padding-top: 130px;
+  padding-bottom: 130px;
   position: relative;
   padding-bottom: 0;
 }
@@ -1042,8 +1046,8 @@ section * {
 }
 .content-30 {
   position: relative;
-  padding-top: 110px;
-  padding-bottom: 110px;
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 @media (max-width: 480px) {
   .content-30 {
@@ -1212,6 +1216,16 @@ footer {
     padding-bottom: 105px;
   }
 }
+.content-30 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+@media (max-width: 768px) {
+  .content-30 {
+    padding-top: 105px;
+    padding-bottom: 105px;
+  }
+}
 .header-3-sub .background {
   opacity: 1;
   filter: alpha(opacity=100);
@@ -1245,6 +1259,7 @@ footer {
 }
 .content-9 {
   padding-top: 130px;
+  padding-bottom: 80px;
 }
 @media (max-width: 768px) {
   .content-9 {

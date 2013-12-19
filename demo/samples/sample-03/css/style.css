@@ -1021,6 +1021,10 @@ section * {
 /**
  * Price 1 stylesheet  
  * */
+.price-1 {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
 .price-1 .plan {
   position: relative;
   -webkit-box-sizing: border-box;

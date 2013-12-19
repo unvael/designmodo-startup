@@ -1112,6 +1112,8 @@ section * {
  * Content 1 stylesheet  
  * */
 .content-1 {
+  padding-top: 128px;
+  padding-bottom: 125px;
   position: relative;
 }
 .content-1 h3 {
@@ -1271,6 +1273,8 @@ section * {
  * Content 5 stylesheet  
  * */
 .content-5 {
+  padding-top: 130px;
+  padding-bottom: 120px;
   position: relative;
 }
 .content-5 .container > img {
@@ -1548,6 +1552,10 @@ section * {
 }
 body > section,
 footer {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.content-5 {
   padding-top: 80px;
   padding-bottom: 80px;
 }

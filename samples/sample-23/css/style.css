@@ -835,6 +835,8 @@ section * {
  * Content 9 stylesheet  
  * */
 .content-9 {
+  padding-top: 130px;
+  padding-bottom: 130px;
   position: relative;
   padding-bottom: 0;
 }
@@ -875,6 +877,8 @@ section * {
  * Content 14 stylesheet  
  * */
 .content-14 {
+  padding-top: 128px;
+  padding-bottom: 130px;
   position: relative;
 }
 @media (max-width: 767px) {
@@ -1424,7 +1428,15 @@ body > section {
   background-size: cover;
 }
 .content-23 {
+  padding-top: 130px;
+  padding-bottom: 130px !important;
   background-color: #1B1F23;
+}
+@media (max-width: 480px) {
+  .content-23 {
+    padding-top: 50px;
+    padding-bottom: 50px !important;
+  }
 }
 .content-23 .control-btn {
   opacity: 0.2;

@@ -759,6 +759,10 @@ body section[class*=content-] {
 /**
  * Crew 1 stylesheet  
  * */
+.crew-1 {
+  padding-top: 108px;
+  padding-bottom: 110px;
+}
 .crew-1 h3 {
   margin: 0 0 73px;
   font-size: 30px;
@@ -887,6 +891,10 @@ body section[class*=content-] {
 /**
  * Crew 2 stylesheet  
  * */
+.crew-2 {
+  padding-top: 108px;
+  padding-bottom: 110px -23px;
+}
 .crew-2 h3 {
   margin: 0 0 73px;
   font-size: 30px;
@@ -1041,6 +1049,10 @@ body section[class*=content-] {
 /**
  * Crew 3 stylesheet  
  * */
+.crew-3 {
+  padding-top: 108px;
+  padding-bottom: 108px;
+}
 .crew-3 h3 {
   margin: 0 0 20px;
   font-size: 30px;
@@ -1218,6 +1230,10 @@ body section[class*=content-] {
 /**
  * Crew 4 stylesheet  
  * */
+.crew-4 {
+  padding-top: 108px;
+  padding-bottom: 108px;
+}
 .crew-4 h3 {
   margin: 0 0 73px;
   font-size: 30px;

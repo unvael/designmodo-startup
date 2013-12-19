@@ -2195,6 +2195,10 @@ body {
   display: inline-block;
   margin: 0 10px;
 }
+.mcontent .contacts-1 {
+  padding-top: 108px;
+  padding-bottom: 110px;
+}
 .mcontent .contacts-1 h3 {
   font-size: 30px;
   margin: 0 0 60px;
@@ -2315,6 +2319,10 @@ body {
   .mcontent .contacts-1 .phone big {
     font-size: 40px;
   }
+}
+.mcontent .contacts-2 {
+  padding-top: 108px;
+  padding-bottom: 110px;
 }
 .mcontent .contacts-2 h3 {
   font-size: 30px;
@@ -2437,6 +2445,10 @@ body {
     margin-bottom: 0px;
   }
 }
+.mcontent .contacts-3 {
+  padding-top: 108px;
+  padding-bottom: 110px -60px;
+}
 .mcontent .contacts-3 h3 {
   font-size: 30px;
   margin: 0 0 15px;
@@ -2543,6 +2555,8 @@ body {
   }
 }
 .mcontent .contacts-4 {
+  margin-top: 110px;
+  margin-bottom: 110px;
   background: #34495e url('../../../common-files/img/map.png') 50% 50% no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -2632,6 +2646,10 @@ body {
   .mcontent .contacts-4 .links a {
     font-size: 26px;
   }
+}
+.mcontent .contacts-5 {
+  padding-top: 110px;
+  padding-bottom: 100px;
 }
 .mcontent .contacts-5 h6 {
   font-size: 18px;
@@ -13810,6 +13828,10 @@ body {
   right: -5px;
   top: 0;
 }
+.mcontent .price-1 {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
 .mcontent .price-1 .plan {
   position: relative;
   -webkit-box-sizing: border-box;
@@ -13873,6 +13895,10 @@ body {
   .mcontent .price-1 .plan:first-child {
     margin-top: 0;
   }
+}
+.mcontent .price-2 {
+  padding-top: 110px;
+  padding-bottom: 110px;
 }
 .mcontent .price-2 .plans {
   display: table;
@@ -14052,6 +14078,10 @@ body {
     right: 0;
   }
 }
+.mcontent .price-3 {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
 .mcontent .price-3 .plans {
   *zoom: 1;
 }
@@ -14127,6 +14157,10 @@ body {
     padding: 50px 0;
     margin: 50px 0;
   }
+}
+.mcontent .price-4 {
+  padding-top: 110px;
+  padding-bottom: 110px;
 }
 .mcontent .price-4 .plan {
   position: relative;
@@ -14245,6 +14279,10 @@ body {
   .mcontent .price-4 .description-detail > * > * + * {
     margin-top: 50px;
   }
+}
+.mcontent .price-5 {
+  padding-top: 110px;
+  padding-bottom: 90px;
 }
 .mcontent .price-5 .plans {
   display: table;
@@ -14493,6 +14531,10 @@ body {
     display: block;
     vertical-align: baseline;
   }
+}
+.mcontent .projects-1 {
+  padding-top: 108px;
+  padding-bottom: 110px;
 }
 .mcontent .projects-1 .title {
   margin: 0 0 50px;
@@ -14888,6 +14930,10 @@ body {
   font-size: 95px;
   line-height: 95px;
 }
+.mcontent .projects-3 {
+  padding-top: 108px;
+  padding-bottom: 108px;
+}
 .mcontent .projects-3 h3 {
   margin: 0 0 80px;
   font-size: 30px;
@@ -15017,6 +15063,10 @@ body {
     margin-top: 85px;
   }
 }
+.mcontent .projects-4 {
+  padding-top: 108px;
+  padding-bottom: 108px;
+}
 .mcontent .projects-4 h3 {
   margin: 0 0 60px;
   font-size: 30px;
@@ -15121,6 +15171,10 @@ body {
   .mcontent .projects-4 .projects .project-wrapper + .project-wrapper {
     margin-top: 80px;
   }
+}
+.mcontent .crew-1 {
+  padding-top: 108px;
+  padding-bottom: 110px;
 }
 .mcontent .crew-1 h3 {
   margin: 0 0 73px;
@@ -15246,6 +15300,10 @@ body {
   .mcontent .crew-1 .members .member-wrapper + .member-wrapper {
     margin-top: 80px;
   }
+}
+.mcontent .crew-2 {
+  padding-top: 108px;
+  padding-bottom: 110px -23px;
 }
 .mcontent .crew-2 h3 {
   margin: 0 0 73px;
@@ -15397,6 +15455,10 @@ body {
     padding-top: 78px;
     border-top: 2px solid #ebedee;
   }
+}
+.mcontent .crew-3 {
+  padding-top: 108px;
+  padding-bottom: 108px;
 }
 .mcontent .crew-3 h3 {
   margin: 0 0 20px;
@@ -15571,6 +15633,10 @@ body {
   .mcontent .crew-3 .social-btns {
     display: block;
   }
+}
+.mcontent .crew-4 {
+  padding-top: 108px;
+  padding-bottom: 108px;
 }
 .mcontent .crew-4 h3 {
   margin: 0 0 73px;

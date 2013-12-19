@@ -1148,6 +1148,10 @@ section * {
 /**
  * Price 1 stylesheet  
  * */
+.price-1 {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
 .price-1 .plan {
   position: relative;
   -webkit-box-sizing: border-box;
@@ -1238,6 +1242,10 @@ body > section.v-center > div {
     -o-background-size: auto 200%;
     background-size: auto 200%;
   }
+}
+.price-1 {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .price-1 > div {
   padding-top: 198px;

@@ -812,6 +812,10 @@ body section[class*=content-] {
 /**
  * Project 1 stylesheet  
  * */
+.projects-1 {
+  padding-top: 108px;
+  padding-bottom: 110px;
+}
 .projects-1 .title {
   margin: 0 0 50px;
   line-height: 1.5;
@@ -1212,6 +1216,10 @@ body section[class*=content-] {
 /**
  * Project 3 stylesheet  
  * */
+.projects-3 {
+  padding-top: 108px;
+  padding-bottom: 108px;
+}
 .projects-3 h3 {
   margin: 0 0 80px;
   font-size: 30px;
@@ -1344,6 +1352,10 @@ body section[class*=content-] {
 /**
  * Project 4 stylesheet  
  * */
+.projects-4 {
+  padding-top: 108px;
+  padding-bottom: 108px;
+}
 .projects-4 h3 {
   margin: 0 0 60px;
   font-size: 30px;

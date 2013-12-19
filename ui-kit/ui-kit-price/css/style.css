@@ -786,6 +786,10 @@ body section[class*=content-] {
 /**
  * Price 1 stylesheet  
  * */
+.price-1 {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
 .price-1 .plan {
   position: relative;
   -webkit-box-sizing: border-box;
@@ -853,6 +857,10 @@ body section[class*=content-] {
 /**
  * Price 2 stylesheet  
  * */
+.price-2 {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
 .price-2 .plans {
   display: table;
   -webkit-box-sizing: border-box;
@@ -1034,6 +1042,10 @@ body section[class*=content-] {
 /**
  * Price 3 stylesheet  
  * */
+.price-3 {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
 .price-3 .plans {
   *zoom: 1;
 }
@@ -1113,6 +1125,10 @@ body section[class*=content-] {
 /**
  * Price 4 stylesheet  
  * */
+.price-4 {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
 .price-4 .plan {
   position: relative;
   -webkit-box-sizing: border-box;
@@ -1234,6 +1250,10 @@ body section[class*=content-] {
 /**
  * Price 5 stylesheet  
  * */
+.price-5 {
+  padding-top: 110px;
+  padding-bottom: 90px;
+}
 .price-5 .plans {
   display: table;
   -webkit-box-sizing: border-box;

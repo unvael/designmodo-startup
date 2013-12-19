@@ -1643,6 +1643,10 @@ section * {
 /**
  * Price 5 stylesheet  
  * */
+.price-5 {
+  padding-top: 110px;
+  padding-bottom: 90px;
+}
 .price-5 .plans {
   display: table;
   -webkit-box-sizing: border-box;
@@ -2053,5 +2057,7 @@ body > section {
 }
 .price-5 {
   margin-top: 45px;
+  padding-top: 0;
+  padding-bottom: 0;
   color: #95a5a6;
 }

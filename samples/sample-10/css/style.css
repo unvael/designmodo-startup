@@ -1149,6 +1149,10 @@ section * {
 /**
  * Project 3 stylesheet  
  * */
+.projects-3 {
+  padding-top: 108px;
+  padding-bottom: 108px;
+}
 .projects-3 h3 {
   margin: 0 0 80px;
   font-size: 30px;
@@ -1744,4 +1748,8 @@ body > section {
 .logos > .container > div {
   display: table-cell;
   text-align: center;
+}
+.projects-3 {
+  padding-top: 110px;
+  padding-bottom: 130px;
 }

@@ -27,8 +27,7 @@
   border-bottom-color: #34495e !important;
   border-top-color: #34495e !important;
 }
-/*only fo flat-ui free*/
-body {
+/*only fo flat-ui free*/body {
   color: #34495e;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -117,21 +116,27 @@ h6 {
 p {
   font-size: 18.004px;
   /* 18px */
+
   line-height: 1.722169;
   /* 31px */
+
 }
 .lead {
   font-size: 28px;
   /* 28px */
+
   line-height: 1.4642745000000001;
   /* 41px */
+
   font-weight: 300;
 }
 small {
   font-size: 84%;
   /* 15px */
+
   line-height: 2.050846;
   /* 31px */
+
 }
 blockquote {
   position: relative;
@@ -447,8 +452,9 @@ button:active {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 100%;
-    width: 72%;
+    left: auto !important;
+    right: -100% !important;
+    width: 230px !important;
     padding: 25px 0;
     border-radius: 0;
     float: none;
@@ -534,10 +540,10 @@ button:active {
     transition: left 0.4s;
   }
   .nav-visible body > * {
-    left: -72%;
+    right: 230px !important;
   }
   .nav-visible .navbar .nav-collapse {
-    left: 28%!important;
+    right: 0 !important;
     visibility: visible;
   }
 }

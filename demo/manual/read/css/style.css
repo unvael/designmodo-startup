@@ -117,21 +117,27 @@ h6 {
 p {
   font-size: 18.004px;
   /* 18px */
+
   line-height: 1.722169;
   /* 31px */
+
 }
 .lead {
   font-size: 28px;
   /* 28px */
+
   line-height: 1.4642745000000001;
   /* 41px */
+
   font-weight: 300;
 }
 small {
   font-size: 84%;
   /* 15px */
+
   line-height: 2.050846;
   /* 31px */
+
 }
 blockquote {
   position: relative;
@@ -447,8 +453,9 @@ button:active {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 100%;
-    width: 72%;
+    left: auto !important;
+    right: -100% !important;
+    width: 230px !important;
     padding: 25px 0;
     border-radius: 0;
     float: none;
@@ -534,10 +541,10 @@ button:active {
     transition: left 0.4s;
   }
   .nav-visible body > * {
-    left: -72%;
+    right: 230px !important;
   }
   .nav-visible .navbar .nav-collapse {
-    left: 28%!important;
+    right: 0 !important;
     visibility: visible;
   }
 }
@@ -642,40 +649,54 @@ body {
 .mcontent {
   /*only fo flat-ui free*/
   /* end only for flat-ui free*/
+
   /**
  * Content 7 stylesheet  
  * */
+
   /**
  * Content 8 stylesheet  
  * */
+
   /**
  * Content 11 stylesheet  
  * */
+
   @import url(http://fonts.googleapis.com/css?family=Montserrat);
+
   /**
  * Content 13 stylesheet  
  * */
+
   /*only fo flat-ui free*/
   /* end only for flat-ui free*/
+
   /**
  * Header 10 stylesheet  
  * */
+
   /**
  * Header 11 stylesheet  
  * */
+
   /*only fo flat-ui free*/
   /* end only for flat-ui free*/
+
   /**
  * Price 1 stylesheet  
  * */
+
   /*only fo flat-ui free*/
   /* end only for flat-ui free*/
+
   /**
  * Footer 2 stylesheet  
  * */
+
   /**
  * Footer 3 stylesheet  
  * */
+
 }
 .mcontent > section,
 .mcontent header,
@@ -2535,14 +2556,19 @@ body {
 }
 .manual-pages {
   /* prism default theme */
+
   /**
  * prism.js default theme for JavaScript, CSS and HTML
  * Based on dabblet (http://dabblet.com)
  * @author Lea Verou
  */
+
   /* Code blocks */
+
   /* Inline code */
+
   /*end prism*/
+
 }
 .manual-pages code[class*="language-"],
 .manual-pages pre[class*="language-"] {
@@ -2655,6 +2681,7 @@ body {
   padding: inherit 0;
   margin-top: 1em;
   /* Same as .prism’s padding-top */
+
   background: rgba(153, 122, 102, 0.08);
   background: -moz-linear-gradient(left, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
   background: -webkit-linear-gradient(left, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
@@ -2702,6 +2729,7 @@ body {
   left: -3.8em;
   width: 3em;
   /* works for line-numbers below 1000 lines */
+
   letter-spacing: -1px;
   border-right: 1px solid #999;
   -webkit-user-select: none;
@@ -2947,6 +2975,7 @@ body {
           height: 10px;
     
     }*/
+
 }
 .faq .question.opened {
   /*
@@ -2954,6 +2983,7 @@ body {
               content: '-';
               .line-height(5px);
             }*/
+
 }
 .faq .question.opened .answer {
   display: block;
@@ -3326,6 +3356,9 @@ a.active {
 .read-man:hover {
   background-color: #23292f;
 }
+@media (max-width: 768px) {
+  
+}
 .mask {
   display: none;
   opacity: 0;
@@ -3509,17 +3542,25 @@ a.active {
   opacity: 1;
   filter: alpha(opacity=100);
   /* prism twilight theme */
+
   /**
  * prism.js Twilight theme
  * Based (more or less) on the Twilight theme originally of Textmate fame.
  * @author Remy Bach
  */
+
   /* Code blocks */
+
   /* Text Selection colour */
+
   /* Inline code */
+
   /* Markup */
+
   /* Make the tokens sit above the line highlight so the colours don't look faded. */
+
   /*end prism*/
+
   font-size: 14px;
   font-weight: normal;
   color: #7f8c8d;
@@ -3563,11 +3604,13 @@ a.active {
 .mcontent .manual > div :not(pre) > code[class*="language-"] {
   background: #141414;
   /* #141414 */
+
 }
 .mcontent .manual > div pre[class*="language-"] {
   border-radius: .5em;
   border: 0.3em solid #545454;
   /* #282A2B */
+
   box-shadow: 1px 1px .5em black inset;
   margin: .5em 0;
   overflow: auto;
@@ -3575,13 +3618,17 @@ a.active {
 }
 .mcontent .manual > div pre[class*="language-"]::selection {
   /* Safari */
+
   background: #27292a;
   /* #282A2B */
+
 }
 .mcontent .manual > div pre[class*="language-"]::selection {
   /* Firefox */
+
   background: #27292a;
   /* #282A2B */
+
 }
 .mcontent .manual > div pre[class*="language-"]::-moz-selection,
 .mcontent .manual > div pre[class*="language-"] ::-moz-selection,
@@ -3590,6 +3637,7 @@ a.active {
   text-shadow: none;
   background: rgba(237, 237, 237, 0.15);
   /* #EDEDED */
+
 }
 .mcontent .manual > div pre[class*="language-"]::selection,
 .mcontent .manual > div pre[class*="language-"] ::selection,
@@ -3598,11 +3646,13 @@ a.active {
   text-shadow: none;
   background: rgba(237, 237, 237, 0.15);
   /* #EDEDED */
+
 }
 .mcontent .manual > div :not(pre) > code[class*="language-"] {
   border-radius: .3em;
   border: 0.13em solid #545454;
   /* #545454 */
+
   box-shadow: 1px 1px 0.3em -0.1em #000000 inset;
   padding: .15em .2em .05em;
 }
@@ -3612,6 +3662,7 @@ a.active {
 .mcontent .manual > div .token.cdata {
   color: #787878;
   /* #777777 */
+
 }
 .mcontent .manual > div .token.punctuation {
   opacity: .7;
@@ -3624,6 +3675,7 @@ a.active {
 .mcontent .manual > div .token.number {
   color: #cf694a;
   /* #CF6A4C */
+
 }
 .mcontent .manual > div .token.keyword,
 .mcontent .manual > div .token.property,
@@ -3633,6 +3685,7 @@ a.active {
 .mcontent .manual > div .token.builtin {
   color: #f9ee9a;
   /* #F9EE98 */
+
 }
 .mcontent .manual > div .token.attr-name,
 .mcontent .manual > div .token.attr-value,
@@ -3645,15 +3698,18 @@ a.active {
 .mcontent .manual > div .token.variable {
   color: #919e6b;
   /* #8F9D6A */
+
 }
 .mcontent .manual > div .token.atrule {
   color: #7386a5;
   /* #7587A6 */
+
 }
 .mcontent .manual > div .token.regex,
 .mcontent .manual > div .token.important {
   color: #e9c163;
   /* #E9C062 */
+
 }
 .mcontent .manual > div .token.important {
   font-weight: 500;
@@ -3670,6 +3726,7 @@ a.active {
 .mcontent .manual > div .language-markup .token.punctuation {
   color: #ad895c;
   /* #AC885B */
+
 }
 .mcontent .manual > div .token {
   position: relative;
@@ -3678,22 +3735,30 @@ a.active {
 .mcontent .manual > div .line-highlight {
   background: -moz-linear-gradient(left, rgba(84, 84, 84, 0.1) 70%, rgba(84, 84, 84, 0));
   /* #545454 */
+
   background: -o-linear-gradient(left, rgba(84, 84, 84, 0.1) 70%, rgba(84, 84, 84, 0));
   /* #545454 */
+
   background: -webkit-linear-gradient(left, rgba(84, 84, 84, 0.1) 70%, rgba(84, 84, 84, 0));
   /* #545454 */
+
   background: rgba(84, 84, 84, 0.25);
   /* #545454 */
+
   background: linear-gradient(left, rgba(84, 84, 84, 0.1) 70%, rgba(84, 84, 84, 0));
   /* #545454 */
+
   border-bottom: 1px dashed #545454;
   /* #545454 */
+
   border-top: 1px dashed #545454;
   /* #545454 */
+
   left: 0;
   line-height: inherit;
   margin-top: 0.75em;
   /* Same as .prism’s padding-top */
+
   padding: inherit 0;
   pointer-events: none;
   position: absolute;
@@ -3705,10 +3770,12 @@ a.active {
 .mcontent .manual > div .line-highlight[data-end]:after {
   background-color: #8794a6;
   /* #8794A6 */
+
   border-radius: 999px;
   box-shadow: 0 1px white;
   color: #f5f2f0;
   /* #F5F2F0 */
+
   content: attr(data-start);
   font: bold 65%/1.5 sans-serif;
   left: .6em;
@@ -3736,6 +3803,7 @@ a.active {
   padding: inherit 0;
   margin-top: 1em;
   /* Same as .prism’s padding-top */
+
   background: rgba(153, 122, 102, 0.08);
   background: -moz-linear-gradient(left, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
   background: -webkit-linear-gradient(left, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
@@ -3783,6 +3851,7 @@ a.active {
   left: -3.8em;
   width: 3em;
   /* works for line-numbers below 1000 lines */
+
   letter-spacing: -1px;
   border-right: 1px solid #999;
   -webkit-user-select: none;

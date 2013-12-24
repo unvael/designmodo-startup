@@ -1151,8 +1151,8 @@ section * {
  * Project 3 stylesheet  
  * */
 .projects-3 {
-  padding-top: 108px;
-  padding-bottom: 108px;
+  padding-top: 110px;
+  padding-bottom: 110px;
 }
 .projects-3 h3 {
   margin: 0 0 80px;
@@ -1289,7 +1289,7 @@ section * {
  * */
 .footer-7 {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 110px;
   border-top: 1px solid #e2e4e6;
   color: #bdc3c7;
   line-height: 25px;

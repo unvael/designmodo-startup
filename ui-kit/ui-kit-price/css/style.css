@@ -774,11 +774,6 @@ body .delimiter-big {
 body .delimiter {
   margin-top: 30px;
 }
-body section.content-30,
-body section.content-33 {
-  padding-bottom: 0;
-  padding-top: 0;
-}
 body section[class*=content-] {
   margin-top: 0;
   margin-bottom: 0;

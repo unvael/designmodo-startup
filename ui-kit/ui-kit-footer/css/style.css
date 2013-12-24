@@ -747,11 +747,6 @@ body .delimiter-big {
 body .delimiter {
   margin-top: 30px;
 }
-body section.content-30,
-body section.content-33 {
-  padding-bottom: 0;
-  padding-top: 0;
-}
 body section[class*=content-] {
   margin-top: 0;
   margin-bottom: 0;
@@ -1194,6 +1189,8 @@ body section[class*=content-] {
  * Footer 6 stylesheet  
  * */
 .footer-6 {
+  padding-top: 110px;
+  padding-bottom: 110px;
   color: #7f8c8d;
 }
 .footer-6 a {
@@ -1386,7 +1383,7 @@ body section[class*=content-] {
  * */
 .footer-7 {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 110px;
   border-top: 1px solid #e2e4e6;
   color: #bdc3c7;
   line-height: 25px;
@@ -1571,6 +1568,8 @@ body section[class*=content-] {
  * Footer 8 stylesheet  
  * */
 .footer-8 {
+  padding-top: 110px;
+  padding-bottom: 110px;
   text-align: center;
 }
 .footer-8 a {
@@ -1634,8 +1633,8 @@ body section[class*=content-] {
   min-height: 300px;
 }
 .footer-9 {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 110px;
+  padding-bottom: 110px;
 }
 .footer-9 h6 {
   font-size: 18px;
@@ -1876,7 +1875,7 @@ body section[class*=content-] {
  * Footer 11 stylesheet  
  * */
 .footer-11 {
-  padding-top: 40px;
+  padding-top: 110px;
   text-align: center;
 }
 .footer-11 > .container {
@@ -2040,7 +2039,7 @@ body section[class*=content-] {
  * */
 .footer-12 {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 110px;
   border-top: 2px solid #ebedee;
   text-align: center;
   font-size: 84.3px;
@@ -2285,7 +2284,7 @@ body section[class*=content-] {
     margin-top: 0;
   }
   .footer-14 .social-btns {
-    margin: 0 0 30px ;
+    margin: 0 0 30px;
     position: relative;
     display: block;
     float: none;
@@ -2354,4 +2353,7 @@ body section[class*=content-] {
   .footer-15 .btns .btn + .btn {
     margin-top: 9px;
   }
+}
+body .delimiter-big {
+  margin-top: 110px;
 }

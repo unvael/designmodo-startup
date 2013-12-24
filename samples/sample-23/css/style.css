@@ -839,7 +839,6 @@ section * {
   padding-top: 130px;
   padding-bottom: 130px;
   position: relative;
-  padding-bottom: 0;
 }
 .content-9 h3 {
   font-size: 30px;
@@ -878,7 +877,7 @@ section * {
  * Content 14 stylesheet  
  * */
 .content-14 {
-  padding-top: 128px;
+  padding-top: 125px;
   padding-bottom: 130px;
   position: relative;
 }
@@ -1216,7 +1215,7 @@ section * {
  * Copntact 1 stylesheet  
  * */
 .contacts-1 {
-  padding-top: 108px;
+  padding-top: 110px;
   padding-bottom: 110px;
 }
 .contacts-1 h3 {
@@ -1346,7 +1345,7 @@ section * {
  * */
 .footer-12 {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 110px;
   border-top: 2px solid #ebedee;
   text-align: center;
   font-size: 84.3px;

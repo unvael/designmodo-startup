@@ -800,11 +800,6 @@ body .delimiter-big {
 body .delimiter {
   margin-top: 30px;
 }
-body section.content-30,
-body section.content-33 {
-  padding-bottom: 0;
-  padding-top: 0;
-}
 body section[class*=content-] {
   margin-top: 0;
   margin-bottom: 0;
@@ -813,7 +808,7 @@ body section[class*=content-] {
  * Project 1 stylesheet  
  * */
 .projects-1 {
-  padding-top: 108px;
+  padding-top: 110px;
   padding-bottom: 110px;
 }
 .projects-1 .title {
@@ -1217,8 +1212,8 @@ body section[class*=content-] {
  * Project 3 stylesheet  
  * */
 .projects-3 {
-  padding-top: 108px;
-  padding-bottom: 108px;
+  padding-top: 110px;
+  padding-bottom: 110px;
 }
 .projects-3 h3 {
   margin: 0 0 80px;
@@ -1353,8 +1348,8 @@ body section[class*=content-] {
  * Project 4 stylesheet  
  * */
 .projects-4 {
-  padding-top: 108px;
-  padding-bottom: 108px;
+  padding-top: 110px;
+  padding-bottom: 110px;
 }
 .projects-4 h3 {
   margin: 0 0 60px;

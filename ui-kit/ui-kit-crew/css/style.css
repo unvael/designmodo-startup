@@ -747,11 +747,6 @@ body .delimiter-big {
 body .delimiter {
   margin-top: 30px;
 }
-body section.content-30,
-body section.content-33 {
-  padding-bottom: 0;
-  padding-top: 0;
-}
 body section[class*=content-] {
   margin-top: 0;
   margin-bottom: 0;
@@ -760,7 +755,7 @@ body section[class*=content-] {
  * Crew 1 stylesheet  
  * */
 .crew-1 {
-  padding-top: 108px;
+  padding-top: 110px;
   padding-bottom: 110px;
 }
 .crew-1 h3 {
@@ -892,8 +887,8 @@ body section[class*=content-] {
  * Crew 2 stylesheet  
  * */
 .crew-2 {
-  padding-top: 108px;
-  padding-bottom: 110px -23px;
+  padding-top: 110px;
+  padding-bottom: 88px;
 }
 .crew-2 h3 {
   margin: 0 0 73px;
@@ -1050,8 +1045,8 @@ body section[class*=content-] {
  * Crew 3 stylesheet  
  * */
 .crew-3 {
-  padding-top: 108px;
-  padding-bottom: 108px;
+  padding-top: 110px;
+  padding-bottom: 110px;
 }
 .crew-3 h3 {
   margin: 0 0 20px;
@@ -1231,8 +1226,8 @@ body section[class*=content-] {
  * Crew 4 stylesheet  
  * */
 .crew-4 {
-  padding-top: 108px;
-  padding-bottom: 108px;
+  padding-top: 110px;
+  padding-bottom: 110px;
 }
 .crew-4 h3 {
   margin: 0 0 73px;

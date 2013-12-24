@@ -1113,7 +1113,7 @@ section * {
  * Content 1 stylesheet  
  * */
 .content-1 {
-  padding-top: 128px;
+  padding-top: 130px;
   padding-bottom: 125px;
   position: relative;
 }
@@ -1497,6 +1497,8 @@ section * {
  * Footer 8 stylesheet  
  * */
 .footer-8 {
+  padding-top: 110px;
+  padding-bottom: 110px;
   text-align: center;
 }
 .footer-8 a {

@@ -1095,8 +1095,6 @@ section * {
   padding-top: 50px;
   margin-top: 50px;
   min-height: 100px;
-  /* img height */
-
   border-top: 2px solid #ecf0f1;
 }
 .content-10 .features .box.first,
@@ -1131,7 +1129,7 @@ section * {
  * Footer 11 stylesheet  
  * */
 .footer-11 {
-  padding-top: 40px;
+  padding-top: 110px;
   text-align: center;
 }
 .footer-11 > .container {

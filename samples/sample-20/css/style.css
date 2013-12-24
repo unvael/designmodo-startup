@@ -704,11 +704,6 @@ section * {
 }
 .header-22 .navbar .nav > li {
   margin-left: 40px;
-  /*
-            &.active > a {
-                         .a-color(mix(@silver, black, 80%), mix(@silver, black, 80%));
-                       }*/
-
 }
 .header-22 .navbar .nav > li:first-child {
   margin-left: 0;
@@ -922,7 +917,7 @@ section * {
  * Content 2 stylesheet  
  * */
 .content-2 {
-  padding-top: 128px;
+  padding-top: 130px;
   padding-bottom: 130px;
   position: relative;
 }
@@ -991,7 +986,7 @@ section * {
  * Content 7 stylesheet  
  * */
 .content-7 {
-  padding-top: 128px;
+  padding-top: 125px;
   padding-bottom: 130px;
   position: relative;
   text-align: center;

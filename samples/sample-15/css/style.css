@@ -1078,7 +1078,7 @@ section * {
 .content-27 .btns > *:first-child {
   margin-left: 0;
 }
-.content-27 .btns .btn [class*="fui-"] {
+.content-27 .btns .btn[class*="fui-"] {
   float: left;
   font-size: 26px;
   font-weight: normal;
@@ -1182,7 +1182,7 @@ section * {
  * */
 .footer-12 {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 110px;
   border-top: 2px solid #ebedee;
   text-align: center;
   font-size: 84.3px;

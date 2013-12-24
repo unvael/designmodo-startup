@@ -748,11 +748,6 @@ body .delimiter-big {
 body .delimiter {
   margin-top: 30px;
 }
-body section.content-30,
-body section.content-33 {
-  padding-bottom: 0;
-  padding-top: 0;
-}
 body section[class*=content-] {
   margin-top: 0;
   margin-bottom: 0;
@@ -761,7 +756,7 @@ body section[class*=content-] {
  * Content 1 stylesheet  
  * */
 .content-1 {
-  padding-top: 128px;
+  padding-top: 130px;
   padding-bottom: 125px;
   position: relative;
 }
@@ -922,7 +917,7 @@ body section[class*=content-] {
  * Content 2 stylesheet  
  * */
 .content-2 {
-  padding-top: 128px;
+  padding-top: 130px;
   padding-bottom: 130px;
   position: relative;
 }
@@ -991,8 +986,8 @@ body section[class*=content-] {
  * Content 3 stylesheet  
  * */
 .content-3 {
-  padding-top: 128px;
-  padding-bottom: 128px;
+  padding-top: 130px;
+  padding-bottom: 130px;
   position: relative;
 }
 .content-3 h3 {
@@ -1112,7 +1107,7 @@ body section[class*=content-] {
  * Content 4 stylesheet  
  * */
 .content-4 {
-  padding-top: 128px;
+  padding-top: 130px;
   padding-bottom: 120px;
   position: relative;
 }
@@ -1254,8 +1249,8 @@ body section[class*=content-] {
  * */
 .content-6 {
   position: relative;
-  padding-top: 200px;
-  padding-bottom: 80px;
+  padding-top: 130px;
+  padding-bottom: 120px;
 }
 @media (max-width: 768px) {
   .content-6 {
@@ -1369,7 +1364,7 @@ body section[class*=content-] {
  * Content 7 stylesheet  
  * */
 .content-7 {
-  padding-top: 128px;
+  padding-top: 125px;
   padding-bottom: 130px;
   position: relative;
   text-align: center;
@@ -1604,7 +1599,6 @@ body section[class*=content-] {
   padding-top: 130px;
   padding-bottom: 130px;
   position: relative;
-  padding-bottom: 0;
 }
 .content-9 h3 {
   font-size: 30px;
@@ -1719,8 +1713,6 @@ body section[class*=content-] {
   padding-top: 50px;
   margin-top: 50px;
   min-height: 100px;
-  /* img height */
-
   border-top: 2px solid #ecf0f1;
 }
 .content-10 .features .box.first,
@@ -1993,7 +1985,7 @@ body section[class*=content-] {
  * Content 14 stylesheet  
  * */
 .content-14 {
-  padding-top: 128px;
+  padding-top: 125px;
   padding-bottom: 130px;
   position: relative;
 }
@@ -2286,7 +2278,7 @@ body section[class*=content-] {
 .content-16 {
   position: relative;
   padding-top: 130px;
-  padding-bottom: 130px;
+  padding-bottom: 180px;
 }
 .content-16.v-center,
 .content-16 .v-center {
@@ -2370,7 +2362,7 @@ body section[class*=content-] {
   background: #ecf0f1;
   position: absolute;
   left: 50%;
-  bottom: 80px;
+  bottom: 130px;
   margin-left: -26.5px;
 }
 .content-16 .control-btn:hover,
@@ -2387,8 +2379,8 @@ body section[class*=content-] {
 .content-17 {
   position: relative;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 @media (max-width: 768px) {
   .content-17 {
@@ -2574,8 +2566,8 @@ body section[class*=content-] {
  * */
 .content-19 {
   position: relative;
-  padding-top: 70px;
-  padding-bottom: 120px;
+  padding-top: 130px;
+  padding-bottom: 130px;
   border-bottom: 2px solid #ebedee;
 }
 .content-19 .span7 .quote {
@@ -3750,7 +3742,7 @@ body section[class*=content-] {
 .content-27 .btns > *:first-child {
   margin-left: 0;
 }
-.content-27 .btns .btn [class*="fui-"] {
+.content-27 .btns .btn[class*="fui-"] {
   float: left;
   font-size: 26px;
   font-weight: normal;
@@ -4305,7 +4297,7 @@ body section[class*=content-] {
 .content-33 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding-top: 125px;
-  padding-bottom: 100px;
+  padding-bottom: 110px;
 }
 .content-33 .lead {
   font-size: 30px;
@@ -4621,7 +4613,7 @@ body section[class*=content-] {
 }
 .content-37 {
   border-top: 0;
-  padding-top: 128px;
+  padding-top: 130px;
   padding-bottom: 130px;
 }
 @media (max-width: 767px) {

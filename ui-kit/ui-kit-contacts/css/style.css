@@ -747,11 +747,6 @@ body .delimiter-big {
 body .delimiter {
   margin-top: 30px;
 }
-body section.content-30,
-body section.content-33 {
-  padding-bottom: 0;
-  padding-top: 0;
-}
 body section[class*=content-] {
   margin-top: 0;
   margin-bottom: 0;
@@ -760,7 +755,7 @@ body section[class*=content-] {
  * Copntact 1 stylesheet  
  * */
 .contacts-1 {
-  padding-top: 108px;
+  padding-top: 110px;
   padding-bottom: 110px;
 }
 .contacts-1 h3 {
@@ -888,7 +883,7 @@ body section[class*=content-] {
  * Copntact 2 stylesheet  
  * */
 .contacts-2 {
-  padding-top: 108px;
+  padding-top: 110px;
   padding-bottom: 110px;
 }
 .contacts-2 h3 {
@@ -1016,8 +1011,8 @@ body section[class*=content-] {
  * Copntact 3 stylesheet  
  * */
 .contacts-3 {
-  padding-top: 108px;
-  padding-bottom: 110px -60px;
+  padding-top: 110px;
+  padding-bottom: 50px;
 }
 .contacts-3 h3 {
   font-size: 30px;
@@ -1128,8 +1123,6 @@ body section[class*=content-] {
  * Copntact 4 stylesheet  
  * */
 .contacts-4 {
-  margin-top: 110px;
-  margin-bottom: 110px;
   background: #34495e url('../../../common-files/img/map.png') 50% 50% no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1224,7 +1217,6 @@ body section[class*=content-] {
  * Copntact 5 stylesheet  
  * */
 .contacts-5 {
-  padding-top: 110px;
   padding-bottom: 100px;
 }
 .contacts-5 h6 {
@@ -1260,4 +1252,7 @@ body section[class*=content-] {
   .contacts-5 .box.box-first {
     margin-top: 0;
   }
+}
+body .delimiter-big {
+  margin-top: 110px;
 }

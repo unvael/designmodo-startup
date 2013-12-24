@@ -981,8 +981,8 @@ section * {
  * */
 .content-6 {
   position: relative;
-  padding-top: 200px;
-  padding-bottom: 80px;
+  padding-top: 130px;
+  padding-bottom: 120px;
 }
 @media (max-width: 768px) {
   .content-6 {
@@ -1149,8 +1149,8 @@ section * {
 .content-17 {
   position: relative;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 @media (max-width: 768px) {
   .content-17 {
@@ -1311,8 +1311,8 @@ section * {
   min-height: 300px;
 }
 .footer-9 {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 110px;
+  padding-bottom: 110px;
 }
 .footer-9 h6 {
   font-size: 18px;

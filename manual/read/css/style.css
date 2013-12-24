@@ -1266,14 +1266,12 @@ body {
 .mcontent body .delimiter {
   margin-top: 30px;
 }
-.mcontent body section.content-30,
-.mcontent body section.content-33 {
-  padding-bottom: 0;
-  padding-top: 0;
-}
 .mcontent body section[class*=content-] {
   margin-top: 0;
   margin-bottom: 0;
+}
+.mcontent .blog-1 {
+  padding-bottom: 130px;
 }
 .mcontent .blog-1 .box-icon {
   margin: 0 auto 35px;
@@ -1658,6 +1656,10 @@ body {
     margin-bottom: 45px;
   }
 }
+.mcontent .blog-3 {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
 .mcontent .blog-3 p {
   margin: 0;
 }
@@ -1769,6 +1771,10 @@ body {
 .mcontent .blog-3 .links a:focus,
 .mcontent .blog-3 .links a.active {
   color: #15967d;
+}
+.mcontent .blog-4 {
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 .mcontent .blog-4 p {
   margin: 0;
@@ -1898,6 +1904,10 @@ body {
   .mcontent .blog-4 .related-articles {
     margin-top: 60px;
   }
+}
+.mcontent .blog-5 {
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 .mcontent .blog-5 .box-icon {
   margin: 0 auto 0;
@@ -2197,7 +2207,7 @@ body {
   margin: 0 10px;
 }
 .mcontent .contacts-1 {
-  padding-top: 108px;
+  padding-top: 110px;
   padding-bottom: 110px;
 }
 .mcontent .contacts-1 h3 {
@@ -2322,7 +2332,7 @@ body {
   }
 }
 .mcontent .contacts-2 {
-  padding-top: 108px;
+  padding-top: 110px;
   padding-bottom: 110px;
 }
 .mcontent .contacts-2 h3 {
@@ -2447,8 +2457,8 @@ body {
   }
 }
 .mcontent .contacts-3 {
-  padding-top: 108px;
-  padding-bottom: 110px -60px;
+  padding-top: 110px;
+  padding-bottom: 50px;
 }
 .mcontent .contacts-3 h3 {
   font-size: 30px;
@@ -2556,8 +2566,6 @@ body {
   }
 }
 .mcontent .contacts-4 {
-  margin-top: 110px;
-  margin-bottom: 110px;
   background: #34495e url('../../../common-files/img/map.png') 50% 50% no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -2649,7 +2657,6 @@ body {
   }
 }
 .mcontent .contacts-5 {
-  padding-top: 110px;
   padding-bottom: 100px;
 }
 .mcontent .contacts-5 h6 {
@@ -2686,8 +2693,11 @@ body {
     margin-top: 0;
   }
 }
+.mcontent body .delimiter-big {
+  margin-top: 110px;
+}
 .mcontent .content-1 {
-  padding-top: 128px;
+  padding-top: 130px;
   padding-bottom: 125px;
   position: relative;
 }
@@ -2845,7 +2855,7 @@ body {
   display: block;
 }
 .mcontent .content-2 {
-  padding-top: 128px;
+  padding-top: 130px;
   padding-bottom: 130px;
   position: relative;
 }
@@ -2911,8 +2921,8 @@ body {
   border-radius: 3px;
 }
 .mcontent .content-3 {
-  padding-top: 128px;
-  padding-bottom: 128px;
+  padding-top: 130px;
+  padding-bottom: 130px;
   position: relative;
 }
 .mcontent .content-3 h3 {
@@ -3029,7 +3039,7 @@ body {
   text-align: left;
 }
 .mcontent .content-4 {
-  padding-top: 128px;
+  padding-top: 130px;
   padding-bottom: 120px;
   position: relative;
 }
@@ -3165,8 +3175,8 @@ body {
 }
 .mcontent .content-6 {
   position: relative;
-  padding-top: 200px;
-  padding-bottom: 80px;
+  padding-top: 130px;
+  padding-bottom: 120px;
 }
 @media (max-width: 768px) {
   .mcontent .content-6 {
@@ -3277,7 +3287,7 @@ body {
   text-transform: none;
 }
 .mcontent .content-7 {
-  padding-top: 128px;
+  padding-top: 125px;
   padding-bottom: 130px;
   position: relative;
   text-align: center;
@@ -3506,7 +3516,6 @@ body {
   padding-top: 130px;
   padding-bottom: 130px;
   position: relative;
-  padding-bottom: 0;
 }
 .mcontent .content-9 h3 {
   font-size: 30px;
@@ -3618,8 +3627,6 @@ body {
   padding-top: 50px;
   margin-top: 50px;
   min-height: 100px;
-  /* img height */
-
   border-top: 2px solid #ecf0f1;
 }
 .mcontent .content-10 .features .box.first,
@@ -3880,7 +3887,7 @@ body {
   }
 }
 .mcontent .content-14 {
-  padding-top: 128px;
+  padding-top: 125px;
   padding-bottom: 130px;
   position: relative;
 }
@@ -4167,7 +4174,7 @@ body {
 .mcontent .content-16 {
   position: relative;
   padding-top: 130px;
-  padding-bottom: 130px;
+  padding-bottom: 180px;
 }
 .mcontent .content-16.v-center,
 .mcontent .content-16 .v-center {
@@ -4251,7 +4258,7 @@ body {
   background: #ecf0f1;
   position: absolute;
   left: 50%;
-  bottom: 80px;
+  bottom: 130px;
   margin-left: -26.5px;
 }
 .mcontent .content-16 .control-btn:hover,
@@ -4265,8 +4272,8 @@ body {
 .mcontent .content-17 {
   position: relative;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 @media (max-width: 768px) {
   .mcontent .content-17 {
@@ -4446,8 +4453,8 @@ body {
 }
 .mcontent .content-19 {
   position: relative;
-  padding-top: 70px;
-  padding-bottom: 120px;
+  padding-top: 130px;
+  padding-bottom: 130px;
   border-bottom: 2px solid #ebedee;
 }
 .mcontent .content-19 .span7 .quote {
@@ -5622,7 +5629,7 @@ body {
 .mcontent .content-27 .btns > *:first-child {
   margin-left: 0;
 }
-.mcontent .content-27 .btns .btn [class*="fui-"] {
+.mcontent .content-27 .btns .btn[class*="fui-"] {
   float: left;
   font-size: 26px;
   font-weight: normal;
@@ -6177,7 +6184,7 @@ body {
 .mcontent .content-33 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding-top: 125px;
-  padding-bottom: 100px;
+  padding-bottom: 110px;
 }
 .mcontent .content-33 .lead {
   font-size: 30px;
@@ -6493,7 +6500,7 @@ body {
 }
 .mcontent .content-37 {
   border-top: 0;
-  padding-top: 128px;
+  padding-top: 130px;
   padding-bottom: 130px;
 }
 @media (max-width: 767px) {
@@ -12561,7 +12568,7 @@ body {
 .mcontent .header-19-sub .btns > *:first-child {
   margin-left: 0;
 }
-.mcontent .header-19-sub .btns .btn [class*="fui-"] {
+.mcontent .header-19-sub .btns .btn[class*="fui-"] {
   float: left;
   font-size: 26px;
   font-weight: normal;
@@ -13396,11 +13403,6 @@ body {
 }
 .mcontent .header-22 .navbar .nav > li {
   margin-left: 40px;
-  /*
-            &.active > a {
-                         .a-color(mix(@silver, black, 80%), mix(@silver, black, 80%));
-                       }*/
-
 }
 .mcontent .header-22 .navbar .nav > li:first-child {
   margin-left: 0;
@@ -14562,7 +14564,7 @@ body {
   }
 }
 .mcontent .projects-1 {
-  padding-top: 108px;
+  padding-top: 110px;
   padding-bottom: 110px;
 }
 .mcontent .projects-1 .title {
@@ -14960,8 +14962,8 @@ body {
   line-height: 95px;
 }
 .mcontent .projects-3 {
-  padding-top: 108px;
-  padding-bottom: 108px;
+  padding-top: 110px;
+  padding-bottom: 110px;
 }
 .mcontent .projects-3 h3 {
   margin: 0 0 80px;
@@ -15093,8 +15095,8 @@ body {
   }
 }
 .mcontent .projects-4 {
-  padding-top: 108px;
-  padding-bottom: 108px;
+  padding-top: 110px;
+  padding-bottom: 110px;
 }
 .mcontent .projects-4 h3 {
   margin: 0 0 60px;
@@ -15202,7 +15204,7 @@ body {
   }
 }
 .mcontent .crew-1 {
-  padding-top: 108px;
+  padding-top: 110px;
   padding-bottom: 110px;
 }
 .mcontent .crew-1 h3 {
@@ -15331,8 +15333,8 @@ body {
   }
 }
 .mcontent .crew-2 {
-  padding-top: 108px;
-  padding-bottom: 110px -23px;
+  padding-top: 110px;
+  padding-bottom: 88px;
 }
 .mcontent .crew-2 h3 {
   margin: 0 0 73px;
@@ -15486,8 +15488,8 @@ body {
   }
 }
 .mcontent .crew-3 {
-  padding-top: 108px;
-  padding-bottom: 108px;
+  padding-top: 110px;
+  padding-bottom: 110px;
 }
 .mcontent .crew-3 h3 {
   margin: 0 0 20px;
@@ -15664,8 +15666,8 @@ body {
   }
 }
 .mcontent .crew-4 {
-  padding-top: 108px;
-  padding-bottom: 108px;
+  padding-top: 110px;
+  padding-bottom: 110px;
 }
 .mcontent .crew-4 h3 {
   margin: 0 0 73px;
@@ -16239,6 +16241,8 @@ body {
   }
 }
 .mcontent .footer-6 {
+  padding-top: 110px;
+  padding-bottom: 110px;
   color: #7f8c8d;
 }
 .mcontent .footer-6 a {
@@ -16428,7 +16432,7 @@ body {
 }
 .mcontent .footer-7 {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 110px;
   border-top: 1px solid #e2e4e6;
   color: #bdc3c7;
   line-height: 25px;
@@ -16610,6 +16614,8 @@ body {
   }
 }
 .mcontent .footer-8 {
+  padding-top: 110px;
+  padding-bottom: 110px;
   text-align: center;
 }
 .mcontent .footer-8 a {
@@ -16670,8 +16676,8 @@ body {
   min-height: 300px;
 }
 .mcontent .footer-9 {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 110px;
+  padding-bottom: 110px;
 }
 .mcontent .footer-9 h6 {
   font-size: 18px;
@@ -16906,7 +16912,7 @@ body {
   }
 }
 .mcontent .footer-11 {
-  padding-top: 40px;
+  padding-top: 110px;
   text-align: center;
 }
 .mcontent .footer-11 > .container {
@@ -17067,7 +17073,7 @@ body {
 }
 .mcontent .footer-12 {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 110px;
   border-top: 2px solid #ebedee;
   text-align: center;
   font-size: 84.3px;
@@ -17306,7 +17312,7 @@ body {
     margin-top: 0;
   }
   .mcontent .footer-14 .social-btns {
-    margin: 0 0 30px ;
+    margin: 0 0 30px;
     position: relative;
     display: block;
     float: none;
@@ -17372,6 +17378,9 @@ body {
   .mcontent .footer-15 .btns .btn + .btn {
     margin-top: 9px;
   }
+}
+.mcontent body .delimiter-big {
+  margin-top: 110px;
 }
 .manual-pages {
   /* prism default theme */

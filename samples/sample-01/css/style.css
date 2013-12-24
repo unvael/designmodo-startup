@@ -984,7 +984,7 @@ section * {
  * Content 4 stylesheet  
  * */
 .content-4 {
-  padding-top: 128px;
+  padding-top: 130px;
   padding-bottom: 120px;
   position: relative;
 }
@@ -1087,6 +1087,8 @@ section * {
  * Footer 6 stylesheet  
  * */
 .footer-6 {
+  padding-top: 110px;
+  padding-bottom: 110px;
   color: #7f8c8d;
 }
 .footer-6 a {

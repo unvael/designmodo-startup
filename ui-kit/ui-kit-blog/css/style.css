@@ -784,11 +784,6 @@ body .delimiter-big {
 body .delimiter {
   margin-top: 30px;
 }
-body section.content-30,
-body section.content-33 {
-  padding-bottom: 0;
-  padding-top: 0;
-}
 body section[class*=content-] {
   margin-top: 0;
   margin-bottom: 0;
@@ -796,6 +791,9 @@ body section[class*=content-] {
 /**
  * Blog 1 stylesheet  
  * */
+.blog-1 {
+  padding-bottom: 130px;
+}
 .blog-1 .box-icon {
   margin: 0 auto 35px;
   text-align: center;
@@ -1185,6 +1183,10 @@ body section[class*=content-] {
 /**
  * Blog 3 stylesheet  
  * */
+.blog-3 {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
 .blog-3 p {
   margin: 0;
 }
@@ -1300,6 +1302,10 @@ body section[class*=content-] {
 /**
  * Blog 4 stylesheet  
  * */
+.blog-4 {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
 .blog-4 p {
   margin: 0;
 }
@@ -1432,6 +1438,10 @@ body section[class*=content-] {
 /**
  * Blog 5 stylesheet  
  * */
+.blog-5 {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
 .blog-5 .box-icon {
   margin: 0 auto 0;
   text-align: center;

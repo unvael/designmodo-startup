@@ -860,11 +860,6 @@ body .delimiter-big {
 body .delimiter {
   margin-top: 30px;
 }
-body section.content-30,
-body section.content-33 {
-  padding-bottom: 0;
-  padding-top: 0;
-}
 body section[class*=content-] {
   margin-top: 0;
   margin-bottom: 0;
@@ -6927,7 +6922,7 @@ body section[class*=content-] {
 .header-19-sub .btns > *:first-child {
   margin-left: 0;
 }
-.header-19-sub .btns .btn [class*="fui-"] {
+.header-19-sub .btns .btn[class*="fui-"] {
   float: left;
   font-size: 26px;
   font-weight: normal;
@@ -7771,11 +7766,6 @@ body section[class*=content-] {
 }
 .header-22 .navbar .nav > li {
   margin-left: 40px;
-  /*
-            &.active > a {
-                         .a-color(mix(@silver, black, 80%), mix(@silver, black, 80%));
-                       }*/
-
 }
 .header-22 .navbar .nav > li:first-child {
   margin-left: 0;

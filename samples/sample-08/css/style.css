@@ -1369,3 +1369,33 @@ footer {
   background-image: none;
   width: 1130px;
 }
+.content-6 {
+  padding-top: 200px;
+  padding-bottom: 80px;
+}
+@media (max-width: 768px) {
+  .content-6 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+.content-17 {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+@media (max-width: 768px) {
+  .content-17 {
+    padding-top: auto;
+    padding-bottom: auto;
+  }
+}
+.footer-9 {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+@media (max-width: 768px) {
+  .footer-9 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}

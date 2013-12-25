@@ -1909,7 +1909,7 @@ body > section {
 .price-5 .plans .description-more big {
   color: #e74c3c;
 }
-.price-5 .plans .description-more [class*="fui-"] {
+.price-5 .plans .description-more[class*="fui-"] {
   color: #e74c3c;
 }
 .price-5 .plans .plan:hover {

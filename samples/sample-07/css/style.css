@@ -1119,3 +1119,6 @@ section * {
 .header-18 .header-18-sub .pt-page-current .header-18-section .img img[src*="/twitter-1@2x"] {
   visibility: visible;
 }
+.footer-7 {
+  padding-bottom: 40px;
+}

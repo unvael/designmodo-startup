@@ -1276,3 +1276,15 @@ body > section {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+.content-29 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.footer-12 {
+  padding-bottom: 80px;
+}
+@media (max-width: 480px) {
+  .footer-12 {
+    padding-bottom: 40px;
+  }
+}

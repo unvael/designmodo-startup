@@ -1562,7 +1562,7 @@ body > section {
 }
 @media (max-width: 480px) {
   .header-5-sub .pt-page-1 .box-icon,
-  .header-5-sub .pt-page-1 .box-icon [class*="pt-control-"],
+  .header-5-sub .pt-page-1 .box-icon[class*="pt-control-"],
   .header-5-sub .pt-page-1 .hero-unit {
     -webkit-transition-duration: 0 !important;
     -moz-transition-duration: 0 !important;
@@ -1753,4 +1753,7 @@ body > section {
 .projects-3 {
   padding-top: 110px;
   padding-bottom: 130px;
+}
+.footer-7 {
+  padding-bottom: 40px;
 }

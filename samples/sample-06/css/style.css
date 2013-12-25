@@ -1217,14 +1217,8 @@ footer {
   }
 }
 .content-30 {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-@media (max-width: 768px) {
-  .content-30 {
-    padding-top: 105px;
-    padding-bottom: 105px;
-  }
+  padding-top: 110px;
+  padding-bottom: 110px;
 }
 .header-3-sub .background {
   opacity: 1;
@@ -1259,7 +1253,7 @@ footer {
 }
 .content-9 {
   padding-top: 130px;
-  padding-bottom: 80px;
+  padding-bottom: 0;
 }
 @media (max-width: 768px) {
   .content-9 {

@@ -1099,7 +1099,6 @@ content-9 p {
   letter-spacing: 1.6px;
   text-transform: uppercase;
 }
-/* ribbon */
 .ribbon {
   display: block;
   position: relative;
@@ -1127,7 +1126,6 @@ content-9 p {
   right: -5px;
   top: 0;
 }
-/* player */
 .player {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -1167,13 +1165,11 @@ content-9 p {
     height: 180px;
   }
 }
-/* content tour */
 @media (max-width: 480px) {
   .content-tour {
     padding-bottom: 0;
   }
 }
-/* content features */
 .content-features .description {
   position: relative;
   margin-top: 50px;
@@ -1231,7 +1227,6 @@ content-9 p {
     line-height: 1.4;
   }
 }
-/* sidebar */
 aside {
   position: relative;
   z-index: 100;

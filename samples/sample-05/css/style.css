@@ -1554,13 +1554,18 @@ section * {
   }
 }
 body > section,
-footer {
+.footer-8 {
   padding-top: 80px;
   padding-bottom: 80px;
 }
 .content-5 {
   padding-top: 80px;
   padding-bottom: 80px;
+}
+@media (max-width: 480px) {
+  .content-5 {
+    padding-bottom: 40px;
+  }
 }
 .content-1 {
   padding-top: 100px;
@@ -1579,4 +1584,10 @@ footer {
 }
 .header-17-sub {
   background-color: #1F2225;
+}
+@media (max-width: 480px) {
+  .footer-8 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }

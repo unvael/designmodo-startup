@@ -1344,6 +1344,9 @@ footer {
     display: none;
   }
 }
+.footer-11 {
+  padding-top: 40px;
+}
 .footer-11 nav ul li a {
   color: #3498db;
 }

@@ -3,12 +3,22 @@
  * */
  .footer-7 {
     .v-center;
-    padding-top: 40px;
+    padding-top: 150px;
     padding-bottom: 110px;
-    border-top: 1px solid #e2e4e6;
     color: @silver;
     line-height: 25px;
     text-align: center;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 110px;
+        left: 0;
+        right: 0;
+        height: 1px;
+        overflow: hidden;
+        background: #e2e4e6
+    }
     a {
         .a-color(@silver, mix(@silver, black, 85%));
         font-weight: 500;

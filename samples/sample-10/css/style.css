@@ -1288,12 +1288,12 @@ section * {
  * Footer 7 stylesheet  
  * */
 .footer-7 {
-  padding-top: 40px;
+  padding-top: 150px;
   padding-bottom: 110px;
-  border-top: 1px solid #e2e4e6;
   color: #bdc3c7;
   line-height: 25px;
   text-align: center;
+  position: relative;
 }
 .footer-7.v-center,
 .footer-7 .v-center {
@@ -1341,6 +1341,16 @@ section * {
     display: block;
     vertical-align: baseline;
   }
+}
+.footer-7:before {
+  content: '';
+  position: absolute;
+  top: 110px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  overflow: hidden;
+  background: #e2e4e6;
 }
 .footer-7 a {
   color: #bdc3c7;
@@ -1755,5 +1765,9 @@ body > section {
   padding-bottom: 130px;
 }
 .footer-7 {
+  padding-top: 40px;
   padding-bottom: 40px;
+}
+.footer-7:before {
+  top: 0;
 }

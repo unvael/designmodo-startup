@@ -941,7 +941,7 @@ body {
   margin-bottom: 0;
 }
 .mcontent .content-7 {
-  padding-top: 128px;
+  padding-top: 125px;
   padding-bottom: 130px;
   position: relative;
   text-align: center;
@@ -2182,6 +2182,12 @@ body {
 .mcontent .header-11-sub .signup-form form input[type="text"],
 .mcontent .header-11-sub .signup-form form input[type="password"] {
   border-color: white!important;
+}
+@media (max-width: 767px) {
+  .mcontent .header-11-sub .signup-form form input[type="text"],
+  .mcontent .header-11-sub .signup-form form input[type="password"] {
+    height: 41px;
+  }
 }
 @media (max-width: 480px) {
   .mcontent .header-11-sub .signup-form form {

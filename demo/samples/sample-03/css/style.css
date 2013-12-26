@@ -942,6 +942,12 @@ section * {
 .header-11-sub .signup-form form input[type="password"] {
   border-color: white!important;
 }
+@media (max-width: 767px) {
+  .header-11-sub .signup-form form input[type="text"],
+  .header-11-sub .signup-form form input[type="password"] {
+    height: 41px;
+  }
+}
 @media (max-width: 480px) {
   .header-11-sub .signup-form form {
     margin-top: 25px;

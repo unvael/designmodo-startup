@@ -984,7 +984,7 @@ section * {
  * Content 7 stylesheet  
  * */
 .content-7 {
-  padding-top: 128px;
+  padding-top: 125px;
   padding-bottom: 130px;
   position: relative;
   text-align: center;
@@ -1516,16 +1516,6 @@ section * {
 .header-10 .btn.active,
 .header-10 .btn:focus {
   background-color: #2ecc71;
-}
-body > section.v-center > div {
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-@media (max-width: 767px) {
-  body > section.v-center > div {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
 }
 .content-7,
 .content-8 {

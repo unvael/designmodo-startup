@@ -17382,6 +17382,9 @@ body {
 .mcontent body .delimiter-big {
   margin-top: 110px;
 }
+.mcontent .content-31.mask .container:before {
+  display: none;
+}
 .manual-pages {
   /* prism default theme */
 
@@ -18216,6 +18219,7 @@ a.active {
 }
 .mask.active .container {
   background: none transparent !important;
+  padding: 0 !important;
 }
 .mask.active.big .container {
   display: table;
@@ -18249,6 +18253,8 @@ a.active {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
+  opacity: 1 !important;
+  filter: alpha(opacity=100) !important;
   margin: 0 auto;
 }
 .mask.active .hover-text .hu-border {

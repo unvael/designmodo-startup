@@ -452,8 +452,9 @@ button:active {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 100%;
-    width: 72%;
+    left: auto !important;
+    right: -100% !important;
+    width: 230px !important;
     padding: 25px 0;
     border-radius: 0;
     float: none;
@@ -539,10 +540,10 @@ button:active {
     transition: left 0.4s;
   }
   .nav-visible body > * {
-    left: -72%;
+    right: 230px !important;
   }
   .nav-visible .navbar .nav-collapse {
-    left: 28%!important;
+    right: 0 !important;
     visibility: visible;
   }
 }
@@ -903,6 +904,8 @@ section * {
  * Content 10 stylesheet  
  * */
 .content-10 {
+  padding-top: 130px;
+  padding-bottom: 125px;
   position: relative;
 }
 .content-10 .carousel {
@@ -977,8 +980,6 @@ section * {
   padding-top: 50px;
   margin-top: 50px;
   min-height: 100px;
-  /* img height */
-
   border-top: 2px solid #ecf0f1;
 }
 .content-10 .features .box.first,

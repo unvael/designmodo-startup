@@ -452,8 +452,9 @@ button:active {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 100%;
-    width: 72%;
+    left: auto !important;
+    right: -100% !important;
+    width: 230px !important;
     padding: 25px 0;
     border-radius: 0;
     float: none;
@@ -539,10 +540,10 @@ button:active {
     transition: left 0.4s;
   }
   .nav-visible body > * {
-    left: -72%;
+    right: 230px !important;
   }
   .nav-visible .navbar .nav-collapse {
-    left: 28%!important;
+    right: 0 !important;
     visibility: visible;
   }
 }
@@ -983,6 +984,8 @@ section * {
  * Content 4 stylesheet  
  * */
 .content-4 {
+  padding-top: 130px;
+  padding-bottom: 120px;
   position: relative;
 }
 .content-4 h3 {
@@ -1084,6 +1087,8 @@ section * {
  * Footer 6 stylesheet  
  * */
 .footer-6 {
+  padding-top: 110px;
+  padding-bottom: 110px;
   color: #7f8c8d;
 }
 .footer-6 a {

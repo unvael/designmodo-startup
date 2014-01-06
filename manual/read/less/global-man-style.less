@@ -1,4 +1,25 @@
 body {
+
+  &:before {
+    .opacity(0);
+    display: block;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    overflow: hidden;
+    position: fixed;
+    background: #1b1f23;
+    z-index: 1035;
+    -webkit-transition: -webkit-opacity 0.3s linear 0s, right 0.1s linear 0.7s;
+    -moz-transition: -moz-opacity 0.3s linear 0s, right 0.1s linear 0.7s;
+    -o-transition: -o-opacity 0.3s linear 0s, right 0.1s linear 0.7s;
+    transition: opacity 0.3s linear 0s, right 0.1s linear 0.7s;
+  }
+
+
   padding-top: 112px;
   @media (max-width: 979px) {
     padding-top: 66px;
@@ -6,7 +27,7 @@ body {
   position: relative;
   font-family: @h-font-family;
   &.hovered {
-    background-color: @clouds;
+    //background-color: @clouds;
   }
   &.colapsed-menu-active {
     height: 100%;
@@ -67,14 +88,17 @@ a {
 .mask {
   display: none;
   .opacity(0);
-  .transition(opacity 0.5s linear 0s);
+  -webkit-transition: -webkit-opacity 1s linear 0s;
+  -moz-transition: -moz-opacity 1s linear 0s;
+  -o-transition: -o-opacity 1s linear 0s;
+  transition: opacity 1s linear 0s;
 
   &.active {
-
     display: block;
     background-color: #1b1f23 !important;
     .container{
       background: none transparent !important;
+      padding: 0 !important;
     }
     background-image: none !important;
     background-size: auto;
@@ -117,13 +141,14 @@ a {
       }
       .opacity(100);
     }
-    .transition(opacity 3s linear 0s);
+
     .opacity(97);
     .hover-text {
       display: table-cell;
       background-color: transparent;
       .box-sizing(border-box);
       padding: 0;
+      .opacity(100) !important;
       margin: 0 auto;
     }
     .hover-text {

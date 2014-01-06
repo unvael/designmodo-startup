@@ -748,11 +748,6 @@ body .delimiter-big {
 body .delimiter {
   margin-top: 30px;
 }
-body section.content-30,
-body section.content-33 {
-  padding-bottom: 0;
-  padding-top: 0;
-}
 body section[class*=content-] {
   margin-top: 0;
   margin-bottom: 0;
@@ -761,6 +756,8 @@ body section[class*=content-] {
  * Content 1 stylesheet  
  * */
 .content-1 {
+  padding-top: 130px;
+  padding-bottom: 125px;
   position: relative;
 }
 .content-1 h3 {
@@ -920,6 +917,8 @@ body section[class*=content-] {
  * Content 2 stylesheet  
  * */
 .content-2 {
+  padding-top: 130px;
+  padding-bottom: 130px;
   position: relative;
 }
 .content-2 h3 {
@@ -987,6 +986,8 @@ body section[class*=content-] {
  * Content 3 stylesheet  
  * */
 .content-3 {
+  padding-top: 130px;
+  padding-bottom: 130px;
   position: relative;
 }
 .content-3 h3 {
@@ -1106,6 +1107,8 @@ body section[class*=content-] {
  * Content 4 stylesheet  
  * */
 .content-4 {
+  padding-top: 130px;
+  padding-bottom: 120px;
   position: relative;
 }
 .content-4 h3 {
@@ -1169,6 +1172,8 @@ body section[class*=content-] {
  * Content 5 stylesheet  
  * */
 .content-5 {
+  padding-top: 130px;
+  padding-bottom: 120px;
   position: relative;
 }
 .content-5 .container > img {
@@ -1244,8 +1249,8 @@ body section[class*=content-] {
  * */
 .content-6 {
   position: relative;
-  padding-top: 200px;
-  padding-bottom: 80px;
+  padding-top: 130px;
+  padding-bottom: 120px;
 }
 @media (max-width: 768px) {
   .content-6 {
@@ -1359,6 +1364,8 @@ body section[class*=content-] {
  * Content 7 stylesheet  
  * */
 .content-7 {
+  padding-top: 125px;
+  padding-bottom: 130px;
   position: relative;
   text-align: center;
 }
@@ -1494,6 +1501,8 @@ body section[class*=content-] {
  * Content 8 stylesheet  
  * */
 .content-8 {
+  padding-top: 130px;
+  padding-bottom: 130px;
   position: relative;
   text-align: center;
 }
@@ -1587,8 +1596,9 @@ body section[class*=content-] {
  * Content 9 stylesheet  
  * */
 .content-9 {
+  padding-top: 130px;
+  padding-bottom: 130px;
   position: relative;
-  padding-bottom: 0;
 }
 .content-9 h3 {
   font-size: 30px;
@@ -1627,6 +1637,8 @@ body section[class*=content-] {
  * Content 10 stylesheet  
  * */
 .content-10 {
+  padding-top: 130px;
+  padding-bottom: 125px;
   position: relative;
 }
 .content-10 .carousel {
@@ -1701,8 +1713,6 @@ body section[class*=content-] {
   padding-top: 50px;
   margin-top: 50px;
   min-height: 100px;
-  /* img height */
-
   border-top: 2px solid #ecf0f1;
 }
 .content-10 .features .box.first,
@@ -1759,6 +1769,14 @@ body section[class*=content-] {
   font-family: 'Montserrat', sans-serif;
 }
 @media (max-width: 480px) {
+  .content-11 > .container > span {
+    display: block;
+  }
+  .content-11 .btn {
+    margin: 30px 0 0;
+  }
+}
+@media (max-width: 614px) {
   .content-11 > .container > span {
     display: block;
   }
@@ -1833,14 +1851,39 @@ body section[class*=content-] {
 }
 @media (max-width: 767px) {
   .content-13.subscribe-form .span4 {
+    width: auto;
+    display: inline-block;
+    float: right;
     text-align: center;
+  }
+}
+@media (max-width: 668px) {
+  .content-13.subscribe-form .span4 {
+    display: block;
+    float: none;
   }
 }
 .content-13.subscribe-form form {
   margin: 0;
   position: relative;
 }
-.content-13.subscribe-form input[type="text"] {
+@media (max-width: 767px) {
+  .content-13.subscribe-form form .span8 {
+    width: 65%;
+    display: inline-block;
+    float: left;
+  }
+}
+@media (max-width: 668px) {
+  .content-13.subscribe-form form .span8 {
+    width: auto;
+    display: block;
+    float: none;
+    text-align: center;
+  }
+}
+.content-13.subscribe-form input[type="text"],
+.content-13.subscribe-form input[type="email"] {
   width: 100%;
   height: auto;
   margin: 0;
@@ -1855,28 +1898,35 @@ body section[class*=content-] {
   font-weight: 500;
   letter-spacing: -1px;
 }
-.content-13.subscribe-form input[type="text"]:-moz-placeholder {
+.content-13.subscribe-form input[type="text"]:-moz-placeholder,
+.content-13.subscribe-form input[type="email"]:-moz-placeholder {
   color: #ffffff;
 }
-.content-13.subscribe-form input[type="text"]::-webkit-input-placeholder {
+.content-13.subscribe-form input[type="text"]::-webkit-input-placeholder,
+.content-13.subscribe-form input[type="email"]::-webkit-input-placeholder {
   color: #ffffff;
 }
-.content-13.subscribe-form input[type="text"].placeholder {
+.content-13.subscribe-form input[type="text"].placeholder,
+.content-13.subscribe-form input[type="email"].placeholder {
   color: #ffffff;
 }
-.content-13.subscribe-form input[type="text"]::-webkit-input-placeholder {
+.content-13.subscribe-form input[type="text"]::-webkit-input-placeholder,
+.content-13.subscribe-form input[type="email"]::-webkit-input-placeholder {
   font-weight: 500;
   letter-spacing: -1px;
 }
-.content-13.subscribe-form input[type="text"]:-moz-placeholder {
+.content-13.subscribe-form input[type="text"]:-moz-placeholder,
+.content-13.subscribe-form input[type="email"]:-moz-placeholder {
   font-weight: 500;
   letter-spacing: -1px;
 }
-.content-13.subscribe-form input[type="text"]::-moz-placeholder {
+.content-13.subscribe-form input[type="text"]::-moz-placeholder,
+.content-13.subscribe-form input[type="email"]::-moz-placeholder {
   font-weight: 500;
   letter-spacing: -1px;
 }
-.content-13.subscribe-form input[type="text"]:-ms-input-placeholder {
+.content-13.subscribe-form input[type="text"]:-ms-input-placeholder,
+.content-13.subscribe-form input[type="email"]:-ms-input-placeholder {
   font-weight: 500;
   letter-spacing: -1px;
 }
@@ -1889,7 +1939,7 @@ body section[class*=content-] {
   line-height: 59.99999999999999px;
   font-size: 50px;
   font-weight: normal;
-  color: #a1a9b1;
+  color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .content-13.subscribe-form .btn {
@@ -1910,14 +1960,24 @@ body section[class*=content-] {
 }
 @media (max-width: 480px) {
   .content-13.subscribe-form input[type="text"],
+  .content-13.subscribe-form input[type="email"],
   .content-13.subscribe-form .ani-placeholder {
     width: 100%;
     margin-bottom: 33px;
     line-height: 27px;
     font-size: 25px;
     font-weight: normal;
-    color: #a1a9b1;
+    color: #ffffff;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+  }
+}
+@media (max-width: 688px) {
+  .content-13.subscribe-form input[type="text"],
+  .content-13.subscribe-form input[type="email"],
+  .content-13.subscribe-form .ani-placeholder {
+    width: 100%;
+    margin-bottom: 20px;
     text-align: center;
   }
 }
@@ -1925,6 +1985,8 @@ body section[class*=content-] {
  * Content 14 stylesheet  
  * */
 .content-14 {
+  padding-top: 125px;
+  padding-bottom: 130px;
   position: relative;
 }
 @media (max-width: 767px) {
@@ -2126,6 +2188,8 @@ body section[class*=content-] {
  * Content 15 stylesheet  
  * */
 .content-15 {
+  padding-top: 125px;
+  padding-bottom: 130px;
   position: relative;
 }
 .content-15 h3 {
@@ -2213,8 +2277,8 @@ body section[class*=content-] {
  * */
 .content-16 {
   position: relative;
-  padding-top: 20px;
-  padding-bottom: 135px;
+  padding-top: 130px;
+  padding-bottom: 180px;
 }
 .content-16.v-center,
 .content-16 .v-center {
@@ -2298,7 +2362,7 @@ body section[class*=content-] {
   background: #ecf0f1;
   position: absolute;
   left: 50%;
-  bottom: 80px;
+  bottom: 130px;
   margin-left: -26.5px;
 }
 .content-16 .control-btn:hover,
@@ -2315,8 +2379,8 @@ body section[class*=content-] {
 .content-17 {
   position: relative;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 @media (max-width: 768px) {
   .content-17 {
@@ -2368,6 +2432,8 @@ body section[class*=content-] {
  * Content 18 stylesheet  
  * */
 .content-18 {
+  padding-top: 130px;
+  padding-bottom: 130px;
   position: relative;
 }
 .content-18 .carousel {
@@ -2500,8 +2566,8 @@ body section[class*=content-] {
  * */
 .content-19 {
   position: relative;
-  padding-top: 70px;
-  padding-bottom: 120px;
+  padding-top: 130px;
+  padding-bottom: 130px;
   border-bottom: 2px solid #ebedee;
 }
 .content-19 .span7 .quote {
@@ -3676,7 +3742,7 @@ body section[class*=content-] {
 .content-27 .btns > *:first-child {
   margin-left: 0;
 }
-.content-27 .btns .btn [class*="fui-"] {
+.content-27 .btns .btn[class*="fui-"] {
   float: left;
   font-size: 26px;
   font-weight: normal;
@@ -3765,6 +3831,8 @@ body section[class*=content-] {
   }
 }
 .content-29 {
+  padding-top: 130px;
+  padding-bottom: 130px;
   position: relative;
 }
 .content-29 .player {
@@ -3804,8 +3872,8 @@ body section[class*=content-] {
 }
 .content-30 {
   position: relative;
-  padding-top: 110px;
-  padding-bottom: 110px;
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 @media (max-width: 480px) {
   .content-30 {
@@ -3942,6 +4010,8 @@ body section[class*=content-] {
 }
 .content-31 {
   position: relative;
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 .content-31 .container {
   position: relative;
@@ -4227,7 +4297,7 @@ body section[class*=content-] {
 .content-33 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding-top: 125px;
-  padding-bottom: 100px;
+  padding-bottom: 110px;
 }
 .content-33 .lead {
   font-size: 30px;
@@ -4543,8 +4613,8 @@ body section[class*=content-] {
 }
 .content-37 {
   border-top: 0;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 @media (max-width: 767px) {
   .content-37 {

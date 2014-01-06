@@ -20,24 +20,44 @@
 /* footer */
 @import "../../../ui-kit/ui-kit-footer/less/footer-9.less";
 
-body > section,
-footer {
-  padding-top: 80px;
-  padding-bottom: 80px;
+body > section, footer {
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
-.content-12{
-  padding-bottom: 0;
+.content-12 {
+    padding-bottom: 0;
 }
-.content-12 .btn-wide{
-  background-color:@clouds;
+.content-12 .btn-wide {
+    background-color:@clouds;
 }
-.content-12 .btn-wide:hover,.content-12 .btn-wide:active,.content-12 .btn-wide.active{
-  background-color:@wet-asphalt;
+.content-12 .btn-wide:hover, .content-12 .btn-wide:active, .content-12 .btn-wide.active {
+    background-color:@wet-asphalt;
 }
-
 .blog-2 .background .span4 > div {
-//  background-image: url('../img/img-1.jpg');
-//  background-position: -80% 0;
-  background-image: none;
-  width:1130px;
+    background-image: none;
+    width:1130px;
+}
+.content-6 {
+	padding-top:200px;
+	padding-bottom:80px;
+	@media (max-width: 768px) { 
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+}
+.content-17{  
+	padding-top:200px;
+	padding-bottom:200px;
+	@media (max-width: 768px) { 
+		padding-top: auto;
+		padding-bottom: auto;
+	}
+}
+.footer-9 {
+	padding-top: 120px;
+	padding-bottom: 120px;
+	@media (max-width: 768px) {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
 }

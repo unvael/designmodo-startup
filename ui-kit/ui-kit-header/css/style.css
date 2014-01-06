@@ -453,8 +453,9 @@ button:active {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 100%;
-    width: 72%;
+    left: auto !important;
+    right: -100% !important;
+    width: 230px !important;
     padding: 25px 0;
     border-radius: 0;
     float: none;
@@ -540,10 +541,10 @@ button:active {
     transition: left 0.4s;
   }
   .nav-visible body > * {
-    left: -72%;
+    right: 230px !important;
   }
   .nav-visible .navbar .nav-collapse {
-    left: 28%!important;
+    right: 0 !important;
     visibility: visible;
   }
 }
@@ -858,11 +859,6 @@ body .delimiter-big {
 }
 body .delimiter {
   margin-top: 30px;
-}
-body section.content-30,
-body section.content-33 {
-  padding-bottom: 0;
-  padding-top: 0;
 }
 body section[class*=content-] {
   margin-top: 0;
@@ -6926,7 +6922,7 @@ body section[class*=content-] {
 .header-19-sub .btns > *:first-child {
   margin-left: 0;
 }
-.header-19-sub .btns .btn [class*="fui-"] {
+.header-19-sub .btns .btn[class*="fui-"] {
   float: left;
   font-size: 26px;
   font-weight: normal;
@@ -7770,11 +7766,6 @@ body section[class*=content-] {
 }
 .header-22 .navbar .nav > li {
   margin-left: 40px;
-  /*
-            &.active > a {
-                         .a-color(mix(@silver, black, 80%), mix(@silver, black, 80%));
-                       }*/
-
 }
 .header-22 .navbar .nav > li:first-child {
   margin-left: 0;

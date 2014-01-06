@@ -452,8 +452,9 @@ button:active {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 100%;
-    width: 72%;
+    left: auto !important;
+    right: -100% !important;
+    width: 230px !important;
     padding: 25px 0;
     border-radius: 0;
     float: none;
@@ -539,10 +540,10 @@ button:active {
     transition: left 0.4s;
   }
   .nav-visible body > * {
-    left: -72%;
+    right: 230px !important;
   }
   .nav-visible .navbar .nav-collapse {
-    left: 28%!important;
+    right: 0 !important;
     visibility: visible;
   }
 }
@@ -1149,6 +1150,10 @@ section * {
 /**
  * Project 3 stylesheet  
  * */
+.projects-3 {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
 .projects-3 h3 {
   margin: 0 0 80px;
   font-size: 30px;
@@ -1283,12 +1288,12 @@ section * {
  * Footer 7 stylesheet  
  * */
 .footer-7 {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  border-top: 1px solid #e2e4e6;
+  padding-top: 150px;
+  padding-bottom: 110px;
   color: #bdc3c7;
   line-height: 25px;
   text-align: center;
+  position: relative;
 }
 .footer-7.v-center,
 .footer-7 .v-center {
@@ -1336,6 +1341,16 @@ section * {
     display: block;
     vertical-align: baseline;
   }
+}
+.footer-7:before {
+  content: '';
+  position: absolute;
+  top: 110px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  overflow: hidden;
+  background: #e2e4e6;
 }
 .footer-7 a {
   color: #bdc3c7;
@@ -1557,7 +1572,7 @@ body > section {
 }
 @media (max-width: 480px) {
   .header-5-sub .pt-page-1 .box-icon,
-  .header-5-sub .pt-page-1 .box-icon [class*="pt-control-"],
+  .header-5-sub .pt-page-1 .box-icon[class*="pt-control-"],
   .header-5-sub .pt-page-1 .hero-unit {
     -webkit-transition-duration: 0 !important;
     -moz-transition-duration: 0 !important;
@@ -1744,4 +1759,15 @@ body > section {
 .logos > .container > div {
   display: table-cell;
   text-align: center;
+}
+.projects-3 {
+  padding-top: 110px;
+  padding-bottom: 130px;
+}
+.footer-7 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.footer-7:before {
+  top: 0;
 }

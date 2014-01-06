@@ -453,8 +453,9 @@ button:active {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 100%;
-    width: 72%;
+    left: auto !important;
+    right: -100% !important;
+    width: 230px !important;
     padding: 25px 0;
     border-radius: 0;
     float: none;
@@ -540,10 +541,10 @@ button:active {
     transition: left 0.4s;
   }
   .nav-visible body > * {
-    left: -72%;
+    right: 230px !important;
   }
   .nav-visible .navbar .nav-collapse {
-    left: 28%!important;
+    right: 0 !important;
     visibility: visible;
   }
 }
@@ -703,11 +704,6 @@ section * {
 }
 .header-22 .navbar .nav > li {
   margin-left: 40px;
-  /*
-            &.active > a {
-                         .a-color(mix(@silver, black, 80%), mix(@silver, black, 80%));
-                       }*/
-
 }
 .header-22 .navbar .nav > li:first-child {
   margin-left: 0;
@@ -921,6 +917,8 @@ section * {
  * Content 2 stylesheet  
  * */
 .content-2 {
+  padding-top: 130px;
+  padding-bottom: 130px;
   position: relative;
 }
 .content-2 h3 {
@@ -988,6 +986,8 @@ section * {
  * Content 7 stylesheet  
  * */
 .content-7 {
+  padding-top: 125px;
+  padding-bottom: 130px;
   position: relative;
   text-align: center;
 }
@@ -1153,10 +1153,20 @@ section * {
     margin: 30px 0 0;
   }
 }
+@media (max-width: 614px) {
+  .content-11 > .container > span {
+    display: block;
+  }
+  .content-11 .btn {
+    margin: 30px 0 0;
+  }
+}
 /**
  * Content 15 stylesheet  
  * */
 .content-15 {
+  padding-top: 125px;
+  padding-bottom: 130px;
   position: relative;
 }
 .content-15 h3 {

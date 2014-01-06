@@ -747,11 +747,6 @@ body .delimiter-big {
 body .delimiter {
   margin-top: 30px;
 }
-body section.content-30,
-body section.content-33 {
-  padding-bottom: 0;
-  padding-top: 0;
-}
 body section[class*=content-] {
   margin-top: 0;
   margin-bottom: 0;
@@ -1194,6 +1189,8 @@ body section[class*=content-] {
  * Footer 6 stylesheet  
  * */
 .footer-6 {
+  padding-top: 110px;
+  padding-bottom: 110px;
   color: #7f8c8d;
 }
 .footer-6 a {
@@ -1385,12 +1382,12 @@ body section[class*=content-] {
  * Footer 7 stylesheet  
  * */
 .footer-7 {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  border-top: 1px solid #e2e4e6;
+  padding-top: 150px;
+  padding-bottom: 110px;
   color: #bdc3c7;
   line-height: 25px;
   text-align: center;
+  position: relative;
 }
 .footer-7.v-center,
 .footer-7 .v-center {
@@ -1438,6 +1435,16 @@ body section[class*=content-] {
     display: block;
     vertical-align: baseline;
   }
+}
+.footer-7:before {
+  content: '';
+  position: absolute;
+  top: 110px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  overflow: hidden;
+  background: #e2e4e6;
 }
 .footer-7 a {
   color: #bdc3c7;
@@ -1571,6 +1578,8 @@ body section[class*=content-] {
  * Footer 8 stylesheet  
  * */
 .footer-8 {
+  padding-top: 110px;
+  padding-bottom: 110px;
   text-align: center;
 }
 .footer-8 a {
@@ -1634,8 +1643,8 @@ body section[class*=content-] {
   min-height: 300px;
 }
 .footer-9 {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 110px;
+  padding-bottom: 110px;
 }
 .footer-9 h6 {
   font-size: 18px;
@@ -1876,7 +1885,7 @@ body section[class*=content-] {
  * Footer 11 stylesheet  
  * */
 .footer-11 {
-  padding-top: 40px;
+  padding-top: 110px;
   text-align: center;
 }
 .footer-11 > .container {
@@ -2039,9 +2048,8 @@ body section[class*=content-] {
  * Footer 12 stylesheet  
  * */
 .footer-12 {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  border-top: 2px solid #ebedee;
+  padding-top: 190px;
+  padding-bottom: 110px;
   text-align: center;
   font-size: 84.3px;
   font-weight: normal;
@@ -2049,6 +2057,16 @@ body section[class*=content-] {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 800;
   letter-spacing: -2px;
+}
+.footer-12:before {
+  content: '';
+  position: absolute;
+  top: 110px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  overflow: hidden;
+  background: #ebedee;
 }
 .footer-12 [class*="fui-"] {
   font-size: 60px;
@@ -2092,8 +2110,7 @@ body section[class*=content-] {
     font-size: 26px;
     font-weight: normal;
     color: rgba(44, 62, 80, 0.2);
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 150px;
     font-weight: 800;
   }
   .footer-12 [class*="fui-"] {
@@ -2285,7 +2302,7 @@ body section[class*=content-] {
     margin-top: 0;
   }
   .footer-14 .social-btns {
-    margin: 0 0 30px ;
+    margin: 0 0 30px;
     position: relative;
     display: block;
     float: none;
@@ -2354,4 +2371,7 @@ body section[class*=content-] {
   .footer-15 .btns .btn + .btn {
     margin-top: 9px;
   }
+}
+body .delimiter-big {
+  margin-top: 110px;
 }

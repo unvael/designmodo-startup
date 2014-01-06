@@ -17,31 +17,37 @@
 /* footer */
 @import '../../../ui-kit/ui-kit-footer/less/footer-8.less';
 
-
-body > section,
-footer {
-  padding-top: 80px;
-  padding-bottom: 80px;
+body > section, .footer-8 {
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
-
+.content-5 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    @media (max-width: 480px) {
+        padding-bottom: 40px;
+    }
+}
 .content-1 {
-	padding-top: 100px;
-	padding-bottom:0;
-	.container{
-	  padding-bottom:100px;
-	  border-bottom:2px #ecf0f1 solid;
-	}
-	
+    padding-top: 100px;
+    padding-bottom:0;
+    .container {
+        padding-bottom:100px;
+        border-bottom:2px #ecf0f1 solid;
+    }
 }
-
 .content-13 {
-  background-color: #ECF0F1;
-  &.subscribe-form input[type="text"],
-  &.subscribe-form .ani-placeholder {
-    color: #9fa8b0;
-  }
+    background-color: #ECF0F1;
+    &.subscribe-form input[type="text"], &.subscribe-form .ani-placeholder {
+        color: #9fa8b0;
+    }
 }
-
-.header-17-sub{
-  background-color:#1F2225;
+.header-17-sub {
+    background-color:#1F2225;
+}
+.footer-8 {
+    @media (max-width: 480px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 }

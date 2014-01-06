@@ -452,8 +452,9 @@ button:active {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 100%;
-    width: 72%;
+    left: auto !important;
+    right: -100% !important;
+    width: 230px !important;
     padding: 25px 0;
     border-radius: 0;
     float: none;
@@ -539,10 +540,10 @@ button:active {
     transition: left 0.4s;
   }
   .nav-visible body > * {
-    left: -72%;
+    right: 230px !important;
   }
   .nav-visible .navbar .nav-collapse {
-    left: 28%!important;
+    right: 0 !important;
     visibility: visible;
   }
 }
@@ -856,6 +857,8 @@ section * {
  * Content 2 stylesheet  
  * */
 .content-2 {
+  padding-top: 130px;
+  padding-bottom: 130px;
   position: relative;
 }
 .content-2 h3 {
@@ -923,8 +926,9 @@ section * {
  * Content 9 stylesheet  
  * */
 .content-9 {
+  padding-top: 130px;
+  padding-bottom: 130px;
   position: relative;
-  padding-bottom: 0;
 }
 .content-9 h3 {
   font-size: 30px;
@@ -1042,8 +1046,8 @@ section * {
 }
 .content-30 {
   position: relative;
-  padding-top: 110px;
-  padding-bottom: 110px;
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 @media (max-width: 480px) {
   .content-30 {
@@ -1212,6 +1216,10 @@ footer {
     padding-bottom: 105px;
   }
 }
+.content-30 {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
 .header-3-sub .background {
   opacity: 1;
   filter: alpha(opacity=100);
@@ -1245,6 +1253,7 @@ footer {
 }
 .content-9 {
   padding-top: 130px;
+  padding-bottom: 0;
 }
 @media (max-width: 768px) {
   .content-9 {

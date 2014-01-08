@@ -81,12 +81,12 @@ $(function() {
       pt.init(this);
 
       $('.pt-control-prev', this).on('click', function() {
-        pt.gotoPage(33, 'prev');
+        pt.gotoPage(68, 'prev');
         return false;
       });
 
       $('.pt-control-next', this).on('click', function() {
-        pt.gotoPage(32, 'next');
+        pt.gotoPage(68, 'next');
         return false;
       });
     });

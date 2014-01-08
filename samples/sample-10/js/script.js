@@ -17,12 +17,12 @@
         pt2.init('#pt-2');
 
         $('#pt-2 .pt-control-prev').on('click', function() {
-            pt2.gotoPage(33, 'prev');
+            pt2.gotoPage(2, 'prev');
             return false;
         });
 
         $('#pt-2 .pt-control-next').on('click', function() {
-            pt2.gotoPage(32, 'next');
+            pt2.gotoPage(1, 'next');
             return false;
         });
 

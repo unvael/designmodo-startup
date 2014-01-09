@@ -1240,11 +1240,13 @@ section * {
   z-index: auto;
   background: none;
   border: 3px solid #ebedee;
+  pointer-events: none;
 }
 .content-31 .container .pt-last .pt-control-next {
   z-index: auto;
   background: none;
   border: 3px solid #ebedee;
+  pointer-events: none;
 }
 @media (max-width: 767px) {
   .content-31 .container {

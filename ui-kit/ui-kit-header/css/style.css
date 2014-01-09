@@ -5797,6 +5797,7 @@ body section[class*=content-] {
 .header-16-sub .pt-first .pt-control-prev {
   opacity: 0.4;
   filter: alpha(opacity=40);
+  pointer-events: none;
 }
 .header-16-sub .pt-first .pt-control-prev:before {
   background: none;
@@ -5805,6 +5806,7 @@ body section[class*=content-] {
 .header-16-sub .pt-last .pt-control-next {
   opacity: 0.4;
   filter: alpha(opacity=40);
+  pointer-events: none;
 }
 .header-16-sub .pt-last .pt-control-next:after {
   background: none;

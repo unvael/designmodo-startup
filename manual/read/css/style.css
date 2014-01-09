@@ -4391,6 +4391,7 @@ body {
   z-index: auto;
   background: none;
   border: 3px solid #ebedee;
+  pointer-events: none;
 }
 .mcontent .content-18 .carousel .controls > .carousel-control.left {
   left: 0;
@@ -4403,10 +4404,10 @@ body {
 }
 .mcontent .content-18 .carousel .item {
   -webkit-backface-visibility: hidden;
-  -webkit-transition: .8s ease-in-out top, .6s ease-in-out opacity;
-  -moz-transition: .8s ease-in-out top, .6s ease-in-out opacity;
-  -o-transition: .8s ease-in-out top, .6s ease-in-out opacity;
-  transition: .8s ease-in-out top, .6s ease-in-out opacity;
+  -webkit-transition: .8s ease-in-out opacity, .8s ease-in-out opacity;
+  -moz-transition: .8s ease-in-out opacity, .8s ease-in-out opacity;
+  -o-transition: .8s ease-in-out opacity, .8s ease-in-out opacity;
+  transition: .8s ease-in-out opacity, .8s ease-in-out opacity;
   display: block;
   position: absolute;
   top: 0;
@@ -5729,7 +5730,8 @@ body {
   background: rgba(52, 152, 219, 0.1);
   position: relative;
   overflow: hidden;
-  height: 360px;
+  width: 1024px;
+  height: 576px;
   margin: 40px auto 50px;
 }
 .mcontent .content-29 .player .btn-play {
@@ -5752,9 +5754,34 @@ body {
   border: 0;
   display: block;
 }
-@media (max-width: 480px) {
+@media (max-width: 1200px) {
   .mcontent .content-29 .player {
-    height: 180px;
+    width: 768px;
+    height: 432px;
+  }
+}
+@media (max-width: 1000px) {
+  .mcontent .content-29 .player {
+    width: 720px;
+    height: 406px;
+  }
+}
+@media (max-width: 840px) {
+  .mcontent .content-29 .player {
+    width: 568px;
+    height: 319px;
+  }
+}
+@media (max-width: 768px) {
+  .mcontent .content-29 .player {
+    width: 500px;
+    max-height: 270px;
+  }
+}
+@media (max-width: 568px) {
+  .mcontent .content-29 .player {
+    width: 300px;
+    max-height: 180px;
   }
 }
 .mcontent .content-30 {
@@ -6085,11 +6112,13 @@ body {
   z-index: auto;
   background: none;
   border: 3px solid #ebedee;
+  pointer-events: none;
 }
 .mcontent .content-31 .container .pt-last .pt-control-next {
   z-index: auto;
   background: none;
   border: 3px solid #ebedee;
+  pointer-events: none;
 }
 @media (max-width: 767px) {
   .mcontent .content-31 .container {
@@ -11452,6 +11481,7 @@ body {
 .mcontent .header-16-sub .pt-first .pt-control-prev {
   opacity: 0.4;
   filter: alpha(opacity=40);
+  pointer-events: none;
 }
 .mcontent .header-16-sub .pt-first .pt-control-prev:before {
   background: none;
@@ -11460,6 +11490,7 @@ body {
 .mcontent .header-16-sub .pt-last .pt-control-next {
   opacity: 0.4;
   filter: alpha(opacity=40);
+  pointer-events: none;
 }
 .mcontent .header-16-sub .pt-last .pt-control-next:after {
   background: none;

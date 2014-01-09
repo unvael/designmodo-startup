@@ -350,11 +350,11 @@ startupKit.uiKitHeader.header16 = function() {
     var pt = PageTransitions();
     pt.init('#h-16-pt-main');
     $('#h-16-pt-main .pt-control-prev').on('click', function() {
-        pt.gotoPage(51, 'prev');
+        pt.gotoPage(2, 'prev');
         return false;
     });
     $('#h-16-pt-main .pt-control-next').on('click', function() {
-        pt.gotoPage(50, 'next');
+        pt.gotoPage(1, 'next');
         return false;
     });
 

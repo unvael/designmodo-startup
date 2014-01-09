@@ -2501,6 +2501,7 @@ body section[class*=content-] {
   z-index: auto;
   background: none;
   border: 3px solid #ebedee;
+  pointer-events: none;
 }
 .content-18 .carousel .controls > .carousel-control.left {
   left: 0;
@@ -2513,10 +2514,10 @@ body section[class*=content-] {
 }
 .content-18 .carousel .item {
   -webkit-backface-visibility: hidden;
-  -webkit-transition: .8s ease-in-out top, .6s ease-in-out opacity;
-  -moz-transition: .8s ease-in-out top, .6s ease-in-out opacity;
-  -o-transition: .8s ease-in-out top, .6s ease-in-out opacity;
-  transition: .8s ease-in-out top, .6s ease-in-out opacity;
+  -webkit-transition: .8s ease-in-out opacity, .8s ease-in-out opacity;
+  -moz-transition: .8s ease-in-out opacity, .8s ease-in-out opacity;
+  -o-transition: .8s ease-in-out opacity, .8s ease-in-out opacity;
+  transition: .8s ease-in-out opacity, .8s ease-in-out opacity;
   display: block;
   position: absolute;
   top: 0;
@@ -3842,7 +3843,8 @@ body section[class*=content-] {
   background: rgba(52, 152, 219, 0.1);
   position: relative;
   overflow: hidden;
-  height: 360px;
+  width: 1024px;
+  height: 576px;
   margin: 40px auto 50px;
 }
 .content-29 .player .btn-play {
@@ -3865,9 +3867,34 @@ body section[class*=content-] {
   border: 0;
   display: block;
 }
-@media (max-width: 480px) {
+@media (max-width: 1200px) {
   .content-29 .player {
-    height: 180px;
+    width: 768px;
+    height: 432px;
+  }
+}
+@media (max-width: 1000px) {
+  .content-29 .player {
+    width: 720px;
+    height: 406px;
+  }
+}
+@media (max-width: 840px) {
+  .content-29 .player {
+    width: 568px;
+    height: 319px;
+  }
+}
+@media (max-width: 768px) {
+  .content-29 .player {
+    width: 500px;
+    max-height: 270px;
+  }
+}
+@media (max-width: 568px) {
+  .content-29 .player {
+    width: 300px;
+    max-height: 180px;
   }
 }
 .content-30 {
@@ -4198,11 +4225,13 @@ body section[class*=content-] {
   z-index: auto;
   background: none;
   border: 3px solid #ebedee;
+  pointer-events: none;
 }
 .content-31 .container .pt-last .pt-control-next {
   z-index: auto;
   background: none;
   border: 3px solid #ebedee;
+  pointer-events: none;
 }
 @media (max-width: 767px) {
   .content-31 .container {

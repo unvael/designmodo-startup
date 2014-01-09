@@ -1218,6 +1218,7 @@ section * {
 .header-16-sub .pt-first .pt-control-prev {
   opacity: 0.4;
   filter: alpha(opacity=40);
+  pointer-events: none;
 }
 .header-16-sub .pt-first .pt-control-prev:before {
   background: none;
@@ -1226,6 +1227,7 @@ section * {
 .header-16-sub .pt-last .pt-control-next {
   opacity: 0.4;
   filter: alpha(opacity=40);
+  pointer-events: none;
 }
 .header-16-sub .pt-last .pt-control-next:after {
   background: none;
@@ -1559,6 +1561,7 @@ section * {
   z-index: auto;
   background: none;
   border: 3px solid #ebedee;
+  pointer-events: none;
 }
 .content-18 .carousel .controls > .carousel-control.left {
   left: 0;
@@ -1571,10 +1574,10 @@ section * {
 }
 .content-18 .carousel .item {
   -webkit-backface-visibility: hidden;
-  -webkit-transition: .8s ease-in-out top, .6s ease-in-out opacity;
-  -moz-transition: .8s ease-in-out top, .6s ease-in-out opacity;
-  -o-transition: .8s ease-in-out top, .6s ease-in-out opacity;
-  transition: .8s ease-in-out top, .6s ease-in-out opacity;
+  -webkit-transition: .8s ease-in-out opacity, .8s ease-in-out opacity;
+  -moz-transition: .8s ease-in-out opacity, .8s ease-in-out opacity;
+  -o-transition: .8s ease-in-out opacity, .8s ease-in-out opacity;
+  transition: .8s ease-in-out opacity, .8s ease-in-out opacity;
   display: block;
   position: absolute;
   top: 0;

@@ -72,21 +72,9 @@ function fadedEls(el, shift) {
         
         // responsive
         $(window).resize(function() {
-                    
-            var sH = $(window).height();            
+            var sH = $(window).height();
             $('section.header-10-sub').css('height', sH + 'px');
-        
-        /*
-        
-                    if ($(window).width() > 480) {
-                        $('.header-10-sub').css('height', '');
-                    } else {
-                        $('.header-10-sub').css('height', $(window).height());
-                    }*/
-        
         });
-
- 
 
     });
 

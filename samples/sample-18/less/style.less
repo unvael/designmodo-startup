@@ -46,16 +46,21 @@ body > section {
         padding-bottom: 145px;
     }
 }
+
 .header-10 {
-    @import'navbar';
-    background:transparent;
-    position:absolute;
-    height: 80px;
-    .navbar {
-        .opacity(0);
-        .nav > li > a {
-            font-weight: 500;
-        }
+@import 'navbar';
+  background: transparent;
+  position: absolute;
+  height: 80px;
+  .navbar {
+    .opacity(0);
+    .nav > li {
+      margin-left: 60px;
+      > a {
+        font-weight: 500;
+        font-size: 13px;
+      }
+    }
         .loaded & {
             .transition(~'1.2s .8s opacity');
             .opacity(100);
@@ -126,3 +131,103 @@ body > section {
         }
     }
 }
+
+/* start custom navbar
+
+.navbar {
+  position: relative;
+  margin: 10px 0 0;
+  font-family: @h-font-family;
+
+
+  @media (max-width: 979px) {
+    margin: 0 0 10px;
+  }
+
+  .navbar-inner {
+    background: none;
+  }
+
+  .brand {
+    display: none;
+    padding: 23px 28px 5px 0;
+    font-weight: 800;
+    font-size: 25px;
+    color: #fff!important;
+
+    img:first-child {
+      float: left;
+      margin: -10px 15px 0 0;
+    }
+
+    @media (max-width: 979px) {
+      display: block;
+    }
+  }
+
+  .nav {
+    // center aligned menu
+    @media (min-width: 980px) {
+      width: 100%;
+      text-align: center;
+
+      > li {
+        float: none;
+        display: inline-block;
+        margin-left: 10%;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+
+    > li {
+      > a {
+        padding: 20px 10px 27px;
+        font-size: 13px;
+        font-weight: normal;
+        .a-color(#7f8c8d, #fff);
+
+        @media (max-width: 979px) {
+          margin: 0;
+          padding: 7px 20px;
+        }
+      }
+
+      &.active > a {
+        .a-color(#fff, #fff);
+      }
+    }
+  }
+
+  // "icon only" style
+  .btn-navbar {
+    margin: 27px 0 5px;
+    float: right;
+    padding: 0;
+    .border-radius(0);
+    border: 0;
+    background: none!important;
+    color: #7f8c8d;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+    }
+
+    &:active,
+    &.active {
+      color: darken(#fff, 20%);
+    }
+  }
+
+
+  @media (max-width: 979px) {
+    .nav-collapse {
+      padding-top: 17px;
+    }
+  }
+}
+
+ end custom navbar */

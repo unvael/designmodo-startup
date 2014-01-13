@@ -10047,6 +10047,7 @@ body {
 .mcontent .header-12 .navbar {
   position: absolute;
   z-index: 2;
+  width: 100%;
   top: 90px;
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -10068,7 +10069,7 @@ body {
   margin: -10px 15px 0 0;
 }
 .mcontent .header-12 .navbar .nav {
-  margin: 9px 0 0 50px;
+  margin: 9px 0 0 100px;
 }
 .mcontent .header-12 .navbar .nav a {
   font-weight: 500;

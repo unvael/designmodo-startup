@@ -653,6 +653,7 @@ section * {
 .header-12 .navbar {
   position: absolute;
   z-index: 2;
+  width: 100%;
   top: 90px;
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -674,7 +675,7 @@ section * {
   margin: -10px 15px 0 0;
 }
 .header-12 .navbar .nav {
-  margin: 9px 0 0 50px;
+  margin: 9px 0 0 100px;
 }
 .header-12 .navbar .nav a {
   font-weight: 500;

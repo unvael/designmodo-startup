@@ -8367,7 +8367,7 @@ body {
 .mcontent .header-6-sub .signup-form form input,
 .mcontent .header-6-sub .signup-form form button {
   float: left;
-  width: 21.8%;
+  width: 23.8%;
   height: 41px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -8377,19 +8377,19 @@ body {
 @media (min-width: 1200px) {
   .mcontent .header-6-sub .signup-form form input,
   .mcontent .header-6-sub .signup-form form button {
-    width: 22%;
+    width: 23.8%;
   }
 }
 @media (max-width: 979px) and (min-width: 768px) {
   .mcontent .header-6-sub .signup-form form input,
   .mcontent .header-6-sub .signup-form form button {
-    width: 21.4%;
+    width: 23.8%;
   }
 }
 @media (max-width: 767px) {
   .mcontent .header-6-sub .signup-form form input,
   .mcontent .header-6-sub .signup-form form button {
-    width: 20%;
+    width: 23.8%;
   }
 }
 @media (max-width: 480px) {
@@ -8404,6 +8404,18 @@ body {
 .mcontent .header-6-sub .signup-form form input:first-child,
 .mcontent .header-6-sub .signup-form form button:first-child {
   margin: 0;
+}
+.mcontent .header-6-sub .signup-form form button {
+  width: 22%;
+  margin-left: 2%;
+}
+@media (max-width: 480px) {
+  .mcontent .header-6-sub .signup-form form button {
+    width: 100%;
+    margin: 10px 0 0;
+    display: block;
+    float: none;
+  }
 }
 .mcontent .header-7-sub {
   position: relative;

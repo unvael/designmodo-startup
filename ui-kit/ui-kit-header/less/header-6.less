@@ -230,18 +230,18 @@
             background: white;
             input, button {
                 float: left;
-                width: 21.8%;
+                width: 23.8%;
                 height: 41px;
                 .box-sizing(border-box);
                 margin: 0 0 0 2.3%;
                 @media (min-width: 1200px) {
-                    width: 22%;
+                  width: 23.8%;
                 }
                 @media (max-width: 979px) and (min-width: 768px) {
-                    width: 21.4%;
+                    width: 23.8%;
                 }
                 @media (max-width: 767px) {
-                    width: 20%;
+                    width: 23.8%;
                 }
                 @media (max-width: 480px) {
                     width: 100%;
@@ -252,6 +252,16 @@
                 &:first-child {
                     margin: 0;
                 }
+            }
+            button{
+              width: 22%;
+              margin-left: 2%;
+              @media (max-width: 480px) {
+                width: 100%;
+                margin: 10px 0 0;
+                display: block;
+                float: none;
+              }
             }
         }
     }

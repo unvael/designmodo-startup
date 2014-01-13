@@ -1027,7 +1027,7 @@ section * {
 .header-6-sub .signup-form form input,
 .header-6-sub .signup-form form button {
   float: left;
-  width: 21.8%;
+  width: 23.8%;
   height: 41px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1037,19 +1037,19 @@ section * {
 @media (min-width: 1200px) {
   .header-6-sub .signup-form form input,
   .header-6-sub .signup-form form button {
-    width: 22%;
+    width: 23.8%;
   }
 }
 @media (max-width: 979px) and (min-width: 768px) {
   .header-6-sub .signup-form form input,
   .header-6-sub .signup-form form button {
-    width: 21.4%;
+    width: 23.8%;
   }
 }
 @media (max-width: 767px) {
   .header-6-sub .signup-form form input,
   .header-6-sub .signup-form form button {
-    width: 20%;
+    width: 23.8%;
   }
 }
 @media (max-width: 480px) {
@@ -1064,6 +1064,18 @@ section * {
 .header-6-sub .signup-form form input:first-child,
 .header-6-sub .signup-form form button:first-child {
   margin: 0;
+}
+.header-6-sub .signup-form form button {
+  width: 22%;
+  margin-left: 2%;
+}
+@media (max-width: 480px) {
+  .header-6-sub .signup-form form button {
+    width: 100%;
+    margin: 10px 0 0;
+    display: block;
+    float: none;
+  }
 }
 /* contents */
 /**

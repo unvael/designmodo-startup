@@ -959,13 +959,6 @@ section * {
   .header-5 .navbar .nav-collapse .navbar-search {
     padding: 10px 35px;
   }
-  .header-5 .nav-visible {
-    /*.navbar-inner {
-                  position: fixed;
-                  z-index: 999;
-              }*/
-  
-  }
   .header-5 .nav-visible .nav-collapse {
     top: 0;
   }

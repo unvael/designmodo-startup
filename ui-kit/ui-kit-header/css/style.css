@@ -643,9 +643,6 @@ section * {
   color: #7f8c8d;
   background-color: white;
 }
-.nav-visible .dockbar {
-  display: none;
-}
 .nav-visible .read-man {
   display: none;
 }
@@ -2081,13 +2078,6 @@ body section[class*=content-] {
   .header-5 .navbar .nav-collapse .navbar-form,
   .header-5 .navbar .nav-collapse .navbar-search {
     padding: 10px 35px;
-  }
-  .header-5 .nav-visible {
-    /*.navbar-inner {
-                  position: fixed;
-                  z-index: 999;
-              }*/
-  
   }
   .header-5 .nav-visible .nav-collapse {
     top: 0;
@@ -6799,8 +6789,8 @@ body section[class*=content-] {
   position: fixed;
   top: 0;
   bottom: 0;
-  left: 100%;
-  width: 72%;
+  right: -230px;
+  width: 230px;
   padding: 68px 0;
   border-radius: 0;
   float: none;
@@ -6884,7 +6874,7 @@ body section[class*=content-] {
   transition: left 0.4s;
 }
 .header-19 .nav-visible.navbar .nav-collapse {
-  left: 50%!important;
+  right: 0;
   visibility: visible;
 }
 @media (max-width: 400px) {
@@ -6894,7 +6884,7 @@ body section[class*=content-] {
   }
 }
 .nav-visible body > .header-19-sub {
-  left: -50%;
+  right: 230px;
 }
 .header-19-sub {
   padding-top: 340px;

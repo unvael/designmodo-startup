@@ -4034,7 +4034,7 @@ body {
 @media (max-width: 979px) and (min-width: 768px) {
   .mcontent .content-14 .features .box-1,
   .mcontent .content-14 .features .box-5 {
-    top: 320px;
+    top: 220px;
   }
 }
 .mcontent .content-14 .features .box-2,
@@ -4047,7 +4047,7 @@ body {
 @media (max-width: 979px) and (min-width: 768px) {
   .mcontent .content-14 .features .box-2,
   .mcontent .content-14 .features .box-6 {
-    top: 720px;
+    top: 440px;
   }
 }
 .mcontent .content-14 .features .box-3,
@@ -4060,7 +4060,7 @@ body {
 @media (max-width: 979px) and (min-width: 768px) {
   .mcontent .content-14 .features .box-3,
   .mcontent .content-14 .features .box-7 {
-    top: 1140px;
+    top: 660px;
   }
 }
 .mcontent .content-14 .features .box-4,

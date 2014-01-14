@@ -2132,7 +2132,7 @@ body section[class*=content-] {
 @media (max-width: 979px) and (min-width: 768px) {
   .content-14 .features .box-1,
   .content-14 .features .box-5 {
-    top: 320px;
+    top: 220px;
   }
 }
 .content-14 .features .box-2,
@@ -2145,7 +2145,7 @@ body section[class*=content-] {
 @media (max-width: 979px) and (min-width: 768px) {
   .content-14 .features .box-2,
   .content-14 .features .box-6 {
-    top: 720px;
+    top: 440px;
   }
 }
 .content-14 .features .box-3,
@@ -2158,7 +2158,7 @@ body section[class*=content-] {
 @media (max-width: 979px) and (min-width: 768px) {
   .content-14 .features .box-3,
   .content-14 .features .box-7 {
-    top: 1140px;
+    top: 660px;
   }
 }
 .content-14 .features .box-4,

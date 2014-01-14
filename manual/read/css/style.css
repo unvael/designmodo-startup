@@ -7799,12 +7799,15 @@ body {
   .mcontent .header-5 .navbar .nav-collapse .navbar-search {
     padding: 10px 35px;
   }
+  .mcontent .header-5 .nav-visible {
+    /*.navbar-inner {
+                  position: fixed;
+                  z-index: 999;
+              }*/
+  
+  }
   .mcontent .header-5 .nav-visible .nav-collapse {
     top: 0;
-  }
-  .mcontent .header-5 .nav-visible .navbar-inner {
-    position: fixed;
-    z-index: 999;
   }
 }
 .mcontent .header-5-sub {

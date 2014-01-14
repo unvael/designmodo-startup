@@ -530,9 +530,6 @@ section * {
   color: #7f8c8d;
   background-color: white;
 }
-.nav-visible .dockbar {
-  display: none;
-}
 .nav-visible .read-man {
   display: none;
 }

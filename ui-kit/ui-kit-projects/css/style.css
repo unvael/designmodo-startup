@@ -583,9 +583,6 @@ section * {
     vertical-align: baseline;
   }
 }
-.nav-visible .dockbar {
-  display: none;
-}
 .nav-visible .read-man {
   display: none;
 }

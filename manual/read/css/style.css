@@ -1049,9 +1049,6 @@ body {
 .mcontent .pt-page-ontop {
   z-index: 999;
 }
-.mcontent .nav-visible .dockbar {
-  display: none;
-}
 .mcontent .nav-visible .read-man {
   display: none;
 }
@@ -7802,10 +7799,6 @@ body {
   .mcontent .header-5 .nav-visible .nav-collapse {
     top: 0;
   }
-  .mcontent .header-5 .nav-visible .navbar-inner {
-    position: fixed;
-    z-index: 999;
-  }
 }
 .mcontent .header-5-sub {
   position: relative;
@@ -12471,8 +12464,8 @@ body {
   position: fixed;
   top: 0;
   bottom: 0;
-  left: 100%;
-  width: 72%;
+  right: -230px;
+  width: 230px;
   padding: 68px 0;
   border-radius: 0;
   float: none;
@@ -12556,7 +12549,7 @@ body {
   transition: left 0.4s;
 }
 .mcontent .header-19 .nav-visible.navbar .nav-collapse {
-  left: 50%!important;
+  right: 0;
   visibility: visible;
 }
 @media (max-width: 400px) {
@@ -12566,7 +12559,7 @@ body {
   }
 }
 .mcontent .nav-visible body > .header-19-sub {
-  left: -50%;
+  right: 230px;
 }
 .mcontent .header-19-sub {
   padding-top: 340px;

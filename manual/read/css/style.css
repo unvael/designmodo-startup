@@ -17893,9 +17893,6 @@ body {
 .faq .question .answer pre[class*="language-"] {
   margin: 33px 0 0 0;
 }
-.nav-visible .dockbar {
-  display: none;
-}
 .nav-visible .read-man {
   display: none;
 }

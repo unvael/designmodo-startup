@@ -23,7 +23,7 @@ startupKit.uiKitHeader = startupKit.uiKitHeader || {};
 startupKit.uiKitHeader._inFixedMode = function(headerClass) {
 
     $(headerClass + ' .navbar .btn-navbar').unbind().click(function() {
-        if($('#header-dockbar')){
+        if($('#header-dockbar').length){
             $(this).closest('.navbar').find('.nav-collapse').css({
                 top: '66px'
             })

@@ -809,6 +809,13 @@ section * {
   .header-2 .navbar .nav-collapse .navbar-search {
     padding: 10px 35px;
   }
+  .header-2 .navbar .btn-navbar:before {
+    content: '';
+    display: block;
+    background-image: url("../../../common-files/icons/menu-icon.png");
+    width: 17px;
+    height: 12px;
+  }
 }
 .header-2-sub {
   z-index: 50;

@@ -744,10 +744,11 @@ section * {
 }
 .header-16 .navbar .btn-navbar:before {
   display: block;
-  margin-bottom: 20px;
-  font-size: 16px;
-  font-weight: normal;
-  color: #ffffff;
+  margin: 0 auto 20px;
+  content: '';
+  background-image: url("../../../common-files/icons/menu-icon.png");
+  width: 17px;
+  height: 12px;
 }
 .header-16 .navbar .btn-navbar:after {
   content: "\e00b";

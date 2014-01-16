@@ -869,6 +869,13 @@ section * {
   .header-6 .navbar .nav-collapse .navbar-search {
     padding: 10px 35px;
   }
+  .header-6 .navbar .btn-navbar:before {
+    content: '';
+    display: block;
+    background-image: url("../../../common-files/icons/menu-icon.png");
+    width: 17px;
+    height: 12px;
+  }
 }
 .loaded .header-6 .navbar {
   -webkit-backface-visibility: hidden;

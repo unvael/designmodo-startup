@@ -758,6 +758,15 @@ section * {
     border-left: 1px solid #272b2f;
     color: #ffffff;
   }
+  .dockbar .menu-btn span {
+    content: '';
+    background-image: url("../../../common-files/icons/menu-icon.png");
+    width: 17px;
+    height: 12px;
+  }
+  .dockbar .menu-btn span:before {
+    content: '';
+  }
 }
 .dockbar .main-menu {
   display: block;
@@ -1033,6 +1042,14 @@ body section[class*=content-] {
   .header-1 .navbar .nav-collapse .navbar-form,
   .header-1 .navbar .nav-collapse .navbar-search {
     padding: 10px 35px;
+  }
+  .header-1 .navbar .btn-navbar {
+    background-image: url("../../../common-files/icons/menu-icon.png");
+    width: 17px;
+    height: 12px;
+  }
+  .header-1 .navbar .btn-navbar:before {
+    content: '';
   }
 }
 .header-1-sub {

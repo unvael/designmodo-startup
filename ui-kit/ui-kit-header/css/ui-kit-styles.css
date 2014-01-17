@@ -5130,12 +5130,23 @@ body section[class*=content-] {
   color: #bdc3c7;
 }
 .header-15 .navbar .btn-navbar {
-  margin: 28px 0 17px;
+  margin: 35px 0 17px;
   padding: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
   border: 0;
+}
+.header-15 .navbar .btn-navbar:before {
+  content: '';
+  display: block;
+  background-image: url("../../../common-files/icons/menu-icon.png");
+  width: 17px;
+  height: 12px;
+}
+.header-15 .navbar .btn-navbar:hover,
+.header-15 .navbar .btn-navbar:focus {
+  background-color: transparent;
 }
 @media (max-width: 979px) {
   .header-15 .navbar .nav-collapse {

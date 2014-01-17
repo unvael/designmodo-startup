@@ -15304,6 +15304,9 @@ body {
   -o-transition: opacity 0.4s;
   transition: opacity 0.4s;
 }
+.mcontent .crew-1 .members .photo img {
+  display: none;
+}
 .mcontent .crew-1 .members .overlay {
   display: block;
   position: absolute;
@@ -15439,6 +15442,9 @@ body {
   -moz-transition: opacity 0.4s;
   -o-transition: opacity 0.4s;
   transition: opacity 0.4s;
+}
+.mcontent .crew-2 .members .photo img {
+  display: none;
 }
 .mcontent .crew-2 .members .info {
   text-align: center;
@@ -15626,6 +15632,9 @@ body {
   -o-transition: opacity 0.4s;
   transition: opacity 0.4s;
 }
+.mcontent .crew-3 .members .photo img {
+  display: none;
+}
 .mcontent .crew-3 .members .overlay {
   display: block;
   position: absolute;
@@ -15765,6 +15774,9 @@ body {
   -moz-transition: opacity 0.4s;
   -o-transition: opacity 0.4s;
   transition: opacity 0.4s;
+}
+.mcontent .crew-4 .members .photo img {
+  display: none;
 }
 .mcontent .crew-4 .members .overlay {
   display: block;

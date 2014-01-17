@@ -9,17 +9,19 @@ module.exports = function(grunt) {
 	    expand: true,
 	    src: [
 			'ui-kit/ui-kit-*/less/style.less',
+			'ui-kit/ui-kit-*/less/ui-kit-styles.less',
 			'samples/sample-*/less/style.less',
 			'hipstafood/less/style.less',
 			'crumbs/less/style.less',
 			'manual/read/less/style.less',
 			'Presentation/less/style.less',
 			'demo/ui-kit/ui-kit-*/less/style.less',
+			'demo/ui-kit/ui-kit-*/less/ui-kit-styles.less',			
 			'demo/samples/sample-*/less/style.less',
 			'demo/manual/read/less/style.less',                        
 	    ],
 	    rename: function(src, dest) {
-			return dest.replace('less/style.less', 'css/style.css');
+			return dest.replace('less/style.less', 'css/style.css').replace('less/ui-kit-styles.less', 'css/ui-kit-styles.css');
 	    },
 	  },
     },

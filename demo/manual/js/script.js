@@ -18,38 +18,6 @@
             }
         });
 
-        // var BlockId = {};
-        // $('button.read-man').each(function () {
-        //     BlockId[$(this).attr('id')] = {};
-        //     BlockId[$(this).attr('id')].bH = 0;
-        // });
-
-        // for (id in BlockId) {
-
-        //     if ($('section.' + id).length != 0) {
-        //         BlockId[id].bH += $('section.' + id).outerHeight();
-        //     }
-        //     if ($('header.' + id).length != 0) {
-        //         BlockId[id].bH += $('header.' + id).outerHeight();
-        //     }
-        //     if ($('.' + id + '-sub').length != 0) {
-        //         if ($('.' + id + '-sub').hasClass('header-7-sub')) {
-        //             BlockId[id].bH += $('.h-7-section-1').outerHeight();
-        //         } else {
-        //             BlockId[id].bH += $('.' + id + '-sub').outerHeight();
-        //         }
-        //     }
-        //     if ($('.' + id + '-map').length != 0) {
-        //         BlockId[id].bH += $('.' + id + '-map').outerHeight();
-        //     }
-        //     if ($('footer.' + id).length != 0) {
-        //         BlockId[id].bH += $('footer.' + id).outerHeight();
-        //     }
-        //     if (BlockId[id].bH <= 80) {
-        //         $('#' + id).css('margin-top', (BlockId[id].bH - 49) / 2 + 'px');
-        //     }
-        // }
-
         $('.manual > div').hide('fast');
 
         var helpButton = $('.read-man');

@@ -452,9 +452,8 @@ button:active {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: auto !important;
-    right: -100% !important;
-    width: 230px !important;
+    right: -230px;
+    width: 230px;
     padding: 25px 0;
     border-radius: 0;
     float: none;
@@ -531,19 +530,35 @@ button:active {
   .navbar .nav-collapse .navbar-search:focus {
     outline: 0 none;
   }
-  body > *,
+  .has-header-dockbar {
+    top: 66px !important;
+  }
+  body > header,
+  body > section,
+  body > div,
+  body > footer {
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: left 0.333s;
+    -moz-transition: left 0.333s;
+    -o-transition: left 0.333s;
+    transition: left 0.333s;
+    left: 0;
+  }
   .navbar .nav-collapse {
     -webkit-backface-visibility: hidden;
-    -webkit-transition: left 0.4s;
-    -moz-transition: left 0.4s;
-    -o-transition: left 0.4s;
-    transition: left 0.4s;
+    -webkit-transition: right 0.333s;
+    -moz-transition: right 0.333s;
+    -o-transition: right 0.333s;
+    transition: right 0.333s;
   }
-  .nav-visible body > * {
-    right: 230px !important;
+  .nav-visible body > header,
+  .nav-visible body > section,
+  .nav-visible body > div,
+  .nav-visible body > footer {
+    left: -230px;
   }
   .nav-visible .navbar .nav-collapse {
-    right: 0 !important;
+    right: 0!important;
     visibility: visible;
   }
 }
@@ -767,8 +782,8 @@ section * {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 100%;
-    width: 72%;
+    right: -230px;
+    width: 230px;
     height: auto!important;
     padding: 25px 0;
     border-radius: 0;

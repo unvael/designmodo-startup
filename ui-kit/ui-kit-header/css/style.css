@@ -453,9 +453,8 @@ button:active {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: auto !important;
-    right: -100% !important;
-    width: 230px !important;
+    right: -230px;
+    width: 230px;
     padding: 25px 0;
     border-radius: 0;
     float: none;
@@ -532,19 +531,35 @@ button:active {
   .navbar .nav-collapse .navbar-search:focus {
     outline: 0 none;
   }
-  body > *,
+  .has-header-dockbar {
+    top: 66px !important;
+  }
+  body > header,
+  body > section,
+  body > div,
+  body > footer {
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: left 0.333s;
+    -moz-transition: left 0.333s;
+    -o-transition: left 0.333s;
+    transition: left 0.333s;
+    left: 0;
+  }
   .navbar .nav-collapse {
     -webkit-backface-visibility: hidden;
-    -webkit-transition: left 0.4s;
-    -moz-transition: left 0.4s;
-    -o-transition: left 0.4s;
-    transition: left 0.4s;
+    -webkit-transition: right 0.333s;
+    -moz-transition: right 0.333s;
+    -o-transition: right 0.333s;
+    transition: right 0.333s;
   }
-  .nav-visible body > * {
-    right: 230px !important;
+  .nav-visible body > header,
+  .nav-visible body > section,
+  .nav-visible body > div,
+  .nav-visible body > footer {
+    left: -230px;
   }
   .nav-visible .navbar .nav-collapse {
-    right: 0 !important;
+    right: 0!important;
     visibility: visible;
   }
 }
@@ -973,8 +988,8 @@ body section[class*=content-] {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 100%;
-    width: 72%;
+    right: -230px;
+    width: 230px;
     height: auto!important;
     padding: 25px 0;
     border-radius: 0;
@@ -1310,8 +1325,8 @@ body section[class*=content-] {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 100%;
-    width: 72%;
+    right: -230px;
+    width: 230px;
     height: auto!important;
     padding: 25px 0;
     border-radius: 0;
@@ -1589,8 +1604,8 @@ body section[class*=content-] {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 100%;
-    width: 72%;
+    right: -230px;
+    width: 230px;
     height: auto!important;
     padding: 25px 0;
     border-radius: 0;
@@ -2032,8 +2047,8 @@ body section[class*=content-] {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 100%;
-    width: 72%;
+    right: -230px;
+    width: 230px;
     height: auto!important;
     padding: 25px 0;
     border-radius: 0;
@@ -2112,6 +2127,10 @@ body section[class*=content-] {
   }
   .header-5 .nav-visible .nav-collapse {
     top: 0;
+  }
+  .header-5 .nav-visible .navbar-inner {
+    position: fixed;
+    z-index: 999;
   }
   .header-5 .btn-navbar:before {
     content: '';
@@ -2456,8 +2475,8 @@ body section[class*=content-] {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 100%;
-    width: 72%;
+    right: -230px;
+    width: 230px;
     height: auto!important;
     padding: 25px 0;
     border-radius: 0;
@@ -3260,8 +3279,8 @@ body section[class*=content-] {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 100%;
-    width: 72%;
+    right: -230px;
+    width: 230px;
     height: auto!important;
     padding: 25px 0;
     border-radius: 0;
@@ -3479,8 +3498,8 @@ body section[class*=content-] {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 100%;
-    width: 72%;
+    right: -230px;
+    width: 230px;
     height: auto!important;
     padding: 25px 0;
     border-radius: 0;
@@ -3816,8 +3835,8 @@ body section[class*=content-] {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 100%;
-    width: 72%;
+    right: -230px;
+    width: 230px;
     height: auto!important;
     padding: 25px 0;
     border-radius: 0;
@@ -4160,8 +4179,8 @@ body section[class*=content-] {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 100%;
-    width: 72%;
+    right: -230px;
+    width: 230px;
     height: auto!important;
     padding: 25px 0;
     border-radius: 0;
@@ -5126,8 +5145,8 @@ body section[class*=content-] {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 100%;
-    width: 72%;
+    right: -230px;
+    width: 230px;
     height: auto!important;
     padding: 25px 0;
     border-radius: 0;
@@ -6061,8 +6080,8 @@ body section[class*=content-] {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 100%;
-    width: 72%;
+    right: -230px;
+    width: 230px;
     height: auto!important;
     padding: 25px 0;
     border-radius: 0;
@@ -6944,23 +6963,20 @@ body section[class*=content-] {
 }
 .header-19 .navbar .nav-collapse {
   -webkit-backface-visibility: hidden;
-  -webkit-transition: left 0.4s;
-  -moz-transition: left 0.4s;
-  -o-transition: left 0.4s;
-  transition: left 0.4s;
+  -webkit-transition: right 0.333s;
+  -moz-transition: right 0.333s;
+  -o-transition: right 0.333s;
+  transition: right 0.333s;
 }
 .header-19 .nav-visible.navbar .nav-collapse {
-  right: 0;
+  right: 0 !important;
   visibility: visible;
 }
 @media (max-width: 400px) {
   .header-19 .nav-visible.navbar .nav-collapse {
-    left: 0 !important;
+    right: 0 !important;
     width: 100%;
   }
-}
-.nav-visible body > .header-19-sub {
-  right: 230px;
 }
 .header-19-sub {
   padding-top: 340px;
@@ -7173,8 +7189,8 @@ body section[class*=content-] {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 100%;
-    width: 72%;
+    right: -230px;
+    width: 230px;
     height: auto!important;
     padding: 25px 0;
     border-radius: 0;
@@ -7604,8 +7620,8 @@ body section[class*=content-] {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 100%;
-    width: 72%;
+    right: -230px;
+    width: 230px;
     height: auto!important;
     padding: 25px 0;
     border-radius: 0;
@@ -7898,8 +7914,8 @@ body section[class*=content-] {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 100%;
-    width: 72%;
+    right: -230px;
+    width: 230px;
     height: auto!important;
     padding: 25px 0;
     border-radius: 0;
@@ -8165,8 +8181,8 @@ body section[class*=content-] {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 100%;
-    width: 72%;
+    right: -230px;
+    width: 230px;
     height: auto!important;
     padding: 25px 0;
     border-radius: 0;

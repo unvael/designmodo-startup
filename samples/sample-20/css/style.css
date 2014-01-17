@@ -815,6 +815,13 @@ section * {
   .header-22 .navbar .nav-collapse .navbar-search {
     padding: 10px 35px;
   }
+  .header-22 .navbar .btn-navbar:before {
+    content: '';
+    display: block;
+    background-image: url("../../../common-files/icons/menu-icon-dark.png");
+    width: 17px;
+    height: 12px;
+  }
 }
 .header-22-sub {
   position: relative;

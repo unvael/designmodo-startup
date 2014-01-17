@@ -726,9 +726,11 @@ section * {
   color: #34495e;
 }
 .header-19 .navbar .btn-navbar:before {
-  font-size: 16px;
-  font-weight: normal;
-  color: #bdc3c7;
+  content: '';
+  display: block;
+  background-image: url("../../../common-files/icons/menu-icon-dark.png");
+  width: 17px;
+  height: 12px;
 }
 .loaded .header-19 .navbar {
   opacity: 1;

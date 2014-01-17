@@ -66,7 +66,7 @@
             }
         }
         .btn-navbar {
-            margin: 27px 0 17px;
+            margin: 36px 0 17px;
             padding: 0;
             .border-radius(0);
             border: 0;
@@ -83,6 +83,15 @@
             .nav-collapse {
                 padding-top: 17px;
                 .navbar-collapse;
+            }
+            .btn-navbar{
+                &:before{
+                  content:'';
+                  display: block;
+                  background-image: url("../../../common-files/icons/menu-icon.png");
+                  width: 17px;
+                  height: 12px;
+                }
             }
         }
     }

@@ -1164,6 +1164,15 @@ body {
     border-left: 1px solid #272b2f;
     color: #ffffff;
   }
+  .mcontent .dockbar .menu-btn span {
+    content: '';
+    background-image: url("../../../common-files/icons/menu-icon.png");
+    width: 17px;
+    height: 12px;
+  }
+  .mcontent .dockbar .menu-btn span:before {
+    content: '';
+  }
 }
 .mcontent .dockbar .main-menu {
   display: block;
@@ -6762,6 +6771,14 @@ body {
   .mcontent .header-1 .navbar .nav-collapse .navbar-form,
   .mcontent .header-1 .navbar .nav-collapse .navbar-search {
     padding: 10px 35px;
+  }
+  .mcontent .header-1 .navbar .btn-navbar {
+    background-image: url("../../../common-files/icons/menu-icon.png");
+    width: 17px;
+    height: 12px;
+  }
+  .mcontent .header-1 .navbar .btn-navbar:before {
+    content: '';
   }
 }
 .mcontent .header-1-sub {

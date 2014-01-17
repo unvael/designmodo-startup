@@ -774,6 +774,13 @@ section * {
 .header-17 .navbar .btn-navbar.active {
   color: #1abc9c;
 }
+.header-17 .navbar .btn-navbar:before {
+  content: '';
+  display: block;
+  background-image: url("../../../common-files/icons/menu-icon-header-17.png");
+  width: 17px;
+  height: 12px;
+}
 @media (max-width: 979px) {
   .header-17 .navbar .nav-collapse {
     padding-top: 27px;

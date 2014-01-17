@@ -806,6 +806,13 @@ section * {
   .header-23 .navbar .nav-collapse .navbar-search {
     padding: 10px 35px;
   }
+  .header-23 .navbar .btn-navbar:before {
+    content: '';
+    display: block;
+    background-image: url("../../../common-files/icons/menu-icon.png");
+    width: 17px;
+    height: 12px;
+  }
 }
 .header-23-sub {
   z-index: 50;

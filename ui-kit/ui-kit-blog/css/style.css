@@ -682,6 +682,15 @@ section * {
     border-left: 1px solid #272b2f;
     color: #ffffff;
   }
+  .dockbar .menu-btn span {
+    content: '';
+    background-image: url("../../../common-files/icons/menu-icon.png");
+    width: 17px;
+    height: 12px;
+  }
+  .dockbar .menu-btn span:before {
+    content: '';
+  }
 }
 .dockbar .main-menu {
   display: block;

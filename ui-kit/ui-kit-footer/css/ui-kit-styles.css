@@ -945,6 +945,7 @@ body section[class*=content-] {
 }
 .footer-2 .social-btns > * > * {
   display: block;
+  top: 0;
   position: relative;
   -webkit-backface-visibility: hidden;
   -webkit-transition: 0.25s top;
@@ -1352,6 +1353,7 @@ body section[class*=content-] {
 }
 .footer-6 .social-btns > * > * {
   display: block;
+  top: 0;
   position: relative;
   -webkit-backface-visibility: hidden;
   -webkit-transition: 0.25s top;
@@ -1546,6 +1548,7 @@ body section[class*=content-] {
 }
 .footer-7 .social-btns > * > * {
   display: block;
+  top: 0;
   position: relative;
   -webkit-backface-visibility: hidden;
   -webkit-transition: 0.25s top;
@@ -1966,6 +1969,7 @@ body section[class*=content-] {
 }
 .footer-11 .social-btns > * > * {
   display: block;
+  top: 0;
   position: relative;
   -webkit-backface-visibility: hidden;
   -webkit-transition: 0.25s top;
@@ -2281,6 +2285,7 @@ body section[class*=content-] {
 }
 .footer-14 .social-btns > * > * {
   display: block;
+  top: 0;
   position: relative;
   -webkit-backface-visibility: hidden;
   -webkit-transition: 0.25s top;

@@ -10,7 +10,7 @@
     .navbar {
         top:0 !important;
         margin: 10px 0 0;
-        font-family: @h-font-family;
+        font-family: @font-family-demo;
         &.navbar-fixed-top {
             position:fixed;
             margin:0 auto;
@@ -27,7 +27,7 @@
             padding-right: 26px;
             .font(14px, white);
             &.btn-primary {
-                .btn-background(@button-primary-active);
+                .btn-background(@btn-success-active-bg);
             }
         }
         .navbar-inner {
@@ -90,14 +90,14 @@
 .header-3-sub {
     position:relative;
     h3 {
-        .font(30px, @h-text-color);
-        font-family:@h-font-family;
+        .font(30px, @text-color-heading);
+        font-family:@font-family-demo;
         margin-bottom:20px;
         font-weight: 300;
     }
     p {
-        .font(16px, @c-text-color);
-        font-family:@c-font-family;
+        .font(16px, @text-color-default);
+        font-family:@font-family-demo;
     }
     padding-top: 180px;
     padding-bottom: 100px;

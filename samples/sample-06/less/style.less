@@ -1,6 +1,6 @@
-@import '../../../flat-ui/less/config.less';
+@import '../../../flat-ui/less/variables.less';
 @import '../../../flat-ui/less/mixins.less';
-/*only fo flat-ui free*/ @import '../../../common-files/less/flat-ui-free2.0.0-fix.less'; /* end only for flat-ui free*/
+
 @import '../../../common-files/less/mixins.less';
 @import '../../../common-files/less/common.less';
 @import '../../../common-files/less/navbar.less';
@@ -94,15 +94,15 @@ body > section, footer {
     }
     h3 {
         .font(30px, white);
-        font-family:@h-font-family;
+        font-family:@font-family-demo;
         margin-bottom:20px;
     }
     .container > img {
         margin-bottom: 50px;
     }
     .lead {
-        .font(15px, @firm);
-        font-family:@c-font-family;
+        .font(15px, @brand-secondary);
+        font-family:@font-family-demo;
         font-weight: 500;
         text-transform: uppercase;
     }

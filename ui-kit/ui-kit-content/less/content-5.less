@@ -11,15 +11,15 @@
     }
     h3 {
         margin: 0 0 21px;
-        .font(35px, @h-text-color);
-        font-family:@h-font-family;
+        .font(35px, @text-color-heading);
+        font-family:@font-family-demo;
         text-align: center;
         @media (max-width: 767px) {
             margin-bottom: 15px;
         }
         + .lead {
             .font(25px);
-            font-family:@h-font-family;
+            font-family:@font-family-demo;
             font-weight: 300;
             text-align: center;
             @media (max-width: 767px) {
@@ -38,7 +38,7 @@
                 position: absolute;
                 left: -60px;
                 top: 7px;
-                .font(25px, @h-text-color);
+                .font(25px, @text-color-heading);
                 @media (max-width: 767px) {
                     position: static;
                     float: left;
@@ -50,7 +50,7 @@
             }
             h6 {
                 .font(22px, @base);
-                font-family:@c-font-family;
+                font-family:@font-family-demo;
                 font-weight:500;
                 margin-bottom: 14px;
                 text-transform: none;

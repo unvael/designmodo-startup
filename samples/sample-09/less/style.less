@@ -1,6 +1,6 @@
-@import '../../../flat-ui/less/config.less';
+@import '../../../flat-ui/less/variables.less';
 @import '../../../flat-ui/less/mixins.less';
-/*only fo flat-ui free*/ @import '../../../common-files/less/flat-ui-free2.0.0-fix.less'; /* end only for flat-ui free*/
+
 @import '../../../common-files/less/mixins.less';
 @import '../../../common-files/less/common.less';
 @import '../../../common-files/less/navbar.less';
@@ -56,8 +56,8 @@ body > section {
     }
 }
 .price-1 h3 {
-    .font(30px, @h-text-color);
-    font-family:@h-font-family;
+    .font(30px, @text-color-heading);
+    font-family:@font-family-demo;
     margin:0 0 63px 0;
 }
 .content-3.bg-clouds .delimiter {

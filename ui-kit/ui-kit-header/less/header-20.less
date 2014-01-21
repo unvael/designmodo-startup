@@ -12,7 +12,7 @@
     border-bottom: 2px solid #ecf0f1;
     .navbar {
         margin: 10px 0 0;
-        font-family: @h-font-family;
+        font-family: @font-family-demo;
         &.navbar-fixed-top {
             position:fixed;
             margin:0 auto;
@@ -39,10 +39,10 @@
                     padding: 28px 0 27px;
                     .font(18px, @silver);
                     font-weight:500;
-                    .a-color(@silver, @info);
+                    .a-color(@silver, @brand-info);
                 }
                 &.active > a {
-                    .a-color(@info, @info);
+                    .a-color(@brand-info, @brand-info);
                 }
             }
         }
@@ -54,7 +54,7 @@
             background: none!important;
             color: @silver;
             &:hover, &:focus {
-                color: @info;
+                color: @brand-info;
             }
             &:active, &.active {
                 color: @base;
@@ -74,15 +74,15 @@
     padding-top: 180px;
     padding-bottom: 80px;
     h3 {
-        .font(30px, @h-text-color);
-        font-family:@h-font-family;
+        .font(30px, @text-color-heading);
+        font-family:@font-family-demo;
         font-weight: 300;
         letter-spacing: -1px;
         margin-bottom:30px;
     }
     p {
         .font(18px);
-        font-family:@c-font-family;
+        font-family:@font-family-demo;
         margin-bottom:30px;
     }
     .btn {
@@ -195,18 +195,18 @@
                 font-size: 10px;
                 &:hover, &:focus {
                     background-color: transparent;
-                    border-color: @info;
-                    color: @info;
+                    border-color: @brand-info;
+                    color: @brand-info;
                 }
             }
         }
         .video-box.active {
             .player {
-                background: @info;
+                background: @brand-info;
                 .btn-play {
-                    .btn-background(@info);
+                    .btn-background(@brand-info);
                     &:hover, &:focus {
-                        background-color: mix(@info, white, 80%);
+                        background-color: mix(@brand-info, white, 80%);
                         border-color: white;
                         color: white;
                     }

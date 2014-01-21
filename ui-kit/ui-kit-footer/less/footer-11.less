@@ -9,7 +9,7 @@
         position: relative;
     }
     a {
-        .a-color(@silver, @info);
+        .a-color(@silver, @brand-info);
         font-weight: normal;
     }
     .brand {
@@ -59,7 +59,6 @@
             }
             > * {
                 display: block;
-                top: 0;
                 position: relative;
                 .transition(0.25s top);
                 &:first-child {
@@ -94,7 +93,7 @@
         a {
             margin: 0 10px;
             .a-color(@concrete);
-            font-family: @h-font-family;
+            font-family: @font-family-demo;
         }
     }
     @media (max-width: 480px) {

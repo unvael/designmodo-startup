@@ -14,7 +14,7 @@
         z-index: 2;
         top: 100px;
         margin: 0;
-        font-family: @h-font-family;
+        font-family: @font-family-demo;
         .navbar-inner {
             background: none;
         }
@@ -56,7 +56,7 @@
             background: none!important;
             color: @silver;
             &:hover, &:focus {
-                color: @firm;
+                color: @brand-secondary;
             }
             &:active, &.active {
                 color: @base;
@@ -95,7 +95,7 @@
         height: auto!important;
         overflow: auto!important;
         background: #222527;
-        font-family: @h-font-family;
+        font-family: @font-family-demo;
         &::-webkit-scrollbar {
             display: none;
         }
@@ -119,7 +119,7 @@
                 border-bottom: 2px solid #24292d;
                 .font(13px);
                 .a-color(#5b5e61, white);
-                font-family: @h-font-family;
+                font-family: @font-family-demo;
                 letter-spacing: 1px;
                 text-transform: uppercase;
             }
@@ -136,7 +136,7 @@
                 padding: 7px 35px;
                 .font(13px);
                 .a-color(#5b5e61, #fff);
-                font-family: @h-font-family;
+                font-family: @font-family-demo;
                 text-transform: capitalize;
             }
         }
@@ -177,7 +177,7 @@
     }
     h1 {
         margin: 0 0 30px;
-        .font(45px, @h-text-color);
+        .font(45px, @text-color-heading);
         font-weight:300;
     }
     .btn {
@@ -257,7 +257,7 @@
         padding-top: 255px;
         padding-bottom: 100px;
         h1 {
-            .font(35px, @h-text-color);
+            .font(35px, @text-color-heading);
         }
     }
 }

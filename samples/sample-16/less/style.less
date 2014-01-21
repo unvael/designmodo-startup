@@ -1,6 +1,6 @@
-@import '../../../flat-ui/less/config.less';
+@import '../../../flat-ui/less/variables.less';
 @import '../../../flat-ui/less/mixins.less';
-/*only fo flat-ui free*/ @import '../../../common-files/less/flat-ui-free2.0.0-fix.less'; /* end only for flat-ui free*/
+
 @import '../../../common-files/less/mixins.less';
 @import '../../../common-files/less/common.less';
 @import '../../../common-files/less/navbar.less';
@@ -17,8 +17,8 @@ body > section, .content-9 {
     padding-bottom: 80px;
 }
 h3, h6 {
-    color: @h-text-color;
-    font-family: @h-font-family;
+    color: @text-color-heading;
+    font-family: @font-family-demo;
     font-weight: 300;
 }
 h3 {
@@ -27,7 +27,7 @@ h3 {
 }
 p, content-9 p {
     font-size: 18px;
-    font-family: @h-font-family;
+    font-family: @font-family-demo;
 }
 .header-9 .navbar .brand {
     .a-color(#aa5a17, white);
@@ -55,7 +55,7 @@ p, content-9 p {
             @media (max-width: 768px) {
                 .font(36px, white);
             }
-            font-family: @h-font-family;
+            font-family: @font-family-demo;
             font-weight: 800;
             .line-height(46px);
             letter-spacing: 0;
@@ -63,7 +63,7 @@ p, content-9 p {
     }
     .wide-text.text-warning {
         .font(13px, white);
-        font-family: @h-font-family;
+        font-family: @font-family-demo;
         font-weight: 500;
         letter-spacing: 1.6px;
         text-transform: uppercase;
@@ -74,7 +74,7 @@ p, content-9 p {
     position: relative;
     margin: 0;
     padding: 0 10px;
-    background: @warning;
+    background: @brand-warning;
     color: #fff;
     text-align: center;
     font-size: 14px;
@@ -139,8 +139,8 @@ p, content-9 p {
         max-width: 200px;
         h6 {
             text-transform: none;
-            .font(18px, @h-text-color);
-            font-family: @h-font-family;
+            .font(18px, @text-color-heading);
+            font-family: @font-family-demo;
             font-weight: 500;
         }
         @media (max-width: 767px) {
@@ -172,7 +172,7 @@ p, content-9 p {
         width: 33%;
         text-align: center;
         font-size: 12px;
-        font-family: @h-font-family;
+        font-family: @font-family-demo;
         font-weight: 500;
         letter-spacing: 3px;
         [class*="fui-"] {
@@ -221,7 +221,7 @@ aside {
             list-style: none;
             margin: 0;
             font-size: 13px;
-            font-family: @h-font-family;
+            font-family: @font-family-demo;
             letter-spacing: 1.6px;
             li {
                 padding-bottom: 20px;
@@ -236,13 +236,13 @@ aside {
                     }
                 }
                 a {
-                    .a-color(#1b1f23, @c-text-color);
+                    .a-color(#1b1f23, @text-color-default);
                     font-weight: 500;
                     .line-height(13px);
                 }
                 &.active {
                     a {
-                        .a-color(@c-text-color, @c-text-color);
+                        .a-color(@text-color-default, @text-color-default);
                     }
                 }
             }
@@ -253,7 +253,7 @@ aside {
         bottom: 80px;
         padding-right: 20px;
         [class*="fui-"] {
-            .font(24px, @h-text-color);
+            .font(24px, @text-color-heading);
         }
     }
 }

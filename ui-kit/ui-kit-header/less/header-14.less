@@ -5,7 +5,7 @@
     position:relative;
     color: @silver;
     h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-        font-family: @h-font-family;
+        font-family: @font-family-demo;
         color: white;
     }
     h1 {
@@ -30,7 +30,7 @@
         margin-bottom: 65px;
         text-align: center;
         .font(13px, white);
-        font-family: @h-font-family;
+        font-family: @font-family-demo;
         letter-spacing: 8px;
         [class*="fui-"] {
             margin-bottom: 30px;
@@ -98,10 +98,10 @@
         }
         .btn.btn-primary {
             &:hover, &:focus {
-                background-color: @danger;
+                background-color: @brand-danger;
             }
             &:active, &.active {
-                background-color: mix(@danger, black, 85%);
+                background-color: mix(@brand-danger, black, 85%);
             }
         }
         @media (max-width: 480px) {

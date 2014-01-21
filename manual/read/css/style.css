@@ -8847,7 +8847,8 @@ body {
 .mcontent .header-8-sub h3 {
   font-size: 35px;
   font-weight: normal;
-  color: #2c3e50;
+  color: #7f8c8d;
+  color: #fff;
   margin-bottom: 42px;
   text-align: center;
   font-weight: 300;
@@ -8855,7 +8856,8 @@ body {
 .mcontent .header-8-sub .lead {
   font-size: 24px;
   font-weight: normal;
-  color: #2c3e50;
+  color: #7f8c8d;
+  color: #fff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
   font-weight: 300;

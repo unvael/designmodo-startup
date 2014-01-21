@@ -1,24 +1,30 @@
 //--  HELPER FUNCTIONS AND VARIABLES ----------------------------------------------------------------------------
 
-@h-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-@c-font-family: @h-font-family;
-@proxima: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-@h-text-color: @midnight-blue;
-@c-text-color: @asbestos;
+// @h-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+// @c-font-family: @h-font-family;
+// @proxima: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@base: @wet-asphalt;
+@font-size-base: 14px;
+@line-height-base: 1.231;
+// @h-text-color: @midnight-blue;
+// @c-text-color: @asbestos;
+@text-color-heading: @midnight-blue;
+@text-color-default: @asbestos;
 
 // 14px - base font-size in flat-ui, so if it will change we should change all fonts. And this mixin do it!
-.font(@font-size:16px,@color:@c-text-color){
+.font(@font-size:16px,@color:@text-color-default){
   @font-flat-ui: (@font-size/14); 
-  font-size: @font-flat-ui * @base-font-size;
+  font-size: @font-flat-ui * @font-size-base;
   font-weight:normal;
   color: @color;
 }
 
 //1.231em - flat-ui standart line-height
 @em-px:18; //18px=1em standart. If you declarate another value change this variable to your value!!! 
-.line-height(@line-height: (@base-line-height * @em-px)px){ 
+.line-height(@line-height: (@line-height-base * @em-px)px){ 
   @tem-lh: @line-height * 1.231;
-  line-height:(@tem-lh /  (@base-line-height * @em-px)) * @em-px;
+  line-height:(@tem-lh /  (@line-height-base * @em-px)) * @em-px;
 }
 
 //-- end HELPER FUNCTIONS ---------------------------------------------------------------------------------------
@@ -36,7 +42,7 @@ header {
   z-index:100;
   .brand {
       .font(25px,@base);
-      font-family:@h-font-family;
+      font-family:@font-family-demo;
       font-weight: 800;
       letter-spacing:-1px;
       color: #2c3e50;
@@ -133,7 +139,7 @@ header{
     border-color:white;
     color:white;
     &:hover, &:focus{
-      color:@c-text-color;
+      color:@text-color-default;
       background-color:white;
     }
   }

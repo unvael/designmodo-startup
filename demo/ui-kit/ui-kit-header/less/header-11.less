@@ -15,7 +15,7 @@
         z-index: 2;
         top: 0;
         margin: 0;
-        font-family: @h-font-family;
+        font-family: @font-family-demo;
         &.navbar-fixed-top {
             position:fixed;
             margin:0 auto;
@@ -33,7 +33,7 @@
             padding-right: 18px;
         }
         .btn.btn-primary {
-            .btn-background(@button-primary-active);
+            .btn-background(@btn-primary-active-bg);
         }
         .navbar-inner {
             background: none;
@@ -89,12 +89,12 @@
     h3 {
         .font(33px, white);
         margin-bottom:15px;
-        font-family: @h-font-family;
+        font-family: @font-family-demo;
         font-weight:300;
     }
     p {
         .font(16px, @silver);
-        font-family: @c-font-family;
+        font-family: @font-family-demo;
     }
     .additional-links {
         .opacity(50);
@@ -123,7 +123,7 @@
     }
     .signup-form {
         form {
-            font-family:@c-font-family;
+            font-family:@font-family-demo;
             margin-top: 40px;
             .controls-row:first-child + .controls-row {
                 display: table;
@@ -157,10 +157,10 @@
                 }
                 &.btn-info {
                     &:hover, &:focus {
-                        background-color: @button-primary-active;
+                        background-color: @btn-primary-active-bg;
                     }
                     &:active, &.active {
-                        background-color: mix(@button-primary-active, black, 85%);
+                        background-color: mix(@btn-primary-active-bg, black, 85%);
                     }
                 }
             }
@@ -192,7 +192,7 @@
             padding-left: 16px;
             .border-radius(3px);
             &.btn-primary {
-                .btn-background(@button-primary-active);
+                .btn-background(@btn-primary-active-bg);
             }
         }
         > iframe {

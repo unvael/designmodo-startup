@@ -346,6 +346,16 @@ body {
     padding-left: 0;
   }
 }
+.btn {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  line-height: 22px;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+}
 body > section,
 header,
 footer {
@@ -1083,7 +1093,7 @@ section * {
   .price-1 .plan {
     margin-top: 30px;
   }
-  .price-1 .plan:first-child {
+  .price-1 .col-sm-4:first-child .plan {
     margin-top: 0;
   }
 }

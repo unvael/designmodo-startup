@@ -346,6 +346,16 @@ body {
     padding-left: 0;
   }
 }
+.btn {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  line-height: 22px;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+}
 body > section,
 header,
 footer {
@@ -13942,7 +13952,7 @@ body {
   .mcontent .price-1 .plan {
     margin-top: 30px;
   }
-  .mcontent .price-1 .plan:first-child {
+  .mcontent .price-1 .col-sm-4:first-child .plan {
     margin-top: 0;
   }
 }
@@ -14328,6 +14338,8 @@ body {
   color: #1abc9c;
   font-size: 18px;
   font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: none;
 }

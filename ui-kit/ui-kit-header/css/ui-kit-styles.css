@@ -357,6 +357,13 @@ body {
   -o-transition: 0.25s;
   transition: 0.25s;
 }
+.hero-unit h1 {
+  margin-bottom: 0;
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -1px;
+  color: inherit;
+}
 body > section,
 header,
 footer {

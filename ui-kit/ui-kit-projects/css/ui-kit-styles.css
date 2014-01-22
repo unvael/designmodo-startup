@@ -356,6 +356,13 @@ body {
   -o-transition: 0.25s;
   transition: 0.25s;
 }
+.hero-unit h1 {
+  margin-bottom: 0;
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -1px;
+  color: inherit;
+}
 body > section,
 header,
 footer {
@@ -1172,6 +1179,7 @@ body section[class*=content-] {
   font-weight: 800;
   letter-spacing: 0px;
   margin-bottom: 12px;
+  margin-top: 10px;
 }
 .projects-2 .project-1 .container p {
   font-size: 30px;
@@ -1181,6 +1189,7 @@ body section[class*=content-] {
   font-weight: 300;
   letter-spacing: 0px;
   padding-top: 0;
+  margin-bottom: 10px;
   line-height: 29.999999999999996px;
 }
 @media (max-width: 480px) {

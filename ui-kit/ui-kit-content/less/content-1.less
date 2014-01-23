@@ -12,7 +12,7 @@
     }
     p {
         .font(18px);
-        font-family:@font-family-base;
+        font-family:@font-family-demo;
     }
     .box-video {
         margin-top: 40px;
@@ -33,13 +33,14 @@
                 text-align: left;
             }
             .btn {
-                min-width: 90%;
+                min-width: 100%;
                 @media (max-width: 767px) {
                     min-width: 0;
                 }
                 [class*="fui-"] {
                     float: left;
                     .font(22px, white);
+                    margin-right: 4px;
                 }
                 + .btn {
                     margin-top: 15px;
@@ -65,7 +66,7 @@
     }
     @media (max-width: 480px) {
         .box-video {
-            margin: 40px 0 0;
+            margin-top: 40px;
             .player {
                 margin-bottom: 40px;
                 width: 100%;

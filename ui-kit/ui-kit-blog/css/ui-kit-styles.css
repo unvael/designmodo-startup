@@ -104,6 +104,7 @@ p {
   /* 41px */
 
   font-weight: 300;
+  margin-bottom: 20px;
 }
 small {
   font-size: 84%;
@@ -363,6 +364,22 @@ body {
   letter-spacing: -1px;
   color: inherit;
 }
+h4,
+h5,
+h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+p {
+  margin-bottom: 10px;
+}
+.carousel-indicators {
+  width: 100%;
+}
+[class^="fui-"] {
+  display: inline-block;
+  vertical-align: top;
+}
 body > section,
 header,
 footer {
@@ -375,9 +392,17 @@ footer {
   body > section,
   header,
   footer {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
   }
+}
+img {
+  width: auto\9;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
 }
 h1,
 .h1,

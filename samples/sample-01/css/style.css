@@ -104,6 +104,7 @@ p {
   /* 41px */
 
   font-weight: 300;
+  margin-bottom: 20px;
 }
 small {
   font-size: 84%;
@@ -363,6 +364,22 @@ body {
   letter-spacing: -1px;
   color: inherit;
 }
+h4,
+h5,
+h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+p {
+  margin-bottom: 10px;
+}
+.carousel-indicators {
+  width: 100%;
+}
+[class^="fui-"] {
+  display: inline-block;
+  vertical-align: top;
+}
 body > section,
 header,
 footer {
@@ -375,9 +392,17 @@ footer {
   body > section,
   header,
   footer {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
   }
+}
+img {
+  width: auto\9;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
 }
 h1,
 .h1,
@@ -1031,31 +1056,31 @@ section * {
   font-weight: normal;
   color: #7f8c8d;
 }
-.content-4 .features > [class*="span"] {
+.content-4 .features > [class*="col-sm-"] {
   position: relative;
   padding-top: 180px;
   padding-bottom: 50px;
 }
-.content-4 .features > [class*="span"] > img:first-child {
+.content-4 .features > [class*="col-sm-"] > img:first-child {
   position: absolute;
-  left: 0;
+  left: 15px;
   top: 30px;
 }
-.content-4 .features:last-child > [class*="span"],
-.content-4 .features.last > [class*="span"] {
+.content-4 .features:last-child > [class*="col-sm-"],
+.content-4 .features.last > [class*="col-sm-"] {
   padding-bottom: 0;
 }
 @media (max-width: 767px) {
-  .content-4 .features > [class*="span"],
-  .content-4 .features:last-child > [class*="span"],
-  .content-4 .features.last > [class*="span"] {
+  .content-4 .features > [class*="col-sm-"],
+  .content-4 .features:last-child > [class*="col-sm-"],
+  .content-4 .features.last > [class*="col-sm-"] {
     padding-top: 150px;
     padding-bottom: 20px;
   }
-  .content-4 .features:last-child > [class*="span"]:last-child,
-  .content-4 .features.last > [class*="span"]:last-child,
-  .content-4 .features:last-child > [class*="span"].last,
-  .content-4 .features.last > [class*="span"].last {
+  .content-4 .features:last-child > [class*="col-sm-"]:last-child,
+  .content-4 .features.last > [class*="col-sm-"]:last-child,
+  .content-4 .features:last-child > [class*="col-sm-"].last,
+  .content-4 .features.last > [class*="col-sm-"].last {
     padding-bottom: 0;
   }
 }

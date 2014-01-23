@@ -105,6 +105,7 @@ p {
   /* 41px */
 
   font-weight: 300;
+  margin-bottom: 20px;
 }
 small {
   font-size: 84%;
@@ -364,6 +365,22 @@ body {
   letter-spacing: -1px;
   color: inherit;
 }
+h4,
+h5,
+h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+p {
+  margin-bottom: 10px;
+}
+.carousel-indicators {
+  width: 100%;
+}
+[class^="fui-"] {
+  display: inline-block;
+  vertical-align: top;
+}
 body > section,
 header,
 footer {
@@ -376,9 +393,17 @@ footer {
   body > section,
   header,
   footer {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
   }
+}
+img {
+  width: auto\9;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
 }
 h1,
 .h1,
@@ -1506,8 +1531,8 @@ section * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
   .header-4.v-center.row,
   .header-4 .v-center.row {
@@ -3759,8 +3784,8 @@ section * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
   .header-10-sub.v-center.row,
   .header-10-sub .v-center.row {
@@ -4586,8 +4611,8 @@ section * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
   .header-13-sub.v-center.row,
   .header-13-sub .v-center.row {
@@ -5081,8 +5106,8 @@ section * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
   .header-15-sub.v-center.row,
   .header-15-sub .v-center.row {
@@ -5181,8 +5206,8 @@ section * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
   .header-16.v-center.row,
   .header-16 .v-center.row {
@@ -5489,8 +5514,8 @@ section * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
   .header-16-sub.v-center.row,
   .header-16-sub .v-center.row {
@@ -6027,8 +6052,8 @@ section * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
   .header-17-sub.v-center.row,
   .header-17-sub .v-center.row {
@@ -6356,8 +6381,8 @@ section * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
   .header-18 .header-18-sub.v-center.row,
   .header-18 .header-18-sub .v-center.row {
@@ -7587,8 +7612,8 @@ section * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
   .header-21-sub.v-center.row,
   .header-21-sub .v-center.row {
@@ -7879,8 +7904,8 @@ section * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
   .header-22-sub.v-center.row,
   .header-22-sub .v-center.row {

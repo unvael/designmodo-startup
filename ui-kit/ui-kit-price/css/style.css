@@ -357,6 +357,32 @@ body {
   -o-transition: 0.25s;
   transition: 0.25s;
 }
+.btn.btn-large {
+  font-size: 17px;
+  line-height: 20px;
+  padding: 12px 18px;
+}
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  outline: none;
+}
+.carousel {
+  line-height: 1;
+}
 .hero-unit h1 {
   margin-bottom: 0;
   font-size: 60px;

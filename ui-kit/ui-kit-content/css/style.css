@@ -358,6 +358,32 @@ body {
   -o-transition: 0.25s;
   transition: 0.25s;
 }
+.btn.btn-large {
+  font-size: 17px;
+  line-height: 20px;
+  padding: 12px 18px;
+}
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  outline: none;
+}
+.carousel {
+  line-height: 1;
+}
 .hero-unit h1 {
   margin-bottom: 0;
   font-size: 60px;
@@ -1642,11 +1668,11 @@ section * {
   padding-bottom: 40px;
   color: #a1a9b1;
 }
-.content-13.subscribe-form .span4 {
+.content-13.subscribe-form .col-sm-4 {
   text-align: right;
 }
 @media (max-width: 767px) {
-  .content-13.subscribe-form .span4 {
+  .content-13.subscribe-form .col-sm-4 {
     width: auto;
     display: inline-block;
     float: right;
@@ -1654,7 +1680,7 @@ section * {
   }
 }
 @media (max-width: 668px) {
-  .content-13.subscribe-form .span4 {
+  .content-13.subscribe-form .col-sm-4 {
     display: block;
     float: none;
   }
@@ -1664,14 +1690,14 @@ section * {
   position: relative;
 }
 @media (max-width: 767px) {
-  .content-13.subscribe-form form .span8 {
+  .content-13.subscribe-form form .col-sm-8 {
     width: 65%;
     display: inline-block;
     float: left;
   }
 }
 @media (max-width: 668px) {
-  .content-13.subscribe-form form .span8 {
+  .content-13.subscribe-form form .col-sm-8 {
     width: auto;
     display: block;
     float: none;
@@ -1890,16 +1916,16 @@ section * {
   color: #95a5a6;
 }
 @media (max-width: 767px) {
-  .content-14 .features .span6 {
+  .content-14 .features .col-sm-6 {
     display: none;
   }
 }
-.content-14 .features .span6 img {
+.content-14 .features .col-sm-6 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-.content-14 .features .span2 {
+.content-14 .features .col-sm-2 {
   position: relative;
 }
 .content-14 .features [class*="box"] {
@@ -2052,26 +2078,26 @@ section * {
   font-weight: normal;
   color: #7f8c8d;
 }
-.content-15 .features .span7 img {
+.content-15 .features .col-sm-7 img {
   width: 100%;
 }
 @media (max-width: 767px) {
-  .content-15 .features .span7 {
+  .content-15 .features .col-sm-7 {
     text-align: center;
     margin-bottom: 46px;
   }
 }
-.content-15 .features .span4 {
+.content-15 .features .col-sm-4 {
   position: relative;
 }
-.content-15 .features .span4 > img {
+.content-15 .features .col-sm-4 > img {
   position: absolute;
   left: -15%;
   top: 100%;
   margin-top: 20px;
 }
 @media (max-width: 979px) and (min-width: 768px) {
-  .content-15 .features .span4 > img {
+  .content-15 .features .col-sm-4 > img {
     margin-top: 0;
   }
 }
@@ -2203,6 +2229,7 @@ section * {
   font-size: 18px;
   font-weight: normal;
   color: #7f8c8d;
+  margin: 0;
 }
 .content-17 .carousel {
   margin-top: 40px;
@@ -2259,7 +2286,7 @@ section * {
   }
 }
 .content-18 .carousel .quote-text {
-  max-width: 620px;
+  max-width: 625px;
   margin: 0 auto;
   padding: 0 20px;
   font-size: 30px;
@@ -2270,7 +2297,7 @@ section * {
   line-height: 40px;
 }
 .content-18 .carousel .quote-author {
-  max-width: 620px;
+  max-width: 625px;
   margin: 45px auto 0;
   padding: 0 20px;
   font-size: 18px;
@@ -2379,33 +2406,33 @@ section * {
   padding-bottom: 130px;
   border-bottom: 2px solid #ebedee;
 }
-.content-19 .span7 .quote {
+.content-19 .col-sm-7 .quote {
   position: relative;
 }
-.content-19 .span7 .quote:before {
+.content-19 .col-sm-7 .quote:before {
   content: url('../../../common-files/icons/quote-up-mb.png');
   position: absolute;
   top: 0;
   left: -60px;
 }
 @media (min-width: 1200px) and (max-width: 1300px), (min-width: 980px) and (max-width: 1080px), (max-width: 870px) {
-  .content-19 .span7 .quote:before {
+  .content-19 .col-sm-7 .quote:before {
     display: none;
   }
 }
 @media (max-width: 767px) {
-  .content-19 .span7 .quote {
+  .content-19 .col-sm-7 .quote {
     margin-bottom: 50px;
   }
 }
-.content-19 .span7 .quote .quote-text {
+.content-19 .col-sm-7 .quote .quote-text {
   font-size: 37px;
   font-weight: normal;
   color: #2c3e50;
   font-weight: 300;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.content-19 .span7 .quote .quote-author {
+.content-19 .col-sm-7 .quote .quote-author {
   margin-top: 20px;
   font-size: 13px;
   font-weight: normal;
@@ -2414,10 +2441,10 @@ section * {
   letter-spacing: 2px;
   text-transform: capitalize;
 }
-.content-19 .span7 .quote .quote-author > * {
+.content-19 .col-sm-7 .quote .quote-author > * {
   vertical-align: middle;
 }
-.content-19 .span7 .quote .quote-author-photo {
+.content-19 .col-sm-7 .quote .quote-author-photo {
   display: inline-block;
   width: 32px;
   height: 32px;
@@ -2428,33 +2455,33 @@ section * {
   overflow: hidden;
   margin-right: 20px;
 }
-.content-19 .span7 .quote .quote-author-name {
+.content-19 .col-sm-7 .quote .quote-author-name {
   display: inline-block;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.19em;
 }
-.content-19 .span3 .quote {
+.content-19 .col-sm-3 .quote {
   position: relative;
   margin-top: 50px;
 }
-.content-19 .span3 .quote:first-child {
+.content-19 .col-sm-3 .quote:first-child {
   margin-top: 0;
 }
-.content-19 .span3 .quote .quote-text {
+.content-19 .col-sm-3 .quote .quote-text {
   margin-top: 10px;
   font-size: 14px;
   font-weight: normal;
   color: #95a5a6;
 }
-.content-19 .span3 .quote .quote-author {
+.content-19 .col-sm-3 .quote .quote-author {
   font-size: 18px;
   font-weight: normal;
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
 }
-.content-19 .span3 .quote .quote-author-photo {
+.content-19 .col-sm-3 .quote .quote-author-photo {
   position: absolute;
   width: 32px;
   height: 32px;
@@ -2466,7 +2493,7 @@ section * {
   margin-left: -50px;
   margin-top: 6px;
 }
-.content-19 .span3 .quote .quote-date {
+.content-19 .col-sm-3 .quote .quote-date {
   font-size: 12px;
   font-weight: normal;
   color: #95a5a6;
@@ -2479,16 +2506,16 @@ section * {
     padding-top: 80px;
     padding-bottom: 80px;
   }
-  .content-19 .span7 .quote .quote-author {
+  .content-19 .col-sm-7 .quote .quote-author {
     font-size: 11px;
     font-weight: normal;
     color: #7f8c8d;
     letter-spacing: 0;
   }
-  .content-19 .span7 .quote .quote-author .quote-author-photo {
+  .content-19 .col-sm-7 .quote .quote-author .quote-author-photo {
     margin-right: 10px;
   }
-  .content-19 .span3 .quote .quote-author-photo {
+  .content-19 .col-sm-3 .quote .quote-author-photo {
     position: static;
     margin: 5px 10px 0 0;
     float: left;

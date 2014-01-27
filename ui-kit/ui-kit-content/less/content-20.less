@@ -54,16 +54,16 @@
             background: white;
             .font(15px, @base);
             font-family:@font-family-demo;
-            .control-group {
+            .form-group {
                 margin-bottom: 23px;
             }
-            .control-group.pull-left {
-                margin-right:5%;
-                width: 45%;
+            .form-group.pull-left {
+                margin-right:3%;
+                width: 47%;
             }
-            .control-group.pull-right {
-                margin-left:5%;
-                width: 45%;
+            .form-group.pull-right {
+                margin-left:3%;
+                width: 47%;
             }
             label {
                 .font(15px, @base);
@@ -81,17 +81,18 @@
                 }
             }
             .site-link {
-                width:104%;
-                input[type="text"], input[type="password"] {
-                    width: 64.4%;
-                    margin-right: 5%;
+                width: 100%;
+                .clearfix;
+                input[type="text"],
+                input[type="password"] {
+                    width: 70%;
+                    float: left;
                 }
                 b {
-                    display: block;
                     float: right;
-                    padding-top: 7px;
+                    width: 28%;
                     text-align: right;
-                    width: 25.9%;
+                    line-height: 42px;
                 }
             }
             .btn {
@@ -117,29 +118,37 @@
                     width: 100%;
                     height: auto;
                 }
-                .control-group.pull-left {
+                .form-group.pull-left {
                     margin-right: 0;
                     width: 100%;
                     float: none;
                 }
-                .control-group.pull-right {
+                .form-group.pull-right {
                     margin-left:0;
                     width: 100%;
                     float: none;
                 }
-            }
-        }
-        @media (max-width: 468px) {
-            form {
-                .site-link input[type="text"] {
-                    width: 61.4%;
+                .site-link {
+                    input[type="text"],
+                    input[type="password"] {
+                        width: 62%;
+                    }
+                    b {
+                        width: 35%;
+                    }
                 }
             }
         }
-        @media (min-width: 979px) and (max-width:1200px) {
+        @media (max-width: 480px) {
             form {
-                .site-link input[type="text"] {
-                    width: 61.4%;
+                .site-link {
+                    input[type="text"],
+                    input[type="password"] {
+                        width: 55%;
+                    }
+                    b {
+                        width: 44%;
+                    }
                 }
             }
         }

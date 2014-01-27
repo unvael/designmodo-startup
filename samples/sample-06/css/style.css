@@ -380,6 +380,9 @@ input[type="color"],
 .uneditable-input {
   outline: none;
 }
+label {
+  line-height: 20px;
+}
 .carousel {
   line-height: 1;
 }
@@ -404,7 +407,7 @@ p {
 }
 [class^="fui-"] {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
 }
 body > section,
 header,
@@ -954,7 +957,7 @@ section * {
   font-size: 26px;
   font-weight: normal;
   color: #ffffff;
-  margin: -4px 12px 0 0;
+  margin: -6px 12px 0 0;
 }
 @media (max-width: 767px) {
   .content-2 .btns {
@@ -1097,7 +1100,7 @@ section * {
   font-weight: normal;
   color: #7f8c8d;
 }
-.content-28 .span10 > img {
+.content-28 .col-sm-10 > img {
   width: 100%;
   margin-top: 50px;
   position: relative;

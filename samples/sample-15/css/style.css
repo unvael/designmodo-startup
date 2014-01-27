@@ -380,6 +380,9 @@ input[type="color"],
 .uneditable-input {
   outline: none;
 }
+label {
+  line-height: 20px;
+}
 .carousel {
   line-height: 1;
 }
@@ -404,7 +407,7 @@ p {
 }
 [class^="fui-"] {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
 }
 body > section,
 header,
@@ -1129,8 +1132,8 @@ section * {
 @media (max-width: 979px) {
   .content-27 h3,
   .content-27 p {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
 .content-27 .btns {
@@ -1144,29 +1147,30 @@ section * {
 .content-27 .btns > *:first-child {
   margin-left: 0;
 }
-.content-27 .btns .btn[class*="fui-"] {
-  float: left;
-  font-size: 26px;
-  font-weight: normal;
-  color: #ffffff;
-  margin: 0 18px 0 0;
+.content-27 .btns [class*="fui-"]:first-child {
+  margin-top: -6px;
 }
 @media (max-width: 979px) {
   .content-27 .btns .btn {
     display: block;
-    margin: 0 20px 20px;
+    margin: 0 5px 20px;
   }
   .content-27 .btns .btn:not(:first-child) {
     float: left;
+    margin-right: 35px;
   }
 }
 @media (max-width: 480px) {
   .content-27 .btns .btn:not(:first-child) {
     float: none;
     color: white;
+    margin-right: 5px;
   }
   .content-27 .btns .btn:not(:first-child):focus {
     outline: none;
+  }
+  .content-27 .btns [class*="fui-"] {
+    margin-top: -6px;
   }
 }
 @media (min-width: 481px) {

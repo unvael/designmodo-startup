@@ -381,6 +381,9 @@ input[type="color"],
 .uneditable-input {
   outline: none;
 }
+label {
+  line-height: 20px;
+}
 .carousel {
   line-height: 1;
 }
@@ -405,7 +408,7 @@ p {
 }
 [class^="fui-"] {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
 }
 body > section,
 header,

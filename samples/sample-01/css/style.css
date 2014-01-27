@@ -380,6 +380,9 @@ input[type="color"],
 .uneditable-input {
   outline: none;
 }
+label {
+  line-height: 20px;
+}
 .carousel {
   line-height: 1;
 }
@@ -404,7 +407,7 @@ p {
 }
 [class^="fui-"] {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
 }
 body > section,
 header,
@@ -1116,13 +1119,13 @@ section * {
 }
 @media (max-width: 767px) {
   .content-25 {
-    padding: 40px 20px;
+    padding: 40px 5px;
   }
   .content-25 .svg,
   .content-25 .nosvg {
     display: block;
     text-align: center;
-    float: none;
+    float: none !important;
     margin-top: 45px;
   }
 }

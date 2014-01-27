@@ -740,11 +740,11 @@ startupKit.uiKitContent.content25 = function() {
             if ($(window).width() < 751) {
                 $('.content-25 .container h3:first-child').after(svg);
                 $('.content-25 .container h3:first-child').after(nosvg);
-                $('.content-25 .span6:nth-child(2)').hide();
+                $('.content-25 .col-sm-6:nth-child(2)').hide();
             } else {
-                $('.content-25 .span6:nth-child(2)').show();
-                $('.content-25 .span6:nth-child(2)').append(svg);
-                $('.content-25 .span6:nth-child(2)').append(nosvg);
+                $('.content-25 .col-sm-6:nth-child(2)').show();
+                $('.content-25 .col-sm-6:nth-child(2)').append(svg);
+                $('.content-25 .col-sm-6:nth-child(2)').append(nosvg);
             }
         }).scroll(function() {
             if (!el.hasClass('ani-processed')) {
@@ -762,7 +762,7 @@ startupKit.uiKitContent.content25 = function() {
                 }
             }
         });
-    })($('.content-25 .span6 + .span6'));
+    })($('.content-25 .col-sm-6 + .col-sm-6'));
 
 };
 /* Content 26*/
@@ -781,11 +781,11 @@ startupKit.uiKitContent.content27 = function() {
         if ($(window).width() < 751) {
             $('.content-27 .container h3:first-child').after(svg);
             $('.content-27 .container h3:first-child').after(nosvg);
-            $('.content-27 .span4:first-child').hide();
+            $('.content-27 .col-sm-4:first-child').hide();
         } else {
-            $('.content-27 .span4:first-child').show();
-            $('.content-27 .span4:first-child').append(svg);
-            $('.content-27 .span4:first-child').append(nosvg);
+            $('.content-27 .col-sm-4:first-child').show();
+            $('.content-27 .col-sm-4:first-child').append(svg);
+            $('.content-27 .col-sm-4:first-child').append(nosvg);
         }
     });
 
@@ -798,7 +798,7 @@ startupKit.uiKitContent.content29 = function() {};
 startupKit.uiKitContent.content30 = function() {
 
     $(window).resize(function() {
-        var boxes = $('.content-30 .span3');
+        var boxes = $('.content-30 .col-sm-3');
         for (var t = 0; t <= boxes.length; t++) {
             var descTop = $(boxes[t]).find('.description-top');
             if ($(window).width() <= 480) {

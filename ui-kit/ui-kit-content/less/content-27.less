@@ -35,8 +35,8 @@
     }
     @media (max-width: 979px) {
         h3, p {
-            margin-left: 20px;
-            margin-right: 20px;
+            margin-left: 5px;
+            margin-right: 5px;
         }
     }
     .btns {
@@ -49,17 +49,16 @@
                 margin-left: 0;
             }
         }
-        .btn[class*="fui-"] {
-            float: left;
-            .font(26px, white);
-            margin: 0 18px 0 0;
+        [class*="fui-"]:first-child {
+            margin-top: -6px;
         }
         @media (max-width: 979px) {
             .btn {
                 display:block;
-                margin:0 20px 20px;
+                margin:0 5px 20px;
                 &:not(:first-child) {
-                    float:left;
+                    float: left;
+                    margin-right: 35px;
                 }
             }
         }
@@ -67,9 +66,13 @@
             .btn:not(:first-child) {
                 float: none;
                 color: white;
+                margin-right: 5px;
                 &:focus {
                     outline: none;
                 }
+            }
+            [class*="fui-"] {
+                margin-top: -6px;
             }
         }
         @media (min-width: 481px) {

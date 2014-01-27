@@ -381,6 +381,9 @@ input[type="color"],
 .uneditable-input {
   outline: none;
 }
+label {
+  line-height: 20px;
+}
 .carousel {
   line-height: 1;
 }
@@ -405,7 +408,7 @@ p {
 }
 [class^="fui-"] {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
 }
 body > section,
 header,
@@ -1000,7 +1003,7 @@ body section[class*=content-] {
   font-size: 26px;
   font-weight: normal;
   color: #ffffff;
-  margin: -4px 12px 0 0;
+  margin: -6px 12px 0 0;
 }
 @media (max-width: 767px) {
   .content-2 .btns {
@@ -2313,20 +2316,6 @@ body section[class*=content-] {
     margin-bottom: 46px;
   }
 }
-.content-15 .features .col-sm-4 {
-  position: relative;
-}
-.content-15 .features .col-sm-4 > img {
-  position: absolute;
-  left: -15%;
-  top: 100%;
-  margin-top: 20px;
-}
-@media (max-width: 979px) and (min-width: 768px) {
-  .content-15 .features .col-sm-4 > img {
-    margin-top: 0;
-  }
-}
 @media (max-width: 767px) {
   .content-15 .features {
     margin-top: 76px;
@@ -2866,16 +2855,16 @@ body section[class*=content-] {
   color: #34495e;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.content-20 .signup-form form .control-group {
+.content-20 .signup-form form .form-group {
   margin-bottom: 23px;
 }
-.content-20 .signup-form form .control-group.pull-left {
-  margin-right: 5%;
-  width: 45%;
+.content-20 .signup-form form .form-group.pull-left {
+  margin-right: 3%;
+  width: 47%;
 }
-.content-20 .signup-form form .control-group.pull-right {
-  margin-left: 5%;
-  width: 45%;
+.content-20 .signup-form form .form-group.pull-right {
+  margin-left: 3%;
+  width: 47%;
 }
 .content-20 .signup-form form label {
   font-size: 15px;
@@ -2900,19 +2889,40 @@ body section[class*=content-] {
   border-color: #3498db;
 }
 .content-20 .signup-form form .site-link {
-  width: 104%;
+  width: 100%;
+  *zoom: 1;
+}
+.content-20 .signup-form form .site-link:before,
+.content-20 .signup-form form .site-link:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.content-20 .signup-form form .site-link:after {
+  clear: both;
+}
+.content-20 .signup-form form .site-link:before,
+.content-20 .signup-form form .site-link:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.content-20 .signup-form form .site-link:after {
+  clear: both;
 }
 .content-20 .signup-form form .site-link input[type="text"],
 .content-20 .signup-form form .site-link input[type="password"] {
-  width: 64.4%;
-  margin-right: 5%;
+  width: 70%;
+  float: left;
 }
 .content-20 .signup-form form .site-link b {
-  display: block;
   float: right;
-  padding-top: 7px;
+  width: 28%;
   text-align: right;
-  width: 25.9%;
+  line-height: 42px;
 }
 .content-20 .signup-form form .btn {
   height: 54px;
@@ -2946,25 +2956,31 @@ body section[class*=content-] {
     width: 100%;
     height: auto;
   }
-  .content-20 .signup-form form .control-group.pull-left {
+  .content-20 .signup-form form .form-group.pull-left {
     margin-right: 0;
     width: 100%;
     float: none;
   }
-  .content-20 .signup-form form .control-group.pull-right {
+  .content-20 .signup-form form .form-group.pull-right {
     margin-left: 0;
     width: 100%;
     float: none;
   }
-}
-@media (max-width: 468px) {
-  .content-20 .signup-form form .site-link input[type="text"] {
-    width: 61.4%;
+  .content-20 .signup-form form .site-link input[type="text"],
+  .content-20 .signup-form form .site-link input[type="password"] {
+    width: 62%;
+  }
+  .content-20 .signup-form form .site-link b {
+    width: 35%;
   }
 }
-@media (min-width: 979px) and (max-width: 1200px) {
-  .content-20 .signup-form form .site-link input[type="text"] {
-    width: 61.4%;
+@media (max-width: 480px) {
+  .content-20 .signup-form form .site-link input[type="text"],
+  .content-20 .signup-form form .site-link input[type="password"] {
+    width: 55%;
+  }
+  .content-20 .signup-form form .site-link b {
+    width: 44%;
   }
 }
 .content-20 .features {
@@ -3177,7 +3193,7 @@ body section[class*=content-] {
 }
 @media (max-width: 767px) {
   .content-22 {
-    padding: 40px;
+    padding: 40px 25px;
   }
 }
 .content-22 h3 {
@@ -3209,12 +3225,12 @@ body section[class*=content-] {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 50px;
 }
-.content-22 .span8 {
+.content-22 .col-sm-8 {
   position: relative;
   padding-top: 600px;
 }
 @media (max-width: 767px) {
-  .content-22 .span8 {
+  .content-22 .col-sm-8 {
     padding-top: 50px;
   }
 }
@@ -3546,7 +3562,7 @@ body section[class*=content-] {
   right: 50%;
   margin-right: 100px;
 }
-.content-24 .span6.offset6 {
+.content-24 .col-sm-6.col-sm-offset-6 {
   position: relative;
 }
 .content-24 .features.features-clear .features-header {
@@ -3651,22 +3667,6 @@ body section[class*=content-] {
   background: #27ad60;
   color: rgba(255, 255, 255, 0.75);
 }
-@media (max-width: 480px) {
-  .content-24 {
-    padding: 35px;
-  }
-  .content-24 img.image {
-    position: relative;
-    margin-bottom: 48px;
-    right: 0;
-  }
-  .content-24 .features.features-clear .features-header {
-    margin-bottom: 48px;
-  }
-  .content-24 .features.features-clear .features-body p {
-    margin-bottom: 48px;
-  }
-}
 @media (max-width: 767px) {
   .content-24 {
     padding: 35px;
@@ -3681,6 +3681,10 @@ body section[class*=content-] {
   }
   .content-24 .features.features-clear .features-body p {
     margin-bottom: 48px;
+  }
+  .content-24 .container {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 .content-25 {
@@ -3689,13 +3693,13 @@ body section[class*=content-] {
 }
 @media (max-width: 767px) {
   .content-25 {
-    padding: 40px 20px;
+    padding: 40px 5px;
   }
   .content-25 .svg,
   .content-25 .nosvg {
     display: block;
     text-align: center;
-    float: none;
+    float: none !important;
     margin-top: 45px;
   }
 }
@@ -3802,8 +3806,8 @@ body section[class*=content-] {
 @media (max-width: 979px) {
   .content-27 h3,
   .content-27 p {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
 .content-27 .btns {
@@ -3817,29 +3821,30 @@ body section[class*=content-] {
 .content-27 .btns > *:first-child {
   margin-left: 0;
 }
-.content-27 .btns .btn[class*="fui-"] {
-  float: left;
-  font-size: 26px;
-  font-weight: normal;
-  color: #ffffff;
-  margin: 0 18px 0 0;
+.content-27 .btns [class*="fui-"]:first-child {
+  margin-top: -6px;
 }
 @media (max-width: 979px) {
   .content-27 .btns .btn {
     display: block;
-    margin: 0 20px 20px;
+    margin: 0 5px 20px;
   }
   .content-27 .btns .btn:not(:first-child) {
     float: left;
+    margin-right: 35px;
   }
 }
 @media (max-width: 480px) {
   .content-27 .btns .btn:not(:first-child) {
     float: none;
     color: white;
+    margin-right: 5px;
   }
   .content-27 .btns .btn:not(:first-child):focus {
     outline: none;
+  }
+  .content-27 .btns [class*="fui-"] {
+    margin-top: -6px;
   }
 }
 @media (min-width: 481px) {
@@ -3895,7 +3900,7 @@ body section[class*=content-] {
   font-weight: normal;
   color: #7f8c8d;
 }
-.content-28 .span10 > img {
+.content-28 .col-sm-10 > img {
   width: 100%;
   margin-top: 50px;
   position: relative;

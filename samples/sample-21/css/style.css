@@ -634,7 +634,7 @@ section * {
   }
 }
 .nav-visible .navbar .nav-collapse .nav > li > a:hover,
-.nav-visible .navbar .nav-collapse .nav > li > li a:focus {
+.nav-visible .navbar .nav-collapse .nav > li > a:focus {
   background-color: transparent;
 }
 .nav-visible .nav-collapse .navbar-form,

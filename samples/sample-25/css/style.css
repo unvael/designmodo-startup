@@ -1199,6 +1199,7 @@ section * {
 .content-34 .pt-controls .pt-indicators {
   list-style: none;
   margin: 0;
+  padding: 0;
   opacity: 0;
   filter: alpha(opacity=0);
 }
@@ -1300,11 +1301,11 @@ section * {
 }
 .content-34 .box-1 {
   padding-top: 105px;
-  background: url(../../../common-files/img/content/icon-1.png) no-repeat;
+  background: url(../../../common-files/img/content/icon-1.png) 15px 0 no-repeat;
 }
 .content-34 .box-2 {
   padding-top: 85px;
-  background: url(../../../common-files/img/content/icon-2.png) no-repeat;
+  background: url(../../../common-files/img/content/icon-2.png) 15px 0 no-repeat;
 }
 .content-35 {
   position: relative;
@@ -1372,11 +1373,11 @@ section * {
     margin-bottom: 60px;
   }
 }
-.content-35 .background .span4 {
+.content-35 .background .col-sm-4 {
   position: absolute;
   height: 100%;
 }
-.content-35 .background .span4 > div {
+.content-35 .background .col-sm-4 > div {
   position: absolute;
   right: 0;
   height: 100%;
@@ -1389,20 +1390,26 @@ section * {
   background-size: cover;
 }
 @media (max-width: 767px) {
-  .content-35 .background .span4 > div {
+  .content-35 .background .col-sm-4 > div {
     position: static;
     width: 100%;
     overflow: hidden;
   }
 }
-.content-35 .background .span4 > div img {
+.content-35 .background .col-sm-4 > div img {
   height: 100%;
   width: auto;
 }
 @media (max-width: 767px) {
-  .content-35 .background .span4 > div img {
+  .content-35 .background .col-sm-4 > div img {
     height: auto;
     min-height: 250px;
+  }
+}
+@media (max-width: 767px) {
+  .content-35 .background .col-sm-4 {
+    left: 0;
+    right: 0;
   }
 }
 @media (max-width: 767px) {

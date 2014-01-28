@@ -57,7 +57,7 @@
                 margin-bottom: 60px;
             }
         }
-        .span4 {
+        .col-sm-4 {
             position: absolute;
             height: 100%;
             > div {
@@ -81,6 +81,10 @@
                 }
                 margin: 0;
                 .background-size(cover);
+            }
+            @media (max-width: 767px) {
+                left: 0;
+                right: 0;
             }
         }
         @media (max-width: 767px) {

@@ -507,7 +507,7 @@ section * {
     box-sizing: border-box;
   }
 }
-.nav-visible .navbar .nav-collapse .nav > li > a:hover,
+.nav-visible .nav-collapse .nav > li > a:hover,
 .nav-visible .navbar .nav-collapse .nav > li > a:focus {
   background-color: transparent;
 }

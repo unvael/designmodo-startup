@@ -806,11 +806,32 @@ body > .colapsed-menu dl > dd > a:focus,
 body > .colapsed-menu dl > dd > a.active {
   color: #ffffff;
 }
-.nav-visible .colapsed-menu.show-menu {
-  right: 0;
+.nav-visible.nav-pull-left body,
+.nav-visible .navbar-fixed-top .navbar-inner {
+  left: -230px;
 }
 #header-dockbar ~ .colapsed-menu {
   margin-top: 66px;
+}
+.navbar .subnav {
+  display: none;
+}
+body,
+.navbar-fixed-top .navbar-inner {
+  left: 0;
+  position: relative;
+  -webkit-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+  -moz-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+  -o-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+  -ms-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+  transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+}
+.nav-visible.nav-pull-left body,
+.nav-visible .navbar-fixed-top .navbar-inner {
+  left: -230px;
+}
+.nav-visible .colapsed-menu.show-menu {
+  right: 0;
 }
 /**
  * Crew 1 stylesheet  

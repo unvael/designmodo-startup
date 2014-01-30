@@ -28,7 +28,8 @@
   border-bottom-color: #34495e !important;
   border-top-color: #34495e !important;
 }
-/*only fo flat-ui free*/body {
+/*only fo flat-ui free*/
+body {
   color: #34495e;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -8322,7 +8323,7 @@ body section[class*=content-] {
   width: 67px;
   height: 67px;
   margin: 0 50px;
-  background: url(../../../common-files/img/header/btn-play.png) no-repeat;
+  background: url("../../../common-files/img/header/btn-play.png") no-repeat;
 }
 @media (max-width: 979px) {
   .header-23-sub .hero-unit .btn-play {

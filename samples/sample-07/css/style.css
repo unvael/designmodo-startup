@@ -399,6 +399,33 @@ h6 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.navbar .brand {
+  padding: 23px 28px 24px 32px;
+  float: left;
+}
+.navbar-toggle {
+  margin: 28px 0 17px;
+  padding: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border: 0;
+  background: none;
+  color: #ffffff;
+}
+.navbar-toggle:hover,
+.navbar-toggle:focus,
+.navbar-toggle.active {
+  color: rgba(0, 0, 0, 0.4);
+}
+@media (min-width: 768px) {
+  .navbar-toggle {
+    display: none;
+  }
+}
+.navbar .nav > li {
+  float: left;
+}
 p {
   margin-bottom: 10px;
 }
@@ -678,30 +705,6 @@ section * {
     box-sizing: border-box;
   }
 }
-.nav-visible .navbar .nav-collapse .nav > li > a:hover,
-.nav-visible .navbar .nav-collapse .nav > li > li a:focus {
-  background-color: transparent;
-}
-.nav-visible .nav-collapse .navbar-form,
-.nav-visible .nav-collapse .navbar-search {
-  border-bottom: 0 none;
-  border-top: 0 none;
-  box-shadow: none;
-  margin: 10px 0;
-  padding: 10px 15px;
-}
-.nav-visible .nav-collapse .navbar-form a.btn,
-.nav-visible .nav-collapse .navbar-search a.btn {
-  border-color: white;
-  color: white;
-}
-.nav-visible .nav-collapse .navbar-form a.btn:hover,
-.nav-visible .nav-collapse .navbar-search a.btn:hover,
-.nav-visible .nav-collapse .navbar-form a.btn:focus,
-.nav-visible .nav-collapse .navbar-search a.btn:focus {
-  color: #7f8c8d;
-  background-color: white;
-}
 /* header */
 /**
  * Header 18 stylesheet  
@@ -972,7 +975,7 @@ section * {
     margin-top: 9px;
   }
 }
-.header-18 .header-18-sub .header-18-section .span5 {
+.header-18 .header-18-sub .header-18-section .col-sm-5 {
   position: relative;
   -webkit-transition: .5s left, 1.2s opacity;
   -moz-transition: .5s left, 1.2s opacity;
@@ -982,14 +985,14 @@ section * {
   opacity: 0;
   filter: alpha(opacity=0);
 }
-.loaded .header-18 .header-18-sub .header-18-section .span5 {
+.loaded .header-18 .header-18-sub .header-18-section .col-sm-5 {
   left: 0;
   opacity: 100;
   filter: alpha(opacity=10000);
   opacity: 1;
   filter: alpha(opacity=100);
 }
-.header-18 .header-18-sub .header-18-section .span4 {
+.header-18 .header-18-sub .header-18-section .col-sm-4 {
   position: relative;
   -webkit-transition: .5s left, 1.2s opacity;
   -moz-transition: .5s left, 1.2s opacity;
@@ -999,7 +1002,7 @@ section * {
   opacity: 0;
   filter: alpha(opacity=0);
 }
-.loaded .header-18 .header-18-sub .header-18-section .span4 {
+.loaded .header-18 .header-18-sub .header-18-section .col-sm-4 {
   left: 0;
   opacity: 100;
   filter: alpha(opacity=10000);

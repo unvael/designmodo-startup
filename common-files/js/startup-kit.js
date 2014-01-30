@@ -17,6 +17,7 @@ $(function () {
     var menuCollapse = $('#header-dockbar > .colapsed-menu').clone(true);
     $('body').append(menuCollapse);
 
+
     $('#open-close-menu').on('click', function () {
         if($('html').hasClass('nav-visible')) {
             if($('body > .colapsed-menu').hasClass('show-menu')) {
@@ -35,6 +36,8 @@ $(function () {
             $('body > .colapsed-menu').addClass('show-menu');
         }
     });
+
+
     $(window).resize(function() {
         if($(window).width() > 965 && !$('#header-19').hasClass('show-menu')) { // Must be fixed - avoid using magic number
             $('html').removeClass('nav-visible nav-pull-left');
@@ -54,8 +57,10 @@ startupKit.uiKitHeader = startupKit.uiKitHeader || {};
 startupKit.uiKitHeader._inFixedMode = function(headerClass) {
 
     var navCollapse = $(headerClass + ' .nav-collapse').clone(true);
+    var coverDiv = "<div id='overlayDiv' style=' position: fixed; left: 0; top: 0; right: 0; bottom: 0; display: none; z-index: 999;'></div> ";
     navCollapse.attr('id', headerClass.substr(1));
     $('body').append(navCollapse);
+    $('body').append(coverDiv);
 
     $(headerClass + ' .navbar .btn-navbar').on('click', function() {
         var $this = $(this);
@@ -74,14 +79,26 @@ startupKit.uiKitHeader._inFixedMode = function(headerClass) {
                         $('html').addClass('nav-pull-left');
                     }
                     $('#' + headerClass.substr(1)).addClass('show-menu');
+                    $('#overlayDiv').show();
                 }, 333)
             }
+            $('#overlayDiv').hide();
         } else {
             $('html').addClass('nav-visible');
             if($this.hasClass('nav-pull-left')) {
                 $('html').addClass('nav-pull-left');
             }
             $('#' + headerClass.substr(1)).addClass('show-menu');
+            $('#overlayDiv').show();
+        }
+    });
+
+    $('#overlayDiv').on('click', function() {
+        if($('html').hasClass('nav-visible')) {
+            $('html').removeClass('nav-visible nav-pull-left');
+            $('body > .nav-collapse').removeClass('show-menu');
+            $('body > .colapsed-menu').removeClass('show-menu');
+            $('#overlayDiv').hide();
         }
     });
 

@@ -480,7 +480,7 @@ body > .nav-collapse {
   border-radius: 0;
   float: none;
   overflow: auto;
-  z-index: 50;
+  z-index: 9999;
   background: #222527;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   -webkit-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);

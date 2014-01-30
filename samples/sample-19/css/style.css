@@ -560,7 +560,7 @@ body > #header-16 {
   right: 0;
   left: 0;
   top: -100%;
-  z-index: 100;
+  z-index: 9999;
 }
 #header-dockbar ~ .nav-collapse {
   margin-top: 66px;

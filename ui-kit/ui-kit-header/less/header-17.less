@@ -111,6 +111,9 @@
 .header-17-sub {
     position:relative !important;
     .v-center;
+    .row.v-center {
+        width: auto;
+    }
     .btn.btn-clear {
         font-size: 20px;
         .box-sizing(border-box);
@@ -128,7 +131,7 @@
         }
         [class*="fui-"] {
             .font(30px, inherit);
-            margin: 0 15px 0 -5px;
+            margin: -9px 15px -5px -5px;
         }
         @media (max-width: 480px) {
             .font(18px, white);
@@ -243,6 +246,7 @@
         .pt-indicators {
             list-style: none;
             margin: 0;
+            padding: 0;
             li {
                 .line-height(18px);
                 display: inline-block;

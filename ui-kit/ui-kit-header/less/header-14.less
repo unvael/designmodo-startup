@@ -70,18 +70,12 @@
     .subscribe-form {
         form {
             margin: 50px 0 0;
-            .input-append {
+            .input-group {
                 input[type="text"] {
                     border-color: white;
                     border-right: 0;
-                    -webkit-box-sizing: content-box;
-                    -moz-box-sizing: content-box;
-                    box-sizing: content-box;
                     min-height: 0;
                     @media (max-width: 480px) {
-                        -webkit-box-sizing: border-box;
-                        -moz-box-sizing: border-box;
-                        box-sizing: border-box;
                         min-height: 41px;
                     }
                 }
@@ -90,6 +84,9 @@
                     padding-right: 30px;
                     margin-left: 0;
                     .border-radius(0 6px 6px 0);
+                    border: 0;
+                    color: #fff;
+                    background: @turquoise;
                     @media (max-width: 480px) {
                         .border-radius(6px);
                     }
@@ -105,14 +102,14 @@
             }
         }
         @media (max-width: 480px) {
-            .input-append, .input-append input[type="text"], .input-append .btn {
+            .input-group, .input-group input[type="text"], .input-group .btn {
                 display: block;
                 width: 100%;
             }
-            .input-append input[type="text"], .input-append .btn {
+            .input-group input[type="text"], .input-group .btn {
                 .border-radius(6px);
             }
-            .input-append .btn {
+            .input-group .btn {
                 margin-top: 15px;
             }
         }

@@ -360,8 +360,10 @@ body {
 }
 .btn.btn-large {
   font-size: 17px;
-  line-height: 20px;
   padding: 12px 18px;
+}
+.input-group-btn .btn {
+  line-height: 22px;
 }
 textarea,
 input[type="text"],
@@ -380,6 +382,9 @@ input[type="tel"],
 input[type="color"],
 .uneditable-input {
   outline: none;
+}
+.form-group {
+  margin-bottom: 10px;
 }
 label {
   line-height: 20px;

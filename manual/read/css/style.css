@@ -359,8 +359,10 @@ body {
 }
 .btn.btn-large {
   font-size: 17px;
-  line-height: 20px;
   padding: 12px 18px;
+}
+.input-group-btn .btn {
+  line-height: 22px;
 }
 textarea,
 input[type="text"],
@@ -379,6 +381,9 @@ input[type="tel"],
 input[type="color"],
 .uneditable-input {
   outline: none;
+}
+.form-group {
+  margin-bottom: 10px;
 }
 label {
   line-height: 20px;
@@ -516,127 +521,18 @@ button:active {
 .navbar .subnav {
   display: none;
 }
-@media (max-width: 979px) {
-  .navbar .nav-collapse {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: -230px;
-    width: 230px;
-    padding: 25px 0;
-    border-radius: 0;
-    float: none;
-    height: auto!important;
-    overflow: auto!important;
-    background: #222527;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    display: none;
-  }
-  .navbar .nav-collapse::-webkit-scrollbar {
-    display: none;
-  }
-  .navbar .nav-collapse > * {
-    margin: 30px 0 0!important;
-  }
-  .navbar .nav-collapse > *:first-child {
-    margin-top: 0!important;
-  }
-  .navbar .nav-collapse .nav > li {
-    margin: 0;
-  }
-  .navbar .nav-collapse .nav > li > a {
-    display: block!important;
-    margin: 0;
-    padding: 12px 35px;
-    border-bottom: 2px solid #24292d;
-    font-size: 13px;
-    font-weight: normal;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    letter-spacing: 1px;
-    color: #5b5e61;
-    text-transform: uppercase;
-  }
-  .navbar .nav-collapse .nav > li > a:hover,
-  .navbar .nav-collapse .nav > li > a:focus,
-  .navbar .nav-collapse .nav > li > a.active {
-    color: #ffffff;
-  }
-  .navbar .nav-collapse .nav > li.active > a {
-    color: #ffffff;
-  }
-  .navbar .nav-collapse .nav > li.active > a:hover,
-  .navbar .nav-collapse .nav > li.active > a:focus,
-  .navbar .nav-collapse .nav > li.active > a.active {
-    color: #ffffff;
-  }
-  .navbar .nav-collapse .subnav {
-    display: block;
-    list-style: none;
-  }
-  .navbar .nav-collapse .subnav li > a {
-    display: block;
-    margin: 0;
-    padding: 7px 35px;
-    font-size: 13px;
-    font-weight: normal;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: #5b5e61;
-    text-transform: capitalize;
-  }
-  .navbar .nav-collapse .subnav li > a:hover,
-  .navbar .nav-collapse .subnav li > a:focus,
-  .navbar .nav-collapse .subnav li > a.active {
-    color: #ffffff;
-  }
-  .navbar .nav-collapse .navbar-form,
-  .navbar .nav-collapse .navbar-search {
-    padding: 10px 35px;
-    border-bottom: 0 none;
-    border-top: 0 none;
-    box-shadow: none;
-  }
-  .navbar .nav-collapse .navbar-form:focus,
-  .navbar .nav-collapse .navbar-search:focus {
-    outline: 0 none;
-  }
-  .has-header-dockbar {
-    top: 66px !important;
-  }
-  body > header,
-  body > section,
-  body > div,
-  body > footer {
-    -webkit-transition: left 0.333s;
-    -moz-transition: left 0.333s;
-    -o-transition: left 0.333s;
-    transition: left 0.333s;
-    left: 0;
-  }
-  .navbar .nav-collapse {
-    -webkit-transition: right 0.333s;
-    -moz-transition: right 0.333s;
-    -o-transition: right 0.333s;
-    transition: right 0.333s;
-  }
-  .nav-visible body > header,
-  .nav-visible body > section,
-  .nav-visible body > div,
-  .nav-visible body > footer {
-    left: -230px;
-  }
-  .nav-visible .navbar .nav-collapse {
-    right: 0!important;
-    visibility: visible;
-  }
+.navbar a {
+  -webkit-transition: 0.25s color;
+  -moz-transition: 0.25s color;
+  -o-transition: 0.25s color;
+  transition: 0.25s color;
 }
-@media (max-width: 767px) {
-  .navbar-fixed-top .navbar-inner {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+.navbar .nav > li > a:hover {
+  background: none;
+}
+.navbar .navbar-collapse {
+  padding-left: 0;
+  padding-right: 0;
 }
 .delimiter {
   margin-top: 200px;
@@ -6496,12 +6392,6 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
 }
-.mcontent .header-1 .navbar a {
-  -webkit-transition: 0.25s color;
-  -moz-transition: 0.25s color;
-  -o-transition: 0.25s color;
-  transition: 0.25s color;
-}
 .mcontent .header-1 .navbar .nav > li {
   margin-left: 20px;
 }
@@ -6833,7 +6723,7 @@ body {
   }
 }
 .mcontent .header-2-sub .btns .btn {
-  min-width: 140px;
+  min-width: 160px;
   float: left;
 }
 @media (max-width: 480px) {
@@ -7088,6 +6978,7 @@ body {
 }
 .mcontent .header-4 .btn.btn-gray {
   background-color: #7f8c8d;
+  color: #fff;
 }
 .mcontent .header-4 .btn.btn-gray:hover,
 .mcontent .header-4 .btn.btn-gray:focus {
@@ -7116,7 +7007,6 @@ body {
   padding-top: 0;
   padding-bottom: 0;
   z-index: 100;
-  height: 80;
   width: 100%;
 }
 .mcontent .header-5 > .container {
@@ -7886,30 +7776,11 @@ body {
 .mcontent .header-6-sub .signup-form form input,
 .mcontent .header-6-sub .signup-form form button {
   float: left;
-  width: 23.8%;
-  height: 41px;
+  width: 23.5%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  margin: 0 0 0 2.3%;
-}
-@media (min-width: 1200px) {
-  .mcontent .header-6-sub .signup-form form input,
-  .mcontent .header-6-sub .signup-form form button {
-    width: 23.8%;
-  }
-}
-@media (max-width: 979px) and (min-width: 768px) {
-  .mcontent .header-6-sub .signup-form form input,
-  .mcontent .header-6-sub .signup-form form button {
-    width: 23.8%;
-  }
-}
-@media (max-width: 767px) {
-  .mcontent .header-6-sub .signup-form form input,
-  .mcontent .header-6-sub .signup-form form button {
-    width: 23.8%;
-  }
+  margin: 0 0 0 2%;
 }
 @media (max-width: 480px) {
   .mcontent .header-6-sub .signup-form form input,
@@ -7925,7 +7796,7 @@ body {
   margin: 0;
 }
 .mcontent .header-6-sub .signup-form form button {
-  width: 22%;
+  width: 23.5%;
   margin-left: 2%;
 }
 @media (max-width: 480px) {
@@ -8024,6 +7895,7 @@ body {
 .mcontent .header-7-sub .pt-controls .pt-indicators {
   list-style: none;
   margin: 0;
+  padding: 0;
   opacity: 0;
   filter: alpha(opacity=0);
 }
@@ -8475,6 +8347,7 @@ body {
   margin-bottom: 42px;
   text-align: center;
   font-weight: 300;
+  color: #fff;
 }
 .mcontent .header-8-sub .lead {
   font-size: 24px;
@@ -8483,6 +8356,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
   font-weight: 300;
+  color: #fff;
 }
 .mcontent .header-8-sub img {
   display: block;
@@ -9199,40 +9073,33 @@ body {
 .mcontent .header-11-sub .signup-form form {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: 40px;
+  margin-bottom: 20px;
 }
-.mcontent .header-11-sub .signup-form form .controls-row:first-child + .controls-row {
+.mcontent .header-11-sub .signup-form form .form-group:first-child + .form-group {
   display: table;
   width: 100%;
 }
-.mcontent .header-11-sub .signup-form form .controls-row:first-child + .controls-row > div {
+.mcontent .header-11-sub .signup-form form .form-group:first-child + .form-group > div {
   display: table-cell;
   width: 50%;
   padding-left: 5px;
 }
 @media (max-width: 767px) {
-  .mcontent .header-11-sub .signup-form form .controls-row:first-child + .controls-row > div {
+  .mcontent .header-11-sub .signup-form form .form-group:first-child + .form-group > div {
     padding-left: 9px;
   }
 }
-.mcontent .header-11-sub .signup-form form .controls-row:first-child + .controls-row > div:first-child {
+.mcontent .header-11-sub .signup-form form .form-group:first-child + .form-group > div:first-child {
   padding-left: 0;
   padding-right: 5px;
 }
 @media (max-width: 767px) {
-  .mcontent .header-11-sub .signup-form form .controls-row:first-child + .controls-row > div:first-child {
+  .mcontent .header-11-sub .signup-form form .form-group:first-child + .form-group > div:first-child {
     padding-right: 9px;
   }
 }
-.mcontent .header-11-sub .signup-form form .controls-row:first-child + .controls-row input {
+.mcontent .header-11-sub .signup-form form .form-group:first-child + .form-group input {
   width: 100%;
-  height: 41px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.mcontent .header-11-sub .signup-form form .btn {
-  padding-top: 11px;
-  padding-bottom: 11px;
 }
 @media (max-width: 767px) {
   .mcontent .header-11-sub .signup-form form .btn {
@@ -9696,6 +9563,7 @@ body {
   font-size: 22px;
   line-height: 21px;
   padding: 15px 20px 16px;
+  display: block;
 }
 .mcontent .header-13-sub .col-sm-5.col-sm-offset-1 {
   position: relative;
@@ -9846,32 +9714,29 @@ body {
 .mcontent .header-14-sub .subscribe-form form {
   margin: 50px 0 0;
 }
-.mcontent .header-14-sub .subscribe-form form .input-append input[type="text"] {
+.mcontent .header-14-sub .subscribe-form form .input-group input[type="text"] {
   border-color: white;
   border-right: 0;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
   min-height: 0;
 }
 @media (max-width: 480px) {
-  .mcontent .header-14-sub .subscribe-form form .input-append input[type="text"] {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  .mcontent .header-14-sub .subscribe-form form .input-group input[type="text"] {
     min-height: 41px;
   }
 }
-.mcontent .header-14-sub .subscribe-form form .input-append .btn {
+.mcontent .header-14-sub .subscribe-form form .input-group .btn {
   padding-left: 30px;
   padding-right: 30px;
   margin-left: 0;
   -webkit-border-radius: 0 6px 6px 0;
   -moz-border-radius: 0 6px 6px 0;
   border-radius: 0 6px 6px 0;
+  border: 0;
+  color: #fff;
+  background: #1abc9c;
 }
 @media (max-width: 480px) {
-  .mcontent .header-14-sub .subscribe-form form .input-append .btn {
+  .mcontent .header-14-sub .subscribe-form form .input-group .btn {
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
@@ -9886,19 +9751,19 @@ body {
   background-color: #c44133;
 }
 @media (max-width: 480px) {
-  .mcontent .header-14-sub .subscribe-form .input-append,
-  .mcontent .header-14-sub .subscribe-form .input-append input[type="text"],
-  .mcontent .header-14-sub .subscribe-form .input-append .btn {
+  .mcontent .header-14-sub .subscribe-form .input-group,
+  .mcontent .header-14-sub .subscribe-form .input-group input[type="text"],
+  .mcontent .header-14-sub .subscribe-form .input-group .btn {
     display: block;
     width: 100%;
   }
-  .mcontent .header-14-sub .subscribe-form .input-append input[type="text"],
-  .mcontent .header-14-sub .subscribe-form .input-append .btn {
+  .mcontent .header-14-sub .subscribe-form .input-group input[type="text"],
+  .mcontent .header-14-sub .subscribe-form .input-group .btn {
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
   }
-  .mcontent .header-14-sub .subscribe-form .input-append .btn {
+  .mcontent .header-14-sub .subscribe-form .input-group .btn {
     margin-top: 15px;
   }
 }
@@ -10948,6 +10813,9 @@ body {
     vertical-align: baseline;
   }
 }
+.mcontent .header-17-sub .row.v-center {
+  width: auto;
+}
 .mcontent .header-17-sub .btn.btn-clear {
   font-size: 20px;
   -webkit-box-sizing: border-box;
@@ -10972,7 +10840,7 @@ body {
   font-size: 30px;
   font-weight: normal;
   color: inherit;
-  margin: 0 15px 0 -5px;
+  margin: -9px 15px -5px -5px;
 }
 @media (max-width: 480px) {
   .mcontent .header-17-sub .btn.btn-clear {
@@ -11118,6 +10986,7 @@ body {
 .mcontent .header-17-sub .pt-controls .pt-indicators {
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 .mcontent .header-17-sub .pt-controls .pt-indicators li {
   line-height: 18px;

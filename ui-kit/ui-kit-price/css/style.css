@@ -507,7 +507,7 @@ section * {
     box-sizing: border-box;
   }
 }
-.nav-visible .navbar .nav-collapse .nav > li > a:hover,
+.nav-visible .nav-collapse .nav > li > a:hover,
 .nav-visible .navbar .nav-collapse .nav > li > a:focus {
   background-color: transparent;
 }
@@ -530,6 +530,12 @@ section * {
 .nav-visible .nav-collapse .navbar-search a.btn:focus {
   color: #7f8c8d;
   background-color: white;
+}
+.nav-collapse .nav > li > a:hover,
+.nav-collapse .nav > li > a:focus,
+.nav-collapse .dropdown-menu a:hover,
+.nav-collapse .dropdown-menu a:focus {
+  background-color: transparent;
 }
 .ribbon {
   display: block;

@@ -531,6 +531,12 @@ section * {
   color: #7f8c8d;
   background-color: white;
 }
+.nav-collapse .nav > li > a:hover,
+.nav-collapse .nav > li > a:focus,
+.nav-collapse .dropdown-menu a:hover,
+.nav-collapse .dropdown-menu a:focus {
+  background-color: transparent;
+}
 .nav-visible .read-man {
   display: none;
 }

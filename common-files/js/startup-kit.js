@@ -93,6 +93,15 @@ startupKit.uiKitHeader._inFixedMode = function(headerClass) {
         }
     });
 
+    if ($(window).width() < 500) {
+        $('.nav-collapse a').on('click', function(){
+            $('html').removeClass('nav-visible nav-pull-left');
+            $('body > .nav-collapse').removeClass('show-menu');
+            $('body > .colapsed-menu').removeClass('show-menu');
+            $('#overlayDiv').hide();
+        });
+    }
+
     $('#overlayDiv').on('click', function() {
         if($('html').hasClass('nav-visible')) {
             $('html').removeClass('nav-visible nav-pull-left');

@@ -507,8 +507,8 @@ section * {
     box-sizing: border-box;
   }
 }
-.nav-visible .navbar .nav-collapse .nav > li > a:hover,
-.nav-visible .navbar .nav-collapse .nav > li > li a:focus {
+.nav-visible .nav-collapse .nav > li > a:hover,
+.nav-visible .navbar .nav-collapse .nav > li > a:focus {
   background-color: transparent;
 }
 .nav-visible .nav-collapse .navbar-form,
@@ -530,6 +530,12 @@ section * {
 .nav-visible .nav-collapse .navbar-search a.btn:focus {
   color: #7f8c8d;
   background-color: white;
+}
+.nav-collapse .nav > li > a:hover,
+.nav-collapse .nav > li > a:focus,
+.nav-collapse .dropdown-menu a:hover,
+.nav-collapse .dropdown-menu a:focus {
+  background-color: transparent;
 }
 /**
  * Footer 2 stylesheet  
@@ -584,6 +590,7 @@ section * {
 }
 .footer-2 .social-btns > * > * {
   display: block;
+  top: 0;
   position: relative;
   -webkit-backface-visibility: hidden;
   -webkit-transition: 0.25s top;
@@ -763,79 +770,6 @@ section * {
   .footer-3 .row > [class*="span"]:first-child {
     margin-top: 0;
   }
-}
-.demo {
-  background-color: #f2f3f4;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-.demo .img {
-  text-align: center;
-  height: 48px;
-  padding-bottom: 100px;
-}
-.demo h3 {
-  font-size: 46px;
-  font-weight: normal;
-  color: #1b1f23;
-  font-weight: 800;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  letter-spacing: -0.6px;
-  text-align: center;
-  margin-bottom: 38px;
-}
-@media (max-width: 400px) {
-  .demo h3 {
-    font-size: 27px;
-    font-weight: normal;
-    color: #1b1f23;
-    font-weight: 800;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    letter-spacing: -0.6px;
-  }
-}
-.demo p {
-  font-size: 20px;
-  font-weight: normal;
-  color: #7e7e7e;
-  letter-spacing: -0.2px;
-  line-height: 30.999999999999996px;
-  margin-bottom: 45px;
-}
-@media (max-width: 400px) {
-  .demo p {
-    font-size: 18px;
-    font-weight: normal;
-    color: #1b1f23;
-    letter-spacing: -0.2px;
-  }
-}
-.demo .centered {
-  text-align: center;
-}
-.demo .centered .btn {
-  margin-top: 0;
-  font-size: 22px;
-  font-weight: normal;
-  color: #ffffff;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  margin-bottom: 0;
-  background-color: #27ae60;
-  padding: 15px 20px;
-}
-@media (max-width: 400px) {
-  .demo .centered .btn {
-    font-size: 20px;
-    font-weight: normal;
-    color: #ffffff;
-    font-weight: 500;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
-}
-.demo .centered .btn:hover,
-.demo .centered .btn:focus {
-  background-color: #1b1f23;
 }
 body .delimiter-big {
   margin-top: 110px;

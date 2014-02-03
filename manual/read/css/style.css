@@ -14739,6 +14739,7 @@ body {
 .mcontent .projects-2 {
   background: #000;
   color: #fff;
+  padding: 0;
 }
 .mcontent .projects-2.v-center,
 .mcontent .projects-2 .v-center {

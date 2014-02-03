@@ -817,6 +817,7 @@ section * {
 .projects-2 {
   background: #000;
   color: #fff;
+  padding: 0;
 }
 .projects-2.v-center,
 .projects-2 .v-center {

@@ -357,8 +357,26 @@ body {
   font-size: 17px;
   padding: 12px 18px;
 }
+.btn > [class^="fui-"] {
+  margin-left: 4px;
+  margin-right: 4px;
+  line-height: inherit;
+  display: inline-block;
+  vertical-align: top;
+}
 .input-group-btn .btn {
+  background: #bdc3c7;
+  line-height: 9px 12px 10px;
   line-height: 22px;
+  border: 0;
+  margin: 0;
+  color: #fff;
+  margin-left: 0 !important;
+  padding-left: 10px;
+  padding-right: 12px;
+}
+.input-group-btn .btn:hover {
+  background: #cacfd2;
 }
 textarea,
 input[type="text"],
@@ -935,6 +953,7 @@ section * {
 .footer-1 nav ul {
   list-style: none;
   margin: 0;
+  padding: 0;
   font-size: 16px;
   font-weight: normal;
   color: #bdc3c7;
@@ -976,16 +995,16 @@ section * {
   color: #778485;
 }
 @media (max-width: 767px) {
-  .footer-1 .span6 {
+  .footer-1 .col-sm-6 {
     margin-bottom: 20px;
   }
-  .footer-1 nav .span2,
+  .footer-1 nav .col-sm-2,
   .footer-1 .buy-btn {
     float: left;
     width: 30%;
     margin-left: 5%;
   }
-  .footer-1 nav .span2:first-child {
+  .footer-1 nav .col-sm-2:first-child {
     margin-left: 0;
   }
 }
@@ -998,13 +1017,13 @@ section * {
     float: none;
     clear: both;
     width: auto;
-    padding: 15px 0 0;
+    padding-top: 15px;
     margin: 0;
   }
   .footer-1 .buy-btn .btn {
     margin: 0 0 10px;
   }
-  .footer-1 nav .span2 {
+  .footer-1 nav .col-sm-2 {
     width: 47%;
     margin-left: 6%;
   }

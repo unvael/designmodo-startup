@@ -357,8 +357,26 @@ body {
   font-size: 17px;
   padding: 12px 18px;
 }
+.btn > [class^="fui-"] {
+  margin-left: 4px;
+  margin-right: 4px;
+  line-height: inherit;
+  display: inline-block;
+  vertical-align: top;
+}
 .input-group-btn .btn {
+  background: #bdc3c7;
+  line-height: 9px 12px 10px;
   line-height: 22px;
+  border: 0;
+  margin: 0;
+  color: #fff;
+  margin-left: 0 !important;
+  padding-left: 10px;
+  padding-right: 12px;
+}
+.input-group-btn .btn:hover {
+  background: #cacfd2;
 }
 textarea,
 input[type="text"],
@@ -1639,13 +1657,14 @@ section * {
 .footer-13 nav ul {
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 .footer-13 nav ul li {
   float: left;
   margin-left: 130px;
   line-height: 25px;
 }
-@media (max-width: 979px) {
+@media (max-width: 991px) {
   .footer-13 nav ul li {
     margin-left: 70px;
   }
@@ -1668,7 +1687,7 @@ section * {
 }
 @media (max-width: 480px) {
   .footer-13 nav {
-    float: none;
+    float: none !important;
     text-align: left;
   }
   .footer-13 nav.pull-right {

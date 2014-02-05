@@ -357,8 +357,26 @@ body {
   font-size: 17px;
   padding: 12px 18px;
 }
+.btn > [class^="fui-"] {
+  margin-left: 4px;
+  margin-right: 4px;
+  line-height: inherit;
+  display: inline-block;
+  vertical-align: top;
+}
 .input-group-btn .btn {
+  background: #bdc3c7;
+  line-height: 9px 12px 10px;
   line-height: 22px;
+  border: 0;
+  margin: 0;
+  color: #fff;
+  margin-left: 0 !important;
+  padding-left: 10px;
+  padding-right: 12px;
+}
+.input-group-btn .btn:hover {
+  background: #cacfd2;
 }
 textarea,
 input[type="text"],
@@ -1367,7 +1385,7 @@ section * {
     font-size: 82px;
   }
 }
-@media (max-width: 979px) and (min-width: 768px) {
+@media (max-width: 991px) and (min-width: 768px) {
   .footer-12 {
     font-size: 56px;
     font-weight: normal;

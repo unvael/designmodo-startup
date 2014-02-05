@@ -357,8 +357,26 @@ body {
   font-size: 17px;
   padding: 12px 18px;
 }
+.btn > [class^="fui-"] {
+  margin-left: 4px;
+  margin-right: 4px;
+  line-height: inherit;
+  display: inline-block;
+  vertical-align: top;
+}
 .input-group-btn .btn {
+  background: #bdc3c7;
+  line-height: 9px 12px 10px;
   line-height: 22px;
+  border: 0;
+  margin: 0;
+  color: #fff;
+  margin-left: 0 !important;
+  padding-left: 10px;
+  padding-right: 12px;
+}
+.input-group-btn .btn:hover {
+  background: #cacfd2;
 }
 textarea,
 input[type="text"],
@@ -1006,7 +1024,7 @@ section * {
   text-align: center;
 }
 .footer-11 > .container {
-  padding: 0 0 40px;
+  padding-bottom: 40px;
   position: relative;
 }
 .footer-11 a {
@@ -1021,7 +1039,7 @@ section * {
 .footer-11 .brand {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 15px;
 }
 .footer-11 .brand img:first-child {
   float: left;
@@ -1033,6 +1051,7 @@ section * {
 .footer-11 nav ul {
   list-style: none;
   margin: 0;
+  padding: 0;
   font-size: 16px;
   font-weight: normal;
   color: #34495e;
@@ -1059,7 +1078,7 @@ section * {
   white-space: nowrap;
   position: absolute;
   top: 0;
-  right: 0;
+  right: 15px;
 }
 .footer-11 .social-btns > * {
   display: inline-block;
@@ -1099,8 +1118,8 @@ section * {
 }
 @media (max-width: 767px) {
   .footer-11 .additional-links {
-    margin-right: -20px;
-    margin-left: -20px;
+    margin-right: -5px;
+    margin-left: -5px;
   }
   .footer-11 .additional-links .container {
     padding-left: 20px;

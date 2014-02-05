@@ -36,6 +36,7 @@
         ul {
             list-style: none;
             margin: 0;
+            padding: 0;
             .font(16px, inherit);
             li {
                 margin-bottom: 8px;
@@ -54,7 +55,7 @@
         }
         @media (max-width: 767px) {
             .clearfix;
-            .span2 {
+            .col-sm-2 {
                 float: left;
                 width: 30%;
                 margin-left: 5%;
@@ -67,19 +68,16 @@
             margin-bottom: 20px;
         }
     }
-    .input-append {
-        @media (max-width: 767px) {
-            display: block;
-            margin: 0 47px 0 0;
-        }
+    .input-group {
+        margin-bottom: 20px;
     }
-    .input-append input[type="text"] {
-        width: 160px;
+    .input-group input[type="text"] {
+        width: 167px;
         @media (min-width: 1200px) {
-            width: 211px;
+            width: 217px;
         }
         @media (min-width: 768px) and (max-width: 979px) {
-            width: 106px;
+            width: 112px;
         }
         @media (max-width: 767px) {
             width: 100%;
@@ -126,7 +124,7 @@
         }
     }
     @media (max-width: 767px) {
-        [class*="span"] {
+        [class*="col-sm-"] {
             margin-top: 15px;
         }
         .row:first-child {
@@ -134,11 +132,8 @@
         }
     }
     @media (max-width: 480px) {
-        .control-group {
+        .input-group {
             margin-bottom: 0;
-            .input-append {
-                margin-bottom: 0;
-            }
         }
     }
 }

@@ -357,8 +357,26 @@ body {
   font-size: 17px;
   padding: 12px 18px;
 }
+.btn > [class^="fui-"] {
+  margin-left: 4px;
+  margin-right: 4px;
+  line-height: inherit;
+  display: inline-block;
+  vertical-align: top;
+}
 .input-group-btn .btn {
+  background: #bdc3c7;
+  line-height: 9px 12px 10px;
   line-height: 22px;
+  border: 0;
+  margin: 0;
+  color: #fff;
+  margin-left: 0 !important;
+  padding-left: 10px;
+  padding-right: 12px;
+}
+.input-group-btn .btn:hover {
+  background: #cacfd2;
 }
 textarea,
 input[type="text"],
@@ -1111,6 +1129,7 @@ section * {
 .footer-10 nav ul {
   list-style: none;
   margin: 0;
+  padding: 0;
   font-size: 16px;
   font-weight: normal;
   color: inherit;
@@ -1127,20 +1146,18 @@ section * {
   color: #667071;
 }
 @media (max-width: 767px) {
-  .footer-10 nav .span2 {
+  .footer-10 .col-sm-2 {
     float: left;
     width: 50%;
   }
-  .footer-10 nav .span2 + .span2 + .span2 {
+  .footer-10 .col-sm-2 + .col-sm-2 + .col-sm-2 {
     clear: left;
     margin-top: 30px;
   }
-  .footer-10 nav .span2 + .span2 + .span2 + .span2 {
+  .footer-10 .col-sm-2 + .col-sm-2 + .col-sm-2 + .col-sm-2 {
     clear: none;
     margin-top: 30px;
   }
-}
-@media (max-width: 767px) {
   .footer-10 .box {
     margin-top: 33px;
   }
@@ -1160,11 +1177,11 @@ section * {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-.footer-10 .subscribe-form .span4 {
+.footer-10 .subscribe-form .col-sm-4 {
   text-align: right;
 }
 @media (max-width: 767px) {
-  .footer-10 .subscribe-form .span4 {
+  .footer-10 .subscribe-form .col-sm-4 {
     text-align: center;
   }
 }

@@ -358,8 +358,26 @@ body {
   font-size: 17px;
   padding: 12px 18px;
 }
+.btn > [class^="fui-"] {
+  margin-left: 4px;
+  margin-right: 4px;
+  line-height: inherit;
+  display: inline-block;
+  vertical-align: top;
+}
 .input-group-btn .btn {
+  background: #bdc3c7;
+  line-height: 9px 12px 10px;
   line-height: 22px;
+  border: 0;
+  margin: 0;
+  color: #fff;
+  margin-left: 0 !important;
+  padding-left: 10px;
+  padding-right: 12px;
+}
+.input-group-btn .btn:hover {
+  background: #cacfd2;
 }
 textarea,
 input[type="text"],
@@ -1319,6 +1337,10 @@ section * {
     vertical-align: baseline;
   }
 }
+.footer-3 .row.v-center {
+  padding-left: 0;
+  padding-right: 0;
+}
 .footer-3 a {
   color: #ffffff;
   font-weight: normal;
@@ -1370,10 +1392,10 @@ section * {
   line-height: 1.6;
 }
 @media (max-width: 767px) {
-  .footer-3 .row > [class*="span"] {
+  .footer-3 .row > [class*="col-sm-"] {
     margin-top: 30px;
   }
-  .footer-3 .row > [class*="span"]:first-child {
+  .footer-3 .row > [class*="col-sm-"]:first-child {
     margin-top: 0;
   }
 }

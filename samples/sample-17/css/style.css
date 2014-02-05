@@ -1208,6 +1208,11 @@ section * {
 .footer-13 nav ul li a.active {
   color: #e74c3c;
 }
+@media (max-width: 620px) {
+  .footer-13 > .container > [class*="fui-"] {
+    display: none;
+  }
+}
 @media (max-width: 480px) {
   .footer-13 nav {
     float: none;
@@ -1222,9 +1227,6 @@ section * {
   }
   .footer-13 nav ul li:first-child {
     margin-top: 0;
-  }
-  .footer-13 > .container > [class*="fui-"] {
-    display: none;
   }
 }
 body > section {

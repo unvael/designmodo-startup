@@ -46,6 +46,11 @@
             }
         }
     }
+   @media (max-width: 620px){
+       > .container >[class*="fui-"] {
+         display: none;
+       }
+   }
     @media (max-width: 480px) {
         nav {
             float: none;
@@ -60,9 +65,6 @@
             &:first-child {
                 margin-top: 0;
             }
-        }
-        > .container >[class*="fui-"] {
-            display: none;
         }
     }
 }

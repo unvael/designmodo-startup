@@ -652,13 +652,13 @@ section * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 55px 60px;
+  padding: 55px 60px 20px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
   overflow: hidden;
   color: #95a5a6;
-  height: 330px;
+  min-height: 330px;
   position: relative;
 }
 .projects-1 .head-box:before {
@@ -1035,6 +1035,12 @@ section * {
 .projects-2 .project-3 [class*="fui-"] {
   font-size: 95px;
   line-height: 95px;
+}
+@media (max-width: 767px) {
+  .projects-2 {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 /**
  * Project 3 stylesheet  

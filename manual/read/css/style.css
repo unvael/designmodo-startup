@@ -2622,6 +2622,7 @@ body {
   overflow: hidden;
   float: left;
   width: 220px;
+  height: 150px;
   margin: 0 50px 10px 0;
 }
 @media (max-width: 767px) {
@@ -6651,14 +6652,14 @@ body {
 }
 .mcontent .header-1-sub .pt-perspective {
   position: relative;
-  height: 100%;
+  height: 100%!important;
   -webkit-perspective: 1200px;
   -moz-perspective: 1200px;
   perspective: 1200px;
 }
 .mcontent .header-1-sub .pt-page {
   width: 100%;
-  height: 100%;
+  height: 100%!important;
   position: absolute;
   top: 0;
   left: 0;

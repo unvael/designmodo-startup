@@ -15278,7 +15278,7 @@ body {
     display: none;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 520px) {
   .mcontent .footer-13 nav {
     float: none !important;
     text-align: left;

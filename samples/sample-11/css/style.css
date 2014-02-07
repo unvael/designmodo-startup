@@ -343,6 +343,9 @@ body {
     padding-left: 0;
   }
 }
+li {
+  line-height: 20px;
+}
 .btn {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -701,6 +704,7 @@ section * {
   position: absolute;
   top: 7px;
   right: 15px;
+  z-index: 2;
 }
 @media (max-width: 768px) {
   .header-6 .navbar .social-btns {

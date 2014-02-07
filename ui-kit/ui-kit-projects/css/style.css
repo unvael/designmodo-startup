@@ -343,6 +343,9 @@ body {
     padding-left: 0;
   }
 }
+li {
+  line-height: 20px;
+}
 .btn {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -829,7 +832,7 @@ section * {
   opacity: 1;
   filter: alpha(opacity=100);
 }
-@media (max-width: 979px) and (min-width: 768px) {
+@media (max-width: 991px) and (min-width: 768px) {
   .projects-1 .projects .project,
   .projects-1 .projects .photo-wrapper {
     width: 230px;

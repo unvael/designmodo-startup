@@ -343,6 +343,9 @@ body {
     padding-left: 0;
   }
 }
+li {
+  line-height: 20px;
+}
 .btn {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -704,7 +707,7 @@ section * {
   color: white;
   text-align: center;
 }
-@media (max-width: 979px) {
+@media (max-width: 991px) {
   .header-23-sub {
     padding-top: 260px;
     padding-bottom: 170px;
@@ -722,7 +725,7 @@ section * {
   font-weight: 800;
   letter-spacing: -2px;
 }
-@media (max-width: 979px) {
+@media (max-width: 991px) {
   .header-23-sub .hero-unit strong {
     display: block;
   }
@@ -730,7 +733,7 @@ section * {
 .header-23-sub .hero-unit span {
   font-weight: 300;
 }
-@media (max-width: 979px) {
+@media (max-width: 991px) {
   .header-23-sub .hero-unit span {
     display: block;
   }
@@ -745,7 +748,7 @@ section * {
   margin: 0 50px;
   background: url(../../../common-files/img/header/btn-play.png) no-repeat;
 }
-@media (max-width: 979px) {
+@media (max-width: 991px) {
   .header-23-sub .hero-unit .btn-play {
     margin: 35px 0;
   }
@@ -1259,12 +1262,15 @@ section * {
   margin: 0 0 60px;
   letter-spacing: -2px;
 }
-.content-36 .btn {
+.content-36 .btn-success {
   background: #27ae60;
   font-size: 22px;
   font-weight: 500;
   padding: 15px 46px;
   margin: 0 0 55px;
+}
+.content-36 .btn-success:hover {
+  background: #58D68D;
 }
 .content-36 p {
   margin: 0 auto;

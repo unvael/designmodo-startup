@@ -343,6 +343,9 @@ body {
     padding-left: 0;
   }
 }
+li {
+  line-height: 20px;
+}
 .btn {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -963,7 +966,7 @@ section * {
   -o-background-size: 322px 418px;
   background-size: 322px 418px;
 }
-@media (max-width: 979px) {
+@media (max-width: 991px) {
   .content-21 .features.features-tabs .features-bodies {
     background-position: -15% 50%;
   }
@@ -1429,7 +1432,7 @@ section * {
   top: 47px;
   z-index: 2;
 }
-@media (max-width: 979px) {
+@media (max-width: 991px) {
   .price-2 .plans .plan .ribbon {
     top: 20px;
   }

@@ -343,6 +343,9 @@ body {
     padding-left: 0;
   }
 }
+li {
+  line-height: 20px;
+}
 .btn {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -820,7 +823,7 @@ body section[class*=content-] {
 .footer-1 .social-btns {
   margin-top: 15px;
 }
-@media (max-width: 979px) {
+@media (max-width: 991px) {
   .footer-1 .social-btns {
     margin-bottom: 25px;
   }
@@ -987,6 +990,7 @@ body section[class*=content-] {
 .footer-2 .social-btns > * > * {
   display: block;
   position: relative;
+  top: 0;
   -webkit-transition: 0.25s top;
   -moz-transition: 0.25s top;
   -o-transition: 0.25s top;
@@ -1004,7 +1008,7 @@ body section[class*=content-] {
   color: #bdc3c7;
   text-align: center;
 }
-@media (max-width: 979px) {
+@media (max-width: 991px) {
   .footer-2 .additional-links {
     clear: both;
     text-align: left;
@@ -1234,7 +1238,7 @@ body section[class*=content-] {
   font-weight: normal;
   color: #3498db;
 }
-@media (max-width: 979px) {
+@media (max-width: 991px) {
   .footer-5 .text {
     margin: 0;
   }
@@ -1360,7 +1364,7 @@ body section[class*=content-] {
     width: 217px;
   }
 }
-@media (min-width: 768px) and (max-width: 979px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .footer-6 .input-group input[type="text"] {
     width: 112px;
   }
@@ -1402,6 +1406,7 @@ body section[class*=content-] {
 .footer-6 .social-btns > * > * {
   display: block;
   position: relative;
+  top: 0;
   -webkit-transition: 0.25s top;
   -moz-transition: 0.25s top;
   -o-transition: 0.25s top;
@@ -1593,6 +1598,7 @@ body section[class*=content-] {
 .footer-7 .social-btns > * > * {
   display: block;
   position: relative;
+  top: 0;
   -webkit-transition: 0.25s top;
   -moz-transition: 0.25s top;
   -o-transition: 0.25s top;
@@ -2021,6 +2027,7 @@ body section[class*=content-] {
 .footer-11 .social-btns > * > * {
   display: block;
   position: relative;
+  top: 0;
   -webkit-transition: 0.25s top;
   -moz-transition: 0.25s top;
   -o-transition: 0.25s top;
@@ -2131,6 +2138,7 @@ body section[class*=content-] {
   font-size: 60px;
   font-weight: normal;
   color: #e74c3c;
+  vertical-align: baseline;
 }
 @media (min-width: 1200px) {
   .footer-12 {
@@ -2341,6 +2349,7 @@ body section[class*=content-] {
 .footer-14 .social-btns > * > * {
   display: block;
   position: relative;
+  top: 0;
   -webkit-transition: 0.25s top;
   -moz-transition: 0.25s top;
   -o-transition: 0.25s top;

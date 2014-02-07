@@ -344,6 +344,9 @@ body {
     padding-left: 0;
   }
 }
+li {
+  line-height: 20px;
+}
 .btn {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -673,12 +676,12 @@ section * {
   float: left;
   margin: -10px 15px 0 0;
 }
-@media (max-width: 979px) {
+@media (max-width: 991px) {
   .header-22 .navbar .brand {
     display: block;
   }
 }
-@media (min-width: 980px) {
+@media (min-width: 992px) {
   .header-22 .navbar .nav {
     width: 100%;
     text-align: center;
@@ -846,7 +849,7 @@ section * {
   font-size: 26px;
   font-weight: normal;
   color: #ffffff;
-  margin: -6px 12px 0 0;
+  margin: -2px 12px 0 0;
 }
 @media (max-width: 767px) {
   .content-2 .btns {

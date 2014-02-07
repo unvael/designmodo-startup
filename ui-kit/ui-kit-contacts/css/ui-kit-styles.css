@@ -343,6 +343,9 @@ body {
     padding-left: 0;
   }
 }
+li {
+  line-height: 20px;
+}
 .btn {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -903,7 +906,7 @@ body section[class*=content-] {
   white-space: nowrap;
   color: #1abc9c;
 }
-@media (max-width: 979px) and (min-width: 768px) {
+@media (max-width: 992px) and (min-width: 768px) {
   .contacts-1 .phone big {
     font-size: 32px;
   }

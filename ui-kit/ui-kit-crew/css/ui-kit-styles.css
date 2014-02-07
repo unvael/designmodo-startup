@@ -343,6 +343,9 @@ body {
     padding-left: 0;
   }
 }
+li {
+  line-height: 20px;
+}
 .btn {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -1074,7 +1077,7 @@ body section[class*=content-] {
   opacity: 0.4;
   filter: alpha(opacity=40);
 }
-@media (max-width: 979px) and (min-width: 768px) {
+@media (max-width: 991px) and (min-width: 768px) {
   .crew-2 .members .member,
   .crew-2 .members .photo-wrapper {
     width: 230px;
@@ -1248,7 +1251,7 @@ body section[class*=content-] {
   opacity: 1;
   filter: alpha(opacity=100);
 }
-@media (max-width: 979px) and (min-width: 768px) {
+@media (max-width: 991px) and (min-width: 768px) {
   .crew-3 .members .member,
   .crew-3 .members .photo-wrapper {
     width: 230px;
@@ -1427,7 +1430,7 @@ body section[class*=content-] {
   opacity: 1;
   filter: alpha(opacity=100);
 }
-@media (max-width: 979px) and (min-width: 768px) {
+@media (max-width: 991px) and (min-width: 768px) {
   .crew-4 .members .member,
   .crew-4 .members .photo-wrapper {
     width: 230px;

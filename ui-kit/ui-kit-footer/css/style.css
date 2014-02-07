@@ -2015,7 +2015,12 @@ section * {
 .footer-13 nav ul li a.active {
   color: #e74c3c;
 }
-@media (max-width: 480px) {
+@media (max-width: 620px) {
+  .footer-13 > .container > [class*="fui-"] {
+    display: none;
+  }
+}
+@media (max-width: 520px) {
   .footer-13 nav {
     float: none !important;
     text-align: left;
@@ -2029,9 +2034,6 @@ section * {
   }
   .footer-13 nav ul li:first-child {
     margin-top: 0;
-  }
-  .footer-13 > .container > [class*="fui-"] {
-    display: none;
   }
 }
 /**

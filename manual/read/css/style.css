@@ -16066,6 +16066,11 @@ body {
 .mcontent .footer-13 nav ul li a.active {
   color: #e74c3c;
 }
+@media (max-width: 620px) {
+  .mcontent .footer-13 > .container > [class*="fui-"] {
+    display: none;
+  }
+}
 @media (max-width: 480px) {
   .mcontent .footer-13 nav {
     float: none;
@@ -16080,9 +16085,6 @@ body {
   }
   .mcontent .footer-13 nav ul li:first-child {
     margin-top: 0;
-  }
-  .mcontent .footer-13 > .container > [class*="fui-"] {
-    display: none;
   }
 }
 .mcontent .footer-14 {

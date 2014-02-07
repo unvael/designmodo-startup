@@ -221,7 +221,7 @@
                 <img src="../../common-files/icons/Infinity-Loop@2x.png" width="50" height="50" alt="">Startup</a>
             </div>
             <div class="collapse navbar-collapse pull-right">
-              <ul class="nav">
+              <ul class="nav pull-left">
                 <li class="active"><a href="#">HOME</a>
                 </li>
                 <li><a href="#">COMPANY</a>
@@ -275,18 +275,18 @@
     </header>
     <div class="delimiter"></div>
     <!-- header-5 -->
-    <header class="header-5 no-shift">
+    <header class="header-5">
       <div class="container">
-        <div class="navbar col-sm-12">
-          <div class="navbar-btns">
-            <a class="home" href="#"> <span class="fui-home"> </span>
-            </a>
-            <a class="search" href="#"> <span class="fui-search"> </span>
-            </a>
-          </div>
-          <div class="navbar-inner">
-            <button type="button" class="btn btn-navbar"></button>
-            <div class="nav-collapse collapse">
+        <div class="row">
+          <div class="navbar col-sm-12" role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle"></button>
+              <a class="home" href="#"> <span class="fui-home"> </span>
+              </a>
+              <a class="search" href="#"> <span class="fui-search"> </span>
+              </a>
+            </div>
+            <div class="collapse navbar-collapse">
               <ul class="nav">
                 <li class="active"><a href="#">HOME</a>
                 </li>
@@ -300,11 +300,11 @@
                 </li>
               </ul>
             </div>
+            <form class="navbar-search">
+              <a class="close-search" href="#"><span class="fui-cross"> </span></a>
+              <input type="text" placeholder="Search query">
+            </form>
           </div>
-          <form class="navbar-search">
-            <a class="close-search" href="#"><span class="fui-cross"> </span></a>
-            <input type="text" placeholder="Search query">
-          </form>
         </div>
       </div>
     </header>
@@ -582,7 +582,7 @@ To get started, you select the desired sample and base the entire website on it.
               <a class="brand" href="#">Startup</a>
             </div>
             <div class="collapse navbar-collapse pull-right">
-              <ul class="nav">
+              <ul class="nav pull-left">
                 <li class="active"><a href="#">Home</a>
                 </li>
                 <li><a href="#">Account</a>
@@ -625,7 +625,7 @@ To get started, you select the desired sample and base the entire website on it.
                 <img src="../../common-files/icons/Infinity-Loop@2x.png" width="50" height="50" alt="">Startup</a>
             </div>
             <div class="collapse navbar-collapse pull-right">
-              <ul class="nav">
+              <ul class="nav pull-left">
                 <li class="active"><a href="#">HOME</a>
                 </li>
                 <li><a href="#">COMPANY</a>
@@ -685,12 +685,14 @@ To get started, you select the desired sample and base the entire website on it.
     <!-- header-12 -->
     <header class="header-12">
       <div class="container">
-        <div class="navbar">
-          <div class="navbar-header">
-            <a class="brand" href="#">
-              <img src="../../common-files/icons/Infinity-Loop@2x.png" width="50" height="50" alt="">Startup</a>
-            <div class="nav">
-              <a href="#">UPCOMING EVENTS</a> &amp; <a href="#">SUBSCRIPTIONS</a>
+        <div class="row">
+          <div class="navbar">
+            <div class="navbar-header">
+              <a class="brand" href="#">
+                <img src="../../common-files/icons/Infinity-Loop@2x.png" width="50" height="50" alt="">Startup</a>
+              <div class="nav">
+                <a href="#">UPCOMING EVENTS</a> &amp; <a href="#">SUBSCRIPTIONS</a>
+              </div>
             </div>
           </div>
         </div>
@@ -744,7 +746,7 @@ To get started, you select the desired sample and base the entire website on it.
               <p class="lead">We have considered your needs in design the html version of our UI Kit. It’s absolutely amazing!</p>
               <br>
               <div class="row">
-                <div class="col-sm-8">
+                <div class="col-md-8">
                   <a class="btn btn-danger btn-huge" href="#">Buy in Appstore</a>
                 </div>
               </div>
@@ -792,11 +794,13 @@ To get started, you select the desired sample and base the entire website on it.
     <!-- header-15 -->
     <header class="header-15 hidden">
       <div class="container">
-        <div class="navbar col-sm-12">
-          <div class="navbar-inner">
-            <button type="button" class="btn btn-navbar"></button>
-            <a class="brand" href="#">Startup</a>
-            <div class="nav-collapse collapse">
+        <div class="row">
+          <div class="navbar col-sm-12" role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle"></button>
+              <a class="brand" href="#">Startup</a>
+            </div>
+            <div class="navbar-collapse collapse">
               <ul class="nav">
                 <li class="active"><a href="#">Home</a>
                 </li>
@@ -829,23 +833,25 @@ To get started, you select the desired sample and base the entire website on it.
     <!-- header-16 -->
     <header class="header-16 no-shift">
       <div class="container">
-        <div class="navbar">
-          <div class="navbar-inner">
-            <button type="button" class="btn btn-navbar">
-              <span>MENU</span>
-              <div>CLOSE</div>
-            </button>
-            <div class="nav-collapse collapse">
-              <ul class="nav">
-                <li class="active"><a href="#">HOME</a>
-                </li>
-                <li><a href="#">WORK</a>
-                </li>
-                <li><a href="#">BLOG</a>
-                </li>
-                <li><a href="#">CONTACT</a>
-                </li>
-              </ul>
+        <div class="row">
+          <div class="navbar" role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle">
+                <span>MENU</span>
+                <div>CLOSE</div>
+              </button>
+              <div class="nav-collapse collapse">
+                <ul class="nav">
+                  <li class="active"><a href="#">HOME</a>
+                  </li>
+                  <li><a href="#">WORK</a>
+                  </li>
+                  <li><a href="#">BLOG</a>
+                  </li>
+                  <li><a href="#">CONTACT</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -915,14 +921,16 @@ To get started, you select the desired sample and base the entire website on it.
     <!-- header-17 -->
     <header class="header-17">
       <div class="container">
-        <div class="navbar col-sm-12">
-          <div class="navbar-inner">
-            <button type="button" class="btn btn-navbar"></button>
-            <a class="brand" href="#">
-              <img src="../../common-files/icons/Infinity-Loop@2x.png" width="50" height="50" alt=""><span>Startup</span>
-            </a>
-            <div class="nav-collapse collapse pull-right">
-              <ul class="nav">
+        <div class="row">
+          <div class="navbar col-sm-12" role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle"></button>
+              <a class="brand" href="#">
+                <img src="../../common-files/icons/Infinity-Loop@2x.png" width="50" height="50" alt=""><span>Startup</span>
+              </a>
+            </div>
+            <div class="collapse navbar-collapse pull-right">
+              <ul class="nav pull-left">
                 <li class="active"><a href="#">HOME</a>
                 </li>
                 <li><a href="#">COMPANY</a>
@@ -1027,7 +1035,7 @@ Just put the image with your App screen inside Smart Layer and get the photo.
                   <div class="row">
                     <div class="col-sm-5 col-sm-offset-1">
                       <h3>The First Sneak-Peek of Startup Design Framework</h3>
-                      <div class="visible-phone text-center" style="margin-bottom: 30px">
+                      <div class="visible-xs text-center" style="margin-bottom: 30px">
                         <img src="../../common-files/img/header/browser-iphone@2x.png" width="300" height="300" alt="">
                       </div>
                       <p>The most important parts of the Startup Framework are Samples and the UI Kit that includes a set of different components. The samples consist of a set of 25 pages.</p>
@@ -1076,12 +1084,14 @@ Just put the image with your App screen inside Smart Layer and get the photo.
     <!-- header-19 -->
     <header class="header-19">
       <div class="container">
-        <div class="navbar col-sm-12">
-          <div class="navbar-inner">
-            <button type="button" class="btn btn-navbar"></button>
-            <a class="brand" href="#">
-              <img src="../../common-files/icons/Infinity-Loop@2x.png" width="50" height="50" alt=""> <span>Startup</span>
-            </a>
+        <div class="row">
+          <div class="navbar col-sm-12" role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle"></button>
+              <a class="brand" href="#">
+                <img src="../../common-files/icons/Infinity-Loop@2x.png" width="50" height="50" alt=""> <span>Startup</span>
+              </a>
+            </div>
             <div class="nav-collapse collapse">
               <ul class="nav">
                 <li class="active"><a href="#">HOME</a>
@@ -1116,7 +1126,7 @@ Just put the image with your App screen inside Smart Layer and get the photo.
     </header>
     <section class="header-19-sub">
       <div class="background">&nbsp;</div>
-      <img class="hidden-phone" src="../../common-files/img/header/ipad@2x.png" alt="">
+      <img class="hidden-xs" src="../../common-files/img/header/ipad@2x.png" alt="">
       <div class="container">
         <div class="row">
           <div class="col-sm-8">
@@ -1141,12 +1151,15 @@ Just put the image with your App screen inside Smart Layer and get the photo.
     <!-- header-20 -->
     <header class="header-20 hidden">
       <div class="container">
-        <div class="navbar col-sm-12 ">
-          <div class="navbar-inner">
-            <button type="button" class="btn btn-navbar"></button>
-            <a class="brand" href="#">
-              <img src="../../common-files/icons/Infinity-Loop@2x.png" width="50" height="50" alt="">Startup</a>
-            <div class="nav-collapse collapse pull-right">
+        <div class="row">
+          <div class="navbar col-sm-12" role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle"></button>
+              <a class="brand" href="#">
+                <img src="../../common-files/icons/Infinity-Loop@2x.png" width="50" height="50" alt="">Startup
+              </a>
+            </div>
+            <div class="navbar-collapse collapse pull-right">
               <ul class="nav">
                 <li class="active"><a href="#">Home</a>
                 </li>
@@ -1191,7 +1204,7 @@ Just put the image with your App screen inside Smart Layer and get the photo.
                 </div>
                 <div class="description">
                   Ultra fast
-                  <br class="hidden-phone">scripting
+                  <br class="hidden-xs">scripting
                 </div>
               </div>
               <div class="video-box">
@@ -1200,7 +1213,7 @@ Just put the image with your App screen inside Smart Layer and get the photo.
                 </div>
                 <div class="description">
                   Time
-                  <br class="hidden-phone">economy
+                  <br class="hidden-xs">economy
                 </div>
               </div>
               <div class="video-box">
@@ -1209,7 +1222,7 @@ Just put the image with your App screen inside Smart Layer and get the photo.
                 </div>
                 <div class="description">
                   Ready for
-                  <br class="hidden-phone">retina
+                  <br class="hidden-xs">retina
                 </div>
               </div>
             </div>
@@ -1221,11 +1234,13 @@ Just put the image with your App screen inside Smart Layer and get the photo.
     <!-- header-21 -->
     <header class="header-21">
       <div class="container">
-        <div class="navbar span12">
-          <div class="navbar-inner">
-            <button type="button" class="btn btn-navbar"></button>
-            <a class="brand" href="#">Startup</a>
-            <div class="nav-collapse collapse">
+        <div class="row">
+          <div class="navbar col-sm-12" role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle"></button>
+              <a class="brand" href="#">Startup</a>
+            </div>
+            <div class="navbar-collapse collapse">
               <ul class="nav">
                 <li class="active"><a href="#">HOME</a>
                 </li>
@@ -1259,14 +1274,17 @@ Just put the image with your App screen inside Smart Layer and get the photo.
     <div class="delimiter-big"></div>
     <!-- header-22 -->
     <header class="header-22">
-      <span class="fui-cmd hidden-phone"> </span>
+      <span class="fui-cmd hidden-xs"> </span>
       <div class="container">
-        <div class="navbar span12">
-          <div class="navbar-inner">
-            <button type="button" class="btn btn-navbar collapsed"></button>
-            <a class="brand" href="#">
-              <img src="../../common-files/icons/Infinity-Loop@2x.png" width="50" height="50" alt="">Startup</a>
-            <div class="nav-collapse collapse" style="height: 0px;">
+        <div class="row">
+          <div class="navbar col-sm-12" role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle"></button>
+              <a class="brand" href="#">
+                <img src="../../common-files/icons/Infinity-Loop@2x.png" width="50" height="50" alt="">Startup
+              </a>
+            </div>
+            <div class="navbar-collapse collapse">
               <ul class="nav">
                 <li><a href="#">UPCOMING EVENTS</a>
                 </li>
@@ -1307,38 +1325,38 @@ Just put the image with your App screen inside Smart Layer and get the photo.
     <header class="header-23">
       <div class="container">
         <div class="row">
-          <div class="navbar span12">
-            <div class="navbar-inner">
-              <button type="button" class="btn btn-navbar"></button>
+          <div class="navbar col-sm-12" role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle"></button>
               <a class="brand" href="#">Startup</a>
-              <div class="nav-collapse collapse">
-                <ul class="nav pull-right">
-                  <li><a href="#">Home</a>
-                  </li>
-                  <li><a href="#">Work</a>
-                  </li>
-                  <li><a href="#">Blog</a>
-                  </li>
-                  <li><a href="#">Contact</a>
-                  </li>
-                </ul>
-                <ul class="subnav">
-                  <li><a href="#">Privacy</a>
-                  </li>
-                  <li><a href="#">Terms</a>
-                  </li>
-                  <li><a href="#">Advertise</a>
-                  </li>
-                  <li><a href="#">Affiliates</a>
-                  </li>
-                  <li><a href="#">Newsletter</a>
-                  </li>
-                  <li><a href="#">About</a>
-                  </li>
-                  <li><a href="#">Contact Us</a>
-                  </li>
-                </ul>
-              </div>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav pull-right">
+                <li><a href="#">Home</a>
+                </li>
+                <li><a href="#">Work</a>
+                </li>
+                <li><a href="#">Blog</a>
+                </li>
+                <li><a href="#">Contact</a>
+                </li>
+              </ul>
+              <ul class="subnav">
+                <li><a href="#">Privacy</a>
+                </li>
+                <li><a href="#">Terms</a>
+                </li>
+                <li><a href="#">Advertise</a>
+                </li>
+                <li><a href="#">Affiliates</a>
+                </li>
+                <li><a href="#">Newsletter</a>
+                </li>
+                <li><a href="#">About</a>
+                </li>
+                <li><a href="#">Contact Us</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

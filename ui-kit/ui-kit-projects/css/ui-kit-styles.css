@@ -215,10 +215,6 @@ footer {
   -moz-border-radius: 6px 0 0 6px;
   border-radius: 6px 0 0 6px;
 }
-.navbar-fixed-top .navbar-inner,
-.navbar-static-top .navbar-inner {
-  box-shadow: none;
-}
 .bg-white {
   background-color: #ffffff;
 }
@@ -361,8 +357,26 @@ body {
   font-size: 17px;
   padding: 12px 18px;
 }
+.btn > [class^="fui-"] {
+  margin-left: 4px;
+  margin-right: 4px;
+  line-height: inherit;
+  display: inline-block;
+  vertical-align: top;
+}
 .input-group-btn .btn {
+  background: #bdc3c7;
+  line-height: 9px 12px 10px;
   line-height: 22px;
+  border: 0;
+  margin: 0;
+  color: #fff;
+  margin-left: 0 !important;
+  padding-left: 10px;
+  padding-right: 12px;
+}
+.input-group-btn .btn:hover {
+  background: #cacfd2;
 }
 textarea,
 input[type="text"],
@@ -403,33 +417,6 @@ h5,
 h6 {
   margin-top: 10px;
   margin-bottom: 10px;
-}
-.navbar .brand {
-  padding: 23px 28px 24px 32px;
-  float: left;
-}
-.navbar-toggle {
-  margin: 28px 0 17px;
-  padding: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  border: 0;
-  background: none;
-  color: #ffffff;
-}
-.navbar-toggle:hover,
-.navbar-toggle:focus,
-.navbar-toggle.active {
-  color: rgba(0, 0, 0, 0.4);
-}
-@media (min-width: 768px) {
-  .navbar-toggle {
-    display: none;
-  }
-}
-.navbar .nav > li {
-  float: left;
 }
 p {
   margin-bottom: 10px;
@@ -578,8 +565,6 @@ section * {
 }
 @media (max-width: 767px) {
   header {
-    padding-left: 20px;
-    padding-right: 20px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -893,13 +878,13 @@ body section[class*=content-] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 55px 60px;
+  padding: 55px 60px 20px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
   overflow: hidden;
   color: #95a5a6;
-  height: 330px;
+  min-height: 330px;
   position: relative;
 }
 .projects-1 .head-box:before {
@@ -1276,6 +1261,12 @@ body section[class*=content-] {
 .projects-2 .project-3 [class*="fui-"] {
   font-size: 95px;
   line-height: 95px;
+}
+@media (max-width: 767px) {
+  .projects-2 {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 /**
  * Project 3 stylesheet  

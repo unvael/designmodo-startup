@@ -13,15 +13,7 @@
     .navbar {
         margin: 10px 0 0;
         font-family: @font-family-demo;
-        &.navbar-fixed-top {
-            position:fixed;
-            margin:0 auto;
-        }
-        .navbar-inner {
-            background: none;
-        }
         .brand {
-            padding-left: 0;
             font-weight: 500;
             color: #2c3e50!important;
             img:first-child {
@@ -46,27 +38,67 @@
                 }
             }
         }
-        .btn-navbar {
-            margin: 28px 0 17px;
-            padding: 0;
-            .border-radius(0);
-            border: 0;
-            background: none!important;
-            color: @silver;
-            &:hover, &:focus {
-                color: @brand-info;
-            }
-            &:active, &.active {
-                color: @base;
-            }
-        }
-        @media (max-width: 979px) {
-            .nav-collapse {
-                padding-top: 28px;
-                .navbar-collapse;
-            }
+        .navbar-toggle {
+            background-image: url("../../../common-files/icons/menu-icon-header-17.png");
         }
     }
+    // .navbar {
+    //     margin: 10px 0 0;
+    //     font-family: @font-family-demo;
+    //     &.navbar-fixed-top {
+    //         position:fixed;
+    //         margin:0 auto;
+    //     }
+    //     .navbar-inner {
+    //         background: none;
+    //     }
+    //     .brand {
+    //         padding-left: 0;
+    //         font-weight: 500;
+    //         color: #2c3e50!important;
+    //         img:first-child {
+    //             float: left;
+    //             margin: -10px 15px 0 0;
+    //         }
+    //     }
+    //     .nav {
+    //         > li {
+    //             margin-left: 40px;
+    //             &:first-child {
+    //                 margin-left: 0;
+    //             }
+    //             > a {
+    //                 padding: 28px 0 27px;
+    //                 .font(18px, @silver);
+    //                 font-weight:500;
+    //                 .a-color(@silver, @brand-info);
+    //             }
+    //             &.active > a {
+    //                 .a-color(@brand-info, @brand-info);
+    //             }
+    //         }
+    //     }
+    //     .btn-navbar {
+    //         margin: 28px 0 17px;
+    //         padding: 0;
+    //         .border-radius(0);
+    //         border: 0;
+    //         background: none!important;
+    //         color: @silver;
+    //         &:hover, &:focus {
+    //             color: @brand-info;
+    //         }
+    //         &:active, &.active {
+    //             color: @base;
+    //         }
+    //     }
+    //     @media (max-width: 979px) {
+    //         .nav-collapse {
+    //             padding-top: 28px;
+    //             .navbar-collapse;
+    //         }
+    //     }
+    // }
 }
 .header-20-sub {
     position:relative;
@@ -93,6 +125,7 @@
         .pull-right {
             text-align:center;
             margin-bottom:48px;
+            float: none !important;
         }
     }
     .img-wrapper {

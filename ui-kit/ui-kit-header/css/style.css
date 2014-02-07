@@ -1931,7 +1931,7 @@ section * {
     max-height: 100%;
   }
   .header-7-sub .pt-controls {
-    margin: 0 !important;
+    margin: -60px 0 !important;
     padding: 0 !important;
   }
 }

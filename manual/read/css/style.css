@@ -7662,7 +7662,7 @@ body {
     max-height: 100%;
   }
   .mcontent .header-7-sub .pt-controls {
-    margin: 0 !important;
+    margin: -60px 0 !important;
     padding: 0 !important;
   }
 }

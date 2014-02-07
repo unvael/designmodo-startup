@@ -765,7 +765,7 @@ section * {
   content: '';
   display: block;
   position: absolute;
-  left: 0;
+  left: 15px;
   bottom: 0;
   width: 48px;
   border-top: 3px solid #3498db;
@@ -799,6 +799,7 @@ section * {
   list-style: none;
   display: block;
   margin: 0;
+  padding: 0;
 }
 .blog-1 .links li {
   display: block;
@@ -886,14 +887,14 @@ section * {
   .blog-1 .boxes .box-2,
   .blog-1 .boxes .box-3,
   .blog-1 .boxes .box-4 {
-    width: 384.666px;
+    width: 374.666px;
   }
 }
-@media (max-width: 979px) and (min-width: 768px) {
+@media (max-width: 991px) and (min-width: 768px) {
   .blog-1 .boxes .box-2,
   .blog-1 .boxes .box-3,
   .blog-1 .boxes .box-4 {
-    width: 236px;
+    width: 234.666px;
   }
 }
 @media (max-width: 767px) {
@@ -913,7 +914,7 @@ section * {
   padding-bottom: 200px;
   position: relative;
   background-color: #ecf0f1;
-  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #35495d;
 }
 @media (max-width: 768px) {
@@ -980,11 +981,11 @@ section * {
 .blog-2 .background > .container {
   height: 100%;
 }
-.blog-2 .background .span4 {
+.blog-2 .background .col-sm-4 {
   position: absolute;
   height: 100%;
 }
-.blog-2 .background .span4 > div {
+.blog-2 .background .col-sm-4 > div {
   position: absolute;
   right: 0;
   height: 100%;
@@ -995,7 +996,7 @@ section * {
   -o-background-size: cover;
   background-size: cover;
 }
-.blog-2 .background .span4 > div img {
+.blog-2 .background .col-sm-4 > div img {
   height: 100% !important;
   width: auto;
 }
@@ -1212,6 +1213,7 @@ section * {
   list-style: none;
   display: block;
   margin: 0;
+  padding: 0;
 }
 .blog-4 .tags li {
   display: inline-block;
@@ -1238,6 +1240,7 @@ section * {
   list-style: none;
   display: block;
   margin: 0;
+  padding: 0;
 }
 .blog-4 .related-articles li {
   display: block;
@@ -1450,7 +1453,7 @@ section * {
   font-size: 18px;
   font-weight: 500;
   color: #2980b9;
-  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 0;
 }
 @media (max-width: 767px) {
@@ -1530,14 +1533,14 @@ section * {
   .blog-5 .boxes .box-2,
   .blog-5 .boxes .box-3,
   .blog-5 .boxes .box-4 {
-    width: 384.666px;
+    width: 374.666px;
   }
 }
-@media (max-width: 979px) and (min-width: 768px) {
+@media (max-width: 991px) and (min-width: 768px) {
   .blog-5 .boxes .box-2,
   .blog-5 .boxes .box-3,
   .blog-5 .boxes .box-4 {
-    width: 236px;
+    width: 234.666px;
   }
 }
 @media (max-width: 767px) {
@@ -1571,6 +1574,7 @@ section * {
   list-style: none;
   display: block;
   margin: 0;
+  padding: 0;
 }
 .blog-5 .tags li {
   display: inline-block;

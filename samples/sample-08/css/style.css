@@ -1084,7 +1084,7 @@ section * {
   padding-bottom: 200px;
   position: relative;
   background-color: #ecf0f1;
-  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #35495d;
 }
 @media (max-width: 768px) {
@@ -1151,11 +1151,11 @@ section * {
 .blog-2 .background > .container {
   height: 100%;
 }
-.blog-2 .background .span4 {
+.blog-2 .background .col-sm-4 {
   position: absolute;
   height: 100%;
 }
-.blog-2 .background .span4 > div {
+.blog-2 .background .col-sm-4 > div {
   position: absolute;
   right: 0;
   height: 100%;
@@ -1166,7 +1166,7 @@ section * {
   -o-background-size: cover;
   background-size: cover;
 }
-.blog-2 .background .span4 > div img {
+.blog-2 .background .col-sm-4 > div img {
   height: 100% !important;
   width: auto;
 }

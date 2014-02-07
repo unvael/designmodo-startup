@@ -343,6 +343,9 @@ body {
     padding-left: 0;
   }
 }
+li {
+  line-height: 20px;
+}
 .btn {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -1018,7 +1021,7 @@ section * {
   font-weight: normal;
   color: #7f8c8d;
 }
-@media (max-width: 979px) and (min-width: 768px) {
+@media (max-width: 991px) and (min-width: 768px) {
   .content-14 .features .box-1,
   .content-14 .features .box-5 {
     top: 220px;
@@ -1031,7 +1034,7 @@ section * {
   font-weight: normal;
   color: #7f8c8d;
 }
-@media (max-width: 979px) and (min-width: 768px) {
+@media (max-width: 991px) and (min-width: 768px) {
   .content-14 .features .box-2,
   .content-14 .features .box-6 {
     top: 440px;
@@ -1044,7 +1047,7 @@ section * {
   font-weight: normal;
   color: #7f8c8d;
 }
-@media (max-width: 979px) and (min-width: 768px) {
+@media (max-width: 991px) and (min-width: 768px) {
   .content-14 .features .box-3,
   .content-14 .features .box-7 {
     top: 660px;
@@ -1057,7 +1060,7 @@ section * {
   font-weight: normal;
   color: #7f8c8d;
 }
-@media (max-width: 979px) and (min-width: 768px) {
+@media (max-width: 991px) and (min-width: 768px) {
   .content-14 .features .box-4,
   .content-14 .features .box-8 {
     top: 10px;
@@ -1321,7 +1324,7 @@ section * {
   white-space: nowrap;
   color: #1abc9c;
 }
-@media (max-width: 979px) and (min-width: 768px) {
+@media (max-width: 992px) and (min-width: 768px) {
   .contacts-1 .phone big {
     font-size: 32px;
   }
@@ -1371,6 +1374,7 @@ section * {
   font-size: 60px;
   font-weight: normal;
   color: #e74c3c;
+  vertical-align: baseline;
 }
 @media (min-width: 1200px) {
   .footer-12 {

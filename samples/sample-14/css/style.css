@@ -344,6 +344,9 @@ body {
     padding-left: 0;
   }
 }
+li {
+  line-height: 20px;
+}
 .btn {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -1215,7 +1218,7 @@ section * {
   font-weight: normal;
   color: #3498db;
 }
-@media (max-width: 979px) {
+@media (max-width: 991px) {
   .footer-5 .text {
     margin: 0;
   }

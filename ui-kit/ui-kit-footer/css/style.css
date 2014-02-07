@@ -343,6 +343,9 @@ body {
     padding-left: 0;
   }
 }
+li {
+  line-height: 20px;
+}
 .btn {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -594,7 +597,7 @@ section * {
 .footer-1 .social-btns {
   margin-top: 15px;
 }
-@media (max-width: 979px) {
+@media (max-width: 991px) {
   .footer-1 .social-btns {
     margin-bottom: 25px;
   }
@@ -761,6 +764,7 @@ section * {
 .footer-2 .social-btns > * > * {
   display: block;
   position: relative;
+  top: 0;
   -webkit-transition: 0.25s top;
   -moz-transition: 0.25s top;
   -o-transition: 0.25s top;
@@ -778,7 +782,7 @@ section * {
   color: #bdc3c7;
   text-align: center;
 }
-@media (max-width: 979px) {
+@media (max-width: 991px) {
   .footer-2 .additional-links {
     clear: both;
     text-align: left;
@@ -1008,7 +1012,7 @@ section * {
   font-weight: normal;
   color: #3498db;
 }
-@media (max-width: 979px) {
+@media (max-width: 991px) {
   .footer-5 .text {
     margin: 0;
   }
@@ -1134,7 +1138,7 @@ section * {
     width: 217px;
   }
 }
-@media (min-width: 768px) and (max-width: 979px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .footer-6 .input-group input[type="text"] {
     width: 112px;
   }
@@ -1176,6 +1180,7 @@ section * {
 .footer-6 .social-btns > * > * {
   display: block;
   position: relative;
+  top: 0;
   -webkit-transition: 0.25s top;
   -moz-transition: 0.25s top;
   -o-transition: 0.25s top;
@@ -1367,6 +1372,7 @@ section * {
 .footer-7 .social-btns > * > * {
   display: block;
   position: relative;
+  top: 0;
   -webkit-transition: 0.25s top;
   -moz-transition: 0.25s top;
   -o-transition: 0.25s top;
@@ -1795,6 +1801,7 @@ section * {
 .footer-11 .social-btns > * > * {
   display: block;
   position: relative;
+  top: 0;
   -webkit-transition: 0.25s top;
   -moz-transition: 0.25s top;
   -o-transition: 0.25s top;
@@ -1905,6 +1912,7 @@ section * {
   font-size: 60px;
   font-weight: normal;
   color: #e74c3c;
+  vertical-align: baseline;
 }
 @media (min-width: 1200px) {
   .footer-12 {
@@ -2115,6 +2123,7 @@ section * {
 .footer-14 .social-btns > * > * {
   display: block;
   position: relative;
+  top: 0;
   -webkit-transition: 0.25s top;
   -moz-transition: 0.25s top;
   -o-transition: 0.25s top;

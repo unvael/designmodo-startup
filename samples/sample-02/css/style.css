@@ -343,6 +343,9 @@ body {
     padding-left: 0;
   }
 }
+li {
+  line-height: 20px;
+}
 .btn {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -703,7 +706,7 @@ section * {
   color: white;
   text-align: center;
 }
-@media (max-width: 979px) {
+@media (max-width: 991px) {
   .header-2-sub {
     padding-top: 165px;
   }
@@ -916,7 +919,7 @@ section * {
 .footer-1 .social-btns {
   margin-top: 15px;
 }
-@media (max-width: 979px) {
+@media (max-width: 991px) {
   .footer-1 .social-btns {
     margin-bottom: 25px;
   }

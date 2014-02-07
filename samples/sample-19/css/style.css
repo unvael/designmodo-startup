@@ -343,6 +343,9 @@ body {
     padding-left: 0;
   }
 }
+li {
+  line-height: 20px;
+}
 .btn {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -690,7 +693,7 @@ section * {
   float: left;
   margin: -10px 15px 0 0;
 }
-@media (min-width: 980px) {
+@media (min-width: 992px) {
   .header-15 .navbar .nav {
     position: absolute;
     width: 100%;
@@ -1036,6 +1039,7 @@ section * {
 .footer-14 .social-btns > * > * {
   display: block;
   position: relative;
+  top: 0;
   -webkit-transition: 0.25s top;
   -moz-transition: 0.25s top;
   -o-transition: 0.25s top;

@@ -343,6 +343,9 @@ body {
     padding-left: 0;
   }
 }
+li {
+  line-height: 20px;
+}
 .btn {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -953,7 +956,7 @@ section * {
   padding-left: 20px;
   padding-right: 20px;
 }
-@media (max-width: 979px) {
+@media (max-width: 991px) {
   .content-27 h3,
   .content-27 p {
     margin-left: 5px;
@@ -971,7 +974,7 @@ section * {
 .content-27 .btns > *:first-child {
   margin-left: 0;
 }
-@media (max-width: 979px) {
+@media (max-width: 991px) {
   .content-27 .btns .btn {
     display: block;
     margin: 0 5px 20px;
@@ -1122,6 +1125,7 @@ section * {
   font-size: 60px;
   font-weight: normal;
   color: #e74c3c;
+  vertical-align: baseline;
 }
 @media (min-width: 1200px) {
   .footer-12 {

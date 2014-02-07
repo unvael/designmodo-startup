@@ -344,6 +344,9 @@ body {
     padding-left: 0;
   }
 }
+li {
+  line-height: 20px;
+}
 .btn {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -930,7 +933,7 @@ section * {
   color: white;
   text-align: center;
 }
-@media (max-width: 979px) {
+@media (max-width: 991px) {
   .header-2-sub {
     padding-top: 165px;
   }
@@ -1336,7 +1339,7 @@ section * {
   position: relative;
   padding-top: 5px;
 }
-@media (min-width: 980px) {
+@media (min-width: 992px) {
   .header-5 .navbar .nav {
     position: absolute;
     width: 100%;
@@ -1367,7 +1370,7 @@ section * {
 .header-5 .navbar .nav > li > a.active {
   color: #506e8c;
 }
-@media (max-width: 979px) {
+@media (max-width: 991px) {
   .header-5 .navbar .nav > li > a [class*="fui-"] {
     display: none;
   }
@@ -1375,7 +1378,7 @@ section * {
 .header-5 .navbar .nav > li > a [class*="fui-"] + * {
   display: none;
 }
-@media (max-width: 979px) {
+@media (max-width: 991px) {
   .header-5 .navbar .nav > li > a [class*="fui-"] + * {
     display: initial;
     margin: 0;
@@ -1674,6 +1677,7 @@ section * {
   position: absolute;
   top: 7px;
   right: 15px;
+  z-index: 2;
 }
 @media (max-width: 768px) {
   .header-6 .navbar .social-btns {
@@ -3251,7 +3255,7 @@ section * {
   font-weight: normal;
   color: rgba(255, 255, 255, 0.7);
 }
-@media (max-width: 979px) {
+@media (max-width: 991px) {
   .header-12-sub {
     padding-bottom: 0;
   }
@@ -3384,7 +3388,7 @@ section * {
 .header-12-sub .aside .btn.active {
   background-color: #d9d04d;
 }
-@media (max-width: 979px) {
+@media (max-width: 991px) {
   .header-12-sub .aside {
     max-width: none;
     float: none;
@@ -3820,7 +3824,7 @@ section * {
   float: left;
   margin: -10px 15px 0 0;
 }
-@media (min-width: 980px) {
+@media (min-width: 992px) {
   .header-15 .navbar .nav {
     position: absolute;
     width: 100%;
@@ -4044,6 +4048,10 @@ section * {
   float: none;
   margin: 28px auto 17px;
   padding: 0 10px;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
   font-size: 13px;
   font-weight: normal;
   color: #ffffff;
@@ -4599,7 +4607,7 @@ section * {
   font-size: 30px;
   font-weight: normal;
   color: inherit;
-  margin: -9px 15px -5px -5px;
+  margin: -2px 15px 0 0;
 }
 @media (max-width: 480px) {
   .header-17-sub .btn.btn-clear {
@@ -5581,6 +5589,8 @@ section * {
   border-radius: 50%;
   border: 4px solid #fff;
   font-size: 10px;
+  color: #fff;
+  background: #bdc3c7;
 }
 .header-20-sub .videos .player .btn-play:hover,
 .header-20-sub .videos .player .btn-play:focus {
@@ -5649,7 +5659,7 @@ section * {
   margin: 107px 0 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-@media (max-width: 979px) {
+@media (max-width: 991px) {
   .header-21 .navbar {
     margin: 30px 0 0;
   }
@@ -5695,7 +5705,7 @@ section * {
   float: left;
   margin: -10px 15px 0 0;
 }
-@media (min-width: 980px) {
+@media (min-width: 992px) {
   .header-21 .navbar .nav {
     position: absolute;
     width: 100%;
@@ -5888,12 +5898,12 @@ section * {
   float: left;
   margin: -10px 15px 0 0;
 }
-@media (max-width: 979px) {
+@media (max-width: 991px) {
   .header-22 .navbar .brand {
     display: block;
   }
 }
-@media (min-width: 980px) {
+@media (min-width: 992px) {
   .header-22 .navbar .nav {
     width: 100%;
     text-align: center;
@@ -6091,7 +6101,7 @@ section * {
   color: white;
   text-align: center;
 }
-@media (max-width: 979px) {
+@media (max-width: 991px) {
   .header-23-sub {
     padding-top: 260px;
     padding-bottom: 170px;
@@ -6109,7 +6119,7 @@ section * {
   font-weight: 800;
   letter-spacing: -2px;
 }
-@media (max-width: 979px) {
+@media (max-width: 991px) {
   .header-23-sub .hero-unit strong {
     display: block;
   }
@@ -6117,7 +6127,7 @@ section * {
 .header-23-sub .hero-unit span {
   font-weight: 300;
 }
-@media (max-width: 979px) {
+@media (max-width: 991px) {
   .header-23-sub .hero-unit span {
     display: block;
   }
@@ -6132,7 +6142,7 @@ section * {
   margin: 0 50px;
   background: url(../../../common-files/img/header/btn-play.png) no-repeat;
 }
-@media (max-width: 979px) {
+@media (max-width: 991px) {
   .header-23-sub .hero-unit .btn-play {
     margin: 35px 0;
   }

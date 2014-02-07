@@ -343,6 +343,9 @@ body {
     padding-left: 0;
   }
 }
+li {
+  line-height: 20px;
+}
 .btn {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -816,7 +819,7 @@ section * {
   margin-left: 100px;
   max-width: 300px;
 }
-@media (max-width: 979px) and (min-width: 768px) {
+@media (max-width: 992px) and (min-width: 768px) {
   .content-20 .signup-form + div {
     max-width: 228px;
   }
@@ -947,7 +950,7 @@ section * {
     margin: 0 -20px;
   }
 }
-@media (max-width: 979px) and (min-width: 768px) {
+@media (max-width: 991px) and (min-width: 768px) {
   .content-20 .signup-form form {
     width: 100%;
   }
@@ -1222,7 +1225,7 @@ section * {
   right: -3px;
   top: 26px;
 }
-@media (max-width: 979px) {
+@media (max-width: 991px) {
   .price-1 .ribbon {
     top: 4px;
   }

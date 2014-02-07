@@ -1041,7 +1041,7 @@ section * {
   overflow: hidden;
   width: 1024px;
   height: 576px;
-  margin: 40px auto 50px;
+  margin: 40px auto 105px;
 }
 .content-29 .player .btn-play {
   -webkit-box-sizing: border-box;
@@ -1091,6 +1091,21 @@ section * {
   .content-29 .player {
     width: 300px;
     max-height: 180px;
+  }
+}
+.content-29 .fetures > * {
+  margin-top: 67px;
+}
+.content-29 .fetures h6 {
+  text-transform: none;
+  margin-top: 37px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+@media (max-width: 767px) {
+  .content-29 .fetures {
+    margin-top: -52px;
   }
 }
 /* footer */

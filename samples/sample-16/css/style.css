@@ -1099,7 +1099,7 @@ content-9 p {
   top: 70%;
   right: 110%;
 }
-.content-features .span7.offset1 img {
+.content-features .col-sm-7.col-sm-offset-1 img {
   display: block;
   margin: 30px auto 50px;
 }
@@ -1107,7 +1107,7 @@ content-9 p {
   .content-features {
     padding-bottom: 0;
   }
-  .content-features .span7.offset1 img {
+  .content-features .col-sm-7.col-sm-offset-1 img {
     margin: 30px auto 30px;
   }
 }

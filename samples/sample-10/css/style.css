@@ -1392,14 +1392,14 @@ body > section {
   -o-transition: 0.6s;
   transition: 0.6s;
 }
-.header-5 .navbar-inner {
+.header-5 .navbar-header {
   -webkit-transition: 0.6s;
   -moz-transition: 0.6s;
   -o-transition: 0.6s;
   transition: 0.6s;
 }
-.loaded .header-5 .navbar-inner .btn-navbar,
-.loaded .header-5 .navbar-inner .nav {
+.loaded .header-5 .navbar-header .btn-navbar,
+.loaded .header-5 .navbar-header .nav {
   -webkit-transition: 1.2s 1.4s opacity;
   -moz-transition: 1.2s 1.4s opacity;
   -o-transition: 1.2s 1.4s opacity;
@@ -1412,8 +1412,8 @@ body > section {
   transition: 1.2s 2.0s opacity;
 }
 @media (max-width: 480px) {
-  .header-5 .navbar-inner .btn-navbar,
-  .header-5 .navbar-inner .nav,
+  .header-5 .navbar-header .btn-navbar,
+  .header-5 .navbar-header .nav,
   .header-5 .navbar-btns {
     -webkit-transition-duration: 0 !important;
     -moz-transition-duration: 0 !important;

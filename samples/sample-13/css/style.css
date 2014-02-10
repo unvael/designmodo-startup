@@ -1078,7 +1078,7 @@ section * {
 .header-7-sub .h-7-section-2 {
   background: #2d2e2e;
 }
-.header-7-sub .h-7-section-2 .span8 > img {
+.header-7-sub .h-7-section-2 .col-sm-8 > img {
   margin-bottom: 70px;
 }
 .header-7-sub .h-7-section-2 .lead {
@@ -1087,7 +1087,7 @@ section * {
 .header-7-sub .h-7-section-3 {
   background: #1abc9c;
 }
-.header-7-sub .h-7-section-3 .span8 > img {
+.header-7-sub .h-7-section-3 .col-sm-8 > img {
   margin-bottom: 70px;
 }
 .header-7-sub .h-7-section-3 .lead {

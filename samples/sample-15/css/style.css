@@ -1042,8 +1042,8 @@ section * {
   background: rgba(52, 152, 219, 0.1);
   position: relative;
   overflow: hidden;
-  width: 1024px;
-  height: 576px;
+  width: 1140px;
+  height: 640px;
   margin: 40px auto 105px;
 }
 .content-29 .player .btn-play {
@@ -1068,38 +1068,39 @@ section * {
 }
 @media (max-width: 1200px) {
   .content-29 .player {
-    width: 768px;
-    height: 432px;
+    width: 100%;
+    height: 530px;
   }
 }
 @media (max-width: 1000px) {
   .content-29 .player {
-    width: 720px;
     height: 406px;
   }
 }
 @media (max-width: 840px) {
   .content-29 .player {
-    width: 568px;
-    height: 319px;
+    height: 406px;
   }
 }
 @media (max-width: 768px) {
   .content-29 .player {
-    width: 500px;
-    max-height: 270px;
+    max-height: 330px;
   }
 }
 @media (max-width: 568px) {
   .content-29 .player {
-    width: 300px;
+    max-height: 280px;
+  }
+}
+@media (max-width: 400px) {
+  .content-29 .player {
     max-height: 180px;
   }
 }
-.content-29 .fetures > * {
+.content-29 .features > * {
   margin-top: 67px;
 }
-.content-29 .fetures h6 {
+.content-29 .features h6 {
   text-transform: none;
   margin-top: 37px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1107,7 +1108,7 @@ section * {
   font-size: 18px;
 }
 @media (max-width: 767px) {
-  .content-29 .fetures {
+  .content-29 .features {
     margin-top: -52px;
   }
 }

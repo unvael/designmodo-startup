@@ -5525,8 +5525,8 @@ body {
   background: rgba(52, 152, 219, 0.1);
   position: relative;
   overflow: hidden;
-  width: 1024px;
-  height: 576px;
+  width: 1140px;
+  height: 640px;
   margin: 40px auto 105px;
 }
 .mcontent .content-29 .player .btn-play {
@@ -5551,38 +5551,39 @@ body {
 }
 @media (max-width: 1200px) {
   .mcontent .content-29 .player {
-    width: 768px;
-    height: 432px;
+    width: 100%;
+    height: 530px;
   }
 }
 @media (max-width: 1000px) {
   .mcontent .content-29 .player {
-    width: 720px;
     height: 406px;
   }
 }
 @media (max-width: 840px) {
   .mcontent .content-29 .player {
-    width: 568px;
-    height: 319px;
+    height: 406px;
   }
 }
 @media (max-width: 768px) {
   .mcontent .content-29 .player {
-    width: 500px;
-    max-height: 270px;
+    max-height: 330px;
   }
 }
 @media (max-width: 568px) {
   .mcontent .content-29 .player {
-    width: 300px;
+    max-height: 280px;
+  }
+}
+@media (max-width: 400px) {
+  .mcontent .content-29 .player {
     max-height: 180px;
   }
 }
-.mcontent .content-29 .fetures > * {
+.mcontent .content-29 .features > * {
   margin-top: 67px;
 }
-.mcontent .content-29 .fetures h6 {
+.mcontent .content-29 .features h6 {
   text-transform: none;
   margin-top: 37px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -5590,7 +5591,7 @@ body {
   font-size: 18px;
 }
 @media (max-width: 767px) {
-  .mcontent .content-29 .fetures {
+  .mcontent .content-29 .features {
     margin-top: -52px;
   }
 }

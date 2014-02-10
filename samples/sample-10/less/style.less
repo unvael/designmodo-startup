@@ -30,10 +30,10 @@ body > section {
     .navbar-search {
         .transition(0.6s);
     }
-    .navbar-inner {
+    .navbar-header {
         .transition(0.6s);
     }
-    .navbar-inner .btn-navbar, .navbar-inner .nav {
+    .navbar-header .btn-navbar, .navbar-header .nav {
         .loaded & {
             .transition(~'1.2s 1.4s opacity');
         }
@@ -44,7 +44,7 @@ body > section {
         }
     }
     @media (max-width: 480px) {
-        .navbar-inner .btn-navbar, .navbar-inner .nav, .navbar-btns {
+        .navbar-header .btn-navbar, .navbar-header .nav, .navbar-btns {
             .transition-duration(0)!important;
             .transition-delay(0)!important;
         }

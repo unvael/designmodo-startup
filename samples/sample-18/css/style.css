@@ -1753,7 +1753,7 @@ body > section.price-2 {
     margin: 0 0 10px;
   }
 }
-.header-10 .navbar .navbar-inner {
+.header-10 .navbar .navbar-header {
   background: none;
 }
 .header-10 .navbar .brand {
@@ -1928,10 +1928,10 @@ body > section.price-2 {
 .price-2 .plans {
   margin-top: 30px;
 }
-.price-2 .span8 {
+.price-2 .col-sm-8 {
   text-align: center;
 }
-.price-2 .span8 h3 {
+.price-2 .col-sm-8 h3 {
   font-size: 30px;
   font-weight: normal;
   color: #2c3e50;

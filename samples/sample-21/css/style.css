@@ -902,7 +902,7 @@ section * {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
 }
-.header-custom .navbar .navbar-inner {
+.header-custom .navbar .navbar-header {
   background: none;
 }
 @media (min-width: 980px) {

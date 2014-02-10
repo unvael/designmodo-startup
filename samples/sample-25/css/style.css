@@ -1359,7 +1359,7 @@ section * {
 .content-35 .btn-success {
   background: #27ae60;
 }
-.content-35 .background .span4 > div {
+.content-35 .background .col-sm-4 > div {
   background: #e9e8e6;
 }
 .header-23-sub {

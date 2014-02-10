@@ -61,9 +61,9 @@ $(function() {
 
 
   // Faded elements
-  fadedEls($('.content-features .span7.offset1 img'), $('.content-features .span7.offset1 img').outerHeight()/3*2);
+  fadedEls($('.content-features .col-sm-7.col-sm-offset-1 img'), $('.content-features .col-sm-7.col-sm-offset-1 img').outerHeight()/3*2);
   fadedEls($('.content-features .box [class*="fui-"]'), 'h');
-  fadedEls($('.content-9 .span3 img'), 'h');
+  fadedEls($('.content-9 .col-sm-3 img'), 'h');
 
 
 

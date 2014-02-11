@@ -8,7 +8,6 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <link rel="shortcut icon" href="../../flat-ui/images/favicon.ico">
     <link rel="stylesheet" href="../../flat-ui/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="../../flat-ui/bootstrap/css/bootstrap-responsive.css">
     <link rel="stylesheet" href="../../flat-ui/css/flat-ui.css">
     <!-- Using only with Flat-UI (free)-->
     <link rel="stylesheet" href="../../common-files/css/icon-font.css">
@@ -22,13 +21,13 @@
       <menu class="main-menu">
         <div class="container">
           <div class="row">
-            <a href="index.html" class="man-brand span3">
+            <a href="index.html" class="man-brand col-sm-3">
               <span class="logotype">Startup</span>
               <span class="doc-title">user manual</span>
             </a>
             <button id="open-close-menu" class="menu-btn btn-inverse"><span class="fui-list"></span>
             </button>
-            <dl class="span8">
+            <dl class="col-sm-8">
               <dd><a class="active">overview</a>
               </dd>
               <dd><a href="how_to_install.html">how to install</a>
@@ -44,8 +43,8 @@
       <menu class="sub-menu">
         <div class="container">
           <div class="row">
-            <span class="sm-title span3">components</span>
-            <dl class="span9">
+            <span class="sm-title col-sm-3">components</span>
+            <dl class="col-sm-9">
               <dd><a href="headers.html">Header</a>
               </dd>
               <dd><a href="contents.html">Content1</a>
@@ -107,7 +106,7 @@
       <button class="read-man" id="content-20">
         ?
       </button>
-      <div class="content-20 mask">
+      <div class="content-20-mask mask">
         <div class="container">
           <div class="hover-text">
             <div class="hu-border"><span>?</span>
@@ -178,7 +177,7 @@ Responsive web design is a web design approach aimed at crafting sites to provid
       <button class="read-man" id="content-21">
         ?
       </button>
-      <div class="content-21 mask">
+      <div class="content-21-mask mask">
         <div class="container">
           <div class="hover-text">
             <div class="hu-border"><span>?</span>
@@ -241,7 +240,7 @@ Responsive web design is a web design approach aimed at crafting sites to provid
       <button class="read-man" id="content-22">
         ?
       </button>
-      <div class="content-22 mask">
+      <div class="content-22-mask mask">
         <div class="container">
           <div class="hover-text">
             <div class="hu-border"><span>?</span>
@@ -284,7 +283,7 @@ Just put the image with your App screen inside Smart Layer and get the photo.
       <button class="read-man" id="content-23">
         ?
       </button>
-      <div class="content-23 mask">
+      <div class="content-23-mask mask">
         <div class="container">
           <div class="hover-text">
             <div class="hu-border"><span>?</span>
@@ -309,7 +308,7 @@ Just put the image with your App screen inside Smart Layer and get the photo.
       <button class="read-man" id="content-24">
         ?
       </button>
-      <div class="content-24 mask">
+      <div class="content-24-mask mask">
         <div class="container">
           <div class="hover-text">
             <div class="hu-border"><span>?</span>
@@ -366,7 +365,7 @@ Just put the image with your App screen inside Smart Layer and get the photo.
       <button class="read-man" id="content-25">
         ?
       </button>
-      <div class="content-25 mask">
+      <div class="content-25-mask mask">
         <div class="container">
           <div class="hover-text">
             <div class="hu-border"><span>?</span>
@@ -430,7 +429,7 @@ Just put the image with your App screen inside Smart Layer and get the photo.
       <button class="read-man" id="content-26">
         ?
       </button>
-      <div class="content-26 mask">
+      <div class="content-26-mask mask">
         <div class="container">
           <div class="hover-text">
             <div class="hu-border"><span>?</span>
@@ -472,7 +471,7 @@ You can easily combine any blocks in a variety of design projects.
       <button class="read-man" id="content-27">
         ?
       </button>
-      <div class="content-27 mask">
+      <div class="content-27-mask mask">
         <div class="container">
           <div class="hover-text">
             <div class="hu-border"><span>?</span>
@@ -573,7 +572,7 @@ You can easily combine any blocks in a variety of design projects.
       <button class="read-man" id="content-28">
         ?
       </button>
-      <div class="content-28 mask">
+      <div class="content-28-mask mask">
         <div class="container">
           <div class="hover-text">
             <div class="hu-border"><span>?</span>
@@ -598,7 +597,7 @@ You can easily combine any blocks in a variety of design projects.
       <button class="read-man" id="content-29">
         ?
       </button>
-      <div class="content-29 mask">
+      <div class="content-29-mask mask">
         <div class="container">
           <div class="hover-text">
             <div class="hu-border"><span>?</span>
@@ -609,8 +608,29 @@ You can easily combine any blocks in a variety of design projects.
       </div>
       <section class="content-29">
         <div class="container">
+          <div class="col-sm-8 col-sm-offset-2">
+            <h3>You have the design, you have the code</h3>
+            <p>You can decide whether to create your site using UI Kit blocks or samples.</p>
+          </div>
           <div class="player">
             <iframe id="pPlayer" src="http://player.vimeo.com/video/80282064?title=0&amp;byline=0&amp;portrait=0&amp;api=1&amp;player_id=pPlayer" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+          <div class="row features">
+            <div class="col-sm-3">
+              <img src="../../common-files/icons/Chat@2x.png" alt="" width="100" height="100">
+              <h6>Block Model</h6>
+You can easily combine any components in a variety of design projects.
+            </div>
+            <div class="col-sm-4 col-sm-offset-1">
+              <img src="../../common-files/icons/responsive@2x.png" alt="" width="100" height="100">
+              <h6>Based on Bootstrap</h6>
+HTML layout is based on one of the common and reliable frameworks at this time - Twitter Bootstrap v2.3.2.
+            </div>
+            <div class="col-sm-3 col-sm-offset-1">
+              <img src="../../common-files/icons/ps@2x.png" alt="" width="78" height="100">
+              <h6>Save Your Time</h6>
+Use your time for generating new ideas for your startup. Take a break from the routine.
+            </div>
           </div>
         </div>
       </section>
@@ -618,7 +638,7 @@ You can easily combine any blocks in a variety of design projects.
       <button class="read-man" id="content-30">
         ?
       </button>
-      <div class="content-30 mask">
+      <div class="content-30-mask mask">
         <div class="container">
           <div class="hover-text">
             <div class="hu-border"><span>?</span>
@@ -701,7 +721,7 @@ Responsive web design is a web design approach aimed to provide crafting sites.
       <button class="read-man" id="content-31">
         ?
       </button>
-      <div class="content-31 mask">
+      <div class="content-31-mask mask">
         <div class="container">
           <div class="hover-text">
             <div class="hu-border"><span>?</span>
@@ -813,7 +833,7 @@ Responsive web design is a web design approach aimed to provide crafting sites.
       <button class="read-man" id="content-32">
         ?
       </button>
-      <div class="content-32 mask">
+      <div class="content-32-mask mask">
         <div class="container">
           <div class="hover-text">
             <div class="hu-border"><span>?</span>
@@ -854,7 +874,7 @@ To get started, you select the desired sample and base the entire website on it.
       <button class="read-man" id="content-33">
         ?
       </button>
-      <div class="content-33 mask">
+      <div class="content-33-mask mask">
         <div class="container">
           <div class="hover-text">
             <div class="hu-border"><span>?</span>
@@ -872,7 +892,7 @@ To get started, you select the desired sample and base the entire website on it.
       <button class="read-man" id="content-34">
         ?
       </button>
-      <div class="content-34 mask">
+      <div class="content-34-mask mask">
         <div class="container">
           <div class="hover-text">
             <div class="hu-border"><span>?</span>
@@ -937,7 +957,7 @@ To get started, you select the desired sample and base the entire website on it.
       <button class="read-man" id="content-35">
         ?
       </button>
-      <div class="content-35 mask">
+      <div class="content-35-mask mask">
         <div class="container">
           <div class="hover-text">
             <div class="hu-border"><span>?</span>
@@ -982,7 +1002,7 @@ To get started, you select the desired sample and base the entire website on it.
       <button class="read-man" id="content-36">
         ?
       </button>
-      <div class="content-36 mask">
+      <div class="content-36-mask mask">
         <div class="container">
           <div class="hover-text">
             <div class="hu-border"><span>?</span>
@@ -1002,7 +1022,7 @@ To get started, you select the desired sample and base the entire website on it.
       <button class="read-man" id="content-37">
         ?
       </button>
-      <div class="content-37 mask">
+      <div class="content-37-mask mask">
         <div class="container">
           <div class="hover-text">
             <div class="hu-border"><span>?</span>
@@ -1967,10 +1987,32 @@ Copy the same code as in css versionand paste it in your '<strong>.less</strong>
                 </p>
                 <pre class="language-markup"><code class="language-markup"><section class="content-29">
     <div class="container">
+        <div class="col-sm-8 col-sm-offset-2">
+            <h3>You have the design, you have the code</h3>
+            <p>You can decide whether to create your site
+                using UI Kit blocks or samples.</p>
+        </div>
         <div class="player">
             <iframe id="pPlayer"
                     src="http://player.vimeo.com/video/80282064?title=0&amp;byline=0&amp;portrait=0&amp;api=1&amp;player_id=pPlayer"
                     frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+        <div class="row features">
+            <div class="col-sm-3">
+                <img src="../../common-files/icons/Chat@2x.png" alt="" width="100" height="100">
+                <h6>Block Model</h6>
+                You can easily combine any components in a variety of design projects.
+            </div>
+            <div class="col-sm-4 col-sm-offset-1">
+                <img src="../../common-files/icons/responsive@2x.png" alt="" width="100" height="100">
+                <h6>Based on Bootstrap</h6>
+                HTML layout is based on one of the common and reliable frameworks at this time - Twitter Bootstrap v2.3.2.
+            </div>
+            <div class="col-sm-3 col-sm-offset-1">
+                <img src="../../common-files/icons/ps@2x.png" alt="" width="78" height="100">
+                <h6>Save Your Time</h6>
+                Use your time for generating new ideas for your startup. Take a break from the routine.
+            </div>
         </div>
     </div>
 </section></code></pre>

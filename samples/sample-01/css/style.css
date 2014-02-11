@@ -703,6 +703,11 @@ section * {
 .header-1 .navbar .nav > li.active > a.active {
   color: rgba(0, 0, 0, 0.4);
 }
+.header-1 .navbar.navbar-fixed-top {
+  position: fixed;
+  max-width: 1170px;
+  margin: 0 auto;
+}
 .header-1-sub {
   position: relative;
   z-index: 50;

@@ -1156,30 +1156,30 @@ section * {
 .header-7-sub .h-7-section-5 .signup-form .btn-large:active {
   background-color: #f1c40f;
 }
-.header-7-sub .h-7-section-5 .signup-form .controls-row:first-child + .controls-row {
+.header-7-sub .h-7-section-5 .signup-form .form-group:first-child + .form-group {
   display: table;
   width: 100%;
 }
-.header-7-sub .h-7-section-5 .signup-form .controls-row:first-child + .controls-row > div {
+.header-7-sub .h-7-section-5 .signup-form .form-group:first-child + .form-group > div {
   display: table-cell;
   width: 50%;
   padding-left: 5px;
 }
 @media (max-width: 767px) {
-  .header-7-sub .h-7-section-5 .signup-form .controls-row:first-child + .controls-row > div {
+  .header-7-sub .h-7-section-5 .signup-form .form-group:first-child + .form-group > div {
     padding-left: 9px;
   }
 }
-.header-7-sub .h-7-section-5 .signup-form .controls-row:first-child + .controls-row > div:first-child {
+.header-7-sub .h-7-section-5 .signup-form .form-group:first-child + .form-group > div:first-child {
   padding-left: 0;
   padding-right: 5px;
 }
 @media (max-width: 767px) {
-  .header-7-sub .h-7-section-5 .signup-form .controls-row:first-child + .controls-row > div:first-child {
+  .header-7-sub .h-7-section-5 .signup-form .form-group:first-child + .form-group > div:first-child {
     padding-right: 9px;
   }
 }
-.header-7-sub .h-7-section-5 .signup-form .controls-row:first-child + .controls-row input {
+.header-7-sub .h-7-section-5 .signup-form .form-group:first-child + .form-group input {
   width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;

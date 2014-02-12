@@ -563,7 +563,11 @@ button:active {
   background: none;
 }
 .navbar .navbar-toggle {
+<<<<<<< HEAD
   margin: 36px 0 10px;
+=======
+  margin: 36px 0 17px;
+>>>>>>> fb0c899ded91d0d09c353985e7db0939582f2c8f
   color: white;
   background: none;
   padding: 0;
@@ -861,6 +865,11 @@ section * {
 .header-1 .navbar .nav > li.active > a:focus,
 .header-1 .navbar .nav > li.active > a.active {
   color: rgba(0, 0, 0, 0.4);
+}
+.header-1 .navbar.navbar-fixed-top {
+  position: fixed;
+  max-width: 1170px;
+  margin: 0 auto;
 }
 .header-1-sub {
   position: relative;

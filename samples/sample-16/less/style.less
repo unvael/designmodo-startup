@@ -15,6 +15,9 @@
 body > section, .content-9 {
     padding-top: 80px;
     padding-bottom: 80px;
+    .hidden-xs{
+      margin-top: 40px;
+    }
 }
 h3, h6 {
     color: @text-color-heading;
@@ -153,7 +156,7 @@ p, content-9 p {
             right: 110%;
         }
     }
-    .col-sm-7.col-sm-offset-1 {
+    .col-sm-7.col-sm-offset-3 {
         img {
             display: block;
             margin: 30px auto 50px;
@@ -161,7 +164,7 @@ p, content-9 p {
     }
     @media (max-width: 480px) {
         padding-bottom: 0;
-        .col-sm-7.col-sm-offset-1 img {
+        .col-sm-7.col-sm-offset-3 img {
             margin: 30px auto 30px;
         }
     }
@@ -192,7 +195,7 @@ aside {
     position: relative;
     z-index: 100;
     .sidebar-content {
-        .box-sizing(border-box);
+        .box-sizing(content-box);
         position: absolute;
         width: 160px;
         padding: 80px 20px 80px 0;
@@ -201,6 +204,7 @@ aside {
             height: auto !important;
             width:100%;
             padding: 40px 0;
+
         }
         &:before {
             content:'';
@@ -211,6 +215,9 @@ aside {
             width: 5000px;
             height: 100%;
             background: #f5f7f8;
+          @media (max-width: 480px){
+            margin: 0 -15px;
+          }
         }
         > * {
             position: relative;
@@ -255,5 +262,16 @@ aside {
         [class*="fui-"] {
             .font(24px, @text-color-heading);
         }
+      @media (max-width: 767px){
+        display: none;
+      }
     }
+  .container{
+    @media (max-width: 480px){
+      padding: 0;
+      nav > ul{
+        padding: 0;
+      }
+    }
+  }
 }

@@ -563,7 +563,11 @@ button:active {
   background: none;
 }
 .navbar .navbar-toggle {
+<<<<<<< HEAD
   margin: 36px 0 10px;
+=======
+  margin: 36px 0 17px;
+>>>>>>> fb0c899ded91d0d09c353985e7db0939582f2c8f
   color: white;
   background: none;
   padding: 0;
@@ -6650,6 +6654,11 @@ body {
 .mcontent .header-1 .navbar .nav > li.active > a.active {
   color: rgba(0, 0, 0, 0.4);
 }
+.mcontent .header-1 .navbar.navbar-fixed-top {
+  position: fixed;
+  max-width: 1170px;
+  margin: 0 auto;
+}
 .mcontent .header-1-sub {
   position: relative;
   z-index: 50;
@@ -6869,6 +6878,11 @@ body {
 .mcontent .header-2 .navbar .nav > li.active > a:focus,
 .mcontent .header-2 .navbar .nav > li.active > a.active {
   color: #405870;
+}
+.mcontent .header-2 .navbar.navbar-fixed-top {
+  position: fixed;
+  max-width: 1170px;
+  margin: 0 auto;
 }
 .mcontent .header-2-sub {
   z-index: 50;

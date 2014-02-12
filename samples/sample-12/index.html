@@ -8,7 +8,6 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
         <link rel="shortcut icon" href="../../flat-ui/images/favicon.ico">
         <link rel="stylesheet" href="../../flat-ui/bootstrap/css/bootstrap.css">
-        <link rel="stylesheet" href="../../flat-ui/bootstrap/css/bootstrap-responsive.css">
         <link rel="stylesheet" href="../../flat-ui/css/flat-ui.css">
         <!-- Using only with Flat-UI (free)-->
         <link rel="stylesheet" href="../../common-files/css/icon-font.css">
@@ -21,24 +20,20 @@
         <!-- header-20 -->
         <header class="header-20">
             <div class="container">
-                <div class="navbar col-sm-12 ">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle"></button>
-                        <a class="brand" href="#"><img src="img/logo@2x.png" width="50" height="50" alt=""> Startup</a>
-                        <div class="collapse navbar-collapse pull-right">
+                <div class="row">
+                    <div class="navbar col-sm-12" role="navigation">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle"></button>
+                            <a class="brand" href="#">
+                                <img src="../../common-files/icons/Infinity-Loop@2x.png" width="50" height="50" alt=""> Startup
+                            </a>
+                        </div>
+                        <div class="navbar-collapse collapse pull-right">
                             <ul class="nav">
-                                <li class="active">
-                                    <a href="#">Home</a>
-                                </li>
-                                <li>
-                                    <a href="#">Blog</a>
-                                </li>
-                                <li>
-                                    <a href="#">Portfolio</a>
-                                </li>
-                                <li>
-                                    <a href="#">Contact</a>
-                                </li>
+                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Portfolio</a></li>
+                                <li><a href="#">Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -176,9 +171,9 @@
                         <div class="signup-form">
                             <form>
                                 <div class="controls controls-row">
-                                    <input type="text" placeholder="Your E-mail">
-                                    <input type="password" placeholder="Password">
-                                    <input type="password" placeholder="Confirmation">
+                                    <input type="text" class="form-control" placeholder="Your E-mail">
+                                    <input type="password" class="form-control" placeholder="Password">
+                                    <input type="password" class="form-control" placeholder="Confirmation">
                                     <button type="submit" class="btn btn-info">
                                         Sign Up
                                     </button>

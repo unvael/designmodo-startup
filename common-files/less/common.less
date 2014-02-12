@@ -157,11 +157,6 @@ footer{
   .border-radius(6px 0 0 6px);
 }
 
-// .navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {
-//     box-shadow: none;
-// }
-
-
 
 
 
@@ -331,6 +326,36 @@ h4, h5, h6 {
 
 p {
   margin-bottom: 10px;
+}
+
+.page-wrapper {
+  position: relative;
+  z-index: 2;
+  background: #fff;
+}
+.page-wrapper,
+.header-antiflicker {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: all .33s cubic-bezier(.694, .0482, .335, 1);
+  -moz-transition: all .33s cubic-bezier(.694, .0482, .335, 1);
+  -o-transition: all .33s cubic-bezier(.694, .0482, .335, 1);
+  -ms-transition: all .33s cubic-bezier(.694, .0482, .335, 1);
+  transition: all .33s cubic-bezier(.694, .0482, .335, 1);
+}
+.nav-visible {
+  .page-wrapper,
+  .navbar.navbar-fixed-top,
+  .header-antiflicker {
+    -webkit-transform: translate3d(-230px, 0, 0);
+    -moz-transform: translate3d(-230px, 0, 0);
+    -ms-transform: translate3d(-230px, 0, 0);
+    -o-transform: translate3d(-230px, 0, 0);
+    transform: translate3d(-230px, 0, 0);
+  }
 }
 
 .carousel-indicators {

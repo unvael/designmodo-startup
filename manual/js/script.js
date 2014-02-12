@@ -5,16 +5,6 @@
             $(this).text($(this).html());
         });
 
-        $('#open-close-menu').click(function () {
-            $('body').toggleClass('colapsed-menu-active');
-        });
-
-        $('html').click(function (e) {
-            if (!$(e.target).hasClass('menu-btn') && !$(e.target).hasClass('colapsed-menu') && !$(e.target).parents().hasClass('colapsed-menu') && !$(e.target).parents().hasClass('menu-btn')) {
-                $('body').removeClass('colapsed-menu-active');
-            }
-        });
-
         $('.manual > div').hide('fast');
 
         var helpButton = $('.read-man');

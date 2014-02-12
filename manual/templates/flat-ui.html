@@ -9,7 +9,7 @@
     include "../for-tpl/man-header-inc.html"
 </head>
 <body>
-<nav class="dockbar navbar-fixed-top">
+<nav class="dockbar navbar-fixed-top" id="header-dockbar">
     <menu class="main-menu">
         <div class="container">
             <div class="row">
@@ -66,7 +66,9 @@
         </dl>
     </menu>
 </nav>
-include "../for-tpl/flat-ui.html"
+<div class="page-wrapper">
+    include "../for-tpl/flat-ui.html"
+</div>
 include "../for-tpl/man-footer.html"
 </body>
 </html>

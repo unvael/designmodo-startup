@@ -358,6 +358,21 @@ p {
   }
 }
 
+.no-csstransitions {
+  .page-wrapper,
+  .header-antiflicker {
+    left: 0;
+  }
+  &.nav-visible {
+    .page-wrapper,
+    .navbar.navbar-fixed-top,
+    .header-antiflicker {
+      left: -230px !important;
+      right: auto;
+    }
+  }
+}
+
 .carousel-indicators {
   width: 100%;
 }

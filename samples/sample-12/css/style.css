@@ -1410,6 +1410,10 @@ footer {
 .footer-11 nav ul li a.active {
   color: #bdc3c7;
 }
+.tpl-12-section-1 {
+  padding: 93px 0 95px;
+  border-top: 2px solid #ecf0f1;
+}
 .tpl-12-section-1 h3 {
   font-size: 30px;
   font-weight: normal;
@@ -1419,7 +1423,7 @@ footer {
   margin-bottom: 0;
 }
 .tpl-12-section-1 p {
-  margin-top: 48px;
+  margin-top: 33px;
   margin-bottom: 0;
   font-size: 16px;
   font-weight: normal;
@@ -1427,7 +1431,7 @@ footer {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .tpl-12-section-1 .logos {
-  margin-top: 48px;
+  margin-top: 33px;
   display: table;
   width: 100%;
 }

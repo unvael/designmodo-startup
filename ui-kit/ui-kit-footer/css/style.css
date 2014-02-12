@@ -451,6 +451,16 @@ p {
   -o-transform: translate3d(-230px, 0, 0);
   transform: translate3d(-230px, 0, 0);
 }
+.no-csstransitions .page-wrapper,
+.no-csstransitions .header-antiflicker {
+  left: 0;
+}
+.no-csstransitions.nav-visible .page-wrapper,
+.no-csstransitions.nav-visible .navbar.navbar-fixed-top,
+.no-csstransitions.nav-visible .header-antiflicker {
+  left: -230px !important;
+  right: auto;
+}
 .carousel-indicators {
   width: 100%;
 }

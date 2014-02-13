@@ -1422,8 +1422,8 @@ body > section.v-center > div {
   }
 }
 .content-3 {
-  padding-bottom: 0;
-  padding-top: 0;
+  padding-top: 198px;
+  padding-bottom: 200px;
 }
 .header-4,
 .content-20 {
@@ -1470,6 +1470,8 @@ body > section.v-center > div {
 }
 .content-20 {
   background-color: #1F2225;
+  padding-top: 198px;
+  padding-bottom: 200px;
 }
 .content-20 .btn-huge {
   background-color: #14ddb3;

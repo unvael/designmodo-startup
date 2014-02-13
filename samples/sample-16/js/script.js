@@ -48,7 +48,7 @@ $(function() {
   $(window).resize(function() {
     var h = 0;
 
-    $('body > section:not(.header-9-sub)').each(function() {
+    $('body > .page-wrapper > section:not(.header-9-sub)').each(function() {
       h += $(this).outerHeight();
     });
 

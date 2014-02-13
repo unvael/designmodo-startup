@@ -1239,6 +1239,10 @@ content-9 p {
     height: 180px;
   }
 }
+.content-tour {
+  padding-top: 125px;
+  padding-bottom: 25px;
+}
 @media (max-width: 480px) {
   .content-tour {
     padding-bottom: 0;
@@ -1311,7 +1315,7 @@ aside .sidebar-content {
   box-sizing: border-box;
   position: absolute;
   width: 160px;
-  padding: 90px 20px 80px 0;
+  padding: 135px 20px 80px 0;
 }
 @media (max-width: 480px) {
   aside .sidebar-content {
@@ -1348,7 +1352,7 @@ aside nav ul {
   letter-spacing: 1.6px;
 }
 aside nav ul li {
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 aside nav ul li:last-child {
   padding-bottom: 0;

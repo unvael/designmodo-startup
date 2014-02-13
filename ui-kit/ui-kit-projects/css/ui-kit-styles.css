@@ -873,7 +873,7 @@ body .colapsed-menu dl dd > a.active:after {
 body .colapsed-menu.show-menu {
   display: block;
 }
-body::-webkit-scrollbar {
+body .colapsed-menu::-webkit-scrollbar {
   display: none;
 }
 /**

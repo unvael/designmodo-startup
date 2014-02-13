@@ -687,7 +687,8 @@ body > .navbar-collapse .nav > li > a:focus,
 body > .navbar-collapse .nav > li > a.active {
   color: #ffffff;
 }
-body > .navbar-collapse .nav > li > a:hover {
+body > .navbar-collapse .nav > li > a:hover,
+body > .navbar-collapse .nav > li > a:focus {
   background: none;
 }
 body > .navbar-collapse .nav > li.active > a {
@@ -721,6 +722,7 @@ body > .navbar-collapse .subnav li > a.active {
 body > .navbar-collapse .navbar-form,
 body > .navbar-collapse .navbar-search {
   padding: 10px 35px;
+  margin: 0;
   border-bottom: 0 none;
   border-top: 0 none;
   box-shadow: none;
@@ -1594,6 +1596,7 @@ section * {
   filter: alpha(opacity=100);
 }
 .header-5 .navbar.search-mode .home,
+.header-5 .navbar.search-mode .navbar-toggle,
 .header-5 .navbar.search-mode .navbar-collapse {
   opacity: 0;
   filter: alpha(opacity=0);
@@ -1601,7 +1604,7 @@ section * {
 .header-5 .navbar .navbar-toggle {
   z-index: 10000;
   float: none;
-  margin: 6px auto 0;
+  margin: 0 auto;
   display: block;
 }
 @media (min-width: 992px) {
@@ -1933,7 +1936,7 @@ section * {
 }
 .header-6 .navbar .navbar-toggle {
   float: none;
-  margin: 12px auto 0;
+  margin: 4px auto 0;
   display: block;
 }
 @media (max-width: 768px) {
@@ -2601,6 +2604,7 @@ section * {
 }
 .header-8 .navbar .navbar-toggle {
   background-image: url("../../../common-files/icons/menu-icon-header-8.png");
+  margin-top: 22px;
 }
 .header-8-sub {
   position: relative;
@@ -2721,7 +2725,7 @@ section * {
   color: #405870;
 }
 .header-9 .navbar .navbar-toggle {
-  margin-top: 16px;
+  margin-top: 8px;
 }
 .header-9 .navbar .navbar-header {
   position: relative;
@@ -2940,7 +2944,7 @@ section * {
   font-weight: 500;
 }
 .header-10 .navbar .navbar-toggle {
-  margin-top: 36px;
+  margin-top: 30px;
 }
 .header-10-sub {
   position: relative;
@@ -3181,7 +3185,7 @@ section * {
 }
 .header-11 .navbar .navbar-toggle {
   background-image: url("../../../common-files/icons/menu-icon-header-8.png");
-  margin-top: 42px;
+  margin-top: 36px;
 }
 .header-11-sub {
   padding-top: 110px;
@@ -4047,7 +4051,7 @@ section * {
 }
 .header-15 .navbar .navbar-toggle {
   background-image: url("../../../common-files/icons/menu-icon.png");
-  margin-top: 36px;
+  margin-top: 26px;
 }
 .header-15 .navbar .navbar-header {
   position: relative;
@@ -4230,6 +4234,7 @@ section * {
   float: none;
   margin: 28px auto 17px;
   padding: 0 10px;
+  background-position: 50% 0;
   -webkit-transition: 0.25s;
   -moz-transition: 0.25s;
   -o-transition: 0.25s;
@@ -4707,7 +4712,7 @@ section * {
 }
 .header-17 .navbar .navbar-toggle {
   background-image: url("../../../common-files/icons/menu-icon-header-17.png");
-  margin-top: 40px;
+  margin-top: 34px;
 }
 .header-17-sub {
   position: relative !important;
@@ -5424,7 +5429,7 @@ section * {
 .header-19 .navbar .navbar-toggle {
   display: block;
   background-image: url("../../../common-files/icons/menu-icon-dark.png");
-  margin-top: 34px;
+  margin-top: 26px;
 }
 .header-19-sub {
   padding-top: 340px;
@@ -5924,6 +5929,7 @@ section * {
 }
 .header-21 .navbar .navbar-toggle {
   background-image: url("../../../common-files/icons/menu-icon-header-21.png");
+  margin-top: 22px;
 }
 .header-21 .navbar .navbar-header {
   position: relative;
@@ -6116,7 +6122,7 @@ section * {
 }
 .header-22 .navbar .navbar-toggle {
   background-image: url("../../../common-files/icons/menu-icon-dark.png");
-  margin-top: 36px;
+  margin-top: 26px;
 }
 .header-22-sub {
   position: relative;
@@ -6271,7 +6277,7 @@ section * {
   color: #405870;
 }
 .header-23 .navbar .navbar-toggle {
-  margin-top: 36px;
+  margin-top: 28px;
 }
 .header-23-sub {
   z-index: 50;

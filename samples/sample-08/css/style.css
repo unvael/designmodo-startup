@@ -686,7 +686,8 @@ body > .navbar-collapse .nav > li > a:focus,
 body > .navbar-collapse .nav > li > a.active {
   color: #ffffff;
 }
-body > .navbar-collapse .nav > li > a:hover {
+body > .navbar-collapse .nav > li > a:hover,
+body > .navbar-collapse .nav > li > a:focus {
   background: none;
 }
 body > .navbar-collapse .nav > li.active > a {
@@ -720,6 +721,7 @@ body > .navbar-collapse .subnav li > a.active {
 body > .navbar-collapse .navbar-form,
 body > .navbar-collapse .navbar-search {
   padding: 10px 35px;
+  margin: 0;
   border-bottom: 0 none;
   border-top: 0 none;
   box-shadow: none;
@@ -902,6 +904,7 @@ section * {
 }
 .header-21 .navbar .navbar-toggle {
   background-image: url("../../../common-files/icons/menu-icon-header-21.png");
+  margin-top: 22px;
 }
 .header-21 .navbar .navbar-header {
   position: relative;

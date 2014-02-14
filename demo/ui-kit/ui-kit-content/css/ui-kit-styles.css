@@ -609,7 +609,7 @@ body section[class*=content-] {
     margin-top: 20px;
   }
 }
-.content-7 .row > .span3:first-child {
+.content-7 .row > .col-sm-3:first-child {
   font-size: 22px;
   font-weight: normal;
   color: #7f8c8d;
@@ -622,10 +622,10 @@ body section[class*=content-] {
     padding-left: 0;
     padding-right: 0;
   }
-  .content-7 .row > [class*="span"] {
+  .content-7 .row > [class*="col-sm-"] {
     margin-top: 45px;
   }
-  .content-7 .row > [class*="span"]:first-child {
+  .content-7 .row > [class*="col-sm-"]:first-child {
     margin-top: 0;
   }
 }
@@ -802,11 +802,11 @@ body section[class*=content-] {
   padding-bottom: 40px;
   color: #a1a9b1;
 }
-.content-13.subscribe-form .span4 {
+.content-13.subscribe-form .col-sm-4 {
   text-align: right;
 }
 @media (max-width: 767px) {
-  .content-13.subscribe-form .span4 {
+  .content-13.subscribe-form .col-sm-4 {
     width: auto;
     display: inline-block;
     float: right;
@@ -814,7 +814,7 @@ body section[class*=content-] {
   }
 }
 @media (max-width: 668px) {
-  .content-13.subscribe-form .span4 {
+  .content-13.subscribe-form .col-sm-4 {
     display: block;
     float: none;
   }
@@ -824,14 +824,14 @@ body section[class*=content-] {
   position: relative;
 }
 @media (max-width: 767px) {
-  .content-13.subscribe-form form .span8 {
+  .content-13.subscribe-form form .col-sm-8 {
     width: 65%;
     display: inline-block;
     float: left;
   }
 }
 @media (max-width: 668px) {
-  .content-13.subscribe-form form .span8 {
+  .content-13.subscribe-form form .col-sm-8 {
     width: auto;
     display: block;
     float: none;

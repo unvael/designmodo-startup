@@ -686,7 +686,8 @@ body > .navbar-collapse .nav > li > a:focus,
 body > .navbar-collapse .nav > li > a.active {
   color: #ffffff;
 }
-body > .navbar-collapse .nav > li > a:hover {
+body > .navbar-collapse .nav > li > a:hover,
+body > .navbar-collapse .nav > li > a:focus {
   background: none;
 }
 body > .navbar-collapse .nav > li.active > a {
@@ -720,6 +721,7 @@ body > .navbar-collapse .subnav li > a.active {
 body > .navbar-collapse .navbar-form,
 body > .navbar-collapse .navbar-search {
   padding: 10px 35px;
+  margin: 0;
   border-bottom: 0 none;
   border-top: 0 none;
   box-shadow: none;
@@ -7370,6 +7372,7 @@ body {
   filter: alpha(opacity=100);
 }
 .mcontent .header-5 .navbar.search-mode .home,
+.mcontent .header-5 .navbar.search-mode .navbar-toggle,
 .mcontent .header-5 .navbar.search-mode .navbar-collapse {
   opacity: 0;
   filter: alpha(opacity=0);
@@ -7377,7 +7380,7 @@ body {
 .mcontent .header-5 .navbar .navbar-toggle {
   z-index: 10000;
   float: none;
-  margin: 6px auto 0;
+  margin: 0 auto;
   display: block;
 }
 @media (min-width: 992px) {
@@ -7706,7 +7709,7 @@ body {
 }
 .mcontent .header-6 .navbar .navbar-toggle {
   float: none;
-  margin: 12px auto 0;
+  margin: 4px auto 0;
   display: block;
 }
 @media (max-width: 768px) {
@@ -8368,6 +8371,7 @@ body {
 }
 .mcontent .header-8 .navbar .navbar-toggle {
   background-image: url("../../../common-files/icons/menu-icon-header-8.png");
+  margin-top: 22px;
 }
 .mcontent .header-8-sub {
   position: relative;
@@ -8485,7 +8489,7 @@ body {
   color: #405870;
 }
 .mcontent .header-9 .navbar .navbar-toggle {
-  margin-top: 16px;
+  margin-top: 8px;
 }
 .mcontent .header-9 .navbar .navbar-header {
   position: relative;
@@ -8701,7 +8705,7 @@ body {
   font-weight: 500;
 }
 .mcontent .header-10 .navbar .navbar-toggle {
-  margin-top: 36px;
+  margin-top: 30px;
 }
 .mcontent .header-10-sub {
   position: relative;
@@ -8939,7 +8943,7 @@ body {
 }
 .mcontent .header-11 .navbar .navbar-toggle {
   background-image: url("../../../common-files/icons/menu-icon-header-8.png");
-  margin-top: 42px;
+  margin-top: 36px;
 }
 .mcontent .header-11-sub {
   padding-top: 110px;
@@ -9793,7 +9797,7 @@ body {
 }
 .mcontent .header-15 .navbar .navbar-toggle {
   background-image: url("../../../common-files/icons/menu-icon.png");
-  margin-top: 36px;
+  margin-top: 26px;
 }
 .mcontent .header-15 .navbar .navbar-header {
   position: relative;
@@ -9973,6 +9977,7 @@ body {
   float: none;
   margin: 28px auto 17px;
   padding: 0 10px;
+  background-position: 50% 0;
   -webkit-transition: 0.25s;
   -moz-transition: 0.25s;
   -o-transition: 0.25s;
@@ -10447,7 +10452,7 @@ body {
 }
 .mcontent .header-17 .navbar .navbar-toggle {
   background-image: url("../../../common-files/icons/menu-icon-header-17.png");
-  margin-top: 40px;
+  margin-top: 34px;
 }
 .mcontent .header-17-sub {
   position: relative !important;
@@ -11158,7 +11163,7 @@ body {
 .mcontent .header-19 .navbar .navbar-toggle {
   display: block;
   background-image: url("../../../common-files/icons/menu-icon-dark.png");
-  margin-top: 34px;
+  margin-top: 26px;
 }
 .mcontent .header-19-sub {
   padding-top: 340px;
@@ -11652,6 +11657,7 @@ body {
 }
 .mcontent .header-21 .navbar .navbar-toggle {
   background-image: url("../../../common-files/icons/menu-icon-header-21.png");
+  margin-top: 22px;
 }
 .mcontent .header-21 .navbar .navbar-header {
   position: relative;
@@ -11841,7 +11847,7 @@ body {
 }
 .mcontent .header-22 .navbar .navbar-toggle {
   background-image: url("../../../common-files/icons/menu-icon-dark.png");
-  margin-top: 36px;
+  margin-top: 26px;
 }
 .mcontent .header-22-sub {
   position: relative;
@@ -11993,7 +11999,7 @@ body {
   color: #405870;
 }
 .mcontent .header-23 .navbar .navbar-toggle {
-  margin-top: 36px;
+  margin-top: 28px;
 }
 .mcontent .header-23-sub {
   z-index: 50;
@@ -15918,7 +15924,7 @@ body .colapsed-menu dl dd > a.active:after {
 body .colapsed-menu.show-menu {
   display: block;
 }
-body::-webkit-scrollbar {
+body .colapsed-menu::-webkit-scrollbar {
   display: none;
 }
 .manual-pages {

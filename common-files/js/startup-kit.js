@@ -24,9 +24,11 @@ startupKit.hideCollapseMenu = function() {
 }
 
 $(function () {
-    $('.page-wrapper, .navbar-fixed-top').on('click', function() {
+    $('.page-wrapper, .navbar-fixed-top, .navbar-collapse a, .navbar-collapse button, .navbar-collapse input[type=submit]').on('click', function(e) {
         if($('html').hasClass('nav-visible')) {
-            startupKit.hideCollapseMenu();
+            setTimeout(function(){
+                startupKit.hideCollapseMenu();
+            }, 200)
         }
     });
     $(window).resize(function() {
@@ -42,7 +44,7 @@ $(function () {
         fixedNavbarHeader = fixedNavbar.closest('header');
         fixedNavbarHeaderClone = fixedNavbarHeader.clone(true);
         fixedNavbarHeader.detach();
-    $('body').append(fixedNavbarHeaderClone);    
+    $('body').prepend(fixedNavbarHeaderClone);    
 
     $('#open-close-menu').on('click', function () {
         if($('html').hasClass('nav-visible')) {
@@ -142,7 +144,7 @@ startupKit.uiKitHeader._inFixedMode = function(headerClass) {
                 if (!s1.hasClass('fixed')) {
                     s1.addClass('fixed').css({
                         position : 'fixed',
-                        top : -s1StopScroll
+                        top : - (s1StopScroll + 70)
                     });
                     s1Placeholder.show();
                 }

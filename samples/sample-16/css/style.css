@@ -1325,7 +1325,7 @@ aside .sidebar-content {
   width: 160px;
   padding: 135px 20px 80px 0;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   aside .sidebar-content {
     position: relative;
     height: auto !important;
@@ -1342,11 +1342,6 @@ aside .sidebar-content:before {
   width: 5000px;
   height: 100%;
   background: #f5f7f8;
-}
-@media (max-width: 480px) {
-  aside .sidebar-content:before {
-    margin: 0 -15px;
-  }
 }
 aside .sidebar-content > * {
   position: relative;
@@ -1365,7 +1360,7 @@ aside nav ul li {
 aside nav ul li:last-child {
   padding-bottom: 0;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   aside nav ul li {
     padding: 10px 20px;
     border-bottom: 2px solid #EAECED;
@@ -1407,7 +1402,7 @@ aside .bottom-box [class*="fui-"] {
     display: none;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   aside .container {
     padding: 0;
   }

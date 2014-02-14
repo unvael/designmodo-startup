@@ -10,9 +10,12 @@
         z-index: 2;
         font-family: @font-family-demo;
         top: -50px;
+        &.navbar-fixed-top {
+            position:fixed;
+            margin-top: 28px;
+        }
         .opacity(0);
         .loaded & {
-            .transition(~'.4s .8s top, 1.2s .8s opacity');
             top: 90px;
             .opacity(100);
             @media (max-width: 768px) {
@@ -20,8 +23,6 @@
             }
         }
         @media (max-width: 480px) {
-            .transition-duration(0)!important;
-            .transition-delay(0)!important;
             .social-btns {
                 display: none;
             }
@@ -30,7 +31,7 @@
             position: absolute;
             top: 0;
             left: 15px;
-            padding: 0;
+            padding: 0 !important;
             .font(25px, white);
             img:first-child {
                 float: left;
@@ -225,4 +226,7 @@
             }
         }
     }
+}
+.header-antiflicker {
+    .opacity(0);
 }

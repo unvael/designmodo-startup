@@ -429,8 +429,16 @@ p {
   z-index: 2;
   background: #fff;
 }
+.header-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 .page-wrapper,
-.header-antiflicker {
+.header-antiflicker,
+body > header .header-background {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
@@ -444,7 +452,8 @@ p {
 }
 .nav-visible .page-wrapper,
 .nav-visible .navbar.navbar-fixed-top,
-.nav-visible .header-antiflicker {
+.nav-visible .header-antiflicker,
+.nav-visible body > header .header-background {
   -webkit-transform: translate3d(-230px, 0, 0);
   -moz-transform: translate3d(-230px, 0, 0);
   -ms-transform: translate3d(-230px, 0, 0);
@@ -610,6 +619,8 @@ button:active {
   -o-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
   -ms-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
   transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+  max-width: 1170px;
+  margin: 0 auto;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar-collapse.collapse {
@@ -820,11 +831,17 @@ section * {
   padding-top: 0;
   padding-bottom: 0;
 }
+.header-17 .header-background {
+  background: #fff;
+}
 .header-17 .navbar {
   position: absolute;
   z-index: 2;
   top: 0;
   margin: 0;
+}
+.header-17 .navbar.navbar-fixed-top {
+  top: 0 !important;
 }
 .header-17 .navbar .navbar-form {
   padding: 30px 0 19px 35px;
@@ -848,7 +865,7 @@ section * {
   background-color: #138871;
 }
 .header-17 .navbar .brand {
-  padding-top: 33px;
+  padding-top: 33px !important;
   font-size: 25px;
   font-weight: normal;
   color: #2c3e50;

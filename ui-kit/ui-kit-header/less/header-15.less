@@ -7,14 +7,20 @@
 .header-15 {
     padding-top:0;
     padding-bottom:0;
-    background: #171717;
     height:80px;
     z-index:100;
+    width: 100%;
+    .header-background {
+        background: #171717;
+    }
     .navbar {
         position: absolute;
         z-index: 2;
         top: 0;
         margin: 0;
+        &.navbar-fixed-top {
+            top: 0 !important;
+        }
         .navbar-form {
             padding: 20px 0 19px 20px;
             position: relative;

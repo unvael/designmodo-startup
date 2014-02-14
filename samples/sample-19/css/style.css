@@ -429,8 +429,16 @@ p {
   z-index: 2;
   background: #fff;
 }
+.header-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 .page-wrapper,
-.header-antiflicker {
+.header-antiflicker,
+body > header .header-background {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
@@ -444,7 +452,8 @@ p {
 }
 .nav-visible .page-wrapper,
 .nav-visible .navbar.navbar-fixed-top,
-.nav-visible .header-antiflicker {
+.nav-visible .header-antiflicker,
+.nav-visible body > header .header-background {
   -webkit-transform: translate3d(-230px, 0, 0);
   -moz-transform: translate3d(-230px, 0, 0);
   -ms-transform: translate3d(-230px, 0, 0);
@@ -610,6 +619,8 @@ button:active {
   -o-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
   -ms-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
   transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+  max-width: 1170px;
+  margin: 0 auto;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar-collapse.collapse {
@@ -816,15 +827,21 @@ section * {
 .header-15 {
   padding-top: 0;
   padding-bottom: 0;
-  background: #171717;
   height: 80px;
   z-index: 100;
+  width: 100%;
+}
+.header-15 .header-background {
+  background: #171717;
 }
 .header-15 .navbar {
   position: absolute;
   z-index: 2;
   top: 0;
   margin: 0;
+}
+.header-15 .navbar.navbar-fixed-top {
+  top: 0 !important;
 }
 .header-15 .navbar .navbar-form {
   padding: 20px 0 19px 20px;
@@ -1257,8 +1274,6 @@ footer {
   }
 }
 body {
-  border-left: 8px solid #171717;
-  border-right: 8px solid #171717;
   background-color: #222527;
 }
 @media (max-width: 767px) {
@@ -1266,6 +1281,10 @@ body {
     padding-right: 0;
     padding-left: 0;
   }
+}
+.page-wrapper {
+  border-left: 8px solid #171717;
+  border-right: 8px solid #171717;
 }
 body > section {
   padding-top: 80px;

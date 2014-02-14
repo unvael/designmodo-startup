@@ -429,8 +429,16 @@ p {
   z-index: 2;
   background: #fff;
 }
+.header-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 .page-wrapper,
-.header-antiflicker {
+.header-antiflicker,
+body > header .header-background {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
@@ -444,7 +452,8 @@ p {
 }
 .nav-visible .page-wrapper,
 .nav-visible .navbar.navbar-fixed-top,
-.nav-visible .header-antiflicker {
+.nav-visible .header-antiflicker,
+.nav-visible body > header .header-background {
   -webkit-transform: translate3d(-230px, 0, 0);
   -moz-transform: translate3d(-230px, 0, 0);
   -ms-transform: translate3d(-230px, 0, 0);
@@ -610,6 +619,8 @@ button:active {
   -o-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
   -ms-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
   transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+  max-width: 1170px;
+  margin: 0 auto;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar-collapse.collapse {
@@ -818,8 +829,12 @@ section * {
   width: 100%;
 }
 .header-21 .navbar {
-  margin: 107px 0 0;
+  margin-top: 107px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.header-21 .navbar.navbar-fixed-top {
+  position: fixed;
+  margin-top: 0;
 }
 @media (max-width: 991px) {
   .header-21 .navbar {
@@ -913,6 +928,7 @@ section * {
 .header-21-sub {
   position: relative;
   z-index: 50;
+  background: #fff;
   padding-top: 20px;
   padding-bottom: 135px;
 }
@@ -1153,14 +1169,6 @@ section * {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: block;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-@media (max-width: 767px) {
-  .content-12 .wide {
-    margin-right: -20px;
-    margin-left: -20px;
-  }
 }
 .content-12 .btn-wide {
   padding-top: 40px;

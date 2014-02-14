@@ -47,6 +47,10 @@ body > section {
     }
 }
 
+.fake-wrapper-header {
+    display: none;
+}
+
 .header-10 {
 @import 'navbar';
   background: transparent;
@@ -55,17 +59,16 @@ body > section {
   .navbar {
     .opacity(0);
     .nav > li {
-      margin-left: 60px;
-      > a {
-        font-weight: bold;
-        font-size: 13px;
-        letter-spacing: 1px;
-     }
-    }
-        .loaded & {
-            .transition(~'1.2s .8s opacity');
-            .opacity(100);
+        margin-left: 60px;
+        > a {
+            font-weight: bold;
+            font-size: 13px;
+            letter-spacing: 1px;
         }
+    }
+    .loaded & {
+        .opacity(100);
+    }
     }
     .ani-background {
         position: absolute;
@@ -75,11 +78,32 @@ body > section {
         height: 100%;
         background: #131618;
         left: -100%;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-transition: all .33s cubic-bezier(.694, .0482, .335, 1);
+        -moz-transition: all .33s cubic-bezier(.694, .0482, .335, 1);
+        -o-transition: all .33s cubic-bezier(.694, .0482, .335, 1);
+        -ms-transition: all .33s cubic-bezier(.694, .0482, .335, 1);
+        transition: all .33s cubic-bezier(.694, .0482, .335, 1);
         .loaded & {
-            .transition(~'1s 1.6s left');
+            -webkit-transition: all .33s cubic-bezier(.694, .0482, .335, 1);
+            -moz-transition: all .33s cubic-bezier(.694, .0482, .335, 1);
+            -o-transition: all .33s cubic-bezier(.694, .0482, .335, 1);
+            -ms-transition: all .33s cubic-bezier(.694, .0482, .335, 1);
+            transition: all .33s cubic-bezier(.694, .0482, .335, 1);
             left: 0;
         }
     }
+}
+.nav-visible body > header .ani-background {
+    -webkit-transform: translate3d(-230px, 0, 0);
+    -moz-transform: translate3d(-230px, 0, 0);
+    -ms-transform: translate3d(-230px, 0, 0);
+    -o-transform: translate3d(-230px, 0, 0);
+    transform: translate3d(-230px, 0, 0);
 }
 .header-10-sub {
     .background {

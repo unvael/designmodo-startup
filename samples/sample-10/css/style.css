@@ -569,7 +569,8 @@ button:active {
 .navbar .nav > li {
   float: left;
 }
-.navbar .nav > li > a:hover {
+.navbar .nav > li > a:hover,
+.navbar .nav > li > a:focus {
   background: none;
 }
 .navbar .navbar-toggle {

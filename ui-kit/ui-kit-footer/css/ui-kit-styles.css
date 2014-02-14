@@ -429,8 +429,16 @@ p {
   z-index: 2;
   background: #fff;
 }
+.header-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 .page-wrapper,
-.header-antiflicker {
+.header-antiflicker,
+body > header .header-background {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
@@ -444,7 +452,8 @@ p {
 }
 .nav-visible .page-wrapper,
 .nav-visible .navbar.navbar-fixed-top,
-.nav-visible .header-antiflicker {
+.nav-visible .header-antiflicker,
+.nav-visible body > header .header-background {
   -webkit-transform: translate3d(-230px, 0, 0);
   -moz-transform: translate3d(-230px, 0, 0);
   -ms-transform: translate3d(-230px, 0, 0);
@@ -1952,10 +1961,10 @@ body .colapsed-menu::-webkit-scrollbar {
 }
 @media (max-width: 767px) {
   .footer-10 .subscribe-form {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: -20px;
-    margin-right: -20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: -5px;
+    margin-right: -5px;
   }
 }
 @media (max-width: 480px) {

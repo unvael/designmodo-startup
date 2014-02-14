@@ -7,15 +7,23 @@
     width:100%;
     padding-top:78px;
     padding-bottom:0;
+    height: 240px;
+    .header-background {
+        background: #fff;
+    }
     >[class*="fui-"] {
         .center-block;
         text-align: center;
         .font(24px, @brand-danger);
+        position: relative;
+        z-index: 2;
     }
     .navbar {
-        margin: 0;
         font-family: @font-family-demo;
         font-size: 13px;
+        &.navbar-fixed-top {
+            top: 110px !important;
+        }
         .brand {
             display: none;
             padding: 23px 28px 5px 0;

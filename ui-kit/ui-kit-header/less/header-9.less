@@ -11,12 +11,14 @@
         position: absolute;
         z-index: 2;
         top: 60px;
-        margin: 0;
         .font(13px);
         font-family: @font-family-demo;
         .opacity(0);
+        &.navbar-fixed-top {
+            position:fixed;
+            margin-top: 20px;
+        }
         .loaded & {
-            .transition(~'1.2s .6s opacity');
             .opacity(100);
         }
         .brand {

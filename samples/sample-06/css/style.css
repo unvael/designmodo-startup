@@ -429,8 +429,16 @@ p {
   z-index: 2;
   background: #fff;
 }
+.header-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 .page-wrapper,
-.header-antiflicker {
+.header-antiflicker,
+body > header .header-background {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
@@ -444,7 +452,8 @@ p {
 }
 .nav-visible .page-wrapper,
 .nav-visible .navbar.navbar-fixed-top,
-.nav-visible .header-antiflicker {
+.nav-visible .header-antiflicker,
+.nav-visible body > header .header-background {
   -webkit-transform: translate3d(-230px, 0, 0);
   -moz-transform: translate3d(-230px, 0, 0);
   -ms-transform: translate3d(-230px, 0, 0);
@@ -611,6 +620,8 @@ button:active {
   -o-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
   -ms-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
   transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+  max-width: 1170px;
+  margin: 0 auto;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar-collapse.collapse {
@@ -823,11 +834,20 @@ section * {
 .header-3 {
   padding-top: 0;
   padding-bottom: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100px;
+}
+.header-3 .header-background {
+  background: #fff;
 }
 .header-3 .navbar {
   top: 0;
-  margin: 10px 0 0;
+  margin-top: 10px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.header-3 .navbar.navbar-fixed-top {
+  top: 0 !important;
 }
 .header-3 .navbar .brand {
   font-size: 25px;
@@ -1040,14 +1060,6 @@ section * {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: block;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-@media (max-width: 767px) {
-  .content-12 .wide {
-    margin-right: -20px;
-    margin-left: -20px;
-  }
 }
 .content-12 .btn-wide {
   padding-top: 40px;

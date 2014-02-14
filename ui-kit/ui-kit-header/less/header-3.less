@@ -7,10 +7,19 @@
 .header-3 {
     padding-top:0;
     padding-bottom:0;
+    z-index:100;
+    width:100%;
+    height:100px;
+    .header-background {
+        background: #fff;
+    }
     .navbar {
         top: 0;
-        margin: 10px 0 0;
+        margin-top: 10px;
         font-family: @font-family-demo;
+        &.navbar-fixed-top {
+            top: 0 !important;
+        }
         .brand {
             .font(25px, @midnight-blue);
             font-weight: 600;

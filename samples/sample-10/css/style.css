@@ -1524,7 +1524,7 @@ section * {
 .footer-7 .social-btns > *:hover > * {
   top: -100%;
 }
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .footer-7 .container > a,
   .footer-7 .scroll-btn {
     display: none;

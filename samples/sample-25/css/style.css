@@ -578,7 +578,8 @@ button:active {
 .navbar .nav > li {
   float: left;
 }
-.navbar .nav > li > a:hover {
+.navbar .nav > li > a:hover,
+.navbar .nav > li > a:focus {
   background: none;
 }
 .navbar .navbar-toggle {
@@ -742,15 +743,21 @@ body > .navbar-collapse .navbar-search:focus {
   outline: 0 none;
 }
 body > .navbar-collapse .navbar-form .btn,
-body > .navbar-collapse .navbar-search .btn {
+body > .navbar-collapse .navbar-search .btn,
+body > .navbar-collapse .navbar-form .btn-primary,
+body > .navbar-collapse .navbar-search .btn-primary {
   height: 30px;
   line-height: 20px;
   font-size: 15px;
+  color: #5b5e61;
+  background: none;
+  padding: 0;
 }
 body > .navbar-collapse .navbar-form .btn:hover,
-body > .navbar-collapse .navbar-search .btn:hover {
-  background: #fff;
-  color: #7F8C8D;
+body > .navbar-collapse .navbar-search .btn:hover,
+body > .navbar-collapse .navbar-form .btn-primary:hover,
+body > .navbar-collapse .navbar-search .btn-primary:hover {
+  color: #fff;
 }
 .delimiter {
   margin-top: 200px;

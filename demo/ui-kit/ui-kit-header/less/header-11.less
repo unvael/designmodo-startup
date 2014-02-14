@@ -16,17 +16,8 @@
         top: 0;
         margin: 0;
         font-family: @font-family-demo;
-        &.navbar-fixed-top {
-            position:fixed;
-            margin:0 auto;
-            top:0 !important;
-        }
-        .navbar-form, .navbar-search {
-            margin: 0;
-            padding: 26px 0 19px 30px;
-        }
-        .btn, .btn-group {
-            margin-top: -1px;
+        .navbar-form {
+            padding: 30px 0 19px 30px;
         }
         .btn {
             padding-left: 18px;
@@ -35,11 +26,7 @@
         .btn.btn-primary {
             .btn-background(@btn-primary-active-bg);
         }
-        .navbar-inner {
-            background: none;
-        }
         .brand {
-            padding-left: 0;
             padding-top: 30px;
             .font(25px, @base);
             font-weight: 600;
@@ -58,7 +45,7 @@
                     .a-color(@link-color, @link-color);
                 }
                 > a {
-                    padding: 35px 0 27px;
+                    padding: 41px 0 27px;
                     .font(14px);
                     font-weight: 500;
                     letter-spacing: 1px;
@@ -66,18 +53,9 @@
                 }
             }
         }
-        .btn-navbar {
-            margin: 28px 0 17px;
-            padding: 0;
-            .border-radius(0);
-            border: 0;
-            background: none!important;
-        }
-        @media (max-width: 979px) {
-            .nav-collapse {
-                padding-top: 28px;
-                .navbar-collapse;
-            }
+        .navbar-toggle {
+            background-image: url("../../../common-files/icons/menu-icon-header-8.png");
+            margin-top: 36px;
         }
     }
 }
@@ -125,7 +103,8 @@
         form {
             font-family:@font-family-demo;
             margin-top: 40px;
-            .controls-row:first-child + .controls-row {
+            margin-bottom: 20px;
+            .form-group:first-child + .form-group {
                 display: table;
                 width: 100%;
                 > div {
@@ -145,13 +124,9 @@
                 }
                 input {
                     width: 100%;
-                    height: 41px;
-                    .box-sizing(border-box);
                 }
             }
             .btn {
-                padding-top:11px;
-                padding-bottom:11px;
                 @media (max-width: 767px) {
                     margin: 9px 0;
                 }

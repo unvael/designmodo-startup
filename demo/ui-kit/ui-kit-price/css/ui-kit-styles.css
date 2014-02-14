@@ -589,14 +589,14 @@ body section[class*=content-] {
   font-weight: 500;
 }
 .price-1 .plan .btn {
-  min-width: 150px;
+  min-width: 170px;
 }
 .price-1 .ribbon {
   position: absolute;
   right: -3px;
   top: 26px;
 }
-@media (max-width: 979px) {
+@media (max-width: 991px) {
   .price-1 .ribbon {
     top: 4px;
   }
@@ -610,7 +610,7 @@ body section[class*=content-] {
   .price-1 .plan {
     margin-top: 30px;
   }
-  .price-1 .plan:first-child {
+  .price-1 .col-sm-4:first-child .plan {
     margin-top: 0;
   }
 }

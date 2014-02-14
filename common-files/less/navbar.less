@@ -17,7 +17,7 @@
   }
   .nav > li {
     float: left;
-    > a:hover {
+    > a:hover,  > a:focus {
       background: none;
     }
   }
@@ -170,13 +170,15 @@ body > .navbar-collapse {
     border-bottom: 0 none;
     border-top: 0 none;
     box-shadow:none;
-    .btn {
+    .btn, .btn-primary{
       height: 30px;
       line-height: 20px;
       font-size: 15px;
+      color: #5b5e61;;
+      background: none;
+      padding: 0;
       &:hover {
-        background: #fff;
-        color: #7F8C8D;
+         color: #fff;
       }
     }
   }

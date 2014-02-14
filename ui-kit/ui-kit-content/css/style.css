@@ -4031,6 +4031,11 @@ section * {
   display: inline-block;
   position: relative;
 }
+@media (max-width: 480px) {
+  .content-31 .container .img {
+    display: block;
+  }
+}
 .content-31 .container .img img {
   -webkit-transition: 0.6s opacity;
   -moz-transition: 0.6s opacity;

@@ -14,31 +14,7 @@
         z-index: 2;
         top: 0;
         margin: 0;
-        &.navbar-fixed-top {
-            position:fixed;
-            margin:0 auto;
-            top:0 !important;
-        }
-        .navbar-form, .navbar-search {
-            margin: 0;
-            padding: 20px 0 19px 60px;
-        }
-        .btn, .btn-group {
-            margin-top: -1px;
-        }
-        .btn {
-            padding-left: 26px;
-            padding-right: 26px;
-            &.btn-primary {
-                .font(15px, white);
-                font-weight:500;
-            }
-        }
-        .navbar-inner {
-            background: none;
-        }
         .brand {
-            padding-left: 0;
             padding-top: 25px;
             .font(25px, white);
             font-family: @font-family-demo;
@@ -65,34 +41,19 @@
                 }
             }
         }
-        .btn-navbar {
-            margin: 36px 0 17px;
-            padding: 0;
-            .border-radius(0);
-            border: 0;
-            background: none!important;
-            color: white;
-            &:hover, &:focus {
-                color: @silver;
-            }
-            &:active, &.active {
-                color: darken(@silver, 20%);
+        .navbar-form {
+            padding: 19px 0 19px 60px;
+        }
+        .btn {
+            padding-left: 26px;
+            padding-right: 26px;
+            &.btn-info {
+                .font(15px, white);
+                font-weight:500;
             }
         }
-        @media (max-width: 979px) {
-            .nav-collapse {
-                padding-top: 17px;
-                .navbar-collapse;
-            }
-            .btn-navbar{
-                &:before{
-                  content:'';
-                  display: block;
-                  background-image: url("../../../common-files/icons/menu-icon.png");
-                  width: 17px;
-                  height: 12px;
-                }
-            }
+        .navbar-toggle {
+            margin-top: 30px;
         }
     }
 }

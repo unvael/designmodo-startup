@@ -17,7 +17,7 @@
     </head>
     <body>
 
-    <nav class="dockbar navbar-fixed-top">
+    <nav class="dockbar navbar-fixed-top" id="header-dockbar">
         <menu class="main-menu">
             <div class="container">
                 <div class="row">
@@ -55,21 +55,22 @@
         </menu>
     </nav>
 
+    <div class="page-wrapper">
+        <!-- content-7 -->
+        include "../for-tpl/content-7.html"
 
-<!-- content-7 -->        
-include "../for-tpl/content-7.html"
+        <!-- content-8 -->
+        include "../for-tpl/content-8.html"
 
-<!-- content-8 -->        
-include "../for-tpl/content-8.html"
-
-include "../for-tpl/content-11.html"
-        <div class="delimiter-big"></div>
-<!-- content-13 -->        
-include "../for-tpl/content-13.html"
-        <div class="delimiter-big"></div>
-<!-- demo -->
-include "../../ui-kit-demo/demo.html"
-    <div class="delimiter-big"></div>
+        include "../for-tpl/content-11.html"
+                <div class="delimiter-big"></div>
+        <!-- content-13 -->
+        include "../for-tpl/content-13.html"
+                <div class="delimiter-big"></div>
+        <!-- demo -->
+        include "../../ui-kit-demo/demo.html"
+            <div class="delimiter-big"></div>
+    </div>
 
 <!-- Placed at the end of the document so the pages load faster -->
         <script src="../../common-files/js/jquery-1.10.2.min.js"></script>

@@ -1,19 +1,22 @@
-@import '../../../flat-ui/less/variables.less';
-@import '../../../flat-ui/less/mixins.less';
+// There is a path to Startup framework
+@startup-basePath: "../../../";
 
-@import '../../../common-files/less/mixins.less';
-@import '../../../common-files/less/common.less';
-@import '../../../common-files/less/navbar.less';
-@import '../../../common-files/less/helper.less';
+@import '@{startup-basePath}flat-ui/less/variables.less';
+@import '@{startup-basePath}flat-ui/less/mixins.less';
+
+@import '@{startup-basePath}common-files/less/mixins.less';
+@import '@{startup-basePath}common-files/less/common.less';
+@import '@{startup-basePath}common-files/less/navbar.less';
+@import '@{startup-basePath}common-files/less/helper.less';
 
 /* header */
-@import '../../../ui-kit/ui-kit-header/less/header-5.less';
+@import '@{startup-basePath}ui-kit/ui-kit-header/less/header-5.less';
 
 /* projects */
-@import '../../../ui-kit/ui-kit-projects/less/project-3.less';
+@import '@{startup-basePath}ui-kit/ui-kit-projects/less/project-3.less';
 
 /* footer */
-@import '../../../ui-kit/ui-kit-footer/less/footer-7.less';
+@import '@{startup-basePath}ui-kit/ui-kit-footer/less/footer-7.less';
 
 body > section {
     padding-top: 110px;

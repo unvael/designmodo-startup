@@ -6397,7 +6397,7 @@ section * {
   width: 67px;
   height: 67px;
   margin: 0 50px;
-  background: url(../../../common-files/img/header/btn-play.png) no-repeat;
+  background: url("../../../common-files/img/header/btn-play.png") no-repeat;
 }
 @media (max-width: 991px) {
   .header-23-sub .hero-unit .btn-play {

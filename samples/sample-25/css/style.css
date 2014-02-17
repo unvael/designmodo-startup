@@ -935,7 +935,7 @@ section * {
   width: 67px;
   height: 67px;
   margin: 0 50px;
-  background: url(../../../common-files/img/header/btn-play.png) no-repeat;
+  background: url("../../../common-files/img/header/btn-play.png") no-repeat;
 }
 @media (max-width: 991px) {
   .header-23-sub .hero-unit .btn-play {
@@ -1314,11 +1314,11 @@ section * {
 }
 .content-34 .box-1 {
   padding-top: 105px;
-  background: url(../../../common-files/img/content/icon-1.png) 15px 0 no-repeat;
+  background: url('../../../common-files/img/content/icon-1.png') 15px 0 no-repeat;
 }
 .content-34 .box-2 {
   padding-top: 85px;
-  background: url(../../../common-files/img/content/icon-2.png) 15px 0 no-repeat;
+  background: url('../../../common-files/img/content/icon-2.png') 15px 0 no-repeat;
 }
 .content-35 {
   position: relative;

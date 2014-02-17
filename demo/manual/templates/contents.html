@@ -7,7 +7,7 @@
     include "../for-tpl/man-header-inc.html"
 </head>
 <body>
-<nav class="dockbar navbar-fixed-top">
+<nav class="dockbar navbar-fixed-top" id="header-dockbar">
     <menu class="main-menu">
         <div class="container">
             <div class="row">
@@ -31,7 +31,7 @@
         <div class="container">
             <div class="row">
                 <span class="sm-title col-sm-3">components</span>
-                <dl class="span9">
+                <dl class="col-sm-9">
                     <dd><a href="headers.html">Header</a></dd>
                     <dd><a class="active" href="contents.html">Content 1</a></dd>
                     <dd><a href="contents2.html">Content 2</a></dd>
@@ -41,13 +41,12 @@
             </div>
         </div>
     </menu>
-
     <menu class="colapsed-menu">
         <dl>
             <dd><a class="active">overview</a>
                 <dl>
                     <dd><a href="headers.html">Header</a></dd>
-                    <dd><a class="active" href="contents.html">Content 1</a></dd>
+                    <dd><a class="active" href="contents.html">Content1</a></dd>
                     <dd><a href="contents2.html">Content 2</a></dd>
                     <dd><a href="footers.html">Footer</a></dd>
                     <dd><a href="prices.html">Price</a></dd>
@@ -59,6 +58,7 @@
             <dd><a href="faq.html">f.a.q.</a></dd>
         </dl>
     </menu>
+
 </nav>
 <div class="mcontent">
     include "../for-tpl/contents.html"

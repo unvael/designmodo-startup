@@ -1674,12 +1674,27 @@ body > section,
   padding-bottom: 100px;
   border-bottom: 2px #ecf0f1 solid;
 }
-.content-13 {
-  background-color: #ECF0F1;
+.content-13.subscribe-form form input[type="text"]:-moz-placeholder,
+.content-13 input[type="email"]:-moz-placeholder {
+  color: #34495e;
+  opacity: 1;
 }
-.content-13.subscribe-form input[type="text"],
-.content-13.subscribe-form .ani-placeholder {
-  color: #9fa8b0;
+.content-13.subscribe-form form input[type="text"]::-moz-placeholder,
+.content-13 input[type="email"]::-moz-placeholder {
+  color: #34495e;
+  opacity: 1;
+}
+.content-13.subscribe-form form input[type="text"]:-ms-input-placeholder,
+.content-13 input[type="email"]:-ms-input-placeholder {
+  color: #34495e;
+}
+.content-13.subscribe-form form input[type="text"]::-webkit-input-placeholder,
+.content-13 input[type="email"]::-webkit-input-placeholder {
+  color: #34495e;
+}
+.content-13.subscribe-form form input[type="text"].placeholder,
+.content-13 input[type="email"].placeholder {
+  color: #34495e;
 }
 .header-17-sub {
   background-color: #1F2225;

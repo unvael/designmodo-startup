@@ -1472,9 +1472,6 @@ section * {
     width: 80%;
   }
 }
-.content-23 {
-  background-color: #1B1F23;
-}
 .content-23 .c23-video {
   position: absolute;
   height: 100%;
@@ -1491,6 +1488,7 @@ section * {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-color: #1B1F23;
 }
 .content-33 .lead,
 .content-34 h2,

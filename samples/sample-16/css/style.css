@@ -1339,7 +1339,7 @@ aside .sidebar-content {
   width: 160px;
   padding: 135px 20px 80px 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   aside .sidebar-content {
     position: relative;
     height: auto !important;
@@ -1374,7 +1374,7 @@ aside nav ul li {
 aside nav ul li:last-child {
   padding-bottom: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   aside nav ul li {
     padding: 10px 20px;
     border-bottom: 2px solid #EAECED;
@@ -1416,7 +1416,7 @@ aside .bottom-box [class*="fui-"] {
     display: none;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   aside .container {
     padding: 0;
   }

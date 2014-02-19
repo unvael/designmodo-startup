@@ -1736,6 +1736,11 @@ body .colapsed-menu::-webkit-scrollbar {
   height: 550px;
   min-height: 300px;
 }
+@media (max-width: 1200px) {
+  .footer-9-map {
+    height: 300px;
+  }
+}
 .footer-9 {
   padding-top: 110px;
   padding-bottom: 110px;
@@ -1913,6 +1918,7 @@ body .colapsed-menu::-webkit-scrollbar {
 }
 .footer-10 .subscribe-form input[type="text"]:-moz-placeholder {
   color: #ffffff;
+  opacity: 1;
 }
 .footer-10 .subscribe-form input[type="text"]::-moz-placeholder {
   color: #ffffff;

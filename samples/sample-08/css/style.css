@@ -1379,6 +1379,11 @@ section * {
   height: 550px;
   min-height: 300px;
 }
+@media (max-width: 1200px) {
+  .footer-9-map {
+    height: 300px;
+  }
+}
 .footer-9 {
   padding-top: 110px;
   padding-bottom: 110px;

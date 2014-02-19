@@ -1198,6 +1198,11 @@ section * {
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
+@media (max-width: 1200px) {
+  .content-34 .pt-page .container {
+    margin-left: 60px;
+  }
+}
 .content-34 .pt-page-current,
 .content-34 .no-js .pt-page {
   visibility: visible;

@@ -16,7 +16,12 @@
         <link rel="stylesheet" href="../ui-kit-header/css/ui-kit-styles.css">
     </head>
     <body>
-
+        <div class="mask"></div>
+        <div class="popup-video">
+            <iframe id="pPlayer"
+                    src="http://player.vimeo.com/video/80282064?title=0&amp;byline=0&amp;portrait=0&amp;api=1&amp;player_id=pPlayer"
+                    frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
         <nav class="dockbar navbar-fixed-top" id="header-dockbar">
             <menu class="main-menu">
                 <div class="container">
@@ -131,6 +136,8 @@
         <script src="../../flat-ui/js/bootstrap.min.js"></script>
         <script src="../../common-files/js/modernizr.custom.js"></script>
         <script src="../../common-files/js/page-transitions.js"></script>
+        <script src="../../common-files/js/jquery.backgroundvideo.min.js"></script>
+        <script src="../../common-files/js/froogaloop.min.js"></script>
         <script src="../../common-files/js/startup-kit.js"></script>
     </body>
 </html>

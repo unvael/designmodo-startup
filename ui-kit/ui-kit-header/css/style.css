@@ -1506,6 +1506,7 @@ section * {
 }
 .header-5 .navbar .navbar-search input[type="text"]:-moz-placeholder {
   color: #ffffff;
+  opacity: 1;
 }
 .header-5 .navbar .navbar-search input[type="text"]::-moz-placeholder {
   color: #ffffff;
@@ -6366,6 +6367,13 @@ section * {
     padding-bottom: 170px;
   }
 }
+.header-23-sub #bgVideo {
+  overflow: hidden;
+}
+.header-23-sub #bgVideo > video {
+  position: absolute !important;
+  top: 0 !important;
+}
 .header-23-sub .hero-unit {
   margin: 0;
   padding: 0;
@@ -6411,4 +6419,34 @@ section * {
   filter: alpha(opacity=1000);
   opacity: 0.1;
   filter: alpha(opacity=10);
+}
+.mask {
+  z-index: 1000;
+  background-color: #000000;
+  opacity: 90;
+  filter: alpha(opacity=9000);
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+}
+.popup-video {
+  z-index: 1000;
+  margin: 0 10%;
+  width: 80%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+}
+.popup-video > * {
+  width: 100%;
+  height: 100%;
 }

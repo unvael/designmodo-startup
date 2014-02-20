@@ -61,6 +61,13 @@
         padding-top: 260px;
         padding-bottom: 170px;
     }
+    #bgVideo {
+      overflow: hidden;
+      > video {
+        position: absolute !important;
+        top:0 !important;
+      }
+    }
     .hero-unit {
         margin: 0;
         padding: 0;
@@ -99,3 +106,31 @@
         .opacity(10);
     }
 }
+.mask {
+  z-index: 1000;
+  background-color: #000000;
+  .opacity(90);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+}
+.popup-video {
+  z-index: 1000;
+  margin: 0 10%;
+  width: 80%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+  > * {
+    width: 100%;
+    height: 100%;
+  }
+}
+

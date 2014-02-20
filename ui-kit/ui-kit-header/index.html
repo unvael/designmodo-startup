@@ -16,6 +16,12 @@
     <link rel="stylesheet" href="../ui-kit-header/css/ui-kit-styles.css">
   </head>
   <body>
+  <div class="mask"></div>
+  <div class="popup-video">
+      <iframe id="pPlayer"
+              src="http://player.vimeo.com/video/80282064?title=0&amp;byline=0&amp;portrait=0&amp;api=1&amp;player_id=pPlayer"
+              frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
     <nav class="dockbar navbar-fixed-top" id="header-dockbar">
       <menu class="main-menu">
         <div class="container">
@@ -1372,13 +1378,13 @@ Just put the image with your App screen inside Smart Layer and get the photo.
         </div>
       </header>
       <section class="header-23-sub bg-midnight-blue">
-        <div class="background">&nbsp;</div>
+        <div id="bgVideo" class="background">&nbsp;</div>
         <div class="container">
           <div class="row">
             <div class="col-sm-12">
               <div class="hero-unit">
                 <strong>Startup Framework</strong>
-                <a class="btn-play" href="#">Play</a>
+                <a class="btn-play"  id="play" href="#">Play</a>
                 <span>Now you have the design</span>
               </div>
             </div>
@@ -1391,6 +1397,8 @@ Just put the image with your App screen inside Smart Layer and get the photo.
     <script src="../../flat-ui/js/bootstrap.min.js"></script>
     <script src="../../common-files/js/modernizr.custom.js"></script>
     <script src="../../common-files/js/page-transitions.js"></script>
+    <script src="../../common-files/js/jquery.backgroundvideo.min.js"></script>
+    <script src="../../common-files/js/froogaloop.min.js"></script>
     <script src="../../common-files/js/startup-kit.js"></script>
   </body>
 </html>

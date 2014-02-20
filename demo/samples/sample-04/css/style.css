@@ -333,6 +333,9 @@ footer {
 .bordered.bg-concrete {
   border-color: #7f8c8d;
 }
+html {
+  -webkit-font-smoothing: antialiased;
+}
 body {
   overflow-x: hidden;
   color: #7f8c8d;
@@ -820,36 +823,10 @@ section * {
 }
 @media (max-width: 767px) {
   header {
-    padding-left: 20px;
-    padding-right: 20px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-}
-.nav-visible .navbar .nav-collapse .nav > li > a:hover,
-.nav-visible .navbar .nav-collapse .nav > li > li a:focus {
-  background-color: transparent;
-}
-.nav-visible .nav-collapse .navbar-form,
-.nav-visible .nav-collapse .navbar-search {
-  border-bottom: 0 none;
-  border-top: 0 none;
-  box-shadow: none;
-  margin: 10px 0;
-  padding: 10px 15px;
-}
-.nav-visible .nav-collapse .navbar-form a.btn,
-.nav-visible .nav-collapse .navbar-search a.btn {
-  border-color: white;
-  color: white;
-}
-.nav-visible .nav-collapse .navbar-form a.btn:hover,
-.nav-visible .nav-collapse .navbar-search a.btn:hover,
-.nav-visible .nav-collapse .navbar-form a.btn:focus,
-.nav-visible .nav-collapse .navbar-search a.btn:focus {
-  color: #7f8c8d;
-  background-color: white;
 }
 /* header */
 /**
@@ -959,8 +936,8 @@ section * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
   .header-10-sub.v-center.row,
   .header-10-sub .v-center.row {
@@ -1135,8 +1112,8 @@ section * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
   .content-7.v-center.row,
   .content-7 .v-center.row {
@@ -1294,8 +1271,8 @@ section * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
   .content-8.v-center.row,
   .content-8 .v-center.row {
@@ -1392,8 +1369,8 @@ section * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
   .content-23.v-center.row,
   .content-23 .v-center.row {
@@ -1532,8 +1509,8 @@ section * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
   .footer-3.v-center.row,
   .footer-3 .v-center.row {

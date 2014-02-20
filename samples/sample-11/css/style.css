@@ -1393,6 +1393,7 @@ section * {
 }
 .footer-10 .subscribe-form input[type="text"]:-moz-placeholder {
   color: #ffffff;
+  opacity: 1;
 }
 .footer-10 .subscribe-form input[type="text"]::-moz-placeholder {
   color: #ffffff;

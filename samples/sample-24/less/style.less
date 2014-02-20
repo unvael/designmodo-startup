@@ -34,10 +34,15 @@
     display: table-cell;
     vertical-align: middle;
   }
-  .input-group-btn{
+  .input-group{
     @media(max-width: 480px){
-      display: block;
-      width: 100%;
+    .form-control{
+      float: none;
+    }
+    .input-group-btn{
+        display: block;
+        width: 100%;
+      }
     }
   }
 }

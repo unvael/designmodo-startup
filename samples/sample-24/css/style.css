@@ -1013,7 +1013,10 @@ section * {
   vertical-align: middle;
 }
 @media (max-width: 480px) {
-  .header-14-sub .input-group-btn {
+  .header-14-sub .input-group .form-control {
+    float: none;
+  }
+  .header-14-sub .input-group .input-group-btn {
     display: block;
     width: 100%;
   }

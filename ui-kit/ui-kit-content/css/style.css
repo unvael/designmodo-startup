@@ -3866,6 +3866,11 @@ section * {
   display: inline-block;
   margin: 150px auto;
 }
+@media (max-width: 1200px) and (min-width: 768px) {
+  .content-30 .features .img {
+    display: block;
+  }
+}
 .content-30 .features .img img + img {
   position: absolute;
   left: 0;

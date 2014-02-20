@@ -5842,6 +5842,11 @@ body {
   display: inline-block;
   margin: 150px auto;
 }
+@media (max-width: 1200px) and (min-width: 768px) {
+  .mcontent .content-30 .features .img {
+    display: block;
+  }
+}
 .mcontent .content-30 .features .img img + img {
   position: absolute;
   left: 0;

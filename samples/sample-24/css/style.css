@@ -1012,3 +1012,9 @@ section * {
   display: table-cell;
   vertical-align: middle;
 }
+@media (max-width: 480px) {
+  .header-14-sub .input-group-btn {
+    display: block;
+    width: 100%;
+  }
+}

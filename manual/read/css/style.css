@@ -1744,8 +1744,8 @@ body {
   text-transform: none;
 }
 .mcontent .blog-4 .img {
-  height: 242px;
-  width: 538px;
+  max-height: 242px;
+  max-width: 538px;
   margin: 70px 0;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -1753,11 +1753,17 @@ body {
   overflow: hidden;
   display: inline-block;
 }
+@media (max-width: 560px) {
+  .mcontent .blog-4 .img {
+    display: block;
+  }
+}
 .mcontent .blog-4 .img > img {
   display: block;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
+  max-height: 100%;
 }
 .mcontent .blog-4 .quote {
   position: relative;

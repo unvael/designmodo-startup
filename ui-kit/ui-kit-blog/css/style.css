@@ -1206,8 +1206,8 @@ section * {
   text-transform: none;
 }
 .blog-4 .img {
-  height: 242px;
-  width: 538px;
+  max-height: 242px;
+  max-width: 538px;
   margin: 70px 0;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -1215,11 +1215,17 @@ section * {
   overflow: hidden;
   display: inline-block;
 }
+@media (max-width: 560px) {
+  .blog-4 .img {
+    display: block;
+  }
+}
 .blog-4 .img > img {
   display: block;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
+  max-height: 100%;
 }
 .blog-4 .quote {
   position: relative;

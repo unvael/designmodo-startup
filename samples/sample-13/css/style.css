@@ -970,7 +970,6 @@ section * {
 @media (max-width: 767px) {
   .header-7-sub .pt-controls .pt-indicators {
     text-align: center;
-    padding-bottom: 90px;
   }
   .header-7-sub .pt-controls .pt-indicators li {
     display: inline-block;

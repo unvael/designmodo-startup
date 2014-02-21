@@ -5782,7 +5782,7 @@ section * {
 .header-20-sub .videos {
   margin-top: 150px;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .header-20-sub .videos {
     margin-top: 75px;
   }
@@ -5791,7 +5791,7 @@ section * {
   float: left;
   width: 33%;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .header-20-sub .videos .video-box {
     text-align: center;
   }
@@ -5811,7 +5811,7 @@ section * {
   margin: 0 20px 0 0;
   background: #ecf0f1;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .header-20-sub .videos .player {
     margin: 0 0 10px 0;
   }
@@ -5867,7 +5867,7 @@ section * {
   color: #34495e;
   font-weight: 500;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .header-20-sub .videos .description {
     display: block;
   }

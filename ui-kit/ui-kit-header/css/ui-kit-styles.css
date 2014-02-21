@@ -5995,7 +5995,7 @@ body .colapsed-menu::-webkit-scrollbar {
 .header-20-sub .videos {
   margin-top: 150px;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .header-20-sub .videos {
     margin-top: 75px;
   }
@@ -6004,7 +6004,7 @@ body .colapsed-menu::-webkit-scrollbar {
   float: left;
   width: 33%;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .header-20-sub .videos .video-box {
     text-align: center;
   }
@@ -6024,7 +6024,7 @@ body .colapsed-menu::-webkit-scrollbar {
   margin: 0 20px 0 0;
   background: #ecf0f1;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .header-20-sub .videos .player {
     margin: 0 0 10px 0;
   }
@@ -6080,7 +6080,7 @@ body .colapsed-menu::-webkit-scrollbar {
   color: #34495e;
   font-weight: 500;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .header-20-sub .videos .description {
     display: block;
   }

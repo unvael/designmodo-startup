@@ -919,7 +919,7 @@ section * {
 .header-7-sub .pt-controls .pt-indicators {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 0 90px 0;
   opacity: 0;
   filter: alpha(opacity=0);
 }
@@ -1262,6 +1262,9 @@ section * {
     margin-top: 0!important;
     margin-bottom: 0 !important;
   }
+}
+.header-7-sub .pt-controls .pt-indicators {
+  padding: 0;
 }
 .header-7-sub .h-7-section-2 {
   background: #2d2e2e;

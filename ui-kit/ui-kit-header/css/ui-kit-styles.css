@@ -5285,7 +5285,7 @@ body .colapsed-menu::-webkit-scrollbar {
 .header-18 .pt-controls > div > *:active {
   background: rgba(0, 0, 0, 0.6);
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .header-18 .pt-controls > div > * {
     margin-left: 20px;
   }
@@ -5294,7 +5294,7 @@ body .colapsed-menu::-webkit-scrollbar {
   float: right;
   margin-right: 30px;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .header-18 .pt-controls > div > *.pt-control-next {
     margin-right: 20px;
   }
@@ -5382,7 +5382,7 @@ body .colapsed-menu::-webkit-scrollbar {
   padding-top: 0;
   padding-bottom: 0;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .header-18 .header-18-sub header {
     top: 50px;
   }
@@ -5447,7 +5447,7 @@ body .colapsed-menu::-webkit-scrollbar {
   height: 61px;
   vertical-align: bottom;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .header-18 .header-18-sub .header-18-section .t-row.footer {
     height: auto;
   }
@@ -5473,7 +5473,7 @@ body .colapsed-menu::-webkit-scrollbar {
 .header-18 .header-18-sub .header-18-section .t-row.footer footer .btns .btn:first-child {
   margin-left: 0;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .header-18 .header-18-sub .header-18-section .t-row.footer footer {
     text-align: center;
   }

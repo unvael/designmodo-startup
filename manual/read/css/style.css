@@ -9726,6 +9726,15 @@ body {
     border-radius: 6px;
   }
 }
+@media (max-width: 480px) {
+  .mcontent .header-14-sub .subscribe-form form .input-group .form-control {
+    float: none;
+  }
+  .mcontent .header-14-sub .subscribe-form form .input-group .input-group-btn {
+    display: block;
+    width: 100%;
+  }
+}
 .mcontent .header-14-sub .subscribe-form .btn.btn-primary:hover,
 .mcontent .header-14-sub .subscribe-form .btn.btn-primary:focus {
   background-color: #e74c3c;

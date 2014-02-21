@@ -1891,6 +1891,11 @@ body > section {
   padding: 25px 27px;
 }
 @media (max-width: 480px) {
+  .tpl-22-section-1 .hero-unit h1 {
+    border: none;
+  }
+}
+@media (max-width: 480px) {
   .tpl-22-section-1 {
     padding-top: 60px;
     padding-bottom: 0;

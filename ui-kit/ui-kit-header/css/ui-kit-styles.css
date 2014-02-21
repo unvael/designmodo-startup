@@ -4178,6 +4178,15 @@ body .colapsed-menu::-webkit-scrollbar {
     border-radius: 6px;
   }
 }
+@media (max-width: 480px) {
+  .header-14-sub .subscribe-form form .input-group .form-control {
+    float: none;
+  }
+  .header-14-sub .subscribe-form form .input-group .input-group-btn {
+    display: block;
+    width: 100%;
+  }
+}
 .header-14-sub .subscribe-form .btn.btn-primary:hover,
 .header-14-sub .subscribe-form .btn.btn-primary:focus {
   background-color: #e74c3c;

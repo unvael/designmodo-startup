@@ -2091,7 +2091,8 @@ body section.price-2 {
   transform: translate3d(-230px, 0, 0);
 }
 .header-10-sub {
-  min-height: 600px;
+  padding-top: 80px;
+  padding-bottom: 55px;
 }
 .header-10-sub .background {
   background-image: url("../img/NY_002.png");

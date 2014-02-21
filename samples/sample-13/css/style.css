@@ -1318,7 +1318,8 @@ section * {
 .header-7-sub .h-7-section-5 .additional-links {
   font-size: 12px;
   color: #bdc3c7;
-  margin: 10px 0 38px;
+  margin: 15px 0 33px;
+  text-align: center;
 }
 .header-7-sub .h-7-section-5 .additional-links a {
   color: #7f8c8d;
@@ -1335,6 +1336,28 @@ section * {
 .header-7-sub .h-7-section-5 .signup-form input[type="text"],
 .header-7-sub .h-7-section-5 .signup-form input[type="password"] {
   border-color: #fff;
+  color: #2c3e50;
+}
+.header-7-sub .h-7-section-5 .signup-form input[type="text"]:-moz-placeholder,
+.header-7-sub .h-7-section-5 .signup-form input[type="password"]:-moz-placeholder {
+  color: #2c3e50;
+  opacity: 1;
+}
+.header-7-sub .h-7-section-5 .signup-form input[type="text"]::-moz-placeholder,
+.header-7-sub .h-7-section-5 .signup-form input[type="password"]::-moz-placeholder {
+  color: #2c3e50;
+  opacity: 1;
+}
+.header-7-sub .h-7-section-5 .signup-form input[type="text"]:-ms-input-placeholder,
+.header-7-sub .h-7-section-5 .signup-form input[type="password"]:-ms-input-placeholder {
+  color: #2c3e50;
+}
+.header-7-sub .h-7-section-5 .signup-form input[type="text"]::-webkit-input-placeholder,
+.header-7-sub .h-7-section-5 .signup-form input[type="password"]::-webkit-input-placeholder {
+  color: #2c3e50;
+}
+.header-7-sub .h-7-section-5 .signup-form input[type="text"].placeholder,
+.header-7-sub .h-7-section-5 .signup-form input[type="password"].placeholder {
   color: #2c3e50;
 }
 .header-7-sub .h-7-section-5 .signup-form .btn-large {

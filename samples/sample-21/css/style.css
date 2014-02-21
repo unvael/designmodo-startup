@@ -1158,6 +1158,7 @@ section * {
 .header-custom-sub {
   position: relative;
   background-color: #1b1b1b;
+  min-height: 360px;
   height: 100%;
   color: white;
   text-align: center;

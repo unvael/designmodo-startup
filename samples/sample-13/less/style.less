@@ -11,7 +11,6 @@
 
 /* header */
 @import '@{startup-basePath}ui-kit/ui-kit-header/less/header-7.less';
-
 .header-7-sub {
     overflow:visible;
     .pt-controls {
@@ -21,6 +20,9 @@
             margin-top: 0!important;
             margin-bottom: 0 !important;
         }
+      .pt-indicators{
+        padding: 0;
+      }
     }
     .h-7-section-2 {
         background: #2d2e2e;
@@ -75,7 +77,8 @@
         .additional-links {
             font-size: 12px;
             color: #bdc3c7;
-            margin: 10px 0 38px;
+            margin: 15px 0 33px;
+            text-align: center;
             a {
                 .a-color(#7f8c8d);
                 text-decoration: underline;
@@ -88,6 +91,7 @@
             input[type="text"], input[type="password"] {
                 border-color: #fff;
                 color: #2c3e50;
+              .placeholder(#2c3e50);
             }
             .btn-large {
                 font-weight: 500;

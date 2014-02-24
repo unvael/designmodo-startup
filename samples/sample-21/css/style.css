@@ -808,14 +808,6 @@ section * {
   opacity: 0.2;
   filter: alpha(opacity=20);
 }
-@media (max-width: 768px) {
-  .background {
-    -webkit-background-size: auto 200%;
-    -moz-background-size: auto 200%;
-    -o-background-size: auto 200%;
-    background-size: auto 200%;
-  }
-}
 .container {
   position: relative;
   z-index: 2;
@@ -1158,6 +1150,7 @@ section * {
 .header-custom-sub {
   position: relative;
   background-color: #1b1b1b;
+  min-height: 360px;
   height: 100%;
   color: white;
   text-align: center;
@@ -1211,7 +1204,6 @@ section * {
 }
 @media (max-width: 480px) {
   .header-custom-sub {
-    min-height: 0;
     padding-bottom: 20px;
   }
 }

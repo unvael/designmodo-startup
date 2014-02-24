@@ -332,9 +332,6 @@ footer {
 .bordered.bg-concrete {
   border-color: #7f8c8d;
 }
-html {
-  -webkit-font-smoothing: antialiased;
-}
 body {
   overflow-x: hidden;
   color: #7f8c8d;
@@ -807,14 +804,6 @@ section * {
   filter: alpha(opacity=2000);
   opacity: 0.2;
   filter: alpha(opacity=20);
-}
-@media (max-width: 768px) {
-  .background {
-    -webkit-background-size: auto 200%;
-    -moz-background-size: auto 200%;
-    -o-background-size: auto 200%;
-    background-size: auto 200%;
-  }
 }
 .container {
   position: relative;
@@ -1744,8 +1733,8 @@ body {
   text-transform: none;
 }
 .mcontent .blog-4 .img {
-  height: 242px;
-  width: 538px;
+  max-height: 242px;
+  max-width: 538px;
   margin: 70px 0;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -1753,11 +1742,17 @@ body {
   overflow: hidden;
   display: inline-block;
 }
+@media (max-width: 560px) {
+  .mcontent .blog-4 .img {
+    display: block;
+  }
+}
 .mcontent .blog-4 .img > img {
   display: block;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
+  max-height: 100%;
 }
 .mcontent .blog-4 .quote {
   position: relative;
@@ -8013,7 +8008,7 @@ body {
 .mcontent .header-7-sub .pt-controls .pt-indicators {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 0 90px 0;
   opacity: 0;
   filter: alpha(opacity=0);
 }
@@ -8064,7 +8059,6 @@ body {
 @media (max-width: 767px) {
   .mcontent .header-7-sub .pt-controls .pt-indicators {
     text-align: center;
-    padding-bottom: 90px;
   }
   .mcontent .header-7-sub .pt-controls .pt-indicators li {
     display: inline-block;
@@ -9743,6 +9737,15 @@ body {
     border-radius: 6px;
   }
 }
+@media (max-width: 480px) {
+  .mcontent .header-14-sub .subscribe-form form .input-group .form-control {
+    float: none;
+  }
+  .mcontent .header-14-sub .subscribe-form form .input-group .input-group-btn {
+    display: block;
+    width: 100%;
+  }
+}
 .mcontent .header-14-sub .subscribe-form .btn.btn-primary:hover,
 .mcontent .header-14-sub .subscribe-form .btn.btn-primary:focus {
   background-color: #e74c3c;
@@ -10837,7 +10840,7 @@ body {
 .mcontent .header-18 .pt-controls > div > *:active {
   background: rgba(0, 0, 0, 0.6);
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .mcontent .header-18 .pt-controls > div > * {
     margin-left: 20px;
   }
@@ -10846,7 +10849,7 @@ body {
   float: right;
   margin-right: 30px;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .mcontent .header-18 .pt-controls > div > *.pt-control-next {
     margin-right: 20px;
   }
@@ -10934,7 +10937,7 @@ body {
   padding-top: 0;
   padding-bottom: 0;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .mcontent .header-18 .header-18-sub header {
     top: 50px;
   }
@@ -10999,7 +11002,7 @@ body {
   height: 61px;
   vertical-align: bottom;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .mcontent .header-18 .header-18-sub .header-18-section .t-row.footer {
     height: auto;
   }
@@ -11025,7 +11028,7 @@ body {
 .mcontent .header-18 .header-18-sub .header-18-section .t-row.footer footer .btns .btn:first-child {
   margin-left: 0;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .mcontent .header-18 .header-18-sub .header-18-section .t-row.footer footer {
     text-align: center;
   }
@@ -11541,7 +11544,7 @@ body {
 .mcontent .header-20-sub .videos {
   margin-top: 150px;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .mcontent .header-20-sub .videos {
     margin-top: 75px;
   }
@@ -11550,7 +11553,7 @@ body {
   float: left;
   width: 33%;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .mcontent .header-20-sub .videos .video-box {
     text-align: center;
   }
@@ -11570,7 +11573,7 @@ body {
   margin: 0 20px 0 0;
   background: #ecf0f1;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .mcontent .header-20-sub .videos .player {
     margin: 0 0 10px 0;
   }
@@ -11626,7 +11629,7 @@ body {
   color: #34495e;
   font-weight: 500;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .mcontent .header-20-sub .videos .description {
     display: block;
   }
@@ -15511,7 +15514,7 @@ body {
   }
   .mcontent .footer-11 nav ul li:first-child {
     margin-top: 0;
-    border-bottom: 0 none;
+    border-top: 2px solid #ecf0f1;
   }
   .mcontent .footer-11 .social-btns {
     position: static;

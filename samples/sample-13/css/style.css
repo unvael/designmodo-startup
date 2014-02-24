@@ -808,14 +808,6 @@ section * {
   opacity: 0.2;
   filter: alpha(opacity=20);
 }
-@media (max-width: 768px) {
-  .background {
-    -webkit-background-size: auto 200%;
-    -moz-background-size: auto 200%;
-    -o-background-size: auto 200%;
-    background-size: auto 200%;
-  }
-}
 .container {
   position: relative;
   z-index: 2;
@@ -919,7 +911,7 @@ section * {
 .header-7-sub .pt-controls .pt-indicators {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 0 90px 0;
   opacity: 0;
   filter: alpha(opacity=0);
 }
@@ -970,7 +962,6 @@ section * {
 @media (max-width: 767px) {
   .header-7-sub .pt-controls .pt-indicators {
     text-align: center;
-    padding-bottom: 90px;
   }
   .header-7-sub .pt-controls .pt-indicators li {
     display: inline-block;
@@ -1264,6 +1255,9 @@ section * {
     margin-bottom: 0 !important;
   }
 }
+.header-7-sub .pt-controls .pt-indicators {
+  padding: 0;
+}
 .header-7-sub .h-7-section-2 {
   background: #2d2e2e;
 }
@@ -1318,7 +1312,8 @@ section * {
 .header-7-sub .h-7-section-5 .additional-links {
   font-size: 12px;
   color: #bdc3c7;
-  margin: 10px 0 38px;
+  margin: 15px 0 33px;
+  text-align: center;
 }
 .header-7-sub .h-7-section-5 .additional-links a {
   color: #7f8c8d;
@@ -1335,6 +1330,28 @@ section * {
 .header-7-sub .h-7-section-5 .signup-form input[type="text"],
 .header-7-sub .h-7-section-5 .signup-form input[type="password"] {
   border-color: #fff;
+  color: #2c3e50;
+}
+.header-7-sub .h-7-section-5 .signup-form input[type="text"]:-moz-placeholder,
+.header-7-sub .h-7-section-5 .signup-form input[type="password"]:-moz-placeholder {
+  color: #2c3e50;
+  opacity: 1;
+}
+.header-7-sub .h-7-section-5 .signup-form input[type="text"]::-moz-placeholder,
+.header-7-sub .h-7-section-5 .signup-form input[type="password"]::-moz-placeholder {
+  color: #2c3e50;
+  opacity: 1;
+}
+.header-7-sub .h-7-section-5 .signup-form input[type="text"]:-ms-input-placeholder,
+.header-7-sub .h-7-section-5 .signup-form input[type="password"]:-ms-input-placeholder {
+  color: #2c3e50;
+}
+.header-7-sub .h-7-section-5 .signup-form input[type="text"]::-webkit-input-placeholder,
+.header-7-sub .h-7-section-5 .signup-form input[type="password"]::-webkit-input-placeholder {
+  color: #2c3e50;
+}
+.header-7-sub .h-7-section-5 .signup-form input[type="text"].placeholder,
+.header-7-sub .h-7-section-5 .signup-form input[type="password"].placeholder {
   color: #2c3e50;
 }
 .header-7-sub .h-7-section-5 .signup-form .btn-large {

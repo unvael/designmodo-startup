@@ -1596,6 +1596,11 @@ section * {
     margin-top: 0;
   }
 }
+@media (max-width: 767px) {
+  .header-10-sub {
+    padding: 0;
+  }
+}
 .header-10-sub .background {
   background-image: url("../img/img-1.jpg");
   opacity: 85;

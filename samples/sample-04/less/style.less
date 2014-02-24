@@ -21,9 +21,14 @@
 /* footer */
 @import '@{startup-basePath}ui-kit/ui-kit-footer/less/footer-3.less';
 
-.header-10-sub .background {
+.header-10-sub{
+  @media (max-width: 767px){
+    padding: 0;
+  }
+  .background {
     background-image:url("../img/img-1.jpg");
     .opacity(85);
+  }
 }
 .header-10 {
     .header-background{

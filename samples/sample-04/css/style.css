@@ -1598,7 +1598,8 @@ section * {
 }
 @media (max-width: 767px) {
   .header-10-sub {
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 .header-10-sub .background {

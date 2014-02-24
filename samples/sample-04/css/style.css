@@ -1597,12 +1597,11 @@ section * {
   }
 }
 @media (max-width: 767px) {
-  .header-10-sub {
-    padding-left: 0;
-    padding-right: 0;
+  .header-10-sub.v-center {
+    padding: 0;
   }
 }
-.header-10-sub .background {
+.header-10-sub.v-center .background {
   background-image: url("../img/img-1.jpg");
   opacity: 85;
   filter: alpha(opacity=8500);

@@ -59,7 +59,6 @@
     height: 500px;
     padding: 0;
     overflow: hidden;
-    background: black;
     color: white;
     @media (max-width: 480px) {
         height: 420px;
@@ -120,7 +119,29 @@
         -moz-transform-style: preserve-3d;
         transform-style: preserve-3d;
     }
-    .pt-page-current, .no-js .pt-page {
+    .pt-page-1 {
+        .background {
+            background-image: url("@{startup-basePath}common-files/img/NY_002.png");
+            .opacity(50);
+            background-position:50% 30%;
+        }
+    }
+    .pt-page-2 {
+        .background {
+            background-image: url("@{startup-basePath}common-files/img/header/img-2.jpg");
+            .opacity(50);
+            background-position:50% 30%;
+        }
+    }
+    .pt-page-3 {
+        .background {
+            background-image: url("@{startup-basePath}common-files/img/header/img-3.jpg");
+            .opacity(50);
+            background-position:50% 30%;
+        }
+    }
+    .pt-page-current,
+    .no-js .pt-page {
         visibility: visible;
         z-index: 1;
     }
@@ -137,9 +158,7 @@
             top: 0;
             right: 0;
             bottom: 0;
-            background: 50% 50% no-repeat;
             .background-size(cover);
-            .opacity(10);
         }
         .caption {
             position: absolute;

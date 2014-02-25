@@ -333,9 +333,6 @@ footer {
 .bordered.bg-concrete {
   border-color: #7f8c8d;
 }
-html {
-  -webkit-font-smoothing: antialiased;
-}
 body {
   overflow-x: hidden;
   color: #7f8c8d;
@@ -1623,9 +1620,6 @@ section * {
 .content-23 {
   overflow: hidden;
   background-color: #1B1F23;
-}
-.content-23 #bgVideo {
-  overflow: hidden;
 }
 .content-23 #bgVideo > video {
   position: absolute !important;

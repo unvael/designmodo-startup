@@ -832,7 +832,7 @@ section * {
 .header-5 .navbar {
   position: absolute;
   z-index: 2;
-  top: 50px;
+  top: 60px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .header-5 .navbar.navbar-fixed-top {
@@ -961,7 +961,7 @@ section * {
   font-size: 13px;
   font-weight: normal;
   color: #7f8c8d;
-  font-weight: 500;
+  font-weight: 800;
   letter-spacing: 2px;
   display: inline-block;
   color: #ffffff;
@@ -1034,7 +1034,7 @@ section * {
   padding: 0;
 }
 .header-5-sub .box-icon {
-  margin: 0 auto 50px;
+  margin: 0 auto 35px;
   text-align: center;
   font-size: 16px;
   font-weight: normal;
@@ -1133,7 +1133,7 @@ section * {
   height: 450px;
 }
 .header-5-sub .pt-page {
-  padding-top: 200px;
+  padding-top: 210px;
   padding-bottom: 40px;
 }
 @media (max-width: 767px) {
@@ -1148,7 +1148,7 @@ section * {
   background: transparent;
 }
 .header-5-sub .hero-unit h1 {
-  margin: 0 0 5px;
+  margin: 0 0 2px;
   font-size: 25px;
   font-weight: normal;
   color: #ffffff;

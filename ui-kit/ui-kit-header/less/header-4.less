@@ -15,6 +15,7 @@
             margin: 0 0 17px;
             .font(41px, white);
             .line-height(44px);
+            font-weight: 500;
         }
         p {
             .font(28px, white);
@@ -29,8 +30,16 @@
     .btns .btn {
         padding-left: 30px;
         padding-right: 30px;
+        font-weight: 500;
         & + .btn {
             margin-left: 20px;
+        }
+    }
+    .background {
+        background-image: url("@{startup-basePath}common-files/img/Hawaii_001.png");
+        .opacity(100);
+        @media (max-width: 768px) {
+            .background-size(auto 200%);
         }
     }
     @media (max-width: 480px) {

@@ -884,6 +884,7 @@ section * {
   font-weight: normal;
   color: #ffffff;
   line-height: 43.99999999999999px;
+  font-weight: 500;
 }
 .header-4 .hero-unit p {
   font-size: 28px;
@@ -907,9 +908,25 @@ section * {
 .header-4 .btns .btn {
   padding-left: 30px;
   padding-right: 30px;
+  font-weight: 500;
 }
 .header-4 .btns .btn + .btn {
   margin-left: 20px;
+}
+.header-4 .background {
+  background-image: url("../../../common-files/img/Hawaii_001.png");
+  opacity: 100;
+  filter: alpha(opacity=10000);
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+@media (max-width: 768px) {
+  .header-4 .background {
+    -webkit-background-size: auto 200%;
+    -moz-background-size: auto 200%;
+    -o-background-size: auto 200%;
+    background-size: auto 200%;
+  }
 }
 @media (max-width: 480px) {
   .header-4 .btns .btn {
@@ -1438,21 +1455,6 @@ body > section.v-center > div {
 .header-4,
 .content-20 {
   padding: 0;
-}
-.header-4 .background {
-  background-image: url("../img/Hawaii_001.png");
-  opacity: 100;
-  filter: alpha(opacity=10000);
-  opacity: 1;
-  filter: alpha(opacity=100);
-}
-@media (max-width: 768px) {
-  .header-4 .background {
-    -webkit-background-size: auto 200%;
-    -moz-background-size: auto 200%;
-    -o-background-size: auto 200%;
-    background-size: auto 200%;
-  }
 }
 .price-1 {
   padding-top: 0;

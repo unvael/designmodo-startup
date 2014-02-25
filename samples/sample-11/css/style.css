@@ -862,6 +862,7 @@ section * {
   font-size: 25px;
   font-weight: normal;
   color: #ffffff;
+  font-weight: 800;
 }
 .header-6 .navbar .brand img:first-child {
   float: left;
@@ -926,7 +927,7 @@ section * {
   font-size: 13px;
   font-weight: normal;
   color: #7f8c8d;
-  font-weight: 500;
+  font-weight: 800;
   letter-spacing: 2px;
   color: #ffffff;
   display: inline-block;
@@ -966,6 +967,7 @@ section * {
   width: 100%;
   padding-top: 280px;
   padding-bottom: 90px;
+  background-color: #192735;
   overflow: hidden;
   color: #bdc3c7;
   text-align: center;
@@ -980,7 +982,7 @@ section * {
   font-size: 35px;
   font-weight: normal;
   color: #ffffff;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
   font-weight: 300;
 }
 .header-6-sub .row {
@@ -1050,7 +1052,7 @@ section * {
   overflow: hidden;
   width: 220px;
   height: 150px;
-  margin: 50px auto 170px;
+  margin: 20px auto 180px;
   border: 4px solid #fff;
 }
 .header-6-sub .player .btn-play {
@@ -1075,6 +1077,13 @@ section * {
   border: 0;
   display: block;
 }
+.header-6-sub .background {
+  background-image: url("../../../common-files/img/NY_001.png");
+  opacity: 50;
+  filter: alpha(opacity=5000);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
 .header-6-sub .signup-form form {
   margin: 0 auto;
   padding: 17px;
@@ -1083,7 +1092,7 @@ section * {
   border-radius: 6px;
   background: white;
 }
-.header-6-sub .signup-form form input,
+.header-6-sub .signup-form form .form-control,
 .header-6-sub .signup-form form button {
   float: left;
   width: 23.5%;
@@ -1093,7 +1102,7 @@ section * {
   margin: 0 0 0 2%;
 }
 @media (max-width: 480px) {
-  .header-6-sub .signup-form form input,
+  .header-6-sub .signup-form form .form-control,
   .header-6-sub .signup-form form button {
     width: 100%;
     margin: 10px 0 0;
@@ -1101,9 +1110,33 @@ section * {
     float: none;
   }
 }
-.header-6-sub .signup-form form input:first-child,
+.header-6-sub .signup-form form .form-control:first-child,
 .header-6-sub .signup-form form button:first-child {
   margin: 0;
+}
+.header-6-sub .signup-form form .form-control {
+  border-color: #dee1e3;
+  font-weight: 500;
+  color: #34495e;
+}
+.header-6-sub .signup-form form .form-control:-moz-placeholder {
+  color: #34495e;
+}
+.header-6-sub .signup-form form .form-control::-moz-placeholder {
+  color: #34495e;
+  opacity: 1;
+}
+.header-6-sub .signup-form form .form-control:-ms-input-placeholder {
+  color: #34495e;
+}
+.header-6-sub .signup-form form .form-control::-webkit-input-placeholder {
+  color: #34495e;
+}
+.header-6-sub .signup-form form .form-control.placeholder {
+  color: #34495e;
+}
+.header-6-sub .signup-form form .form-control:focus {
+  border-color: #1abc9c;
 }
 .header-6-sub .signup-form form button {
   width: 23.5%;
@@ -1472,13 +1505,6 @@ footer > .container {
   .header-6-sub {
     margin-bottom: 40px;
   }
-}
-.header-6-sub .background {
-  background-image: url("../img/NY_001.png");
-  opacity: 80;
-  filter: alpha(opacity=8000);
-  opacity: 0.8;
-  filter: alpha(opacity=80);
 }
 .footer-10 {
   margin-top: 72px;

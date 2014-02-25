@@ -845,7 +845,7 @@ section * {
   font-size: 25px;
   font-weight: normal;
   color: #2c3e50;
-  font-weight: 600;
+  font-weight: 800;
 }
 .header-3 .navbar .brand img:first-child {
   float: left;
@@ -862,7 +862,7 @@ section * {
   font-size: 13px;
   font-weight: normal;
   color: #7f8c8d;
-  font-weight: 500;
+  font-weight: 800;
   letter-spacing: 2px;
   color: #95a5a6;
 }
@@ -880,7 +880,7 @@ section * {
   color: #1abc9c;
 }
 .header-3 .navbar .navbar-form {
-  padding: 23px 0 15px 35px;
+  padding: 23px 0 15px 50px;
 }
 .header-3 .navbar .btn {
   padding-left: 26px;
@@ -892,6 +892,7 @@ section * {
 }
 .header-3 .navbar .btn.btn-primary {
   background-color: #16a085;
+  font-weight: 800;
 }
 .header-3 .navbar .btn.btn-primary:hover,
 .header-3 .navbar .btn.btn-primary:focus {
@@ -906,8 +907,9 @@ section * {
 }
 .header-3-sub {
   position: relative;
+  background-color: #f2f3f4;
   padding-top: 180px;
-  padding-bottom: 100px;
+  padding-bottom: 85px;
 }
 .header-3-sub h3 {
   font-size: 30px;
@@ -922,12 +924,13 @@ section * {
   font-weight: normal;
   color: #7f8c8d;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.9;
 }
 @media (max-width: 480px) {
   .header-3-sub {
     padding-top: 100px;
     background-attachment: scroll;
-    background-position: 50% 50%!important;
+    background-position: 50% 50% !important;
   }
 }
 /* content */
@@ -1296,20 +1299,6 @@ footer {
 .content-30 {
   padding-top: 110px;
   padding-bottom: 110px;
-}
-.header-3-sub .background {
-  opacity: 100;
-  filter: alpha(opacity=10000);
-  opacity: 1;
-  filter: alpha(opacity=100);
-}
-@media (max-width: 768px) {
-  .header-3-sub .background {
-    -webkit-background-size: auto 200%;
-    -moz-background-size: auto 200%;
-    -o-background-size: auto 200%;
-    background-size: auto 200%;
-  }
 }
 .content-2 {
   padding-top: 120px;

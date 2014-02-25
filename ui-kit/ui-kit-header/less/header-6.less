@@ -33,6 +33,7 @@
             left: 15px;
             padding: 0 !important;
             .font(25px, white);
+            font-weight: 800;
             img:first-child {
                 float: left;
                 margin: -10px 15px 0 0;
@@ -88,7 +89,7 @@
                 > a {
                     padding: 12px 0 0;
                     .font(13px);
-                    font-weight: 500;
+                    font-weight: 800;
                     letter-spacing:2px;
                     .a-color(white);
                     display: inline-block;
@@ -119,6 +120,7 @@
     overflow: hidden;
     padding-top:280px;
     padding-bottom:90px;
+    background-color: #192735;
     @media (max-width: 768px) {
         padding-top: 150px;
         padding-bottom: 50px;
@@ -128,12 +130,12 @@
     text-align: center;
     h3 {
         .font(35px, white);
-        margin-bottom:30px;
-        font-weight:300;
+        margin-bottom: 26px;
+        font-weight: 300;
     }
     .row {
-        position:relative;
-        z-index:51;
+        position: relative;
+        z-index: 51;
     }
     .lead {
         .font(24px, rgba(255, 255, 255, 0.7));
@@ -171,7 +173,7 @@
         overflow: hidden;
         width: 220px;
         height: 150px;
-        margin: 50px auto 170px;
+        margin: 20px auto 180px;
         border: 4px solid #fff;
         .btn-play {
             .box-sizing(border-box);
@@ -192,13 +194,17 @@
             display: block;
         }
     }
+    .background {
+        background-image: url("@{startup-basePath}common-files/img/NY_001.png");
+        .opacity(50);
+    }
     .signup-form {
         form {
             margin: 0 auto;
             padding: 17px;
             .border-radius(6px);
             background: white;
-            input,
+            .form-control,
             button {
                 float: left;
                 width: 23.5%;
@@ -212,6 +218,15 @@
                 }
                 &:first-child {
                     margin: 0;
+                }
+            }
+            .form-control {
+                border-color: #dee1e3;
+                font-weight: 500;
+                color: @wet-asphalt;
+                .placeholder(@wet-asphalt);
+                &:focus {
+                    border-color: #1abc9c;
                 }
             }
             button{

@@ -990,7 +990,8 @@ section * {
   background: #f1c40f;
 }
 .header-7-sub h3 {
-  margin: 0 0 30px;
+  margin: 0 0 25px;
+  font-weight: 300;
 }
 .header-7-sub h6 {
   margin: 0 0 10px;
@@ -1000,7 +1001,7 @@ section * {
   font-weight: normal;
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 500;
+  font-weight: 800;
 }
 .header-7-sub .brand img:first-child {
   float: left;
@@ -1018,7 +1019,7 @@ section * {
   position: absolute;
   padding-top: 0;
   padding-bottom: 0;
-  top: 90px;
+  top: 100px;
   left: 0;
   right: 0;
   text-align: left;
@@ -1070,8 +1071,8 @@ section * {
 .header-7-sub section > div {
   display: table-cell;
   vertical-align: middle;
-  padding-top: 265px;
-  padding-bottom: 160px;
+  padding-top: 285px;
+  padding-bottom: 220px;
   position: relative;
 }
 @media (max-width: 480px) {
@@ -1095,6 +1096,7 @@ section * {
   float: left;
   width: 27%;
   margin: 30px 0 0 9.5%;
+  line-height: 1.4;
 }
 .header-7-sub .h-7-section-1 .box h6 {
   font-size: 18px;
@@ -1216,7 +1218,7 @@ section * {
   overflow: hidden;
   width: 220px;
   height: 158px;
-  margin: 0 auto 50px;
+  margin: 0 auto 45px;
   border: 4px solid #fff;
 }
 .header-7-sub .player .btn-play {
@@ -1332,7 +1334,6 @@ section * {
 .header-7-sub .h-7-section-5 .signup-form input[type="text"]:-moz-placeholder,
 .header-7-sub .h-7-section-5 .signup-form input[type="password"]:-moz-placeholder {
   color: #2c3e50;
-  opacity: 1;
 }
 .header-7-sub .h-7-section-5 .signup-form input[type="text"]::-moz-placeholder,
 .header-7-sub .h-7-section-5 .signup-form input[type="password"]::-moz-placeholder {

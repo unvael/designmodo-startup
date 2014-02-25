@@ -867,7 +867,7 @@ section * {
   padding: 35px 0 27px;
   font-size: 13px;
   font-weight: normal;
-  font-weight: 500;
+  font-weight: 800;
   letter-spacing: 2px;
   color: #ffffff;
 }
@@ -909,7 +909,7 @@ section * {
   }
 }
 .header-1-sub h3 {
-  margin: 0 0 18px 0;
+  margin: 0 0 20px 0;
   font-size: 36px;
   font-weight: normal;
   color: #ffffff;
@@ -967,6 +967,7 @@ section * {
   left: 0;
   visibility: hidden;
   overflow: hidden;
+  background-color: #363940;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -979,26 +980,26 @@ section * {
 }
 .header-1-sub .pt-page-1 .background {
   background-image: url("../../../common-files/img/NY_002.png");
-  opacity: 50;
-  filter: alpha(opacity=5000);
-  opacity: 0.5;
-  filter: alpha(opacity=50);
+  opacity: 75;
+  filter: alpha(opacity=7500);
+  opacity: 0.75;
+  filter: alpha(opacity=75);
   background-position: 50% 30%;
 }
 .header-1-sub .pt-page-2 .background {
   background-image: url("../../../common-files/img/header/img-2.jpg");
-  opacity: 50;
-  filter: alpha(opacity=5000);
-  opacity: 0.5;
-  filter: alpha(opacity=50);
+  opacity: 75;
+  filter: alpha(opacity=7500);
+  opacity: 0.75;
+  filter: alpha(opacity=75);
   background-position: 50% 30%;
 }
 .header-1-sub .pt-page-3 .background {
   background-image: url("../../../common-files/img/header/img-3.jpg");
-  opacity: 50;
-  filter: alpha(opacity=5000);
-  opacity: 0.5;
-  filter: alpha(opacity=50);
+  opacity: 75;
+  filter: alpha(opacity=7500);
+  opacity: 0.75;
+  filter: alpha(opacity=75);
   background-position: 50% 30%;
 }
 .header-1-sub .pt-page-current,
@@ -1027,7 +1028,7 @@ section * {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 130px;
+  bottom: 140px;
 }
 @media (max-width: 480px) {
   .header-1-sub .page-transitions .caption {
@@ -1037,7 +1038,7 @@ section * {
 .header-1-sub .page-transitions .controls > * {
   position: absolute;
   left: 15;
-  top: 415px;
+  top: 410px;
   z-index: 1000;
   width: 20px;
   overflow: hidden;
@@ -1092,6 +1093,7 @@ section * {
   font-size: 25px;
   font-weight: normal;
   color: #ffffff;
+  font-weight: 800;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .header-2 .navbar .brand img:first-child {
@@ -1099,7 +1101,7 @@ section * {
   margin: -10px 15px 0 0;
 }
 .header-2 .navbar .nav > li {
-  margin-left: 20px;
+  margin-left: 35px;
 }
 .header-2 .navbar .nav > li:first-child {
   margin-left: 0;
@@ -1108,7 +1110,7 @@ section * {
   padding: 32px 0 30px;
   font-size: 17px;
   font-weight: normal;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 1px;
   color: #ffffff;
 }
@@ -1130,8 +1132,8 @@ section * {
   left: 0;
   width: 100%;
   position: relative;
-  padding-top: 195px;
-  padding-bottom: 80px;
+  padding-top: 215px;
+  padding-bottom: 115px;
   color: white;
   text-align: center;
 }
@@ -1162,7 +1164,7 @@ section * {
 }
 .header-2-sub .btns {
   display: inline-block;
-  margin-top: 40px;
+  margin-top: 15px;
 }
 @media (max-width: 480px) {
   .header-2-sub .btns {
@@ -1242,7 +1244,7 @@ section * {
   font-size: 25px;
   font-weight: normal;
   color: #2c3e50;
-  font-weight: 600;
+  font-weight: 800;
 }
 .header-3 .navbar .brand img:first-child {
   float: left;
@@ -1259,7 +1261,7 @@ section * {
   font-size: 13px;
   font-weight: normal;
   color: #7f8c8d;
-  font-weight: 500;
+  font-weight: 800;
   letter-spacing: 2px;
   color: #95a5a6;
 }
@@ -1277,7 +1279,7 @@ section * {
   color: #1abc9c;
 }
 .header-3 .navbar .navbar-form {
-  padding: 23px 0 15px 35px;
+  padding: 23px 0 15px 50px;
 }
 .header-3 .navbar .btn {
   padding-left: 26px;
@@ -1289,6 +1291,7 @@ section * {
 }
 .header-3 .navbar .btn.btn-primary {
   background-color: #16a085;
+  font-weight: 800;
 }
 .header-3 .navbar .btn.btn-primary:hover,
 .header-3 .navbar .btn.btn-primary:focus {
@@ -1303,8 +1306,9 @@ section * {
 }
 .header-3-sub {
   position: relative;
+  background-color: #f2f3f4;
   padding-top: 180px;
-  padding-bottom: 100px;
+  padding-bottom: 85px;
 }
 .header-3-sub h3 {
   font-size: 30px;
@@ -1319,12 +1323,13 @@ section * {
   font-weight: normal;
   color: #7f8c8d;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.9;
 }
 @media (max-width: 480px) {
   .header-3-sub {
     padding-top: 100px;
     background-attachment: scroll;
-    background-position: 50% 50%!important;
+    background-position: 50% 50% !important;
   }
 }
 /**
@@ -1394,6 +1399,7 @@ section * {
   font-weight: normal;
   color: #ffffff;
   line-height: 43.99999999999999px;
+  font-weight: 500;
 }
 .header-4 .hero-unit p {
   font-size: 28px;
@@ -1417,9 +1423,25 @@ section * {
 .header-4 .btns .btn {
   padding-left: 30px;
   padding-right: 30px;
+  font-weight: 500;
 }
 .header-4 .btns .btn + .btn {
   margin-left: 20px;
+}
+.header-4 .background {
+  background-image: url("../../../common-files/img/Hawaii_001.png");
+  opacity: 100;
+  filter: alpha(opacity=10000);
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+@media (max-width: 768px) {
+  .header-4 .background {
+    -webkit-background-size: auto 200%;
+    -moz-background-size: auto 200%;
+    -o-background-size: auto 200%;
+    background-size: auto 200%;
+  }
 }
 @media (max-width: 480px) {
   .header-4 .btns .btn {
@@ -1444,7 +1466,7 @@ section * {
 .header-5 .navbar {
   position: absolute;
   z-index: 2;
-  top: 50px;
+  top: 60px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .header-5 .navbar.navbar-fixed-top {
@@ -1573,7 +1595,7 @@ section * {
   font-size: 13px;
   font-weight: normal;
   color: #7f8c8d;
-  font-weight: 500;
+  font-weight: 800;
   letter-spacing: 2px;
   display: inline-block;
   color: #ffffff;
@@ -1646,7 +1668,7 @@ section * {
   padding: 0;
 }
 .header-5-sub .box-icon {
-  margin: 0 auto 50px;
+  margin: 0 auto 35px;
   text-align: center;
   font-size: 16px;
   font-weight: normal;
@@ -1745,7 +1767,7 @@ section * {
   height: 450px;
 }
 .header-5-sub .pt-page {
-  padding-top: 200px;
+  padding-top: 210px;
   padding-bottom: 40px;
 }
 @media (max-width: 767px) {
@@ -1760,7 +1782,7 @@ section * {
   background: transparent;
 }
 .header-5-sub .hero-unit h1 {
-  margin: 0 0 5px;
+  margin: 0 0 2px;
   font-size: 25px;
   font-weight: normal;
   color: #ffffff;
@@ -1871,6 +1893,7 @@ section * {
   font-size: 25px;
   font-weight: normal;
   color: #ffffff;
+  font-weight: 800;
 }
 .header-6 .navbar .brand img:first-child {
   float: left;
@@ -1935,7 +1958,7 @@ section * {
   font-size: 13px;
   font-weight: normal;
   color: #7f8c8d;
-  font-weight: 500;
+  font-weight: 800;
   letter-spacing: 2px;
   color: #ffffff;
   display: inline-block;
@@ -1975,6 +1998,7 @@ section * {
   width: 100%;
   padding-top: 280px;
   padding-bottom: 90px;
+  background-color: #192735;
   overflow: hidden;
   color: #bdc3c7;
   text-align: center;
@@ -1989,7 +2013,7 @@ section * {
   font-size: 35px;
   font-weight: normal;
   color: #ffffff;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
   font-weight: 300;
 }
 .header-6-sub .row {
@@ -2059,7 +2083,7 @@ section * {
   overflow: hidden;
   width: 220px;
   height: 150px;
-  margin: 50px auto 170px;
+  margin: 20px auto 180px;
   border: 4px solid #fff;
 }
 .header-6-sub .player .btn-play {
@@ -2084,6 +2108,13 @@ section * {
   border: 0;
   display: block;
 }
+.header-6-sub .background {
+  background-image: url("../../../common-files/img/NY_001.png");
+  opacity: 50;
+  filter: alpha(opacity=5000);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
 .header-6-sub .signup-form form {
   margin: 0 auto;
   padding: 17px;
@@ -2092,7 +2123,7 @@ section * {
   border-radius: 6px;
   background: white;
 }
-.header-6-sub .signup-form form input,
+.header-6-sub .signup-form form .form-control,
 .header-6-sub .signup-form form button {
   float: left;
   width: 23.5%;
@@ -2102,7 +2133,7 @@ section * {
   margin: 0 0 0 2%;
 }
 @media (max-width: 480px) {
-  .header-6-sub .signup-form form input,
+  .header-6-sub .signup-form form .form-control,
   .header-6-sub .signup-form form button {
     width: 100%;
     margin: 10px 0 0;
@@ -2110,9 +2141,33 @@ section * {
     float: none;
   }
 }
-.header-6-sub .signup-form form input:first-child,
+.header-6-sub .signup-form form .form-control:first-child,
 .header-6-sub .signup-form form button:first-child {
   margin: 0;
+}
+.header-6-sub .signup-form form .form-control {
+  border-color: #dee1e3;
+  font-weight: 500;
+  color: #34495e;
+}
+.header-6-sub .signup-form form .form-control:-moz-placeholder {
+  color: #34495e;
+}
+.header-6-sub .signup-form form .form-control::-moz-placeholder {
+  color: #34495e;
+  opacity: 1;
+}
+.header-6-sub .signup-form form .form-control:-ms-input-placeholder {
+  color: #34495e;
+}
+.header-6-sub .signup-form form .form-control::-webkit-input-placeholder {
+  color: #34495e;
+}
+.header-6-sub .signup-form form .form-control.placeholder {
+  color: #34495e;
+}
+.header-6-sub .signup-form form .form-control:focus {
+  border-color: #1abc9c;
 }
 .header-6-sub .signup-form form button {
   width: 23.5%;
@@ -2303,7 +2358,8 @@ section * {
   background: #f1c40f;
 }
 .header-7-sub h3 {
-  margin: 0 0 30px;
+  margin: 0 0 25px;
+  font-weight: 300;
 }
 .header-7-sub h6 {
   margin: 0 0 10px;
@@ -2313,7 +2369,7 @@ section * {
   font-weight: normal;
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 500;
+  font-weight: 800;
 }
 .header-7-sub .brand img:first-child {
   float: left;
@@ -2331,7 +2387,7 @@ section * {
   position: absolute;
   padding-top: 0;
   padding-bottom: 0;
-  top: 90px;
+  top: 100px;
   left: 0;
   right: 0;
   text-align: left;
@@ -2383,8 +2439,8 @@ section * {
 .header-7-sub section > div {
   display: table-cell;
   vertical-align: middle;
-  padding-top: 265px;
-  padding-bottom: 160px;
+  padding-top: 285px;
+  padding-bottom: 220px;
   position: relative;
 }
 @media (max-width: 480px) {
@@ -2408,6 +2464,7 @@ section * {
   float: left;
   width: 27%;
   margin: 30px 0 0 9.5%;
+  line-height: 1.4;
 }
 .header-7-sub .h-7-section-1 .box h6 {
   font-size: 18px;
@@ -2529,7 +2586,7 @@ section * {
   overflow: hidden;
   width: 220px;
   height: 158px;
-  margin: 0 auto 50px;
+  margin: 0 auto 45px;
   border: 4px solid #fff;
 }
 .header-7-sub .player .btn-play {
@@ -2585,6 +2642,7 @@ section * {
   font-size: 25px;
   font-weight: normal;
   color: #34495e;
+  font-weight: 800;
 }
 .header-8 .navbar .brand img:first-child {
   float: left;
@@ -2611,7 +2669,7 @@ section * {
   font-size: 16px;
   font-weight: normal;
   color: #7f8c8d;
-  font-weight: 500;
+  font-weight: 800;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #95a5a6;
 }
@@ -2638,32 +2696,38 @@ section * {
 }
 .header-8-sub {
   position: relative;
-  padding-top: 101px;
+  padding-top: 95px;
   padding-bottom: 0;
 }
 .header-8-sub h3 {
   font-size: 35px;
   font-weight: normal;
-  color: #2c3e50;
-  margin-bottom: 42px;
+  margin-bottom: 30px;
   text-align: center;
   font-weight: 300;
-  color: #fff;
+  color: #2c3e50;
 }
 .header-8-sub .lead {
   font-size: 24px;
   font-weight: normal;
-  color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
   font-weight: 300;
-  color: #fff;
+  color: #2c3e50;
+}
+.header-8-sub .background {
+  background-image: url("../../../common-files/img/Italy_001.png");
+  background-position: 50% 0;
+  opacity: 100;
+  filter: alpha(opacity=10000);
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .header-8-sub img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 87px;
+  margin-top: 60px;
 }
 /**
  * Header 9 stylesheet  

@@ -25,6 +25,7 @@
         .brand {
             padding-top: 18px;
             .font(25px, @base);
+            font-weight: 800;
             img:first-child {
                 float: left;
                 margin: -10px 15px 0 0;
@@ -47,7 +48,7 @@
                 > a {
                     padding: 30px 0 22px;
                     .font(16px);
-                    font-weight:500;
+                    font-weight:800;
                     font-family:@font-family-demo;
                     .a-color(@concrete, @base);
                 }
@@ -67,25 +68,30 @@
     }
 }
 .header-8-sub {
-    position:relative;
-    padding-top:101px;
+    position: relative;
+    padding-top: 95px;
     padding-bottom: 0;
     h3 {
         .font(35px, @text-color-heading);
-        margin-bottom:42px;
+        margin-bottom: 30px;
         text-align: center;
-        font-weight:300;
-        color: #fff;
+        font-weight: 300;
+        color: @text-color-heading;
     }
     .lead {
         .font(24px, @text-color-heading);
         font-family:@font-family-demo;
         text-align: center;
-        font-weight:300;
-        color: #fff;
+        font-weight: 300;
+        color: @text-color-heading;
+    }
+    .background {
+        background-image: url("@{startup-basePath}common-files/img/Italy_001.png");
+        background-position: 50% 0;
+        .opacity(100);
     }
     img {
         .center-block;
-        margin-top: 87px;
+        margin-top: 60px;
     }
 }

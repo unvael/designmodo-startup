@@ -844,6 +844,7 @@ section * {
   font-size: 25px;
   font-weight: normal;
   color: #ffffff;
+  font-weight: 800;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .header-2 .navbar .brand img:first-child {
@@ -851,7 +852,7 @@ section * {
   margin: -10px 15px 0 0;
 }
 .header-2 .navbar .nav > li {
-  margin-left: 20px;
+  margin-left: 35px;
 }
 .header-2 .navbar .nav > li:first-child {
   margin-left: 0;
@@ -860,7 +861,7 @@ section * {
   padding: 32px 0 30px;
   font-size: 17px;
   font-weight: normal;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 1px;
   color: #ffffff;
 }
@@ -882,8 +883,8 @@ section * {
   left: 0;
   width: 100%;
   position: relative;
-  padding-top: 195px;
-  padding-bottom: 80px;
+  padding-top: 215px;
+  padding-bottom: 115px;
   color: white;
   text-align: center;
 }
@@ -914,7 +915,7 @@ section * {
 }
 .header-2-sub .btns {
   display: inline-block;
-  margin-top: 40px;
+  margin-top: 15px;
 }
 @media (max-width: 480px) {
   .header-2-sub .btns {

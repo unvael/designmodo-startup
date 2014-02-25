@@ -704,7 +704,7 @@ startupKit.uiKitContent.content18 = function() {
         });
     });
 
-    $('#c-18_myCarousel').bind('slide.bs.carousel', function() {
+    $('#c-18_myCarousel').bind('slid.bs.carousel', function() {
         $('.carousel-control', this).removeClass('disabled');
         if ($('.item.active', this).index() == 0) {
             $('.carousel-control.left', this).addClass('disabled');

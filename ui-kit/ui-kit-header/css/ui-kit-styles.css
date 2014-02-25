@@ -1105,7 +1105,6 @@ body .colapsed-menu::-webkit-scrollbar {
   height: 500px;
   padding: 0;
   overflow: hidden;
-  background: black;
   color: white;
 }
 @media (max-width: 480px) {
@@ -1191,6 +1190,30 @@ body .colapsed-menu::-webkit-scrollbar {
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
+.header-1-sub .pt-page-1 .background {
+  background-image: url("../../../common-files/img/NY_002.png");
+  opacity: 50;
+  filter: alpha(opacity=5000);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  background-position: 50% 30%;
+}
+.header-1-sub .pt-page-2 .background {
+  background-image: url("../../../common-files/img/header/img-2.jpg");
+  opacity: 50;
+  filter: alpha(opacity=5000);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  background-position: 50% 30%;
+}
+.header-1-sub .pt-page-3 .background {
+  background-image: url("../../../common-files/img/header/img-3.jpg");
+  opacity: 50;
+  filter: alpha(opacity=5000);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  background-position: 50% 30%;
+}
 .header-1-sub .pt-page-current,
 .header-1-sub .no-js .pt-page {
   visibility: visible;
@@ -1208,15 +1231,10 @@ body .colapsed-menu::-webkit-scrollbar {
   top: 0;
   right: 0;
   bottom: 0;
-  background: 50% 50% no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  opacity: 10;
-  filter: alpha(opacity=1000);
-  opacity: 0.1;
-  filter: alpha(opacity=10);
 }
 .header-1-sub .page-transitions .caption {
   position: absolute;
@@ -1708,7 +1726,6 @@ body .colapsed-menu::-webkit-scrollbar {
 }
 .header-5 .navbar .navbar-search input[type="text"]:-moz-placeholder {
   color: #ffffff;
-  opacity: 1;
 }
 .header-5 .navbar .navbar-search input[type="text"]::-moz-placeholder {
   color: #ffffff;

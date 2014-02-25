@@ -892,7 +892,6 @@ section * {
   height: 500px;
   padding: 0;
   overflow: hidden;
-  background: black;
   color: white;
 }
 @media (max-width: 480px) {
@@ -978,6 +977,30 @@ section * {
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
+.header-1-sub .pt-page-1 .background {
+  background-image: url("../../../common-files/img/NY_002.png");
+  opacity: 50;
+  filter: alpha(opacity=5000);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  background-position: 50% 30%;
+}
+.header-1-sub .pt-page-2 .background {
+  background-image: url("../../../common-files/img/header/img-2.jpg");
+  opacity: 50;
+  filter: alpha(opacity=5000);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  background-position: 50% 30%;
+}
+.header-1-sub .pt-page-3 .background {
+  background-image: url("../../../common-files/img/header/img-3.jpg");
+  opacity: 50;
+  filter: alpha(opacity=5000);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  background-position: 50% 30%;
+}
 .header-1-sub .pt-page-current,
 .header-1-sub .no-js .pt-page {
   visibility: visible;
@@ -995,15 +1018,10 @@ section * {
   top: 0;
   right: 0;
   bottom: 0;
-  background: 50% 50% no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  opacity: 10;
-  filter: alpha(opacity=1000);
-  opacity: 0.1;
-  filter: alpha(opacity=10);
 }
 .header-1-sub .page-transitions .caption {
   position: absolute;
@@ -1346,28 +1364,4 @@ section * {
 .footer-6 {
   padding-top: 80px;
   padding-bottom: 80px;
-}
-.header-1-sub .pt-page-1 .background {
-  background-image: url('../img/NY_002.png');
-  opacity: 50;
-  filter: alpha(opacity=5000);
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-  background-position: 50% 30%;
-}
-.header-1-sub .pt-page-2 .background {
-  background-image: url('../img/img-2.jpg');
-  opacity: 50;
-  filter: alpha(opacity=5000);
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-  background-position: 50% 30%;
-}
-.header-1-sub .pt-page-3 .background {
-  background-image: url('../img/img-3.jpg');
-  opacity: 50;
-  filter: alpha(opacity=5000);
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-  background-position: 50% 30%;
 }

@@ -822,6 +822,7 @@ section * {
  * */
 .header-14-sub {
   color: #bdc3c7;
+  background-color: #1c201d;
   position: relative;
   padding-top: 95px;
   padding-bottom: 95px;
@@ -913,6 +914,13 @@ section * {
     margin: 0 auto 65px;
   }
 }
+.header-14-sub .background {
+  background-image: url("../../../common-files/img/NY_001.png");
+  opacity: 20;
+  filter: alpha(opacity=2000);
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
 .header-14-sub .subscribe-form form {
   margin: 40px 0 10px;
 }
@@ -937,6 +945,8 @@ section * {
   color: #fff;
   background: #1abc9c;
   line-height: 22px;
+  font-size: 17px;
+  font-weight: 500;
 }
 @media (max-width: 480px) {
   .header-14-sub .subscribe-form form .input-group .btn {
@@ -1000,10 +1010,6 @@ section * {
 }
 .header-14-sub .background {
   background-image: url("../img/img-1.jpg");
-  opacity: 100;
-  filter: alpha(opacity=10000);
-  opacity: 1;
-  filter: alpha(opacity=100);
 }
 .header-14-sub .container {
   width: 100%;

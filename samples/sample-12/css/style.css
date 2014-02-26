@@ -842,7 +842,7 @@ section * {
   top: 0 !important;
 }
 .header-20 .navbar .brand {
-  font-weight: 500;
+  font-weight: 800;
   color: #2c3e50!important;
 }
 .header-20 .navbar .brand img:first-child {
@@ -859,7 +859,7 @@ section * {
   padding: 28px 0 27px;
   font-size: 18px;
   font-weight: normal;
-  font-weight: 500;
+  font-weight: 800;
   color: #bdc3c7;
 }
 .header-20 .navbar .nav > li > a:hover,

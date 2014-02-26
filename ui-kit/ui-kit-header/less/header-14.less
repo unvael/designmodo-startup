@@ -2,8 +2,9 @@
  * Header 14 stylesheet  
  * */
  .header-14-sub {
-    position:relative;
+    position: relative;
     color: @silver;
+    background-color: #1c201d;
     h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
         font-family: @font-family-demo;
         color: white;
@@ -67,6 +68,10 @@
             margin: 0 auto 65px;
         }
     }
+    .background {
+        background-image: url("@{startup-basePath}common-files/img/NY_001.png");
+        .opacity(20);
+    }
     .subscribe-form {
         form {
             margin: 40px 0 10px;
@@ -88,6 +93,8 @@
                     color: #fff;
                     background: @turquoise;
                     line-height: 22px;
+                    font-size: 17px;
+                    font-weight: 500;
                     @media (max-width: 480px) {
                         .border-radius(6px);
                     }

@@ -18,6 +18,7 @@
         .brand {
             padding: 0;
             .font(25px, white);
+            font-weight: 800;
             img:first-child {
                 float: left;
                 margin: -10px 15px 0 0;
@@ -27,7 +28,7 @@
             margin: 12px 0 0 100px;
             float: left;
             a {
-                font-weight: 500;
+                font-weight: 800;
                 .a-color(@silver, white);
                 letter-spacing: 2px;
             }
@@ -72,6 +73,10 @@
             .font(18px, rgba(255, 255, 255, 0.7));
         }
     }
+    .background {
+        background-image: url("@{startup-basePath}common-files/img/NY_001.png");
+        .opacity(30);
+    }
     @media (max-width: 991px) {
         padding-bottom: 0;
         .row {
@@ -103,7 +108,7 @@
     }
     .aside {
         position: relative;
-        background: @peter-river;
+        background: @brand-danger;
         float: right;
         text-align: center;
         padding-left: 95px;
@@ -119,7 +124,7 @@
             top: 0;
             width: 5000px;
             height: 100%;
-            background: @peter-river;
+            background: @brand-danger;
         }
         > * {
             position: relative;

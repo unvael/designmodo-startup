@@ -843,6 +843,7 @@ section * {
   font-size: 25px;
   font-weight: normal;
   color: #ffffff;
+  font-weight: 800;
 }
 .header-12 .navbar .brand img:first-child {
   float: left;
@@ -853,7 +854,7 @@ section * {
   float: left;
 }
 .header-12 .navbar .nav a {
-  font-weight: 500;
+  font-weight: 800;
   color: #bdc3c7;
   letter-spacing: 2px;
 }
@@ -907,6 +908,13 @@ section * {
   font-weight: normal;
   color: rgba(255, 255, 255, 0.7);
 }
+.header-12-sub .background {
+  background-image: url("../../../common-files/img/NY_001.png");
+  opacity: 30;
+  filter: alpha(opacity=3000);
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
 @media (max-width: 991px) {
   .header-12-sub {
     padding-bottom: 0;
@@ -946,7 +954,7 @@ section * {
 }
 .header-12-sub .aside {
   position: relative;
-  background: #3498db;
+  background: #e74c3c;
   float: right;
   text-align: center;
   padding-left: 95px;
@@ -963,7 +971,7 @@ section * {
   top: 0;
   width: 5000px;
   height: 100%;
-  background: #3498db;
+  background: #e74c3c;
 }
 .header-12-sub .aside > * {
   position: relative;
@@ -1415,14 +1423,6 @@ body > section {
 }
 .header-12-sub .background {
   background-image: url("../img/NY_001.png");
-  opacity: 30;
-  filter: alpha(opacity=3000);
-  opacity: 0.3;
-  filter: alpha(opacity=30);
-}
-.header-12-sub .aside,
-.header-12-sub .aside:before {
-  background-color: #e74c3c;
 }
 .content-19 {
   padding-top: 100px;

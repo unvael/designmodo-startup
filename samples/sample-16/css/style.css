@@ -851,12 +851,12 @@ section * {
 .header-9 .navbar .brand {
   padding: 0 !important;
   font-weight: normal;
-  color: #ffffff;
+  color: #aa5a17;
 }
 .header-9 .navbar .brand:hover,
 .header-9 .navbar .brand:focus,
 .header-9 .navbar .brand.active {
-  color: #506e8c;
+  color: #ffffff;
 }
 .header-9 .navbar .brand img:first-child {
   float: left;
@@ -888,23 +888,23 @@ section * {
   font-size: 13px;
   font-weight: normal;
   color: #7f8c8d;
-  color: #ffffff;
-  font-weight: 500;
+  color: #aa5a17;
+  font-weight: 800;
   letter-spacing: 1.6px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .header-9 .navbar .nav > li > a:hover,
 .header-9 .navbar .nav > li > a:focus,
 .header-9 .navbar .nav > li > a.active {
-  color: #506e8c;
+  color: #ffffff;
 }
 .header-9 .navbar .nav > li.active > a {
-  color: #506e8c;
+  color: #ffffff;
 }
 .header-9 .navbar .nav > li.active > a:hover,
 .header-9 .navbar .nav > li.active > a:focus,
 .header-9 .navbar .nav > li.active > a.active {
-  color: #405870;
+  color: #cccccc;
 }
 .header-9 .navbar .navbar-toggle {
   margin-top: 8px;
@@ -920,10 +920,18 @@ section * {
   position: relative;
   width: 100%;
   z-index: 50;
-  padding-top: 300px;
-  padding-bottom: 60px;
+  padding-top: 330px;
+  padding-bottom: 75px;
+  background-color: #000;
   color: white;
   text-align: center;
+}
+.header-9-sub .background {
+  background-image: url('../../../common-files/img/header/img-4.jpg');
+  opacity: 100;
+  filter: alpha(opacity=10000);
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .header-9-sub > .container {
   position: relative;
@@ -938,9 +946,8 @@ section * {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   border: 8px solid white;
-  padding: 26px 25px;
-  margin-bottom: 40px;
-  background: transparent none;
+  padding: 26px 25px 18px;
+  margin-bottom: 35px;
 }
 .header-9-sub .hero-unit.bordered p {
   font-size: 46px;
@@ -963,7 +970,7 @@ section * {
   font-weight: normal;
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 500;
+  font-weight: 800;
   letter-spacing: 1.6px;
   text-transform: uppercase;
 }
@@ -990,12 +997,13 @@ section * {
   }
 }
 .header-9-sub .nav-steps {
-  margin-top: 200px;
+  margin-top: 185px;
   font-size: 13px;
   font-weight: normal;
   color: #7f8c8d;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 500;
+  font-weight: 800;
+  letter-spacing: 1px;
   line-height: 25px;
   opacity: 0;
   filter: alpha(opacity=0);
@@ -1121,71 +1129,12 @@ content-9 p {
   font-size: 18px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.header-9 .navbar .brand {
-  color: #aa5a17;
-}
-.header-9 .navbar .brand:hover,
-.header-9 .navbar .brand:focus,
-.header-9 .navbar .brand.active {
-  color: #ffffff;
-}
-.header-9 .navbar .nav > li > a {
-  color: #aa5a17;
-}
-.header-9 .navbar .nav > li > a:hover,
-.header-9 .navbar .nav > li > a:focus,
-.header-9 .navbar .nav > li > a.active {
-  color: #ffffff;
-}
-.header-9 .navbar .nav > li > a.active {
-  color: white;
-}
-.header-9-sub {
-  background-color: #000;
-}
 .header-9-sub .background {
   background-image: url('../img/img-1.jpg');
   opacity: 100;
   filter: alpha(opacity=10000);
   opacity: 1;
   filter: alpha(opacity=100);
-}
-.header-9-sub .hero-unit.bordered {
-  display: inline-block;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  border: 8px solid white;
-  padding: 26px 25px;
-  margin-bottom: 40px;
-}
-.header-9-sub .hero-unit.bordered p {
-  font-size: 46px;
-  font-weight: normal;
-  color: #ffffff;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 800;
-  line-height: 46.00000000000001px;
-  letter-spacing: 0;
-}
-@media (max-width: 768px) {
-  .header-9-sub .hero-unit.bordered p {
-    font-size: 36px;
-    font-weight: normal;
-    color: #ffffff;
-  }
-}
-.header-9-sub .wide-text.text-warning {
-  font-size: 13px;
-  font-weight: normal;
-  color: #ffffff;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  letter-spacing: 1.6px;
-  text-transform: uppercase;
 }
 .ribbon {
   display: block;

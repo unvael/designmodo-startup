@@ -24,7 +24,7 @@
         .brand {
             padding: 0 !important;
             font-weight: normal;
-            .a-color(white, #506e8c);
+            .a-color(#aa5a17, white);
             img:first-child {
                 float: left;
                 margin: -10px 15px 0 0;
@@ -54,13 +54,14 @@
                 > a {
                     padding: 0;
                     .font(13px);
-                    .a-color(white, #506e8c);
-                    font-weight:500;
+                    .a-color(#aa5a17, white);
+                    font-weight: 800;
                     letter-spacing:1.6px;
                     font-family:@font-family-demo;
+
                 }
                 &.active > a {
-                    .a-color(#506e8c);
+                    .a-color(white);
                 }
             }
         }
@@ -80,8 +81,13 @@
     position: relative;
     width: 100%;
     z-index: 50;
-    padding-top: 300px;
-    padding-bottom: 60px;
+    padding-top: 330px;
+    padding-bottom: 75px;
+    background-color: #000;
+    .background {
+        background-image:url('@{startup-basePath}common-files/img/header/img-4.jpg');
+        .opacity(100);
+    }
     > .container {
         position: relative;
         z-index: 51;
@@ -93,9 +99,8 @@
         .border-radius(0);
         .box-sizing(border-box);
         border: 8px solid white;
-        padding: 26px 25px;
-        margin-bottom: 40px;
-        background: transparent none;
+        padding: 26px 25px 18px;
+        margin-bottom: 35px;
         p {
             .font(46px, white);
             @media (max-width: 768px) {
@@ -110,7 +115,7 @@
     .wide-text.text-warning {
         .font(13px, white);
         font-family: @font-family-demo;
-        font-weight: 500;
+        font-weight: 800;
         letter-spacing: 1.6px;
         text-transform: uppercase;
     }
@@ -128,10 +133,11 @@
         background-position: 50% 50%!important;
     }
     .nav-steps {
-        margin-top: 200px;
+        margin-top: 185px;
         .font(13px);
         font-family: @font-family-demo;
-        font-weight:500;
+        font-weight: 800;
+        letter-spacing: 1px;
         .line-height(25px);
         > * {
             display: inline-block;

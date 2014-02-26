@@ -843,7 +843,7 @@ section * {
   top: 0 !important;
 }
 .header-17 .navbar .navbar-form {
-  padding: 30px 0 19px 35px;
+  padding: 30px 0 19px 60px;
 }
 .header-17 .navbar .btn {
   padding-left: 26px;
@@ -851,6 +851,7 @@ section * {
   font-size: 14px;
   font-weight: normal;
   color: #ffffff;
+  font-weight: 800;
 }
 .header-17 .navbar .btn.btn-primary {
   background-color: #16a085;
@@ -868,7 +869,7 @@ section * {
   font-size: 25px;
   font-weight: normal;
   color: #2c3e50;
-  font-weight: 600;
+  font-weight: 800;
   letter-spacing: 0;
   position: relative;
   overflow: hidden;
@@ -909,7 +910,7 @@ section * {
   font-size: 14px;
   font-weight: normal;
   color: #7f8c8d;
-  font-weight: 500;
+  font-weight: 800;
   color: #95a5a6;
 }
 .header-17 .navbar .nav > li > a:hover,
@@ -931,6 +932,7 @@ section * {
 }
 .header-17-sub {
   position: relative !important;
+  background-color: #1F2225;
   padding-top: 105px;
   padding-bottom: 105px;
   color: #7f8c8d;
@@ -1492,7 +1494,6 @@ section * {
 .content-13.subscribe-form input[type="text"]:-moz-placeholder,
 .content-13.subscribe-form input[type="email"]:-moz-placeholder {
   color: #ffffff;
-  opacity: 1;
 }
 .content-13.subscribe-form input[type="text"]::-moz-placeholder,
 .content-13.subscribe-form input[type="email"]::-moz-placeholder {
@@ -1673,7 +1674,6 @@ body > section,
 .content-13.subscribe-form form input[type="text"]:-moz-placeholder,
 .content-13 input[type="email"]:-moz-placeholder {
   color: #34495e;
-  opacity: 1;
 }
 .content-13.subscribe-form form input[type="text"]::-moz-placeholder,
 .content-13 input[type="email"]::-moz-placeholder {
@@ -1691,12 +1691,6 @@ body > section,
 .content-13.subscribe-form form input[type="text"].placeholder,
 .content-13 input[type="email"].placeholder {
   color: #34495e;
-}
-.header-17-sub {
-  background-color: #1F2225;
-}
-.header-17-sub .btn-clear {
-  min-width: 250px;
 }
 @media (max-width: 480px) {
   .footer-8 {

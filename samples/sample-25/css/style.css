@@ -887,6 +887,10 @@ section * {
   padding-bottom: 270px;
   color: white;
   text-align: center;
+  background: #1b1e21;
+}
+.header-23-sub .background {
+  background-image: url('../../../common-files/img/NY_002.png');
 }
 @media (max-width: 991px) {
   .header-23-sub {
@@ -1585,9 +1589,6 @@ section * {
 .header-23-sub {
   padding-top: 330px;
   padding-bottom: 300px;
-}
-.header-23-sub {
-  background: #1b1e21;
 }
 .header-23-sub .background {
   background-image: url(../img/header-1.jpg);

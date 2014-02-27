@@ -893,6 +893,11 @@ section * {
   letter-spacing: -1px;
   margin-bottom: 30px;
 }
+@media (min-width: 992px) {
+  .header-20-sub h3 {
+    margin-top: 80px;
+  }
+}
 .header-20-sub p {
   font-size: 18px;
   font-weight: normal;
@@ -988,7 +993,7 @@ section * {
   }
 }
 .header-20-sub .videos {
-  margin-top: 150px;
+  margin-top: 230px;
 }
 @media (max-width: 768px) {
   .header-20-sub .videos {

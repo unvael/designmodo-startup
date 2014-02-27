@@ -908,7 +908,7 @@ section * {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   width: auto;
   height: auto;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 .header-16 .navbar .navbar-toggle:hover,
 .header-16 .navbar .navbar-toggle:focus,
@@ -1087,7 +1087,7 @@ section * {
   color: #7f8c8d;
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 .header-16-sub .scroll-btn > *:hover,
 .header-16-sub .scroll-btn > *:focus,
@@ -1180,7 +1180,7 @@ section * {
   font-weight: normal;
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 .header-16-sub .pt-control-prev {
   float: left;

@@ -85,7 +85,6 @@
               <p>First step. Put following code into your HTML file:</p>
               <pre class="language-markup"><code>&lt;!-- this code between &lt;header&gt; ... &lt;/header&gt; --&gt;
 &lt;link rel=&quot;stylesheet&quot; href=&quot;(way to the startup folder)/flat-ui/bootstrap/css/bootstrap.css&quot;&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;(way to the startup folder)/flat-ui/bootstrap/css/bootstrap-responsive.css&quot;&gt;
 &lt;link rel=&quot;stylesheet&quot; href=&quot;(way to the startup folder)/flat-ui/css/flat-ui.css&quot;&gt;
 &lt;!-- Using only with Flat-UI (free)--&gt;
 &lt;link rel=&quot;stylesheet&quot; href=&quot;(way to the startup folder)/common-files/css/icon-font.css&quot;&gt;
@@ -134,15 +133,15 @@
               <p>
                 Second step. In your main '.less' file add the following lines of code:
               </p>
-              <pre class="language-scss"><code class="language-scss">@import '(way to the startup folder)/flat-ui/less/config.less';
-@import '(way to the startup folder)/flat-ui/less/mixins.less';
+              <pre class="language-scss"><code class="language-scss">@import '@{startup-basePath}/flat-ui/less/config.less';
+@import '@{startup-basePath}/flat-ui/less/mixins.less';
 /*only fo flat-ui free*/
-@import '(way to the startup folder)/common-files/less/flat-ui-free2.0.0-fix.less';
+@import '@{startup-basePath}/common-files/less/flat-ui-free2.0.0-fix.less';
 /* end only for flat-ui free*/
-@import '(way to the startup folder)/common-files/less/mixins.less';
-@import '(way to the startup folder)/common-files/less/common.less';
-@import '(way to the startup folder)/common-files/less/navbar.less';
-@import '(way to the startup folder)/common-files/less/helper.less';</code></pre>
+@import '@{startup-basePath}/common-files/less/mixins.less';
+@import '@{startup-basePath}/common-files/less/common.less';
+@import '@{startup-basePath}/common-files/less/navbar.less';
+@import '@{startup-basePath}/common-files/less/helper.less';</code></pre>
               <p>
                 The last step is <a class="inner-link" href="#lastStep">the same as with the simple version.</a>
               </p>

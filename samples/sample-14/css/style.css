@@ -931,13 +931,14 @@ section * {
   font-weight: normal;
   color: #2c3e50;
   font-weight: 300;
+  line-height: 1.34;
 }
 .header-19-sub .btn {
   padding-left: 18px;
   padding-right: 18px;
 }
 .header-19-sub .btns {
-  margin-top: 50px;
+  margin-top: 55px;
 }
 .header-19-sub .btns > * {
   display: inline-block;

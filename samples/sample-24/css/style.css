@@ -868,7 +868,8 @@ section * {
   font-weight: normal;
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  letter-spacing: 8px;
+  font-weight: 800;
+  letter-spacing: 2px;
 }
 .header-14-sub .header-14 [class*="fui-"] {
   margin-bottom: 30px;

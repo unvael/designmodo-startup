@@ -868,7 +868,7 @@ section * {
   font-size: 13px;
   font-weight: normal;
   font-weight: 800;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: #ffffff;
 }
 .header-1 .navbar .nav > li > a:hover,

@@ -1081,7 +1081,7 @@ body .colapsed-menu::-webkit-scrollbar {
   font-size: 13px;
   font-weight: normal;
   font-weight: 800;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: #ffffff;
 }
 .header-1 .navbar .nav > li > a:hover,
@@ -2172,7 +2172,7 @@ body .colapsed-menu::-webkit-scrollbar {
   font-weight: normal;
   color: #7f8c8d;
   font-weight: 800;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: #ffffff;
   display: inline-block;
 }
@@ -2344,6 +2344,8 @@ body .colapsed-menu::-webkit-scrollbar {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0 0 0 2%;
+  font-size: 17px;
+  font-weight: 500;
 }
 @media (max-width: 480px) {
   .header-6-sub .signup-form form .form-control,
@@ -3223,7 +3225,7 @@ body .colapsed-menu::-webkit-scrollbar {
   margin: -10px 15px 0 0;
 }
 .header-10 .navbar .nav > li {
-  margin-left: 45px;
+  margin-left: 40px;
 }
 .header-10 .navbar .nav > li:first-child {
   margin-left: 0;
@@ -3234,6 +3236,7 @@ body .colapsed-menu::-webkit-scrollbar {
   font-weight: normal;
   color: #7f8c8d;
   font-weight: 500;
+  letter-spacing: 1px;
   color: #ffffff;
 }
 .header-10 .navbar .nav > li > a:hover,
@@ -4230,7 +4233,8 @@ body .colapsed-menu::-webkit-scrollbar {
   font-weight: normal;
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  letter-spacing: 8px;
+  font-weight: 800;
+  letter-spacing: 2px;
 }
 .header-14-sub .header-14 [class*="fui-"] {
   margin-bottom: 30px;
@@ -4653,7 +4657,7 @@ body .colapsed-menu::-webkit-scrollbar {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   width: auto;
   height: auto;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 .header-16 .navbar .navbar-toggle:hover,
 .header-16 .navbar .navbar-toggle:focus,
@@ -4832,7 +4836,7 @@ body .colapsed-menu::-webkit-scrollbar {
   color: #7f8c8d;
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 .header-16-sub .scroll-btn > *:hover,
 .header-16-sub .scroll-btn > *:focus,
@@ -4925,7 +4929,7 @@ body .colapsed-menu::-webkit-scrollbar {
   font-weight: normal;
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 .header-16-sub .pt-control-prev {
   float: left;
@@ -5877,13 +5881,14 @@ body .colapsed-menu::-webkit-scrollbar {
   font-weight: normal;
   color: #2c3e50;
   font-weight: 300;
+  line-height: 1.34;
 }
 .header-19-sub .btn {
   padding-left: 18px;
   padding-right: 18px;
 }
 .header-19-sub .btns {
-  margin-top: 50px;
+  margin-top: 55px;
 }
 .header-19-sub .btns > * {
   display: inline-block;
@@ -6054,6 +6059,11 @@ body .colapsed-menu::-webkit-scrollbar {
   letter-spacing: -1px;
   margin-bottom: 30px;
 }
+@media (min-width: 992px) {
+  .header-20-sub h3 {
+    margin-top: 80px;
+  }
+}
 .header-20-sub p {
   font-size: 18px;
   font-weight: normal;
@@ -6149,7 +6159,7 @@ body .colapsed-menu::-webkit-scrollbar {
   }
 }
 .header-20-sub .videos {
-  margin-top: 150px;
+  margin-top: 230px;
 }
 @media (max-width: 768px) {
   .header-20-sub .videos {
@@ -6338,11 +6348,11 @@ body .colapsed-menu::-webkit-scrollbar {
 }
 .header-21 .navbar .nav > li > a {
   padding: 30px 10px 0;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: normal;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 800;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: #bdc3c7;
 }
 .header-21 .navbar .nav > li > a:hover,

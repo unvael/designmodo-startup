@@ -898,11 +898,11 @@ section * {
 }
 .header-21 .navbar .nav > li > a {
   padding: 30px 10px 0;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: normal;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 800;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: #bdc3c7;
 }
 .header-21 .navbar .nav > li > a:hover,

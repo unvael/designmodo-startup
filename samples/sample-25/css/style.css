@@ -1595,7 +1595,7 @@ section * {
 }
 .mask {
   z-index: 1000;
-  background-color: #000000;
+  background-color: #000;
   opacity: 90;
   filter: alpha(opacity=9000);
   opacity: 0.9;

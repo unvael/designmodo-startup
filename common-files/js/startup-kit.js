@@ -145,7 +145,7 @@ startupKit.uiKitHeader._inFixedMode = function(headerClass) {
 
             antiflicker.css({
                 'background-color': $('.pt-page-current', s1).css('background-color'),
-                'opacity': 1 - opacityAntiflicker
+                'opacity': 1.0001 - opacityAntiflicker
             });
             
             var headerZoom = -(headerAniStartPos - $(window).scrollTop()) / (headerAniStopPos - headerAniStartPos);
@@ -586,9 +586,11 @@ var isMobile = {
         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
     }
 };
+
   if($("div").is("#bgVideo")){
     $(function(){
-        if(! isMobile.any()) {
+    if(!isMobile.any()) {
+        if($('#bgVideo').length) {
             var videobackground = new $.backgroundVideo($('#bgVideo'), {
                 "align" : "centerXY",
                 "path" : "video/",
@@ -597,9 +599,10 @@ var isMobile = {
                 "filename" : "preview",
                 "types" : ["mp4", "ogg", "webm"]
             });
-        }
-    });
+     }
 }
+
+
 
 
 /**

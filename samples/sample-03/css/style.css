@@ -1024,7 +1024,6 @@ section * {
 .header-11-sub .signup-form form input[type="text"]:-moz-placeholder,
 .header-11-sub .signup-form form input[type="password"]:-moz-placeholder {
   color: #2c3e50;
-  opacity: 1;
 }
 .header-11-sub .signup-form form input[type="text"]::-moz-placeholder,
 .header-11-sub .signup-form form input[type="password"]::-moz-placeholder {
@@ -1264,7 +1263,6 @@ section * {
 .content-13.subscribe-form input[type="text"]:-moz-placeholder,
 .content-13.subscribe-form input[type="email"]:-moz-placeholder {
   color: #ffffff;
-  opacity: 1;
 }
 .content-13.subscribe-form input[type="text"]::-moz-placeholder,
 .content-13.subscribe-form input[type="email"]::-moz-placeholder {

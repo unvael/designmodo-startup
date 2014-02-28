@@ -586,19 +586,21 @@ var isMobile = {
         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
     }
 };
-$(function(){
+  if($("div").is("#bgVideo")){
+    $(function(){
+        if(! isMobile.any()) {
+            var videobackground = new $.backgroundVideo($('#bgVideo'), {
+                "align" : "centerXY",
+                "path" : "video/",
+                "width": 1280,
+                "height": 720,
+                "filename" : "preview",
+                "types" : ["mp4", "ogg", "webm"]
+            });
+        }
+    });
+}
 
-    if(! isMobile.any()) {
-        var videobackground = new $.backgroundVideo($('#bgVideo'), {
-            "align" : "centerXY",
-            "path" : "video/",
-            "width": 1280,
-            "height": 720,
-            "filename" : "preview",
-            "types" : ["mp4", "ogg", "webm"]
-        });
-    }
-});
 
 /**
  *  Contents 

@@ -1245,7 +1245,7 @@ body .colapsed-menu::-webkit-scrollbar {
 }
 @media (max-width: 480px) {
   .header-1-sub .page-transitions .caption {
-    bottom: 83px;
+    bottom: 73px;
   }
 }
 .header-1-sub .page-transitions .controls > * {

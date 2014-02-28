@@ -1617,6 +1617,7 @@ section * {
 }
 .content-23 #bgVideo {
   overflow: hidden;
+  background-image: url('../../../common-files/img/header/img-video.jpg');
 }
 .content-23 #bgVideo > video {
   position: absolute !important;

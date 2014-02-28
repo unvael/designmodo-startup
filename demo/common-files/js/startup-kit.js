@@ -539,6 +539,37 @@ startupKit.uiKitHeader.header22 = function() {
 /* Header 23*/
 startupKit.uiKitHeader.header23 = function() {
     startupKit.uiKitHeader._inFixedMode('.header-23');
+    var videobackground = new $.backgroundVideo($('#bgVideo'), {
+        "align" : "centerXY",
+        "path" : "video/",
+        "width": 1280,
+        "height": 720,
+        "filename" : "preview",
+        "types" : ["mp4", "ogg", "webm"]
+    });
+    var iframe = $('#pPlayer')[0];
+    var player = $f(iframe);
+    player.addEvent('ready', function() {});
+
+    function addEvent(element, eventName, callback) {
+        if (element.addEventListener) {
+            element.addEventListener(eventName, callback, false);
+        } else {
+            element.attachEvent(eventName, callback, false);
+        }
+    }
+    $('#play').click(function(evt) {
+        evt.preventDefault();
+        $('.mask').fadeIn('slow');
+        $('.popup-video').fadeIn('slow');
+        player.api('play')
+        $('.mask').click(function() {
+            player.api('pause');
+            $('.popup-video').fadeOut('slow');
+            $('.mask').fadeOut('slow');
+
+        });
+    });
 };
 
 
@@ -673,7 +704,7 @@ startupKit.uiKitContent.content18 = function() {
         });
     });
 
-    $('#c-18_myCarousel').bind('slid', function() {
+    $('#c-18_myCarousel').bind('slid.bs.carousel', function() {
         $('.carousel-control', this).removeClass('disabled');
         if ($('.item.active', this).index() == 0) {
             $('.carousel-control.left', this).addClass('disabled');

@@ -539,14 +539,8 @@ startupKit.uiKitHeader.header22 = function() {
 /* Header 23*/
 startupKit.uiKitHeader.header23 = function() {
     startupKit.uiKitHeader._inFixedMode('.header-23');
-    var videobackground = new $.backgroundVideo($('#bgVideo'), {
-        "align" : "centerXY",
-        "path" : "video/",
-        "width": 1280,
-        "height": 720,
-        "filename" : "preview",
-        "types" : ["mp4", "ogg", "webm"]
-    });
+
+
     var iframe = $('#pPlayer')[0];
     var player = $f(iframe);
     player.addEvent('ready', function() {});
@@ -571,7 +565,40 @@ startupKit.uiKitHeader.header23 = function() {
         });
     });
 };
+/* Video background  */
+var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};
+$(function(){
 
+    if(! isMobile.any()) {
+        var videobackground = new $.backgroundVideo($('#bgVideo'), {
+            "align" : "centerXY",
+            "path" : "video/",
+            "width": 1280,
+            "height": 720,
+            "filename" : "preview",
+            "types" : ["mp4", "ogg", "webm"]
+        });
+    }
+});
 
 /**
  *  Contents 

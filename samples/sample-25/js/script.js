@@ -34,10 +34,10 @@ $(document).ready(function() {
     });
 
 
-    if (isAppleDevice() == false) {
-        $('.content-23').each(function () {
-            $(this).css("background-attachment", "fixed")
-            $(this).parallax('50%', 0.2, true);
-        });
-    }
+    $('.content-23').each(function() {
+        if(! isMobile.any())
+            $(this).parallax('50%', 0.3, true);
+        else
+            $(this).css('background-attachment', 'initial');
+    });
 });

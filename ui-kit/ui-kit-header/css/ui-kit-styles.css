@@ -1245,7 +1245,7 @@ body .colapsed-menu::-webkit-scrollbar {
 }
 @media (max-width: 480px) {
   .header-1-sub .page-transitions .caption {
-    bottom: 83px;
+    bottom: 73px;
   }
 }
 .header-1-sub .page-transitions .controls > * {
@@ -3579,7 +3579,7 @@ body .colapsed-menu::-webkit-scrollbar {
   .header-11-sub h3 {
     font-size: 26px;
     font-weight: normal;
-    color: #ffffff;
+    color: #2c3e50;
   }
   .header-11-sub .player {
     margin: 40px 0 45px;

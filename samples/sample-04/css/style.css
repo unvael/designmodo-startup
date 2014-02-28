@@ -1615,6 +1615,9 @@ section * {
   overflow: hidden;
   background-color: #1B1F23;
 }
+.content-23 #bgVideo {
+  overflow: hidden;
+}
 .content-23 #bgVideo > video {
   position: absolute !important;
   top: 0 !important;

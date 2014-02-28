@@ -1123,7 +1123,6 @@ section * {
 }
 .header-6-sub .signup-form form .form-control:-moz-placeholder {
   color: #34495e;
-  opacity: 1;
 }
 .header-6-sub .signup-form form .form-control::-moz-placeholder {
   color: #34495e;
@@ -1418,7 +1417,6 @@ section * {
 }
 .footer-10 .subscribe-form input[type="text"]:-moz-placeholder {
   color: #ffffff;
-  opacity: 1;
 }
 .footer-10 .subscribe-form input[type="text"]::-moz-placeholder {
   color: #ffffff;

@@ -116,7 +116,7 @@ startupKit.uiKitHeader._inFixedMode = function(headerClass) {
             var antiflickerColor='#fff';
         }
 
-        var antiflicker = $('<div class="' + headerClass.slice(1) + '-startup-antiflicker header-antiflicker" style="opacity: 0.0009; position: fixed; z-index: 2; left: 0; top: 0; right: 0; width: 100%; height: 70px; background-color: '+antiflickerColor+';" />');
+        var antiflicker = $('<div class="' + headerClass.slice(1) + '-startup-antiflicker header-antiflicker" style="opacity: 0; position: fixed; z-index: 2; left: 0; top: 0; width: 100%; height: 70px; background: '+antiflickerColor+';" />');
         $('body').append(antiflicker);
         var s1FadedEls = $('.background, .caption, .controls > *', s1),
             header = $(headerClass);
@@ -586,20 +586,24 @@ var isMobile = {
         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
     }
 };
-$(function(){
-    if(!isMobile.any()) {
-        if($('#bgVideo').length) {
-            var videobackground = new $.backgroundVideo($('#bgVideo'), {
-                "align" : "centerXY",
-                "path" : "video/",
-                "width": 1280,
-                "height": 720,
-                "filename" : "preview",
-                "types" : ["mp4", "ogg", "webm"]
-            });
-        } 
-    }
-});
+
+  if($("div").is("#bgVideo")){
+      $(function(){
+          if(!isMobile.any()) {
+              var videobackground = new $.backgroundVideo($('#bgVideo'), {
+                  "align" : "centerXY",
+                  "path" : "video/",
+                  "width": 1280,
+                  "height": 720,
+                  "filename" : "preview",
+                  "types" : ["mp4", "ogg", "webm"]
+              });
+          }
+      });
+  }
+
+
+
 
 /**
  *  Contents 

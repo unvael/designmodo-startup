@@ -898,6 +898,7 @@ section * {
 }
 .header-5 .navbar .navbar-search input[type="text"]:-moz-placeholder {
   color: #ffffff;
+  opacity: 1;
 }
 .header-5 .navbar .navbar-search input[type="text"]::-moz-placeholder {
   color: #ffffff;

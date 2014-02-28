@@ -588,19 +588,19 @@ var isMobile = {
 };
 
   if($("div").is("#bgVideo")){
-    $(function(){
-    if(!isMobile.any()) {
-        if($('#bgVideo').length) {
-            var videobackground = new $.backgroundVideo($('#bgVideo'), {
-                "align" : "centerXY",
-                "path" : "video/",
-                "width": 1280,
-                "height": 720,
-                "filename" : "preview",
-                "types" : ["mp4", "ogg", "webm"]
-            });
-     }
-}
+      $(function(){
+          if(!isMobile.any()) {
+              var videobackground = new $.backgroundVideo($('#bgVideo'), {
+                  "align" : "centerXY",
+                  "path" : "video/",
+                  "width": 1280,
+                  "height": 720,
+                  "filename" : "preview",
+                  "types" : ["mp4", "ogg", "webm"]
+              });
+          }
+      });
+  }
 
 
 

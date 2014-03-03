@@ -116,7 +116,7 @@ startupKit.uiKitHeader._inFixedMode = function(headerClass) {
             var antiflickerColor='#fff';
         }
 
-        var antiflicker = $('<div class="' + headerClass.slice(1) + '-startup-antiflicker header-antiflicker" style="opacity: 0; position: fixed; z-index: 2; left: 0; top: 0; width: 100%; height: 70px; background: '+antiflickerColor+';" />');
+        var antiflicker = $('<div class="' + headerClass.slice(1) + '-startup-antiflicker header-antiflicker" style="opacity: 0.0001; position: fixed; z-index: 2; left: 0; top: 0; width: 100%; height: 70px; background-color: '+antiflickerColor+';" />');
         $('body').append(antiflicker);
         var s1FadedEls = $('.background, .caption, .controls > *', s1),
             header = $(headerClass);

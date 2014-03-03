@@ -87,12 +87,14 @@
                 <p>
                     Second step. In your main '.less' file add the following lines of code:
                 </p>
-                <pre class="language-scss"><code class="language-scss">@import '@{startup-basePath}flat-ui/less/variables.less';
-                    @import '@{startup-basePath}flat-ui/less/mixins.less';
-                    @import '@{startup-basePath}common-files/less/mixins.less';
-                    @import '@{startup-basePath}common-files/less/common.less';
-                    @import '@{startup-basePath}common-files/less/navbar.less';
-                    @import '@{startup-basePath}common-files/less/helper.less';</code></pre>
+                <pre class="language-scss"><code class="language-scss">
+@import '@{startup-basePath}flat-ui/less/variables.less';
+@import '@{startup-basePath}/common-files/less/mixins.less';
+@import '@{startup-basePath}/common-files/less/common.less';
+@import '@{startup-basePath}/common-files/less/navbar.less';
+@import '@{startup-basePath}/common-files/less/helper.less';</code></pre>
+
+
                 <p>
                     The last step is <a class="inner-link" href="#lastStep">the same as with the simple version.</a>
                 </p>

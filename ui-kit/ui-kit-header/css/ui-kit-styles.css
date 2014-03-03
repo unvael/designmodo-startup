@@ -5574,6 +5574,7 @@ body .colapsed-menu::-webkit-scrollbar {
 .header-18 .header-18-sub .no-js .pt-page {
   visibility: visible;
   z-index: 1;
+  overflow-x: hidden;
 }
 .header-18 .header-18-sub .pt-page-ontop {
   z-index: 999;

@@ -107,5 +107,8 @@ function fadedEls(el, shift) {
         $('html').addClass('loaded');
         $(window).resize().scroll();
     });
+
+    startupKit.attachBgVideo();
+
 })(jQuery);
 

@@ -143,15 +143,12 @@
               <p>
                 Second step. In your main '.less' file add the following lines of code:
               </p>
-              <pre class="language-scss"><code class="language-scss">@import '(way to the startup folder)/flat-ui/less/config.less';
+              <pre class="language-scss"><code class="language-scss">
 @import '@{startup-basePath}flat-ui/less/variables.less';
-/*only fo flat-ui free*/
-@import '(way to the startup folder)/common-files/less/flat-ui-free2.0.0-fix.less';
-/* end only for flat-ui free*/
-@import '(way to the startup folder)/common-files/less/mixins.less';
-@import '(way to the startup folder)/common-files/less/common.less';
-@import '(way to the startup folder)/common-files/less/navbar.less';
-@import '(way to the startup folder)/common-files/less/helper.less';</code></pre>
+@import '@{startup-basePath}/common-files/less/mixins.less';
+@import '@{startup-basePath}/common-files/less/common.less';
+@import '@{startup-basePath}/common-files/less/navbar.less';
+@import '@{startup-basePath}/common-files/less/helper.less';</code></pre>
               <p>
                 The last step is <a class="inner-link" href="#lastStep">the same as with the simple version.</a>
               </p>
@@ -191,6 +188,8 @@
     <script src="../../common-files/js/jquery.svg.js"></script>
     <script src="../../common-files/js/jquery.svganim.js"></script>
     <script src="../../common-files/js/startup-kit.js"></script>
+    <script src="../../common-files/js/jquery.backgroundvideo.min.js"></script>
+    <script src="../../common-files/js/froogaloop.min.js"></script>
     <script src="../js/prism/prism.js"></script>
     <script src="../js/script.js"></script>
   </body>

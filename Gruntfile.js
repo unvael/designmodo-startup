@@ -84,15 +84,15 @@ module.exports = function(grunt) {
     		src: [
     			'build-release/manual/templates', 
     			'build-release/manual/for-tpl',
-                        'build-release/manual/read/less',
+          'build-release/manual/read/less',
     			'build-release/ui-kit/ui-kit-*/for-tpl',
     			'build-release/ui-kit/ui-kit-*/templates',
     			'build-demo/demo/manual/templates', 
     			'build-demo/demo/manual/for-tpl',
     			'build-demo/demo/ui-kit/ui-kit-*/for-tpl',
     			'build-demo/demo/ui-kit/ui-kit-*/templates',
-				'build-demo/demo/manual/read/less',
-				'build-demo/demo/ui-kit/ui-kit-demo'                       
+				  'build-demo/demo/manual/read/less',
+				  'build-demo/demo/ui-kit/ui-kit-demo'                       
     		]
     	}
     },

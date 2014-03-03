@@ -10,26 +10,30 @@
     padding-top:0;
     padding-bottom:0;
     height:90px;
+    .header-background {
+        background: #fff;
+    }
     .navbar {
         position: absolute;
         z-index: 2;
         top: 0;
         margin: 0;
         font-family: @font-family-demo;
+        &.navbar-fixed-top {
+            top: 0 !important;
+        }
         .navbar-form {
-            padding: 30px 0 19px 30px;
+            padding: 30px 0 19px 50px;
         }
         .btn {
-            padding-left: 18px;
-            padding-right: 18px;
-        }
-        .btn.btn-primary {
-            .btn-background(@btn-primary-active-bg);
+            padding-left: 30px;
+            padding-right: 30px;
+            font-weight: 800;
         }
         .brand {
-            padding-top: 30px;
+            padding-top: 30px !important;
             .font(25px, @base);
-            font-weight: 600;
+            font-weight: 800;
             img:first-child {
                 float: left;
                 margin: -10px 15px 0 0;
@@ -47,8 +51,7 @@
                 > a {
                     padding: 41px 0 27px;
                     .font(14px);
-                    font-weight: 500;
-                    letter-spacing: 1px;
+                    font-weight: 800;
                     .a-color(inherit, @link-color);
                 }
             }
@@ -65,35 +68,42 @@
     color: @silver;
     position: relative;
     h3 {
-        .font(33px, white);
+        .font(33px, @text-color-heading);
         margin-bottom:15px;
         font-family: @font-family-demo;
         font-weight:300;
     }
     p {
-        .font(16px, @silver);
+        .font(16px, #7f8c8d);
         font-family: @font-family-demo;
     }
     .additional-links {
-        .opacity(50);
-        .font(12px, @silver);
+        .opacity(80);
+        .font(12px, #1b1f23);
         a {
             text-decoration: underline;
-            .a-color(@silver);
+            .a-color(#1b1f23);
+        }
+    }
+    .background {
+        background-image: url("@{startup-basePath}common-files/img/Brazil_002.png");
+        .opacity(100);
+        @media (max-width: 767px) {
+            background: #f6f6f2;
         }
     }
     @media (max-width: 767px) {
         padding-top:68px;
         padding-bottom:70px;
         .player {
-            margin: 40px 0 45px;
+            margin: 40px 0 25px;
         }
     }
     @media (max-width: 480px) {
         padding-top:68px;
         padding-bottom:70px;
         h3 {
-            .font(26px, white);
+            .font(26px, @text-color-heading);
         }
         .player {
             margin: 40px 0 45px;
@@ -131,6 +141,8 @@
                     margin: 9px 0;
                 }
                 &.btn-info {
+                    font-size: 17px;
+                    font-weight: 500;
                     &:hover, &:focus {
                         background-color: @btn-primary-active-bg;
                     }
@@ -139,14 +151,18 @@
                     }
                 }
             }
-            input[type="text"], input[type="password"] {
-                border-color: white!important;
+            input[type="text"],
+            input[type="password"] {
+                border-color: white !important;
+                color: #2c3e50;
+                font-weight: 500;
+                .placeholder(#2c3e50);
                 @media (max-width: 767px) {
                     height: 41px;
                 }
             }
         }
-        @media (max-width: 480px) {
+        @media (max-width: 767px) {
             form {
                 margin-top: 25px;
             }

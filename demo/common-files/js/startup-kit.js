@@ -116,7 +116,7 @@ startupKit.uiKitHeader._inFixedMode = function(headerClass) {
             var antiflickerColor='#fff';
         }
 
-        var antiflicker = $('<div class="' + headerClass.slice(1) + '-startup-antiflicker header-antiflicker" style="opacity: 0; position: fixed; z-index: 2; left: 0; top: 0; width: 100%; height: 70px; background: '+antiflickerColor+';" />');
+        var antiflicker = $('<div class="' + headerClass.slice(1) + '-startup-antiflicker header-antiflicker" style="opacity: 0.0001; position: fixed; z-index: 2; left: 0; top: 0; width: 100%; height: 70px; background-color: '+antiflickerColor+';" />');
         $('body').append(antiflicker);
         var s1FadedEls = $('.background, .caption, .controls > *', s1),
             header = $(headerClass);
@@ -145,7 +145,7 @@ startupKit.uiKitHeader._inFixedMode = function(headerClass) {
 
             antiflicker.css({
                 'background-color': $('.pt-page-current', s1).css('background-color'),
-                'opacity': 1 - opacityAntiflicker
+                'opacity': 1.0001 - opacityAntiflicker
             });
             
             var headerZoom = -(headerAniStartPos - $(window).scrollTop()) / (headerAniStopPos - headerAniStartPos);
@@ -539,14 +539,8 @@ startupKit.uiKitHeader.header22 = function() {
 /* Header 23*/
 startupKit.uiKitHeader.header23 = function() {
     startupKit.uiKitHeader._inFixedMode('.header-23');
-    var videobackground = new $.backgroundVideo($('#bgVideo'), {
-        "align" : "centerXY",
-        "path" : "video/",
-        "width": 1280,
-        "height": 720,
-        "filename" : "preview",
-        "types" : ["mp4", "ogg", "webm"]
-    });
+
+
     var iframe = $('#pPlayer')[0];
     var player = $f(iframe);
     player.addEvent('ready', function() {});
@@ -571,6 +565,44 @@ startupKit.uiKitHeader.header23 = function() {
         });
     });
 };
+/* Video background  */
+var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};
+
+  if($("div").is("#bgVideo")){
+      $(function(){
+          if(!isMobile.any()) {
+              var videobackground = new $.backgroundVideo($('#bgVideo'), {
+                  "align" : "centerXY",
+                  "path" : "video/",
+                  "width": 1280,
+                  "height": 720,
+                  "filename" : "preview",
+                  "types" : ["mp4", "ogg", "webm"]
+              });
+          }
+      });
+  }
+
+
 
 
 /**

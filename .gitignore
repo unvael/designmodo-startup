@@ -7,3 +7,17 @@ build-demo
 nbproject
 .idea
 .project
+
+manual/read/*.html
+manual/read/css
+samples/*/css
+ui-kit/*/css
+ui-kit/*/index.html
+ui-kit/*/index2.html
+
+demo/manual/read/*.html
+demo/manual/read/css
+demo/samples/*/css
+demo/ui-kit/*/css
+demo/ui-kit/*/index.html
+demo/ui-kit/*/index2.html

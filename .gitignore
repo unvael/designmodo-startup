@@ -11,6 +11,7 @@ nbproject
 manual/read/*.html
 manual/read/css
 samples/*/css
+samples/*/index.html
 ui-kit/*/css
 ui-kit/*/index.html
 ui-kit/*/index2.html
@@ -18,6 +19,7 @@ ui-kit/*/index2.html
 demo/manual/read/*.html
 demo/manual/read/css
 demo/samples/*/css
+demo/samples/*/index.html
 demo/ui-kit/*/css
 demo/ui-kit/*/index.html
 demo/ui-kit/*/index2.html

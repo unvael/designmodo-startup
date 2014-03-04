@@ -538,6 +538,8 @@ startupKit.uiKitHeader.header22 = function() {
 
 /* Header 23*/
 startupKit.uiKitHeader.header23 = function() {
+
+    startupKit.attachBgVideo();
     startupKit.uiKitHeader._inFixedMode('.header-23');
 
 
@@ -587,20 +589,19 @@ var isMobile = {
     }
 };
 
-  if($("div").is("#bgVideo")){
-      $(function(){
-          if(!isMobile.any()) {
-              var videobackground = new $.backgroundVideo($('#bgVideo'), {
-                  "align" : "centerXY",
-                  "path" : "video/",
-                  "width": 1280,
-                  "height": 720,
-                  "filename" : "preview",
-                  "types" : ["mp4", "ogg", "webm"]
-              });
-          }
-      });
-  }
+startupKit.attachBgVideo = function() {
+    var videBgDiv = $('#bgVideo');
+    if (!isMobile.any() && videBgDiv) {
+        var videobackground = new $.backgroundVideo(videBgDiv, {
+            "align" : "centerXY",
+            "path" : "video/",
+            "width": 1280,
+            "height": 720,
+            "filename" : "preview",
+            "types" : ["mp4", "ogg", "webm"]
+        });
+    }
+}
 
 
 

@@ -39,7 +39,7 @@ function fadedEls(el, shift) {
 
         // Parallax
 
-        $('.header-10-sub, .content-23').each(function() {
+        $('.header-10-sub, .content-23.custom-bg').each(function() {
             if(! isMobile.any())
             $(this).parallax('50%', 0.3, true);
             else

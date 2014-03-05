@@ -43,8 +43,12 @@ function fadedEls(el, shift) {
         
 
         // Parallax
-        $('.header-13-sub .background').parallax('50%', -0.3, true);
-        $('.content-23.first').parallax('50%', 0.3, true);
+        $('.header-13-sub, .content-23.first').each(function() {
+            if(! isMobile.any())
+                $(this).parallax('50%', 0.3, true);
+            else
+                $(this).css('background-attachment', 'initial');
+        });
 
         // Faded elements
         $('.features [class*="box-"], .content-9 .col-sm-5 img').each(function() {

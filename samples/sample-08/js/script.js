@@ -40,7 +40,7 @@ function fadedEls(el, shift) {
                 
                 if($(window).width()<= 768){
                     console.log($(window).width());
-                    $('section.content-17').css('height', (sH + 'px'));  
+                    $('section.content-17').css('min-height', (sH + 'px'));
                 } else{
                     $('section.content-17').css('height', 'auto');
                 }

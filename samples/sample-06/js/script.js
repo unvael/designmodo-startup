@@ -59,9 +59,11 @@ function fadedEls(el, shift) {
         fadedEls($('.content-9 .col-sm-5 img'), 'h/2');
 
         // Parallax
-       
-        $('.tpl-6-section-1').each(function(){
-            $(this).parallax('50%', 0.3, true);
+        $('.tpl-6-section-1').each(function() {
+            if(! isMobile.any())
+                $(this).parallax('50%', 0.3, true);
+            else
+                $(this).css('background-attachment', 'initial');
         });
 
         // responsive

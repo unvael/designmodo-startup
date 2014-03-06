@@ -52,7 +52,12 @@ function fadedEls(el, shift) {
         fadedEls($('.content-3 .features'), 75);
 
         // Parallax
-        $('.header-4 .background').parallax('50%', -0.3, true);
+        $('.header-4 .background').each(function() {
+            if(! isMobile.any())
+                $(this).parallax('50%', 0.3, true);
+            else
+                $(this).css('background-attachment', 'initial');
+        });
 
         // responsive
         $(window).resize(function() {

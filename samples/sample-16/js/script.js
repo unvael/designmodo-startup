@@ -56,10 +56,6 @@ $(function() {
   });
 
 
-  // Parallax
- // $('.header-9-sub, .header-9-sub .background').parallax('50%', 0.3, true);
-
-
   // Faded elements
   fadedEls($('.content-features .col-sm-7.col-sm-offset-3 img'), $('.content-features .col-sm-7.col-sm-offset-3 img').outerHeight()/3*2);
   fadedEls($('.content-features .box [class*="fui-"]'), 'h');

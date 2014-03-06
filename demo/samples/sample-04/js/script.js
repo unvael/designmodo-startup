@@ -30,14 +30,6 @@ function fadedEls(el, shift) {
 
 (function($) {
     $(function() {
-        var videobackground = new $.backgroundVideo($('#bgVideo'), {
-            "align" : "centerXY",
-            "path" : "video/",
-            "width": 1280,
-            "height": 720,
-            "filename" : "preview",
-            "types" : ["mp4", "ogg", "webm"]
-        });
         // Sections height & scrolling
         $(window).resize(function() {
             var sH = $(window).height();
@@ -46,8 +38,12 @@ function fadedEls(el, shift) {
         });        
 
         // Parallax
-        $('.header-10-sub, .content-23').each(function() {
+
+        $('.header-10-sub, .content-23.custom-bg').each(function() {
+            if(! isMobile.any())
             $(this).parallax('50%', 0.3, true);
+            else
+            $(this).css('background-attachment', 'initial');
         });
 
         /* For the section content-8 */
@@ -111,5 +107,8 @@ function fadedEls(el, shift) {
         $('html').addClass('loaded');
         $(window).resize().scroll();
     });
+
+    startupKit.attachBgVideo();
+
 })(jQuery);
 

@@ -79,5 +79,29 @@
             $(this).toggleClass('opened');
         });
 
+        var manualArrHref = window.location.href.split('/'),
+            targetHref = manualArrHref[manualArrHref.length -1].toLowerCase(),
+            overviewLink = $('#header-dockbar a[href="index.html"], body .colapsed-menu a[href="index.html"]'),
+            item  = $('#header-dockbar a[href="' + targetHref  + '"], body .colapsed-menu a[href="' + targetHref  + '"]');
+
+        if(item.length){
+            item.addClass("active");
+        }
+        switch (targetHref) {
+            case 'index.html':
+            case 'headers.html':
+            case 'contents.html':
+            case 'contents2.html':
+            case 'footers.html':
+            case 'projects.html':
+            case 'prices.html':
+            case 'blogs.html':
+            case 'crews.html':
+            case 'contacts.html':
+                $('.sub-menu').addClass('show-sub-menu');
+                overviewLink.addClass('active');
+                break;
+            default:
+        }
     });
 })(jQuery);

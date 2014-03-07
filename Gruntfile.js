@@ -186,6 +186,20 @@ module.exports = function(grunt) {
                         'manual/templates/footers.html',
                         'manual/templates/headers.html',
                         'manual/templates/prices.html',
+
+                        'manual/for-tpl/contents/c7-man.html',
+                        'manual/for-tpl/contents/c8-man.html',
+                        'manual/for-tpl/contents/c11-man.html',
+                        'manual/for-tpl/contents/c13-man.html',
+                        'manual/for-tpl/contents/c23-man.html',
+
+                        'manual/for-tpl/footers/f2-man.html',
+                        'manual/for-tpl/footers/f3-man.html',
+
+                        'manual/for-tpl/headers/h10-man.html',
+                        'manual/for-tpl/headers/h11-man.html',
+
+                        'manual/for-tpl/prices/ps1-man.html'
                     ],
                     dest: 'demo/'
                 }]
@@ -208,13 +222,14 @@ module.exports = function(grunt) {
                     'demo/ui-kit/**/less/footer*',
                     'demo/manual/img',
                     'demo/manual/js',
-                    'demo/manual/for-tpl/faq.html',
-                    'demo/manual/for-tpl/flat-ui.html',
-                    'demo/manual/for-tpl/hti.html',
-                    'demo/manual/for-tpl/main-page.html',
-                    'demo/manual/for-tpl/man-footer.html',
-                    'demo/manual/for-tpl/man-header-inc.html',
-                    'demo/manual/for-tpl/tutorials.html',
+                    'demo/manual/for-tpl/**/*.html',
+                    '!demo/manual/for-tpl/contents.html',
+                    '!demo/manual/for-tpl/contents2.html',
+                    '!demo/manual/for-tpl/footers.html',
+                    '!demo/manual/for-tpl/headers.html',
+                    '!demo/manual/for-tpl/prices.html',
+                    '!demo/manual/for-tpl/man-header-menu.html',
+                    '!demo/manual/for-tpl/**/sample-*',
                     'demo/manual/read/video/*',
                     'demo/manual/read/less/*',
                     '!demo/manual/read/less/manual-ui-kit-blocks.less',
@@ -277,5 +292,5 @@ module.exports = function(grunt) {
     grunt.registerTask('build-kit', ['includes:kit', 'prettify:after-build-kit']);
     grunt.registerTask('build-demo', ['clean:demo', 'copy:demo']);
     grunt.registerTask('release', ['build-demo', 'less', 'build-kit', 'build-manual', 'lineending', 'clean:prerelease', 'copy:release', 'clean:release']);
-    //grunt.registerTask('release', ['build-demo']);
+    grunt.registerTask('demo', ['build-demo']);
 };

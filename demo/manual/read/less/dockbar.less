@@ -55,6 +55,8 @@
     display: block;
     overflow: hidden;
     background-color: #1b1f23;
+    position: relative;
+    z-index: 2;
     margin: 0;
     .box-sizing(border-box);
     width: 100%;
@@ -130,15 +132,27 @@
 
   .sub-menu {
 
-    @media (max-width: 979px) {
-      display: none;
-    }
     background-color: #ebebeb;
     margin: 0;
     padding: 0;
     width: 100%;
     box-sizing: border-box;
-
+    position: absolute;
+    bottom: 0;
+    .opacity(0);
+    left: 0;
+    right: 0;
+    -webkit-transition: opacity 0.333s, bottom 0.25s;
+    -moz-transition: opacity 0.333s, bottom 0.25s;
+    -o-transition: opacity 0.333s, bottom 0.25s;
+    transition: opacity 0.333s, bottom 0.25s;
+    &.show-sub-menu {
+      .opacity(100);
+      bottom: -45px;
+    }
+    @media (max-width: 979px) {
+        display: none !important;
+    }
     > div {
       height: 45px;
       > div {
@@ -186,5 +200,4 @@
       }
     }
   }
-
 }

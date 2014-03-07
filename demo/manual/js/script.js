@@ -87,6 +87,9 @@
         if(item.length){
             item.addClass("active");
         }
+        if(!targetHref) {
+            highlightLink();
+        }
         switch (targetHref) {
             case 'index.html':
             case 'headers.html':
@@ -98,10 +101,13 @@
             case 'blogs.html':
             case 'crews.html':
             case 'contacts.html':
-                $('.sub-menu').addClass('show-sub-menu');
-                overviewLink.addClass('active');
+                highlightLink();
                 break;
-            default:
+        }
+
+        function highlightLink() {
+            $('.sub-menu').addClass('show-sub-menu');
+            overviewLink.addClass('active');
         }
     });
 })(jQuery);

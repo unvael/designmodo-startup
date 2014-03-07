@@ -140,12 +140,15 @@ module.exports = function(grunt) {
                     dest: 'demo/'
                 }, {
                     src: [
+                        // Files list that need to be copied from /samples to /demo/samples
                         'samples/sample-03/**',
-                        'samples/sample-04/**'
+                        'samples/sample-04/**',
+                        'samples/template/*.html',
                     ],
                     dest: 'demo/'
                 }, {
                     src: [
+                        // List of html and less files that need to be copied from /ui-kit to /demo/ui-kit
                         'ui-kit/**/{for-tpl,less}/content-7.*',
                         'ui-kit/**/{for-tpl,less}/content-8.*',
                         'ui-kit/**/{for-tpl,less}/content-11.*',
@@ -156,7 +159,33 @@ module.exports = function(grunt) {
                         'ui-kit/**/{for-tpl,less}/header-10.*',
                         'ui-kit/**/{for-tpl,less}/header-11.*',
                         'ui-kit/**/{for-tpl,less}/price-1.*',
-                        'ui-kit/**/{for-tpl,less}/price-common.*',
+                        'ui-kit/**/{for-tpl,less}/price-common.*'
+                    ],
+                    dest: 'demo/'
+                }, {
+                    src: [
+                        // Files list that need to be copied from /manual to /demo/manual
+                        'manual/img/**',
+                        'manual/js/**',
+                        'manual/{for-tpl,templates}/faq.html',
+                        'manual/{for-tpl,templates}/flat-ui.html',
+                        'manual/{for-tpl,templates}/tutorials.html',
+                        'manual/for-tpl/hti.html',
+                        'manual/for-tpl/main-page.html',
+                        'manual/for-tpl/man-footer.html',
+                        'manual/for-tpl/man-header-inc.html',
+                        'manual/templates/how_to_install.html',
+                        'manual/templates/index.html',
+                        'manual/templates/startup-css-micro.html',
+                        'manual/read/video/**',
+                        'manual/read/less/**',
+                        '!manual/read/less/manual-ui-kit-blocks.less',
+
+                        'manual/templates/contents.html',
+                        'manual/templates/contents2.html',
+                        'manual/templates/footers.html',
+                        'manual/templates/headers.html',
+                        'manual/templates/prices.html',
                     ],
                     dest: 'demo/'
                 }]
@@ -171,11 +200,25 @@ module.exports = function(grunt) {
                     'demo/common-files',
                     'demo/flat-ui',
                     'demo/samples/sample*',
+                    'demo/samples/template/*.html',
                     'demo/ui-kit/**/for-tpl/',
                     'demo/ui-kit/**/less/content*',
                     'demo/ui-kit/**/less/header*',
                     'demo/ui-kit/**/less/price*',
-                    'demo/ui-kit/**/less/footer*'
+                    'demo/ui-kit/**/less/footer*',
+                    'demo/manual/img',
+                    'demo/manual/js',
+                    'demo/manual/for-tpl/faq.html',
+                    'demo/manual/for-tpl/flat-ui.html',
+                    'demo/manual/for-tpl/hti.html',
+                    'demo/manual/for-tpl/main-page.html',
+                    'demo/manual/for-tpl/man-footer.html',
+                    'demo/manual/for-tpl/man-header-inc.html',
+                    'demo/manual/for-tpl/tutorials.html',
+                    'demo/manual/read/video/*',
+                    'demo/manual/read/less/*',
+                    '!demo/manual/read/less/manual-ui-kit-blocks.less',
+                    'demo/manual/templates/*',
                 ]
             },
             release: {

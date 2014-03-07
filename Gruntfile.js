@@ -292,5 +292,4 @@ module.exports = function(grunt) {
     grunt.registerTask('build-kit', ['includes:kit', 'prettify:after-build-kit']);
     grunt.registerTask('build-demo', ['clean:demo', 'copy:demo']);
     grunt.registerTask('release', ['build-demo', 'less', 'build-kit', 'build-manual', 'lineending', 'clean:prerelease', 'copy:release', 'clean:release']);
-    grunt.registerTask('demo', ['build-demo']);
 };

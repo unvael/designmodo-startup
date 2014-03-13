@@ -462,6 +462,9 @@ startupKit.uiKitHeader.header17 = function() {
                     maxH = h;
             }).css('height', maxH + 'px');
             $(this).css('height', maxH + 'px');
+            if(!$(this).hasClass('calculated')){
+                $(this).addClass('calculated');
+            }
         });
     });
 
@@ -766,6 +769,9 @@ startupKit.uiKitContent.content21 = function() {
                     maxH = h;
             }).css('height', maxH + 'px');
             $('.features-bodies', this).css('height', maxH + 'px');
+            if(!$('.features-bodies', this).hasClass('calculated')){
+                $('.features-bodies', this).addClass('calculated');
+            }
         });
     });
 

@@ -218,7 +218,10 @@ footer{
 .bordered.bg-concrete {      border-color: @asbestos};
 
 // common styles
-
+html,
+body {
+  height: 100%;
+}
 body {
   overflow-x:hidden;
   color: @asbestos;
@@ -322,6 +325,7 @@ p {
   z-index: 2;
   background: #fff;
   overflow-x: hidden;
+  min-height: 100%;
 }
 .header-background {
   position: absolute;
@@ -421,5 +425,12 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 a, button{
   &:hover, &:focus, &:active{
     outline: none;
+  }
+}
+
+#bgVideo {
+  overflow: hidden;
+  > video {
+    position: absolute !important;
   }
 }

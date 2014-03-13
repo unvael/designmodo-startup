@@ -596,17 +596,16 @@ startupKit.attachBgVideo = function() {
     var videBgDiv = $('#bgVideo');
     if (!isMobile.any() && videBgDiv) {
         var videobackground = new $.backgroundVideo(videBgDiv, {
+            "holder": "#bgVideo",
             "align" : "centerXY",
             "path" : "video/",
-            "width": 1280,
-            "height": 720,
+            "width": 854,
+            "height": 480,
             "filename" : "preview",
             "types" : ["mp4", "ogg", "webm"]
         });
     }
 }
-
-
 
 
 /**

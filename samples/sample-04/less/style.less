@@ -44,10 +44,15 @@
     }
     background-color: #1B1F23;
     &.custom-bg {
-        background-image:url('../img/Italy_001.jpg');
-        background-position: 50% 50%;
-        background-repeat:no-repeat;
-        background-attachment: fixed;
+        > div > div{
+          background-image:url('../img/Italy_001.jpg');
+          background-position: 50% 50%;
+          background-repeat:no-repeat;
+          background-attachment: fixed;
+          -webkit-background-size:cover;
+          -moz-background-size:cover;
+          background-size: cover;
+        }
     }
 }
 .footer-3 {

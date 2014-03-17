@@ -22,14 +22,16 @@ $(document).ready(function() {
 
     $('#play').click(function(evt) {
         evt.preventDefault();
-        $('.mask').fadeIn('slow');
-        $('.popup-video').fadeIn('slow');
+        $('body').prepend($('.mask, .popup-video'));
+        $('header-23 .mask, header-23 .popup-video').detach();
+        $('.mask, .popup-video').fadeIn('slow');
         player.api('play')
         $('.mask').click(function() {
             player.api('pause');
-            $('.popup-video').fadeOut('slow');
-            $('.mask').fadeOut('slow');
-
+            $('.popup-video, .mask').fadeOut('slow', function() {
+                $('.header-23').prepend($('.mask, .popup-video'));
+                $('body > .mask, body > .popup-video').detach();
+            });
         });
     });
 

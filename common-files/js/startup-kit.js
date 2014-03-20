@@ -177,7 +177,7 @@ startupKit.uiKitHeader._inFixedMode = function(headerClass) {
                 'padding-top' : 30 + ((23 - 30) * headerZoom)
             });
             $('.navbar .brand img', header).css({
-                'width' : 25 + ((50 - 25) * headerZoom),
+                'width' : 'auto',
                 'height' : 25 + ((50 - 25) * headerZoom),
                 'margin-top' : -1 + ((-10 + 1) * headerZoom)
             });

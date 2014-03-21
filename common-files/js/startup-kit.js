@@ -1024,7 +1024,30 @@ startupKit.uiKitContent.content34 = function() {
 }
 
 /* Content 35*/
-startupKit.uiKitContent.content35 = function() {}
+startupKit.uiKitContent.content35 = function() {
+    $('.content-35-slider').bxSlider({
+        'controls': false,
+        'pagerCustom': '.content-35-customPager',
+        'easing': 'ease-in-out',
+        'adaptiveHeight': false,
+        'infiniteLoop': false
+    });
+    var pager = $('.content-35-customPager');
+    pager.find($('.menuicon')).on('mouseenter', function(){
+        $(this).parent().addClass('showmenu');
+    })
+    pager.on('mouseleave', function(){
+        $(this).removeClass('showmenu');
+    })
+    pager.find($('.menuicon')).on('click', function(){
+        var menu = $(this).parent();
+        if(menu.hasClass('showmenu')) {
+            menu.removeClass('showmenu');
+        } else {
+            menu.addClass('showmenu');
+        }
+    })
+}
 
 /* Content 36*/
 startupKit.uiKitContent.content36 = function() {}

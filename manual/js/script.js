@@ -60,7 +60,6 @@
                     var clickedElem = $(e.target);
                     var parentCE = $(e.target).parents();
                     if (!clickedElem.hasClass('read-man') && !clickedElem.hasClass('manual') && !parentCE.hasClass('manual')) {
-                        console.log(clickedElem, parentCE);
                         $('.back-button:visible').click();
                     }
                 });

@@ -177,7 +177,7 @@ startupKit.uiKitHeader._inFixedMode = function(headerClass) {
                 'padding-top' : 30 + ((23 - 30) * headerZoom)
             });
             $('.navbar .brand img', header).css({
-                'width' : 25 + ((50 - 25) * headerZoom),
+                'width' : 'auto',
                 'height' : 25 + ((50 - 25) * headerZoom),
                 'margin-top' : -1 + ((-10 + 1) * headerZoom)
             });
@@ -1028,6 +1028,46 @@ startupKit.uiKitContent.content35 = function() {}
 
 /* Content 36*/
 startupKit.uiKitContent.content36 = function() {}
+/* Content 37*/
+startupKit.uiKitContent.content37 = function() {}
+/* Content 38*/
+startupKit.uiKitContent.content38 = function() {
+    //samples grid
+    var samplesGrid = $('.samples-grid');
+    setTimeout(function () {
+        samplesGrid.masonry({itemSelector: '.sample-box'});
+    }, 3000);
+
+    //show images on scroll
+    if (!isMobile.any()) {
+        $(document).scroll(function () {
+            var samples = $('.samples-holder');
+            var samplesCont = samples.offset();
+            var scrollTop = $(document).scrollTop();
+            if (scrollTop >= samplesCont.top - $(window).height() + 200) {
+                samplesGrid.masonry({itemSelector: '.sample-box'})
+            }
+
+            //samples
+            if ($(document).scrollTop() >= samplesCont.top - $(window).height() / 2) {
+                if (!$('.samples-holder').hasClass('shown')) {
+                    if (!isMobile.any()) {
+                        addSamplesInt = setInterval(function () {
+                            var elements = $('.sample-box:not(.visible)');
+                            var random = Math.round(Math.random() * elements.size());
+                            var el = elements.eq(random);
+                            el.addClass('visible');
+                            if (elements.size() == 0) {
+                                clearInterval(addSamplesInt);
+                            }
+                        }, 50);
+                    }
+                    $('.samples-holder').addClass('shown');
+                }
+            }
+        });
+    }
+};
 
 
 /**

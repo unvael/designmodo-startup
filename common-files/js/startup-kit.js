@@ -1090,6 +1090,158 @@ startupKit.uiKitContent.content38 = function() {
             }
         });
     }
+    else{
+        $('.samples-holder').addClass('shown');
+        $('.sample-box').addClass('visible');
+    }
+    //can I see the real pixels?
+    $('.samples-holder img').click(function () {
+        var imgsrc = $(this).attr('src');
+        var file = imgsrc.split('/');
+        var filename = file[file.length - 1];
+        var structure = $(this).data('structure');
+        var path = imgsrc.split('/' + filename);
+        path = path[0];
+        showLargeImage(filename, path + '-large/', $(this), 'next', structure);
+    });
+
+    if (window.location.hash.indexOf(".samples-holder") != -1) {
+        var id = window.location.hash;
+        $(id).click();
+    }
+
+    $(document).keydown(function (e) {
+        if (e.keyCode == 37) {
+            $('.largeScreenshots .prev').click();
+            return false;
+        }
+        if (e.keyCode == 39) {
+            $('.largeScreenshots .next').click();
+            return false;
+        }
+        if (e.keyCode == 38) {
+            $('.largeScreenshots').clearQueue().animate({ scrollTop: $('.largeScreenshots').scrollTop() - 500 + "px"}, 250);
+            return false;
+        }
+        if (e.keyCode == 40) {
+            $('.largeScreenshots').clearQueue().animate({ scrollTop: $('.largeScreenshots').scrollTop() + 500 + "px"}, 250);
+            return false;
+        }
+        if (e.keyCode == 27) {
+            $('.close').click();
+            return false;
+        }
+    });
+
+    function showLargeImage(file, prefix, obj, direction, structure) {
+
+        //dark screen, add elements
+        if (!$('body').hasClass('largescreenshotsopened')) {
+            $('body').addClass('noscroll').addClass('largescreenshotsopened').append('<div class="largeScreenshots"><div class="picHolder"><h1></h1><span></span><div class="imgHolder"><img/></div></div><div class="prev"></div><div class="next"></div><div class="close"></div></div>');
+            $('.largeScreenshots .close, .largeScreenshots span').click(function (e) {
+                $('body').removeClass('noscroll').removeClass('largescreenshotsopened');
+                $('.largeScreenshots').remove();
+                window.location.hash = "/";
+            });
+        }
+
+        //show me the image
+        $('.largeScreenshots .imgHolder img').attr('src', prefix + file);
+        $('.largeScreenshots .imgHolder img').ready(function (e) {
+            $('.largeScreenshots').scrollTop(0);
+            $('.largeScreenshots .imgHolder img');
+            $('.largeScreenshots h1').text(obj.attr('alt'));
+
+            window.location.hash=obj.attr('id');
+
+            var speed = '0.75s cubic-bezier(.27,1.64,.32,.95)';
+            $('.picHolder, .picHolder h1').css('-webkit-animation', direction + " " + speed).css('-moz-animation', direction + " " + speed).css('-ms-animation', direction + " " + speed).css("-o-animation", direction + " " + speed).css("animation", direction + " " + speed);
+            setTimeout(function () {
+                $('.picHolder, .picHolder h1').removeAttr('style');
+            }, 750);
+        });
+
+        //set nice position for arrows
+        function setNicePosition(){
+            var p = $(".largeScreenshots .picHolder");
+            var position = p.position();
+            var size = $('.largeScreenshots img').outerHeight();
+            var scrolltop = $(".largeScreenshots").scrollTop()
+            if ($(window).height()-scrolltop > size+192+36) {
+                var posFromBottom = (scrolltop + $(window).height()) - (size+192+36);
+                $('.largeScreenshots .prev, .largeScreenshots .next').css('top', position.top+192).css('height', size+36);
+            } else if (position.top+192> 0) {
+                $('.largeScreenshots .prev, .largeScreenshots .next').css('top', position.top+192).css('height', $(window).height() - position.top  - 192);
+            } else if (scrolltop + $(window).height() > size+192+36) {
+                var posFromBottom = (scrolltop + $(window).height()) - (size+192+36);
+                $('.largeScreenshots .prev, .largeScreenshots .next').css('top', 0).css('height', $(window).height()-posFromBottom);
+            } else {
+                $('.largeScreenshots .prev, .largeScreenshots .next').css('top', 0).css('height', $(window).height());
+            }
+        }
+        setNicePosition()
+
+        $('.largeScreenshots').scroll(function () {
+            setNicePosition();
+        });
+
+        //preload pics
+        var newObj = obj.parent().nextOrFirst('.samples-holder .sample-box').find('img');
+        var imgsrc = newObj.attr('src');
+        var file = imgsrc.split('/');
+        var filename = file[file.length - 1];
+        var path = imgsrc.split('/' + filename);
+        path = path[0];
+        $([path + '-large/' + filename]).preload();
+
+        var newObj = obj.parent().prevOrLast('.samples-holder .sample-box').find('img');
+        var imgsrc = newObj.attr('src');
+        var file = imgsrc.split('/');
+        var filename = file[file.length - 1];
+        var path = imgsrc.split('/' + filename);
+        path = path[0];
+        $([path + '-large/' + filename]).preload();
+
+        //get next picure and show next
+        $('.largeScreenshots .prev,.largeScreenshots .next, .largeScreenshots .imgHolder img').unbind();
+        setTimeout(function () {
+            $('.largeScreenshots .prev').click(function () {
+                var newObj = obj.parent().prevOrLast('.samples-holder .sample-box').find('img');
+                var structure = obj.data('structure');
+                var imgsrc = newObj.attr('src');
+                var file = imgsrc.split('/');
+                var filename = file[file.length - 1];
+                var path = imgsrc.split('/' + filename);
+                path = path[0];
+
+                showLargeImage(filename, path + '-large/', newObj, "prev",structure);
+            });
+
+            $('.largeScreenshots .next, .largeScreenshots .imgHolder img').click(function () {
+
+                var newObj = obj.parent().nextOrFirst('.samples-holder .sample-box').find('img');
+                var structure = newObj.data('structure');
+                var imgsrc = newObj.attr('src');
+                var file = imgsrc.split('/');
+                var filename = file[file.length - 1];
+                var path = imgsrc.split('/' + filename);
+                path = path[0];
+
+                showLargeImage(filename, path + '-large/', newObj, "next",structure);
+            });
+        },750);
+
+        //add swipe gesture for mobile
+        // if (window.isMobile){
+        //     $('.largeScreenshots .imgHolder img').touchwipe({
+        //          wipeLeft: function() { $('.largeScreenshots .next').click(); },
+        //          wipeRight: function(){ $('.largeScreenshots .prev').click(); },
+        //          min_move_x: 20,
+        //          min_move_y: 20,
+        //          preventDefaultEvents: false
+        //     });
+        // }
+    }
 };
 
 

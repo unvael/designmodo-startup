@@ -545,6 +545,8 @@ startupKit.uiKitHeader.header23 = function() {
     startupKit.attachBgVideo();
     startupKit.uiKitHeader._inFixedMode('.header-23');
 
+    $('body').prepend($('.mask, .popup-video').not('pre .mask, pre .popup-video'));
+    $('header-23 .mask, header-23 .popup-video').not('pre .mask, pre .popup-video').detach();
 
     var iframe = $('#pPlayer')[0];
     var player = $f(iframe);
@@ -557,22 +559,22 @@ startupKit.uiKitHeader.header23 = function() {
             element.attachEvent(eventName, callback, false);
         }
     }
-    $('#play').click(function(evt) {
+
+    $('#play').on('click', function(evt) {
         evt.preventDefault();
-        $('body').prepend($('.mask, .popup-video'));
-        $('header-23 .mask, header-23 .popup-video').detach();
-        $('.mask, .popup-video').fadeIn('slow');
-        player.api('play')
-        $('.mask').click(function() {
+        $('.popup-video').addClass('shown');
+        $('.popup-video, .mask').fadeIn('slow', function() {
+            player.api('play')
+        });
+        $('.mask').on('click', function() {
             player.api('pause');
             $('.popup-video, .mask').fadeOut('slow', function() {
-                $('.header-23').prepend($('.mask, .popup-video'));
-                $('body > .mask, body > .popup-video').detach();
+                $('.popup-video').removeClass('shown');
             });
         });
     });
 };
-/* Video background  */
+
 var isMobile = {
     Android: function() {
         return navigator.userAgent.match(/Android/i);
@@ -594,6 +596,7 @@ var isMobile = {
     }
 };
 
+/* Video background  */
 startupKit.attachBgVideo = function() {
     var videBgDiv = $('#bgVideo');
     if (!isMobile.any() && videBgDiv) {
@@ -833,14 +836,6 @@ startupKit.uiKitContent.content24 = function() {
             }).css('height', maxH + 'px');
             $('.features-bodies', this).css('height', maxH + 'px');
         });
-
-        /*var img = $('.content-24 .image');
-        if ($(window).width() < 751) {
-            $('.content-24 .features-body.active h3').after(img);
-        } else {
-            $('.content-24 .container').before(img);
-        }*/
-
     });
 
     $('.content-24 .features .features-header .box').click(function() {

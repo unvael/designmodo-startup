@@ -1025,13 +1025,15 @@ startupKit.uiKitContent.content34 = function() {
 
 /* Content 35*/
 startupKit.uiKitContent.content35 = function() {
-    $('.content-35-slider').bxSlider({
-        'controls': false,
-        'pagerCustom': '.content-35-customPager',
-        'easing': 'ease-in-out',
-        'adaptiveHeight': false,
-        'infiniteLoop': false
-    });
+    if($(".content-35-slider").length) {
+        $('.content-35-slider').bxSlider({
+            'controls': false,
+            'pagerCustom': '.content-35-customPager',
+            'easing': 'ease-in-out',
+            'adaptiveHeight': false,
+            'infiniteLoop': false
+        });
+    }
     var pager = $('.content-35-customPager');
     pager.find($('.menuicon')).on('mouseenter', function(){
         $(this).parent().addClass('showmenu');

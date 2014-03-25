@@ -17,9 +17,32 @@
         }
     }
     .social-btns {
-        margin-top:15px;
-        @media (max-width: 991px) {
-            margin-bottom: 25px;
+        white-space: nowrap;
+        margin-top: 15px;
+        > * {
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 15px;
+            .font(20px, mix(@silver, black, 80%));
+            width: 20px;
+            height: 25px;
+            overflow: hidden;
+            text-align: center;
+            &:first-child {
+                margin-left: 0;
+            }
+            > * {
+                display: block;
+                position: relative;
+                top: 0;
+                .transition(0.25s top);
+                &:first-child {
+                    color: @silver;
+                }
+            }
+            &:hover > * {
+                top: -100%;
+            }
         }
     }
     .btn.btn-danger {

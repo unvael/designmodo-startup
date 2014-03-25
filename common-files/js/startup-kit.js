@@ -1348,7 +1348,32 @@ startupKit.uiKitProjects.project4 = function() {
 startupKit.uiKitFooter = startupKit.uiKitFooter || {};
 
 /* Footer 1*/
-startupKit.uiKitFooter.footer1 = function() {};
+startupKit.uiKitFooter.footer1 = function() {
+    $('.footer-1 .social-btns').sharrre({
+        share: {
+            facebook: true,
+            twitter: true
+        },
+        buttons: {
+            twitter: {
+                custom: 'Startup Design Framework - http://designmodo.com/startup/ Suit Up your Startup!',
+                via: 'Designmodo',
+                url: false
+            }
+        },
+        template: '<a href="#"><div class="fui-facebook"></div><div class="fui-facebook"></div></a>' +
+                  '<a href="#"><div class="fui-twitter"></div><div class="fui-twitter"></div></a>',
+        enableHover: false,
+        render: function(api, options) {
+            $(api.element).on('click', '.fui-twitter', function() {
+                api.openPopup('twitter');
+            });
+            $(api.element).on('click', '.fui-facebook', function() {
+                api.openPopup('facebook');
+            });
+        }
+    });
+};
 
 /* Footer 2*/
 startupKit.uiKitFooter.footer2 = function() {};

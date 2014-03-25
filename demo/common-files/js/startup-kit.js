@@ -12,7 +12,12 @@ window.isRetina = (function() {
         return true;
     return false;
 })();
+//nextOrFirst? prevOrLast?
+jQuery.fn.nextOrFirst = function(selector) { var next = this.next(selector); return (next.length) ? next : this.prevAll(selector).last(); }
+jQuery.fn.prevOrLast = function(selector){ var prev = this.prev(selector); return (prev.length) ? prev : this.nextAll(selector).last(); }
 
+//preload images
+$.fn.preload=function(){this.each(function(){$("<img/>")[0].src=this})}
 window.startupKit = window.startupKit || {};
 
 startupKit.hideCollapseMenu = function() {
@@ -574,7 +579,7 @@ startupKit.uiKitHeader.header23 = function() {
         });
     });
 };
-/* Video background  */
+
 var isMobile = {
     Android: function() {
         return navigator.userAgent.match(/Android/i);
@@ -596,6 +601,7 @@ var isMobile = {
     }
 };
 
+/* Video background  */
 startupKit.attachBgVideo = function() {
     var videBgDiv = $('#bgVideo');
     if (!isMobile.any() && videBgDiv) {

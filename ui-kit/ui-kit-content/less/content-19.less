@@ -9,8 +9,12 @@
     .col-sm-7 .quote {
         position: relative;
         &:before {
-            content: url('@{startup-basePath}common-files/icons/quote-up-mb.png');
+            content: '';
+            background: url("@{startup-basePath}common-files/icons/quote-up-mb@2x.png") no-repeat;
+            .background-size(31px 22px);
             position: absolute;
+            width: 31px;
+            height: 22px;
             top: 0;
             left: -60px;
             @media (min-width: 1200px) and (max-width: 1300px), (min-width: 992px) and (max-width: 1080px), (max-width: 870px) {

@@ -8,12 +8,6 @@
             $(this).closest('.control-group, form').removeClass('focus');
         });
 
-       
-        $(window).resize(function() {
-            $('.header-16-sub').css('height', $(this).height() + 'px');
-        });
-
-        
         (function(el) {
             $(window).resize(function() {
                 if (!el.hasClass('ani-processed')) {

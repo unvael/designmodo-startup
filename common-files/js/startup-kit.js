@@ -429,7 +429,9 @@ startupKit.uiKitHeader.header16 = function() {
         });
         return false;
     });
-
+    $(window).resize(function() {
+        $('.header-16-sub').css('height', $(this).height() + 'px');
+    });
 };
 
 /* Header 17*/

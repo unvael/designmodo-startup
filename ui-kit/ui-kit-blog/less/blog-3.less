@@ -42,6 +42,9 @@
         margin: 110px 0;
         background: url('@{startup-basePath}common-files/img/Brazil_002.jpg') 50% 80% no-repeat;
         .background-size(cover);
+        @media (max-width: 1200px) and (min-width: 768px){
+          background-position-y: 100%;
+        }
         @media (max-width: 767px) {
             margin-right: -20px;
             margin-left: -20px;

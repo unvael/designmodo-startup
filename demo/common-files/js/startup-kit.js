@@ -64,35 +64,39 @@ $(function () {
             }, 1)
         }
     });
-    $('.social-btn-facebook').sharrre({
-        share: {
-            facebook: true
-        },
-        enableHover: false,
-        enableCounter: false,
-        click: function(api, options){
-            api.simulateClick();
-            api.openPopup('facebook');
-        }
-    });
-
-    $('.social-btn-twitter').sharrre({
-        share: {
-            twitter: true
-        },
-        enableHover: false,
-        enableCounter: false,
-        buttons: {
-            twitter: {
-                via: 'Designmodo',
-                url: false
+    if($('.social-btn-facebook').length){
+        $('.social-btn-facebook').sharrre({
+            share: {
+                facebook: true
+            },
+            enableHover: false,
+            enableCounter: false,
+            click: function(api, options){
+                api.simulateClick();
+                api.openPopup('facebook');
             }
-        },
-        click: function(api, options){
-            api.simulateClick();
-            api.openPopup('twitter');
-        }
-    });
+        });
+    }
+
+    if($('.social-btn-twitter').length){
+        $('.social-btn-twitter').sharrre({
+            share: {
+                twitter: true
+            },
+            enableHover: false,
+            enableCounter: false,
+            buttons: {
+                twitter: {
+                    via: 'Designmodo',
+                    url: false
+                }
+            },
+            click: function(api, options){
+                api.simulateClick();
+                api.openPopup('twitter');
+            }
+        });
+    }
 });
 
 /**

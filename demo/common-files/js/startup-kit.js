@@ -18,6 +18,7 @@ jQuery.fn.prevOrLast = function(selector){ var prev = this.prev(selector); retur
 
 //preload images
 $.fn.preload=function(){this.each(function(){$("<img/>")[0].src=this})}
+
 window.startupKit = window.startupKit || {};
 
 startupKit.hideCollapseMenu = function() {
@@ -61,6 +62,35 @@ $(function () {
             setTimeout(function() {
                 $('html').addClass('nav-visible');
             }, 1)
+        }
+    });
+    $('.social-btn-facebook').sharrre({
+        share: {
+            facebook: true
+        },
+        enableHover: false,
+        enableCounter: false,
+        click: function(api, options){
+            api.simulateClick();
+            api.openPopup('facebook');
+        }
+    });
+
+    $('.social-btn-twitter').sharrre({
+        share: {
+            twitter: true
+        },
+        enableHover: false,
+        enableCounter: false,
+        buttons: {
+            twitter: {
+                via: 'Designmodo',
+                url: false
+            }
+        },
+        click: function(api, options){
+            api.simulateClick();
+            api.openPopup('twitter');
         }
     });
 });
@@ -429,7 +459,9 @@ startupKit.uiKitHeader.header16 = function() {
         });
         return false;
     });
-
+    $(window).resize(function() {
+        $('.header-16-sub').css('height', $(this).height() + 'px');
+    });
 };
 
 /* Header 17*/
@@ -1348,32 +1380,7 @@ startupKit.uiKitProjects.project4 = function() {
 startupKit.uiKitFooter = startupKit.uiKitFooter || {};
 
 /* Footer 1*/
-startupKit.uiKitFooter.footer1 = function() {
-    $('.footer-1 .social-btns').sharrre({
-        share: {
-            facebook: true,
-            twitter: true
-        },
-        buttons: {
-            twitter: {
-                custom: 'Startup Design Framework - http://designmodo.com/startup/ Suit Up your Startup!',
-                via: 'Designmodo',
-                url: false
-            }
-        },
-        template: '<a href="#"><div class="fui-facebook"></div><div class="fui-facebook"></div></a>' +
-                  '<a href="#"><div class="fui-twitter"></div><div class="fui-twitter"></div></a>',
-        enableHover: false,
-        render: function(api, options) {
-            $(api.element).on('click', '.fui-twitter', function() {
-                api.openPopup('twitter');
-            });
-            $(api.element).on('click', '.fui-facebook', function() {
-                api.openPopup('facebook');
-            });
-        }
-    });
-};
+startupKit.uiKitFooter.footer1 = function() {};
 
 /* Footer 2*/
 startupKit.uiKitFooter.footer2 = function() {};

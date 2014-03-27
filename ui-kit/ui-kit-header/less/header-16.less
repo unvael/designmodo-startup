@@ -20,11 +20,12 @@
         font-family: @font-family-demo;
         .navbar-header {
             float: none;
+            text-align: center;
         }
         .navbar-toggle {
+            display: inline-block;
             position: relative;
             z-index: 10000;
-            display: block;
             float: none;
             margin: 28px auto 17px;
             padding: 0 10px;
@@ -32,7 +33,7 @@
             .transition(0.25s);
             .font(13px, white);
             font-family: @font-family-demo;
-            width: 65px;
+            width: auto;
             height: auto;
             letter-spacing: 1px;
             &:hover, &:focus, &:active, &.active {

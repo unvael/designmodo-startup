@@ -466,6 +466,7 @@ startupKit.uiKitHeader.header16 = function() {
     $(window).resize(function() {
         $('.header-16-sub').css('height', $(this).height() + 'px');
     });
+    $(window).resize().scroll();
 };
 
 /* Header 17*/

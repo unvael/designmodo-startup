@@ -786,11 +786,11 @@ startupKit.uiKitContent.content18 = function() {
     });
 
     $('#c-18_myCarousel').bind('slid.bs.carousel', function() {
-        $('.carousel-control', this).removeClass('disabled');
+        $('.carousel-control', this).removeClass('disabled').attr('href', '#c-18_myCarousel');
         if ($('.item.active', this).index() == 0) {
-            $('.carousel-control.left', this).addClass('disabled');
+            $('.carousel-control.left', this).addClass('disabled').attr('href', '#');
         } else if ($('.item.active', this).index() == ($('.item', this).length - 1)) {
-            $('.carousel-control.right', this).addClass('disabled');
+            $('.carousel-control.right', this).addClass('disabled').attr('href', '#');
         }
     });
 

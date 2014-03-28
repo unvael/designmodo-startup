@@ -180,14 +180,16 @@
     background: #000;
     padding-top: 0;
     padding-bottom: 0;
-    height: 600px;
     min-height: 550px;
     color: white;
     text-align: center;
     overflow: hidden;
     .pt-perspective {
-        position: relative;
-        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
         -webkit-perspective: 1200px;
         -moz-perspective: 1200px;
         perspective: 1200px;
@@ -228,10 +230,16 @@
             .font(13px, white);
             font-family: @font-family-demo;
             letter-spacing: 1px;
-          @media(max-width:480px){
+          @media(max-width:620px){
             color: transparent;
           }
         }
+      @media(min-width:480px){
+        .container{
+          padding: 0 50px;
+        }
+      }
+
     }
     .pt-control-prev {
         float: left;

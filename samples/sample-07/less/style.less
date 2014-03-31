@@ -16,27 +16,27 @@
     .img {
         display: inline-block;
         position: relative;
+        img:first-child {
+            visibility: visible;
+        }
+    }
+    .img-twitter {
+        position: absolute;
+        width: 85%;
+        top: 16%;
+        left: 0;
+
         img {
             .transition(.4s);
-        }
-        img[src*="/twitter-2@2x"] {
-            position: absolute;
-            width: 85%;
-            top: 16%;
-            left: 0;
             .backface-visibility(visible);
         }
-        img:first-child {
-            visibility: hidden;
-        }
-        &:hover {
-            img[src*="/twitter-2@2x"] {
-                -webkit-transform: rotateY(180deg);
-                -moz-transform: rotateY(180deg);
-                -ms-transform: rotateY(180deg);
-                -o-transform: rotateY(180deg);
-                transform: rotateY(180deg);
-            }
+
+        &:hover img {
+            -webkit-transform: rotateY(180deg);
+            -moz-transform: rotateY(180deg);
+            -ms-transform: rotateY(180deg);
+            -o-transform: rotateY(180deg);
+            transform: rotateY(180deg);
         }
     }
     .signup-form {
@@ -96,9 +96,6 @@
             }
         }
     }
-}
-.header-18 .header-18-sub .pt-page-current .header-18-section .img img[src*="/twitter-1@2x"] {
-    visibility: visible;
 }
 .signup-form {
   form {

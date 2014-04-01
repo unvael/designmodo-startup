@@ -466,6 +466,7 @@ startupKit.uiKitHeader.header16 = function() {
     $(window).resize(function() {
         $('.header-16-sub').css('height', $(this).height() + 'px');
     });
+    $(window).resize().scroll();
 };
 
 /* Header 17*/
@@ -1200,15 +1201,13 @@ startupKit.uiKitContent.content38 = function() {
         });
 
         //set nice position for arrows
+
         function setNicePosition(){
             var p = $(".largeScreenshots .picHolder");
             var position = p.position();
             var size = $('.largeScreenshots img').outerHeight();
             var scrolltop = $(".largeScreenshots").scrollTop()
-            if ($(window).height()-scrolltop > size+192+36) {
-                var posFromBottom = (scrolltop + $(window).height()) - (size+192+36);
-                $('.largeScreenshots .prev, .largeScreenshots .next').css('top', position.top+192).css('height', size+36);
-            } else if (position.top+192> 0) {
+            if (position.top+192> 0) {
                 $('.largeScreenshots .prev, .largeScreenshots .next').css('top', position.top+192).css('height', $(window).height() - position.top  - 192);
             } else if (scrolltop + $(window).height() > size+192+36) {
                 var posFromBottom = (scrolltop + $(window).height()) - (size+192+36);
@@ -1270,15 +1269,15 @@ startupKit.uiKitContent.content38 = function() {
         },750);
 
         //add swipe gesture for mobile
-        // if (window.isMobile){
-        //     $('.largeScreenshots .imgHolder img').touchwipe({
-        //          wipeLeft: function() { $('.largeScreenshots .next').click(); },
-        //          wipeRight: function(){ $('.largeScreenshots .prev').click(); },
-        //          min_move_x: 20,
-        //          min_move_y: 20,
-        //          preventDefaultEvents: false
-        //     });
-        // }
+         if (isMobile.any()){
+             $('.largeScreenshots .imgHolder img').touchwipe({
+                  wipeLeft: function() { $('.largeScreenshots .next').click(); },
+                 wipeRight: function(){ $('.largeScreenshots .prev').click(); },
+                 min_move_x: 20,
+                  min_move_y: 20,
+                 preventDefaultEvents: false
+             });
+         }
     }
 };
 
@@ -1538,4 +1537,9 @@ startupKit.uiKitFooter.footer15 = function() {};
         
         
     });
-})(jQuery); 
+    //add some smooth for scroll
+
+
+})(jQuery);
+//swipe
+(function($){$.fn.touchwipe=function(settings){var config={min_move_x:20,min_move_y:20,wipeLeft:function(){},wipeRight:function(){},wipeUp:function(){},wipeDown:function(){},preventDefaultEvents:true};if(settings)$.extend(config,settings);this.each(function(){var startX;var startY;var isMoving=false;function cancelTouch(){this.removeEventListener('touchmove',onTouchMove);startX=null;isMoving=false}function onTouchMove(e){if(config.preventDefaultEvents){e.preventDefault()}if(isMoving){var x=e.touches[0].pageX;var y=e.touches[0].pageY;var dx=startX-x;var dy=startY-y;if(Math.abs(dx)>=config.min_move_x){cancelTouch();if(dx>0){config.wipeLeft();e.preventDefault()}else{config.wipeRight();e.preventDefault()}}else if(Math.abs(dy)>=config.min_move_y){cancelTouch();if(dy>0){config.wipeDown()}else{config.wipeUp()}}}}function onTouchStart(e){if(e.touches.length==1){startX=e.touches[0].pageX;startY=e.touches[0].pageY;isMoving=true;this.addEventListener('touchmove',onTouchMove,false)}}if('ontouchstart'in document.documentElement){this.addEventListener('touchstart',onTouchStart,false)}});return this}})(jQuery);

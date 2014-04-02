@@ -21,9 +21,13 @@
     }
     .v-center;
     .img {
-        text-align: right;
+        max-width: 380px;
+        margin-left: auto;
+        img {
+            width: 100%;
+        }
         @media (max-width: 767px) {
-            text-align: center;
+            margin-right: auto;
             margin-bottom: 30px;
         }
     }
@@ -56,10 +60,16 @@
     }
     &.mirror {
         .aligment {
-            float:right;
+            float: right;
         }
         .img {
-            text-align: left;
+            margin-left: 0;
+            margin-right: auto;
+            max-width: 397px;
+
+            @media (max-width: 767px) {
+                margin-left: auto;
+            }
         }
     }
 }

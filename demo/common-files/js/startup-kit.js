@@ -412,13 +412,13 @@ startupKit.uiKitHeader.header11 = function() {
 
     $(window).resize(function() {
         
-        var player = $('.header-11-sub .player');
+        var headerContainer = $('.header-11-sub').not('pre .header-11-sub');
+        var player = headerContainer.find('.player');
         if ($(window).width() < 751) {
-            $('.header-11-sub .signup-form').before(player);
-            $('.header-11-sub .player-wrapper').hide();
+            headerContainer.find('.signup-form').before(player);
+            headerContainer.find('.player-wrapper').hide();
         } else {
-            $('.header-11-sub .player-wrapper').append(player);
-            $('.header-11-sub .player-wrapper').show();
+            headerContainer.find('.player-wrapper').append(player).show();
         }
     });
 

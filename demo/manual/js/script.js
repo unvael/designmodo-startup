@@ -78,7 +78,7 @@
             $(this).toggleClass('opened');
         });
 
-        var manualArrHref = window.location.href.split('/'),
+        var manualArrHref = window.location.pathname.split('/'),
             targetHref = manualArrHref[manualArrHref.length -1].toLowerCase(),
             overviewLink = $('#header-dockbar a[href="index.html"], body .colapsed-menu a[href="index.html"]'),
             item  = $('#header-dockbar a[href="' + targetHref  + '"], body .colapsed-menu a[href="' + targetHref  + '"]');

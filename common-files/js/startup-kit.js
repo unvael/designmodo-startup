@@ -1051,7 +1051,7 @@ startupKit.uiKitContent.content35 = function() {
         $('.content-35-slider').bxSlider({
             'controls': false,
             'pagerCustom': '.content-35-customPager',
-            'adaptiveHeight': false,
+            'adaptiveHeight': true,
             'infiniteLoop': false
         });
     }
